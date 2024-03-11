@@ -19,9 +19,28 @@ for directory in "$@"; do
     for file in "$directory"/*.kicad_pcb; do
         if [ -f "$file" ]; then
 
-            kicad-cli pcb export gerbers -o "$temp_dir" "$file" &>/dev/null
-
-            echo "Exported gerbers for file: $file"
+		#optimized for JLCPCB:
+		kicad-cli pcb export gerbers \
+		    --output "$temp_dir" \
+		    --layers F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In1.Cu,In2.Cu \
+		    --exclude-value \
+		    --include-border-title \
+		    --no-x2 \
+		    --no-netlist \
+		    --subtract-soldermask \
+		    "$file" &>/dev/null
+	    echo "Exported gerbers for: $file"
+		kicad-cli pcb export drill \
+    		    -o "$temp_dir/" \
+    		    --format excellon \
+    		    --drill-origin absolute \
+    		    --excellon-zeros-format decimal \
+    		    --excellon-units mm \
+    		    --excellon-oval-format alternate \
+    		    --generate-map \
+    		    --map-format gerberx2 \
+		    "$file" &>/dev/null
+            echo "Exported drill file for: $file"
         fi
     done
 
