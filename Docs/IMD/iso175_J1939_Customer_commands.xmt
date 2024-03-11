@@ -1,0 +1,88 @@
+; C:\Users\daniel.woelfel\Bender GmbH & Co.KG\BKG BU-E-BD - Fahrzeug Sensorik\ISO175\CAN DBC files\SAE J1939 dbc\iso175_J1939_Customer_commands.xmt
+;   CAN messages saved by PCAN-View v5.1.0.887
+;
+; Columns descriptions:
+; ~~~~~~~~~~~~~~~~~~~~~
+; +Message ID
+; |            +Cycle time in ms (0=manual)
+; |            |  +Data length
+; |            |  |  +Frame type
+; |            |  |  |  +Message data
+; |            |  |  |  |
+18EAF417h    100  3  D 00h FFh 00h  Paused ; Request Device Info
+18EAF417h    100  3  D 01h FFh 00h  Paused ; Request Info General
+18EAFF17h    100  3  D 02h FFh 00h  Paused ; Request Isolation Detail
+18EAFF17h    100  3  D 03h FFh 00h  Paused ; Request Info Voltage
+18EAFF17h    100  3  D 04h FFh 00h  Paused ; Request It-System info
+18EFF417h      0  1  D 16h ; Read HW ID Article Number A
+18EFF417h      0  1  D 2Ah ; Read Unbalance
+18EFF417h      0  1  D 2Eh ; Read Unbalance Threshold
+18EFF417h      0  1  D 34h ; Read Device Error
+18EFF417h      0  1  D 38h ; Read IsoProfile_Runtime
+18EFF417h      0  1  D 3Ah ; Read IsoProfile_Startup
+18EFF417h      0  1  D 3Eh ; Read Isulation Quality
+18EFF417h      0  1  D 40h ; Read Isolation R-iso neg
+18EFF417h      0  1  D 42h ; Read Isolation R-iso pos
+18EFF417h      0  1  D 44h ; Read Isolation R-iso Status
+18EFF417h      0  1  D 46h ; Read Isolation Threshold_Error
+18EFF417h      0  1  D 48h ; Read Isolation Threshold_Timeout_Measurement
+18EFF417h      0  1  D 4Ah ; Read Isolation Threshold_Warning
+18EFF417h      0  1  D 4Ch ; Read Isolation R_iso_corrected
+18EFF417h      0  1  D 4Eh ; Read Isolation R_iso_original
+18EFF417h      0  1  D 50h ; Read Isolation Time_elapsed_since_last_measurement
+18EFF417h      0  1  D 52h ; Read Capacity
+18EFF417h      0  1  D 58h ; Read Selftest Period
+18EFF417h      0  1  D 5Ah ; Read Frequency
+18EFF417h      0  1  D 5Eh ; Read Voltage HV
+18EFF417h      0  1  D 60h ; Read Voltage HVneg - Earth
+18EFF417h      0  1  D 62h ; Read Voltage HVpos - Earth
+18EFF417h      0  1  D 64h ; Read VoltMode
+18EFF417h      0  1  D 66h ; Read VoltThreshold
+18EFF417h      0  1  D 68h ; Read DeviceActivity
+18EFF417h      0  1  D 6Ah ; Read LockState
+18EFF417h      0  1  D 6Ch ; Read Warnings_Alarms
+18EFF417h      0  1  D 70h ; Read EarthLift
+18EFF417h      0  2  D 2Fh 00h ; .Write Unbalance Threshold = 0 (off)
+18EFF417h      0  2  D 2Fh 05h ; .Write Unbalance Threshold = 5%
+18EFF417h      0  2  D 2Fh 1Eh ; .Write Unbalance Threshold = 30%
+18EFF417h      0  2  D 39h 01h ; . Write IsoProfile_Runtime = StandardFastStartup (1)
+18EFF417h      0  2  D 39h 02h ; . Write IsoProfile_Runtime = Standard (2)
+18EFF417h      0  2  D 39h 03h ; . Write IsoProfile_Runtime = HighCapacityFastStartup (3)
+18EFF417h      0  2  D 39h 04h ; . Write IsoProfile_Runtime = HighCapacity (4)
+18EFF417h      0  2  D 39h 05h ; . Write IsoProfile_Runtime = Disturbed (5)
+18EFF417h      0  2  D 39h 06h ; . Write IsoProfile_Runtime = Service (6)
+18EFF417h      0  2  D 39h 07h ; . Write IsoProfile_Runtime = UG Profile (7)
+18EFF417h      0  2  D 3Bh 01h ; . Write IsoProfile_Startup = StandardFastStartup (1)
+18EFF417h      0  2  D 3Bh 02h ; . Write IsoProfile_Startup = Standard (2)
+18EFF417h      0  2  D 3Bh 05h ; . Write IsoProfile_Startup = Disturbed (5)
+18EFF417h      0  2  D 3Bh 06h ; . Write IsoProfile_Startup = Service (6)
+18EFF417h      0  2  D 3Bh 07h ; . Write IsoProfile_Startup = UG Profile (7)
+18EFF417h      0  2  D 57h 01h ; . Write StartSelfDiagnostic = 1 (Offline)
+18EFF417h      0  2  D 57h 02h ; . Write StartSelfDiagnostic = 2 (Offline+Communication)
+18EFF417h      0  2  D 71h 00h ; . Write EarthLift = connect
+18EFF417h      0  2  D 71h 01h ; . Write EarthLift = open
+18EFF417h      0  3  D 47h 32h 00h ; . Write Isolation Threshold_Error = 50kOhm
+18EFF417h      0  3  D 47h 64h 00h ; . Write Isolation Threshold_Error = 100kOhm
+18EFF417h      0  3  D 47h D0h 07h ; . Write Isolation Threshold_Error = 2000kOhm
+18EFF417h      0  3  D 47h DCh 05h ; . Write Isolation Threshold_Error = 1500kOhm
+18EFF417h      0  3  D 47h E8h 03h ; . Write Isolation Threshold_Error = 1000kOhm
+18EFF417h      0  3  D 47h F4h 01h ; . Write Isolation Threshold_Error = 500kOhm
+18EFF417h      0  3  D 49h 00h 00h ; . Write Isolation Threshold_Timeout_Measurement = 0s (off)
+18EFF417h      0  3  D 49h 01h 00h ; . Write Isolation Threshold_Timeout_Measurement = 1s
+18EFF417h      0  3  D 49h 3Ch 00h ; . Write Isolation Threshold_Timeout_Measurement = 60s
+18EFF417h      0  3  D 4Bh B8h 0Bh ; . Write Isolation Threshold_Warning = 3000kOhm
+18EFF417h      0  3  D 4Bh DCh 05h ; . Write Isolation Threshold_Warning = 1500kOhm
+18EFF417h      0  3  D 4Bh E8h 03h ; . Write Isolation Threshold_Warning = 1000kOhm
+18EFF417h      0  3  D 4Bh FAh 00h ; . Write Isolation Threshold_Warning = 250kOhm
+18EFF417h      0  3  D 59h 00h 00h ; .Write Selftest Period = 0s (off)
+18EFF417h      0  3  D 59h 01h 00h ; .Write Selftest Period = 10s (1x10s)
+18EFF417h      0  3  D 59h 02h 00h ; .Write Selftest Period = 20s (2x10s)
+18EFF417h      0  3  D 59h 03h 00h ; .Write Selftest Period = 30s (3x10s)
+18EFF417h      0  3  D 59h 06h 00h ; .Write Selftest Period = 60s (6x10s)
+18EFF417h      0  3  D 59h 68h 01h ; .Write Selftest Period = 60min (360x10s)
+18EFF417h      0  3  D 67h 00h 00h ; . Write VoltThreshold = 0 (off)
+18EFF417h      0  3  D 67h 0Ah 00h ; . Write VoltThreshold = 10V
+18EFF417h      0  3  D 67h 19h 00h ; . Write VoltThreshold = 25V
+18EFF417h      0  3  D 67h 2Ch 01h ; . Write VoltThreshold = 300V
+18EFF417h      0  3  D 67h 64h 00h ; . Write VoltThreshold = 100V
+18EFF417h      0  3  D 67h F4h 01h ; . Write VoltThreshold = 500V
