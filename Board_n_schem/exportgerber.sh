@@ -5,6 +5,9 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
+# Prompt user for their name and store it in $name
+read -p "Enter your name: " name
+
 mkdir -p ./temp_gerbers
 
 for directory in "$@"; do
@@ -43,8 +46,9 @@ for directory in "$@"; do
             echo "Exported drill file for: $file"
         fi
     done
-# optimized for staelens' aribtrary format
-    zip_file="./temp_gerbers/$(date +"%m%d%Y")_${directory##*/}_"$name".zip"
+
+    # optimized for staelens' arbitrary format
+    zip_file="./temp_gerbers/$(date +"%m%d%Y")_${directory##*/}_${name}.zip"
     zip -r "$zip_file" "$temp_dir" &>/dev/null
 
     rm -rf "$temp_dir"
