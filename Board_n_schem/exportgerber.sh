@@ -43,8 +43,8 @@ for directory in "$@"; do
             echo "Exported drill file for: $file"
         fi
     done
-
-    zip_file="./temp_gerbers/${directory##*/}_gerber_$(date +"%Y_%m_%d_%H_%M").zip"
+# optimized for staelens' aribtrary format
+    zip_file="./temp_gerbers/$(date +"%m%d%Y")_${directory##*/}_"$name".zip"
     zip -r "$zip_file" "$temp_dir" &>/dev/null
 
     rm -rf "$temp_dir"
