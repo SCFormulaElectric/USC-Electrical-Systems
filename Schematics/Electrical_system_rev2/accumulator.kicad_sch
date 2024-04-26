@@ -2938,6 +2938,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 210.82) (xy 114.3 220.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f958c69-91e0-4812-9554-e92086c5b31d")
+	)
+	(wire
+		(pts
 			(xy 81.915 59.055) (xy 86.36 59.055)
 		)
 		(stroke
@@ -3950,6 +3960,17 @@
 		)
 		(uuid "c0a72dbd-a364-4e0f-a5b5-b8d3e9f11abc")
 	)
+	(label "GLV-"
+		(at 114.3 219.075 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c25885b5-388b-429c-8786-c67d3b11bd9b")
+	)
 	(label "HV+_motor_controller"
 		(at 224.155 203.2 0)
 		(fields_autoplaced yes)
@@ -4232,6 +4253,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GLV-"
+		(shape bidirectional)
+		(at 114.3 210.82 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3942985f-f58d-49b0-bb7f-21091ad4c4f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.3 201.7644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4698,7 +4741,7 @@
 			)
 		)
 	)
-	(global_label "Discharge"
+	(global_label "SDCin"
 		(shape bidirectional)
 		(at 203.835 143.51 90)
 		(fields_autoplaced yes)
@@ -4710,7 +4753,7 @@
 		)
 		(uuid "b9bbee61-5c9a-452a-bc83-3d5f0663ef1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 203.835 130.1796 90)
+			(at 203.835 133.9102 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5125,6 +5168,18 @@
 			(justify right)
 		)
 		(uuid "b968ca2c-df26-4f68-bb08-1b5fef668040")
+	)
+	(hierarchical_label "GLV-"
+		(shape input)
+		(at 114.3 220.345 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1295976-feb5-4aed-9159-5117c9a92df2")
 	)
 	(hierarchical_label "CANH_BMS"
 		(shape input)
