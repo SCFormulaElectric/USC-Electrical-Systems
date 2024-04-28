@@ -3147,15 +3147,6 @@
 		(uuid "bf8ec235-6992-4a43-bba2-6f454dc0c70e")
 	)
 	(bus_entry
-		(at 298.45 99.06)
-		(size 2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c21b94f2-041b-4fc0-98e3-d4bd272606a0")
-	)
-	(bus_entry
 		(at 64.77 152.4)
 		(size 2.54 -2.54)
 		(stroke
@@ -4445,17 +4436,6 @@
 		)
 		(uuid "b39d1ee9-fb63-4d51-9f70-fa5967fda313")
 	)
-	(bus
-		(pts
-			(xy 298.45 99.06) (xy 298.45 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 132 0 0 1)
-		)
-		(uuid "b48683d1-0487-4e70-9353-662af588385f")
-	)
 	(wire
 		(pts
 			(xy 353.06 104.14) (xy 353.06 134.62)
@@ -4618,16 +4598,6 @@
 			(type default)
 		)
 		(uuid "d4500a02-550e-44a0-ac08-6b58f7ee8a93")
-	)
-	(wire
-		(pts
-			(xy 300.99 96.52) (xy 327.66 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5c4db2d-3a53-4109-972d-0713ccf1ac85")
 	)
 	(bus
 		(pts
@@ -5344,17 +5314,6 @@
 			(justify left bottom)
 		)
 		(uuid "e6bf7908-c58f-4b18-8137-3223c2591e38")
-	)
-	(label "GLV-_EM"
-		(at 318.77 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ec5a9283-7017-4b9b-a111-4ff71416877c")
 	)
 	(label "CANH_250"
 		(at 176.53 101.6 90)
@@ -6359,28 +6318,6 @@
 		(uuid "f971d1d2-5984-4a34-9f5c-689cad359ef7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 224.79 159.8544 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GLV-"
-		(shape bidirectional)
-		(at 125.73 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc1ad0b4-451d-4ef3-84ab-6ee8134782a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.7062 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8134,6 +8071,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 327.66 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93e7cb84-a78e-4690-8460-e0a8cb9e17c3")
+		(property "Reference" "#PWR025"
+			(at 321.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 323.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 327.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 327.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fa1feea-f607-403b-ab46-abb3ea152e7b")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FSAE:Emeter")
 		(at 336.55 107.315 0)
 		(mirror y)
@@ -8824,6 +8828,73 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
 					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 125.73 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d63ec588-430b-4262-9406-6fff27d25c10")
+		(property "Reference" "#PWR026"
+			(at 132.08 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 129.54 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58210171-fcd8-4ab9-af42-271c3e8fb1e5")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
