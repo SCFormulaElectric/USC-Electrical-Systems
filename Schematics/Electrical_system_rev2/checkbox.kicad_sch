@@ -2499,139 +2499,6 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_SPST"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPST_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPST_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:Earth"
 			(power)
 			(pin_names
@@ -2845,6 +2712,12 @@
 		(uuid "869a1b9c-c127-420d-8c2e-0927137ff13e")
 	)
 	(junction
+		(at 138.43 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ebba534-7661-48d2-9e95-8767843bfb3f")
+	)
+	(junction
 		(at 36.83 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2873,12 +2746,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b33a3fb6-b976-4b89-8915-edee53c5f5e7")
-	)
-	(junction
-		(at 138.43 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6e23736-bfd3-4b84-89a2-a46d4d89304b")
 	)
 	(junction
 		(at 222.25 101.6)
@@ -3211,6 +3078,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 163.83) (xy 59.69 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0023ec39-4d6f-4317-9fce-ff605cecc068")
+	)
+	(wire
+		(pts
 			(xy 231.14 160.02) (xy 233.68 160.02)
 		)
 		(stroke
@@ -3232,16 +3109,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 172.72) (xy 73.66 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0150751e-6442-484b-842f-ee34080e7cd0")
-	)
-	(wire
-		(pts
 			(xy 48.26 93.98) (xy 64.77 93.98)
 		)
 		(stroke
@@ -3260,16 +3127,6 @@
 			(color 132 0 0 1)
 		)
 		(uuid "04fce1fb-12e9-42c0-b0ca-6120f811ef24")
-	)
-	(wire
-		(pts
-			(xy 138.43 173.99) (xy 138.43 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "056f0318-47bf-4040-8141-cd6dda68934d")
 	)
 	(wire
 		(pts
@@ -3436,16 +3293,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 152.4) (xy 44.45 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21733313-db11-4f59-8e0e-0e21b7dc5333")
-	)
-	(wire
-		(pts
 			(xy 214.63 146.05) (xy 214.63 175.26)
 		)
 		(stroke
@@ -3537,13 +3384,13 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 167.64) (xy 97.79 175.26)
+			(xy 93.98 176.53) (xy 93.98 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bfb828a-e712-455e-8b5a-79c266142dfa")
+		(uuid "29f20efb-c16c-4ad3-a768-c474ab66a22c")
 	)
 	(wire
 		(pts
@@ -3678,16 +3525,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 144.78) (xy 31.75 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41846afe-adc3-4833-98f4-f789e42de10e")
-	)
-	(wire
-		(pts
 			(xy 36.83 93.98) (xy 40.64 93.98)
 		)
 		(stroke
@@ -3708,16 +3545,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 171.45) (xy 128.27 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45a65b7b-1c75-433c-8128-bb94dad73699")
-	)
-	(wire
-		(pts
 			(xy 36.83 96.52) (xy 36.83 101.6)
 		)
 		(stroke
@@ -3735,6 +3562,16 @@
 			(type default)
 		)
 		(uuid "45e2c637-6e6e-4ef9-9962-5d0d280e3849")
+	)
+	(wire
+		(pts
+			(xy 90.17 163.83) (xy 90.17 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b6ce6b-1b86-4b59-9f55-81300fcf8abe")
 	)
 	(wire
 		(pts
@@ -3769,7 +3606,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 171.45) (xy 128.27 171.45)
+			(xy 125.73 171.45) (xy 133.35 171.45)
 		)
 		(stroke
 			(width 0)
@@ -3827,16 +3664,6 @@
 			(type default)
 		)
 		(uuid "4cafb390-db20-4e97-af9a-ca512f3b93cc")
-	)
-	(wire
-		(pts
-			(xy 83.82 172.72) (xy 87.63 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d46f395-dadb-461d-8aea-2499096972fd")
 	)
 	(bus
 		(pts
@@ -3912,6 +3739,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 158.75) (xy 99.06 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e3f604-0350-4966-8435-9ef7eeacc88f")
+	)
+	(wire
+		(pts
 			(xy 82.55 129.54) (xy 82.55 127)
 		)
 		(stroke
@@ -3919,6 +3756,26 @@
 			(type default)
 		)
 		(uuid "577743ed-cdfd-4271-baa9-d700c5ae77bf")
+	)
+	(wire
+		(pts
+			(xy 137.16 171.45) (xy 138.43 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57ccae2a-06bf-4d0b-a0e2-8823094257b5")
+	)
+	(wire
+		(pts
+			(xy 33.02 161.29) (xy 33.02 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582fc30a-58df-41ca-8e1d-dbcd3f9c2387")
 	)
 	(bus
 		(pts
@@ -4162,6 +4019,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 163.83) (xy 63.5 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea685e8-fc10-4627-b3b7-732ab47ebfba")
+	)
+	(wire
+		(pts
 			(xy 327.66 147.32) (xy 328.295 147.32)
 		)
 		(stroke
@@ -4243,26 +4110,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 172.72) (xy 83.82 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99969790-dd71-4b49-b3ec-93bb16d017ac")
-	)
-	(wire
-		(pts
-			(xy 99.06 167.64) (xy 97.79 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b18a2bd-c375-4c0a-b337-1860e865e66e")
-	)
-	(wire
-		(pts
 			(xy 224.79 175.26) (xy 224.79 168.91)
 		)
 		(stroke
@@ -4281,6 +4128,16 @@
 			(color 132 0 0 1)
 		)
 		(uuid "9c2b0c49-8705-47ac-9159-e66230cf70fa")
+	)
+	(wire
+		(pts
+			(xy 52.07 176.53) (xy 52.07 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cdbc4d1-7abc-4027-ab98-dcc0604df2f3")
 	)
 	(wire
 		(pts
@@ -4326,23 +4183,13 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 175.26) (xy 45.72 175.26)
+			(xy 36.83 162.56) (xy 36.83 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a335c168-c22d-4f95-98eb-addf463e7eb8")
-	)
-	(wire
-		(pts
-			(xy 59.69 175.26) (xy 59.69 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4800997-d1e0-4752-bc7c-191a4bcf224e")
+		(uuid "a5799d56-7eb0-4125-b0d3-eb52e539db09")
 	)
 	(wire
 		(pts
@@ -4364,16 +4211,6 @@
 			(color 204 102 0 1)
 		)
 		(uuid "a730c29a-de95-4da8-bd80-03de302ed279")
-	)
-	(wire
-		(pts
-			(xy 69.85 172.72) (xy 69.85 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a77acd5e-becd-48aa-9d73-488b6ae99bb4")
 	)
 	(wire
 		(pts
@@ -4407,6 +4244,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 163.83) (xy 59.69 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab209747-1075-4459-9718-a5bdd609891a")
+	)
+	(wire
+		(pts
 			(xy 243.84 160.02) (xy 246.38 160.02)
 		)
 		(stroke
@@ -4424,6 +4271,16 @@
 			(type default)
 		)
 		(uuid "aed1ce0c-26dd-42ca-867f-0c1d1dc84d4b")
+	)
+	(wire
+		(pts
+			(xy 80.01 176.53) (xy 80.01 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0d89d20-2cdf-4bff-94b3-eb109200313c")
 	)
 	(wire
 		(pts
@@ -4455,6 +4312,16 @@
 			(color 132 0 0 1)
 		)
 		(uuid "b48683d1-0487-4e70-9353-662af588385f")
+	)
+	(wire
+		(pts
+			(xy 80.01 163.83) (xy 90.17 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b48ef5d9-1b66-4690-aa9f-880a6ae2e342")
 	)
 	(wire
 		(pts
@@ -4509,13 +4376,23 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 172.72) (xy 55.88 172.72)
+			(xy 133.35 171.45) (xy 133.35 179.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be07a1fd-c58e-4fac-911d-6f1f7b573bd2")
+		(uuid "c02acd24-4035-4573-9da0-5e729a5fe121")
+	)
+	(wire
+		(pts
+			(xy 137.16 179.07) (xy 137.16 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0f5510b-ba8a-430a-8b4c-92157b52f05c")
 	)
 	(wire
 		(pts
@@ -4559,13 +4436,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 134.62) (xy 31.75 134.62)
+			(xy 76.2 163.83) (xy 76.2 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4c67ff5-9422-4ddf-a2e9-3c3f6c38d5dc")
+		(uuid "c5e2b245-24bf-43c7-84fa-fdaf8fce6e0c")
 	)
 	(bus
 		(pts
@@ -4601,13 +4478,13 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 172.72) (xy 87.63 175.26)
+			(xy 48.26 152.4) (xy 48.26 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0f2bd32-9e5b-4a94-add8-94f860c13507")
+		(uuid "cd76e2df-97f0-4a8f-a95d-918ffdf48334")
 	)
 	(wire
 		(pts
@@ -4652,7 +4529,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 172.72) (xy 73.66 172.72)
+			(xy 63.5 163.83) (xy 76.2 163.83)
 		)
 		(stroke
 			(width 0)
@@ -4692,7 +4569,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 152.4) (xy 64.77 152.4)
+			(xy 48.26 152.4) (xy 64.77 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4771,16 +4648,6 @@
 			(color 204 102 0 1)
 		)
 		(uuid "e6aad39f-0bcd-4e01-af13-c0caffd08809")
-	)
-	(wire
-		(pts
-			(xy 55.88 172.72) (xy 55.88 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ead1262e-bbac-4eb5-8728-64e98f626355")
 	)
 	(wire
 		(pts
@@ -4916,17 +4783,6 @@
 		)
 		(uuid 9850fb23-8bfd-44a7-8b91-b31f9b7c0bd2)
 	)
-	(text "reset\n"
-		(exclude_from_sim no)
-		(at 25.4 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0069bf50-62b9-4cc1-81f4-8fcea59c44af")
-	)
 	(text "Interlock / HV connector"
 		(exclude_from_sim no)
 		(at 320.04 45.72 0)
@@ -4938,18 +4794,7 @@
 		)
 		(uuid "2744fa8d-ffe6-470b-95e3-a6a5cb812558")
 	)
-	(text "NC"
-		(exclude_from_sim no)
-		(at 92.71 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2fe8d8da-c1bc-40e2-880f-a39d22c00a8b")
-	)
-	(text "need \npulldown"
+	(text "need pulldown\nin VCU\n"
 		(exclude_from_sim no)
 		(at 140.97 163.83 0)
 		(effects
@@ -4982,28 +4827,6 @@
 		)
 		(uuid "4175a09e-5974-4127-ba57-7c4b06bad863")
 	)
-	(text "GLVMS"
-		(exclude_from_sim no)
-		(at 55.88 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "430114c7-73ce-4813-97af-fef2e0cf22e4")
-	)
-	(text "NO"
-		(exclude_from_sim no)
-		(at 50.8 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "602d59b0-1897-406c-a2d8-e87fdc65011f")
-	)
 	(text "NO"
 		(exclude_from_sim no)
 		(at 130.81 166.37 0)
@@ -5014,39 +4837,6 @@
 			(justify left bottom)
 		)
 		(uuid "6ede224b-bb93-419e-a3e7-a36affff8ae1")
-	)
-	(text "NC"
-		(exclude_from_sim no)
-		(at 76.2 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c2834f3-301e-45ca-9175-5990ff51fd7e")
-	)
-	(text "Side SDB Right"
-		(exclude_from_sim no)
-		(at 101.6 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8d9db8ac-89c3-4d6a-9798-969a1505d1a0")
-	)
-	(text "Inertia\n"
-		(exclude_from_sim no)
-		(at 62.23 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90794add-2957-4393-8918-08e44ee1b7fc")
 	)
 	(text "2A fuse\n"
 		(exclude_from_sim no)
@@ -5080,17 +4870,6 @@
 			(justify right bottom)
 		)
 		(uuid "b5f6ec91-fbbf-490a-8352-64858ac8860f")
-	)
-	(text "Side SDB Left"
-		(exclude_from_sim no)
-		(at 83.82 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e084d621-1bce-45e0-a0a3-df5c79f39f62")
 	)
 	(label "CANH_BMS"
 		(at 189.23 90.17 90)
@@ -5534,7 +5313,7 @@
 	)
 	(global_label "SDC_to_dash"
 		(shape output)
-		(at 99.06 167.64 0)
+		(at 99.06 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5544,7 +5323,7 @@
 		)
 		(uuid "1a7fbbac-a561-4d3e-8935-3cb215b5eeb1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.0003 167.64 0)
+			(at 114.0003 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +5489,7 @@
 	)
 	(global_label "GLV+"
 		(shape bidirectional)
-		(at 38.1 144.78 0)
+		(at 36.83 162.56 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5720,7 +5499,7 @@
 		)
 		(uuid "58249f58-1bba-4235-8f98-ff4f6475a887")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.0762 144.78 0)
+			(at 36.83 153.5044 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6128,7 +5907,7 @@
 	)
 	(global_label "SW"
 		(shape bidirectional)
-		(at 38.1 134.62 0)
+		(at 33.02 161.29 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6138,7 +5917,7 @@
 		)
 		(uuid "bb1d868c-94d6-4cc0-8aab-9359c1dcbb21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.778 134.62 0)
+			(at 33.02 154.5326 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6436,6 +6215,30 @@
 		)
 		(uuid "0325034c-4781-4559-8917-5ce6cb245303")
 	)
+	(hierarchical_label "TSMS_out"
+		(shape input)
+		(at 133.35 179.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06371a15-7aac-4f42-8981-26f5e8b694e2")
+	)
+	(hierarchical_label "Inertia_out"
+		(shape input)
+		(at 59.69 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "07c5cccc-2ef3-4b7e-a51c-a7cdd514990b")
+	)
 	(hierarchical_label "5V+_dash"
 		(shape input)
 		(at 200.66 175.26 270)
@@ -6447,6 +6250,18 @@
 			(justify right)
 		)
 		(uuid "0a427f7b-177e-4306-b65c-f0e07667b400")
+	)
+	(hierarchical_label "Inertia_in"
+		(shape input)
+		(at 63.5 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0d982191-350f-4752-a7f2-b426eb7f72b4")
 	)
 	(hierarchical_label "Throttle1"
 		(shape input)
@@ -6556,6 +6371,42 @@
 		)
 		(uuid "4c9e7d02-6d4e-4d8d-aa2a-06b289a40acd")
 	)
+	(hierarchical_label "TSMS_in"
+		(shape input)
+		(at 137.16 179.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60d417f6-aff9-401b-b1a4-787d5d797602")
+	)
+	(hierarchical_label "SDBR_out"
+		(shape input)
+		(at 90.17 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "624d3fd3-8c42-49af-9fc7-5099de9eac2e")
+	)
+	(hierarchical_label "Reset_out"
+		(shape input)
+		(at 33.02 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67e8156b-11cb-4c96-af49-962a1a8f357f")
+	)
 	(hierarchical_label "CANL_BMS"
 		(shape input)
 		(at 186.69 74.93 90)
@@ -6567,6 +6418,18 @@
 			(justify left)
 		)
 		(uuid "69baab51-64cc-49ce-9727-bb4c2f61a480")
+	)
+	(hierarchical_label "Reset_in"
+		(shape input)
+		(at 36.83 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6e856010-908e-4950-9291-2b4be2676088")
 	)
 	(hierarchical_label "TSAL_R"
 		(shape input)
@@ -6628,6 +6491,18 @@
 		)
 		(uuid "7e565e82-89f6-49a4-b56f-7f8a4b1c2b6f")
 	)
+	(hierarchical_label "SDBL_out"
+		(shape input)
+		(at 76.2 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87bc8b3e-23b2-4ff5-94dd-187eac9b180c")
+	)
 	(hierarchical_label "Current"
 		(shape input)
 		(at 182.88 175.26 270)
@@ -6675,6 +6550,18 @@
 			(justify right)
 		)
 		(uuid "ace37ea0-870d-4c49-b205-df5321a642a3")
+	)
+	(hierarchical_label "SDBL_in"
+		(shape input)
+		(at 80.01 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3a67731-84fb-40e9-86e4-2f6b960cd381")
 	)
 	(hierarchical_label "accum_motor-"
 		(shape input)
@@ -6796,6 +6683,18 @@
 		)
 		(uuid "d3b5e13f-2d3c-4974-91da-9434bb34ff62")
 	)
+	(hierarchical_label "GLVMS_out"
+		(shape input)
+		(at 48.26 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd174eb3-f166-4acf-a6f4-f411665caad0")
+	)
 	(hierarchical_label "HV+"
 		(shape input)
 		(at 355.6 74.93 90)
@@ -6819,6 +6718,18 @@
 			(justify right)
 		)
 		(uuid "de979c1d-72fc-41bf-9888-7330b2699347")
+	)
+	(hierarchical_label "GLVMS_in"
+		(shape input)
+		(at 52.07 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e828268e-0d71-4e54-9954-4279b888f42b")
 	)
 	(hierarchical_label "SDC1"
 		(shape input)
@@ -6867,6 +6778,18 @@
 			(justify right)
 		)
 		(uuid "f7859e92-098a-4f24-97d0-d83bb4b96715")
+	)
+	(hierarchical_label "SDBR_in"
+		(shape input)
+		(at 93.98 176.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffc08128-42a0-43f3-bc6a-4f53281afa4a")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7398,122 +7321,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 64.77 175.26 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "30ee8ed7-e3c0-4c17-b4ed-1b5b188dbc9d")
-		(property "Reference" "SW3"
-			(at 64.77 172.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 65.405 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 64.77 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 64.77 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "139fcaed-7355-48e6-8559-1ebecfcdc42d")
-		)
-		(pin "2"
-			(uuid "3c116ecf-fa73-43fe-933b-6c03bbcc331e")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "Charging_v2"
-				(path "/51d81b59-7052-475f-adae-0949e3e35f3b"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_c"
-				(path "/bdaec023-c8f0-4224-8865-500b55c13cde"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "Accumlator_t"
-				(path "/e78d5e24-a9b4-441a-8c53-6336f3857a0a"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7/6180e672-7d22-4de4-be0c-f28319b12422"
-					(reference "SW13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Random:TSAL")
 		(at 335.28 154.305 180)
 		(unit 1)
@@ -7612,106 +7419,6 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
 					(reference "U17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 133.35 173.99 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "44d2dfea-e6e5-424a-946e-482a99e7a789")
-		(property "Reference" "SW5"
-			(at 133.985 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2843011"
-			(at 137.16 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ebce933b-0481-4543-a5e0-ad9edf729a04")
-		)
-		(pin "2"
-			(uuid "32293a04-8544-4026-92f8-d6e3b0eeef19")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW8")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8032,108 +7739,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 92.71 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80960173-a9e7-499e-bf49-2d61026d28a8")
-		(property "Reference" "SW6"
-			(at 92.71 168.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "84-5330.0020"
-			(at 92.71 170.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 92.71 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6eaa53bd-8ac7-4fc1-bf52-611874cc07ee")
-		)
-		(pin "2"
-			(uuid "331be0cd-8fa4-41d0-b25e-09ef884137e0")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW6")
-					(unit 1)
-				)
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW10")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
-					(reference "SW8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "FSAE:Emeter")
 		(at 336.55 107.315 0)
 		(mirror y)
@@ -8229,106 +7834,6 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
 					(reference "U18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 50.8 175.26 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a0bf2f94-b80b-44e8-9a6c-c53f19dad1ed")
-		(property "Reference" "SW2"
-			(at 53.34 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2843011"
-			(at 56.515 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2e2a98da-9d96-4b86-a2e1-f291adbb5700")
-		)
-		(pin "2"
-			(uuid "7bdbb4f2-8c7b-4775-bf27-7c0d7c3e2a98")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8900,121 +8405,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 31.75 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e237a9c8-29cc-47ad-84ba-ebe0f258e4cb")
-		(property "Reference" "SW1"
-			(at 35.56 139.065 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3491"
-			(at 33.655 139.065 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f91e4089-c5cb-4dbb-9a17-9cb223801e04")
-		)
-		(pin "2"
-			(uuid "37d5c753-9b0f-435c-ae81-60e146d38434")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-			(project "Charging_v2"
-				(path "/51d81b59-7052-475f-adae-0949e3e35f3b"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_c"
-				(path "/bdaec023-c8f0-4224-8865-500b55c13cde"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "Accumlator_t"
-				(path "/e78d5e24-a9b4-441a-8c53-6336f3857a0a"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7/6180e672-7d22-4de4-be0c-f28319b12422"
-					(reference "SW13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "Relay_board_1")
 		(lib_id "Random:Relay_board")
 		(at 114.935 114.3 90)
@@ -9196,108 +8586,6 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
 					(reference "F10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 78.74 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5eb0901-f273-4f5f-9e83-2a89a859c17c")
-		(property "Reference" "SW4"
-			(at 78.74 168.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "84-5330.0020"
-			(at 78.74 170.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4aea1d0-1035-46af-924e-890a6d81af97")
-		)
-		(pin "2"
-			(uuid "33e3c989-4b5f-4c44-a043-f97616f0cd12")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76/8710ac5a-f94d-43c5-b4b2-9e283f0fe934"
-					(reference "SW4")
-					(unit 1)
-				)
-				(path "/0787d490-a6cb-4be4-98b6-b83db71c5b76"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "Accumulator_t_2"
-				(path "/25d5f729-014c-4b8a-8e2e-987bb6aefcee"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/5ec0699a-3c0f-41bb-8561-c4fd7e59fe9f"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "checkbox"
-				(path "/66b61c93-6624-4ced-bd06-c7d072a0e2f9"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1c314dd2-2602-4f14-9f58-5b14367adc1b"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-			(project "SDC_Schematic"
-				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
-					(reference "SW9")
 					(unit 1)
 				)
 			)
