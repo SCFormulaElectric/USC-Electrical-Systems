@@ -4110,15 +4110,6 @@
 		(uuid "37799455-1546-445a-a1e4-3837f3dd461d")
 	)
 	(bus_entry
-		(at 278.13 167.64)
-		(size 2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "392a5c3e-a8d2-4520-8230-61c283c84b20")
-	)
-	(bus_entry
 		(at 265.43 167.64)
 		(size 2.54 -2.54)
 		(stroke
@@ -6329,17 +6320,6 @@
 	)
 	(bus
 		(pts
-			(xy 275.59 167.64) (xy 278.13 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "ad4aeff5-02af-451c-980b-861c3ee67c73")
-	)
-	(bus
-		(pts
 			(xy 137.16 105.41) (xy 137.16 107.95)
 		)
 		(stroke
@@ -6668,16 +6648,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 173.99) (xy 142.24 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d54d2bf9-9c02-4502-ab14-a9883b4cb384")
-	)
-	(wire
-		(pts
 			(xy 262.89 163.83) (xy 262.89 165.1)
 		)
 		(stroke
@@ -6768,16 +6738,6 @@
 			(color 132 0 132 1)
 		)
 		(uuid "df69f600-4c56-49c5-a73c-65b51a3b686f")
-	)
-	(wire
-		(pts
-			(xy 280.67 163.83) (xy 280.67 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfbe6224-ca34-42dd-950a-a661e7e13f21")
 	)
 	(wire
 		(pts
@@ -7271,6 +7231,19 @@
 		)
 		(uuid "9daee15d-40ed-4147-b948-8ec854a743bc")
 	)
+	(text "All GLV- wires are tied to Chassis"
+		(exclude_from_sim no)
+		(at 512.318 278.13 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.4064)
+				(bold yes)
+				(color 132 0 0 1)
+			)
+		)
+		(uuid "aaa4d1d3-890e-41a2-9165-24755d4fb3c5")
+	)
 	(text "4 awg\n"
 		(exclude_from_sim no)
 		(at 210.82 207.01 0)
@@ -7713,28 +7686,6 @@
 			)
 		)
 	)
-	(global_label "GLV-_brake"
-		(shape output)
-		(at 127 173.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78b67da5-58ff-44aa-9a71-79a37ac17a0b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.8872 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "COS2"
 		(shape bidirectional)
 		(at 266.7 279.4 270)
@@ -7757,28 +7708,6 @@
 			)
 		)
 	)
-	(global_label "GLV-_fans"
-		(shape input)
-		(at 124.46 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aa0e737d-041f-429c-af0f-66fcb88391f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.4237 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SIN1"
 		(shape bidirectional)
 		(at 271.78 271.78 270)
@@ -7792,28 +7721,6 @@
 		(uuid "ab8e1bb0-80a6-4b78-9a92-752f583045a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 271.78 280.1514 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GLV-_fans"
-		(shape output)
-		(at 142.24 148.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "afcc5451-a1a0-4a86-b66f-a4d7e979263c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.2763 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11668,16 +11575,6 @@
 			)
 			(uuid "472b5c5b-44e4-4263-b881-4aec2448db9e")
 		)
-		(pin "GLV-_cooling" input
-			(at 171.45 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "1b136e8d-c939-435c-917f-36059e6d51f8")
-		)
 		(pin "fan1+" input
 			(at 171.45 214.63 0)
 			(effects
@@ -12141,16 +12038,6 @@
 			)
 			(uuid "886e8da9-548a-4d03-8715-6abf4b44cdcf")
 		)
-		(pin "GLV-" input
-			(at 280.67 148.59 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b13f0386-6a55-46d2-afd8-6925cd0b4d41")
-		)
 		(pin "temp1_motor+" input
 			(at 275.59 148.59 270)
 			(effects
@@ -12538,16 +12425,6 @@
 			)
 			(uuid "53a6c91d-5d17-4d49-802e-08eb919656ec")
 		)
-		(pin "GLV-_fans" input
-			(at 154.94 148.59 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fb15e501-811d-42e0-9cbf-781e8355f0e5")
-		)
 		(pin "pump1_control" input
 			(at 154.94 166.37 180)
 			(effects
@@ -12577,16 +12454,6 @@
 				(justify left)
 			)
 			(uuid "dead1b61-1335-4c57-80fe-36b427af5ed7")
-		)
-		(pin "GLV-_brake" input
-			(at 154.94 173.99 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7f7e2c60-377e-4ef1-985c-02a9165b2669")
 		)
 		(instances
 			(project "Electrical_system_rev2"
@@ -12765,16 +12632,6 @@
 				(justify right)
 			)
 			(uuid "3c07df47-17fe-4b04-84c8-aafe1b5ef10b")
-		)
-		(pin "GLV-" input
-			(at 109.22 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4c7aadca-0006-4a39-8411-fb62ba3e3cc9")
 		)
 		(instances
 			(project "Electrical_system"

@@ -367,6 +367,102 @@
 				)
 			)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
@@ -419,74 +515,6 @@
 		)
 		(uuid "b72df9f8-1cfc-46e2-accd-0bde5549378c")
 	)
-	(global_label "GLV-"
-		(shape bidirectional)
-		(at 113.03 68.58 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73238f48-7421-4cef-82a8-4b16963eb380")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 77.6356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GLV-"
-		(shape bidirectional)
-		(at 96.52 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d6246d3b-e837-4de1-a3c2-eaa23f5a6127")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5756 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(hierarchical_label "fan2_control"
-		(shape input)
-		(at 149.86 68.58 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "20036ac0-6bf7-4307-be0c-e1b83a7a2f39")
-	)
-	(hierarchical_label "pump1_control"
-		(shape input)
-		(at 120.65 68.58 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "38aec733-84b9-4085-b264-3fa0601a9ff3")
-	)
 	(hierarchical_label "temp2_motor-"
 		(shape input)
 		(at 184.15 68.58 90)
@@ -510,30 +538,6 @@
 			(justify left)
 		)
 		(uuid "4ac0c912-4a4e-48de-81a2-35218f468fcc")
-	)
-	(hierarchical_label "fan1_control"
-		(shape input)
-		(at 139.7 68.58 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4c11cae9-5650-438b-a8ac-abfc8ba9b861")
-	)
-	(hierarchical_label "GLV-_cooling"
-		(shape input)
-		(at 113.03 68.58 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f97b393-a83a-44a9-9f63-a037c3375da8")
 	)
 	(hierarchical_label "temp1_motor-"
 		(shape input)
@@ -813,6 +817,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 96.52 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88bcda32-04a0-440d-a74d-536d59328b1a")
+		(property "Reference" "#PWR014"
+			(at 96.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd9f27ae-d3ee-4b70-a274-68acbe781898")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1b3a7b0f-60e4-44e5-873d-a93daedfbc03"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Thermistor")
 		(at 193.04 68.58 270)
 		(unit 1)
@@ -943,6 +1013,72 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1b3a7b0f-60e4-44e5-873d-a93daedfbc03"
 					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c553c566-5e26-4384-a189-6d57ad20fb28")
+		(property "Reference" "#PWR013"
+			(at 95.25 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb6d654d-3ca6-41d6-811a-88a16f8fcd76")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4/1b3a7b0f-60e4-44e5-873d-a93daedfbc03"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
