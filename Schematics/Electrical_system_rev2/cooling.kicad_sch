@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "996a3230-51f6-4602-ba5d-51ba623b365e")
-	(paper "A4")
+	(paper "A5")
 	(lib_symbols
 		(symbol "Device:Thermistor"
 			(pin_numbers hide)
@@ -466,27 +466,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 80.01) (xy 106.68 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06251efa-f00e-48ba-8002-ba4afcd0fbbb")
-	)
-	(wire
-		(pts
-			(xy 100.33 68.58) (xy 100.33 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84ad0f07-cdba-4637-b6fd-aa79d56faf9a")
-	)
-	(wire
-		(pts
-			(xy 96.52 80.01) (xy 106.68 80.01)
+			(xy 99.06 73.66) (xy 100.33 73.66)
 		)
 		(stroke
 			(width 0)
@@ -496,7 +476,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 77.47) (xy 96.52 77.47)
+			(xy 100.33 71.12) (xy 99.06 71.12)
 		)
 		(stroke
 			(width 0)
@@ -506,7 +486,7 @@
 	)
 	(text "Cooling loop 1 - accumulator\nCooling loop 2 - motor "
 		(exclude_from_sim no)
-		(at 45.212 58.674 0)
+		(at 19.812 56.134 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -515,9 +495,21 @@
 		)
 		(uuid "b72df9f8-1cfc-46e2-accd-0bde5549378c")
 	)
+	(hierarchical_label "pump1_control"
+		(shape input)
+		(at 97.79 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25ed251a-cc48-48b7-96bc-e21ae7296b34")
+	)
 	(hierarchical_label "temp2_motor-"
 		(shape input)
-		(at 184.15 68.58 90)
+		(at 158.75 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -529,7 +521,7 @@
 	)
 	(hierarchical_label "temp_accum+"
 		(shape input)
-		(at 187.96 68.58 90)
+		(at 162.56 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -541,7 +533,7 @@
 	)
 	(hierarchical_label "temp1_motor-"
 		(shape input)
-		(at 168.91 68.58 90)
+		(at 143.51 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -553,7 +545,7 @@
 	)
 	(hierarchical_label "temp1_motor+"
 		(shape input)
-		(at 158.75 68.58 90)
+		(at 133.35 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -565,7 +557,7 @@
 	)
 	(hierarchical_label "temp2_motor+"
 		(shape input)
-		(at 173.99 68.58 90)
+		(at 148.59 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -577,7 +569,7 @@
 	)
 	(hierarchical_label "pump2_control"
 		(shape input)
-		(at 106.68 68.58 90)
+		(at 100.33 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -587,9 +579,9 @@
 		)
 		(uuid "cad6d56d-ebd6-44b8-b236-b7328078a6d8")
 	)
-	(hierarchical_label "GLV+_cooling"
+	(hierarchical_label "GLV+_pump1"
 		(shape input)
-		(at 100.33 68.58 90)
+		(at 100.33 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -601,7 +593,7 @@
 	)
 	(hierarchical_label "temp_accum-"
 		(shape input)
-		(at 198.12 68.58 90)
+		(at 172.72 66.04 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -613,7 +605,7 @@
 	)
 	(symbol
 		(lib_id "FSAE:CWA150")
-		(at 90.17 87.63 0)
+		(at 92.71 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -621,7 +613,7 @@
 		(dnp no)
 		(uuid "0ccdec34-edd7-400c-9170-cb38faa885e3")
 		(property "Reference" "U20"
-			(at 89.408 87.63 0)
+			(at 91.948 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,7 +621,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 88.9 72.39 0)
+			(at 91.44 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -637,7 +629,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 87.63 0)
+			(at 92.71 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -646,7 +638,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 87.63 0)
+			(at 92.71 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -655,7 +647,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 87.63 0)
+			(at 92.71 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -683,7 +675,7 @@
 	)
 	(symbol
 		(lib_id "FSAE:EWP150")
-		(at 90.17 115.57 0)
+		(at 92.71 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -691,7 +683,7 @@
 		(dnp no)
 		(uuid "53ab5b83-2fb6-4027-866d-29c14f912a56")
 		(property "Reference" "U22"
-			(at 88.9 115.57 0)
+			(at 91.44 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -699,7 +691,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 88.4173 101.6 0)
+			(at 90.9573 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -707,7 +699,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 115.57 0)
+			(at 92.71 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -716,7 +708,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 115.57 0)
+			(at 92.71 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +717,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 115.57 0)
+			(at 92.71 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +742,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 179.07 68.58 270)
+		(at 153.67 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -758,7 +750,7 @@
 		(dnp no)
 		(uuid "61dc3e1d-28af-4caf-a95a-ab6dd4b80f36")
 		(property "Reference" "TH2"
-			(at 179.324 71.882 90)
+			(at 153.924 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -766,7 +758,7 @@
 			)
 		)
 		(property "Value" "Thermistor"
-			(at 179.07 72.39 90)
+			(at 153.67 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -775,7 +767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 68.58 0)
+			(at 153.67 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -784,7 +776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 68.58 0)
+			(at 153.67 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -793,7 +785,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor"
-			(at 179.07 68.58 0)
+			(at 153.67 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -818,7 +810,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 82.55 0)
+		(at 99.06 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -827,7 +819,7 @@
 		(fields_autoplaced yes)
 		(uuid "88bcda32-04a0-440d-a74d-536d59328b1a")
 		(property "Reference" "#PWR014"
-			(at 96.52 88.9 0)
+			(at 99.06 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -836,7 +828,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 87.63 0)
+			(at 99.06 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -844,7 +836,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 82.55 0)
+			(at 99.06 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -853,7 +845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 82.55 0)
+			(at 99.06 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -862,7 +854,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 82.55 0)
+			(at 99.06 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -884,7 +876,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 193.04 68.58 270)
+		(at 167.64 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -892,7 +884,7 @@
 		(dnp no)
 		(uuid "957434f3-c9fb-4583-95f2-75e1fff7677b")
 		(property "Reference" "TH3"
-			(at 193.294 71.882 90)
+			(at 167.894 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -900,7 +892,7 @@
 			)
 		)
 		(property "Value" "Thermistor"
-			(at 193.04 72.39 90)
+			(at 167.64 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -909,7 +901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 68.58 0)
+			(at 167.64 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,7 +910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 68.58 0)
+			(at 167.64 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,7 +919,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor"
-			(at 193.04 68.58 0)
+			(at 167.64 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -952,7 +944,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 163.83 68.58 270)
+		(at 138.43 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -960,7 +952,7 @@
 		(dnp no)
 		(uuid "b3920643-e56f-4ad7-b977-babf69de6bb3")
 		(property "Reference" "TH1"
-			(at 164.084 71.882 90)
+			(at 138.684 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,7 +960,7 @@
 			)
 		)
 		(property "Value" "Thermistor"
-			(at 163.83 72.39 90)
+			(at 138.43 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 68.58 0)
+			(at 138.43 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +978,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 68.58 0)
+			(at 138.43 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,7 +987,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor"
-			(at 163.83 68.58 0)
+			(at 138.43 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1020,7 +1012,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 110.49 0)
+		(at 97.79 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1029,7 +1021,7 @@
 		(fields_autoplaced yes)
 		(uuid "c553c566-5e26-4384-a189-6d57ad20fb28")
 		(property "Reference" "#PWR013"
-			(at 95.25 116.84 0)
+			(at 97.79 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1038,7 +1030,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 115.57 0)
+			(at 97.79 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1046,7 +1038,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 110.49 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1055,7 +1047,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 110.49 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1064,7 +1056,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 110.49 0)
+			(at 97.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
