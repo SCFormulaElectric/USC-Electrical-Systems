@@ -4689,6 +4689,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 199.39) (xy 142.24 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40d4a83e-8d02-451e-b3b2-db4be1281782")
+	)
+	(wire
+		(pts
 			(xy 262.89 55.88) (xy 262.89 125.73)
 		)
 		(stroke
@@ -7536,6 +7546,28 @@
 			)
 		)
 	)
+	(global_label "SDC3"
+		(shape input)
+		(at 142.24 199.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e5537625-5b0e-46cd-a71f-e0d2a066da62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.24 191.4458 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TSMS_check"
 		(shape output)
 		(at 158.75 205.74 90)
@@ -7549,6 +7581,28 @@
 		(uuid "ebd09691-6e6b-4e8b-ad1c-6de013e4233d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 158.75 191.5857 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDC2"
+		(shape input)
+		(at 81.28 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ec4962b5-6c09-496a-828f-fb85642a2c97")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.2242 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7802,6 +7856,18 @@
 		)
 		(uuid "4c9e7d02-6d4e-4d8d-aa2a-06b289a40acd")
 	)
+	(hierarchical_label "SDC3"
+		(shape input)
+		(at 142.24 214.63 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59f34dfb-543a-49fe-ba80-62c2cad41342")
+	)
 	(hierarchical_label "TSMS_in"
 		(shape input)
 		(at 157.48 214.63 270)
@@ -8005,6 +8071,18 @@
 			(justify left)
 		)
 		(uuid "a6fc1a98-7750-4e59-9257-10f5fdcbc4f7")
+	)
+	(hierarchical_label "GLVMS_in"
+		(shape input)
+		(at 81.28 55.88 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b22a0d19-de30-4c44-ac71-aac42be801fd")
 	)
 	(hierarchical_label "Throttle2"
 		(shape input)
@@ -8902,7 +8980,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSAE:switch_moduel")
 		(lib_id "FSAE:switch_moduel")
 		(at 139.7 73.66 0)
 		(mirror x)
@@ -9321,7 +9398,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSAE:switch_moduel")
 		(lib_id "FSAE:switch_moduel")
 		(at 119.38 63.5 0)
 		(mirror x)

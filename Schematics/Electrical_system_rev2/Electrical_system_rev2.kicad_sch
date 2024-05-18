@@ -3950,12 +3950,6 @@
 		(uuid "389da5da-e334-41b9-993d-94df1d76c491")
 	)
 	(junction
-		(at 288.29 210.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4367c6ba-d79a-4da7-98ca-ecb06038d2b9")
-	)
-	(junction
 		(at 300.99 210.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5244,6 +5238,16 @@
 		)
 		(uuid "3a87f32d-ebd5-45ff-91c8-6c7dd574597c")
 	)
+	(wire
+		(pts
+			(xy 306.07 170.18) (xy 306.07 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b40c331-7c69-4878-af2f-b6f91d45d13a")
+	)
 	(bus
 		(pts
 			(xy 415.29 115.57) (xy 415.29 118.11)
@@ -5808,16 +5812,6 @@
 		)
 		(uuid "7635c760-0ad4-41ec-81b5-30540e4e3286")
 	)
-	(wire
-		(pts
-			(xy 284.48 210.82) (xy 288.29 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77f1c454-cd2d-4806-b97a-3168b5ae0c0f")
-	)
 	(bus
 		(pts
 			(xy 313.69 151.13) (xy 316.23 151.13)
@@ -5838,6 +5832,16 @@
 			(color 204 102 0 1)
 		)
 		(uuid "7c0f3428-cff5-453f-9e6f-c11276805157")
+	)
+	(wire
+		(pts
+			(xy 306.07 148.59) (xy 306.07 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c13d6cc-fe83-438c-a31e-3d13ded73c75")
 	)
 	(wire
 		(pts
@@ -7893,6 +7897,28 @@
 			)
 		)
 	)
+	(global_label "SDC_to_SDB"
+		(shape output)
+		(at 306.07 175.26 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a540db3d-c580-4d55-9168-25a3d8d5f9af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 306.07 189.5541 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SIN1"
 		(shape bidirectional)
 		(at 271.78 323.85 270)
@@ -7977,28 +8003,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SDC_to_SDB"
-		(shape output)
-		(at 284.48 210.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "df38134a-55c3-4dd3-a537-d61d75a737cc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.1859 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -12538,7 +12542,7 @@
 			)
 			(uuid "3136206d-0959-4c1b-8f24-e11eb4851156")
 		)
-		(pin "GLV_switch" input
+		(pin "GLVMS_in" input
 			(at 311.15 148.59 270)
 			(effects
 				(font
@@ -12577,6 +12581,56 @@
 				(justify left)
 			)
 			(uuid "5feb6a8f-17ba-4b9f-9197-0a2eeef84253")
+		)
+		(pin "SDC3" input
+			(at 306.07 148.59 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5039b667-6324-437d-be9d-06016d31d445")
+		)
+		(pin "fan1-" input
+			(at 288.29 148.59 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "52e5489b-d988-4238-ac39-ec3992854f29")
+		)
+		(pin "fan2-" input
+			(at 284.48 148.59 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "18ab9acb-981d-47d6-bb6f-4f5b7bd09d34")
+		)
+		(pin "Reset_out" input
+			(at 299.72 148.59 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "32a342e1-4192-49da-ba7b-4a0b07424f1b")
+		)
+		(pin "pump2-" input
+			(at 295.91 148.59 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1160db48-df29-4212-9b8e-16b28fa646fc")
 		)
 		(instances
 			(project "Electrical_system"
