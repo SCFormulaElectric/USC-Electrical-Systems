@@ -9445,104 +9445,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x12_Pin")
-		(at 265.43 153.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "181fc13a-107f-44a4-bffe-bd950ace43e2")
-		(property "Reference" "J17"
-			(at 248.92 150.495 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DTM06-12SA"
-			(at 249.428 145.923 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 265.43 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29156560-fe87-453c-9df4-93e6c5f983d1")
-		)
-		(pin "10"
-			(uuid "368b7ac8-8715-4bce-afa3-ba769706c1ff")
-		)
-		(pin "11"
-			(uuid "4610a918-a46a-43ec-8ec3-381e5c53dd88")
-		)
-		(pin "12"
-			(uuid "2a05cf28-add0-494d-bb7c-074b42ee7c61")
-		)
-		(pin "2"
-			(uuid "e0850eae-3ec8-4eb4-b5aa-4c83c503f09f")
-		)
-		(pin "3"
-			(uuid "3e1f6c7e-e3d0-47e2-b45a-8824f849cd00")
-		)
-		(pin "4"
-			(uuid "3989274f-fe0b-49d8-bbdc-7531194dfb0b")
-		)
-		(pin "5"
-			(uuid "5f8fd823-b28f-4b45-a72f-e8271472236d")
-		)
-		(pin "6"
-			(uuid "2cef955b-eb0f-4bf1-a8aa-8168979eec3a")
-		)
-		(pin "7"
-			(uuid "57d188b2-6aac-4051-b3c3-71f5bc9ad647")
-		)
-		(pin "8"
-			(uuid "92d79cc2-07b6-4cf7-b8a4-80785ed1461b")
-		)
-		(pin "9"
-			(uuid "34e2bfd6-06c7-4ca9-b960-10df066e7910")
-		)
-		(instances
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
-					(reference "J17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDPWR")
 		(at 249.555 197.485 180)
 		(unit 1)
@@ -9604,6 +9506,105 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x12_Socket")
+		(at 265.43 153.67 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e4bd517-ed10-438c-aa5d-1447afc02c6a")
+		(property "Reference" "J11"
+			(at 248.92 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DTM04-12PA-L012"
+			(at 248.92 150.241 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15e6a4f7-b8c5-4d5f-99ac-73207c1c5b64")
+		)
+		(pin "10"
+			(uuid "f7710ed9-f3b0-40a0-8806-4c911fd10743")
+		)
+		(pin "11"
+			(uuid "3a847f7b-0565-4ec0-aace-8f8b86424e4f")
+		)
+		(pin "12"
+			(uuid "bdb0b841-ca72-480a-8c5f-f29cd7bc8567")
+		)
+		(pin "2"
+			(uuid "b5a456ce-0f16-4cea-b127-d7d40f495e13")
+		)
+		(pin "3"
+			(uuid "38a4735a-a6ed-457f-a021-b6f3571fe9bc")
+		)
+		(pin "4"
+			(uuid "a06747fd-bac3-4743-8464-17c8495901ee")
+		)
+		(pin "5"
+			(uuid "d241f523-fa45-4d61-8d05-e59cee8febba")
+		)
+		(pin "6"
+			(uuid "842192b2-812d-4943-8053-a82e55387184")
+		)
+		(pin "7"
+			(uuid "e088ce1a-ce33-4a26-bdfe-96972da744ea")
+		)
+		(pin "8"
+			(uuid "c9eb7c53-8cab-4e98-91b1-47d348238606")
+		)
+		(pin "9"
+			(uuid "14765ab4-7f80-4045-99ae-82d27c8b6636")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -10022,104 +10023,6 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x12_Socket")
-		(at 316.23 165.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a0b8488-a07d-4b84-9264-fd505b8734c4")
-		(property "Reference" "J14"
-			(at 299.72 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DTM04-12PA-L012"
-			(at 299.72 168.529 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 316.23 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 316.23 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 316.23 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ae8f022-e27d-4858-b94c-2afcf302bd2c")
-		)
-		(pin "10"
-			(uuid "72ebc487-35d6-4604-ab7d-1c5395b79e8a")
-		)
-		(pin "11"
-			(uuid "d3a049a4-2697-4249-8ed0-1d9319ca19bc")
-		)
-		(pin "12"
-			(uuid "f56e38d6-a9f4-4c05-842c-cf788c17768e")
-		)
-		(pin "2"
-			(uuid "5164c370-0fec-4b66-b771-5294c4171379")
-		)
-		(pin "3"
-			(uuid "b97d5dff-62e2-4d46-b662-d12fc4951a35")
-		)
-		(pin "4"
-			(uuid "a408f774-9a31-40f5-9c90-70f9238c1071")
-		)
-		(pin "5"
-			(uuid "3f6453ad-f23c-48c0-95ec-4567a634b03e")
-		)
-		(pin "6"
-			(uuid "bec6ff28-8e34-457e-825b-93c73934133e")
-		)
-		(pin "7"
-			(uuid "f512b23f-8332-4606-802d-67da86dd43c8")
-		)
-		(pin "8"
-			(uuid "714a7bcb-71aa-411f-ae1f-817c2729e860")
-		)
-		(pin "9"
-			(uuid "06cd50cf-af51-4377-ac7f-adb8e2c8f646")
-		)
-		(instances
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
-					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -11165,104 +11068,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x12_Pin")
-		(at 316.23 160.02 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a792f449-02d1-4595-9996-505f7f3bd6e3")
-		(property "Reference" "J13"
-			(at 299.72 156.845 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DTM06-12SA"
-			(at 300.228 152.273 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 316.23 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 316.23 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 316.23 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c2ebdd29-3fdc-4745-9cd2-4fbed4671ecd")
-		)
-		(pin "10"
-			(uuid "36f7d3ed-7b71-464a-9c5b-90dd60839b07")
-		)
-		(pin "11"
-			(uuid "47578f5e-21a6-42d1-a6ca-0d067bc3b0d0")
-		)
-		(pin "12"
-			(uuid "494a929f-2b75-4ec3-9da5-74ac593ae259")
-		)
-		(pin "2"
-			(uuid "99a65d12-f1ae-4378-94db-598f8bbe02a5")
-		)
-		(pin "3"
-			(uuid "b3907f19-ffa0-405b-aa5a-71fd53807bda")
-		)
-		(pin "4"
-			(uuid "02d280c8-76b5-41ad-b266-605e33a4348e")
-		)
-		(pin "5"
-			(uuid "b52bcc33-cd13-49ca-bd5d-6a0a1465089b")
-		)
-		(pin "6"
-			(uuid "8358a155-cd4c-4821-bfad-e5ec7a62b644")
-		)
-		(pin "7"
-			(uuid "df13d4d5-9f6c-49d4-ac00-57f3363c81a0")
-		)
-		(pin "8"
-			(uuid "d00daeff-7cf5-4570-9004-3acc4910f2f1")
-		)
-		(pin "9"
-			(uuid "c147ac7f-2834-4891-98c2-86b63bc8d5e7")
-		)
-		(instances
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 281.305 202.565 270)
 		(mirror x)
@@ -11435,6 +11240,105 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x12_Pin")
+		(at 316.23 165.1 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ada22638-053a-47d1-9300-82aad211602c")
+		(property "Reference" "J9"
+			(at 299.72 168.275 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DTM06-12SA"
+			(at 300.228 172.847 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.23 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bf246c0-ffef-4523-972c-d9698f7eb714")
+		)
+		(pin "10"
+			(uuid "0a9ceed5-cfe0-4a4c-bffa-09c7bd0139ca")
+		)
+		(pin "11"
+			(uuid "b7fbfde9-e5d7-448d-976c-4ec5fd059c8c")
+		)
+		(pin "12"
+			(uuid "2dd94458-ae90-429b-9fb8-3e366f2d68c7")
+		)
+		(pin "2"
+			(uuid "ce7ccc4f-7de1-4d82-b995-4b35131b0964")
+		)
+		(pin "3"
+			(uuid "c8d6d1af-f94e-4624-9dc0-961a3405b6b6")
+		)
+		(pin "4"
+			(uuid "8b851a33-faef-4dc5-b334-bd4b04884223")
+		)
+		(pin "5"
+			(uuid "bf8afb75-39fb-4a7c-b347-82be43befe68")
+		)
+		(pin "6"
+			(uuid "d8df247a-a2cd-4e6d-a2c1-4419fd037313")
+		)
+		(pin "7"
+			(uuid "9909d42d-96f2-469e-8e89-09fab14e98ea")
+		)
+		(pin "8"
+			(uuid "a0b50b64-f07e-43fe-8b8e-1c125aa175f4")
+		)
+		(pin "9"
+			(uuid "9436c352-c4d0-439e-82b0-1bb18942a5dd")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPST")
 		(at 375.92 261.62 0)
 		(unit 1)
@@ -11525,6 +11429,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12076,6 +11981,204 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x12_Pin")
+		(at 265.43 158.75 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb7947a8-0a53-4b78-a644-a4b0633597e7")
+		(property "Reference" "J12"
+			(at 248.92 161.925 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DTM06-12SA"
+			(at 249.428 166.497 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a8d9245-bf42-4799-9d24-f696444acb4b")
+		)
+		(pin "10"
+			(uuid "4846f4d1-9c0c-4582-aeba-70cdb4cd6465")
+		)
+		(pin "11"
+			(uuid "eea7c578-1bb7-4468-a874-d9cf057047c3")
+		)
+		(pin "12"
+			(uuid "9822dc9f-481a-41b5-891e-f767dbc50438")
+		)
+		(pin "2"
+			(uuid "5d1d1b25-d1fe-48b2-8fc8-b1e779f9acc4")
+		)
+		(pin "3"
+			(uuid "386ee98e-d448-40fe-9855-4a218a3f6249")
+		)
+		(pin "4"
+			(uuid "24fff93b-8150-41f3-a9b0-829a50db4373")
+		)
+		(pin "5"
+			(uuid "53516802-9c55-4f0e-8232-1a11fd0d5842")
+		)
+		(pin "6"
+			(uuid "542481ce-9600-4ee9-a350-d4ac7c1183f7")
+		)
+		(pin "7"
+			(uuid "4a5386a4-14a2-46c4-9fef-0e212e5c2d83")
+		)
+		(pin "8"
+			(uuid "4cfc333e-29ea-4cdc-a4e1-658ff9e40d66")
+		)
+		(pin "9"
+			(uuid "e6a5a47a-8939-47ef-9b94-399e84c1972c")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x12_Socket")
+		(at 316.23 160.02 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd3077ec-b61d-4327-aa6e-f0b494afb25c")
+		(property "Reference" "J10"
+			(at 299.72 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DTM04-12PA-L012"
+			(at 299.72 156.591 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.23 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55a85f2a-8431-44a7-8d94-181d5987d8a4")
+		)
+		(pin "10"
+			(uuid "82e354b4-526b-4b22-bf4e-a8a433205ba8")
+		)
+		(pin "11"
+			(uuid "e831d84e-1f4b-4d64-bd36-e3513c5d2015")
+		)
+		(pin "12"
+			(uuid "0766c0ab-c2aa-4398-b2e1-0a3feb7bbc86")
+		)
+		(pin "2"
+			(uuid "93f6e14f-2289-4c63-baac-144552f6e316")
+		)
+		(pin "3"
+			(uuid "dd4de747-fecb-409f-be77-e23005788995")
+		)
+		(pin "4"
+			(uuid "7afe82d8-ee1b-4d3e-9407-6d11dd4457ce")
+		)
+		(pin "5"
+			(uuid "fccd9f1d-c321-4dc0-a562-34f101956292")
+		)
+		(pin "6"
+			(uuid "9ccb91a4-5637-4abd-8ebe-e6314ee0d684")
+		)
+		(pin "7"
+			(uuid "7cb4884b-620c-4cc0-bc42-6ad9b932b98a")
+		)
+		(pin "8"
+			(uuid "41538647-6acc-4bcc-91dd-d87c0e2482b2")
+		)
+		(pin "9"
+			(uuid "265bd8e5-108d-431e-b814-ac0c1861fd7d")
+		)
+		(instances
+			(project "Electrical_system_rev2"
+				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x12_Pin")
 		(at 119.38 107.95 0)
 		(mirror x)
 		(unit 1)
@@ -12290,105 +12393,6 @@
 			(project "Electrical_system_rev2"
 				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x12_Socket")
-		(at 265.43 158.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dcee1a38-8472-49b2-bfd5-54d3f746f5ed")
-		(property "Reference" "J18"
-			(at 250.698 180.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "DTM04-12PA-L012"
-			(at 248.92 162.179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 265.43 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "39470cac-4621-4efd-95d3-99d8cfb42375")
-		)
-		(pin "10"
-			(uuid "8f3894e4-483e-49bb-9f3e-60b8f0c2411e")
-		)
-		(pin "11"
-			(uuid "4c60c5b2-92e5-41ff-8239-f1ac2a982f95")
-		)
-		(pin "12"
-			(uuid "f7bf4068-a187-40a7-8abb-2ed731f3b645")
-		)
-		(pin "2"
-			(uuid "fb63c08e-3742-4eb4-91ab-037431439ce8")
-		)
-		(pin "3"
-			(uuid "0eb8afa4-70f9-427a-bdbe-ff55fbc49dde")
-		)
-		(pin "4"
-			(uuid "e88548ee-498a-4b8d-9910-2f3b2f18016d")
-		)
-		(pin "5"
-			(uuid "eb407674-4719-4862-8b16-b99d41254a9b")
-		)
-		(pin "6"
-			(uuid "e9751711-1b66-4675-96dd-9f15794c53d1")
-		)
-		(pin "7"
-			(uuid "f8786c30-17a0-400c-bab7-d63fa1e2a292")
-		)
-		(pin "8"
-			(uuid "c4f87925-15da-4bf6-9144-73e90934ee4a")
-		)
-		(pin "9"
-			(uuid "39b6be4a-c6b7-4aa1-9c17-99a7801468b2")
-		)
-		(instances
-			(project "Electrical_system_rev2"
-				(path "/e737253b-bf2e-46db-bb95-366ad16822f4"
-					(reference "J18")
 					(unit 1)
 				)
 			)
