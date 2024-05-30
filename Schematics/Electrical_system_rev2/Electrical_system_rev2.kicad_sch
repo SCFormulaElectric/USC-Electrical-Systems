@@ -3839,6 +3839,15 @@
 		(uuid "3417575a-9795-4d5b-827c-4d581460d6c9")
 	)
 	(bus_entry
+		(at 391.16 125.73)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38ece377-80e3-4f3f-8cd8-c002090ac392")
+	)
+	(bus_entry
 		(at 457.2 123.19)
 		(size -2.54 -2.54)
 		(stroke
@@ -5515,6 +5524,17 @@
 		)
 		(uuid "723d3828-7d98-4179-999a-0e2b1dec7fa3")
 	)
+	(bus
+		(pts
+			(xy 393.7 123.19) (xy 393.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 0 0 1)
+		)
+		(uuid "72d8fec7-402d-4309-9c17-bc5e1bb7b345")
+	)
 	(wire
 		(pts
 			(xy 212.09 196.85) (xy 365.76 196.85)
@@ -5566,6 +5586,16 @@
 			(type default)
 		)
 		(uuid "7c13d6cc-fe83-438c-a31e-3d13ded73c75")
+	)
+	(wire
+		(pts
+			(xy 389.89 125.73) (xy 391.16 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f581a4f-fce1-4334-b396-08bfd6576a3c")
 	)
 	(bus
 		(pts
@@ -6071,7 +6101,7 @@
 	)
 	(bus
 		(pts
-			(xy 393.7 120.65) (xy 393.7 127)
+			(xy 393.7 120.65) (xy 393.7 123.19)
 		)
 		(stroke
 			(width 0)
@@ -11086,7 +11116,7 @@
 			(uuid "dca8a3d4-84c6-4c32-b37b-27affc76083a")
 		)
 		(pin "12V+_dash" input
-			(at 375.92 118.11 0)
+			(at 375.92 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11096,7 +11126,7 @@
 			(uuid "05600d00-2377-4917-bab4-c961a4a229f7")
 		)
 		(pin "5V+_dash" input
-			(at 375.92 120.65 0)
+			(at 375.92 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11106,7 +11136,7 @@
 			(uuid "2dfbe41e-3933-4c90-806d-213c01430389")
 		)
 		(pin "Reset_in" input
-			(at 375.92 123.19 0)
+			(at 375.92 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11236,12 +11266,12 @@
 			(uuid "77e241de-4fa8-45fc-ae17-7e01d8e803e6")
 		)
 		(pin "SDC_to_TSMS" input
-			(at 220.98 148.59 270)
+			(at 375.92 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 			(uuid "22184299-b4ef-471d-8695-d0767f20e4d2")
 		)
@@ -11254,16 +11284,6 @@
 				(justify left)
 			)
 			(uuid "bb4f5961-2abf-48f8-95c5-af528e32f6fe")
-		)
-		(pin "GLVMS_in" input
-			(at 223.52 148.59 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "bfe249ae-22f1-457d-8e38-f82cc751868c")
 		)
 		(instances
 			(project "Electrical_system"
