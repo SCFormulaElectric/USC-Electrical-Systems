@@ -1,0 +1,9 @@
+The Elcon CAN bus specification is attached.  It complies with CAN 2.0B and J1939 protocols.  1.8KW and 3.3KW chargers use 250Kbps baud rate and 29-bit extended frame CAN ID.  6.6KW chargers use 500Kbps.
+ 
+The charger expects every second to receive a CAN message from the BMS with CAN ID 1806E5F4 and 8 data bytes with voltage and current required.  For example 98V and 16A would be 980 = 03D4 hex and 0160 = 00A0 hex so the 8 data bytes would be 03D4 00A0 0000 0000.  If the charger does not receive a valid CAN message in 5 seconds, it stops charging with a green blinking LED.  It starts charging again when it gets a valid CAN message with a red blinking LED.
+ 
+The charger sends out every second a status message with CAN ID 18FF50E5 with voltage, current and status information.
+ 
+Up to four Elcon PFC chargers can be on the same CAN bus with CAN IDs of E5, E7, E8 and E9.
+ 
+A 120 ohm termination resistor is required between CAN-L and CAN-H.
