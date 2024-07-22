@@ -25,7 +25,7 @@ for directory in "$@"; do
 		#optimized for JLCPCB:
 		kicad-cli pcb export gerbers \
 		    --output "$temp_dir" \
-		    --layers F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In1.Cu,In2.Cu \
+		    --layers F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts,In1.Cu,In2.Cu,In3.Cu,In4.Cu \
 		    --exclude-value \
 		    --include-border-title \
 		    --no-x2 \
