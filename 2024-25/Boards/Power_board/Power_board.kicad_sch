@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "c7bceacb-49ea-4a13-95e2-5e56f8e6630a")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "0430451001:430451001"
 			(pin_names
@@ -928,6 +928,139 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers hide)
 			(pin_names
@@ -1021,6 +1154,319 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Simulation_SPICE:NMOS"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NMOS"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, drain/source/gate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "VDMOS"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NMOS_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "NMOS_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1360,94 +1806,260 @@
 				)
 			)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
-		(at 139.7 63.5)
+		(at 227.33 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09ecc357-611b-4643-b6ec-4ec9083f5707")
 	)
 	(junction
-		(at 182.88 63.5)
+		(at 270.51 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0cc86c64-8f6b-4063-bf08-22f4ad1c262c")
 	)
 	(junction
-		(at 167.64 63.5)
+		(at 255.27 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10eada7f-a8e2-4361-aec7-d6e1db20ae04")
 	)
 	(junction
-		(at 77.47 63.5)
+		(at 111.76 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4c2a1449-c2c4-4382-83aa-2d11158ac074")
+		(uuid "328b953e-0c3f-41ad-9d7e-558faf6c66b4")
 	)
 	(junction
-		(at 107.95 63.5)
+		(at 121.92 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33401a0c-6fdb-46a0-ba82-ae8e8afca7a6")
+	)
+	(junction
+		(at 219.71 201.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "509f2b67-4f49-4fae-8718-16a7c5281da9")
+	)
+	(junction
+		(at 53.34 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53fb6096-da8b-4f32-8d01-c1e601abdc5e")
+	)
+	(junction
+		(at 195.58 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c19afe8-b8ab-40db-97ca-7e2282943c88")
 	)
 	(junction
-		(at 47.625 63.5)
+		(at 82.55 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "71a8e52c-79d2-4699-a209-29dea189175c")
+		(uuid "60704717-2e72-4ecf-a477-ffcb27c7b38d")
 	)
 	(junction
-		(at 151.765 63.5)
+		(at 168.91 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8745a2e7-b0d5-46a3-a635-229be2000512")
+	)
+	(junction
+		(at 219.71 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a11bd11-9327-4cea-83a6-9e44a3882363")
+	)
+	(junction
+		(at 151.13 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f849e6a-75ad-4b39-96e9-9e1f2ba17a09")
+	)
+	(junction
+		(at 219.71 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93b3ae67-56fc-48f6-abde-a8277cd9d2f5")
+	)
+	(junction
+		(at 219.71 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6d7334a-e9cd-4c76-9af2-90e43ff22308")
+	)
+	(junction
+		(at 238.76 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af145686-81a7-4039-a186-65410cca188a")
 	)
 	(junction
-		(at 137.795 63.5)
+		(at 140.97 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbbbff11-bd29-4a1d-8e63-c386e08a66e4")
+	)
+	(junction
+		(at 224.79 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7c5a208-5f8b-4f7e-9af1-99eea7a95495")
 	)
 	(junction
-		(at 212.09 63.5)
+		(at 219.71 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd78a842-5c28-4b79-8b32-0efc480157ad")
+	)
+	(junction
+		(at 299.72 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf42777f-1901-40d3-b1ae-191fdd2670f4")
 	)
 	(junction
-		(at 92.075 63.5)
+		(at 179.07 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daf5d40e-95d2-4c57-a2d4-1961aaf327ae")
 	)
 	(junction
-		(at 62.865 63.5)
+		(at 92.71 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "efa73687-a801-448c-b1b1-1fd591e014e0")
+		(uuid "dddfe3c5-5cb2-4f95-98fb-1b2ada7c8bd0")
 	)
 	(junction
-		(at 123.19 63.5)
+		(at 210.82 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f468c1b7-b862-4671-8d65-d907c43cb69f")
 	)
 	(junction
-		(at 227.965 63.5)
+		(at 314.96 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8972c19-1aa2-42b1-80ee-88ddadfbefcc")
 	)
 	(junction
-		(at 197.485 63.5)
+		(at 284.48 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9c947cb-04c8-4228-8ed8-8a082dc18de8")
 	)
 	(wire
 		(pts
-			(xy 197.485 63.5) (xy 212.09 63.5)
+			(xy 82.55 125.73) (xy 82.55 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e264a9-9a9a-4720-a403-a67f66be73fd")
+	)
+	(wire
+		(pts
+			(xy 284.48 88.9) (xy 299.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1457,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.205 63.5) (xy 227.965 63.5)
+			(xy 330.2 88.9) (xy 314.96 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1467,7 +2079,27 @@
 	)
 	(wire
 		(pts
-			(xy 227.965 120.65) (xy 227.965 104.14)
+			(xy 219.71 191.77) (xy 219.71 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0739d775-8c19-4d21-aec7-e1869cca1e6a")
+	)
+	(wire
+		(pts
+			(xy 218.44 204.47) (xy 219.71 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f09848d-79eb-4fd3-b4b9-58bc49cf6779")
+	)
+	(wire
+		(pts
+			(xy 314.96 146.05) (xy 314.96 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1477,17 +2109,47 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 120.015) (xy 69.85 116.205)
+			(xy 168.91 142.24) (xy 171.45 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b0d6530-31d4-4f88-930e-85354d0ca27f")
+		(uuid "10982650-aad3-443b-b943-50f9cf36a3ff")
 	)
 	(wire
 		(pts
-			(xy 123.19 120.65) (xy 123.19 104.14)
+			(xy 133.35 156.21) (xy 133.35 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bccee04-fe8d-4109-856d-541268ced971")
+	)
+	(wire
+		(pts
+			(xy 218.44 201.93) (xy 219.71 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e55bf52-6a75-41a4-947b-298340b4e66b")
+	)
+	(wire
+		(pts
+			(xy 111.76 157.48) (xy 111.76 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21598b0c-438e-4d3d-a08d-5b45b27afc0e")
+	)
+	(wire
+		(pts
+			(xy 210.82 146.05) (xy 210.82 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1497,7 +2159,27 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 104.14) (xy 92.075 111.125)
+			(xy 161.29 156.21) (xy 161.29 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24995c00-20ea-4ae4-b040-680d5fa7f838")
+	)
+	(wire
+		(pts
+			(xy 219.71 201.93) (xy 219.71 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326dc130-2fa9-47ea-92ce-479e14a21304")
+	)
+	(wire
+		(pts
+			(xy 179.07 129.54) (xy 179.07 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1507,7 +2189,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 182.88 104.14)
+			(xy 270.51 146.05) (xy 270.51 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1517,7 +2199,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 125.73) (xy 31.75 121.285)
+			(xy 63.5 151.13) (xy 63.5 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1527,7 +2209,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 125.73) (xy 77.47 121.285)
+			(xy 151.13 151.13) (xy 151.13 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1537,7 +2219,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.865 63.5) (xy 62.865 88.9)
+			(xy 121.92 88.9) (xy 121.92 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1547,7 +2229,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 125.73) (xy 92.075 121.285)
+			(xy 179.07 151.13) (xy 179.07 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1557,7 +2239,37 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 63.5) (xy 167.64 63.5)
+			(xy 151.13 88.9) (xy 179.07 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7d69a0-9215-4e41-8316-c8cad4c0869b")
+	)
+	(wire
+		(pts
+			(xy 82.55 142.24) (xy 82.55 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "421fdd2c-fde3-4887-85aa-08b7be123c5a")
+	)
+	(wire
+		(pts
+			(xy 168.91 142.24) (xy 168.91 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f19103-e50c-42e0-b75e-56da93f6107d")
+	)
+	(wire
+		(pts
+			(xy 270.51 88.9) (xy 255.27 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1567,7 +2279,17 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 63.5) (xy 151.765 63.5)
+			(xy 219.71 199.39) (xy 219.71 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b2966d-8bad-4e7f-9b30-af134341de6c")
+	)
+	(wire
+		(pts
+			(xy 255.27 88.9) (xy 238.76 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1577,7 +2299,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 63.5) (xy 107.95 63.5)
+			(xy 210.82 88.9) (xy 195.58 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1587,7 +2309,47 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 120.65) (xy 167.64 104.14)
+			(xy 168.91 137.16) (xy 168.91 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47d4030d-4959-44c4-923f-6f9b76cc63d8")
+	)
+	(wire
+		(pts
+			(xy 74.93 156.21) (xy 74.93 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e10f78-7cdb-4172-ba5b-6ecb8371b6b6")
+	)
+	(wire
+		(pts
+			(xy 111.76 142.24) (xy 114.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48dea090-a818-4646-ac92-f1415a4a4625")
+	)
+	(wire
+		(pts
+			(xy 218.44 199.39) (xy 219.71 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f96057-ca5a-44a3-87ef-dc6f8ca9cb19")
+	)
+	(wire
+		(pts
+			(xy 255.27 146.05) (xy 255.27 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1597,7 +2359,27 @@
 	)
 	(wire
 		(pts
-			(xy 243.205 88.9) (xy 243.205 63.5)
+			(xy 45.72 151.13) (xy 45.72 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "594035fc-b07d-4cf3-8620-8fca2ca37cd7")
+	)
+	(wire
+		(pts
+			(xy 111.76 137.16) (xy 111.76 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5beefe59-c66f-4bea-ba5c-8c3df24a5598")
+	)
+	(wire
+		(pts
+			(xy 330.2 114.3) (xy 330.2 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1607,7 +2389,7 @@
 	)
 	(wire
 		(pts
-			(xy 197.485 88.9) (xy 197.485 63.5)
+			(xy 284.48 114.3) (xy 284.48 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1617,7 +2399,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 111.125) (xy 31.75 104.14)
+			(xy 63.5 135.89) (xy 63.5 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1627,7 +2409,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.765 120.65) (xy 151.765 104.14)
+			(xy 53.34 135.89) (xy 53.34 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a74c21-d237-476e-9c94-ea91f4070ce2")
+	)
+	(wire
+		(pts
+			(xy 238.76 146.05) (xy 238.76 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1637,7 +2429,37 @@
 	)
 	(wire
 		(pts
-			(xy 197.485 63.5) (xy 182.88 63.5)
+			(xy 104.14 156.21) (xy 104.14 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7182628b-50f6-46a7-8100-f77673badbb2")
+	)
+	(wire
+		(pts
+			(xy 53.34 140.97) (xy 55.88 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a15cdb-7ff1-4d8b-b773-7514508cb2cb")
+	)
+	(wire
+		(pts
+			(xy 140.97 137.16) (xy 140.97 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73b06d34-e782-43aa-878b-1a017c97d610")
+	)
+	(wire
+		(pts
+			(xy 284.48 88.9) (xy 270.51 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1647,7 +2469,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 63.5) (xy 92.075 63.5)
+			(xy 195.58 88.9) (xy 179.07 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1657,7 +2479,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 63.5) (xy 107.95 88.9)
+			(xy 195.58 88.9) (xy 195.58 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1667,27 +2489,27 @@
 	)
 	(wire
 		(pts
-			(xy 84.455 120.015) (xy 84.455 116.205)
+			(xy 219.71 205.74) (xy 219.71 204.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "817787a2-51c3-45fc-9114-2bef0073e1c7")
+		(uuid "831f9f2c-e14f-4707-9faa-0c1db3f4fc96")
 	)
 	(wire
 		(pts
-			(xy 24.13 116.205) (xy 24.13 120.015)
+			(xy 82.55 157.48) (xy 82.55 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "860f885d-0c93-4f53-832b-e1509c651ce5")
+		(uuid "8323bcf5-e796-4a0c-a064-d35240a7d1a3")
 	)
 	(wire
 		(pts
-			(xy 197.485 120.65) (xy 197.485 104.14)
+			(xy 284.48 146.05) (xy 284.48 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1697,7 +2519,27 @@
 	)
 	(wire
 		(pts
-			(xy 62.865 125.73) (xy 62.865 121.285)
+			(xy 111.76 125.73) (xy 111.76 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b52cd54-d977-4824-bb12-9cec1dc58b8e")
+	)
+	(wire
+		(pts
+			(xy 140.97 142.24) (xy 140.97 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8db7df81-2f42-49b5-aeaa-96e8b7901255")
+	)
+	(wire
+		(pts
+			(xy 121.92 151.13) (xy 121.92 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1707,7 +2549,17 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 125.73) (xy 47.625 121.285)
+			(xy 219.71 204.47) (xy 219.71 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "953363fc-7865-42b8-b14b-70644b3f7f51")
+	)
+	(wire
+		(pts
+			(xy 92.71 151.13) (xy 92.71 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1717,7 +2569,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 137.795 63.5)
+			(xy 227.33 88.9) (xy 224.79 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1727,7 +2579,7 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 63.5) (xy 31.75 63.5)
+			(xy 63.5 88.9) (xy 92.71 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1737,17 +2589,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 120.015) (xy 40.005 116.205)
+			(xy 168.91 125.73) (xy 168.91 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99854182-050b-4200-a8b6-fcd49311e2ea")
+		(uuid "9e5f89bf-4ec8-4014-9271-dd6b8ebdc49f")
 	)
 	(wire
 		(pts
-			(xy 227.965 88.9) (xy 227.965 63.5)
+			(xy 314.96 114.3) (xy 314.96 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1757,7 +2609,7 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 104.14) (xy 47.625 111.125)
+			(xy 92.71 129.54) (xy 92.71 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1767,7 +2619,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.965 63.5) (xy 212.09 63.5)
+			(xy 314.96 88.9) (xy 299.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1777,7 +2629,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 120.65) (xy 212.09 104.14)
+			(xy 299.72 146.05) (xy 299.72 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1787,7 +2639,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 120.65) (xy 107.95 104.14)
+			(xy 195.58 146.05) (xy 195.58 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1797,7 +2649,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 63.5) (xy 123.19 63.5)
+			(xy 224.79 88.9) (xy 210.82 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1807,27 +2659,37 @@
 	)
 	(wire
 		(pts
-			(xy 62.865 63.5) (xy 47.625 63.5)
+			(xy 53.34 124.46) (xy 53.34 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7f807d9-c933-43d5-a591-f8393c311a0a")
+		(uuid "bb01ab5e-898b-4697-ac0e-e3539a6a63b9")
 	)
 	(wire
 		(pts
-			(xy 77.47 63.5) (xy 62.865 63.5)
+			(xy 121.92 88.9) (xy 151.13 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb9dbdad-929d-4300-85f3-e218dd9cfe90")
+		(uuid "bd3c0d53-d266-481e-b8e8-436e6ac28a53")
 	)
 	(wire
 		(pts
-			(xy 151.765 63.5) (xy 139.7 63.5)
+			(xy 111.76 142.24) (xy 111.76 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1f1ed30-e32d-43e5-83a4-0113f059f7bc")
+	)
+	(wire
+		(pts
+			(xy 238.76 88.9) (xy 227.33 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1837,7 +2699,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 63.5) (xy 31.75 88.9)
+			(xy 63.5 88.9) (xy 63.5 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1847,7 +2709,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 63.5) (xy 92.075 88.9)
+			(xy 179.07 88.9) (xy 179.07 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1857,7 +2719,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 88.9) (xy 182.88 63.5)
+			(xy 270.51 114.3) (xy 270.51 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1867,17 +2729,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 63.5) (xy 77.47 63.5)
+			(xy 82.55 142.24) (xy 85.09 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d36da090-c37a-4e14-8ab5-4ec9c0bf39c3")
+		(uuid "cfbe9162-512d-47e6-9366-afd13372adcb")
 	)
 	(wire
 		(pts
-			(xy 167.64 88.9) (xy 167.64 63.5)
+			(xy 255.27 114.3) (xy 255.27 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1887,7 +2749,17 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 63.5) (xy 47.625 88.9)
+			(xy 53.34 156.21) (xy 53.34 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4e7c0ec-fd24-414f-801a-9c9874780418")
+	)
+	(wire
+		(pts
+			(xy 92.71 88.9) (xy 92.71 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1897,7 +2769,57 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 63.5) (xy 137.795 88.9)
+			(xy 53.34 140.97) (xy 53.34 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d94fc333-9516-42b7-81c1-234048683335")
+	)
+	(wire
+		(pts
+			(xy 140.97 125.73) (xy 140.97 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de7b6206-8d77-4662-96de-ff5928d526ab")
+	)
+	(wire
+		(pts
+			(xy 219.71 196.85) (xy 219.71 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1f4259a-5489-48db-b1f0-c7961e5c9cd8")
+	)
+	(wire
+		(pts
+			(xy 92.71 88.9) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e422b966-03da-4b24-9811-f98089bf4f63")
+	)
+	(wire
+		(pts
+			(xy 218.44 196.85) (xy 219.71 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e45f4045-32ee-4586-ac29-033256a9b37b")
+	)
+	(wire
+		(pts
+			(xy 224.79 88.9) (xy 224.79 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1907,7 +2829,17 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 88.9) (xy 212.09 63.5)
+			(xy 140.97 142.24) (xy 143.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7853799-b5ec-4b6c-ac3a-37dec77d4057")
+	)
+	(wire
+		(pts
+			(xy 299.72 114.3) (xy 299.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1917,7 +2849,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 63.5) (xy 77.47 88.9)
+			(xy 151.13 88.9) (xy 151.13 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1927,7 +2859,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.205 120.65) (xy 243.205 104.14)
+			(xy 330.2 146.05) (xy 330.2 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1937,17 +2869,27 @@
 	)
 	(wire
 		(pts
-			(xy 55.245 120.015) (xy 55.245 116.205)
+			(xy 219.71 194.31) (xy 218.44 194.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f079e0b5-9d57-4f54-8018-bec8ad8ad2f9")
+		(uuid "eea3df1c-7740-4769-a9d9-9ac9d62706de")
 	)
 	(wire
 		(pts
-			(xy 62.865 104.14) (xy 62.865 111.125)
+			(xy 140.97 157.48) (xy 140.97 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f49b2f23-0a4e-45a7-ad55-a6f82d3600eb")
+	)
+	(wire
+		(pts
+			(xy 121.92 129.54) (xy 121.92 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1957,7 +2899,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 63.5) (xy 123.19 88.9)
+			(xy 168.91 157.48) (xy 168.91 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f63200-b64d-4f0b-8afd-429cf361ef1a")
+	)
+	(wire
+		(pts
+			(xy 210.82 88.9) (xy 210.82 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1967,7 +2919,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 104.14) (xy 77.47 111.125)
+			(xy 151.13 129.54) (xy 151.13 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1977,7 +2929,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 120.65) (xy 137.795 104.14)
+			(xy 224.79 146.05) (xy 224.79 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1987,7 +2939,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.765 88.9) (xy 151.765 63.5)
+			(xy 82.55 137.16) (xy 82.55 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe1b24c3-adcc-4567-a9e5-2b3b200dd44e")
+	)
+	(wire
+		(pts
+			(xy 238.76 114.3) (xy 238.76 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1995,8 +2957,39 @@
 		)
 		(uuid "ff58b793-1fc9-430b-b5b1-50169e0f809a")
 	)
+	(text "Battery positive terminal"
+		(exclude_from_sim no)
+		(at 236.474 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "46e5951e-4c2d-42ac-9594-e5ef66f52b90")
+	)
+	(text "Battery negative terminal"
+		(exclude_from_sim no)
+		(at 230.886 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ae91aaa5-d080-41ab-8d2a-09a05a8ebd6c")
+	)
+	(label "12V+"
+		(at 53.34 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "03d87ded-1fcd-4ab6-b588-9647a8318cdf")
+	)
 	(label "D1"
-		(at 31.75 124.46 0)
+		(at 63.5 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2006,8 +2999,19 @@
 		)
 		(uuid "11bed625-ceae-464c-b0d0-874292f214bb")
 	)
+	(label "12V+"
+		(at 168.91 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a01b20f-6502-4662-b754-f7fd820b516d")
+	)
 	(label "D2"
-		(at 47.625 124.46 0)
+		(at 92.71 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2018,7 +3022,7 @@
 		(uuid "33219587-c6c4-4bdd-967b-ff7fc0681b62")
 	)
 	(label "D5"
-		(at 92.075 124.46 0)
+		(at 179.07 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2029,7 +3033,7 @@
 		(uuid "4ef33860-e90d-4923-82b1-ecca73caa499")
 	)
 	(label "D3"
-		(at 62.865 124.46 0)
+		(at 121.92 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2039,8 +3043,19 @@
 		)
 		(uuid "602974eb-36e8-4087-8e4a-91e2cfc1e5b9")
 	)
+	(label "12V+"
+		(at 187.96 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7205cf8a-f2ff-44b4-9a9f-472683abbefa")
+	)
 	(label "S2"
-		(at 47.625 108.585 0)
+		(at 92.71 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2050,8 +3065,19 @@
 		)
 		(uuid "7e43fa51-6716-4484-86dc-6aa11bead787")
 	)
+	(label "12V+"
+		(at 140.97 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa52918e-b05d-4cb3-9ca0-484e38c44121")
+	)
 	(label "S1"
-		(at 31.75 108.585 0)
+		(at 63.5 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2062,7 +3088,7 @@
 		(uuid "b86da5b8-e50b-4c1c-b6c6-3b9d6b4f8b72")
 	)
 	(label "S3"
-		(at 62.865 108.585 0)
+		(at 121.92 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2073,7 +3099,7 @@
 		(uuid "bdf9ad73-f802-4ff9-b2dc-3b56fc588073")
 	)
 	(label "S4"
-		(at 77.47 108.585 0)
+		(at 151.13 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2084,7 +3110,7 @@
 		(uuid "c6c74327-3ac4-4a2e-a0bc-d8aa1bc24a86")
 	)
 	(label "D4"
-		(at 77.47 124.46 0)
+		(at 151.13 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2094,8 +3120,30 @@
 		)
 		(uuid "cae93da8-f620-4c6d-b5ed-c09eca8e254d")
 	)
+	(label "12V+"
+		(at 111.76 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3242415-e8db-45bc-8dd7-58bce9ffed68")
+	)
+	(label "12V+"
+		(at 82.55 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f26d9f9c-c235-4231-a7f7-ad89cc9f7383")
+	)
 	(label "S5"
-		(at 92.075 108.585 0)
+		(at 179.07 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2107,7 +3155,7 @@
 	)
 	(global_label "LC_10"
 		(shape input)
-		(at 113.03 149.225 180)
+		(at 193.04 204.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2117,7 +3165,7 @@
 		)
 		(uuid "0e6f539b-9091-49c9-b335-abe5592a8a63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.3601 149.225 0)
+			(at 184.3701 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,7 +3177,7 @@
 	)
 	(global_label "LC_3"
 		(shape input)
-		(at 137.795 120.65 270)
+		(at 224.79 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2139,7 +3187,7 @@
 		)
 		(uuid "14d89704-eafc-4246-afbe-8d95b4e784ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.795 128.1104 90)
+			(at 224.79 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,7 +3199,7 @@
 	)
 	(global_label "HC_4"
 		(shape input)
-		(at 70.485 146.685 180)
+		(at 151.13 201.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2161,29 +3209,7 @@
 		)
 		(uuid "26960856-6f1e-4731-9d38-8fac7633475d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7222 146.685 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HC_2"
-		(shape input)
-		(at 40.005 120.015 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "288eb6cd-ea0c-4b5f-9405-925a836501bb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.005 127.7778 90)
+			(at 143.3672 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +3221,7 @@
 	)
 	(global_label "LC_5"
 		(shape input)
-		(at 95.885 149.225 0)
+		(at 176.53 204.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2205,7 +3231,7 @@
 		)
 		(uuid "30c0dd4e-36c6-4cb2-9ee7-2237f7dec5f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3454 149.225 0)
+			(at 183.9904 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2217,7 +3243,7 @@
 	)
 	(global_label "HC_1"
 		(shape input)
-		(at 24.13 120.015 270)
+		(at 45.72 157.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2227,29 +3253,7 @@
 		)
 		(uuid "30c6c50c-6874-4a06-84d9-52a9043d1952")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.13 127.7778 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HC_4"
-		(shape input)
-		(at 69.85 120.015 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "312a9ace-d11f-4b8b-a260-2e8c9b5d30d8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 127.7778 90)
+			(at 45.72 165.2428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2261,7 +3265,7 @@
 	)
 	(global_label "LC_6"
 		(shape input)
-		(at 182.88 120.65 270)
+		(at 270.51 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2271,7 +3275,7 @@
 		)
 		(uuid "417166f0-0bbc-4e67-a015-f83ffbba0e0c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.88 128.1104 90)
+			(at 270.51 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,7 +3287,7 @@
 	)
 	(global_label "LC_8"
 		(shape input)
-		(at 212.09 120.65 270)
+		(at 299.72 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2293,7 +3297,7 @@
 		)
 		(uuid "45af57f5-2eea-4e25-a15a-4f63ca4f1b76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.09 128.1104 90)
+			(at 299.72 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2305,7 +3309,7 @@
 	)
 	(global_label "LC_3"
 		(shape input)
-		(at 95.885 144.145 0)
+		(at 176.53 199.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2315,7 +3319,7 @@
 		)
 		(uuid "6bbaa808-648a-41c4-b7fd-d175a879d357")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3454 144.145 0)
+			(at 183.9904 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2325,9 +3329,31 @@
 			)
 		)
 	)
+	(global_label "HC_2"
+		(shape input)
+		(at 74.93 156.21 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c78812d-1ab2-4209-960f-6881481f1eb3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 163.9728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LC_7"
 		(shape input)
-		(at 113.03 141.605 180)
+		(at 193.04 196.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2337,7 +3363,7 @@
 		)
 		(uuid "6f040bf8-ff0e-43e5-98e5-e94b185d4746")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5696 141.605 0)
+			(at 185.5796 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,7 +3375,7 @@
 	)
 	(global_label "LC_9"
 		(shape input)
-		(at 113.03 146.685 180)
+		(at 193.04 201.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2359,7 +3385,7 @@
 		)
 		(uuid "75a585df-b39b-465e-961b-fd19625c3d22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5696 146.685 0)
+			(at 185.5796 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2371,7 +3397,7 @@
 	)
 	(global_label "LC_4"
 		(shape input)
-		(at 95.885 146.685 0)
+		(at 176.53 201.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2381,7 +3407,7 @@
 		)
 		(uuid "83749f13-7992-4b24-96f2-119934a431ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3454 146.685 0)
+			(at 183.9904 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,9 +3417,9 @@
 			)
 		)
 	)
-	(global_label "LC_9"
+	(global_label "HC_4"
 		(shape input)
-		(at 227.965 120.65 270)
+		(at 133.35 156.21 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2401,9 +3427,9 @@
 			)
 			(justify right)
 		)
-		(uuid "8c97d06d-f4a0-469b-b825-740d3b7ff6f2")
+		(uuid "858fe13b-c092-4363-b9f3-e2ff0c1cb4b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.965 128.1104 90)
+			(at 133.35 163.9728 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +3441,51 @@
 	)
 	(global_label "HC_5"
 		(shape input)
-		(at 70.485 149.225 180)
+		(at 161.29 156.21 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "85b76b60-7263-4dcb-80b2-0bb4b5cd9a1c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 163.9728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LC_9"
+		(shape input)
+		(at 314.96 146.05 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c97d06d-f4a0-469b-b825-740d3b7ff6f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 314.96 153.5104 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HC_5"
+		(shape input)
+		(at 151.13 204.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2425,7 +3495,7 @@
 		)
 		(uuid "912d6a91-052d-4a25-92f0-f4089b30406e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7222 149.225 0)
+			(at 143.3672 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2437,7 +3507,7 @@
 	)
 	(global_label "LC_1"
 		(shape input)
-		(at 107.95 120.65 270)
+		(at 195.58 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2447,7 +3517,7 @@
 		)
 		(uuid "937d7482-713c-4113-b9b7-47deecabf4e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 128.1104 90)
+			(at 195.58 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2459,7 +3529,7 @@
 	)
 	(global_label "LC_5"
 		(shape input)
-		(at 167.64 120.65 270)
+		(at 255.27 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2469,7 +3539,7 @@
 		)
 		(uuid "98c82e31-76f2-4280-bfbd-4e0b6eca3d13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.64 128.1104 90)
+			(at 255.27 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,7 +3551,7 @@
 	)
 	(global_label "LC_10"
 		(shape input)
-		(at 243.205 120.65 270)
+		(at 330.2 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2491,7 +3561,7 @@
 		)
 		(uuid "9b5ae239-ad32-40b0-a40c-4624b7a36fa8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.205 129.3199 90)
+			(at 330.2 154.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2503,7 +3573,7 @@
 	)
 	(global_label "LC_8"
 		(shape input)
-		(at 113.03 144.145 180)
+		(at 193.04 199.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2513,7 +3583,7 @@
 		)
 		(uuid "a296c100-747a-4538-9834-4d20c159a05e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5696 144.145 0)
+			(at 185.5796 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,7 +3595,7 @@
 	)
 	(global_label "HC_2"
 		(shape input)
-		(at 70.485 141.605 180)
+		(at 151.13 196.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2535,7 +3605,7 @@
 		)
 		(uuid "a59257af-3653-4a4a-bc68-fb2a292e6a7c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7222 141.605 0)
+			(at 143.3672 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +3617,7 @@
 	)
 	(global_label "LC_7"
 		(shape input)
-		(at 197.485 120.65 270)
+		(at 284.48 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2557,7 +3627,7 @@
 		)
 		(uuid "adebe53e-ad06-43b3-a504-b2f7d9987dfd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.485 128.1104 90)
+			(at 284.48 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2569,7 +3639,7 @@
 	)
 	(global_label "HC_3"
 		(shape input)
-		(at 70.485 144.145 180)
+		(at 151.13 199.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2579,7 +3649,29 @@
 		)
 		(uuid "aea6b165-37ea-484c-bfab-f6abe6da520b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7222 144.145 0)
+			(at 143.3672 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HC_3"
+		(shape input)
+		(at 104.14 156.21 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1a6de4c-6462-4b24-9b41-f5f4b7bb3125")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 163.9728 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,7 +3683,7 @@
 	)
 	(global_label "LC_2"
 		(shape input)
-		(at 95.885 141.605 0)
+		(at 176.53 196.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2601,7 +3693,7 @@
 		)
 		(uuid "b27cfb16-ae11-466b-907d-e8e478f11b2f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3454 141.605 0)
+			(at 183.9904 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2613,7 +3705,7 @@
 	)
 	(global_label "LC_4"
 		(shape input)
-		(at 151.765 120.65 270)
+		(at 238.76 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2623,7 +3715,7 @@
 		)
 		(uuid "b6de5f8a-c867-4f59-929c-a1192b409c02")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.765 128.1104 90)
+			(at 238.76 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2635,7 +3727,7 @@
 	)
 	(global_label "LC_2"
 		(shape input)
-		(at 123.19 120.65 270)
+		(at 210.82 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2645,29 +3737,7 @@
 		)
 		(uuid "bbbea42c-9237-4a6d-b562-cf2102f1ffe6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.19 128.1104 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HC_3"
-		(shape input)
-		(at 55.245 120.015 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c5e19e17-cec0-43c1-93ed-98cdc5ae903c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.245 127.7778 90)
+			(at 210.82 153.5104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2679,7 +3749,7 @@
 	)
 	(global_label "HC_1"
 		(shape input)
-		(at 70.485 139.065 180)
+		(at 151.13 194.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2689,7 +3759,7 @@
 		)
 		(uuid "d73aee8f-f7c8-4e82-aea6-671a7b39f614")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.7222 139.065 0)
+			(at 143.3672 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2701,7 +3771,7 @@
 	)
 	(global_label "LC_1"
 		(shape input)
-		(at 95.885 139.065 0)
+		(at 176.53 194.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2711,7 +3781,7 @@
 		)
 		(uuid "e0a91ace-db40-4d61-b9b1-c49e2668ea92")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3454 139.065 0)
+			(at 183.9904 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2723,7 +3793,7 @@
 	)
 	(global_label "LC_6"
 		(shape input)
-		(at 113.03 139.065 180)
+		(at 193.04 194.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2733,29 +3803,7 @@
 		)
 		(uuid "f23e2029-4b3f-493c-bebe-f95b5da41c27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5696 139.065 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HC_5"
-		(shape input)
-		(at 84.455 120.015 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f852acac-5208-4305-b028-b878d7829656")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.455 127.7778 90)
+			(at 185.5796 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +3815,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 128.27 180)
+		(at 151.13 153.67 180)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -2776,7 +3824,7 @@
 		(fields_autoplaced yes)
 		(uuid "01a242de-a9b8-40ea-8e82-c952592eb200")
 		(property "Reference" "H5"
-			(at 80.645 128.2699 0)
+			(at 154.305 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +3833,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.645 130.8099 0)
+			(at 154.305 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +3843,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 77.47 128.27 0)
+			(at 151.13 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2804,7 +3852,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 128.27 0)
+			(at 151.13 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,7 +3861,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 128.27 0)
+			(at 151.13 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2834,8 +3882,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 140.97 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "033ff9b9-4e8f-4160-b277-cf7a83445802")
+		(property "Reference" "R4"
+			(at 143.51 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 143.51 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "250324a2-5695-4ce3-bc38-d898d4e6980c")
+		)
+		(pin "1"
+			(uuid "c13d074b-2e88-41b1-ba26-4ecc6ba71f10")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 77.47 96.52 270)
+		(at 151.13 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2844,7 +3962,7 @@
 		(fields_autoplaced yes)
 		(uuid "104d1806-3f14-49a3-b827-05a2aeb0a2ef")
 		(property "Reference" "F4"
-			(at 80.645 95.2499 90)
+			(at 154.305 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2853,7 +3971,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 80.645 97.7899 90)
+			(at 154.305 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,7 +3980,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2872,7 +3990,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2881,7 +3999,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +4008,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2900,7 +4018,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +4028,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2920,7 +4038,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2930,7 +4048,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +4058,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2950,7 +4068,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +4078,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2970,7 +4088,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2980,7 +4098,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +4108,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3000,7 +4118,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3010,7 +4128,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3020,7 +4138,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 77.47 96.52 0)
+			(at 151.13 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3052,7 +4170,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 92.075 96.52 270)
+		(at 179.07 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3061,7 +4179,7 @@
 		(fields_autoplaced yes)
 		(uuid "15d40a5c-0811-43b0-bd50-e00b23c07f25")
 		(property "Reference" "F5"
-			(at 95.25 95.2499 90)
+			(at 182.245 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3070,7 +4188,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 95.25 97.7899 90)
+			(at 182.245 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3079,7 +4197,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +4207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +4216,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +4225,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,7 +4235,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,7 +4245,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3137,7 +4255,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,7 +4265,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3157,7 +4275,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3167,7 +4285,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3177,7 +4295,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3187,7 +4305,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3197,7 +4315,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3207,7 +4325,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +4335,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,7 +4345,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3237,7 +4355,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 92.075 96.52 0)
+			(at 179.07 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3268,8 +4386,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 53.34 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16ec2ab0-e8d1-458c-8755-fa6e7dd87ffe")
+		(property "Reference" "R1"
+			(at 55.88 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 55.88 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 53.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32503cfa-9bc3-4de5-96a3-014da3695d48")
+		)
+		(pin "1"
+			(uuid "e1dd38f6-16d0-4ea3-9eb8-ea9583b26761")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AON6411")
-		(at 45.085 116.205 0)
+		(at 90.17 142.24 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3278,7 +4466,7 @@
 		(dnp no)
 		(uuid "1a7b1e16-3944-452d-b4f4-9b11be2edcd7")
 		(property "Reference" "Q2"
-			(at 51.435 117.4751 0)
+			(at 96.52 143.5101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3287,7 +4475,7 @@
 			)
 		)
 		(property "Value" "AON6411"
-			(at 51.435 114.9351 0)
+			(at 96.52 140.9701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,7 +4484,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm"
-			(at 50.165 114.3 0)
+			(at 95.25 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +4494,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AON6411.pdf"
-			(at 50.165 112.395 0)
+			(at 95.25 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3316,7 +4504,7 @@
 			)
 		)
 		(property "Description" "-85A Id, -20V Vds, P-Channel MOSFET, DFN-8"
-			(at 45.085 116.205 0)
+			(at 90.17 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3349,8 +4537,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 82.55 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25efa900-4139-4c4e-9497-fb055b9de864")
+		(property "Reference" "#PWR02"
+			(at 82.55 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 82.55 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 82.55 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7e99aaf-aabb-4565-b959-099d5856d003")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AON6411")
-		(at 74.93 116.205 0)
+		(at 148.59 142.24 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3359,7 +4613,7 @@
 		(dnp no)
 		(uuid "26f70232-57b7-4c4e-ad88-04da75202789")
 		(property "Reference" "Q4"
-			(at 81.28 117.4751 0)
+			(at 154.94 143.5101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,7 +4622,7 @@
 			)
 		)
 		(property "Value" "AON6411"
-			(at 81.28 114.9351 0)
+			(at 154.94 140.9701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +4631,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm"
-			(at 80.01 114.3 0)
+			(at 153.67 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,7 +4641,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AON6411.pdf"
-			(at 80.01 112.395 0)
+			(at 153.67 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,7 +4651,7 @@
 			)
 		)
 		(property "Description" "-85A Id, -20V Vds, P-Channel MOSFET, DFN-8"
-			(at 74.93 116.205 0)
+			(at 148.59 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +4685,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 137.795 96.52 270)
+		(at 224.79 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3440,7 +4694,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cee3204-436f-4313-bcb1-24891b4b54f0")
 		(property "Reference" "F8"
-			(at 140.97 95.2499 90)
+			(at 227.965 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +4703,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 140.97 97.7899 90)
+			(at 227.965 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,7 +4712,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3468,7 +4722,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,7 +4731,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3486,7 +4740,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,7 +4750,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +4760,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,7 +4770,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,7 +4780,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,7 +4790,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3546,7 +4800,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3556,7 +4810,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +4820,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3576,7 +4830,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3586,7 +4840,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,7 +4850,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +4860,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +4870,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 137.795 96.52 0)
+			(at 224.79 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3647,8 +4901,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 111.76 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3af1278c-17c5-4f38-8097-fb332a6baebd")
+		(property "Reference" "#PWR03"
+			(at 111.76 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f211ceb1-83b7-4436-b734-495e81a40e2b")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 62.865 96.52 270)
+		(at 121.92 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3657,7 +4977,7 @@
 		(fields_autoplaced yes)
 		(uuid "3eada16b-d09a-4967-9458-a2ee2dda7b68")
 		(property "Reference" "F3"
-			(at 66.04 95.2499 90)
+			(at 125.095 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3666,7 +4986,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 66.04 97.7899 90)
+			(at 125.095 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3675,7 +4995,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +5005,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3694,7 +5014,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3703,7 +5023,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,7 +5033,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3723,7 +5043,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +5053,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3743,7 +5063,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,7 +5073,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,7 +5083,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3773,7 +5093,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,7 +5103,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3793,7 +5113,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3803,7 +5123,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3813,7 +5133,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +5143,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +5153,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 62.865 96.52 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,7 +5185,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:AON6411")
-		(at 29.21 116.205 0)
+		(at 60.96 140.97 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3874,7 +5194,7 @@
 		(dnp no)
 		(uuid "41755b31-92d7-437f-900b-51eebf1121f3")
 		(property "Reference" "Q1"
-			(at 35.56 117.4751 0)
+			(at 67.31 142.2401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3883,7 +5203,7 @@
 			)
 		)
 		(property "Value" "AON6411"
-			(at 35.56 114.9351 0)
+			(at 67.31 139.7001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3892,7 +5212,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm"
-			(at 34.29 114.3 0)
+			(at 66.04 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +5222,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AON6411.pdf"
-			(at 34.29 112.395 0)
+			(at 66.04 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +5232,7 @@
 			)
 		)
 		(property "Description" "-85A Id, -20V Vds, P-Channel MOSFET, DFN-8"
-			(at 29.21 116.205 0)
+			(at 60.96 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3936,7 +5256,7 @@
 			(uuid "f95dfa9e-5803-4be2-978d-d363599b264c")
 		)
 		(instances
-			(project ""
+			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "Q1")
 					(unit 1)
@@ -3945,8 +5265,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 166.37 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41c7c6c8-088c-4e83-b648-cbf8a35b526a")
+		(property "Reference" "Q10"
+			(at 172.72 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400"
+			(at 172.72 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 171.45 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+			(at 166.37 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 166.37 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 166.37 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 166.37 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c98769e2-c7b1-49f7-82c7-d644b9201a55")
+		)
+		(pin "2"
+			(uuid "97fa2072-5a01-4ffd-9910-2a114f60e058")
+		)
+		(pin "3"
+			(uuid "2345b4a8-5b6d-414a-87b6-2ab621c7081f")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 197.485 96.52 270)
+		(at 284.48 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3955,7 +5375,7 @@
 		(fields_autoplaced yes)
 		(uuid "531fea10-fd2e-447b-b223-abe5fe2fc0cf")
 		(property "Reference" "F12"
-			(at 200.66 95.2499 90)
+			(at 287.655 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +5384,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 200.66 97.7899 90)
+			(at 287.655 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +5393,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +5403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,7 +5412,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4001,7 +5421,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,7 +5431,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +5441,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4031,7 +5451,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4041,7 +5461,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4051,7 +5471,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,7 +5481,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +5491,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4081,7 +5501,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4091,7 +5511,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4101,7 +5521,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4111,7 +5531,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,7 +5541,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +5551,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 197.485 96.52 0)
+			(at 284.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,8 +5582,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 219.71 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5851c171-a047-4923-9b62-3cc19949b6a1")
+		(property "Reference" "#PWR06"
+			(at 219.71 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "328b3b88-ec2a-4f6c-bbe3-8d553243bfc3")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 168.91 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "601dc307-bdd9-4c61-bfb2-043fbe702a90")
+		(property "Reference" "#PWR05"
+			(at 168.91 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.91 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 168.91 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07849e1b-8a94-4ba4-b9eb-e4252f69bcfb")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 31.75 96.52 270)
+		(at 63.5 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4172,7 +5724,7 @@
 		(fields_autoplaced yes)
 		(uuid "60dcea4a-e37c-4e17-a9a8-748d8a34c6e2")
 		(property "Reference" "F2"
-			(at 34.925 95.2499 90)
+			(at 66.675 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4181,7 +5733,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 34.925 97.7899 90)
+			(at 66.675 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4190,7 +5742,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4200,7 +5752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +5761,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +5770,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4228,7 +5780,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,7 +5790,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +5800,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4258,7 +5810,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +5820,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4278,7 +5830,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4288,7 +5840,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4298,7 +5850,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4308,7 +5860,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4318,7 +5870,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +5880,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4338,7 +5890,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4348,7 +5900,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 31.75 96.52 0)
+			(at 63.5 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +5922,7 @@
 			(uuid "6fa6f216-28fc-4c6b-9e89-6ce08805e1a9")
 		)
 		(instances
-			(project ""
+			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "F2")
 					(unit 1)
@@ -4379,8 +5931,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 82.55 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63d8d431-1ca9-4baa-99ff-476feb513256")
+		(property "Reference" "R2"
+			(at 85.09 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 85.09 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c4dc14c-2ccf-4147-aa83-f97ad86c25c0")
+		)
+		(pin "1"
+			(uuid "7fb12178-5bf7-49fa-a838-996ab78e92aa")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AON6411")
-		(at 60.325 116.205 0)
+		(at 119.38 142.24 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4389,7 +6011,7 @@
 		(dnp no)
 		(uuid "6585566a-d539-42b9-9103-7790127acd9e")
 		(property "Reference" "Q3"
-			(at 66.675 117.4751 0)
+			(at 125.73 143.5101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4398,7 +6020,7 @@
 			)
 		)
 		(property "Value" "AON6411"
-			(at 66.675 114.9351 0)
+			(at 125.73 140.9701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4407,7 +6029,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm"
-			(at 65.405 114.3 0)
+			(at 124.46 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4417,7 +6039,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AON6411.pdf"
-			(at 65.405 112.395 0)
+			(at 124.46 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +6049,7 @@
 			)
 		)
 		(property "Description" "-85A Id, -20V Vds, P-Channel MOSFET, DFN-8"
-			(at 60.325 116.205 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +6083,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 31.75 128.27 180)
+		(at 63.5 153.67 180)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4470,7 +6092,7 @@
 		(fields_autoplaced yes)
 		(uuid "65fc25e7-7203-4c65-a697-1b9534d9bce0")
 		(property "Reference" "H2"
-			(at 34.925 128.2699 0)
+			(at 66.675 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,7 +6101,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 34.925 130.8099 0)
+			(at 66.675 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +6111,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 31.75 128.27 0)
+			(at 63.5 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +6120,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 128.27 0)
+			(at 63.5 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +6129,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 31.75 128.27 0)
+			(at 63.5 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +6151,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 47.625 96.52 270)
+		(at 92.71 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4538,7 +6160,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a736501-3231-4789-b9d3-61267b5b2ffd")
 		(property "Reference" "F1"
-			(at 50.8 95.2499 90)
+			(at 95.885 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +6169,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 50.8 97.7899 90)
+			(at 95.885 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,7 +6178,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4566,7 +6188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4575,7 +6197,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +6206,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +6216,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,7 +6226,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4614,7 +6236,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +6246,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,7 +6256,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4644,7 +6266,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +6276,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +6286,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,7 +6296,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +6306,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +6316,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4704,7 +6326,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +6336,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 47.625 96.52 0)
+			(at 92.71 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,8 +6367,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 168.91 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6af81784-6d7a-4b2c-8b3a-a14b1fdfcd7f")
+		(property "Reference" "R5"
+			(at 171.45 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 171.45 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "140510bc-1409-4d39-9b08-ddf6c5ddcb86")
+		)
+		(pin "1"
+			(uuid "69f6d06e-cd2b-4cfd-adca-f438e8716906")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AON6411")
-		(at 89.535 116.205 0)
+		(at 176.53 142.24 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4755,7 +6447,7 @@
 		(dnp no)
 		(uuid "7c0ea8c5-a756-4899-856c-070b725d3465")
 		(property "Reference" "Q5"
-			(at 95.885 117.4751 0)
+			(at 182.88 143.5101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +6456,7 @@
 			)
 		)
 		(property "Value" "AON6411"
-			(at 95.885 114.9351 0)
+			(at 182.88 140.9701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +6465,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm"
-			(at 94.615 114.3 0)
+			(at 181.61 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +6475,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/res/data_sheets/AON6411.pdf"
-			(at 94.615 112.395 0)
+			(at 181.61 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +6485,7 @@
 			)
 		)
 		(property "Description" "-85A Id, -20V Vds, P-Channel MOSFET, DFN-8"
-			(at 89.535 116.205 0)
+			(at 176.53 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4826,8 +6518,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 50.8 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7debf09d-daca-42cc-8237-882178561fd7")
+		(property "Reference" "Q6"
+			(at 57.15 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400"
+			(at 57.15 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 55.88 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+			(at 50.8 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 50.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 50.8 168.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 50.8 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 50.8 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "420df982-a9ed-4b5c-9b22-f0ee80f97b13")
+		)
+		(pin "2"
+			(uuid "3fc85372-c622-40aa-8dc9-c76cf6fe5980")
+		)
+		(pin "3"
+			(uuid "2d534955-80e8-4bb5-8c4d-a9eeda4931e5")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 62.865 128.27 180)
+		(at 121.92 153.67 180)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4836,7 +6628,7 @@
 		(fields_autoplaced yes)
 		(uuid "87e5a243-b798-4064-976b-ece4abb57bea")
 		(property "Reference" "H4"
-			(at 66.04 128.2699 0)
+			(at 125.095 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +6637,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 66.04 130.8099 0)
+			(at 125.095 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +6647,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 62.865 128.27 0)
+			(at 121.92 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +6656,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.865 128.27 0)
+			(at 121.92 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +6665,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 62.865 128.27 0)
+			(at 121.92 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,8 +6686,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 138.43 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8915ff8f-7061-47dc-a01f-f35ce19791d9")
+		(property "Reference" "Q9"
+			(at 144.78 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400"
+			(at 144.78 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 143.51 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+			(at 138.43 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 138.43 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 138.43 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 138.43 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 138.43 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09cf7241-9258-4a5d-b92d-17b9c8637b4c")
+		)
+		(pin "2"
+			(uuid "37e30a0d-688a-4b74-8d43-eec13c9f7a1a")
+		)
+		(pin "3"
+			(uuid "4ff3fffd-b199-4256-8b3a-5ccd12c3f698")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "0430451001:430451001")
-		(at 83.185 144.145 0)
+		(at 163.83 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4904,7 +6796,7 @@
 		(fields_autoplaced yes)
 		(uuid "9012b3f9-ca00-4d9a-b2fe-4f0f70ed837e")
 		(property "Reference" "J1"
-			(at 83.185 132.08 0)
+			(at 163.83 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4912,7 +6804,7 @@
 			)
 		)
 		(property "Value" "430451001"
-			(at 83.185 134.62 0)
+			(at 163.83 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +6812,7 @@
 			)
 		)
 		(property "Footprint" "0430451001:MOLEX_430451001"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +6822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4939,7 +6831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +6840,7 @@
 			)
 		)
 		(property "MF" "Molex"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4958,7 +6850,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "8.77mm"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4968,7 +6860,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,7 +6870,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,7 +6880,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/0430451001/Molex/view-part/?ref=eda"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4998,7 +6890,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +6900,7 @@
 			)
 		)
 		(property "PARTREV" "G"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +6910,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/0430451001/Molex/view-part/?ref=snap"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5028,7 +6920,7 @@
 			)
 		)
 		(property "MP" "0430451001"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5038,7 +6930,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3626103&manufacturer=Molex&part_name=0430451001&search_term=0430451001"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +6940,7 @@
 			)
 		)
 		(property "Description_1" "\nConnector Header Through Hole, Right Angle 10 position 0.118 (3.00mm)\n"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +6950,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +6960,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Molex"
-			(at 83.185 144.145 0)
+			(at 163.83 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5108,7 +7000,7 @@
 			(uuid "862017af-bd2d-4fe5-ad9b-2034f01211d7")
 		)
 		(instances
-			(project ""
+			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "J1")
 					(unit 1)
@@ -5117,8 +7009,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 140.97 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92f19d65-f87b-4735-a3eb-9a7e3ba16734")
+		(property "Reference" "#PWR04"
+			(at 140.97 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8962b08-c722-449e-a9e8-55c71d1a8afc")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 47.625 128.27 180)
+		(at 92.71 153.67 180)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5127,7 +7085,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a69a3f9-346a-4bfd-b7b3-21238769f71c")
 		(property "Reference" "H3"
-			(at 50.8 128.2699 0)
+			(at 95.885 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,7 +7094,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 50.8 130.8099 0)
+			(at 95.885 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5146,7 +7104,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 47.625 128.27 0)
+			(at 92.71 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,7 +7113,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 47.625 128.27 0)
+			(at 92.71 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +7122,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 47.625 128.27 0)
+			(at 92.71 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5186,7 +7144,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 151.765 96.52 270)
+		(at 238.76 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5195,7 +7153,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bc018b2-2eec-44c9-a001-78d78aba4645")
 		(property "Reference" "F9"
-			(at 154.94 95.2499 90)
+			(at 241.935 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +7162,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 154.94 97.7899 90)
+			(at 241.935 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,7 +7171,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +7181,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +7190,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5241,7 +7199,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5251,7 +7209,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,7 +7219,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +7229,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,7 +7239,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,7 +7249,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,7 +7259,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,7 +7269,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,7 +7279,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,7 +7289,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +7299,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5351,7 +7309,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +7319,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5371,7 +7329,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 151.765 96.52 0)
+			(at 238.76 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5403,7 +7361,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 139.7 60.96 0)
+		(at 227.33 86.36 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5412,7 +7370,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c0f5f0e-6028-406d-8545-b46e2d40197a")
 		(property "Reference" "H1"
-			(at 142.24 58.4199 0)
+			(at 229.87 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +7379,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 142.24 60.9599 0)
+			(at 229.87 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +7388,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 139.7 60.96 0)
+			(at 227.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +7397,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 60.96 0)
+			(at 227.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +7406,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 139.7 60.96 0)
+			(at 227.33 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5460,7 +7418,7 @@
 			(uuid "02d87ee9-362a-4889-916e-d0efc5348808")
 		)
 		(instances
-			(project ""
+			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "H1")
 					(unit 1)
@@ -5470,7 +7428,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 92.075 128.27 180)
+		(at 179.07 153.67 180)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5479,7 +7437,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4a16f3c-2390-4257-97e8-973ea07326df")
 		(property "Reference" "H6"
-			(at 95.25 128.2699 0)
+			(at 182.245 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5488,7 +7446,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 95.25 130.8099 0)
+			(at 182.245 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5498,7 +7456,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
-			(at 92.075 128.27 0)
+			(at 179.07 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5507,7 +7465,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.075 128.27 0)
+			(at 179.07 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5516,7 +7474,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 92.075 128.27 0)
+			(at 179.07 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,8 +7495,174 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 53.34 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b22e2710-5155-4157-ba40-497aa3f7544d")
+		(property "Reference" "#PWR01"
+			(at 53.34 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4088930-d984-4a25-b443-9cb329a8e1cd")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 80.01 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2eba137-c2ab-46dd-a8f0-1c8351b1adf3")
+		(property "Reference" "Q7"
+			(at 86.36 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400"
+			(at 86.36 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+			(at 80.01 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 80.01 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 80.01 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 80.01 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 80.01 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68ba4105-e1c4-4f79-bd1c-98f693ca2651")
+		)
+		(pin "2"
+			(uuid "2af45faa-780b-4289-aab8-5d7d95ffbb0b")
+		)
+		(pin "3"
+			(uuid "7d99fdb3-9b80-4c1c-b020-a150199099dd")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 212.09 96.52 270)
+		(at 299.72 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5547,7 +7671,7 @@
 		(fields_autoplaced yes)
 		(uuid "b630d439-6298-4f8e-a3d0-144bb9dc4859")
 		(property "Reference" "F13"
-			(at 215.265 95.2499 90)
+			(at 302.895 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5556,7 +7680,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 215.265 97.7899 90)
+			(at 302.895 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,7 +7689,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5575,7 +7699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5584,7 +7708,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5593,7 +7717,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5603,7 +7727,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,7 +7737,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5623,7 +7747,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5633,7 +7757,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5643,7 +7767,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5653,7 +7777,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5663,7 +7787,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5673,7 +7797,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5683,7 +7807,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5693,7 +7817,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +7827,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5713,7 +7837,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5723,7 +7847,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 212.09 96.52 0)
+			(at 299.72 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5755,7 +7879,7 @@
 	)
 	(symbol
 		(lib_id "0430451001:430451001")
-		(at 125.73 144.145 0)
+		(at 205.74 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5764,7 +7888,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7a77b57-3b86-42e3-973c-27515441c332")
 		(property "Reference" "J2"
-			(at 125.73 132.08 0)
+			(at 205.74 187.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5772,7 +7896,7 @@
 			)
 		)
 		(property "Value" "430451001"
-			(at 125.73 134.62 0)
+			(at 205.74 189.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5780,7 +7904,7 @@
 			)
 		)
 		(property "Footprint" "0430451001:MOLEX_430451001"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5790,7 +7914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5799,7 +7923,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5808,7 +7932,7 @@
 			)
 		)
 		(property "MF" "Molex"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5818,7 +7942,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "8.77mm"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5828,7 +7952,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5838,7 +7962,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,7 +7972,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/0430451001/Molex/view-part/?ref=eda"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5858,7 +7982,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5868,7 +7992,7 @@
 			)
 		)
 		(property "PARTREV" "G"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5878,7 +8002,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/0430451001/Molex/view-part/?ref=snap"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5888,7 +8012,7 @@
 			)
 		)
 		(property "MP" "0430451001"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5898,7 +8022,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=3626103&manufacturer=Molex&part_name=0430451001&search_term=0430451001"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +8032,7 @@
 			)
 		)
 		(property "Description_1" "\nConnector Header Through Hole, Right Angle 10 position 0.118 (3.00mm)\n"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5918,7 +8042,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5928,7 +8052,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Molex"
-			(at 125.73 144.145 0)
+			(at 205.74 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,7 +8102,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 227.965 96.52 270)
+		(at 314.96 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5987,7 +8111,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfba3953-4fc8-4c3e-af28-44d86a8d0d31")
 		(property "Reference" "F14"
-			(at 231.14 95.2499 90)
+			(at 318.135 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5996,7 +8120,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 231.14 97.7899 90)
+			(at 318.135 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +8129,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,7 +8139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6024,7 +8148,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6033,7 +8157,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +8167,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6053,7 +8177,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6063,7 +8187,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,7 +8197,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6083,7 +8207,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6093,7 +8217,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6103,7 +8227,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6113,7 +8237,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6123,7 +8247,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6133,7 +8257,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6143,7 +8267,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6153,7 +8277,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6163,7 +8287,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 227.965 96.52 0)
+			(at 314.96 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,7 +8319,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 182.88 96.52 270)
+		(at 270.51 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6204,7 +8328,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6ed8eaf-b09b-4ff8-bb4a-d955af19e800")
 		(property "Reference" "F11"
-			(at 186.055 95.2499 90)
+			(at 273.685 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,7 +8337,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 186.055 97.7899 90)
+			(at 273.685 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6222,7 +8346,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6232,7 +8356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +8365,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +8374,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6260,7 +8384,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6270,7 +8394,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6280,7 +8404,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6290,7 +8414,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6300,7 +8424,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6310,7 +8434,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6320,7 +8444,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,7 +8454,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6340,7 +8464,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6350,7 +8474,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,7 +8484,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6370,7 +8494,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6380,7 +8504,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 182.88 96.52 0)
+			(at 270.51 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6411,8 +8535,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 219.71 189.23 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cad30cf7-042a-476f-9742-3527a815f18e")
+		(property "Reference" "H7"
+			(at 222.25 186.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 222.25 189.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad"
+			(at 219.71 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 219.71 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9273d0e4-744f-4138-9b02-c149d65b7ee5")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 167.64 96.52 270)
+		(at 255.27 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6421,7 +8612,7 @@
 		(fields_autoplaced yes)
 		(uuid "cfb9919a-43d9-41e8-bf84-fdeea1f2ac28")
 		(property "Reference" "F10"
-			(at 170.815 95.2499 90)
+			(at 258.445 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6430,7 +8621,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 170.815 97.7899 90)
+			(at 258.445 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6439,7 +8630,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6449,7 +8640,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +8649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6467,7 +8658,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6477,7 +8668,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6487,7 +8678,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6497,7 +8688,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6507,7 +8698,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6517,7 +8708,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +8718,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +8728,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6547,7 +8738,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6557,7 +8748,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6567,7 +8758,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6577,7 +8768,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6587,7 +8778,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6597,7 +8788,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 167.64 96.52 0)
+			(at 255.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6628,8 +8819,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 111.76 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d706c4a2-09c3-4b10-8447-b6be294c4135")
+		(property "Reference" "R3"
+			(at 114.3 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 114.3 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0165dfa-c77e-44bd-a383-fe630b0fa547")
+		)
+		(pin "1"
+			(uuid "47af7550-efe5-4f4a-b088-5e089a1c44ac")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 107.95 96.52 270)
+		(at 195.58 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6638,7 +8899,7 @@
 		(fields_autoplaced yes)
 		(uuid "dcd84023-918e-48a5-9297-bde5d8a911b5")
 		(property "Reference" "F6"
-			(at 111.125 95.2499 90)
+			(at 198.755 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6647,7 +8908,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 111.125 97.7899 90)
+			(at 198.755 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6656,7 +8917,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6666,7 +8927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6675,7 +8936,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6684,7 +8945,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +8955,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6704,7 +8965,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +8975,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +8985,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6734,7 +8995,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +9005,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6754,7 +9015,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6764,7 +9025,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6774,7 +9035,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6784,7 +9045,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6794,7 +9055,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6804,7 +9065,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6814,7 +9075,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 107.95 96.52 0)
+			(at 195.58 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6845,8 +9106,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 109.22 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4a6e6eb-9f81-43e1-8417-292756ec7dcf")
+		(property "Reference" "Q8"
+			(at 115.57 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400"
+			(at 115.57 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 114.3 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 109.22 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 109.22 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 109.22 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 109.22 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1802852e-1633-4124-9b67-0d7824e1e403")
+		)
+		(pin "2"
+			(uuid "2e736e9f-800c-4e86-afed-e7268d00ad04")
+		)
+		(pin "3"
+			(uuid "7270604b-232b-4e39-8395-fa618acdaf5f")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 123.19 96.52 270)
+		(at 210.82 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6855,7 +9216,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4e6a707-9914-4495-9d19-3a6fa0608771")
 		(property "Reference" "F7"
-			(at 126.365 95.2499 90)
+			(at 213.995 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6864,7 +9225,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 126.365 97.7899 90)
+			(at 213.995 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6873,7 +9234,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6883,7 +9244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6892,7 +9253,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6901,7 +9262,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6911,7 +9272,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6921,7 +9282,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6931,7 +9292,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6941,7 +9302,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6951,7 +9312,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6961,7 +9322,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6971,7 +9332,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6981,7 +9342,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6991,7 +9352,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7001,7 +9362,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +9372,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,7 +9382,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7031,7 +9392,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 123.19 96.52 0)
+			(at 210.82 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7063,7 +9424,7 @@
 	)
 	(symbol
 		(lib_id "3557-2:3557-2")
-		(at 243.205 96.52 270)
+		(at 330.2 121.92 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7072,7 +9433,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb920d8b-8e8e-4241-9886-44855e2b1e3c")
 		(property "Reference" "F15"
-			(at 246.38 95.2499 90)
+			(at 333.375 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7081,7 +9442,7 @@
 			)
 		)
 		(property "Value" "3557-2"
-			(at 246.38 97.7899 90)
+			(at 333.375 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7090,7 +9451,7 @@
 			)
 		)
 		(property "Footprint" "3557-2:FUSE_3557-2"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,7 +9461,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7109,7 +9470,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7118,7 +9479,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,7 +9489,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "7.37mm"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,7 +9499,7 @@
 			)
 		)
 		(property "Package" "Nonstandard Keystone"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,7 +9509,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7158,7 +9519,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=eda"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7168,7 +9529,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,7 +9539,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7188,7 +9549,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/3557-2/Keystone+Electronics/view-part/?ref=snap"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7198,7 +9559,7 @@
 			)
 		)
 		(property "MP" "3557-2"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +9569,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=278060&manufacturer=Keystone Electronics&part_name=3557-2&search_term=None"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7218,7 +9579,7 @@
 			)
 		)
 		(property "Description_1" "\nTHM 2 in 1 Auto Blade Holder\n"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7228,7 +9589,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7238,7 +9599,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7248,7 +9609,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "3557-2"
-			(at 243.205 96.52 0)
+			(at 330.2 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
