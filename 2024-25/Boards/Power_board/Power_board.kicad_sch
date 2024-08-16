@@ -3882,76 +3882,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 140.97 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "033ff9b9-4e8f-4160-b277-cf7a83445802")
-		(property "Reference" "R4"
-			(at 143.51 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 143.51 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 140.97 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "250324a2-5695-4ce3-bc38-d898d4e6980c")
-		)
-		(pin "1"
-			(uuid "c13d074b-2e88-41b1-ba26-4ecc6ba71f10")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "3557-2:3557-2")
 		(at 151.13 121.92 270)
 		(unit 1)
@@ -4413,7 +4343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 53.34 133.35 0)
 			(effects
 				(font
@@ -5265,106 +5195,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 166.37 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41c7c6c8-088c-4e83-b648-cbf8a35b526a")
-		(property "Reference" "Q10"
-			(at 172.72 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400"
-			(at 172.72 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 171.45 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
-			(at 166.37 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 166.37 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 166.37 169.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 166.37 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 166.37 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c98769e2-c7b1-49f7-82c7-d644b9201a55")
-		)
-		(pin "2"
-			(uuid "97fa2072-5a01-4ffd-9910-2a114f60e058")
-		)
-		(pin "3"
-			(uuid "2345b4a8-5b6d-414a-87b6-2ab621c7081f")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "3557-2:3557-2")
 		(at 284.48 121.92 270)
 		(unit 1)
@@ -5576,6 +5406,76 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "F12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 140.97 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57227141-387a-449f-8da5-66562f1d88fc")
+		(property "Reference" "R4"
+			(at 143.51 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 143.51 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 140.97 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2e03661-de05-4d2b-90ae-d9b1ad5778d3")
+		)
+		(pin "1"
+			(uuid "490ed8d3-160c-429a-b5d9-9330ebbf4375")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5931,76 +5831,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 82.55 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63d8d431-1ca9-4baa-99ff-476feb513256")
-		(property "Reference" "R2"
-			(at 85.09 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 85.09 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 82.55 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6c4dc14c-2ccf-4147-aa83-f97ad86c25c0")
-		)
-		(pin "1"
-			(uuid "7fb12178-5bf7-49fa-a838-996ab78e92aa")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:AON6411")
 		(at 119.38 142.24 0)
 		(mirror x)
@@ -6144,6 +5974,106 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 166.37 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67cf0c40-6388-4e9e-ba11-6e5da5379220")
+		(property "Reference" "Q10"
+			(at 172.72 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VN3205N8-G"
+			(at 172.72 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "VN3205N8-G:AMP_PHA-1_"
+			(at 171.45 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/VN3205-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005995A.pdf"
+			(at 166.37 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 166.37 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 166.37 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 166.37 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee46465f-6b98-4109-b206-0716994f339c")
+		)
+		(pin "2"
+			(uuid "a9e4de64-22e7-42d1-b0e6-edd8acbedec7")
+		)
+		(pin "3"
+			(uuid "813c0c56-a7f1-4456-9c1c-0071ac0c61c7")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -6367,76 +6297,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 168.91 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6af81784-6d7a-4b2c-8b3a-a14b1fdfcd7f")
-		(property "Reference" "R5"
-			(at 171.45 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 171.45 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 168.91 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "140510bc-1409-4d39-9b08-ddf6c5ddcb86")
-		)
-		(pin "1"
-			(uuid "69f6d06e-cd2b-4cfd-adca-f438e8716906")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:AON6411")
 		(at 176.53 142.24 0)
 		(mirror x)
@@ -6536,7 +6396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AO3400"
+		(property "Value" "VN3205N8-G"
 			(at 57.15 152.3999 0)
 			(effects
 				(font
@@ -6545,7 +6405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "VN3205N8-G:AMP_PHA-1_"
 			(at 55.88 148.59 0)
 			(effects
 				(font
@@ -6554,7 +6414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/VN3205-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005995A.pdf"
 			(at 50.8 163.83 0)
 			(effects
 				(font
@@ -6612,6 +6472,76 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 82.55 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "879ae40d-04ae-4e29-a665-c04d5e9eba7a")
+		(property "Reference" "R2"
+			(at 85.09 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 85.09 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fd3d7295-8f4e-4002-98ee-af69e53bade9")
+		)
+		(pin "1"
+			(uuid "3a10c833-6ead-405a-8832-e3b8176ba05d")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6680,106 +6610,6 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 138.43 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8915ff8f-7061-47dc-a01f-f35ce19791d9")
-		(property "Reference" "Q9"
-			(at 144.78 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400"
-			(at 144.78 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 143.51 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
-			(at 138.43 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 138.43 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 138.43 169.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 138.43 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 138.43 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09cf7241-9258-4a5d-b92d-17b9c8637b4c")
-		)
-		(pin "2"
-			(uuid "37e30a0d-688a-4b74-8d43-eec13c9f7a1a")
-		)
-		(pin "3"
-			(uuid "4ff3fffd-b199-4256-8b3a-5ccd12c3f698")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -7495,6 +7325,176 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 111.76 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9bcab87-b598-4e06-93e3-b5d88d39d0aa")
+		(property "Reference" "R3"
+			(at 114.3 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 114.3 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 111.76 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "031813a3-f009-4799-ac98-8bac19dfcda6")
+		)
+		(pin "1"
+			(uuid "da023e4e-c2ff-4236-b687-51a59f7f51f5")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 80.01 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac36f933-578d-4f31-9efa-6ea4cfe86430")
+		(property "Reference" "Q7"
+			(at 86.36 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VN3205N8-G"
+			(at 86.36 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "VN3205N8-G:AMP_PHA-1_"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/VN3205-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005995A.pdf"
+			(at 80.01 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 80.01 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 80.01 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 80.01 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 80.01 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d8fdb4f-b8a5-4323-af9e-27164655a0b4")
+		)
+		(pin "2"
+			(uuid "d43b2ebd-bddc-4efc-ae05-9b66de744e18")
+		)
+		(pin "3"
+			(uuid "1223423c-41c0-4a76-ad9b-477f90a37470")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 53.34 160.02 0)
 		(unit 1)
@@ -7555,106 +7555,6 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 80.01 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b2eba137-c2ab-46dd-a8f0-1c8351b1adf3")
-		(property "Reference" "Q7"
-			(at 86.36 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400"
-			(at 86.36 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 85.09 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
-			(at 80.01 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 80.01 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 80.01 169.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 80.01 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 80.01 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68ba4105-e1c4-4f79-bd1c-98f693ca2651")
-		)
-		(pin "2"
-			(uuid "2af45faa-780b-4289-aab8-5d7d95ffbb0b")
-		)
-		(pin "3"
-			(uuid "7d99fdb3-9b80-4c1c-b020-a150199099dd")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -8819,76 +8719,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 111.76 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d706c4a2-09c3-4b10-8447-b6be294c4135")
-		(property "Reference" "R3"
-			(at 114.3 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 114.3 135.8899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 111.76 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b0165dfa-c77e-44bd-a383-fe630b0fa547")
-		)
-		(pin "1"
-			(uuid "47af7550-efe5-4f4a-b088-5e089a1c44ac")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "3557-2:3557-2")
 		(at 195.58 121.92 270)
 		(unit 1)
@@ -9106,106 +8936,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 109.22 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4a6e6eb-9f81-43e1-8417-292756ec7dcf")
-		(property "Reference" "Q8"
-			(at 115.57 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400"
-			(at 115.57 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 114.3 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
-			(at 109.22 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 109.22 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 109.22 169.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 109.22 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 109.22 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1802852e-1633-4124-9b67-0d7824e1e403")
-		)
-		(pin "2"
-			(uuid "2e736e9f-800c-4e86-afed-e7268d00ad04")
-		)
-		(pin "3"
-			(uuid "7270604b-232b-4e39-8395-fa618acdaf5f")
-		)
-		(instances
-			(project "Power_board"
-				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "3557-2:3557-2")
 		(at 210.82 121.92 270)
 		(unit 1)
@@ -9417,6 +9147,276 @@
 			(project "Power_board"
 				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
 					(reference "F7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 168.91 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f22b5a4a-12b4-4ead-a895-f7561a2d4161")
+		(property "Reference" "R5"
+			(at 171.45 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 171.45 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 168.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "612a1d64-d3aa-45ab-a3d0-604844c719e6")
+		)
+		(pin "1"
+			(uuid "89bb3f1b-6f29-42d9-994f-0b18ecb9b897")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 109.22 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9899d68-ea85-4c0f-a4f6-1c1cc7a1761e")
+		(property "Reference" "Q8"
+			(at 115.57 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VN3205N8-G"
+			(at 115.57 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "VN3205N8-G:AMP_PHA-1_"
+			(at 114.3 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/VN3205-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005995A.pdf"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 109.22 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 109.22 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 109.22 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 109.22 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80a7e524-e72c-4804-b0c6-1b194a1dfa35")
+		)
+		(pin "2"
+			(uuid "80917dbd-f9be-4182-844b-6b1a8d077584")
+		)
+		(pin "3"
+			(uuid "325c593e-6c19-411f-a0ca-4795c82e1ff0")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 138.43 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb6d5b8e-4a13-4a94-a5b0-f7613dc13aa0")
+		(property "Reference" "Q9"
+			(at 144.78 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VN3205N8-G"
+			(at 144.78 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "VN3205N8-G:AMP_PHA-1_"
+			(at 143.51 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/VN3205-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005995A.pdf"
+			(at 138.43 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 138.43 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 138.43 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 138.43 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 138.43 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05bfda69-89c1-4776-92bb-f32487750d25")
+		)
+		(pin "2"
+			(uuid "39712121-cc12-44ef-9f91-1fde1a48ab7e")
+		)
+		(pin "3"
+			(uuid "7855c8c8-e5b6-4dc1-a154-afd5167b71ef")
+		)
+		(instances
+			(project "Power_board"
+				(path "/c7bceacb-49ea-4a13-95e2-5e56f8e6630a"
+					(reference "Q9")
 					(unit 1)
 				)
 			)
