@@ -1742,6 +1742,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "RT44xxxx_2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3142,10 +3224,10 @@
 		(uuid "22225d52-a6ba-40b3-acd7-56cb5c1e885b")
 	)
 	(junction
-		(at 217.17 87.63)
+		(at 217.17 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2603b56f-d004-471f-9df6-793315f2b14c")
+		(uuid "26d1cd36-4b7d-4f5d-92ab-47ae896391ab")
 	)
 	(junction
 		(at 152.4 127)
@@ -3184,12 +3266,6 @@
 		(uuid "8be2e331-6d69-47af-96ab-5f6326982bea")
 	)
 	(junction
-		(at 220.98 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f031bc4-4986-41da-8f74-da8e7dfc1eb7")
-	)
-	(junction
 		(at 127 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3224,12 +3300,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9ef9b13-27ed-4f6d-a246-e7cd41335c66")
-	)
-	(junction
-		(at 213.36 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfd7c396-7307-4d53-ad68-3eb9818ea1ad")
 	)
 	(junction
 		(at 101.6 161.29)
@@ -3322,16 +3392,6 @@
 			(type default)
 		)
 		(uuid "07ef1f1a-adb9-418b-938a-0be86faa28a3")
-	)
-	(wire
-		(pts
-			(xy 213.36 76.2) (xy 220.98 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a091545-845c-48b9-a7c8-585cb867f87d")
 	)
 	(wire
 		(pts
@@ -3525,7 +3585,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 86.36) (xy 213.36 87.63)
+			(xy 217.17 86.995) (xy 217.17 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3595,16 +3655,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 76.2) (xy 220.98 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d60685c-4f2f-4b0f-a397-5bcd70577598")
-	)
-	(wire
-		(pts
 			(xy 152.4 127) (xy 160.02 127)
 		)
 		(stroke
@@ -3662,16 +3712,6 @@
 			(type default)
 		)
 		(uuid "5c401f07-b3e6-4942-9a45-53a7a0249ea4")
-	)
-	(wire
-		(pts
-			(xy 217.17 87.63) (xy 213.36 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee40413-bb34-4155-88e5-00d1d1ebaeec")
 	)
 	(wire
 		(pts
@@ -3805,7 +3845,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 76.2) (xy 213.36 76.2)
+			(xy 209.55 76.2) (xy 217.17 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3822,16 +3862,6 @@
 			(type default)
 		)
 		(uuid "93bd88bb-7a47-4484-b4cd-cb2a7f404f41")
-	)
-	(wire
-		(pts
-			(xy 220.98 76.2) (xy 246.38 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94aeb487-9b57-4f96-b1c4-9546232801a8")
 	)
 	(wire
 		(pts
@@ -3955,16 +3985,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 87.63) (xy 217.17 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb8103d0-6aa1-464e-a03a-d07f7dde6284")
-	)
-	(wire
-		(pts
 			(xy 152.4 151.13) (xy 152.4 154.94)
 		)
 		(stroke
@@ -3995,7 +4015,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 76.2) (xy 213.36 78.74)
+			(xy 217.17 76.2) (xy 217.17 79.375)
 		)
 		(stroke
 			(width 0)
@@ -4012,16 +4032,6 @@
 			(type default)
 		)
 		(uuid "c51cdb91-24a3-4ab2-bd3c-295e83592830")
-	)
-	(wire
-		(pts
-			(xy 220.98 86.36) (xy 220.98 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9042b37-d07b-4993-ba93-4dcd555f0891")
 	)
 	(wire
 		(pts
@@ -4215,6 +4225,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 76.2) (xy 246.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f66c3c5f-bb26-4317-87c5-ab749ad1fdee")
+	)
+	(wire
+		(pts
 			(xy 146.05 95.25) (xy 146.05 97.79)
 		)
 		(stroke
@@ -4242,16 +4262,6 @@
 			(type default)
 		)
 		(uuid "fc2b50d5-0979-4900-8975-04e742c85986")
-	)
-	(wire
-		(pts
-			(xy 220.98 87.63) (xy 217.17 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd695f63-2498-4956-8640-da5885f05bc7")
 	)
 	(wire
 		(pts
@@ -4790,7 +4800,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 213.36 82.55 0)
+		(at 217.17 83.185 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4798,7 +4808,7 @@
 		(dnp no)
 		(uuid "061e98e6-8fd4-4a33-bf8a-6ffeadd7449e")
 		(property "Reference" "C1"
-			(at 207.772 81.28 0)
+			(at 211.582 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,7 +4817,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 207.772 83.82 0)
+			(at 211.582 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4815,8 +4825,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 214.3252 86.36 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 218.1352 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4825,7 +4835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 82.55 0)
+			(at 217.17 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,7 +4844,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 213.36 82.55 0)
+			(at 217.17 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5405,6 +5415,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 233.045 117.475 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c141e5c-d818-434a-b1fc-e297912e7609")
+		(property "Reference" "H2"
+			(at 235.585 116.2049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 235.585 118.7449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 233.045 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.045 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 233.045 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "relay_board"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Random:HEF4049B")
 		(at 152.4 144.78 90)
 		(unit 4)
@@ -5921,6 +5995,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 233.045 123.825 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ea025a6-dc1a-42c8-91a5-ad9b408ea641")
+		(property "Reference" "H3"
+			(at 235.585 122.5549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 235.585 125.0949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 233.045 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.045 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 233.045 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "relay_board"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Random:HEF4049B")
 		(at 187.325 151.13 0)
 		(unit 7)
@@ -6020,6 +6158,70 @@
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "U1")
 					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 233.045 130.175 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b969140-fc81-4e0f-8242-913a3af1ccd1")
+		(property "Reference" "H4"
+			(at 235.585 128.9049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 235.585 131.4449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 233.045 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.045 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 233.045 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "relay_board"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "H4")
+					(unit 1)
 				)
 			)
 		)
@@ -6249,6 +6451,70 @@
 			(project "relay_board"
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 233.045 111.125 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90a7a751-9ee7-4d4c-9a46-e794cb9dfdc3")
+		(property "Reference" "H1"
+			(at 235.585 109.8549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 235.585 112.3949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 233.045 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.045 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 233.045 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "relay_board"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -6595,75 +6861,6 @@
 			(project "relay_board"
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 220.98 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "af2f61e9-d71b-455b-80c0-e21b9f57d260")
-		(property "Reference" "C2"
-			(at 223.52 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" ".1uF"
-			(at 223.52 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
-			(at 221.9452 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 220.98 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eafc45c7-31bc-4ba4-b3b1-7969d3c3a451")
-		)
-		(pin "2"
-			(uuid "565fabd2-940c-4a60-8578-f8db275e6ba6")
-		)
-		(instances
-			(project "relay_board"
-				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
-					(reference "C2")
 					(unit 1)
 				)
 			)

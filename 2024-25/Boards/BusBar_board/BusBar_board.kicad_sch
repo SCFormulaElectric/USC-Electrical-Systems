@@ -632,6 +632,25 @@
 		(color 0 0 0 0)
 		(uuid "fb8b041e-9a12-4fe1-a842-c692939a1721")
 	)
+	(bus_entry
+		(at 201.93 173.355)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81dffd4c-5eb9-4343-95b0-570f2bb006e0")
+	)
+	(wire
+		(pts
+			(xy 138.43 76.2) (xy 138.43 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02d9105c-cfdb-4cfa-8f5b-33099a63a47f")
+	)
 	(wire
 		(pts
 			(xy 91.44 76.2) (xy 95.25 76.2)
@@ -1074,16 +1093,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 76.2) (xy 138.43 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdee64bd-9d17-4ee7-9e54-62effecdb645")
-	)
-	(wire
-		(pts
 			(xy 73.66 76.2) (xy 80.01 76.2)
 		)
 		(stroke
@@ -1212,27 +1221,7 @@
 		)
 		(uuid "faa161ab-7a23-49cd-a54e-52548ada859d")
 	)
-	(text "436500522"
-		(exclude_from_sim no)
-		(at 148.336 120.396 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1b49ba3b-a9f7-4e40-9ee0-1a35e63d82ee")
-	)
-	(text "436500522"
-		(exclude_from_sim no)
-		(at 91.44 120.396 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5fbcbdbb-fce1-4156-acf5-7763afee6001")
-	)
-	(text "Fusing calculation:\n\nno strict fuse rating defined in Orion BMS manual (said below 5A)\nlast year we did 750mA so say we keep it in the mA range\n.82*(.37^2) = ~.1W\n0603 resistors have a .1W power rating, but we want it to blow quicker \nso the actual fuse current may be higher\n\nreason for resistor as fuse- difficult to find good fuse in JLC database, \nresistors do not have a breaking current"
+	(text "Fusing calculation:\n\nno strict fuse rating defined in Orion BMS manual (said below 5A)\nlast year we did 750mA so say we keep it in the mA range\n.250*(.707^2) = ~.125W\n0805 resistors have a .125W power rating (have higher voltage ratings than smaller packages) \nwe want it to blow quick so the actual fuse current may be higher than calculated\n\nreason for resistor as fuse- difficult to find good fuse in JLC database, \nresistors do not have a breaking current"
 		(exclude_from_sim no)
 		(at 102.87 141.986 0)
 		(effects
@@ -1242,16 +1231,6 @@
 			(justify left)
 		)
 		(uuid "608c2d5c-cdbd-4740-8084-c925dfe815a1")
-	)
-	(text "436500522"
-		(exclude_from_sim no)
-		(at 209.55 120.904 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8761539e-a4ad-4f91-b5b6-76885d0d71da")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
@@ -1316,76 +1295,6 @@
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
 					(reference "H22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 195.58 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12a8007e-0770-4a73-8392-9a81a78aac8e")
-		(property "Reference" "R10"
-			(at 198.12 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 198.12 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 196.596 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 195.58 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c39c8ebc-d2b5-4360-823c-b5db067d9f73")
-		)
-		(pin "2"
-			(uuid "caa44be0-67da-4b57-9843-df3243f3158f")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -1460,76 +1369,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 207.01 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a96ef12-72bd-43c6-89fd-04251a347ba6")
-		(property "Reference" "R11"
-			(at 209.55 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 209.55 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 208.026 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 207.01 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d61dd0ee-d194-467c-91e3-4d616ac31ae7")
-		)
-		(pin "2"
-			(uuid "73a341b6-7f06-46d8-8536-4dbdc1557af2")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
 		(at 209.55 113.03 90)
 		(mirror x)
@@ -1555,7 +1394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wago:Wago_734-135_1x05_P3.50mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53398-0571_1x05-1MP_P1.25mm_Vertical"
 			(at 209.55 113.03 0)
 			(effects
 				(font
@@ -1625,7 +1464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
+		(property "Value" "RL0805FR-070R25L"
 			(at 82.55 90.1699 0)
 			(effects
 				(font
@@ -1634,7 +1473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 81.026 89.154 90)
 			(effects
 				(font
@@ -1677,33 +1516,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 231.14 105.41 90)
+		(lib_id "Connector:Conn_01x05_Socket")
+		(at 148.59 113.03 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2cd461de-a1ef-427d-84c0-02136208cb27")
-		(property "Reference" "R13"
-			(at 231.14 99.06 90)
+		(uuid "20028776-ad3b-4952-b535-a60edba8f776")
+		(property "Reference" "J2"
+			(at 148.59 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 231.14 101.6 90)
+		(property "Value" "Conn_01x05_Socket"
+			(at 148.59 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 231.394 104.394 90)
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53398-0571_1x05-1MP_P1.25mm_Vertical"
+			(at 148.59 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1712,7 +1551,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 105.41 0)
+			(at 148.59 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,25 +1559,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 231.14 105.41 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 148.59 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "5016f850-a1b1-4757-a01d-7c53500fb1ce")
 		)
 		(pin "2"
-			(uuid "3250ee21-0322-4241-bbcb-7ce2eaaf1d0e")
+			(uuid "49dcfd65-fb5c-45ed-9d0a-187a227cdd67")
+		)
+		(pin "1"
+			(uuid "aecd74ef-d2b2-4aef-9abc-2200cef8d562")
+		)
+		(pin "3"
+			(uuid "63b425de-953a-4107-a590-707f254a4649")
+		)
+		(pin "4"
+			(uuid "60199b07-8c6f-43de-b119-c81e8fb70b61")
+		)
+		(pin "5"
+			(uuid "6ae7b6b4-79a0-47d2-b8f0-614af29db250")
 		)
 		(instances
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R13")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1746,16 +1594,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 219.71 88.9 0)
+		(at 195.58 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2f60e4c7-2178-4b62-a0a2-2f1e74af48e5")
-		(property "Reference" "R12"
-			(at 222.25 87.6299 0)
+		(uuid "29acb4e4-5617-4800-894e-1dc28156b328")
+		(property "Reference" "R10"
+			(at 198.12 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,8 +1611,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 222.25 90.1699 0)
+		(property "Value" "RL0805FR-070R25L"
+			(at 198.12 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1772,8 +1620,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 220.726 89.154 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 196.596 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1782,7 +1630,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 88.9 0)
+			(at 195.58 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1791,7 +1639,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 219.71 88.9 0)
+			(at 195.58 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1800,15 +1648,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "49e54562-e842-4238-9668-12abc3eaf108")
+			(uuid "c4f33e96-0005-46c6-890e-a4b57dd63408")
 		)
 		(pin "2"
-			(uuid "0f84745d-052b-4e99-9770-e0c431f97a6e")
+			(uuid "3f6eedc6-e3b0-434f-8e75-84a92dc11d0b")
 		)
 		(instances
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -1883,83 +1731,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Socket")
-		(at 148.59 113.03 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "314e42f5-3192-42db-a93c-4b3a3a3cb761")
-		(property "Reference" "J3"
-			(at 148.59 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x05_Socket"
-			(at 148.59 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wago:Wago_734-135_1x05_P3.50mm_Vertical"
-			(at 148.59 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 148.59 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5b0a127e-e6d8-4125-a2a2-196c57dfd2f3")
-		)
-		(pin "1"
-			(uuid "55e7d647-4616-42b7-b9d3-04e0557cd6b6")
-		)
-		(pin "3"
-			(uuid "78ce539c-698f-4617-a7cf-929ff8280664")
-		)
-		(pin "4"
-			(uuid "32d08174-6db3-4ef1-bbf7-312685108da7")
-		)
-		(pin "5"
-			(uuid "975bb2f4-7583-414d-9c71-077a5100de40")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 210.82 73.66 0)
 		(unit 1)
@@ -2022,6 +1793,76 @@
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
 					(reference "H21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 207.01 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a5db60d-c7f3-460c-b512-6d74dc10aea6")
+		(property "Reference" "R11"
+			(at 209.55 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 209.55 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 208.026 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc976ebf-63c3-4d88-ab13-14e69cbaeea6")
+		)
+		(pin "2"
+			(uuid "254c3077-8b12-4b00-8322-ae93db740548")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -2367,35 +2208,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 91.44 88.9 0)
+		(lib_id "Connector:Conn_01x05_Socket")
+		(at 91.44 113.03 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6324e0c9-cac5-4fb9-a814-a638c2139556")
-		(property "Reference" "R3"
-			(at 93.98 87.6299 0)
+		(uuid "5dd4488c-b340-41c0-b291-66289c0585e5")
+		(property "Reference" "J1"
+			(at 91.44 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 93.98 90.1699 0)
+		(property "Value" "Conn_01x05_Socket"
+			(at 91.44 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 92.456 89.154 90)
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53398-0571_1x05-1MP_P1.25mm_Vertical"
+			(at 91.44 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,7 +2243,86 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 88.9 0)
+			(at 91.44 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 91.44 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "beb544be-399d-4e0a-b67d-637c2226a798")
+		)
+		(pin "1"
+			(uuid "9494793e-2ea3-465d-8e96-eea3c89bf857")
+		)
+		(pin "3"
+			(uuid "def4fc18-7c17-4188-806a-73c8621d23a9")
+		)
+		(pin "4"
+			(uuid "f1914e22-e003-40f7-92af-1d0a98957078")
+		)
+		(pin "5"
+			(uuid "c96a35c6-9128-4471-9735-4595bfdba2ce")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 219.71 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66c5b7d9-ce6c-4b7e-849c-1a0af4936782")
+		(property "Reference" "R12"
+			(at 222.25 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 222.25 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 220.726 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +2331,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 91.44 88.9 0)
+			(at 219.71 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,15 +2340,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0a950188-db54-4d38-8cb1-5472b6c81904")
+			(uuid "d5acf06d-e23b-4b17-a80c-e04951cfdeea")
 		)
 		(pin "2"
-			(uuid "cf3547f3-3625-44d4-a931-30f9632a997f")
+			(uuid "7d195481-1552-4d17-bb89-fdd7aa89e590")
 		)
 		(instances
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R3")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -2709,6 +2627,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 148.59 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7821accb-2b1e-4330-91b0-5a720c341904")
+		(property "Reference" "R7"
+			(at 151.13 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 151.13 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 149.606 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 148.59 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e848f62-6bd5-40f5-a017-4c789bf5f329")
+		)
+		(pin "2"
+			(uuid "92cb0c57-1fb3-4190-a057-0843e377673b")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 132.08 73.66 0)
 		(unit 1)
@@ -2844,76 +2832,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 124.46 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "892b7f88-6995-4736-9d3a-3dc64650e939")
-		(property "Reference" "R5"
-			(at 127 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 127 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 125.476 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 124.46 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eefa9138-7f92-4a61-a84e-0912d93cc046")
-		)
-		(pin "2"
-			(uuid "77352275-a427-41d1-93b2-aa2307a9c1d3")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 195.58 73.66 0)
 		(unit 1)
@@ -2976,146 +2894,6 @@
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
 					(reference "H19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 138.43 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91ca8f69-723e-497a-8640-d477970fadbc")
-		(property "Reference" "R6"
-			(at 140.97 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 140.97 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 139.446 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 138.43 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85f6b71c-7261-4a90-886a-d97599337b4f")
-		)
-		(pin "2"
-			(uuid "8d7ec3c4-8653-4259-9ba8-4a8e6368b6c8")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 160.02 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93fbcb00-650a-4a82-8acd-1fb9578ea837")
-		(property "Reference" "R8"
-			(at 162.56 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 162.56 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 161.036 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 160.02 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48128bea-069f-4f45-a1c0-6c056a79f71d")
-		)
-		(pin "2"
-			(uuid "f94475e6-e118-40a9-8bed-584be2a98004")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3191,34 +2969,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 104.14 88.9 0)
+		(at 231.14 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a405e357-296a-4329-9eb5-8f163e4b2b52")
-		(property "Reference" "R4"
-			(at 106.68 87.6299 0)
+		(uuid "b3bc0c46-10af-4117-b187-ac8508c77ec6")
+		(property "Reference" "R13"
+			(at 231.14 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 106.68 90.1699 0)
+		(property "Value" "RL0805FR-070R25L"
+			(at 231.14 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 105.156 89.154 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 231.394 104.394 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,7 +3003,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 104.14 88.9 0)
+			(at 231.14 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,7 +3012,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 104.14 88.9 0)
+			(at 231.14 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,162 +3021,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "460af9e2-b50e-4180-9cc7-e132b772e9ce")
+			(uuid "ddfb1af9-3c8d-49a1-affc-543aff55fd6b")
 		)
 		(pin "2"
-			(uuid "11ac0d6d-0eb7-432b-9f72-6b81806f6e01")
+			(uuid "652a02ef-fdfb-4ac7-9721-e0abfdfe1a82")
 		)
 		(instances
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 148.59 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5e6d7f5-442a-4c6c-9336-86c31068c0ec")
-		(property "Reference" "R7"
-			(at 151.13 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 151.13 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 149.606 89.154 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 148.59 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17a6ba9a-7607-40ff-bea8-7a75a2df4cfb")
-		)
-		(pin "2"
-			(uuid "169d4b10-2d00-4832-bcf3-b326779959c9")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x05_Socket")
-		(at 91.44 113.03 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7d61694-9525-4003-9663-16ff85015873")
-		(property "Reference" "J1"
-			(at 91.44 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x05_Socket"
-			(at 91.44 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wago:Wago_734-135_1x05_P3.50mm_Vertical"
-			(at 91.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 91.44 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "138de9ff-2f2c-43f2-b7ef-b539fb6c1c08")
-		)
-		(pin "1"
-			(uuid "e42e5a4e-101a-494d-84ac-4fd543202fe4")
-		)
-		(pin "3"
-			(uuid "0abdafd3-9eb1-47f4-b507-b4bcc73c8d07")
-		)
-		(pin "4"
-			(uuid "f4ff49c9-e8a3-44a6-a568-cc3a7b96d914")
-		)
-		(pin "5"
-			(uuid "b4fc91c3-fd52-4350-9c72-23118d9c1ad9")
-		)
-		(instances
-			(project "BusBar_board"
-				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "J1")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -3612,16 +3241,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 175.26 88.9 0)
+		(at 104.14 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c1ca278c-e7e3-43b9-be33-abb798b55a11")
-		(property "Reference" "R9"
-			(at 177.8 87.6299 0)
+		(uuid "bac27636-e959-4331-9611-9a7d9d8b2ad2")
+		(property "Reference" "R4"
+			(at 106.68 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3629,8 +3258,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 177.8 90.1699 0)
+		(property "Value" "RL0805FR-070R25L"
+			(at 106.68 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,8 +3267,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 176.276 89.154 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 105.156 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3648,7 +3277,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 88.9 0)
+			(at 104.14 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3657,7 +3286,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 175.26 88.9 0)
+			(at 104.14 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3666,15 +3295,85 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf96f787-0e33-48bb-afca-af175971c3e3")
+			(uuid "dd02e12b-b06f-4091-863d-9a0fdb37051b")
 		)
 		(pin "2"
-			(uuid "a4feb6bf-2d6e-48d0-b792-c56223af8d5c")
+			(uuid "9e2c74fd-7bf5-4aac-a4c2-3b8776234df0")
 		)
 		(instances
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
-					(reference "R9")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 91.44 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baee0696-ff25-4456-a2c2-57a55c6d8f50")
+		(property "Reference" "R3"
+			(at 93.98 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 93.98 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 92.456 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 91.44 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e5eb7ca-ce2f-4d99-b75e-d497763b7de9")
+		)
+		(pin "2"
+			(uuid "7c60b20f-543c-44d8-9b84-50671d9af298")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3689,24 +3388,24 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c28c295a-ab4e-4348-9738-9b45654aefe4")
+		(uuid "d8011236-bd2e-46d9-9ee4-264747a9a265")
 		(property "Reference" "R1"
-			(at 71.12 99.06 90)
+			(at 71.12 99.695 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ERJ-3RQFR82V"
-			(at 71.12 101.6 90)
+		(property "Value" "RL0805FR-070R25L"
+			(at 71.12 102.235 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 71.374 104.394 90)
 			(effects
 				(font
@@ -3734,10 +3433,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "05119aa2-6500-4303-9535-671635648bd1")
+			(uuid "76009c5d-0148-4d8b-a254-df27897c5624")
 		)
 		(pin "2"
-			(uuid "4530b664-dba6-4450-bc19-7f7acb12609c")
+			(uuid "70d0e2e0-d43a-491a-ab7a-75369b5e38f5")
 		)
 		(instances
 			(project "BusBar_board"
@@ -3811,6 +3510,216 @@
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 175.26 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e79e52a3-00c6-4f09-a100-7d4336325866")
+		(property "Reference" "R9"
+			(at 177.8 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 177.8 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 176.276 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5903388-eeee-43c9-ba8a-1e8d2f2d71d1")
+		)
+		(pin "2"
+			(uuid "aa04f9b5-3a3e-4619-82f6-bb2f0334496f")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 160.02 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f365c280-f86d-4609-b10d-591aebe3bb0e")
+		(property "Reference" "R8"
+			(at 162.56 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 162.56 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 161.036 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d924af19-522c-467e-bdea-322765df7b0f")
+		)
+		(pin "2"
+			(uuid "28b315ac-bbc9-4fe0-921d-526b25a260fb")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 124.46 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8a2ff88-5dd5-4c0e-808d-a2c8a42b512e")
+		(property "Reference" "R5"
+			(at 127 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 127 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 125.476 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 124.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "119d07f6-0977-4dfc-8399-73760452ead8")
+		)
+		(pin "2"
+			(uuid "29937a81-1f9e-497b-9214-1a1140d9d727")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3947,6 +3856,76 @@
 			(project "BusBar_board"
 				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
 					(reference "H9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 138.43 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa84caf4-c94d-4c0a-b7db-e8dab8093a14")
+		(property "Reference" "R6"
+			(at 140.97 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RL0805FR-070R25L"
+			(at 140.97 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 139.446 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 138.43 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e36984e-76a3-4e5c-81be-c34c42b2c8f3")
+		)
+		(pin "2"
+			(uuid "634366f9-558b-452e-bf69-fe3c55fdc018")
+		)
+		(instances
+			(project "BusBar_board"
+				(path "/7d6a4f35-077c-4531-9c80-6a05a9da50fc"
+					(reference "R6")
 					(unit 1)
 				)
 			)

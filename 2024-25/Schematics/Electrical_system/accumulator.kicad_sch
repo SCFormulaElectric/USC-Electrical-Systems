@@ -2223,16 +2223,6 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 114.3) (xy 332.74 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "123b8669-5b22-4558-8bca-941b03d2fa9d")
-	)
-	(wire
-		(pts
 			(xy 224.79 90.17) (xy 224.79 96.52)
 		)
 		(stroke
@@ -2461,7 +2451,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 114.3) (xy 320.04 114.3)
+			(xy 323.85 114.3) (xy 332.74 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3104,17 +3094,6 @@
 		)
 		(uuid "b3af230c-060d-476e-aba0-dbe863b78398")
 	)
-	(text "6 A\n"
-		(exclude_from_sim no)
-		(at 325.12 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf18a171-77d8-4520-82c0-905f218f75c5")
-	)
 	(text "crimps: SXH-001T-P0.6N\n"
 		(exclude_from_sim no)
 		(at 177.8 82.55 0)
@@ -3434,7 +3413,7 @@
 			)
 		)
 	)
-	(global_label "To Hvd"
+	(global_label "SDC2"
 		(shape output)
 		(at 252.73 213.36 0)
 		(fields_autoplaced yes)
@@ -3446,7 +3425,7 @@
 		)
 		(uuid "161ea612-4779-4521-a0df-909edce3f27d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.9615 213.36 0)
+			(at 260.6742 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3500,7 +3479,7 @@
 			)
 		)
 	)
-	(global_label "SDC_precharge"
+	(global_label "SDC2"
 		(shape bidirectional)
 		(at 323.85 111.76 180)
 		(fields_autoplaced yes)
@@ -3512,7 +3491,7 @@
 		)
 		(uuid "2e6e8dee-ced7-4761-8051-49588bb8db72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 305.6816 111.76 0)
+			(at 314.7945 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +3965,7 @@
 	)
 	(global_label "GLV+"
 		(shape bidirectional)
-		(at 320.04 114.3 180)
+		(at 323.85 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3996,7 +3975,7 @@
 		)
 		(uuid "c03ed964-c76c-4726-a3fd-bb5faaacc21a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 311.0638 114.3 0)
+			(at 314.8738 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4713,6 +4692,12 @@
 			(uuid "72768740-eb93-42e0-8d17-a0c87caed81d")
 		)
 		(instances
+			(project "accumulator"
+				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
+					(reference "F5")
+					(unit 1)
+				)
+			)
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "F5")
@@ -5187,82 +5172,6 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 326.39 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7414e2af-eb9c-4159-b9d9-6c4ba6c68bed")
-		(property "Reference" "F3"
-			(at 326.39 109.855 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 326.39 112.395 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 326.39 116.078 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 326.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 326.39 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9fc295ff-50c3-481f-80e0-ac627edafd72")
-		)
-		(pin "2"
-			(uuid "82084de9-4c86-49b8-825d-2a87b986e1e8")
-		)
-		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "F3")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -5766,6 +5675,12 @@
 			(uuid "b3b70655-3d02-4c98-9a64-ae20f65eee6e")
 		)
 		(instances
+			(project "accumulator"
+				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
+					(reference "F4")
+					(unit 1)
+				)
+			)
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "F4")
