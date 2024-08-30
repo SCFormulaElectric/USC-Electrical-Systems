@@ -2085,6 +2085,174 @@
 				)
 			)
 		)
+		(symbol "power:GNDPWR"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDPWR"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDPWR_0_1"
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDPWR_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 201.93 165.1)
@@ -2594,6 +2762,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.165 185.42) (xy 177.165 184.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbc5978-5416-48bc-81b9-7152c96dae4e")
+	)
+	(wire
+		(pts
 			(xy 126.365 211.455) (xy 126.365 213.36)
 		)
 		(stroke
@@ -2962,6 +3140,16 @@
 			(type default)
 		)
 		(uuid "e443ea55-18d1-4048-801c-b0414385ca55")
+	)
+	(wire
+		(pts
+			(xy 177.165 184.785) (xy 182.88 184.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5d808d4-6161-4c7c-b914-e9246d908414")
 	)
 	(wire
 		(pts
@@ -3831,6 +4019,28 @@
 			)
 		)
 	)
+	(global_label "GLV-"
+		(shape bidirectional)
+		(at 182.88 184.785 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a5e32a5-768e-4a34-a545-6cb25507da7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.9356 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AIR+_en"
 		(shape bidirectional)
 		(at 264.16 142.24 90)
@@ -4284,7 +4494,7 @@
 		(uuid "0d43ef9f-d4a6-46c7-9238-9fe943bc8ed0")
 	)
 	(hierarchical_label "Control_Pilot"
-		(shape input)
+		(shape output)
 		(at 137.795 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4296,7 +4506,7 @@
 		(uuid "12555ac3-d5e6-411b-a71b-ce164284fcc1")
 	)
 	(hierarchical_label "CANS_BMS"
-		(shape input)
+		(shape bidirectional)
 		(at 111.76 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4308,7 +4518,7 @@
 		(uuid "3ed50b75-c431-4b45-8bc4-9b0fd08d2660")
 	)
 	(hierarchical_label "IMD_fault"
-		(shape input)
+		(shape output)
 		(at 99.06 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4320,7 +4530,7 @@
 		(uuid "566513b0-3f6f-4abc-8935-12b3e1f4004d")
 	)
 	(hierarchical_label "CANH_BMS"
-		(shape input)
+		(shape bidirectional)
 		(at 109.22 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4332,7 +4542,7 @@
 		(uuid "5cd82af1-b39c-4d2f-a816-ed7832a02e16")
 	)
 	(hierarchical_label "Prox_Detect"
-		(shape input)
+		(shape output)
 		(at 140.335 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4343,7 +4553,7 @@
 		)
 		(uuid "5da258eb-35e7-49f4-993c-4e2528c519b0")
 	)
-	(hierarchical_label "SDC1"
+	(hierarchical_label "SDC1_accum"
 		(shape input)
 		(at 115.57 218.44 270)
 		(fields_autoplaced yes)
@@ -4356,7 +4566,7 @@
 		(uuid "779a7b12-d411-4b5f-b0af-3cc72bbef7e1")
 	)
 	(hierarchical_label "HV-"
-		(shape input)
+		(shape output)
 		(at 236.22 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4368,7 +4578,7 @@
 		(uuid "9c68ae01-be1c-41cc-b608-c3ff75b55fb7")
 	)
 	(hierarchical_label "IL1"
-		(shape input)
+		(shape output)
 		(at 231.14 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4380,7 +4590,7 @@
 		(uuid "a2306f1b-27f8-4fdd-8db8-4807e30c64e9")
 	)
 	(hierarchical_label "BMS_fault"
-		(shape input)
+		(shape output)
 		(at 101.6 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4392,7 +4602,7 @@
 		(uuid "b16b70e2-9629-46a4-a724-cf390efd4467")
 	)
 	(hierarchical_label "charge_safe"
-		(shape input)
+		(shape output)
 		(at 118.11 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4404,7 +4614,7 @@
 		(uuid "b987db6d-faf2-437d-b31f-1b4cb411cfd0")
 	)
 	(hierarchical_label "CANL_BMS"
-		(shape input)
+		(shape bidirectional)
 		(at 106.68 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4416,7 +4626,7 @@
 		(uuid "c363dc6d-c6fa-4594-a775-234a7613447a")
 	)
 	(hierarchical_label "HV+"
-		(shape input)
+		(shape output)
 		(at 238.76 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -4626,6 +4836,73 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 177.165 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cef0e66-157e-44c1-88df-baa0ea991bcf")
+		(property "Reference" "#PWR07"
+			(at 177.165 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 177.038 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.165 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.165 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 177.165 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bed880ae-0416-4025-8554-ed400a8fa8e5")
+		)
+		(instances
+			(project "Electrical_system"
+				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
