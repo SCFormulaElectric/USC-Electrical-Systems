@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Author: Arda Caliskan
+# Changelist:
+# 7/3/24 - v1.1 Updated to support up to 6 layers
+# REQUIREMENTS:
+# Unix based OS, kicad-cli, zip
+
 if [ $# -lt 1 ]; then
     echo "Bro try again: $0 directory1, directory2 ... "
     exit 1
@@ -57,4 +63,3 @@ for directory in "$@"; do
 done
 
 exit 0
-
