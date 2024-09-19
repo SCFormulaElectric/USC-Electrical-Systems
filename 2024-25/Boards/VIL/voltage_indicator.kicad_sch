@@ -144,151 +144,6 @@
 				)
 			)
 		)
-		(symbol "Device:D_Zener"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:Fuse"
 			(pin_numbers hide)
 			(pin_names
@@ -527,6 +382,150 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Diode:BZT52Bxx"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BZT52Bxx"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123F"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mW Zener Diode, SOD-123F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D?SOD?123F*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BZT52Bxx_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BZT52Bxx_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1147,12 +1146,6 @@
 		)
 	)
 	(junction
-		(at 62.23 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "004363d5-6175-4231-8a4f-49e7f99b0da5")
-	)
-	(junction
 		(at 96.52 26.035)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1182,6 +1175,32 @@
 		(color 0 0 0 0)
 		(uuid "e6f05ca1-a590-472d-829e-2f614e579656")
 	)
+	(junction
+		(at 62.23 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f365571b-b811-4073-96f3-799a8cc59299")
+	)
+	(wire
+		(pts
+			(xy 62.23 37.465) (xy 62.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c2c2ec-d5eb-4545-b541-f1d04b6a201f")
+	)
+	(wire
+		(pts
+			(xy 62.23 29.845) (xy 62.23 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "061c378a-80eb-46c7-a21e-d93d6e486553")
+	)
 	(wire
 		(pts
 			(xy 82.55 26.035) (xy 96.52 26.035)
@@ -1194,7 +1213,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 41.91) (xy 96.52 46.355)
+			(xy 96.52 44.45) (xy 96.52 46.355)
 		)
 		(stroke
 			(width 0)
@@ -1214,7 +1233,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 36.83) (xy 88.9 36.83)
+			(xy 62.23 39.37) (xy 88.9 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1231,16 +1250,6 @@
 			(type default)
 		)
 		(uuid "350d002d-8bfa-477a-8100-4626c45e6f4d")
-	)
-	(wire
-		(pts
-			(xy 62.23 36.83) (xy 62.23 28.575)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "370954aa-129e-49ba-9511-23252c278e8b")
 	)
 	(wire
 		(pts
@@ -1294,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 26.035) (xy 96.52 31.75)
+			(xy 96.52 26.035) (xy 96.52 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1394,7 +1403,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 90.17) (xy 62.23 36.83)
+			(xy 62.23 90.17) (xy 62.23 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1412,6 +1421,47 @@
 		)
 		(uuid "d8779a7c-5357-454d-a189-9d3b12b01547")
 	)
+	(text "12V zener"
+		(exclude_from_sim no)
+		(at 114.935 88.265 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "19bf5c7b-946a-408b-9c33-4e9cb645a476")
+	)
+	(text "51V zener"
+		(exclude_from_sim no)
+		(at 131.445 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21999b45-b18d-4601-9f8f-e3a346485598")
+	)
+	(text "Special resistor chosen\nfor its voltage rating"
+		(exclude_from_sim no)
+		(at 137.795 74.295 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "840c4575-a0fe-42d3-a6b3-293540fbd7cd")
+	)
+	(label "HV+_fused"
+		(at 86.995 26.035 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b7be671-40d4-4cd3-a4f7-7af8425f4d15")
+	)
 	(label "LED+"
 		(at 96.52 56.515 0)
 		(fields_autoplaced yes)
@@ -1423,8 +1473,8 @@
 		)
 		(uuid "4cb75a47-c95e-4978-a517-91337e8d12db")
 	)
-	(label "HV-"
-		(at 62.23 33.655 0)
+	(label "HV-_fused"
+		(at 73.66 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1432,7 +1482,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "57221a4b-fc83-472f-bfcb-66d452c2178a")
+		(uuid "6252ba73-863f-466c-89e6-e71d30781102")
 	)
 	(label "LED-"
 		(at 96.52 67.945 0)
@@ -1455,6 +1505,17 @@
 			(justify left bottom)
 		)
 		(uuid "a43e69d4-fcf8-4ce3-a2f7-6aadeb07416d")
+	)
+	(label "HV-"
+		(at 62.23 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2db0a01-b8e7-4ebc-849b-a735e3249100")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -1784,7 +1845,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BK_PCS:FUSE_BK_PCS"
+		(property "Footprint" "Library:FUSE_BK_PCS"
 			(at 78.74 27.813 90)
 			(effects
 				(font
@@ -1827,17 +1888,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 124.46 45.72 270)
+		(lib_id "Device:R")
+		(at 124.46 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "78070f64-01df-4dc0-8e2e-68fa764bc54d")
-		(property "Reference" "D3"
-			(at 127.635 44.45 90)
+		(uuid "8ed47df9-62b8-4c7f-aa7f-affdbee41bbe")
+		(property "Reference" "R2"
+			(at 127 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1845,8 +1906,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PZ1AL62B-AU_R1_000A1"
-			(at 127.635 46.99 90)
+		(property "Value" "1M"
+			(at 127 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1854,8 +1915,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 124.46 45.72 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 122.682 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1864,7 +1925,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 45.72 0)
+			(at 124.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1873,7 +1934,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 45.72 0)
+			(at 124.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,15 +1943,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "41b4037c-2865-4274-9e29-080d93d37a3e")
+			(uuid "6a5f8380-a4f4-4a2b-b71a-917b09e16721")
 		)
 		(pin "2"
-			(uuid "6d7c3802-3866-48d2-aec7-1f483e0ed8b3")
+			(uuid "c2bc6330-ee31-4bad-9a6e-944bba1bb7b4")
 		)
 		(instances
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "D3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1965,6 +2026,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BZT52Bxx")
+		(at 124.46 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "969118ab-77f6-4c4e-82e0-27810fdcb865")
+		(property "Reference" "D2"
+			(at 127 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C51"
+			(at 127 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 120.015 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
+			(at 124.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mW Zener Diode, SOD-123F"
+			(at 124.46 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "154b0927-3166-42fd-859c-66b797f5ea92")
+		)
+		(pin "2"
+			(uuid "4a81c105-b2cf-4861-89a5-5afafe6d0af3")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 62.23 33.655 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c8b71ce-ec44-4f7a-838e-924891f05815")
+		(property "Reference" "F2"
+			(at 64.135 32.3849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "750mA"
+			(at 64.135 34.9249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:FUSE_BK_PCS"
+			(at 64.008 33.655 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "904a6d98-e382-479e-bcb4-1b9a8789c43f")
+		)
+		(pin "2"
+			(uuid "382d61aa-2315-4d3a-8a49-ea84df27b7ca")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 153.67 63.5 0)
 		(unit 1)
@@ -2030,7 +2231,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NJFET")
-		(at 93.98 36.83 0)
+		(at 93.98 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2039,15 +2240,6 @@
 		(fields_autoplaced yes)
 		(uuid "aac51cca-f705-4c29-9008-00913ac337e6")
 		(property "Reference" "Q2"
-			(at 99.06 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UJ3N065080K3S"
 			(at 99.06 38.0999 0)
 			(effects
 				(font
@@ -2056,8 +2248,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "UJ3N065080K3S"
+			(at 99.06 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown"
-			(at 99.06 34.29 0)
+			(at 99.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2066,7 +2267,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 36.83 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2075,7 +2276,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 36.83 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2084,7 +2285,7 @@
 			)
 		)
 		(property "Sim.Device" "NJFET"
-			(at 93.98 36.83 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,7 +2294,7 @@
 			)
 		)
 		(property "Sim.Type" "SHICHMANHODGES"
-			(at 93.98 36.83 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,7 +2303,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 93.98 36.83 0)
+			(at 93.98 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,86 +2527,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 124.46 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f13ac75e-0a6e-404b-95a0-a53c336c846b")
-		(property "Reference" "R2"
-			(at 126.365 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RK73G2BTTD1004C"
-			(at 126.365 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:RESC3116X65N"
-			(at 122.682 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f230935-ca39-42e7-94cd-f5117c28febc")
-		)
-		(pin "2"
-			(uuid "07caa612-c88d-4b3b-9091-6624b628c895")
-		)
-		(instances
-			(project "voltage_indicator"
-				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
+		(lib_id "Diode:BZT52Bxx")
 		(at 107.95 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f9589ab7-8953-4368-8f74-29a9d7f6f5fe")
-		(property "Reference" "D2"
-			(at 111.125 82.55 90)
+		(fields_autoplaced yes)
+		(uuid "fd5d0b33-3a72-4d05-aa68-221ba4f4c143")
+		(property "Reference" "D1"
+			(at 110.49 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,8 +2545,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BZT52-B12_R1_00001"
-			(at 100.33 87.63 90)
+		(property "Value" "BZT52C12"
+			(at 110.49 85.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2554,16 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 103.505 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
 			(at 107.95 83.82 0)
 			(effects
 				(font
@@ -2431,16 +2572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "Description" "500mW Zener Diode, SOD-123F"
 			(at 107.95 83.82 0)
 			(effects
 				(font
@@ -2450,15 +2582,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7a8ef8f4-d83a-4d64-95db-09024261c660")
+			(uuid "58a9fffa-a0bb-4512-b93d-ddbeade44f55")
 		)
 		(pin "2"
-			(uuid "ca2498d4-2cdf-4264-acd9-5613744a57b3")
+			(uuid "feae7255-a6c1-4159-ab05-b9048f8770ee")
 		)
 		(instances
-			(project "voltage_indicator"
+			(project ""
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
