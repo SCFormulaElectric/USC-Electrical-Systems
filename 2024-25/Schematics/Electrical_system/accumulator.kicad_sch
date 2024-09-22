@@ -1071,20 +1071,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
+			(property "Reference" "U1"
+				(at -1.016 0.508 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "~"
+				(at 0 1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1114,10 +1116,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "IMD_0_1"
+			(symbol "IMD_1_1"
 				(rectangle
-					(start -8.89 22.86)
-					(end 11.43 2.54)
+					(start -15.24 36.449)
+					(end 15.748 3.937)
 					(stroke
 						(width 0)
 						(type default)
@@ -1126,19 +1128,35 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "IMD_1_1"
-				(pin bidirectional line
-					(at -3.81 25.4 270)
+				(pin power_in line
+					(at 18.288 23.114 180)
 					(length 2.54)
-					(name "GND"
+					(name "12V+_speaker"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -17.907 17.399 0)
+					(length 2.54)
+					(name "5V+_Nextion"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1147,16 +1165,34 @@
 					)
 				)
 				(pin power_in line
-					(at 0 25.4 270)
+					(at 18.288 25.654 180)
 					(length 2.54)
-					(name "Vs"
+					(name "5V+_in"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 18.288 20.574 180)
+					(length 2.54)
+					(name "5V+_out"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1165,16 +1201,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 3.81 25.4 270)
+					(at -17.907 7.874 0)
 					(length 2.54)
-					(name "GND"
+					(name "CANH"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1183,7 +1219,25 @@
 					)
 				)
 				(pin bidirectional line
-					(at 7.62 25.4 270)
+					(at -17.907 9.779 0)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 18.288 15.494 180)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1192,7 +1246,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1200,53 +1254,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 13.97 15.24 180)
+				(pin power_out line
+					(at -17.907 11.684 0)
 					(length 2.54)
-					(name "MHS"
+					(name "GND_Nextion"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 13.97 11.43 180)
-					(length 2.54)
-					(name "MLS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 13.97 6.35 180)
-					(length 2.54)
-					(name "OKHS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1255,16 +1273,16 @@
 					)
 				)
 				(pin input line
-					(at -11.43 8.89 0)
+					(at 18.288 18.034 180)
 					(length 2.54)
-					(name "XLA+"
+					(name "R2D"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "L+"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1273,16 +1291,142 @@
 					)
 				)
 				(pin input line
-					(at -11.43 12.7 0)
+					(at -17.907 13.589 0)
 					(length 2.54)
-					(name "XLA-"
+					(name "RX"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "L-"
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 23.114 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 25.019 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 26.924 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 28.829 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 30.734 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 32.639 0)
+					(length 2.54)
+					(name "Speaker1_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 15.494 0)
+					(length 2.54)
+					(name "TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2370,17 +2514,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.075 107.315) (xy 219.075 104.14)
-		)
-		(stroke
-			(width 0.508)
-			(type default)
-			(color 204 102 0 1)
-		)
-		(uuid "0d2839d5-045c-49a6-8404-a9226ff50c4f")
-	)
-	(wire
-		(pts
 			(xy 120.65 213.36) (xy 120.65 218.44)
 		)
 		(stroke
@@ -2544,17 +2677,6 @@
 			(type default)
 		)
 		(uuid "3271efe1-3142-4e0b-a599-fd1c6f606556")
-	)
-	(wire
-		(pts
-			(xy 219.075 90.17) (xy 219.075 96.52)
-		)
-		(stroke
-			(width 0.508)
-			(type default)
-			(color 204 102 0 1)
-		)
-		(uuid "33c267b9-861d-4cd7-90db-5d5acac492c0")
 	)
 	(wire
 		(pts
@@ -3017,6 +3139,17 @@
 			(type default)
 		)
 		(uuid "c57a1ed1-48d4-421a-97f0-9038e544c2e5")
+	)
+	(wire
+		(pts
+			(xy 219.075 90.17) (xy 219.075 107.315)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "c95927cf-70c7-43db-a94c-63b8553c6bb8")
 	)
 	(wire
 		(pts
@@ -5379,82 +5512,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 219.075 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e0f832d-9b17-4837-8e3d-65e859c1f177")
-		(property "Reference" "F1"
-			(at 220.091 99.949 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "A50QS75-4Y"
-			(at 220.345 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.297 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.075 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.075 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a3846b43-f809-48f2-8edc-3a1271aae4c8")
-		)
-		(pin "2"
-			(uuid "f2a88f9a-8fc9-43a0-8200-e9fc81e41f8c")
-		)
-		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Random:Precharge")
 		(at 339.725 105.41 270)
 		(unit 1)
@@ -5807,19 +5864,21 @@
 		(dnp no)
 		(uuid "e38cbb9e-dd18-4f75-9264-a7bd89d193e1")
 		(property "Reference" "U1"
-			(at 114.3 57.785 0)
+			(at 116.586 51.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "IMD"
-			(at 114.935 55.88 0)
+		(property "Value" "~"
+			(at 115.57 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5849,32 +5908,56 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin ""
 			(uuid "b5946e4e-fb12-43f1-9553-debe84452fdc")
 		)
-		(pin "2"
+		(pin ""
 			(uuid "6331301b-a14b-4698-9847-93096e13b2b0")
 		)
-		(pin "3"
+		(pin ""
 			(uuid "e76a15fd-4de7-41cf-a55c-0e1d74e59fc2")
 		)
-		(pin "4"
+		(pin ""
 			(uuid "4f95b5b3-bf33-420e-bb9c-bebff3d7de11")
 		)
-		(pin "5"
+		(pin ""
 			(uuid "75e2a3d4-3ca6-4dff-a666-1d97f6557caf")
 		)
-		(pin "6"
+		(pin ""
 			(uuid "1cf9896a-6d21-41d3-a1c2-580ebb1973ed")
 		)
-		(pin "8"
+		(pin ""
 			(uuid "ad56c7d3-8d77-4ad4-a0e1-dd046246e4a2")
 		)
-		(pin "L+"
+		(pin ""
 			(uuid "e081f4c7-89c0-4d1b-a29f-f6c62756cec8")
 		)
-		(pin "L-"
+		(pin ""
 			(uuid "be8eaf40-93c1-420b-9cd1-5cd432cfffed")
+		)
+		(pin ""
+			(uuid "0f2e2162-4a8a-43e5-a703-432382a1a636")
+		)
+		(pin ""
+			(uuid "2a69cfc4-beff-49f3-be68-b267cadd2e91")
+		)
+		(pin ""
+			(uuid "01b192fd-a170-4d81-9b55-f3f7e4f6e545")
+		)
+		(pin ""
+			(uuid "4fb078f8-aee8-4033-a412-098a87a74ee6")
+		)
+		(pin ""
+			(uuid "1146efb9-ed69-407f-9831-4c41b52fb485")
+		)
+		(pin ""
+			(uuid "3c253cfc-86ab-4ab6-baad-21e3f2808181")
+		)
+		(pin ""
+			(uuid "26dcb6ac-d798-4c15-8fbe-2ff50c2cac26")
+		)
+		(pin ""
+			(uuid "26f2aeed-2487-4d08-b92a-3f8efb2c5750")
 		)
 		(instances
 			(project "accumulator"
@@ -5885,6 +5968,10 @@
 			)
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
+					(reference "U1")
+					(unit 1)
+				)
+				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
 					(reference "U1")
 					(unit 1)
 				)
