@@ -1,4 +1,4 @@
-#USC Formula Electric Electrical Schematics and Board Designs
+# USC Formula Electric Electrical Schematics and Board Designs
 
 Documentation Notes:
   - Update doumentation.md file in each directory with the appropriate changes made
