@@ -1,19 +1,3 @@
-# Welcome to USC Electrical Systems
-
-This is the official GitHub Pages site for the USC Formula Electric Electrical Systems.
-
-## Sections
-
-- [Overview](#overview)
-- [Schematics](#schematics)
-- [PCB Designs](#pcb-designs)
-
-### Overview
-Information about the electrical systems for USC Formula Electric.
-
-### Schematics
-You can find the schematics [here](link-to-schematics).
-
-### PCB Designs
-Images of PCB designs.
-![PCB Layout](path-to-pcb-image)
+USC Formula Electric Electrical Schematics and Board Designs
+All documentation for PCBs, schematics, etc. will be included in a README in the file folder. STILL A WORK IN PROGRESS
+Please update README files with any changes made :)
