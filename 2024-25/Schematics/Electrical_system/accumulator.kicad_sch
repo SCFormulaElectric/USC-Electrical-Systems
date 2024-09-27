@@ -900,16 +900,16 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U4"
-				(at -13.97 12.7 0)
+				(at -1.905 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Value" "Battery"
-				(at -16.51 15.24 0)
+			(property "Value" "Throttle"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -945,8 +945,8 @@
 			)
 			(symbol "Battery_0_1"
 				(rectangle
-					(start -12.7 20.32)
-					(end 13.97 3.81)
+					(start -11.43 -2.032)
+					(end 10.16 -10.795)
 					(stroke
 						(width 0)
 						(type default)
@@ -957,17 +957,17 @@
 				)
 			)
 			(symbol "Battery_1_1"
-				(pin bidirectional line
-					(at -6.35 22.86 270)
+				(pin input line
+					(at -8.89 -13.335 90)
 					(length 2.54)
-					(name "HV+"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -975,17 +975,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -0.508 22.86 270)
+				(pin input line
+					(at -5.715 -13.335 90)
 					(length 2.54)
-					(name "HV-"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -993,17 +993,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 16.51 12.7 180)
+				(pin input line
+					(at -2.54 -13.335 90)
 					(length 2.54)
-					(name "Tap1"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1011,17 +1011,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 16.51 10.16 180)
+				(pin input line
+					(at 0.635 -13.335 90)
 					(length 2.54)
-					(name "Tap2"
+					(name "SENSE1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1029,17 +1029,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 16.51 7.62 180)
+				(pin input line
+					(at 3.81 -13.335 90)
 					(length 2.54)
-					(name "Tap3"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1047,17 +1047,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 16.51 16.51 180)
+				(pin input line
+					(at 6.985 -13.335 90)
 					(length 2.54)
-					(name "Therm"
+					(name "SENSE2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1129,7 +1129,7 @@
 					)
 				)
 				(pin power_in line
-					(at 18.288 23.114 180)
+					(at 18.288 27.051 180)
 					(length 2.54)
 					(name "12V+_speaker"
 						(effects
@@ -1147,7 +1147,7 @@
 					)
 				)
 				(pin power_out line
-					(at -17.907 17.399 0)
+					(at 18.288 19.431 180)
 					(length 2.54)
 					(name "5V+_Nextion"
 						(effects
@@ -1165,7 +1165,7 @@
 					)
 				)
 				(pin power_in line
-					(at 18.288 25.654 180)
+					(at 18.288 28.956 180)
 					(length 2.54)
 					(name "5V+_in"
 						(effects
@@ -1183,7 +1183,7 @@
 					)
 				)
 				(pin power_out line
-					(at 18.288 20.574 180)
+					(at 18.288 25.146 180)
 					(length 2.54)
 					(name "5V+_out"
 						(effects
@@ -1201,7 +1201,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.907 7.874 0)
+					(at 18.288 9.906 180)
 					(length 2.54)
 					(name "CANH"
 						(effects
@@ -1219,7 +1219,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.907 9.779 0)
+					(at 18.288 11.811 180)
 					(length 2.54)
 					(name "CANL"
 						(effects
@@ -1237,7 +1237,7 @@
 					)
 				)
 				(pin power_in line
-					(at 18.288 15.494 180)
+					(at 18.288 21.336 180)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1255,7 +1255,7 @@
 					)
 				)
 				(pin power_out line
-					(at -17.907 11.684 0)
+					(at 18.288 13.716 180)
 					(length 2.54)
 					(name "GND_Nextion"
 						(effects
@@ -1273,7 +1273,7 @@
 					)
 				)
 				(pin input line
-					(at 18.288 18.034 180)
+					(at 18.288 23.241 180)
 					(length 2.54)
 					(name "R2D"
 						(effects
@@ -1291,7 +1291,7 @@
 					)
 				)
 				(pin input line
-					(at -17.907 13.589 0)
+					(at 18.288 15.621 180)
 					(length 2.54)
 					(name "RX"
 						(effects
@@ -1309,7 +1309,43 @@
 					)
 				)
 				(pin output line
-					(at -17.907 23.114 0)
+					(at -17.907 24.511 0)
+					(length 2.54)
+					(name "Speaker1_F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 26.416 0)
+					(length 2.54)
+					(name "Speaker1_G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -17.907 22.606 0)
 					(length 2.54)
 					(name "Speaker1_M"
 						(effects
@@ -1327,9 +1363,9 @@
 					)
 				)
 				(pin output line
-					(at -17.907 25.019 0)
+					(at -17.907 18.796 0)
 					(length 2.54)
-					(name "Speaker1_M"
+					(name "Speaker2_F"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1345,9 +1381,9 @@
 					)
 				)
 				(pin output line
-					(at -17.907 26.924 0)
+					(at -17.907 20.701 0)
 					(length 2.54)
-					(name "Speaker1_M"
+					(name "Speaker2_G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1363,9 +1399,9 @@
 					)
 				)
 				(pin output line
-					(at -17.907 28.829 0)
+					(at -17.907 16.891 0)
 					(length 2.54)
-					(name "Speaker1_M"
+					(name "Speaker2_M"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1381,9 +1417,9 @@
 					)
 				)
 				(pin output line
-					(at -17.907 30.734 0)
+					(at -17.907 13.081 0)
 					(length 2.54)
-					(name "Speaker1_M"
+					(name "Speaker3_F"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1399,9 +1435,9 @@
 					)
 				)
 				(pin output line
-					(at -17.907 32.639 0)
+					(at -17.907 14.986 0)
 					(length 2.54)
-					(name "Speaker1_M"
+					(name "Speaker3_G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1417,7 +1453,25 @@
 					)
 				)
 				(pin output line
-					(at -17.907 15.494 0)
+					(at -17.907 11.176 0)
+					(length 2.54)
+					(name "Speaker3_M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 18.288 17.526 180)
 					(length 2.54)
 					(name "TX"
 						(effects
@@ -5778,16 +5832,16 @@
 		(dnp no)
 		(uuid "dff5283e-776b-41ca-9de0-40774b0944a4")
 		(property "Reference" "U4"
-			(at 232.41 80.01 0)
+			(at 220.345 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Battery"
-			(at 234.95 82.55 0)
+		(property "Value" "Throttle"
+			(at 218.44 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,22 +5875,22 @@
 				(hide yes)
 			)
 		)
-		(pin ""
+		(pin "6"
 			(uuid "c468a58b-0dfa-4945-9fee-04c9e2dcb0cc")
 		)
-		(pin ""
+		(pin "1"
 			(uuid "ba32a6b7-6538-4a0e-891b-f142c48e4b99")
 		)
-		(pin ""
+		(pin "2"
 			(uuid "1104a5bf-4ec8-4887-8373-2dfcc3879663")
 		)
-		(pin ""
+		(pin "5"
 			(uuid "789baee4-ed97-4646-ae17-54083308f052")
 		)
-		(pin ""
+		(pin "3"
 			(uuid "1b1896b8-2096-41b3-9d83-9e5af8b395c1")
 		)
-		(pin ""
+		(pin "4"
 			(uuid "77aebf10-8bba-45ed-93ac-a313ef1b62af")
 		)
 		(instances
@@ -5848,6 +5902,10 @@
 			)
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
+					(reference "U4")
+					(unit 1)
+				)
+				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
 					(reference "U4")
 					(unit 1)
 				)
@@ -5958,6 +6016,15 @@
 		)
 		(pin ""
 			(uuid "26f2aeed-2487-4d08-b92a-3f8efb2c5750")
+		)
+		(pin ""
+			(uuid "7e47e63d-9e71-47aa-bd5b-9aa834637013")
+		)
+		(pin ""
+			(uuid "3fb81700-1dc3-4561-afd6-e90092609e4c")
+		)
+		(pin ""
+			(uuid "7f43bef2-7855-4ccd-9cc3-6a7ed02b7737")
 		)
 		(instances
 			(project "accumulator"

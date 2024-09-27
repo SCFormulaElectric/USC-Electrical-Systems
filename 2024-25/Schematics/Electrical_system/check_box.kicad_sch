@@ -5945,7 +5945,7 @@
 		)
 		(uuid "61446561-9d6d-4f6a-826c-5c20a1f77b2f")
 	)
-	(text "? A-Hr battery"
+	(text "40 A-Hr battery"
 		(exclude_from_sim no)
 		(at 330.2 165.735 0)
 		(effects
@@ -6262,7 +6262,7 @@
 		)
 		(uuid "f8290d38-ac0c-4209-a393-6eba947cd3a4")
 	)
-	(label "GLV+_TSAL"
+	(label "GLV+_lights"
 		(at 298.323 147.955 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6283,28 +6283,6 @@
 			(justify left bottom)
 		)
 		(uuid "feff456b-46d7-4778-8985-1e3b55375a38")
-	)
-	(global_label "12V+"
-		(shape output)
-		(at 358.775 61.595 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "08e72003-e6f7-4df7-8e5e-fb9c04ead980")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 350.7098 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "RD+"
 		(shape bidirectional)
@@ -7426,7 +7404,7 @@
 		)
 		(uuid "2af17182-d969-4870-bff4-7a8b393d63fb")
 	)
-	(hierarchical_label "CANGND_250"
+	(hierarchical_label "CANGND_accum"
 		(shape bidirectional)
 		(at 174.625 57.785 90)
 		(fields_autoplaced yes)
@@ -7498,7 +7476,7 @@
 		)
 		(uuid "4c5e46c5-7884-4e14-bf65-394ba0c1c61b")
 	)
-	(hierarchical_label "CANL_250"
+	(hierarchical_label "CANL_accum"
 		(shape bidirectional)
 		(at 169.545 57.785 90)
 		(fields_autoplaced yes)
@@ -7558,7 +7536,7 @@
 		)
 		(uuid "7ec7ffc6-a852-4ca4-99c0-7b909944764a")
 	)
-	(hierarchical_label "CANH_250"
+	(hierarchical_label "CANH_accum"
 		(shape bidirectional)
 		(at 172.085 57.785 90)
 		(fields_autoplaced yes)
@@ -8952,73 +8930,6 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd5ebada-22f1-4028-a447-91d2feb7c5f0"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 358.775 61.595 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "739426a5-296c-4251-a399-64264149536d")
-		(property "Reference" "TP8"
-			(at 363.855 61.595 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 364.49 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 358.775 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 358.775 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 358.775 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7f1a4bc-9528-4460-8592-5df0ccf48507")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd5ebada-22f1-4028-a447-91d2feb7c5f0"
-					(reference "TP8")
 					(unit 1)
 				)
 			)
