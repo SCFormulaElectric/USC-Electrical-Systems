@@ -8,296 +8,6 @@
 		(title "SC FormulaE Electrical System")
 	)
 	(lib_symbols
-		(symbol "Device:LED"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "FSAE:Buzzer"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1280,102 +990,6 @@
 				)
 			)
 		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_1_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -1947,16 +1561,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 177.165) (xy 217.17 169.545)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "037464f9-18e8-4fa4-b2cf-fe8efd4a5c56")
-	)
-	(wire
-		(pts
 			(xy 111.76 161.925) (xy 111.76 167.005)
 		)
 		(stroke
@@ -1994,16 +1598,6 @@
 			(type default)
 		)
 		(uuid "15aed3ab-e921-4e56-a0b2-f6019f08871d")
-	)
-	(wire
-		(pts
-			(xy 223.52 169.545) (xy 223.52 177.165)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15e74777-23ad-4707-8be9-dfb9143251d1")
 	)
 	(wire
 		(pts
@@ -2074,16 +1668,6 @@
 			(type default)
 		)
 		(uuid "3a0f70ab-2102-4c85-9aca-3a0de0734d18")
-	)
-	(wire
-		(pts
-			(xy 223.52 184.785) (xy 223.52 186.055)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c87a045-f923-419d-8510-ac5e7af9629e")
 	)
 	(wire
 		(pts
@@ -2257,16 +1841,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 186.055) (xy 217.17 184.785)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aad88a4-c915-43b1-aac1-6bf047d064ae")
-	)
-	(wire
-		(pts
 			(xy 288.29 118.745) (xy 290.83 118.745)
 		)
 		(stroke
@@ -2374,16 +1948,6 @@
 			(type default)
 		)
 		(uuid "a84060f5-798d-48b5-b360-c1732fcf318d")
-	)
-	(wire
-		(pts
-			(xy 217.17 160.02) (xy 217.17 161.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acf867d2-d39e-4a88-8062-58bdb7878cb7")
 	)
 	(wire
 		(pts
@@ -2544,16 +2108,6 @@
 			(type default)
 		)
 		(uuid "e5be0c25-1c6c-44cd-bfd8-f4d0083f8f7d")
-	)
-	(wire
-		(pts
-			(xy 223.52 160.02) (xy 223.52 161.925)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5c9b2ad-f94b-40c0-a9cd-844c45ba8807")
 	)
 	(wire
 		(pts
@@ -3143,18 +2697,6 @@
 		)
 		(uuid "8957c835-1fd1-49cb-b822-c0d3ede420f2")
 	)
-	(hierarchical_label "IMD_ind"
-		(shape input)
-		(at 223.52 160.02 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "89bf43d4-01dd-4a11-9ed0-8f6ce49e1359")
-	)
 	(hierarchical_label "SDC_to_dash"
 		(shape input)
 		(at 111.76 167.005 270)
@@ -3178,18 +2720,6 @@
 			(justify right)
 		)
 		(uuid "f2a3b8d6-e44d-4497-b60c-8082b4876a06")
-	)
-	(hierarchical_label "BMS_ind"
-		(shape input)
-		(at 217.17 160.02 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f35a4357-88ad-45b3-9810-dd11c57f076c")
 	)
 	(hierarchical_label "SDC_to_hoop"
 		(shape output)
@@ -3456,79 +2986,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 217.17 180.975 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "33da1798-bc4f-4203-b224-950b58886301")
-		(property "Reference" "R2"
-			(at 212.09 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470"
-			(at 214.63 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.392 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 180.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 217.17 180.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65f55d0e-743b-4bef-88b6-c53eab21084d")
-		)
-		(pin "2"
-			(uuid "2584eb2c-a4c3-4c56-ae96-82b9c969c9d2")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 166.37 126.365 0)
 		(unit 1)
@@ -3595,79 +3052,6 @@
 			(project "dashbox"
 				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 223.52 180.975 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3dab7b07-f4cc-4303-b018-10cc3aa715c6")
-		(property "Reference" "R1"
-			(at 229.87 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470"
-			(at 227.33 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 221.742 180.975 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 180.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 223.52 180.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bcad3dda-4ece-4ad7-bea7-7baf9117cf33")
-		)
-		(pin "2"
-			(uuid "06563cf0-1b13-4903-b629-7a264bef85bd")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3877,7 +3261,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSAE:Buzzer")
 		(lib_id "FSAE:Buzzer")
 		(at 297.815 140.97 270)
 		(unit 1)
@@ -4014,154 +3397,6 @@
 			(project "dashbox"
 				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 223.52 165.735 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d05d462-f8e6-4306-9f71-244682d45f91")
-		(property "Reference" "D2"
-			(at 223.647 170.815 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 226.695 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 223.52 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fa476a61-bf9d-48a4-843f-299ea2b4aa95")
-		)
-		(pin "1"
-			(uuid "0c653916-49e2-457f-a3e8-f6f5c58c8604")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 217.17 165.735 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "731f8bb7-9923-473e-821e-99bf156cf7b2")
-		(property "Reference" "D1"
-			(at 217.297 171.069 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 214.63 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 217.17 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 217.17 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d67b234c-fc46-4fa7-b51c-51d0e3be2242")
-		)
-		(pin "1"
-			(uuid "a52d5f10-7f47-43b9-91f8-f79b6053f17c")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4314,82 +3549,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 223.52 186.055 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8354fcef-3e65-4fbd-a2fe-9b96d658bad9")
-		(property "Reference" "#PWR02"
-			(at 223.52 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 223.5201 189.865 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6dd62ba6-01ee-4f6a-a733-1238cd7914fe")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "FSAE:Buzzer")
 		(lib_id "FSAE:Buzzer")
 		(at 297.815 118.11 270)
 		(unit 1)
@@ -4460,81 +3619,6 @@
 			(project "dashbox"
 				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 217.17 186.055 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a0d0b545-e36f-42ae-995b-ba4c7da03139")
-		(property "Reference" "#PWR03"
-			(at 217.17 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 217.1701 189.865 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9b3bc2c-8321-45f5-89aa-8849e8f91296")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-			(project "dashbox"
-				(path "/bdbef10d-3dc7-40b8-ad01-d074ec861f82"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4827,7 +3911,6 @@
 		)
 	)
 	(symbol
-		(lib_name "FSAE:Buzzer")
 		(lib_id "FSAE:Buzzer")
 		(at 297.815 129.54 270)
 		(unit 1)
