@@ -28,3 +28,6 @@ v1.0
  - Removed second mosfet connected to light ground (only mosfet attached to 12 V power line now)
  - (more info needed)
 
+v1.1
+ - Added fuses
+ - Added M4 mounting holes
