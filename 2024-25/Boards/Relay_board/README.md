@@ -29,3 +29,7 @@ v1.0
  - Schematic updated to meet 2024-25 rules
  - Changed mosfet logic to match usage with TSAL lights
  - Updated PCB to fit new mosfets and include a ground plane
+
+ v1.1
+ - Removed unnecessary pullup resistor on BSPD signal
+ - Removed unnecessary diodes on fault logic
