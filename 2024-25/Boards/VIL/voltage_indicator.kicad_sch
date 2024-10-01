@@ -831,16 +831,13 @@
 				)
 			)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
+		(symbol "Transistor_FET:DMN2056U"
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q1"
-				(at 5.715 1.27 0)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -848,8 +845,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "VN2460"
-				(at 5.715 -1.27 0)
+			(property "Value" "DMN2056U"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -857,25 +854,28 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92"
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN2056U.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Description" "4A Id, 20V Vds, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -884,34 +884,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -920,7 +893,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DMN2056U_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -1087,11 +1069,11 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
+			(symbol "DMN2056U_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "S"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1106,10 +1088,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1213,16 +1195,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 44.45) (xy 96.52 46.355)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "216039f0-7cbc-46f2-8a6e-cf72502bf5e8")
-	)
-	(wire
-		(pts
 			(xy 96.52 90.17) (xy 62.23 90.17)
 		)
 		(stroke
@@ -1313,6 +1285,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 53.34) (xy 96.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dfd37c-68d5-43fb-8adc-d5a4578f46d7")
+	)
+	(wire
+		(pts
 			(xy 62.23 26.035) (xy 74.93 26.035)
 		)
 		(stroke
@@ -1323,17 +1305,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 49.53) (xy 124.46 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61712bd5-07ee-47cb-9ee0-3d45332c0de8")
-	)
-	(wire
-		(pts
-			(xy 124.46 41.91) (xy 124.46 26.035)
+			(xy 124.46 27.94) (xy 124.46 26.035)
 		)
 		(stroke
 			(width 0)
@@ -1393,16 +1365,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 53.975) (xy 96.52 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be22b5a0-1758-43f8-b111-db7557dc9593")
-	)
-	(wire
-		(pts
 			(xy 62.23 90.17) (xy 62.23 39.37)
 		)
 		(stroke
@@ -1413,6 +1375,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 35.56) (xy 124.46 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a63209-fddd-4d9a-947f-7fd65f3ef5f2")
+	)
+	(wire
+		(pts
 			(xy 96.52 64.77) (xy 96.52 72.39)
 		)
 		(stroke
@@ -1420,6 +1392,16 @@
 			(type default)
 		)
 		(uuid "d8779a7c-5357-454d-a189-9d3b12b01547")
+	)
+	(wire
+		(pts
+			(xy 96.52 44.45) (xy 96.52 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63c82ad-2153-4d2b-91ac-6b9b2aeb3d57")
 	)
 	(text "12V zener"
 		(exclude_from_sim no)
@@ -1433,7 +1415,7 @@
 	)
 	(text "51V zener"
 		(exclude_from_sim no)
-		(at 131.445 50.8 0)
+		(at 135.636 28.956 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1441,15 +1423,15 @@
 		)
 		(uuid "21999b45-b18d-4601-9f8f-e3a346485598")
 	)
-	(text "Special resistor chosen\nfor its voltage rating"
+	(text "Multiple resistors\nfor added voltage\nrating"
 		(exclude_from_sim no)
-		(at 137.795 74.295 0)
+		(at 140.97 43.942 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "840c4575-a0fe-42d3-a6b3-293540fbd7cd")
+		(uuid "b38e7392-9236-458e-bf67-75ded7c0008f")
 	)
 	(label "HV+_fused"
 		(at 86.995 26.035 0)
@@ -1518,17 +1500,17 @@
 		(uuid "c2db0a01-b8e7-4ebc-849b-a735e3249100")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 96.52 50.165 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 153.67 60.96 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0df17fd2-b988-4fa3-87cb-b49bdf5d82c0")
-		(property "Reference" "R1"
-			(at 98.425 48.895 0)
+		(uuid "1f8250b8-d91b-4000-b724-c898bd23210a")
+		(property "Reference" "H2"
+			(at 156.21 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,8 +1518,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1100"
-			(at 98.425 51.435 0)
+		(property "Value" "MountingHole"
+			(at 156.21 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,8 +1527,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 94.742 50.165 90)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 153.67 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1555,7 +1537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 50.165 0)
+			(at 153.67 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1563,125 +1545,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 96.52 50.165 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 153.67 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "8533fd02-55e9-4922-a7ca-7f7012bf1ebb")
-		)
-		(pin "2"
-			(uuid "9e4819c3-61c5-4eed-85cd-47c12d1542a8")
 		)
 		(instances
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 99.06 77.47 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "16bd4508-3c52-4f53-ab4d-64ad23c92f34")
-		(property "Reference" "Q1"
-			(at 93.345 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VN2460"
-			(at 93.345 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92"
-			(at 93.98 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-			(at 99.06 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 99.06 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 99.06 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 99.06 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "19f15c43-42b3-43ec-864d-0c8438c3a96a")
-		)
-		(pin "2"
-			(uuid "d132f3ac-ee47-46f3-837a-0d2b076e9848")
-		)
-		(pin "3"
-			(uuid "ba303fc9-c45a-4f93-843e-ed85ac230710")
-		)
-		(instances
-			(project "voltage_indicator"
-				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "Q1")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -1757,7 +1633,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 153.67 57.15 0)
+		(at 153.67 54.61 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -1766,7 +1642,7 @@
 		(fields_autoplaced yes)
 		(uuid "2427e9cc-9021-4798-9014-cd8f08676889")
 		(property "Reference" "H1"
-			(at 156.21 55.8799 0)
+			(at 156.21 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1651,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 156.21 58.4199 0)
+			(at 156.21 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1660,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 153.67 57.15 0)
+			(at 153.67 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +1669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 57.15 0)
+			(at 153.67 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1802,7 +1678,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 153.67 57.15 0)
+			(at 153.67 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1814,6 +1690,221 @@
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f839b17-f41d-4704-8329-4100c073e162")
+		(property "Reference" "R6"
+			(at 126.365 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "250k"
+			(at 125.984 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 122.682 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f846f7be-cf78-4677-b682-91fdd0d4237b")
+		)
+		(pin "2"
+			(uuid "3cd91f20-e7b9-48d3-9a86-cc7802d71d85")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 96.52 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "404c45f4-caa6-44b0-a94f-6f6a802cc9d4")
+		(property "Reference" "R1"
+			(at 99.06 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1100"
+			(at 99.06 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 94.742 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad02e67e-3c38-4f68-8842-50915ba61857")
+		)
+		(pin "2"
+			(uuid "66cda498-d842-4acc-acd1-d67ad665a273")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:DMN2056U")
+		(at 99.06 77.47 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c1d2fb8-bf1d-4d1c-9058-ac0d50298eb3")
+		(property "Reference" "Q3"
+			(at 92.71 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2056U"
+			(at 92.71 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 93.98 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN2056U.pdf"
+			(at 93.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4A Id, 20V Vds, N-Channel MOSFET, SOT-23"
+			(at 99.06 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0d41af0-0b40-4609-b5cc-1f852b9bdd0b")
+		)
+		(pin "3"
+			(uuid "e386e1a0-596e-4574-99a7-e8c9dd434f81")
+		)
+		(pin "2"
+			(uuid "ed14093f-147a-43c8-b77b-c5aeb7764767")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -1888,17 +1979,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 124.46 83.82 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 153.67 67.31 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8ed47df9-62b8-4c7f-aa7f-affdbee41bbe")
-		(property "Reference" "R2"
-			(at 127 82.5499 0)
+		(uuid "61560a2b-22c5-46ea-864f-3c9b0538ac8b")
+		(property "Reference" "H3"
+			(at 156.21 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,8 +1997,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 127 85.0899 0)
+		(property "Value" "MountingHole"
+			(at 156.21 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,8 +2006,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 122.682 83.82 90)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 153.67 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1925,7 +2016,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 83.82 0)
+			(at 153.67 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,25 +2024,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 124.46 83.82 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 153.67 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "6a5f8380-a4f4-4a2b-b71a-917b09e16721")
-		)
-		(pin "2"
-			(uuid "c2bc6330-ee31-4bad-9a6e-944bba1bb7b4")
 		)
 		(instances
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "R2")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -2027,7 +2112,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BZT52Bxx")
-		(at 124.46 45.72 270)
+		(at 124.46 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2036,7 +2121,7 @@
 		(fields_autoplaced yes)
 		(uuid "969118ab-77f6-4c4e-82e0-27810fdcb865")
 		(property "Reference" "D2"
-			(at 127 44.4499 90)
+			(at 127 30.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +2130,7 @@
 			)
 		)
 		(property "Value" "BZT52C51"
-			(at 127 46.9899 90)
+			(at 127 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +2139,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 120.015 45.72 0)
+			(at 120.015 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +2148,7 @@
 			)
 		)
 		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-			(at 124.46 45.72 0)
+			(at 124.46 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +2157,7 @@
 			)
 		)
 		(property "Description" "500mW Zener Diode, SOD-123F"
-			(at 124.46 45.72 0)
+			(at 124.46 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,70 +2245,6 @@
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
 					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 153.67 63.5 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1fff412-42e6-4b20-80a9-293b647d8ea3")
-		(property "Reference" "H2"
-			(at 156.21 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 156.21 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 153.67 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "voltage_indicator"
-				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -2330,17 +2351,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 153.67 69.85 0)
+		(lib_id "Device:R")
+		(at 124.46 41.91 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc989780-7c05-4b45-9ec8-f2cfd8b1bb8c")
-		(property "Reference" "H3"
-			(at 156.21 68.5799 0)
+		(uuid "ab4adf32-9437-4091-93ce-e087f24ed781")
+		(property "Reference" "R2"
+			(at 126.365 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2348,8 +2368,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 156.21 71.1199 0)
+		(property "Value" "250k"
+			(at 125.984 43.688 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2357,8 +2377,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 153.67 69.85 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 122.682 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2367,7 +2387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 69.85 0)
+			(at 124.46 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2375,19 +2395,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 153.67 69.85 0)
+		(property "Description" ""
+			(at 124.46 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f406b82c-05df-4321-b518-91ab4815f105")
+		)
+		(pin "2"
+			(uuid "2b3c065f-dad0-464c-9acd-539250bc86db")
 		)
 		(instances
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "H3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2395,15 +2421,24 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 153.67 76.2 0)
+		(at 153.67 73.66 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cb3a18d9-c5e9-42c1-9d0c-0214bdcec2d8")
+		(uuid "bc7436dc-0eda-48b3-bc33-b00b09ff40ab")
 		(property "Reference" "H4"
+			(at 156.21 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
 			(at 156.21 74.9299 0)
 			(effects
 				(font
@@ -2412,17 +2447,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 156.21 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 153.67 76.2 0)
+			(at 153.67 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +2457,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 76.2 0)
+			(at 153.67 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,7 +2466,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 153.67 76.2 0)
+			(at 153.67 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2459,15 +2485,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 124.46 64.77 0)
+		(at 124.46 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "dcdd9dfd-48e8-4622-b841-4dcac73f568f")
-		(property "Reference" "R3"
-			(at 126.365 64.135 0)
+		(fields_autoplaced yes)
+		(uuid "dbf3292e-fc93-40fa-87e8-5a330810bfaf")
+		(property "Reference" "R4"
+			(at 127 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2475,8 +2502,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PR02000201004FA100"
-			(at 118.745 69.85 0)
+		(property "Value" "2M"
+			(at 127 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2484,8 +2511,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 122.682 64.77 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 122.682 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2494,7 +2521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 64.77 0)
+			(at 124.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2503,7 +2530,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 64.77 0)
+			(at 124.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2512,15 +2539,84 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd890b07-4864-4869-8038-26ef37b269f9")
+			(uuid "feb2340f-d24d-461d-939f-670e164facb9")
 		)
 		(pin "2"
-			(uuid "1616ea36-c8b8-4255-a6b7-fbe1b5d7363f")
+			(uuid "921b77da-ea9a-4150-ab45-1fae8973f481")
 		)
 		(instances
 			(project "voltage_indicator"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
-					(reference "R3")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f393af62-8636-421f-bb89-2ccecc068ea1")
+		(property "Reference" "R5"
+			(at 126.365 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "250k"
+			(at 125.984 51.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 122.682 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ebed8b7-d579-41ef-bc6e-d041228f5b96")
+		)
+		(pin "2"
+			(uuid "b7fa0fe0-55ae-496c-ad59-a052de77898a")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -2591,6 +2687,75 @@
 			(project ""
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdb52d50-c89a-47af-b2e5-279b6a0dd9d1")
+		(property "Reference" "R7"
+			(at 126.365 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "250k"
+			(at 125.984 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 122.682 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a113c427-0cc9-4ac5-9e5d-9b0937b72893")
+		)
+		(pin "2"
+			(uuid "6ac3f8ca-7b99-4e64-becf-e282eb138759")
+		)
+		(instances
+			(project "voltage_indicator"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "R7")
 					(unit 1)
 				)
 			)
