@@ -11,3 +11,4 @@ Includes the following:
  - TSAL
  - VIL
  - random_shit_board
+ - DAQ_sensor
