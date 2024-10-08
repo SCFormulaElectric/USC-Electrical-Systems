@@ -1,4 +1,4 @@
-# Relay Board Documentation
+# DAQ Sensor Board Documentation
 
 ## High-level Functionality:
 
