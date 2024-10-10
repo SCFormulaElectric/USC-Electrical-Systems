@@ -6,7 +6,7 @@ The DAQ sensor board takes in various sensor data, both analog and digital, and 
 This is done through various ADCs and multiplexers, which cycle through signals to be sent to the DAQ.
 
 Sensors Needed:
- - 2 brake line sensors (PRIORITY)
+ - 2 brake line sensors (PRIORITY): *MLH02KPSB06A*
  - 3 in-line temp sensors (PRIORITY)
  - 2 wheel speed
  - 4 linear potentiometer sensors
