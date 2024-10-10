@@ -7,7 +7,7 @@ This is done through various ADCs and multiplexers, which cycle through signals 
 
 Sensors Needed:
  - 2 brake line sensors (PRIORITY): *MLH02KPSB06A*
- - 3 in-line temp sensors (PRIORITY)
+ - 3 in-line temp sensors (PRIORITY): *GE-1935*
  - 2 wheel speed
  - 4 linear potentiometer sensors
  - 1 steering angle sensor (rotary potentiometer)
