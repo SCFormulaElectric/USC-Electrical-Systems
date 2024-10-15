@@ -17,18 +17,26 @@ Sensors Needed:
 
 ## Signal i/p & o/p:
 
-Inputs:
-
- - [please add]
-
-Outputs:
-
+ - Pressure 1+: 5V to sensor 1
+ - Pressure 1-: GND to sensor 1
+ - Pressure1 out: analog output of pressure sensor 1
+ - Pressure 2+: " "
+ - Pressure 2-: " "
+ - Pressure2 out: " "
+ - Temp 1+: 5V to temp sensor 1
+ - Temp 1-: GND to temp sensor 1
+ - Temp 2+: " "
+ - Temp 2-: " " 
+ - Temp 3+: " "
+ - Temp 3-: " "
  - MOSI: master out
  - MISO: master in
  - CS: chip select
  - SCLK: SPI clock
+ - GPIOx: GPIO to ADC
 
 ## Version Control:
 v0.1
 
  - Changed to one large ADC for all analog inputs -> SPI output to teensy
+ - Added pressure sensors for brake lines and temp for cooling lines
