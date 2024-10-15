@@ -23,9 +23,12 @@ Inputs:
 
 Outputs:
 
- - [please add]
+ - MOSI: master out
+ - MISO: master in
+ - CS: chip select
+ - SCLK: SPI clock
 
 ## Version Control:
-v1.0
+v0.1
 
- - Initial release not completed yet
+ - Changed to one large ADC for all analog inputs -> SPI output to teensy
