@@ -4410,6 +4410,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 91.44) (xy 234.95 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f08b3bb-5b6d-4786-9489-fce83a7f2739")
+	)
+	(wire
+		(pts
 			(xy 111.76 132.08) (xy 111.76 154.94)
 		)
 		(stroke
@@ -5114,25 +5124,15 @@
 		)
 		(uuid 4f7a8eb5-d5a7-47d3-a8e1-e9947590ef90)
 	)
-	(text "(unsure of where to route enable pins on LDOs)"
+	(text "note: internal enable pulldown in both LDOs"
 		(exclude_from_sim no)
-		(at 129.032 26.67 0)
+		(at 156.718 81.788 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "28bc81fb-6611-4cd8-a3c3-88accf69fd8c")
-	)
-	(text "ENABLE?"
-		(exclude_from_sim no)
-		(at 94.234 60.452 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "29768b4b-c12e-4768-910d-939395e93e09")
 	)
 	(text "0.5 < Vout < 4.5"
 		(exclude_from_sim no)
@@ -5204,16 +5204,6 @@
 		)
 		(uuid "9df55b50-edcd-4b90-9ed4-a64d68e818da")
 	)
-	(text "ENABLE?"
-		(exclude_from_sim no)
-		(at 150.114 57.912 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d253a866-4dd1-4ef9-9e21-f32394db54b4")
-	)
 	(text "Temperature Sensors (x3): GE-1935"
 		(exclude_from_sim no)
 		(at 43.942 87.63 0)
@@ -5224,7 +5214,7 @@
 		)
 		(uuid "de7b2951-d2d5-4b56-a45b-974fdbafe7d9")
 	)
-	(text "ADC to Teensy"
+	(text "ADC (SPI to Teensy)"
 		(exclude_from_sim no)
 		(at 100.33 92.964 0)
 		(effects
@@ -6466,7 +6456,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "099255f3-3962-46fb-9df9-b05e14406a14")
 		(property "Reference" "J2"
 			(at 241.3 60.9599 0)
@@ -6478,7 +6467,7 @@
 			)
 		)
 		(property "Value" "Conn_01x24_Socket"
-			(at 241.3 63.4999 0)
+			(at 249.936 68.834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6932,7 +6921,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 207.01 86.36 270)
+		(at 220.98 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6941,7 +6930,7 @@
 		(fields_autoplaced yes)
 		(uuid "36a03f59-1234-46ca-9e31-d92185d4b8cb")
 		(property "Reference" "#PWR03"
-			(at 200.66 86.36 0)
+			(at 214.63 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6950,7 +6939,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 86.3599 90)
+			(at 217.17 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6959,7 +6948,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 86.36 0)
+			(at 220.98 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6968,7 +6957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 86.36 0)
+			(at 220.98 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6977,7 +6966,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 86.36 0)
+			(at 220.98 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8530,6 +8519,72 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 86.36 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd677fd1-29f4-4550-ad2d-1940e58e5fbb")
+		(property "Reference" "#PWR024"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 86.36 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f9184d8-1c19-4981-93a6-42ce35d83e70")
+		)
+		(instances
+			(project "DAQ_SensorBoard"
+				(path "/7736ffec-8eeb-486a-9772-0952ff9b5594"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 124.46 53.34 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8724,72 +8779,6 @@
 			(project ""
 				(path "/7736ffec-8eeb-486a-9772-0952ff9b5594"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 86.36 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ded6d7d8-e8cb-4623-9320-0bdcd9819d7d")
-		(property "Reference" "#PWR024"
-			(at 86.36 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 86.36 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 86.36 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e35767dc-7b2d-41a5-9180-e1724a82b5c6")
-		)
-		(instances
-			(project "DAQ_SensorBoard"
-				(path "/7736ffec-8eeb-486a-9772-0952ff9b5594"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)

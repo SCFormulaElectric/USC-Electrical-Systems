@@ -13,7 +13,7 @@ Sensors Needed:
  - 1 steering angle sensor (rotary potentiometer)
  - 1 GPS
  - 1 IMU/Gyro
- - ADC: *ADS122U04IPWR* (UART, 4 channel, 24-bit, 2.3V-5.5V)
+ - ADC: *ADS7950* (SPI, 16 channel)
 
 ## Signal i/p & o/p:
 
