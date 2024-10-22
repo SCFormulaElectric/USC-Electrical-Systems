@@ -900,16 +900,16 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U4"
-				(at -1.905 3.175 0)
+				(at -13.97 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
-			(property "Value" "Throttle"
-				(at 0 0 0)
+			(property "Value" "Battery"
+				(at -16.51 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -945,8 +945,8 @@
 			)
 			(symbol "Battery_0_1"
 				(rectangle
-					(start -11.43 -2.032)
-					(end 10.16 -10.795)
+					(start -12.7 20.32)
+					(end 13.97 3.81)
 					(stroke
 						(width 0)
 						(type default)
@@ -957,17 +957,17 @@
 				)
 			)
 			(symbol "Battery_1_1"
-				(pin input line
-					(at -8.89 -13.335 90)
+				(pin bidirectional line
+					(at -6.35 22.86 270)
 					(length 2.54)
-					(name "GND"
+					(name "HV+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -975,17 +975,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.715 -13.335 90)
+				(pin bidirectional line
+					(at -0.508 22.86 270)
 					(length 2.54)
-					(name "GND"
+					(name "HV-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -993,17 +993,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -2.54 -13.335 90)
+				(pin bidirectional line
+					(at 16.51 12.7 180)
 					(length 2.54)
-					(name "+5V"
+					(name "Tap1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1011,17 +1011,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 0.635 -13.335 90)
+				(pin bidirectional line
+					(at 16.51 10.16 180)
 					(length 2.54)
-					(name "SENSE1"
+					(name "Tap2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1029,17 +1029,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 3.81 -13.335 90)
+				(pin bidirectional line
+					(at 16.51 7.62 180)
 					(length 2.54)
-					(name "+5V"
+					(name "Tap3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1047,17 +1047,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 6.985 -13.335 90)
+				(pin bidirectional line
+					(at 16.51 16.51 180)
 					(length 2.54)
-					(name "SENSE2"
+					(name "Therm"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1071,22 +1071,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U1"
-				(at -1.016 0.508 0)
+			(property "Reference" "U"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "~"
-				(at 0 1.524 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1116,10 +1114,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "IMD_1_1"
+			(symbol "IMD_0_1"
 				(rectangle
-					(start -15.24 36.449)
-					(end 15.748 3.937)
+					(start -8.89 22.86)
+					(end 11.43 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -1128,116 +1126,10 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 18.288 27.051 180)
-					(length 2.54)
-					(name "12V+_speaker"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 18.288 19.431 180)
-					(length 2.54)
-					(name "5V+_Nextion"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 18.288 28.956 180)
-					(length 2.54)
-					(name "5V+_in"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 18.288 25.146 180)
-					(length 2.54)
-					(name "5V+_out"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			)
+			(symbol "IMD_1_1"
 				(pin bidirectional line
-					(at 18.288 9.906 180)
-					(length 2.54)
-					(name "CANH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 18.288 11.811 180)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 18.288 21.336 180)
+					(at -3.81 25.4 270)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1246,7 +1138,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1254,17 +1146,107 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 18.288 13.716 180)
+				(pin power_in line
+					(at 0 25.4 270)
 					(length 2.54)
-					(name "GND_Nextion"
+					(name "Vs"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 3.81 25.4 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 25.4 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 13.97 15.24 180)
+					(length 2.54)
+					(name "MHS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 13.97 11.43 180)
+					(length 2.54)
+					(name "MLS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 13.97 6.35 180)
+					(length 2.54)
+					(name "OKHS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1273,16 +1255,16 @@
 					)
 				)
 				(pin input line
-					(at 18.288 23.241 180)
+					(at -11.43 8.89 0)
 					(length 2.54)
-					(name "R2D"
+					(name "XLA+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "L+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1291,196 +1273,16 @@
 					)
 				)
 				(pin input line
-					(at 18.288 15.621 180)
+					(at -11.43 12.7 0)
 					(length 2.54)
-					(name "RX"
+					(name "XLA-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 24.511 0)
-					(length 2.54)
-					(name "Speaker1_F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 26.416 0)
-					(length 2.54)
-					(name "Speaker1_G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 22.606 0)
-					(length 2.54)
-					(name "Speaker1_M"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 18.796 0)
-					(length 2.54)
-					(name "Speaker2_F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 20.701 0)
-					(length 2.54)
-					(name "Speaker2_G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 16.891 0)
-					(length 2.54)
-					(name "Speaker2_M"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 13.081 0)
-					(length 2.54)
-					(name "Speaker3_F"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 14.986 0)
-					(length 2.54)
-					(name "Speaker3_G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -17.907 11.176 0)
-					(length 2.54)
-					(name "Speaker3_M"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 18.288 17.526 180)
-					(length 2.54)
-					(name "TX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
+					(number "L-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2692,6 +2494,17 @@
 	)
 	(wire
 		(pts
+			(xy 127 63.5) (xy 138.43 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "2759a2dc-4690-44ae-9e1e-f6adcf47c3b6")
+	)
+	(wire
+		(pts
 			(xy 228.6 208.28) (xy 228.6 165.1)
 		)
 		(stroke
@@ -2958,17 +2771,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 63.5) (xy 127 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 204 102 0 1)
-		)
-		(uuid "713359d2-0622-482e-ac43-d6b86416416d")
-	)
-	(wire
-		(pts
 			(xy 195.58 165.1) (xy 201.93 165.1)
 		)
 		(stroke
@@ -3049,6 +2851,16 @@
 			(type default)
 		)
 		(uuid "8715a42d-73d7-4c41-ba2b-d04f6ce8edea")
+	)
+	(wire
+		(pts
+			(xy 127 59.69) (xy 127.635 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87bdce9d-7e59-4edd-98c7-749ed0bcec32")
 	)
 	(wire
 		(pts
@@ -3259,6 +3071,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 63.5) (xy 127.635 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e6aa1a-a8b8-4aa7-b214-31ce2d63f2c0")
+	)
+	(wire
+		(pts
 			(xy 323.85 99.06) (xy 332.74 99.06)
 		)
 		(stroke
@@ -3450,7 +3272,7 @@
 	)
 	(text "for J1772 \ninterface"
 		(exclude_from_sim no)
-		(at 139.7 235.204 0)
+		(at 139.7 234.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5743,6 +5565,86 @@
 		)
 	)
 	(symbol
+		(lib_id "FSAE:Battery")
+		(at 218.44 67.31 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb97a5e4-69d1-4dab-ab61-92372df831cd")
+		(property "Reference" "U16"
+			(at 220.345 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery Pack"
+			(at 218.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "62759f70-abea-497f-97c8-427ce85e2183")
+		)
+		(pin ""
+			(uuid "c00bcf78-ebce-4499-a71a-dbcc3b416704")
+		)
+		(pin ""
+			(uuid "2797f240-815f-43cd-a4b2-2c17b9051608")
+		)
+		(pin ""
+			(uuid "07eede1e-10b1-467c-9242-8d375b3580f2")
+		)
+		(pin ""
+			(uuid "fe396f0c-d2a6-42a4-9282-42c187f4954f")
+		)
+		(pin ""
+			(uuid "c9c22ee5-c0f3-463f-a52c-c72d25022857")
+		)
+		(instances
+			(project "Electrical_system"
+				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Random:Volt_indic")
 		(at 289.56 71.755 270)
 		(unit 1)
@@ -5823,92 +5725,6 @@
 		)
 	)
 	(symbol
-		(lib_id "FSAE:Battery")
-		(at 218.44 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dff5283e-776b-41ca-9de0-40774b0944a4")
-		(property "Reference" "U4"
-			(at 220.345 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Throttle"
-			(at 218.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 218.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 218.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c468a58b-0dfa-4945-9fee-04c9e2dcb0cc")
-		)
-		(pin "1"
-			(uuid "ba32a6b7-6538-4a0e-891b-f142c48e4b99")
-		)
-		(pin "2"
-			(uuid "1104a5bf-4ec8-4887-8373-2dfcc3879663")
-		)
-		(pin "5"
-			(uuid "789baee4-ed97-4646-ae17-54083308f052")
-		)
-		(pin "3"
-			(uuid "1b1896b8-2096-41b3-9d83-9e5af8b395c1")
-		)
-		(pin "4"
-			(uuid "77aebf10-8bba-45ed-93ac-a313ef1b62af")
-		)
-		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "FSAE:IMD")
 		(at 115.57 50.8 180)
 		(unit 1)
@@ -5916,23 +5732,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e38cbb9e-dd18-4f75-9264-a7bd89d193e1")
-		(property "Reference" "U1"
-			(at 116.586 51.308 0)
+		(uuid "c858ca65-e258-4373-9529-a1e190ad57fa")
+		(property "Reference" "U12"
+			(at 114.3 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 115.57 52.324 0)
+		(property "Value" "IMD"
+			(at 114.935 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5962,76 +5776,37 @@
 				(hide yes)
 			)
 		)
-		(pin ""
-			(uuid "b5946e4e-fb12-43f1-9553-debe84452fdc")
+		(pin "1"
+			(uuid "cc676941-245d-4418-a925-b4db65c110df")
 		)
-		(pin ""
-			(uuid "6331301b-a14b-4698-9847-93096e13b2b0")
+		(pin "2"
+			(uuid "e3e313da-5dc1-4d93-8c25-23112a6182f0")
 		)
-		(pin ""
-			(uuid "e76a15fd-4de7-41cf-a55c-0e1d74e59fc2")
+		(pin "3"
+			(uuid "5fba38bc-3b11-4a86-8f9b-63345c849d59")
 		)
-		(pin ""
-			(uuid "4f95b5b3-bf33-420e-bb9c-bebff3d7de11")
+		(pin "4"
+			(uuid "883e29ec-510f-4eb3-bb0c-27387ad82762")
 		)
-		(pin ""
-			(uuid "75e2a3d4-3ca6-4dff-a666-1d97f6557caf")
+		(pin "5"
+			(uuid "73884830-b8f7-4782-98b2-2a8ac56c35de")
 		)
-		(pin ""
-			(uuid "1cf9896a-6d21-41d3-a1c2-580ebb1973ed")
+		(pin "6"
+			(uuid "b0ff741c-d4f2-4e74-b682-dbb4ed5a89e2")
 		)
-		(pin ""
-			(uuid "ad56c7d3-8d77-4ad4-a0e1-dd046246e4a2")
+		(pin "8"
+			(uuid "74b36727-789f-4c3f-8cd5-905370625809")
 		)
-		(pin ""
-			(uuid "e081f4c7-89c0-4d1b-a29f-f6c62756cec8")
+		(pin "L+"
+			(uuid "1ead655b-42d0-4b38-865c-8b5ceb5dff0a")
 		)
-		(pin ""
-			(uuid "be8eaf40-93c1-420b-9cd1-5cd432cfffed")
-		)
-		(pin ""
-			(uuid "0f2e2162-4a8a-43e5-a703-432382a1a636")
-		)
-		(pin ""
-			(uuid "2a69cfc4-beff-49f3-be68-b267cadd2e91")
-		)
-		(pin ""
-			(uuid "01b192fd-a170-4d81-9b55-f3f7e4f6e545")
-		)
-		(pin ""
-			(uuid "4fb078f8-aee8-4033-a412-098a87a74ee6")
-		)
-		(pin ""
-			(uuid "1146efb9-ed69-407f-9831-4c41b52fb485")
-		)
-		(pin ""
-			(uuid "3c253cfc-86ab-4ab6-baad-21e3f2808181")
-		)
-		(pin ""
-			(uuid "26dcb6ac-d798-4c15-8fbe-2ff50c2cac26")
-		)
-		(pin ""
-			(uuid "26f2aeed-2487-4d08-b92a-3f8efb2c5750")
-		)
-		(pin ""
-			(uuid "7e47e63d-9e71-47aa-bd5b-9aa834637013")
-		)
-		(pin ""
-			(uuid "3fb81700-1dc3-4561-afd6-e90092609e4c")
-		)
-		(pin ""
-			(uuid "7f43bef2-7855-4ccd-9cc3-6a7ed02b7737")
+		(pin "L-"
+			(uuid "f7b5ea73-2931-4eab-8afb-f4b872874a36")
 		)
 		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "U1")
-					(unit 1)
-				)
-			)
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "U1")
+					(reference "U12")
 					(unit 1)
 				)
 			)
