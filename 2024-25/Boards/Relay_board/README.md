@@ -14,14 +14,14 @@ Inputs:
  - BSPD Fault: (active low fault)
  - IMD Fault: (active low fault)
  - BMS Fault: (active high fault)
+ - SDC1: Shut down circuit signal 1, constant 12V
  - Reset: ??
 
 Outputs:
 
  - Green LED On: Send signal to green LED to turn on when no faults present
  - Red LED Flashing: Send signal to red LED to turn on in the event of a fault
- - SDC1: Shut down circuit signal 1
- - SDC2: Shut down circuit signal 2
+ - SDC2: Shut down circuit signal 2, no faults = 12V (high), fault = floating
 
 ## Version Control:
 v1.0
