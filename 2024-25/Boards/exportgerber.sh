@@ -4,8 +4,14 @@
 # Changelist:
 # 7/3/24 - v1.1 Updated to support up to 6 layers
 # 9/9/24 - v1.2 Updated to prompt user for the number of layers in their board
+# 10/24/24 - v1.21 Added text description
 # REQUIREMENTS:
 # Unix based OS, kicad-cli, zip
+#
+# Description:
+# This script takes in a kicad project directory and outputs the fabrication
+# files for any pcbs present tuned for JLCPCB fabrication process. The files
+# are outputted zipped, named according to Staelens's wishes.
 
 
 if [ $# -lt 1 ]; then
