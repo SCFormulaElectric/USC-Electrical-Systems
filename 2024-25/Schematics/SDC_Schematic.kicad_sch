@@ -1609,6 +1609,12 @@
 		(uuid "2c07dd68-3542-412a-8c13-37fbd3322827")
 	)
 	(junction
+		(at 109.855 135.255)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41bc9224-d144-445b-947e-3c24d9d71313")
+	)
+	(junction
 		(at 81.915 116.205)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1643,6 +1649,16 @@
 			(type default)
 		)
 		(uuid "10b2f0aa-920f-4fdd-b5f2-da6bd38a1851")
+	)
+	(wire
+		(pts
+			(xy 109.855 115.57) (xy 109.855 135.255)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d7546f-9051-45e7-98bd-750f09708221")
 	)
 	(wire
 		(pts
@@ -1683,16 +1699,6 @@
 			(type default)
 		)
 		(uuid "274848ba-4962-437b-b99b-d7dc52571478")
-	)
-	(wire
-		(pts
-			(xy 109.855 115.57) (xy 109.855 135.255)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c516469-8258-432f-93e0-01fc623bcaf4")
 	)
 	(wire
 		(pts
@@ -1858,6 +1864,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.835 153.67) (xy 109.855 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f83e16b-e65f-4977-94bb-421b3fc37c6c")
+	)
+	(wire
+		(pts
 			(xy 123.825 62.23) (xy 128.27 62.23)
 		)
 		(stroke
@@ -1962,6 +1978,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.855 135.255) (xy 109.855 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a660235a-2c76-4499-a21c-67fb8fb55085")
+	)
+	(wire
+		(pts
 			(xy 197.485 115.57) (xy 189.23 115.57)
 		)
 		(stroke
@@ -1979,6 +2005,16 @@
 			(type default)
 		)
 		(uuid "b94c0b8f-b5fd-40bf-921c-c5929a104745")
+	)
+	(wire
+		(pts
+			(xy 61.595 153.67) (xy 55.88 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7f9f80-b5d1-46e3-9a72-1d4637d5f86e")
 	)
 	(wire
 		(pts
@@ -2003,6 +2039,17 @@
 	)
 	(wire
 		(pts
+			(xy 76.835 143.51) (xy 84.455 143.51)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "c630f3da-2725-4b25-9ef0-d971a80aa366")
+	)
+	(wire
+		(pts
 			(xy 196.215 64.77) (xy 210.185 64.77)
 		)
 		(stroke
@@ -2020,6 +2067,17 @@
 			(type default)
 		)
 		(uuid "cd7c2dc2-9832-4fba-a877-24c24822b66f")
+	)
+	(wire
+		(pts
+			(xy 58.42 140.97) (xy 61.595 140.97)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "d62d5b02-f516-4215-95a3-bf94539d1a8b")
 	)
 	(wire
 		(pts
@@ -2127,7 +2185,7 @@
 	)
 	(rectangle
 		(start 41.148 75.438)
-		(end 115.062 139.319)
+		(end 115.062 161.163)
 		(stroke
 			(width 0)
 			(type dash_dot)
@@ -2313,7 +2371,7 @@
 	)
 	(text "Inside Accumulator"
 		(exclude_from_sim no)
-		(at 80.01 137.16 0)
+		(at 93.98 157.226 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2344,7 +2402,7 @@
 		)
 		(uuid "ea46c323-5127-4e2e-9412-91d136cded10")
 	)
-	(text "HVD interlock"
+	(text "MSD interlock"
 		(exclude_from_sim no)
 		(at 119.38 66.04 0)
 		(effects
@@ -2548,6 +2606,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HV-"
+		(shape input)
+		(at 58.42 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dac0dfeb-03bd-4ab7-86f2-172313848cbf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.4433 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HV-_out"
+		(shape output)
+		(at 84.455 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcf55802-592b-416f-82c4-6eb4558e4d1a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.423 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4252,6 +4354,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 55.88 153.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e33579a1-9a0d-4bab-878b-192cac5d7598")
+		(property "Reference" "#PWR06"
+			(at 49.53 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 153.6701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1192667d-2fe5-4de4-9c47-7aea3d704553")
+		)
+		(instances
+			(project "SDC_Schematic"
+				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Relay:Relay_SPST-NO")
 		(at 135.89 69.85 90)
 		(unit 1)
@@ -4410,7 +4579,7 @@
 				)
 			)
 		)
-		(property "Value" "Precharge resistor"
+		(property "Value" "Discharge"
 			(at 153.289 148.59 90)
 			(effects
 				(font
@@ -4455,6 +4624,81 @@
 			(project "SDC_Schematic"
 				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:Relay_SPST-NO")
+		(at 69.215 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9831a24-d9e7-4ff0-97e9-3bf876736beb")
+		(property "Reference" "K7"
+			(at 69.215 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GV24 1BAX"
+			(at 69.215 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70.485 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.215 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Relay SPST, Normally Open, EN50005"
+			(at 69.215 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "aa294ea6-87eb-4977-8e0d-90b9c3214647")
+		)
+		(pin "13"
+			(uuid "0ba2514c-003e-4ae5-be71-93e63bef23c2")
+		)
+		(pin "A2"
+			(uuid "cff1e9bc-80e5-4bbe-a2d9-6cd5739dbe79")
+		)
+		(pin "A1"
+			(uuid "144d7a25-c3d3-46a1-b38c-c43ae26243ac")
+		)
+		(instances
+			(project "SDC_Schematic"
+				(path "/faa5b217-d332-4e00-ae78-392851c7a1c7"
+					(reference "K7")
 					(unit 1)
 				)
 			)
