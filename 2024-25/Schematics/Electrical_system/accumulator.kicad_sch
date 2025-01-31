@@ -3099,6 +3099,12 @@
 		(uuid "1df0aab3-6d9c-48e3-90d8-5f6b86c6fd60")
 	)
 	(junction
+		(at 281.305 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62aed05c-6de5-4f27-b629-96c5d81207e4")
+	)
+	(junction
 		(at 201.93 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3196,6 +3202,17 @@
 	)
 	(wire
 		(pts
+			(xy 281.305 165.1) (xy 286.385 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "06e544df-d89a-4014-8377-de6b4c26b706")
+	)
+	(wire
+		(pts
 			(xy 153.035 74.93) (xy 201.93 74.93)
 		)
 		(stroke
@@ -3247,7 +3264,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 165.1) (xy 286.385 165.1)
+			(xy 274.32 165.1) (xy 281.305 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4076,6 +4093,17 @@
 	)
 	(wire
 		(pts
+			(xy 281.305 165.1) (xy 281.305 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(uuid "c598b4a1-02d0-4b9b-984d-ccdd04195c0e")
+	)
+	(wire
+		(pts
 			(xy 240.03 90.17) (xy 240.03 88.265)
 		)
 		(stroke
@@ -4381,9 +4409,9 @@
 		)
 		(uuid "3177fa2a-4c41-45d1-85f9-d02bc578f37d")
 	)
-	(text "HV+ TSMP resistor &\nfuse for low current HV wire\nplaced here reduced ampacity rule"
+	(text "HV+ TSMP resistor &\nfuse for TSAL HV wire\nplaced here reduced ampacity rule\ndischarge HV+ unfused"
 		(exclude_from_sim no)
-		(at 298.831 190.5 0)
+		(at 301.498 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5887,7 +5915,7 @@
 		)
 	)
 	(hierarchical_label "HV+_tsmp"
-		(shape input)
+		(shape output)
 		(at 290.83 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -5898,8 +5926,8 @@
 		)
 		(uuid "060bee3c-490b-4435-a77c-4df944a1eead")
 	)
-	(hierarchical_label "HV+_bamo"
-		(shape input)
+	(hierarchical_label "HV+_TSAL"
+		(shape output)
 		(at 286.385 218.44 270)
 		(fields_autoplaced yes)
 		(effects
@@ -5933,6 +5961,18 @@
 			(justify right)
 		)
 		(uuid "12555ac3-d5e6-411b-a71b-ce164284fcc1")
+	)
+	(hierarchical_label "HV+_discharge"
+		(shape output)
+		(at 281.305 218.44 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c4b86ea-0369-494a-a974-8392286070b2")
 	)
 	(hierarchical_label "CANS_BMS"
 		(shape bidirectional)

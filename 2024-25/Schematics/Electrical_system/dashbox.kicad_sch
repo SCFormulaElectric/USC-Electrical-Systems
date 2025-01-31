@@ -2280,7 +2280,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 149.225) (xy 213.995 151.765)
+			(xy 213.995 145.415) (xy 213.995 151.765)
 		)
 		(stroke
 			(width 0)
@@ -2520,7 +2520,7 @@
 		)
 		(uuid "246c561f-079a-410f-a661-328ab4b6d03f")
 	)
-	(text "error LED for\nfail to precharge"
+	(text "error LED for\nBSPD "
 		(exclude_from_sim no)
 		(at 220.98 162.052 0)
 		(effects
@@ -2793,6 +2793,28 @@
 			)
 		)
 	)
+	(global_label "12V+"
+		(shape input)
+		(at 213.995 145.415 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5123e3a-f6dd-4e0c-89bc-286f64709560")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.995 137.3498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Brake2"
 		(shape input)
 		(at 192.405 98.425 0)
@@ -2983,18 +3005,6 @@
 		)
 		(uuid "2b4c11eb-298e-43aa-8001-fa32a68f3bca")
 	)
-	(hierarchical_label "PC_error"
-		(shape input)
-		(at 213.995 149.225 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "387200ba-4478-4e2a-8970-d7ae01b20b38")
-	)
 	(hierarchical_label "Throttle1"
 		(shape output)
 		(at 192.405 90.805 180)
@@ -3090,6 +3100,18 @@
 			(justify right)
 		)
 		(uuid "9964acdb-02ce-45f0-a31d-75cfb3da68f3")
+	)
+	(hierarchical_label "BSPD_ok"
+		(shape bidirectional)
+		(at 213.995 172.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e357aa82-37a2-406f-8065-90bc53dc00cc")
 	)
 	(hierarchical_label "SDC_to_hoop"
 		(shape output)
@@ -3636,72 +3658,6 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
 					(reference "U17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 213.995 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c865d88-0a79-4f95-a317-cf71392e160f")
-		(property "Reference" "#PWR016"
-			(at 213.995 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.995 177.165 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.995 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.995 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 213.995 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b25cd3c3-516f-4ac2-94a3-235097a054d5")
-		)
-		(instances
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/dd1963c4-4880-47fc-9eb1-1a00f3ffb61a"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
