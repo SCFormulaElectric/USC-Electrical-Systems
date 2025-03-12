@@ -4181,12 +4181,6 @@
 		(uuid "0553cd64-12c9-4fd8-a294-d5e0b697f6a8")
 	)
 	(junction
-		(at 235.585 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10b0e0d2-e2fd-4dbb-a5fc-83fe5b1f92ff")
-	)
-	(junction
 		(at 321.31 65.405)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4231,8 +4225,16 @@
 		(uuid "4e758b39-d53a-409f-9591-7fac399d026e")
 	)
 	(no_connect
+		(at 357.505 106.045)
+		(uuid "6243b48f-91c5-4c0d-a18b-d0f4ba766d96")
+	)
+	(no_connect
 		(at 267.335 87.63)
 		(uuid "8fb23662-7c8b-463b-a095-4dbdcc55bf2d")
+	)
+	(no_connect
+		(at 357.505 103.505)
+		(uuid "caf08dc6-a40c-47a2-a2a5-91535850efa8")
 	)
 	(bus_entry
 		(at 251.46 167.005)
@@ -4388,15 +4390,6 @@
 		(uuid "a043b157-9db7-4fab-aa0b-d0645e553ad1")
 	)
 	(bus_entry
-		(at 354.965 100.965)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adf9bde9-b222-4e22-b664-ad6f03d28e5c")
-	)
-	(bus_entry
 		(at 281.305 155.575)
 		(size 2.54 -2.54)
 		(stroke
@@ -4440,15 +4433,6 @@
 			(type default)
 		)
 		(uuid "e9e50c75-f77d-4f90-8ac1-87815ac4a554")
-	)
-	(bus_entry
-		(at 354.965 103.505)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f04fd912-572b-4bf6-aaf8-3fa602b23497")
 	)
 	(bus_entry
 		(at 229.87 180.975)
@@ -4741,16 +4725,6 @@
 			(type default)
 		)
 		(uuid "3aa1a10b-b780-4070-99c5-39e1c03716e9")
-	)
-	(bus
-		(pts
-			(xy 354.965 103.505) (xy 354.965 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd619de-3378-45ea-b844-ea5328472f93")
 	)
 	(wire
 		(pts
@@ -5767,16 +5741,6 @@
 	)
 	(bus
 		(pts
-			(xy 354.965 100.965) (xy 354.965 103.505)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df035fad-683f-4a81-9819-b32df2a599e4")
-	)
-	(bus
-		(pts
 			(xy 172.085 105.41) (xy 235.585 105.41)
 		)
 		(stroke
@@ -5824,16 +5788,6 @@
 			(type default)
 		)
 		(uuid "e8fc6efb-bde3-42b0-a466-92ce7406cb48")
-	)
-	(bus
-		(pts
-			(xy 235.585 105.41) (xy 354.965 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaa4d223-a65d-4484-90a9-4318c9b8e2e1")
 	)
 	(wire
 		(pts
@@ -7578,28 +7532,6 @@
 			)
 		)
 	)
-	(global_label "HV+_bamo"
-		(shape output)
-		(at 353.695 113.665 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffcb3ee5-c731-4672-ba87-cc5083a2a121")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.6104 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(hierarchical_label "CANL_500"
 		(shape bidirectional)
 		(at 232.41 198.755 270)
@@ -7755,6 +7687,18 @@
 			(justify right)
 		)
 		(uuid "2fd19286-3cc5-4e5f-8b43-194d795ddd9d")
+	)
+	(hierarchical_label "HV+_Emeter"
+		(shape input)
+		(at 353.695 113.665 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e5240b5-26bf-4d68-809e-3b0976e40492")
 	)
 	(hierarchical_label "temp1"
 		(shape input)
