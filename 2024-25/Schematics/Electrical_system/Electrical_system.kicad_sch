@@ -4370,12 +4370,6 @@
 		(color 132 0 0 1)
 		(uuid "e03e05be-96c7-421f-b783-8cf2aceac90d")
 	)
-	(junction
-		(at 278.765 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f5ce30a4-a0ab-4995-a607-b2a845acf9c9")
-	)
 	(no_connect
 		(at 120.015 92.075)
 		(uuid "31f524a6-141d-4c15-b1ee-851ea693498a")
@@ -4596,15 +4590,6 @@
 		(uuid "72defb20-f266-43b8-8efb-903e52423591")
 	)
 	(bus_entry
-		(at 278.765 229.87)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84118bd8-3142-4265-bf0c-ee2ba497a9a0")
-	)
-	(bus_entry
 		(at 189.865 332.74)
 		(size 2.54 2.54)
 		(stroke
@@ -4666,15 +4651,6 @@
 			(type default)
 		)
 		(uuid "d41a2518-5709-477c-bf88-d07098dc279a")
-	)
-	(bus_entry
-		(at 281.305 229.87)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcf56ab5-6d37-4284-ba3d-f572d3345248")
 	)
 	(bus_entry
 		(at 325.755 106.68)
@@ -4755,17 +4731,6 @@
 			(type default)
 		)
 		(uuid "05419982-9034-4270-bfc5-63df2b2f5f9c")
-	)
-	(bus
-		(pts
-			(xy 278.765 184.15) (xy 278.765 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "0742b350-eb4e-4a2c-94d4-da5a9b071d34")
 	)
 	(wire
 		(pts
@@ -4993,7 +4958,7 @@
 	)
 	(bus
 		(pts
-			(xy 278.765 184.15) (xy 351.155 184.15)
+			(xy 254 184.15) (xy 351.155 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5562,16 +5527,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.305 232.41) (xy 281.305 234.315)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5591de03-7a21-42b1-a9e5-bbad6d808b00")
-	)
-	(wire
-		(pts
 			(xy 153.67 249.555) (xy 153.67 250.19)
 		)
 		(stroke
@@ -5579,17 +5534,6 @@
 			(type default)
 		)
 		(uuid "56951008-c786-4ce7-add9-c1e702265e15")
-	)
-	(bus
-		(pts
-			(xy 278.765 229.87) (xy 281.305 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "5cafd0bd-bd57-4055-acba-64d186e4b9f5")
 	)
 	(wire
 		(pts
@@ -6208,16 +6152,6 @@
 	)
 	(wire
 		(pts
-			(xy 283.845 232.41) (xy 283.845 234.315)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d191237-c7e4-4dec-83b2-ac1a84bd981f")
-	)
-	(wire
-		(pts
 			(xy 303.53 201.295) (xy 311.15 201.295)
 		)
 		(stroke
@@ -6255,17 +6189,6 @@
 			(type default)
 		)
 		(uuid "a253bf23-773b-493e-8030-ff10e9c22843")
-	)
-	(bus
-		(pts
-			(xy 254 184.15) (xy 278.765 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "a30ef2e5-0482-4ad4-a76c-41692a031b8a")
 	)
 	(bus
 		(pts
@@ -6650,16 +6573,6 @@
 			(color 132 0 132 1)
 		)
 		(uuid "d93f5cbc-1ed8-4836-aa84-23b3c2d5ed01")
-	)
-	(wire
-		(pts
-			(xy 278.765 229.87) (xy 278.765 234.315)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd6b05a9-f695-49de-9a2c-d9c91b7e459d")
 	)
 	(wire
 		(pts
@@ -11262,7 +11175,7 @@
 			)
 			(uuid "1b4e7709-a363-4f76-a531-55dcb4615dc8")
 		)
-		(pin "IMD_ind" input
+		(pin "ind_Red" input
 			(at 274.32 250.19 90)
 			(effects
 				(font
@@ -11312,7 +11225,7 @@
 			)
 			(uuid "908d27f9-9e2c-48fb-aa02-7d6b5748926f")
 		)
-		(pin "BMS_ind" input
+		(pin "ind_Green" input
 			(at 271.78 250.19 90)
 			(effects
 				(font
@@ -11601,6 +11514,16 @@
 				(justify right)
 			)
 			(uuid "089cddd6-950a-4e60-8c52-8b719acdac95")
+		)
+		(pin "GLV+_lights" input
+			(at 279.4 250.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "23aeb41c-139b-4add-874a-43f2950e9ef9")
 		)
 		(instances
 			(project "Electrical_system"
