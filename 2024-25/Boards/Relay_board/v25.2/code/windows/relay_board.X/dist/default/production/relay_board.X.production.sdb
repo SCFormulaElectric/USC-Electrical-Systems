@@ -1,0 +1,76 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 12F609 ]
+[d frameptr 0 ]
+"38 C:\Users\timxw\MPLABXProjects\relay_board.X\main.c
+[e E709 GpioBit `uc
+BMS_fault_o 0
+BMS_gate_i 1
+green_PIC_o 2
+reserved 3
+IMD_gate_i 4
+red_PIC_o 5
+]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"32 C:\Users\timxw\MPLABXProjects\relay_board.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"166 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC10-12Fxxx_DFP/1.7.178/xc8\pic\include\proc/pic12f609.h
+[v _GPIO GPIO `VEuc  1 e 1 @5 ]
+"423
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"501
+[v _PIR1 PIR1 `VEuc  1 e 1 @12 ]
+[s S45 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 C1IF 1 0 :1:3 
+]
+"518
+[s S49 . 1 `uc 1 T1IF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 CMIF 1 0 :1:3 
+]
+[u S53 . 1 `S45 1 . 1 0 `S49 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES53  1 e 1 @12 ]
+"564
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"722
+[v _CMCON0 CMCON0 `VEuc  1 e 1 @26 ]
+"822
+[v _CMCON1 CMCON1 `VEuc  1 e 1 @28 ]
+"876
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"946
+[v _TRISIO TRISIO `VEuc  1 e 1 @133 ]
+"1120
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
+"1248
+[v _WPU WPU `VEuc  1 e 1 @149 ]
+"1402
+[v _IOC IOC `VEuc  1 e 1 @150 ]
+"1576
+[v _ANSEL ANSEL `VEuc  1 e 1 @159 ]
+"1723
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1816
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"1903
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"1906
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"30 C:\Users\timxw\MPLABXProjects\relay_board.X\main.c
+[v _blink_counter blink_counter `uc  1 e 1 0 ]
+"32
+[v _main main `(i  1 e 2 0 ]
+{
+"67
+[v main@current_fault current_fault `uc  1 a 1 5 ]
+"65
+[v main@imd_gate_state imd_gate_state `uc  1 a 1 3 ]
+"64
+[v main@bms_gate_state bms_gate_state `uc  1 a 1 2 ]
+"99
+} 0

@@ -1,0 +1,3 @@
+This folder includes the MPLAB IDE project folder that uses the GUI to compile main.c into hex. The GUI uses a different toolchain which doesn't support any of the SDCC commands so they were replaced with the #pragma configuartions. I think the only one we replaced was the config line at the start. the MPLAB X Ide does not support the Pickit2 so I used the Pickit2 programmer exe to flash the compiled hex
+
+I also included the flashed hex outside of the project folder for reference.
