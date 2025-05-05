@@ -1,0 +1,1 @@
+The difference between these files and windows files is the line __code uint ... at did not compile using the GUI's X8C compiler. So, in the windows files I configured the GPIO with #pragma commands and the X8C header.
