@@ -14,13 +14,13 @@ enum GpioBit {
 };
 
 // --- Constants ---
-#define FREQ_SCALAR 20 // Number of Timer1 overflows for half blink period
+#define FREQ_SCALAR 10000 // Number of Timer1 overflows for half blink period
                              // Approx: 30 * 8.192ms = 245.76ms (~2Hz blink rate)
 
 // --- Global Variables ---
 
 uint8_t system_fault_state = 0;
-uint8_t blink_counter = 0;
+uint16_t blink_counter = 0;
 
 int main(void) {
 
@@ -57,7 +57,7 @@ int main(void) {
         uint8_t bms_gate_state = (GPIO >> BMS_gate_i) & 1; //  GP1 
         uint8_t imd_gate_state = (GPIO >> IMD_gate_i) & 1; //  GP4 
 
-        uint8_t current_fault = (bms_gate_state == 1) || (imd_gate_state == 0);
+        uint8_t current_fault = (bms_gate_state == 0) || (imd_gate_state == 1); // coded to be backwards rn
         
         //inverted for BMS relay
         if (bms_gate_state) { 
@@ -67,9 +67,9 @@ int main(void) {
         }
 
 
-        if (PIR1 & (1 << 0)) {  // TMR1F
-            PIR1 &= (1<<0);   // TMR1F
-
+        //if (PIR1 & (1 << 0)) {  // TMR1F
+        //    PIR1 &= (1<<0);   // TMR1F
+        if (1){
             blink_counter++; // 8.2ms
 
             if (blink_counter >= FREQ_SCALAR) {
