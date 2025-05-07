@@ -58,17 +58,17 @@ int main(void) {
         uint8_t imd_gate_state = (GPIO >> IMD_gate_i) & 1; //  GP4 
 
         uint8_t current_fault = (bms_gate_state == 1) || (imd_gate_state == 0);
-
+        
         //inverted for BMS relay
-        if (current_fault) { 
+        if (bms_gate_state) { 
             GPIO &= ~(1 << BMS_fault_o); // Set fault output LOW
         } else {
             GPIO |= (1 << BMS_fault_o); // Set fault output HIGH
         }
 
 
-        if (PIR1bits.TMR1IF) {
-            PIR1bits.TMR1IF = 0; 
+        if (PIR1 & (1 << 0)) {  // TMR1F
+            PIR1 &= (1<<0);   // TMR1F
 
             blink_counter++; // 8.2ms
 
@@ -80,7 +80,7 @@ int main(void) {
                     GPIO ^= (1 << red_PIC_o);
                     GPIO &= ~(1 << green_PIC_o);
                 } else {
-                    GPIO ^= (1 << green_PIC_o);
+                    GPIO |= (1 << green_PIC_o);
                     GPIO &= ~(1 << red_PIC_o);
                 }
             }
