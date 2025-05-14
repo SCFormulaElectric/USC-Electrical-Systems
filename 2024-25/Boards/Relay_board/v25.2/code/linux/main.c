@@ -77,6 +77,9 @@ int main(void) {
 
                 
                 if (current_fault == 1) {
+                    // Weak pull-ups used instead of direct GPIO output
+                    // because the capacitive load of the MOSFET being
+                    // driven is higher than the PIC12 can handle
                     TRISIO ^= (1 << red_PIC_o); // turn on/off output
                     WPU ^= (1 << red_PIC_o); // turn on/off pull-up
                     GPIO ^= (1 << red_PIC_o);   // turn on/off output
