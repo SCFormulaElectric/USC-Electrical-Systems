@@ -4203,7 +4203,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 211.455) (xy 120.65 213.36)
+			(xy 120.65 202.565) (xy 120.65 213.36)
 		)
 		(stroke
 			(width 0)
@@ -4241,16 +4241,6 @@
 			(type default)
 		)
 		(uuid "665c732a-f3de-44ec-815e-b0c599e8e0bb")
-	)
-	(wire
-		(pts
-			(xy 120.65 202.565) (xy 120.65 203.835)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66860e5a-da67-4e23-8d86-b12c82ae9d00")
 	)
 	(bus
 		(pts
@@ -4294,16 +4284,6 @@
 			(color 204 102 0 1)
 		)
 		(uuid "6f49659e-5090-424a-8246-bed95f60ab6f")
-	)
-	(wire
-		(pts
-			(xy 126.365 211.455) (xy 126.365 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fa54d59-05cd-4571-ae4d-0a83ea2970a9")
 	)
 	(wire
 		(pts
@@ -4616,6 +4596,16 @@
 	)
 	(wire
 		(pts
+			(xy 126.365 202.565) (xy 126.365 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5ff3e1-705f-4118-aedb-352f50e6795a")
+	)
+	(wire
+		(pts
 			(xy 201.93 107.315) (xy 201.93 142.24)
 		)
 		(stroke
@@ -4727,16 +4717,6 @@
 			(type default)
 		)
 		(uuid "d135cc6d-5486-4e9e-b943-9629917e582d")
-	)
-	(wire
-		(pts
-			(xy 126.365 202.565) (xy 126.365 203.835)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d13763a2-9aba-4f24-aa10-792df8076fcb")
 	)
 	(wire
 		(pts
@@ -6690,7 +6670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "032ab8f2-881a-45a7-a5c0-4434e5e0a729")
-		(property "Reference" "R6"
+		(property "Reference" "R?"
 			(at 255.905 72.3899 0)
 			(effects
 				(font
@@ -6742,6 +6722,12 @@
 			(uuid "206e5ed4-37b7-443a-9822-71af172ef4e8")
 		)
 		(instances
+			(project "accumulator"
+				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "R6")
@@ -6848,7 +6834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07aeb734-799b-439c-bcff-7e13df721432")
-		(property "Reference" "R?"
+		(property "Reference" "R2"
 			(at 299.72 106.6799 0)
 			(effects
 				(font
@@ -6923,7 +6909,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cda5d63-f1cf-4d86-b590-bc35f16947c9")
-		(property "Reference" "U?"
+		(property "Reference" "U3"
 			(at 235.585 150.495 0)
 			(effects
 				(font
@@ -7004,7 +6990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cef0e66-157e-44c1-88df-baa0ea991bcf")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR?"
 			(at 163.83 214.63 0)
 			(effects
 				(font
@@ -7062,81 +7048,6 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 120.65 207.645 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23d5d304-275c-44a5-a9fd-a4a02e94c7bb")
-		(property "Reference" "F5"
-			(at 121.92 206.502 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 121.92 209.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.872 207.645 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 207.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 120.65 207.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "64fe16a6-7963-4f0e-bf2a-c97bc6a2ca36")
-		)
-		(pin "1"
-			(uuid "72768740-eb93-42e0-8d17-a0c87caed81d")
-		)
-		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "F5")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -7390,7 +7301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4143d24e-68af-49c8-8c07-2f61ac7170f7")
-		(property "Reference" "U18"
+		(property "Reference" "U?"
 			(at 166.243 109.9468 90)
 			(effects
 				(font
@@ -7557,7 +7468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ff21d21-5ced-4fb1-ad7a-f422fa02937b")
-		(property "Reference" "U19"
+		(property "Reference" "U?"
 			(at 240.03 71.12 0)
 			(effects
 				(font
@@ -7721,7 +7632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb5c0c15-dd15-4cf5-a5d8-a7dc79bf769a")
-		(property "Reference" "F3"
+		(property "Reference" "F?"
 			(at 284.48 187.3249 0)
 			(effects
 				(font
@@ -7796,7 +7707,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb97a5e4-69d1-4dab-ab61-92372df831cd")
-		(property "Reference" "U16"
+		(property "Reference" "U?"
 			(at 220.345 70.485 0)
 			(effects
 				(font
@@ -7963,7 +7874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7dd65d8-623b-490d-a05f-7b0d8887647f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR?"
 			(at 254 69.85 0)
 			(effects
 				(font
@@ -8011,6 +7922,12 @@
 			(uuid "146e251b-f13b-4b96-97e5-b3318c67e39b")
 		)
 		(instances
+			(project "accumulator"
+				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "#PWR016")
@@ -8028,7 +7945,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c858ca65-e258-4373-9529-a1e190ad57fa")
-		(property "Reference" "U12"
+		(property "Reference" "U?"
 			(at 114.3 57.785 0)
 			(effects
 				(font
@@ -8122,7 +8039,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce4cf3ea-6a42-4bd5-898e-14eeba130e8c")
-		(property "Reference" "R4"
+		(property "Reference" "R?"
 			(at 293.37 187.96 90)
 			(effects
 				(font
@@ -8196,7 +8113,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4c5afe0-3139-4231-bcf2-86cfc07be273")
-		(property "Reference" "J20"
+		(property "Reference" "J?"
 			(at 173.609 109.347 0)
 			(effects
 				(font
@@ -8276,7 +8193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6b28408-10fe-4e31-a5c2-3699f0f7550a")
-		(property "Reference" "R?"
+		(property "Reference" "R1"
 			(at 299.72 99.0599 0)
 			(effects
 				(font
@@ -8352,7 +8269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0161973-b28a-44c6-b779-483488017c5d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR01"
 			(at 297.815 118.11 0)
 			(effects
 				(font
@@ -8425,7 +8342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f44694a9-8837-40b5-9e73-a9f740b3c276")
-		(property "Reference" "U6"
+		(property "Reference" "U?"
 			(at 353.695 110.2994 90)
 			(effects
 				(font
@@ -8516,81 +8433,6 @@
 			(project "Electrical_system"
 				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
 					(reference "U6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 126.365 207.645 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fec0e454-285f-4d76-ac3a-b6ca51704aef")
-		(property "Reference" "F4"
-			(at 127.762 206.502 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 127.762 209.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.587 207.645 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 126.365 207.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 126.365 207.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "20805351-3af3-465f-a707-1972e1286872")
-		)
-		(pin "1"
-			(uuid "b3b70655-3d02-4c98-9a64-ae20f65eee6e")
-		)
-		(instances
-			(project "accumulator"
-				(path "/257053c5-9a9c-4e07-83c1-3de2ea3e3dc0"
-					(reference "F4")
-					(unit 1)
-				)
-			)
-			(project "Electrical_system"
-				(path "/9fd63cb4-0e42-461f-94fb-36140af5f720/9a7d5ecd-e5aa-4565-80da-5476528c3ffe"
-					(reference "F4")
 					(unit 1)
 				)
 			)
