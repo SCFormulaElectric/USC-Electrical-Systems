@@ -53,7 +53,7 @@ void uart_tx(uint8_t data) __naked {
         MOVWF   _Temp               ; Save the transmitted byte into Temp (from W)
 
         BANKSEL _DelayCount
-        MOVLW   32                   ; Load constant 34 into W
+        MOVLW   22                   ; Load constant 34 into W
         MOVWF   _DelayCount         ; Store it in DelayCount (address 0x20)
 DelayLoop_Start:
         DECFSZ  _DelayCount, F      ; Decrement DelayCount until zero
@@ -76,7 +76,7 @@ Bit0_Zero:
         BANKSEL _GPIO
         BCF     _GPIO, 5             ; Set GP5 low
 BitDelay:
-        MOVLW   30
+        MOVLW   21
         MOVWF   _DelayCount         ; Reload DelayCount with 34
 DelayLoop_Data:
         DECFSZ  _DelayCount, F
@@ -89,7 +89,7 @@ DelayLoop_Data:
         ; ----- Stop Bit: drive ERROR_PIN HIGH -----
         BANKSEL _GPIO
         BSF     GPIO, 5             ; Set GP5 high (stop bit)
-        MOVLW   31
+        MOVLW   22
         MOVWF   _DelayCount
 DelayLoop_Stop:
         DECFSZ  _DelayCount, F
@@ -105,6 +105,7 @@ void transmit_count(uint16_t count) {
 }
 
 int main(void) {
+    GPIO = 0;
     // Configure outputs, error signal to dash, controls for relays
     TRISIO &= ~((1 << ERROR_PIN)|(1 << AIR_PIN)|(1 << CHR_PIN));  // Clear the appropriate TRISIO bit to make it an output.
     // Configure inputs: two frequency measurements, SDC pin
@@ -112,16 +113,18 @@ int main(void) {
      
 
     // Error pin idles high for sending info
-    GPIO |= (1 << ERROR_PIN);
+    TRISIO |= (1 << ERROR_PIN);
+    WPU |= (1 << ERROR_PIN);
+    GPIO &= ~(1 << ERROR_PIN);
 
     // turn off all interrupts on change
     IOC = 0; 
 
-    // timer 1 enabled, 1:1 prescalar
-    T1CON = 0x01;    
+    // timer 1 enabled, 1:8 prescalar
+    T1CON = 0x31;    
     
-    // timer 1 clock source Fosc
-    CMCON1 = 0x10;
+    // timer 1 clock source Fosc/4
+    CMCON1 = 0x00;
 
     // Timer 1 interrupt enable
     PIE1 = 0x01;
@@ -162,15 +165,29 @@ int main(void) {
     // Variables for counting transitions
     unsigned int pre_pin_count = 0;
     unsigned int post_pin_count = 0;
-    
+
+    GPIO |= (1 << ERROR_PIN);
+
     // Interrupts weren't working due to the microcontroller refusing to call the ISR
     // Perhaps because of a compilation issue with SDCC
     // So resorted to polling
     while (1) {
         gpio_reg = GPIO;
-        if(gpio_reg & (1 << SDC_PIN) & !start_flag){
-            GPIO |= (1 << CHR_PIN); // start precharging
-            
+        //uart_tx(gpio_reg);
+        //if(1){
+        if(!(gpio_reg & (1 << SDC_PIN)) & !charged_flag){ // sdc inverted because we forgot
+                                                        // to step it down so we added
+                                                        // an inverter
+            //TRISIO |= (1 << CHR_PIN);   // make an input
+            //WPU |= (1 << CHR_PIN);  // enable weak pull up
+            //GPIO &= ~(1 << CHR_PIN); // turn off output
+            GPIO |= (1 << CHR_PIN);
+
+            //uart_tx(1);
+            if(!start_flag){ // if we're about to start a precharge attempt
+                TMR1L = 0;  // reset the counters
+                TMR1H = 0;
+            }
             start_flag = 1;
             post_pin_new = gpio_reg & (1 << F_POST_PIN);
             pre_pin_new = gpio_reg & (1 << F_PRE_PIN);
@@ -185,18 +202,23 @@ int main(void) {
                 post_pin_old = post_pin_new;
             }
         }
-        else{   // SDC went low
+        else if (gpio_reg & (1 << SDC_PIN)){   // SDC went low (inverted to high)
             pre_pin_count = 0;
             post_pin_count = 0;
             start_flag = 0;
             charged_flag = 0;
             start_count = 0;
+            //TRISIO &= ~(1 << CHR_PIN);
+            //WPU &= ~(1 << CHR_PIN);
             GPIO &= ~((1 << AIR_PIN)|(1 << CHR_PIN));
         }
-        if(isr_flag){
+        if((TMR1H >= 128) & !charged_flag){
+            //transmit_count(pre_pin_count);
+            //transmit_count(post_pin_count);
+            
             // send the values over the error pin
-            pre_pin_count >>= 2;
-            post_pin_count <<= 3;
+            pre_pin_count >>= 2; // divide by 4 to get the ratio to be more precise
+            post_pin_count <<= 3;   // multiply by 8
             
             ratio = post_pin_count / pre_pin_count;
             transmit_count(ratio);
@@ -209,22 +231,34 @@ int main(void) {
             TMR1H = 0;
             TMR1L = 0;         
             
+            //GPIO |= (1 << AIR_PIN); // turn on AIR
+            //GPIO &= ~(1 << CHR_PIN);    // turn off Precharge relay
+            //charged_flag = 1;
+  
             if(start_flag & !charged_flag){
                 start_count++;
-                if(start_count <= 3){
+                if(start_count <= 2){
                     if((ratio >= 30) & (ratio <= 32)){  // if we charged up too fast
                         GPIO &= ~((1 << AIR_PIN)|(1 << CHR_PIN));   // turn off relays
+                        GPIO |= (1 << ERROR_PIN);
+                        WPU &= ~(1 << ERROR_PIN);
+                        TRISIO &= ~(1 << ERROR_PIN);
+                        //GPIO &= ~(1 << ERROR_PIN); // send error signal to relay board
                         while(1);   // enter infinite loop, precharge relay possibly welded
                     }
                 }
-                else if((start_count >= 7) & (start_count <= 10)){  // correct timing
-                    if((ratio >= 31) & (ratio <= 32)) { // succesfully precharged
+                else if((start_count >= 3) & (start_count <= 4)){  // correct timing
+                    if((ratio >= 29) & (ratio <= 32)) { // succesfully precharged
                         GPIO |= (1 << AIR_PIN); // turn on AIR
                         GPIO &= ~(1 << CHR_PIN);    // turn off Precharge relay
                         charged_flag = 1;
                     }
                     else{   // charged up too slow, possible that discharge is welded
                         GPIO &= ~((1 << AIR_PIN)|(1 << CHR_PIN));   // turn off relays
+                        //GPIO &= ~(1 << ERROR_PIN); // send error signal to relay board
+                        GPIO |= (1 << ERROR_PIN);
+                        WPU &= ~(1 << ERROR_PIN);
+                        TRISIO &= ~(1 << ERROR_PIN);
                         while(1);   // enter infinite loop, discharge relay possible welded
                     }
                 }
