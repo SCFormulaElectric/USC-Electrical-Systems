@@ -20,7 +20,7 @@ enum GpioBit {
 // --- Global Variables ---
 
 uint16_t blink_counter = 0;
-uint8_t faulted = 1;
+uint8_t faulted = 0;
 
 int main(void) {
 

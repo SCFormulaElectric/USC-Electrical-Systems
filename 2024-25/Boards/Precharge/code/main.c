@@ -99,10 +99,10 @@ DelayLoop_Stop:
 }
 
 // Transmit 16-bit count using UART
-void transmit_count(uint16_t count) {
-    uart_tx((count >> 8) & 0xFF);  // Send high byte
-    uart_tx(count & 0xFF);         // Send low byte
-}
+//void transmit_count(uint16_t count) {
+//    uart_tx((count >> 8) & 0xFF);  // Send high byte
+//    uart_tx(count & 0xFF);         // Send low byte
+//}
 
 int main(void) {
     GPIO = 0;
@@ -221,7 +221,7 @@ int main(void) {
             post_pin_count <<= 3;   // multiply by 8
             
             ratio = post_pin_count / pre_pin_count;
-            transmit_count(ratio);
+            //transmit_count(ratio);
             isr_flag = 0;
             
             pre_pin_count = 0;
