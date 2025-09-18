@@ -53,19 +53,48 @@ int main(void) {
     PIE1 &= ~(1 << TMR1IE);
     INTCON &= ~((1 << GIE) | (1 << PEIE)| (1 << 4));
 
+    uint8_t output_reg = 0x00;
+    uint8_t fault_counter = 0x00;
+    uint8_t current_fault = 0x00;
+
     while (1) {
-
-        uint8_t bms_gate_state = (GPIO >> BMS_fault_i) & 1; //  GP1 
-        uint8_t imd_gate_state = (GPIO >> IMD_gate_i) & 1; //  GP4 
-        uint8_t reset_button_state = (GPIO >> reset_button) & 1; // GP3
-
-        uint8_t current_fault = (bms_gate_state == 1) || (imd_gate_state == 0); 
+        uint8_t gpio_reg = GPIO;
+        uint8_t bms_gate_state = (gpio_reg >> BMS_fault_i) & 1; //  GP1 
+        uint8_t imd_gate_state = (gpio_reg >> IMD_gate_i) & 1; //  GP4 
+        uint8_t reset_button_state = (gpio_reg >> reset_button) & 1; // GP3
+        
+        // added counter because it was faulting when it shouldn't have before
+        uint8_t potential_fault = (bms_gate_state == 1) || (imd_gate_state == 0);
+        if(potential_fault){
+            if(fault_counter < 20){
+                fault_counter++;
+            }
+            else if(fault_counter == 20){
+                current_fault = 1;
+            }
+            else {  // came from not faulted
+                fault_counter = 0;
+            }
+        }
+        else{
+            if(fault_counter < 20){ // fake fault checker
+                fault_counter = 0;  // fake fault, so reset counter
+            }
+            if(fault_counter < 40){ // fake reset of fault (20 to 40)
+                fault_counter++;
+            }
+            else{       // real reset of fault (count of 40)
+                current_fault = 0;
+                fault_counter = 0;
+            }
+        }
+        
 
         //inverted for BMS relay
         if (bms_gate_state) { 
-            GPIO &= ~(1 << BMS_fault_o); // Set fault output LOW
+            output_reg &= ~(1 << BMS_fault_o); // Set fault output LOW
         } else {
-            GPIO |= (1 << BMS_fault_o); // Set fault output HIGH
+            output_reg |= (1 << BMS_fault_o); // Set fault output HIGH
         }
         if (reset_button_state & !current_fault) { // if we're not faulted and the reset button is pushed
            faulted = 0; // clear the faults
@@ -78,29 +107,25 @@ int main(void) {
                             
             if ((current_fault == 1) || faulted) {
                 if (blink_counter >= FREQ_SCALAR) {
+                    fault_counter = 0;
                     blink_counter = 0; 
-                    // Weak pull-ups used instead of direct GPIO output
-                    // because the capacitive load of the MOSFET being
-                    // driven is higher than the PIC12 can handle
-                    TRISIO ^= (1 << red_PIC_o); // turn on/off output
-                    WPU ^= (1 << red_PIC_o); // turn on/off pull-up
-                    GPIO ^= (1 << red_PIC_o);   // turn on/off output
-                    GPIO &= ~(1 << green_PIC_o); // turn off green light
+                    output_reg ^= (1 << red_PIC_o);   // turn on/off output
+                    output_reg &= ~(1 << green_PIC_o); // turn off green light
                     faulted = 1;    // set fault flag
                 }
             } 
             if (!faulted && !(blink_counter % 2)) { // weird modulo stuff to PWM to get the light to be dimmer
-                GPIO &= ~(1 << green_PIC_o);
+                output_reg &= ~(1 << green_PIC_o);
                 if(!(blink_counter % 9)){   // comes out to 5% duty cycle after the dust settles in compilation
-                    GPIO |= (1 << green_PIC_o);
+                    output_reg |= (1 << green_PIC_o);
                 }
-                TRISIO &= ~(1 << red_PIC_o); // make an output
-                WPU &= ~(1 << red_PIC_o);
-                GPIO &= ~(1 << red_PIC_o);
+                output_reg &= ~(1 << red_PIC_o);
             }
             
         }
 
+        // write outputs to the register
+        GPIO = output_reg;
     }
 
     return 0;
