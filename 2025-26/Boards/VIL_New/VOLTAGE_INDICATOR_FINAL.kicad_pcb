@@ -86,11 +86,10 @@
 	(net 6 "Net-(D4-A2)")
 	(net 7 "Net-(R2-Pad2)")
 	(net 8 "Net-(D2-A)")
-	(net 9 "Net-(Q2-D)")
-	(net 10 "Net-(D1-K)")
-	(net 11 "Net-(D1-A)")
-	(net 12 "Net-(R5-Pad2)")
-	(net 13 "Net-(R6-Pad2)")
+	(net 9 "Net-(D1-K)")
+	(net 10 "Net-(D1-A)")
+	(net 11 "Net-(R5-Pad2)")
+	(net 12 "Net-(R6-Pad2)")
 	(footprint "Diode_SMD:D_SOD-123F"
 		(layer "F.Cu")
 		(uuid "033c6ab0-fa40-408a-8206-4df81b07ae14")
@@ -119,7 +118,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -132,7 +131,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "500mW Zener Diode, SOD-123F"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -148,7 +147,7 @@
 		(property ki_fp_filters "D?SOD?123F*")
 		(path "/969118ab-77f6-4c4e-82e0-27810fdcb865")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.21 1)
@@ -402,7 +401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -415,7 +414,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "500mW Zener Diode, SOD-123F"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -431,7 +430,7 @@
 		(property ki_fp_filters "D?SOD?123F*")
 		(path "/1577b73a-1481-48b0-b133-41119d20bf61")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.21 1)
@@ -629,7 +628,7 @@
 			(size 1.1 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2272727273)
-			(net 10 "Net-(D1-K)")
+			(net 9 "Net-(D1-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "5727e671-0614-4440-9cab-f2ccaff89c95")
@@ -639,7 +638,7 @@
 			(size 1.1 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.2272727273)
-			(net 11 "Net-(D1-A)")
+			(net 10 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "dd2b6d1a-efb5-4b0c-a49c-fee70aad5748")
@@ -685,7 +684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -697,7 +696,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -712,7 +711,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/2427e9cc-9021-4798-9014-cd8f08676889")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -756,14 +755,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+	(footprint "Diode_SMD:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "1d1abdf6-afd6-4a4b-b10c-6188e00448b5")
 		(at 124.97 95.88 -90)
-		(descr "Diode, DO-201AE series, Axial, Horizontal, pin pitch=15.24mm, length*diameter=9*5.3mm^2, http://www.farnell.com/datasheets/529758.pdf")
-		(tags "Diode DO-201AE series Axial Horizontal pin pitch 15.24mm  length 9mm diameter 5.3mm")
+		(descr "SOD-323")
+		(tags "SOD-323")
 		(property "Reference" "D4"
-			(at 7.62 -3.77 90)
+			(at 0 -1.85 270)
 			(layer "F.SilkS")
 			(uuid "198d8833-9f45-4802-93f6-f8c9e08d97d9")
 			(effects
@@ -774,7 +773,7 @@
 			)
 		)
 		(property "Value" "PESD12VL1BA"
-			(at 7.62 3.77 90)
+			(at 0.1 1.9 270)
 			(layer "F.Fab")
 			(uuid "116501b9-775a-4aeb-bee8-172328e71a5b")
 			(effects
@@ -784,8 +783,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 90)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 0 0 270)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3c21cfb4-3842-4e3a-bd59-260a93ea13c3")
@@ -796,8 +796,9 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 90)
+		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+			(at 0 0 270)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af8fc25a-9215-42fe-889c-a01a96e23e47")
@@ -811,165 +812,180 @@
 		(property ki_fp_filters "D?DO?201AE*")
 		(path "/fa10fc00-d182-4113-956d-d4cd4f943671")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
-		(attr through_hole)
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
+		(attr smd)
 		(fp_line
-			(start 1.54 0)
-			(end 3 0)
+			(start -1.61 0.85)
+			(end 1.05 0.85)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b65256fa-e63f-49f5-bd47-a356071d248c")
-		)
-		(fp_line
-			(start 13.7 0)
-			(end 12.24 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8d85f14d-5445-4f9d-a711-31255c27899a")
+			(uuid "5ee188bb-700a-46e1-a6d6-d1543a076baf")
 		)
 		(fp_line
-			(start 4.35 -2.77)
-			(end 4.35 2.77)
+			(start -1.61 -0.85)
+			(end -1.61 0.85)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f168d2e6-f9d3-4efc-8319-05536177e057")
+			(uuid "57ad9a47-f959-47a7-9a0e-c1412796ca25")
 		)
 		(fp_line
-			(start 4.47 -2.77)
-			(end 4.47 2.77)
+			(start -1.61 -0.85)
+			(end 1.05 -0.85)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "5cee50f3-e05e-4ca6-ab0e-a364c0631874")
+			(uuid "f94f09f4-f053-4fa4-b9ff-005dcabaaf26")
 		)
 		(fp_line
-			(start 4.59 -2.77)
-			(end 4.59 2.77)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d2b2e2e3-55ee-4740-977a-209c58d121ad")
-		)
-		(fp_rect
-			(start 3 -2.77)
-			(end 12.24 2.77)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "6b26c71e-6e00-4f80-b93a-2d25f4bbd1e9")
-		)
-		(fp_rect
-			(start -1.55 -2.9)
-			(end 16.79 2.9)
+			(start -1.6 0.95)
+			(end 1.6 0.95)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
-			(fill no)
 			(layer "F.CrtYd")
-			(uuid "b5264be2-ca48-4ed5-bf0d-d35ee8bc73d9")
+			(uuid "dfe47827-0455-4d25-a399-05c262df135b")
 		)
 		(fp_line
-			(start 0 0)
-			(end 3.12 0)
+			(start -1.6 -0.95)
+			(end -1.6 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "00ffa0d2-90fc-428e-96c9-0bd8ee867b48")
+			(layer "F.CrtYd")
+			(uuid "8de39103-488b-495c-b92f-aaf3cad07c97")
 		)
 		(fp_line
-			(start 15.24 0)
-			(end 12.12 0)
+			(start -1.6 -0.95)
+			(end 1.6 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "7f8d91f3-3a8d-48c8-8b6c-72014504c35f")
+			(layer "F.CrtYd")
+			(uuid "f95e7f20-6096-48a3-914a-fed58a2277f8")
 		)
 		(fp_line
-			(start 4.37 -2.65)
-			(end 4.37 2.65)
+			(start 1.6 -0.95)
+			(end 1.6 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "f91232e3-0d46-47b5-b378-fec8b5ee8d3a")
+			(layer "F.CrtYd")
+			(uuid "a5b016ab-c511-41a2-8428-f12b495a504c")
 		)
 		(fp_line
-			(start 4.47 -2.65)
-			(end 4.47 2.65)
+			(start -0.9 0.7)
+			(end -0.9 -0.7)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "348764e8-5a53-4898-ab77-b98690fbd774")
+			(uuid "25659e0a-fb57-48c0-bb00-a5373300cc7c")
 		)
 		(fp_line
-			(start 4.57 -2.65)
-			(end 4.57 2.65)
+			(start 0.9 0.7)
+			(end -0.9 0.7)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "4e46ddf4-9f51-49eb-82e5-a3b005b86b02")
+			(uuid "32a7a350-1bc9-44a0-9711-1547c89edf00")
 		)
-		(fp_rect
-			(start 3.12 -2.65)
-			(end 12.12 2.65)
+		(fp_line
+			(start 0.2 0.35)
+			(end -0.3 0)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
-			(fill no)
 			(layer "F.Fab")
-			(uuid "a25882ee-5c7e-4725-b5f9-c5ae3a719972")
+			(uuid "7d2a291f-574b-468a-ba3a-14df299000c7")
 		)
-		(fp_text user "K"
-			(at 0 -2.3 90)
-			(layer "F.SilkS")
-			(uuid "9d478f9d-4779-4de4-8704-24ad35c6dd89")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
+		(fp_line
+			(start -0.3 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.1)
+				(type solid)
 			)
-		)
-		(fp_text user "K"
-			(at 0 -2.3 90)
 			(layer "F.Fab")
-			(uuid "47d6f3b4-9acd-49ae-80c3-ad835f4de9bc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
+			(uuid "92cea461-0558-4eb1-aef5-173a047c28e9")
+		)
+		(fp_line
+			(start -0.3 0)
+			(end 0.2 -0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
 			)
+			(layer "F.Fab")
+			(uuid "520de48b-4658-40a4-be70-6c59729673c7")
+		)
+		(fp_line
+			(start 0.2 0)
+			(end 0.45 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4923cb9c-e213-4e73-b415-251a383276ac")
+		)
+		(fp_line
+			(start -0.3 -0.35)
+			(end -0.3 0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c255d695-65b7-44ed-8971-2d394099d90f")
+		)
+		(fp_line
+			(start 0.2 -0.35)
+			(end 0.2 0.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c302aa53-ae5c-40b4-851f-880972318131")
+		)
+		(fp_line
+			(start -0.9 -0.7)
+			(end 0.9 -0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e58e143f-f9f5-4a6b-a52e-e5e668bcaf8c")
+		)
+		(fp_line
+			(start 0.9 -0.7)
+			(end 0.9 0.7)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "28884c87-deba-47c9-9027-86dd65a73e25")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 8.295 0 90)
+			(at 0 -1.85 270)
 			(layer "F.Fab")
 			(uuid "f4277206-2638-47f2-895e-81365680ea3a")
 			(effects
@@ -979,31 +995,28 @@
 				)
 			)
 		)
-		(pad "1" thru_hole roundrect
-			(at 0 0 270)
-			(size 2.6 2.6)
-			(drill 1.3)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.096154)
-			(net 11 "Net-(D1-A)")
+		(pad "1" smd roundrect
+			(at -1.05 0 270)
+			(size 0.6 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 10 "Net-(D1-A)")
 			(pinfunction "A1")
 			(pintype "passive")
 			(uuid "aacfc33b-a583-4332-9f6e-b3eafb27f783")
 		)
-		(pad "2" thru_hole circle
-			(at 15.24 0 270)
-			(size 2.6 2.6)
-			(drill 1.3)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+		(pad "2" smd roundrect
+			(at 1.05 0 270)
+			(size 0.6 0.45)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
 			(net 6 "Net-(D4-A2)")
 			(pinfunction "A2")
 			(pintype "passive")
 			(uuid "f20ce883-acb2-4496-a677-eb406b5178fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-201AE_P15.24mm_Horizontal.step"
+		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1043,7 +1056,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1070,7 +1083,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/ab4adf32-9437-4091-93ce-e087f24ed781")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -1216,205 +1229,6 @@
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
-		(uuid "37654fcb-9747-4143-953a-0eedddd6a4ce")
-		(at 143.97 87.5)
-		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor handsolder")
-		(property "Reference" "R3"
-			(at -0.227064 -3 0)
-			(layer "F.SilkS")
-			(uuid "ec8a0afb-104d-4256-973c-3c991734a1be")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "47"
-			(at 0 1.65 0)
-			(layer "F.Fab")
-			(uuid "d3d7a11d-f5a2-483f-9539-9b89fb6e2745")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "048c24cd-d4d9-41de-b66e-afa5d75a2ada")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e25f4a1c-24e8-4e69-9c1e-094d0efe6fae")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(path "/7dfea25d-0726-47a7-8bc7-5ed822313fd5")
-		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "674cebda-82e4-4547-9991-88327bfbee6c")
-		)
-		(fp_line
-			(start -0.227064 0.735)
-			(end 0.227064 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0a8731a3-ec08-46c3-976b-99e10842cdf4")
-		)
-		(fp_line
-			(start -1.85 -0.95)
-			(end 1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "5b6438ab-04d1-40ff-b10d-b65f9458b18f")
-		)
-		(fp_line
-			(start -1.85 0.95)
-			(end -1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "55c252d4-fbb0-4737-b798-fa0e14b6c8d3")
-		)
-		(fp_line
-			(start 1.85 -0.95)
-			(end 1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0a211f0c-5595-4fae-98df-20a8434da2df")
-		)
-		(fp_line
-			(start 1.85 0.95)
-			(end -1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c4ac8273-14ce-4e64-9013-01500baeac0c")
-		)
-		(fp_line
-			(start -1 -0.625)
-			(end 1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "665ec3e2-8902-4138-912f-613ff47266d3")
-		)
-		(fp_line
-			(start -1 0.625)
-			(end -1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6540e371-fa45-42c2-84d8-b5930cb1b78f")
-		)
-		(fp_line
-			(start 1 -0.625)
-			(end 1 0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b4e4ac73-d1c6-4688-9019-35a73622f4e1")
-		)
-		(fp_line
-			(start 1 0.625)
-			(end -1 0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b5936e23-9ee3-4a1f-95bd-88e909bc52b1")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.5 0)
-			(layer "F.Fab")
-			(uuid "6d69c088-f271-463c-b72e-91680957c4a6")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -1 0)
-			(size 1.2 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.208333)
-			(net 9 "Net-(Q2-D)")
-			(pintype "passive")
-			(uuid "eebb4b1b-ee9d-4522-b03f-d045bef4f3c1")
-		)
-		(pad "2" smd roundrect
-			(at 1 0)
-			(size 1.2 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.208333)
-			(net 3 "/HV+_fused")
-			(pintype "passive")
-			(uuid "d70c181d-d00d-4ebe-8668-fa74ec1368bd")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-		(layer "F.Cu")
 		(uuid "53e800de-e44b-4c74-93c5-663dfb5a8cf6")
 		(at 146.47 93 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
@@ -1441,7 +1255,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1468,7 +1282,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f393af62-8636-421f-bb89-2ccecc068ea1")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -1595,7 +1409,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 12 "Net-(R5-Pad2)")
+			(net 11 "Net-(R5-Pad2)")
 			(pintype "passive")
 			(uuid "a1949284-f03e-48f3-9b5c-11886fa734f8")
 		)
@@ -1638,7 +1452,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1665,7 +1479,7 @@
 		(property ki_fp_filters "*Fuse*")
 		(path "/5c9ec402-afe1-4a20-8f6d-d8d93ab25fb8")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.81 1.205)
@@ -1839,7 +1653,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1866,7 +1680,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/404c45f4-caa6-44b0-a94f-6f6a802cc9d4")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -2038,7 +1852,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2062,9 +1876,48 @@
 				)
 			)
 		)
+		(property "Sim.Device" "NJFET"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0aa32cb9-4509-4067-a86b-664188c8278b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Type" "SHICHMANHODGES"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4845cc01-7b48-47ed-af54-5fe60c84dd51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1daba4ad-9ebe-4dd3-873c-fabd97ce0466")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/aac51cca-f705-4c29-9008-00913ac337e6")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.61 -4.97)
@@ -2525,7 +2378,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "Net-(D1-A)")
+			(net 10 "Net-(D1-A)")
 			(pinfunction "G")
 			(pintype "input")
 			(uuid "b5705694-8e38-4622-89a7-ec0de051f8d3")
@@ -2536,7 +2389,7 @@
 			(drill 1.5)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "Net-(Q2-D)")
+			(net 3 "/HV+_fused")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "66735d07-dfe2-4027-9335-a40c0b489c3d")
@@ -2593,7 +2446,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2605,7 +2458,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2620,7 +2473,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/61560a2b-22c5-46ea-864f-3c9b0538ac8b")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2692,7 +2545,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2719,7 +2572,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/2f839b17-f41d-4704-8329-4100c073e162")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -2837,7 +2690,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 12 "Net-(R5-Pad2)")
+			(net 11 "Net-(R5-Pad2)")
 			(pintype "passive")
 			(uuid "b0872ebd-9c68-438b-8451-4d8029a25f8d")
 		)
@@ -2846,7 +2699,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 13 "Net-(R6-Pad2)")
+			(net 12 "Net-(R6-Pad2)")
 			(pintype "passive")
 			(uuid "495f73e1-53aa-474e-a2bd-1b361fe5ba89")
 		)
@@ -2891,7 +2744,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2918,7 +2771,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9379312f-e8af-43ce-90f7-d5b18fd6d706")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -3.685 -2.58)
@@ -3299,7 +3152,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3311,7 +3164,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3326,7 +3179,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/1f8250b8-d91b-4000-b724-c898bd23210a")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -3399,7 +3252,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN2056U.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3411,7 +3264,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4A Id, 20V Vds, N-Channel MOSFET, SOT-23"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3426,7 +3279,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/7416bb66-59f4-43b0-b207-28aba84c3a26")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0 1.56)
@@ -3628,7 +3481,7 @@
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 10 "Net-(D1-K)")
+			(net 9 "Net-(D1-K)")
 			(pinfunction "G")
 			(pintype "input")
 			(uuid "78c84d44-c4b9-4fda-8fb7-ad5f2cc9a17c")
@@ -3638,7 +3491,7 @@
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 11 "Net-(D1-A)")
+			(net 10 "Net-(D1-A)")
 			(pinfunction "S")
 			(pintype "passive")
 			(uuid "2dcc901d-4387-4d98-adda-0dbbe36f7c74")
@@ -3692,7 +3545,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3719,7 +3572,7 @@
 		(property ki_fp_filters "*Fuse*")
 		(path "/9c8b71ce-ec44-4f7a-838e-924891f05815")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -3.81 -1.205)
@@ -3847,7 +3700,7 @@
 			(drill 0.889)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "Net-(D1-A)")
+			(net 10 "Net-(D1-A)")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
 			(uuid "ca9ad78b-234e-4705-9e36-b087f6bb106b")
@@ -3893,7 +3746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3920,7 +3773,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/fdb52d50-c89a-47af-b2e5-279b6a0dd9d1")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -4038,7 +3891,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 13 "Net-(R6-Pad2)")
+			(net 12 "Net-(R6-Pad2)")
 			(pintype "passive")
 			(uuid "da003ec2-92a0-4aab-83d5-31801c2abcca")
 		)
@@ -4047,7 +3900,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 10 "Net-(D1-K)")
+			(net 9 "Net-(D1-K)")
 			(pintype "passive")
 			(uuid "7cf3320f-7b4d-44f5-af95-18b08e46a4ae")
 		)
@@ -4092,7 +3945,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4119,7 +3972,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/dbf3292e-fc93-40fa-87e8-5a330810bfaf")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.227064 0.735)
@@ -4237,7 +4090,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 10 "Net-(D1-K)")
+			(net 9 "Net-(D1-K)")
 			(pintype "passive")
 			(uuid "7d554ab7-6341-416a-bd6f-fbf09b94ea06")
 		)
@@ -4246,7 +4099,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 11 "Net-(D1-A)")
+			(net 10 "Net-(D1-A)")
 			(pintype "passive")
 			(uuid "c2048e35-f433-40cf-97a5-2db0e8f31579")
 		)
@@ -4291,7 +4144,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4318,7 +4171,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/2261a869-3b15-4f17-9ea9-b53111e5e7ac")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -3.685 -2.58)
@@ -4699,7 +4552,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4711,7 +4564,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4726,7 +4579,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/bc7436dc-0eda-48b3-bc33-b00b09ff40ab")
 		(sheetname "/")
-		(sheetfile "voltage_indicator_Clone2.kicad_sch")
+		(sheetfile "VOLTAGE_INDICATOR_FINAL.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -4985,6 +4838,30 @@
 		(uuid "c9788413-1366-4400-860a-d12cd6aa37f4")
 	)
 	(segment
+		(start 132.11 104.89)
+		(end 141.871 95.129)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "14e6cae0-3fce-4e4e-a081-07bc671085c7")
+	)
+	(segment
+		(start 141.871 88.599)
+		(end 142.97 87.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "3c561ee3-614e-4e9a-8428-934452459f86")
+	)
+	(segment
+		(start 132.11 105)
+		(end 132.11 104.89)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "49727dc3-d43d-4fbe-adc6-d57f27ea3624")
+	)
+	(segment
 		(start 157.47 93)
 		(end 157.47 91)
 		(width 0.2)
@@ -5007,6 +4884,22 @@
 		(layer "F.Cu")
 		(net 3)
 		(uuid "975aa70b-a40e-4fc9-9d1d-e04ae7befe1b")
+	)
+	(segment
+		(start 142.97 87.5)
+		(end 144.97 87.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "99a163c9-87d9-442a-909d-67d840d80e47")
+	)
+	(segment
+		(start 141.871 95.129)
+		(end 141.871 88.599)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "ab78d9b7-870b-48a1-a794-49a90a8965b7")
 	)
 	(segment
 		(start 144.97 88)
@@ -5137,43 +5030,11 @@
 		(uuid "a2d2ccd1-b362-42c7-a26a-4aa982015e82")
 	)
 	(segment
-		(start 132.11 104.89)
-		(end 141.871 95.129)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "14e6cae0-3fce-4e4e-a081-07bc671085c7")
-	)
-	(segment
-		(start 141.871 88.599)
-		(end 142.97 87.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "3c561ee3-614e-4e9a-8428-934452459f86")
-	)
-	(segment
-		(start 132.11 105)
-		(end 132.11 104.89)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "49727dc3-d43d-4fbe-adc6-d57f27ea3624")
-	)
-	(segment
-		(start 141.871 95.129)
-		(end 141.871 88.599)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "ab78d9b7-870b-48a1-a794-49a90a8965b7")
-	)
-	(segment
 		(start 133.97 93)
 		(end 136.47 93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "12fe5689-e9dc-4a29-8dc8-a5fb074f0efd")
 	)
 	(segment
@@ -5181,7 +5042,7 @@
 		(end 141.515993 77.5005)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "156c3b94-e52a-4f84-830c-ac8733994538")
 	)
 	(segment
@@ -5189,7 +5050,7 @@
 		(end 140.9305 78.085993)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "270c13fc-e396-49ae-bde5-0355a8bb84da")
 	)
 	(segment
@@ -5197,7 +5058,7 @@
 		(end 142.9295 79.005032)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "2fa4af0f-a31a-48c5-9a23-9585348db7d1")
 	)
 	(segment
@@ -5205,7 +5066,7 @@
 		(end 129.97 91)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "341e4031-0404-4ce0-9805-9dd656c48920")
 	)
 	(segment
@@ -5213,7 +5074,7 @@
 		(end 140.9305 86.0395)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "4b89ea29-4f99-4824-b568-92bd9b7ad62d")
 	)
 	(segment
@@ -5221,7 +5082,7 @@
 		(end 146.97 83.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "5d7b798f-7fc0-4084-bbab-109ba5e05086")
 	)
 	(segment
@@ -5229,7 +5090,7 @@
 		(end 142.344007 77.5005)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "5dadaa99-6e93-4670-80db-35f877982745")
 	)
 	(segment
@@ -5237,7 +5098,7 @@
 		(end 142.9295 78.085993)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "808447e9-a4b4-4763-97ce-7a52071a9b43")
 	)
 	(segment
@@ -5245,7 +5106,7 @@
 		(end 133.97 93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "b6faef73-c907-41d0-9f72-6a7e956c0c77")
 	)
 	(segment
@@ -5253,7 +5114,7 @@
 		(end 146.97 83.045532)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "c0f2847e-c72a-4818-855f-59b933fb4ab0")
 	)
 	(segment
@@ -5261,7 +5122,7 @@
 		(end 133.97 91)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "e2d4e23b-1caa-4863-9bf9-056c78bff652")
 	)
 	(segment
@@ -5269,7 +5130,7 @@
 		(end 129.87 91.1)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 10)
+		(net 9)
 		(uuid "fd56464a-d6bf-43d0-b244-95f036614030")
 	)
 	(segment
@@ -5277,7 +5138,7 @@
 		(end 131.97 93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "1f6befe8-6df9-45ed-a7bf-996eb4feff29")
 	)
 	(segment
@@ -5285,7 +5146,7 @@
 		(end 140.5295 84.9705)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "289804c3-b437-4bce-8edc-535cc2833b7c")
 	)
 	(segment
@@ -5293,7 +5154,7 @@
 		(end 141.349893 77.0995)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "483b1cde-c90b-459c-9c0a-dba2413a003b")
 	)
 	(segment
@@ -5301,7 +5162,7 @@
 		(end 131.119 93.851)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "4dc034d4-cd75-4ffb-825b-ad48d0795a08")
 	)
 	(segment
@@ -5309,7 +5170,7 @@
 		(end 129.019 91.3839)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "4e595635-aa18-4ba9-b484-08c4255daff9")
 	)
 	(segment
@@ -5317,7 +5178,7 @@
 		(end 131.97 99.41)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "4f8047a5-5640-450e-b86f-92bd2933fb97")
 	)
 	(segment
@@ -5325,7 +5186,7 @@
 		(end 135.4324 84.9705)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "60aa4905-5063-4c42-b4df-e9cf958b85e8")
 	)
 	(segment
@@ -5333,7 +5194,7 @@
 		(end 140.5295 77.919893)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "62e699e8-7ec0-4070-ac03-6a9df3144e9e")
 	)
 	(segment
@@ -5341,7 +5202,7 @@
 		(end 129.33484 93.851)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "73bfe06e-fbf4-4dc5-92cd-ff0417f45eea")
 	)
 	(segment
@@ -5349,7 +5210,7 @@
 		(end 129.019 93.53516)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "8a0a6977-4132-462a-85a0-52544a17588d")
 	)
 	(segment
@@ -5357,7 +5218,7 @@
 		(end 124.97 95.88)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "95124e97-1501-4da5-be1c-461054751136")
 	)
 	(segment
@@ -5365,7 +5226,7 @@
 		(end 127.07 93.78)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "ac4c6c82-7b70-4d83-9bd4-c5144ffdaf38")
 	)
 	(segment
@@ -5373,7 +5234,7 @@
 		(end 142.510107 77.0995)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "b3e99743-8b65-4508-af15-5a2dedbb2da4")
 	)
 	(segment
@@ -5381,7 +5242,7 @@
 		(end 132.11 99.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "bc8a482a-087f-49a1-bd03-b53d27787303")
 	)
 	(segment
@@ -5389,7 +5250,7 @@
 		(end 146.97 81.6)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "c0f5a607-7410-4bc3-975a-2fbb265aa3c1")
 	)
 	(segment
@@ -5397,7 +5258,7 @@
 		(end 148.93 83.519393)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "dce9423a-f6eb-4df2-916d-3e577f4a3743")
 	)
 	(segment
@@ -5405,7 +5266,7 @@
 		(end 148.93 83.56)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "e9d1a8cf-b28d-44a4-a014-a39d83b46b51")
 	)
 	(segment
@@ -5413,7 +5274,7 @@
 		(end 127.07 94.51)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "f4be7915-cb9d-49b3-a61e-d9b091e2a275")
 	)
 	(segment
@@ -5421,7 +5282,7 @@
 		(end 132.11 99.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 11)
+		(net 10)
 		(uuid "f83437a9-bfef-4903-b554-e9c5c0009a5a")
 	)
 	(segment
@@ -5429,7 +5290,7 @@
 		(end 145.47 93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 12)
+		(net 11)
 		(uuid "5ead2d4e-e86c-4366-bd4b-fed9781e3afd")
 	)
 	(segment
@@ -5437,7 +5298,7 @@
 		(end 140.97 93)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 13)
+		(net 12)
 		(uuid "35424315-7b6d-4979-ac59-357a241001d0")
 	)
 	(segment
@@ -5445,7 +5306,7 @@
 		(end 140.97 92.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 13)
+		(net 12)
 		(uuid "f177a060-c344-4854-a619-e080952597d2")
 	)
 	(embedded_fonts no)
