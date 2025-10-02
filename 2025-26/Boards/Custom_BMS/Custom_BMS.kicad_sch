@@ -6,8 +6,8 @@
 	(paper "A5")
 	(lib_symbols)
 	(rectangle
-		(start 49.53 62.23)
-		(end 166.37 88.9)
+		(start 46.99 52.07)
+		(end 163.83 78.74)
 		(stroke
 			(width 0)
 			(type default)
@@ -18,8 +18,8 @@
 		(uuid 0ad9a23d-efe9-4418-b19a-c65c1c26fef3)
 	)
 	(rectangle
-		(start 49.53 30.48)
-		(end 166.37 55.88)
+		(start 46.99 20.32)
+		(end 163.83 45.72)
 		(stroke
 			(width 0)
 			(type default)
@@ -31,7 +31,7 @@
 	)
 	(text "HV Domain\n(Daughterboard circuitry)"
 		(exclude_from_sim no)
-		(at 107.696 68.072 0)
+		(at 105.156 57.912 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39,9 +39,31 @@
 		)
 		(uuid "27534320-7cdb-45ad-a838-34fc6f89895d")
 	)
+	(text "Daughterboard responsibilities:\n- handle communication daisy chaining\n- fault handling over comms lines\n- heartbeat & comms fault detection\n- cell voltage measurements w/ filtering\n- temp sensing\n- report individual cell info"
+		(exclude_from_sim no)
+		(at 20.066 125.476 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ca94b32-b1fb-4efd-8897-b2ec6c7ce8da")
+	)
+	(text "Motherboard responsibilities:\n- poll for faults, poll cell info if fault?\n- calculate segment level info\n- determine safe to discharge / safe to charge, mode of operation\n- read current sensor input\n- calculated resistance, SOC, SOH, SOP\n- communicate with VCU\n- configure BMS chip registers\n- configure temp, current, voltage, etc., limits\n- POR reset of BMS chips"
+		(exclude_from_sim no)
+		(at 20.32 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "adc986e1-49bf-450f-bd12-7eb4e27c5a8e")
+	)
 	(text "LV domain\n(Motherboard circuitry)"
 		(exclude_from_sim no)
-		(at 106.934 35.56 0)
+		(at 104.394 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50,7 +72,7 @@
 		(uuid "ce9f49ff-1c30-4b55-8f1c-856acc406b45")
 	)
 	(sheet
-		(at 140.97 44.45)
+		(at 138.43 34.29)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -66,7 +88,7 @@
 		)
 		(uuid "1cccc059-0a92-4ce8-a103-c4b369835867")
 		(property "Sheetname" "Comms Interfaces"
-			(at 140.97 43.7384 0)
+			(at 138.43 33.5784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -75,7 +97,7 @@
 			)
 		)
 		(property "Sheetfile" "comms.kicad_sch"
-			(at 140.97 48.8446 0)
+			(at 138.43 38.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -92,7 +114,7 @@
 		)
 	)
 	(sheet
-		(at 100.33 44.45)
+		(at 97.79 34.29)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -108,7 +130,7 @@
 		)
 		(uuid "4346a30a-37d6-4835-9af2-035eae8e4fc9")
 		(property "Sheetname" "MCU"
-			(at 100.33 43.7384 0)
+			(at 97.79 33.5784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -117,7 +139,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 100.33 48.8446 0)
+			(at 97.79 38.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -134,7 +156,7 @@
 		)
 	)
 	(sheet
-		(at 58.42 77.47)
+		(at 55.88 67.31)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -150,7 +172,7 @@
 		)
 		(uuid "730c9124-1e05-4e73-95cf-1be5bb1149a5")
 		(property "Sheetname" "BMS Chips"
-			(at 58.42 76.7584 0)
+			(at 55.88 66.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -159,7 +181,7 @@
 			)
 		)
 		(property "Sheetfile" "bms_chip.kicad_sch"
-			(at 58.42 81.8646 0)
+			(at 55.88 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -168,7 +190,7 @@
 			)
 		)
 		(property "Field2" ""
-			(at 58.42 77.47 0)
+			(at 55.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -184,7 +206,7 @@
 		)
 	)
 	(sheet
-		(at 140.97 77.47)
+		(at 138.43 67.31)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -200,7 +222,7 @@
 		)
 		(uuid "79608325-127c-4680-902d-ec74fc3ac03d")
 		(property "Sheetname" "Cell Tap Filters"
-			(at 140.97 76.7584 0)
+			(at 138.43 66.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -209,7 +231,7 @@
 			)
 		)
 		(property "Sheetfile" "cell_tap.kicad_sch"
-			(at 140.97 81.8646 0)
+			(at 138.43 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -226,7 +248,7 @@
 		)
 	)
 	(sheet
-		(at 58.42 44.45)
+		(at 55.88 34.29)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -242,7 +264,7 @@
 		)
 		(uuid "ac1bd3bc-1261-453f-909d-f00789f9c421")
 		(property "Sheetname" "Power"
-			(at 58.42 43.7384 0)
+			(at 55.88 33.5784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -251,7 +273,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 58.42 48.8446 0)
+			(at 55.88 38.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -268,7 +290,7 @@
 		)
 	)
 	(sheet
-		(at 100.33 77.47)
+		(at 97.79 67.31)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -284,7 +306,7 @@
 		)
 		(uuid "e94a219a-300a-4436-8821-3bf884f472d1")
 		(property "Sheetname" "Cell Balancing"
-			(at 100.33 76.7584 0)
+			(at 97.79 66.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -293,7 +315,7 @@
 			)
 		)
 		(property "Sheetfile" "cell_balance.kicad_sch"
-			(at 100.33 81.8646 0)
+			(at 97.79 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
