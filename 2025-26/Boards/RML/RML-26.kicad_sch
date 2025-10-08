@@ -1057,6 +1057,168 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1.5KExxCA"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1.5KExxCA"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transient voltage suppressor TRANSZORB®"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D?DO?201AE*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1.5KExxCA_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1.5KExxCA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:BZT52Bxx"
 			(pin_numbers
 				(hide yes)
@@ -3477,6 +3639,12 @@
 		(uuid "60864720-b25a-44c3-ae9c-55588db91a05")
 	)
 	(junction
+		(at 69.85 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6693b5c6-f689-442d-bbb5-50b29a3e05b7")
+	)
+	(junction
 		(at 157.48 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3505,6 +3673,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bed0255b-24c9-4716-9b1b-4e93ad6a8b90")
+	)
+	(junction
+		(at 59.69 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0acf54a-ff3d-4340-8261-1e02232dbb5e")
 	)
 	(junction
 		(at 157.48 41.91)
@@ -3604,7 +3778,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 68.58) (xy 59.69 116.84)
+			(xy 59.69 68.58) (xy 59.69 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3844,6 +4018,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 76.2) (xy 69.85 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cd841a8-e8d1-47dd-882e-7b73f717555a")
+	)
+	(wire
+		(pts
 			(xy 157.48 41.91) (xy 157.48 44.45)
 		)
 		(stroke
@@ -4001,6 +4185,16 @@
 			(type default)
 		)
 		(uuid "9d887568-432d-402f-967a-929a52e09d4b")
+	)
+	(wire
+		(pts
+			(xy 59.69 76.2) (xy 60.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fc616bf-2ce4-45b3-be4e-f891bcc62e93")
 	)
 	(wire
 		(pts
@@ -4231,6 +4425,16 @@
 			(type default)
 		)
 		(uuid "e7bd23e2-453a-4c29-9fa5-77a180c2da7a")
+	)
+	(wire
+		(pts
+			(xy 59.69 76.2) (xy 59.69 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8dfc0ed-371f-46c4-acf6-3490857e44a4")
 	)
 	(wire
 		(pts
@@ -7041,6 +7245,74 @@
 			(project "tsal-pcb-24-25"
 				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1.5KExxCA")
+		(at 64.77 76.2 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa10fc00-d182-4113-956d-d4cd4f943671")
+		(property "Reference" "D4"
+			(at 64.77 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PESD12VL1BA"
+			(at 64.77 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 64.77 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1500W bidirectional TVS diode, DO-201AE"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99147439-1b78-43f4-b829-dff61e1109be")
+		)
+		(pin "2"
+			(uuid "5b07738f-9319-4538-b52d-ff5af5710ad2")
+		)
+		(instances
+			(project "RML-26"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "D4")
 					(unit 1)
 				)
 			)
