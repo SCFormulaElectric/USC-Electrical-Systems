@@ -11638,7 +11638,7 @@
 	)
 	(rectangle
 		(start 102.235 276.225)
-		(end 138.43 299.72)
+		(end 142.24 299.72)
 		(stroke
 			(width 0)
 			(type default)
@@ -11804,6 +11804,17 @@
 		)
 		(uuid "320e6c64-766f-40dd-adc8-f49e1490e7e0")
 	)
+	(text "3. Converts to 5V"
+		(exclude_from_sim no)
+		(at 50.038 157.226 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(color 0 132 0 1)
+			)
+		)
+		(uuid "358a1537-408f-4cc5-afa3-b94e5481d605")
+	)
 	(text "TODO: Resimulate LP Filter & Find C"
 		(exclude_from_sim no)
 		(at 487.68 -62.23 0)
@@ -11815,6 +11826,17 @@
 			)
 		)
 		(uuid "388ddf56-8219-4d9e-baa9-e336f7f18d9e")
+	)
+	(text "2. Passes through protection IC, outputs to 12V flag"
+		(exclude_from_sim no)
+		(at 37.084 264.414 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(color 0 132 0 1)
+			)
+		)
+		(uuid "3f19fe59-a180-4b77-b973-4db8fa296cf3")
 	)
 	(text "TODO: grid not snapping for digital inputs\n\n"
 		(exclude_from_sim no)
@@ -11828,6 +11850,17 @@
 			)
 		)
 		(uuid "443630d4-2b6e-4ccd-af50-2b3f5b73119a")
+	)
+	(text "4. Converts to 3.3V from 5V"
+		(exclude_from_sim no)
+		(at 46.99 299.212 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(color 0 132 0 1)
+			)
+		)
+		(uuid "49743da9-aaf5-46a5-9fe0-227e32aecddd")
 	)
 	(text "layout must follow checkbox 20mm grid "
 		(exclude_from_sim no)
@@ -11895,13 +11928,13 @@
 	)
 	(text "TODO: Clarify board power with text, double-check flags\n"
 		(exclude_from_sim no)
-		(at 609.346 75.184 0)
+		(at 529.844 -90.424 0)
 		(effects
 			(font
 				(size 5.08 5.08)
 				(thickness 1.016)
 				(bold yes)
-				(color 0 0 255 1)
+				(color 194 194 194 1)
 			)
 		)
 		(uuid "7f886c74-44e0-48e4-9062-6847d732fea5")
@@ -12055,6 +12088,17 @@
 			)
 		)
 		(uuid "c7274f3f-40b1-4a63-923e-e7a32b2f9e7b")
+	)
+	(text "1. External 12V Power comes in"
+		(exclude_from_sim no)
+		(at 119.38 302.006 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 132 0 1)
+			)
+		)
+		(uuid "c7bbc63b-e0fd-482e-8212-bae6abcc9e08")
 	)
 	(text "68uH 2.5A"
 		(exclude_from_sim no)
@@ -16643,6 +16687,28 @@
 		(uuid "137db7e9-2ec7-4e5b-86b5-e65b4518c5c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 437.0748 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "EX 12V"
+		(shape input)
+		(at 130.81 288.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "14fe5bce-8fa5-47e8-b86e-26ef9d2e2c70")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.6289 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24590,6 +24656,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
