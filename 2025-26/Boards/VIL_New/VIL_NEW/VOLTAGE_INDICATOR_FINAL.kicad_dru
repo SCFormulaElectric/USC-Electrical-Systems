@@ -1,0 +1,4 @@
+(version 1)
+(rule "HVplus_to_D4node_3mm"
+  (constraint clearance (min 3mm))
+  (condition "(A.Net == 'HV+' && B.Net == 'HV') || (A.Net == 'Net-(D4-A1)' && B.Net == 'HV+')"))

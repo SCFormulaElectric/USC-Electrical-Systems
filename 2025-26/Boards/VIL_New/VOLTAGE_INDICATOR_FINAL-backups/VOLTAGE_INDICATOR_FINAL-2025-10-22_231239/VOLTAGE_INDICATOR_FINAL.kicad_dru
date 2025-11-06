@@ -1,0 +1,5 @@
+(version 1)
+(rule HV_clearance
+    (constraint clearance (min 3mm))
+    (condition "A.Net == 'HV+' && B.Net == 'HV-'")
+)
