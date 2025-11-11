@@ -5233,7 +5233,7 @@
 	)
 	(text "efficiency at target load: 93%\nthermals: 5*~.2*.07*60.2C/W = ~4.2C rise"
 		(exclude_from_sim no)
-		(at 44.45 48.006 0)
+		(at 48.514 52.324 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5305,9 +5305,9 @@
 		)
 		(uuid "dabf1409-33f3-4347-9776-f2d8ced074b2")
 	)
-	(text "~10mA for the bq79600 from 12V supply\nmax 240mA 3.3V supply, \nalthough there's another thing in the datasheet that says max power for the selected package is 435mW\nmax power: <1W, 76mA from 12V supply, 65mA from max Vin\n"
+	(text "~10mA for the bq79600 from 12V supply\n~50mA for the STM32 from 12V supply (max power for the selected package is 435mW)\nmax power: <1W, 76mA from 12V supply, 65mA from max Vin\n"
 		(exclude_from_sim no)
-		(at 44.704 38.354 0)
+		(at 48.514 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10242,7 +10242,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "100mA"
 			(at 68.58 129.54 90)
 			(effects
 				(font
