@@ -3306,6 +3306,289 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Switching:TPS62175DQC"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS62175DQC"
+				(at -1.27 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias"
+				(at 3.81 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62177.pdf"
+				(at 0 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mA Step-Down Converter with Sleep Mode, adjustable Output Voltage, 4.75-28V input voltage, WSON-10"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "step-down dc-dc buck regulator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "WSON*EP*2x3mm*P0.5mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS62175DQC_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS62175DQC_1_1"
+				(pin power_in line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "~{SLEEP}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 90)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -12.7 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "VOS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(hide yes)
@@ -4974,6 +5257,12 @@
 		(uuid "19f63369-e2ad-44b5-aad3-4eba4b4c44fa")
 	)
 	(junction
+		(at 318.77 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f6ab8ff-5c84-44d9-ba92-fbac29af2481")
+	)
+	(junction
 		(at 191.77 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5545,6 +5834,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 36.83) (xy 318.77 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34531663-0b77-41f5-8a12-a9d7657f89ee")
+	)
+	(wire
+		(pts
 			(xy 214.63 153.67) (xy 214.63 154.94)
 		)
 		(stroke
@@ -5785,16 +6084,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 179.07) (xy 339.09 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50d93cba-ed52-450d-99c1-44091faca4ed")
-	)
-	(wire
-		(pts
 			(xy 92.71 43.18) (xy 102.87 43.18)
 		)
 		(stroke
@@ -5985,16 +6274,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 176.53) (xy 339.09 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7145ae81-eac0-4278-adfe-94ef6a00f55f")
-	)
-	(wire
-		(pts
 			(xy 50.8 80.01) (xy 53.975 80.01)
 		)
 		(stroke
@@ -6105,6 +6384,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 36.83) (xy 327.66 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ff5be59-2eac-4f99-bb67-a981c33ab30b")
+	)
+	(wire
+		(pts
 			(xy 245.11 48.26) (xy 251.46 48.26)
 		)
 		(stroke
@@ -6212,6 +6501,16 @@
 			(type default)
 		)
 		(uuid "90390156-f154-4376-bb3b-62508e73f983")
+	)
+	(wire
+		(pts
+			(xy 318.77 39.37) (xy 327.66 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910ee57a-3288-416d-acc1-69645dba270f")
 	)
 	(wire
 		(pts
@@ -6562,6 +6861,16 @@
 			(type default)
 		)
 		(uuid "bf9d3389-e05b-438c-bd62-0ddc796526e0")
+	)
+	(wire
+		(pts
+			(xy 306.07 36.83) (xy 318.77 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb68d83-6fe6-4bdc-a412-e31f5d2a5864")
 	)
 	(wire
 		(pts
@@ -7289,6 +7598,28 @@
 			)
 		)
 	)
+	(global_label "BAT+"
+		(shape input)
+		(at 306.07 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "46fe4c12-f94f-4363-8508-aa577c4fd522")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 298.1862 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "red_PIC"
 		(shape output)
 		(at 293.37 129.54 0)
@@ -7423,7 +7754,7 @@
 	)
 	(global_label "SWDIO"
 		(shape input)
-		(at 339.09 176.53 0)
+		(at 337.82 179.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7433,7 +7764,7 @@
 		)
 		(uuid "7c85d38f-9a49-4034-9c61-481ce90b20cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 347.9414 176.53 0)
+			(at 346.6714 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7753,7 +8084,7 @@
 	)
 	(global_label "SWCLK"
 		(shape input)
-		(at 339.09 179.07 0)
+		(at 337.82 176.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7763,7 +8094,7 @@
 		)
 		(uuid "ca156e95-f2a5-4173-9b1c-de6df3bf0ff7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 348.3042 179.07 0)
+			(at 347.0342 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11974,6 +12305,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 337.82 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "971b7c1e-0ba5-4f62-977b-82217045dbc6")
+		(property "Reference" "#PWR029"
+			(at 337.82 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 337.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eeaa9294-a1e6-4ce4-996d-617739dd710e")
+		)
+		(instances
+			(project ""
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AO3400A")
 		(at 58.42 111.76 270)
 		(mirror x)
@@ -12042,6 +12439,73 @@
 			(project "updated_relay_draft"
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 337.82 173.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a30a6cf9-c03f-4f4f-a65a-a74c6f821d66")
+		(property "Reference" "#PWR014"
+			(at 334.01 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 341.63 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 337.82 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c674030-8f78-4ff2-9faf-7a4c1eb88252")
+		)
+		(instances
+			(project "updated_relay_draft"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -12456,6 +12920,73 @@
 			(project "updated_relay_draft"
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 337.82 181.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b63e4fdc-4330-4f81-8ba9-efe51c6e73f5")
+		(property "Reference" "#PWR024"
+			(at 344.17 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 341.63 181.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 337.82 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66485b03-0a30-4038-aace-7502ca92ba36")
+		)
+		(instances
+			(project "updated_relay_draft"
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -14135,6 +14666,102 @@
 			(project ""
 				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TPS62175DQC")
+		(at 337.82 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcff2d7b-b41d-489f-812e-38d07be161ed")
+		(property "Reference" "U2"
+			(at 337.82 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS62175DQC"
+			(at 337.82 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias"
+			(at 341.63 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62177.pdf"
+			(at 337.82 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA Step-Down Converter with Sleep Mode, adjustable Output Voltage, 4.75-28V input voltage, WSON-10"
+			(at 337.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6148d6e4-a9e4-45b4-9984-3633e421191a")
+		)
+		(pin "8"
+			(uuid "829bc66a-ca25-42ea-9155-ef15911e2e9c")
+		)
+		(pin "7"
+			(uuid "0eefa357-4652-43eb-b4a9-98b3c6a6254e")
+		)
+		(pin "2"
+			(uuid "800b11e1-f656-4df9-a437-f2cab0d174ce")
+		)
+		(pin "9"
+			(uuid "919153d4-88b0-4b5f-b1d4-8380700f270e")
+		)
+		(pin "10"
+			(uuid "e6900806-5333-4581-bed8-66e21ab2fbfe")
+		)
+		(pin "5"
+			(uuid "c6630d76-3911-4b96-8edf-59f0a60afc37")
+		)
+		(pin "4"
+			(uuid "5411d2bd-1554-4115-904f-200dd43d22e8")
+		)
+		(pin "11"
+			(uuid "b733ea0a-9269-4df7-a132-b1cd930f3535")
+		)
+		(pin "1"
+			(uuid "09e6b9a3-91c5-423c-b058-111929d11c77")
+		)
+		(pin "6"
+			(uuid "0a91c93e-ee07-4ba9-b30e-6c96433dec5f")
+		)
+		(instances
+			(project ""
+				(path "/2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
+					(reference "U2")
 					(unit 1)
 				)
 			)
