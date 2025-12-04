@@ -6,3 +6,15 @@ Layout review notes
 - Uart1 traces in power plane
 - Copper pour on bottom of bms chip
 - Remove cell tap vias
+
+
+Pi review notes:
+- change LDO cap to 100n, since most designs use that
+- LDOIN resistor sized improperly (too much based on 4 cell configuration)
+  Suggest having 2 separate resistor values to switch between
+  Use 20mA startup current as peak current in calculations
+- ensure good heat sinking for power resistor and BJT for LDOIN
+- add all 3D components
+- each signal layer should have GND Plane, and separate power and signal with ground plane
+- ground return vias next high speed signal vias
+- add buck converter feedback node test point
