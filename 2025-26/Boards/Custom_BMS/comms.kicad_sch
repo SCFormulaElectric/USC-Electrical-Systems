@@ -4780,124 +4780,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:PZ254V-11-02P"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PZ254V-11-02P"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda2kicad:HDR-TH_2P-P2.54-V-M"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_XFCN-PZ254V-11-02P_C492401.html"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C492401"
-				(at 0 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PZ254V-11-02P_0_1"
-				(rectangle
-					(start -2.54 3.81)
-					(end 2.54 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -1.27 2.54)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 1.27 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 -1.27 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -9990,85 +9872,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PZ254V-11-02P")
-		(at 309.88 195.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12241f74-4a01-4459-be0d-c969cf7cb044")
-		(property "Reference" "H4"
-			(at 313.69 194.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PZ254V-11-02P"
-			(at 313.69 196.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:HDR-TH_2P-P2.54-V-M"
-			(at 309.88 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_XFCN-PZ254V-11-02P_C492401.html"
-			(at 309.88 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 309.88 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C492401"
-			(at 309.88 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76c1bce7-6d83-4e01-8c48-291f7239270e")
-		)
-		(pin "2"
-			(uuid "b9cf0af4-7773-4acc-b263-94e6f6f35389")
-		)
-		(instances
-			(project "Custom_BMS"
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0603,49.9Ω")
 		(at 251.46 140.97 90)
 		(unit 1)
@@ -11622,6 +11425,76 @@
 			(project "Custom_BMS"
 				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
 					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 309.88 208.28 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "57dbcdce-260a-45d8-8a23-9a72b4fd824e")
+		(property "Reference" "H5"
+			(at 307.34 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 307.34 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
+			(at 309.88 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 309.88 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16869f79-84d0-45d7-8561-5055da607425")
+		)
+		(pin "2"
+			(uuid "fda034a5-0fcd-4845-8bec-501bae513e23")
+		)
+		(instances
+			(project "Custom_BMS"
+				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -15298,85 +15171,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:PZ254V-11-02P")
-		(at 309.88 209.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afdc6d07-e606-499e-a520-b19445c09c8f")
-		(property "Reference" "H5"
-			(at 313.69 208.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PZ254V-11-02P"
-			(at 313.69 210.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:HDR-TH_2P-P2.54-V-M"
-			(at 309.88 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_XFCN-PZ254V-11-02P_C492401.html"
-			(at 309.88 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 309.88 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C492401"
-			(at 309.88 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9577d35f-1b13-4251-b0b8-9f7bcf5c0c85")
-		)
-		(pin "2"
-			(uuid "d6852cae-db62-498f-af43-676fe28650cb")
-		)
-		(instances
-			(project "Custom_BMS"
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 163.83 107.95 0)
 		(unit 1)
@@ -16660,6 +16454,76 @@
 			(project "Custom_BMS"
 				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 309.88 194.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "dd77dde8-16bc-4c1f-9902-bd61a36334b6")
+		(property "Reference" "H4"
+			(at 307.34 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 307.34 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
+			(at 309.88 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 309.88 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1900cda3-69cb-49a9-9640-1852031b71c7")
+		)
+		(pin "2"
+			(uuid "02c1db16-bfee-4884-824b-3e142509fdf8")
+		)
+		(instances
+			(project "Custom_BMS"
+				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/1cccc059-0a92-4ce8-a103-c4b369835867"
+					(reference "H4")
 					(unit 1)
 				)
 			)
