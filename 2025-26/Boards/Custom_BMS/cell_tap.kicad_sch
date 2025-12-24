@@ -5,194 +5,6 @@
 	(uuid "275b6a20-78fe-47de-b019-798781b8c789")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Jumper:Jumper_3_Bridged12"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_3_Bridged12"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*3Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_0_0"
-				(circle
-					(center -3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_0_1"
-				(arc
-					(start -3.048 0.508)
-					(mid -1.651 0.9912)
-					(end -0.254 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_1_1"
-				(pin passive line
-					(at -6.35 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_JLCPCB-Capacitors:0603,470nF"
 			(pin_numbers
 				(hide yes)
@@ -821,16 +633,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "selection b/t 12 and 16 cells"
-		(exclude_from_sim no)
-		(at 201.422 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8e36adea-410f-4fbe-9ccb-65c75651d9ab")
-	)
 	(text "cell tap fuses should be off board\n\nfilter resistors might blow before fuses at lower currents\nincrease copper under resistors to better sink heat\nmaximally thermally relieve the fuses"
 		(exclude_from_sim no)
 		(at 135.89 38.608 0)
@@ -963,12 +765,6 @@
 		(uuid "be0e97ca-77d3-4c81-94e2-1d7242731041")
 	)
 	(junction
-		(at 100.33 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cba85de2-793b-499b-84cd-dcbe18c67030")
-	)
-	(junction
 		(at 139.7 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1010,16 +806,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 58.42) (xy 215.9 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "022907cc-5aa4-4dc4-80c6-d5d9c9e425b7")
-	)
-	(wire
-		(pts
 			(xy 80.01 121.92) (xy 101.6 121.92)
 		)
 		(stroke
@@ -1057,16 +843,6 @@
 			(type default)
 		)
 		(uuid "16e255d8-bc96-4dd9-bf7c-791ffd9fe5db")
-	)
-	(wire
-		(pts
-			(xy 182.88 58.42) (xy 193.04 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1910fe45-9da0-4489-a864-54cd7318cf48")
 	)
 	(wire
 		(pts
@@ -1260,16 +1036,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 157.48) (xy 100.33 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b09b01c-49e0-43fe-94d4-f26422ac4cce")
-	)
-	(wire
-		(pts
 			(xy 125.73 127) (xy 132.08 127)
 		)
 		(stroke
@@ -1287,16 +1053,6 @@
 			(type default)
 		)
 		(uuid "7194d3e7-e175-4314-8c7c-5e53e8a6a393")
-	)
-	(wire
-		(pts
-			(xy 199.39 62.23) (xy 199.39 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71d284d9-fc74-4ba8-9a24-c6ac79391e3c")
 	)
 	(wire
 		(pts
@@ -4763,16 +4519,6 @@
 		)
 	)
 	(label "CELL12+"
-		(at 182.88 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f43026e-ce59-43de-b6c5-8f0a4422c3d8")
-	)
-	(label "CELL12+"
 		(at 83.82 93.98 0)
 		(effects
 			(font
@@ -4781,16 +4527,6 @@
 			(justify left bottom)
 		)
 		(uuid "71a13131-18ef-456c-bf5a-0e415dd50ac9")
-	)
-	(label "CELL4+"
-		(at 208.28 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a9535479-eb47-4acf-a5ea-2b699839086b")
 	)
 	(label "CELL4+"
 		(at 85.09 114.3 0)
@@ -5189,28 +4925,6 @@
 		(uuid "b143e35d-e68d-4a3e-af78-7c13378cfa56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 68.5582 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CELL_TOP"
-		(shape output)
-		(at 199.39 63.5 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b1e88222-2d98-48fa-95b6-2c0e2991aaa8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.39 75.4961 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8416,72 +8130,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 100.33 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7efdea4f-079d-4ace-9c7b-6be974cba6b8")
-		(property "Reference" "#PWR075"
-			(at 100.33 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 100.33 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57ac4863-9620-4cae-9a68-51920457174b")
-		)
-		(instances
-			(project "Custom_BMS"
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/79608325-127c-4680-902d-ec74fc3ac03d"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,470nF")
 		(at 139.7 161.29 0)
 		(unit 1)
@@ -10369,77 +10017,6 @@
 			(project "Custom_BMS"
 				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/79608325-127c-4680-902d-ec74fc3ac03d"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_3_Bridged12")
-		(at 199.39 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7e903ec-d041-4dfc-8a3f-f3e8ef652744")
-		(property "Reference" "JP1"
-			(at 199.39 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_3_Bridged12"
-			(at 199.39 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical"
-			(at 199.39 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-			(at 199.39 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "80aa5def-8ed7-4ca6-b7a3-182489e4d104")
-		)
-		(pin "3"
-			(uuid "db8d9be1-9cb3-4aa0-a5e1-69859041b3ce")
-		)
-		(pin "1"
-			(uuid "15dcfb4b-f343-4e1e-ba3a-f92f8818a202")
-		)
-		(instances
-			(project "Custom_BMS"
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/79608325-127c-4680-902d-ec74fc3ac03d"
-					(reference "JP1")
 					(unit 1)
 				)
 			)

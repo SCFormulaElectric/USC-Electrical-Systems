@@ -275,142 +275,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_JLCPCB-Capacitors:0402,100nF"
 			(pin_numbers
 				(hide yes)
@@ -4879,6 +4743,138 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "easyeda2kicad:SMD0805-010-24V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMD0805-010-24V"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:F0805"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Surface-Mount-Fuses_0-1A-24V-Self-healing-fuse_C70055.html"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C70055"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMD0805-010-24V_0_1"
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 3.81 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -1.27 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -5371,7 +5367,7 @@
 		(uuid "81733d73-acdc-483e-9281-807495fc5e82")
 	)
 	(junction
-		(at 58.42 133.35)
+		(at 52.07 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9438afb5-b1f9-4931-a743-482aa38e7310")
@@ -5466,7 +5462,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 133.35) (xy 64.77 133.35)
+			(xy 52.07 133.35) (xy 55.88 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5526,16 +5522,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 133.35) (xy 78.74 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a7360e1-0ccd-4d9a-b57a-58cb536896b8")
-	)
-	(wire
-		(pts
 			(xy 137.16 99.06) (xy 137.16 101.6)
 		)
 		(stroke
@@ -5546,7 +5532,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 135.89) (xy 58.42 140.97)
+			(xy 52.07 135.89) (xy 52.07 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5576,7 +5562,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 135.89) (xy 58.42 135.89)
+			(xy 46.99 135.89) (xy 52.07 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6006,7 +5992,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 129.54) (xy 58.42 133.35)
+			(xy 52.07 129.54) (xy 52.07 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6106,7 +6092,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 133.35) (xy 58.42 133.35)
+			(xy 73.66 133.35) (xy 78.74 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81c0f8f-ca53-482d-85d9-40b169b30ff2")
+	)
+	(wire
+		(pts
+			(xy 46.99 133.35) (xy 52.07 133.35)
 		)
 		(stroke
 			(width 0)
@@ -7207,7 +7203,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 140.97 0)
+		(at 52.07 140.97 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7217,7 +7213,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e5af60a-1c88-4bfc-8617-eec53c6a3bb7")
 		(property "Reference" "#PWR017"
-			(at 58.42 147.32 0)
+			(at 52.07 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7226,7 +7222,7 @@
 			)
 		)
 		(property "Value" "LV_GND"
-			(at 58.42 146.05 0)
+			(at 52.07 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7234,7 +7230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 140.97 0)
+			(at 52.07 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7243,7 +7239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 140.97 0)
+			(at 52.07 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7252,7 +7248,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 140.97 0)
+			(at 52.07 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9752,7 +9748,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 58.42 129.54 0)
+		(at 52.07 129.54 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9762,7 +9758,7 @@
 		(fields_autoplaced yes)
 		(uuid "71df0145-74cb-43bb-932a-e045ecee9840")
 		(property "Reference" "#PWR019"
-			(at 58.42 133.35 0)
+			(at 52.07 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9771,7 +9767,7 @@
 			)
 		)
 		(property "Value" "VBAT"
-			(at 58.42 124.46 0)
+			(at 52.07 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9779,7 +9775,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 129.54 0)
+			(at 52.07 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9788,7 +9784,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 129.54 0)
+			(at 52.07 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +9793,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 58.42 129.54 0)
+			(at 52.07 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10147,6 +10143,83 @@
 		)
 	)
 	(symbol
+		(lib_id "easyeda2kicad:SMD0805-010-24V")
+		(at 64.77 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d0fe829-9786-4824-b21e-33f3de76fa91")
+		(property "Reference" "F1"
+			(at 64.77 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD0805-010-24V"
+			(at 64.77 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:F0805"
+			(at 64.77 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Surface-Mount-Fuses_0-1A-24V-Self-healing-fuse_C70055.html"
+			(at 64.77 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.77 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C70055"
+			(at 64.77 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f72359d-7b1d-4648-a348-f64ec1f13931")
+		)
+		(pin "1"
+			(uuid "4dadb8bf-1725-496b-954b-76442cbe6f4a")
+		)
+		(instances
+			(project ""
+				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/ac1bd3bc-1261-453f-909d-f00789f9c421"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
 		(at 110.49 139.7 0)
 		(unit 1)
@@ -10375,74 +10448,6 @@
 			(project ""
 				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/ac1bd3bc-1261-453f-909d-f00789f9c421"
 					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 68.58 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab7ed202-f022-49f3-af65-e4715a987cfb")
-		(property "Reference" "F1"
-			(at 68.58 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100mA"
-			(at 68.58 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 68.58 135.128 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 68.58 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b6f3745f-e6dd-43dc-b069-f56a5ca62479")
-		)
-		(pin "1"
-			(uuid "5b93334d-f782-4ad5-9485-281ac5fd398a")
-		)
-		(instances
-			(project ""
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/ac1bd3bc-1261-453f-909d-f00789f9c421"
-					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -10869,7 +10874,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 48.26 133.35 0)
+		(at 41.91 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10878,7 +10883,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb6b75bb-4267-49de-9f00-d91115c9709a")
 		(property "Reference" "J2"
-			(at 48.895 128.27 0)
+			(at 42.545 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10886,7 +10891,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 48.895 130.81 0)
+			(at 42.545 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10894,7 +10899,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
-			(at 48.26 133.35 0)
+			(at 41.91 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10903,7 +10908,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 133.35 0)
+			(at 41.91 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10912,7 +10917,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 48.26 133.35 0)
+			(at 41.91 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11273,6 +11278,15 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 151.13 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
 			(at 151.13 127 0)
 			(effects
 				(font
