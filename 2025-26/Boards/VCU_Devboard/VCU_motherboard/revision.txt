@@ -1,0 +1,50 @@
+Revision notes
+
+Arda 12-30-2025 -> Tim 1-1-2026:
+- Grounds missing on bottom resistor of analog input voltage divider
+    - Added grounds
+- Should C4 and others be connected to ground instead of in series, seems they're DC blocking.
+    - Corrected, now connected to ground
+- I couldn't find a 1941 ohm resistor on digikey (R22)
+    - Switched voltage divider to 1k/2k 5V -> 3.333V instead of the previous 3.3V
+- Love the op amp choice
+    - :D
+- USB ESD ground pin should be pin 2
+    - Corrected
+    - Also moved ESD pin 5 before voltage divider
+- Vbus voltage divider seems a little high (3.56V vs max pin voltage of 3.6V)
+    - Lowered divider to 4.7k/10k; 5V -> 3.401V
+    - Current draw = V/R = 5/(14.7k) = 340uA
+- 4.7uF cap on USB Vbus seems excessive given that nothing is powered off of Vbus
+    - Unchanged, Vbus cap falls within USB 2.0 specs (1uF to 10uF) for device
+- Digital outputs not connected to MCU
+    - Connected, labeled MCU connections "_gate"
+- I would pick another 12-5V buck converter, from a big brand like TI
+    - switched to TPS5430DDA, 3A 
+- Reverse polarity MOSFET not specified
+    - Chose AOD4184A: logic level, 40V rating
+- DC power connector connected to 12V instead of EX 12V
+    - Unchanged (Needs clarification), EX 12V passes through fuse and reverse-polarity IC into the safe +12V flag
+- Need to be careful of ESR of output capacitor on LDO to make sure its in the stable region
+    - Added a 470mO series resistor (total ESR now between 47mO and 1 ohm)
+- MCU needs oscillator for CAN
+    - Chose the same one from lora board
+- RTC chip needs oscillator, can also provide clk to MCU too through clkout pin I believe
+    - Removed RTC, mcu comes with peripheral, decided to use that
+- RTC chip needs backup power supply to maintain time (battery or supercapacitor)
+    - Connected battery cell holder to mcc's VBAT, mcu handles RTC
+- Needs overcurrent protection
+    - Added fuse
+- IMU is obsolete (no longer manufactured)
+    - Switched to LSM6D3
+- IMU labels mix I2C with SPI, if SPI is used the label should be SCLK
+    - Corrected labels SPI,
+    - SPI is used currently but may not be necessary, would be nice to know layout for future digital sensors
+- I believe I2C SDA is on PB7, not PB5
+    - RTC removed
+- Reset button missing
+    - Added reset button 
+- STM needs more decoupling capacitors, 100nF on every VDD pin + 1uF on one of the VDD pins
+    - Added decoupling capacitors
+
+
