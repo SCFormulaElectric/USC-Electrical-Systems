@@ -5047,7 +5047,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Resistors:0805,100Ω"
+		(symbol "PCM_JLCPCB-Resistors:1206,300Ω"
 			(pin_numbers
 				(hide yes)
 			)
@@ -5066,7 +5066,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "100Ω"
+			(property "Value" "300Ω"
 				(at 0 0 90)
 				(do_not_autoplace)
 				(effects
@@ -5075,7 +5075,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM_JLCPCB:R_0805"
+			(property "Footprint" "PCM_JLCPCB:R_1206"
 				(at -1.778 0 90)
 				(effects
 					(font
@@ -5084,7 +5084,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-1206W4F3000T5E_C17887.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5093,7 +5093,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(property "Description" "250mW Thick Film Resistors 200V ±100ppm/°C ±1% 300Ω 1206 Chip Resistor - Surface Mount ROHS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5102,7 +5102,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C17408"
+			(property "LCSC" "C17887"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5111,7 +5111,7 @@
 					(hide yes)
 				)
 			)
-			(property "Stock" "3356429"
+			(property "Stock" "183685"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5120,7 +5120,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.005USD"
+			(property "Price" "0.006USD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5138,7 +5138,7 @@
 					(hide yes)
 				)
 			)
-			(property "Minimum Qty" "20"
+			(property "Minimum Qty" "15"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5147,7 +5147,7 @@
 					(hide yes)
 				)
 			)
-			(property "Attrition Qty" "10"
+			(property "Attrition Qty" "4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5183,7 +5183,7 @@
 					(hide yes)
 				)
 			)
-			(property "Part" "0805W8F1000T5E"
+			(property "Part" "1206W4F3000T5E"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5192,7 +5192,7 @@
 					(hide yes)
 				)
 			)
-			(property "Resistance" "100Ω"
+			(property "Resistance" "300Ω"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5201,7 +5201,7 @@
 					(hide yes)
 				)
 			)
-			(property "Power(Watts)" "125mW"
+			(property "Power(Watts)" "250mW"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5219,7 +5219,7 @@
 					(hide yes)
 				)
 			)
-			(property "Overload Voltage (Max)" "150V"
+			(property "Overload Voltage (Max)" "200V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5264,7 +5264,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "0805,100Ω_0_1"
+			(symbol "1206,300Ω_0_1"
 				(rectangle
 					(start -1.016 2.54)
 					(end 1.016 -2.54)
@@ -5277,7 +5277,7 @@
 					)
 				)
 			)
-			(symbol "0805,100Ω_1_1"
+			(symbol "1206,300Ω_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -7844,7 +7844,7 @@
 		)
 		(uuid "7fa302a7-49d5-4318-b3ef-7fe10253b0f1")
 	)
-	(text "4 cell \noption"
+	(text "6 cell \noption"
 		(exclude_from_sim no)
 		(at 131.826 106.426 0)
 		(effects
@@ -7916,7 +7916,7 @@
 		)
 		(uuid "e6e59cf0-e606-44fe-a527-24c726756c41")
 	)
-	(text "upper bound: Rnpn = ((Min VModule) - (VCollector)) / (Max peak current)\nlower bound: depends on target power dissipation\n\nselect 2 different Rpn resistors for 4 cells vs 12 cells\n\n4 cells:\nupper bound = (2.5*4 - 8) / 20mA = 100 Ohms\nat max V (4.2*4), with 100 ohm resistor, burns 40mW, BJT will burn max 300 mW\n\n12 cells:\nupper bound = (2.5*12 - 8) / 20mA = 1.1 kOhms\nat max V (4.2*12), with 1.1 kOhm resistor, burns 440mW, BJT will burn max 568mW"
+	(text "upper bound: Rnpn = ((Min VModule) - (VCollector)) / (Max peak current)\nlower bound: depends on target power dissipation\n\nselect 2 different Rpn resistors for 6 cells vs 12 cells\n\n6 cells:\nupper bound = (2.5*6 - 8) / 20mA = 350 Ohms\nat max V (4.2*6), with 350 ohm resistor, burns 140mW, BJT will burn max 330 mW\n\n12 cells:\nupper bound = (2.5*12 - 8) / 20mA = 1.1 kOhms\nat max V (4.2*12), with 1.1 kOhm resistor, burns 440mW, BJT will burn max 568mW"
 		(exclude_from_sim no)
 		(at 45.085 90.805 0)
 		(effects
@@ -22182,229 +22182,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0805,100Ω")
-		(at 137.16 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26bffc34-9b6c-49df-98a2-eaab77c0fc0e")
-		(property "Reference" "R1"
-			(at 139.7 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100Ω"
-			(at 137.16 105.41 90)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0805"
-			(at 135.382 105.41 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/°C ±1% 100Ω 0805 Chip Resistor - Surface Mount ROHS"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17408"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "3356429"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.005USD"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "0805W8F1000T5E"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Resistance" "100Ω"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power(Watts)" "125mW"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Overload Voltage (Max)" "150V"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 137.16 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dd3c3f5b-bc44-4dcc-85bc-9ac02b048119")
-		)
-		(pin "1"
-			(uuid "91d5d514-b8ff-46ed-9d6b-5fbcc3fd120f")
-		)
-		(instances
-			(project ""
-				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/730c9124-1e05-4e73-95cf-1be5bb1149a5"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "easyeda2kicad:0530470210")
 		(at 375.92 212.09 0)
 		(unit 1)
@@ -28516,6 +28293,229 @@
 			(project ""
 				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/730c9124-1e05-4e73-95cf-1be5bb1149a5"
 					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:1206,300Ω")
+		(at 137.16 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddc9c0b7-c910-46d7-bcc8-6f79a2861f21")
+		(property "Reference" "R1"
+			(at 139.7 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300Ω"
+			(at 137.16 105.41 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_1206"
+			(at 135.382 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-1206W4F3000T5E_C17887.pdf"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "250mW Thick Film Resistors 200V ±100ppm/°C ±1% 300Ω 1206 Chip Resistor - Surface Mount ROHS"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17887"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "183685"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.006USD"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "4"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "1206W4F3000T5E"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "300Ω"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "250mW"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "200V"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 137.16 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "46ee70e9-e3e5-43b2-9532-82abe6dfebfa")
+		)
+		(pin "1"
+			(uuid "2584d06c-76b6-45e0-882c-e5efb35ac05b")
+		)
+		(instances
+			(project ""
+				(path "/570d6d9c-ebf5-4f83-96f6-d3309a3e637d/730c9124-1e05-4e73-95cf-1be5bb1149a5"
+					(reference "R1")
 					(unit 1)
 				)
 			)
