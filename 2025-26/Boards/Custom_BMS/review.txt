@@ -23,7 +23,6 @@ Arda review notes:
 - Filter resistor value on BAT pin - "[30 Ohms] must be used for hot-plug performance"
 - I believe C24 should be connected from CB16 to BAT not CB_TOP to BAT
 - Datasheet recommends assuming a 2V drop Vc-Ve, so upper bounds of Rnpn should be smaller
-- BJT power numbers should be the same for 4 and 12 cells, since Vc is the same and Ic is the same
 - Fuse not specified
 - Sure you want to use 10k with the thermistors, if we're using enepaq ones then they recommend 680 but idk
 - Shouldn't the motherboard also have isolation capacitors, in addition to its common-mode choke? 
@@ -33,4 +32,26 @@ Arda review notes:
  "to ensure best performance" (pg. 206-207) [optional]
 - Separate wire recommended for BAT pin and top VC pin, also AVSS and VC0 to avoid device current creating IR error (Pg. 208)
  could add 2 pins for those on the connector
+
+
+Arda review notes:
+12-24-2025
+- Would be nice to have connectors for power, thermistors, CAN, and misc. GPIO + J1772 stuff
+- D18 seems unnecessary
+- Q6 should have ESD protection unless you can guarentee safe handling
+- Proximity detect and control pilot should be wired to MCU so we can know when we're plugged in and
+  the max current the EVSE can provide so we don't trip the breaker
+- Also if we're using proximity detect it should be powered on the BMS side
+- I think the minimum number of cells is 6 (Pg. 5, Pg. 23, 9.3.2.1.1.1)
+
+Arda review notes:
+12-30-2025
+- Proximity detect voltage divider doesn't divide enough (4.5V to MCU)
+- Reference voltage seems a little high on the comparator considering the signal swings from 0 to ~8.3V
+- Via holes with 0.2mm present, that costs a little more on JLC
+
+Arda review notes:
+01-02-2025
+- R69, R74, R76 exceed power rating when on
+- Might want to update the resistor section of NPN to 6 cells
 

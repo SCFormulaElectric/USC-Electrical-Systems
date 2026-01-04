@@ -1,0 +1,38 @@
+Review notes
+
+Arda 12-30-2025:
+- Grounds missing on bottom resistor of analog input voltage divider
+- Should C4 and others be connected to ground instead of in series, seems they're DC blocking.
+- I couldn't find a 1941 ohm resistor on digikey (R22)
+- Love the op amp choice
+- USB ESD ground pin should be pin 2
+- Vbus voltage divider seems a little high (3.56V vs max pin voltage of 3.6V)
+- 4.7uF cap on USB Vbus seems excessive given that nothing is powered off of Vbus
+- Digital outputs not connected to MCU
+- I would pick another 12-5V buck converter, from a big brand like TI
+- Reverse polarity MOSFET not specified
+- DC power connector connected to 12V instead of EX 12V
+- Need to be careful of ESR of output capacitor on LDO to make sure its in the stable region
+- MCU needs oscillator for CAN
+- RTC chip needs oscillator, can also provide clk to MCU too through clkout pin I believe
+- RTC chip needs backup power supply to maintain time (battery or supercapacitor)
+- Needs overcurrent protection
+- IMU is obsolete (no longer manufactured)
+- IMU labels mix I2C with SPI, if SPI is used the label should be SCLK
+- I believe I2C SDA is on PB7, not PB5
+- Reset button missing
+- STM needs more decoupling capacitors, 100nF on every VDD pin + 1uF on one of the VDD pins
+
+Arda 01-02-2026
+- Resistors and capacitors don't have footprints or part numbers specified, this thing can load in all the JLC basic parts in one go, then you have a nice selection of common resistor and capacitor values in various footprints:
+https://github.com/CDFER/JLCPCB-Kicad-Library
+- Inductor for DC/DC not specified (inductors generally aren't basic parts on JLC so you can pick one and load it in, I recommend this plugin for that, although there are more out there:
+https://github.com/rasmushauschild/easyeda2kicad_plugin
+- At 33uF for the LDO you're probably looking at using an electrolytic capacitor, so the ESR might be fine as is. I'd recommend finding another LDO honestly. The 3940 is an old part designed for old technology, relying on ESR was a very clever trick to compensate LDOs back when on-chip capacitors and resistors were massive, but modern fabrication technology rendered this technique obsolete. Modern LDOs are internally compensated and thus are stable even with small ceramic capacitors. The quiescent current of this one is also quite high (10-100mA), modern LDOs can easily be in the 10-100uA range.
+- I think the RTC must be clocked with an LSE oscillator (~32 kHz), because the HSE is powered off when the chip is running off of Vbat.
+- Battery cell holder not specified (can load in with easyeda2kicad plugin)
+- Fuse not specified (easyeda2kicad)
+- For the IMU, I believe MOSI is on pin 14, and SCLK is on pin 13.
+- Reset button footprint not specified
+
+
