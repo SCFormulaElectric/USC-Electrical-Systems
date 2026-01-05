@@ -1,0 +1,23 @@
+1/4/2026 Sonia notes
+
+- I would move the frequency inputs on the STM32 to timer 1 channel pins so that SW team can use input capture direct mode for easier / more accurate code, you can check what the pinout is for that
+- it'd help to fix the directionality of the labels for better readability
+- ESD protection on more of the inputs required
+- I would lower the charge_on_3.4V voltage. in general I don't think its wise to do anything above VDD though the pins may be tolerant
+  also the charge_on signal is supplied by a little rectifier in the charge cart that may go above 12V (double check the actual rectifier specs)
+  in any case you have quite a bit of room to lower the voltage
+- The PC error implementation contradicts with the note that it should be pulled low
+  it is pulled to 3.3V on this board but the gate is pulled to groudn on the relay board, don't think that will work
+- also the relay board already has a 47 ohm series resistor, not sure if You intended for that
+- need to select fuse for LV
+ 
+
+
+- layout- esd diodes should be close to their ocnnector pin
+- for this board, the SDC traces do not carry high currents (it branches off the main SDC current path) so it can be skinny
+- I would still rearrange some things on the board to make the routing better / shorter, maybe flip the connector for ex
+- oscillator routing should be done more carefully- see this https://ww1.microchip.com/downloads/en/Appnotes/Atmel-8128-Best-Practices-for-the-PCB-Layout-of-Oscillators_ApplicationNote_AVR186.pdf
+- generally do not do long traces of ground without via into the plane, it defeats the prupose of the plane
+  also try to do 1 via per component so each component has a low impedance path to ground and doesn't share noise
+- don't be afraid to do more planes, I usually like to have a 3.3V plane I feel like that would help here
+
