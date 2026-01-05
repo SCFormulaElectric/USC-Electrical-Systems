@@ -53,3 +53,32 @@ Added tlv9062 (2 op-amps in 1 IC) footprints
 Added resistor and capacitor footprints for micro-sd card
 Bumped up micro-sd card capacitor to 10uF
 Fixed 3.3V flag
+
+Ti 1-5-2026:
+Added OTG footprints
+Note: 4.7uF capacitor maybe could be smaller based on minimum 1uF, parts use 0603 sizing
+4.7uF capacitor rated for 16V, (vbus max 5v)
+Switched voltage divider to 10k/20k
+USB AB connector; https://www.digikey.com/en/products/detail/molex/0475900001/1832254
+0402 sizing for stm32 Vdd capacitors 
+Switched mcc's VCAP sizes up to 0603 for a higher voltage rating (6.3V increased to 16V)
+Switched oscillator to 32khz w/ same capacitance
+
+SPI pins checked against CubeIDe's assignment
+Interrupt was switched with chip select, corrected 
+
+1-6-2026:
+Sectioned off boards by function (roughly)
+Dev Board
+    - Circuits are standard and have been tested on other boards
+IO Board
+    - Analog & Digital Inputs, Digital Outputs
+    - Perhaps digital IO can be moved to Dev Board
+    - This gives room for swapping out analog filters
+    - Main concerns are op-amps might fry, and active filter may not be necessary for most sensors
+Power Board
+    - This allows for 12V testing w/o worry of frying anything on board
+Datalogging Board
+    - Micro-SD Card Connector & USB OTG
+    - I think these circuits are a first so there may be issues that need to be corrected
+
