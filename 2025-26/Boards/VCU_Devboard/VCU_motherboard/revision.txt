@@ -67,3 +67,18 @@ Switched oscillator to 32khz w/ same capacitance
 SPI pins checked against CubeIDe's assignment
 Interrupt was switched with chip select, corrected 
 
+1-6-2026:
+Sectioned off boards by function (roughly)
+Dev Board
+    - Circuits are standard and have been tested on other boards
+IO Board
+    - Analog & Digital Inputs, Digital Outputs
+    - Perhaps digital IO can be moved to Dev Board
+    - This gives room for swapping out analog filters
+    - Main concerns are op-amps might fry, and active filter may not be necessary for most sensors
+Power Board
+    - This allows for 12V testing w/o worry of frying anything on board
+Datalogging Board
+    - Micro-SD Card Connector & USB OTG
+    - I think these circuits are a first so there may be issues that need to be corrected
+
