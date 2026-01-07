@@ -1,0 +1,29 @@
+1/4/26 Sonia notes
+
+- ESD protection is for nets on the connector, more useful to clamp the fault signals not gate signals
+- the Reset btn voltage divider doesn't really make sense, is it a 12V signal? 5V signal? double check calcs
+- The reset circuit with the reset latch won't work. You can't turn off the PMOS with 3.3V at the gate and 12V at the source
+- you don't necessarily need ESD protection on the no faults signal since the stm32 has internal protection
+- also whats the 330 ohm resistor for? not familiar with what is off the board
+- again, not sure if you need the gate series resistor (ig that would be safer thing to do)
+- choose value for R1
+- idk if you planned what the extra GPIOs will be used for but keep in mind you'll need a pullup rsistor for whatever that is
+  or use it as a sink or smth, either way need a resistor
+- i think the BMS fault circuitry should just take in BMS_gate since its active high and gets inverted through software
+- also in general you can get rid of a lot of the resistors if you just directly feed the Fault signals into the microcontroller directly and have the gates be completely software controlled (see last years board for reference) 
+  mostly talking about the IMD and BMS since those signals probably need to be routed there anyway
+- also you can just have one type of ESD protection to reduce BOM count
+- for layout your fault traces do not need to be some fat, doesn't matter too much unless its causing you to run out of space
+- the layout is pretty forgiving for this board but I'd try to shorten the traces as much as possible, might hacve to redo floorplan though
+- again kind of forgiving but a lot of your ground is cut off from the actual ground pin as in the plane is not continuous
+  a little difficult to get around it on 2 layers, but it should be possible if you replan it out (a lot of work i know)
+  you atleast want your LDO and stm32 to have direct, low impedance paths to the return pin
+- the ESD diodes sohuld be as close to the connector as possible so you shunt the energy as early as you can
+- the SDC path makes big loop-diloop which isn't great since that trace is high power. If you can you can rearrange th pins and move things around a bit
+  current loops are bad because they both radiate and catch noise, not a huge issue on this board i think but you never know
+
+1/6/26
+
+- i wouldn't use the same ESD diode for the fault signals and BMS fault since they are different voltages so you may want to choose different clamping voltages on the diodes (rn its 10V for a 12V and 2 3.3V signals so not a good fit for either case)
+- also idk what your light board looks like but just be sure 3.3V for the no fault signal is proper, and make sure it doesn't drive anything high currentcuz the pin can't handle that
+- still same layout comments 
