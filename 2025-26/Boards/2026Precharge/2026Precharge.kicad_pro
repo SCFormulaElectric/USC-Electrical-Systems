@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_overlap|146575119|140377414|609e3a3e-009d-42e1-82f1-2014a280e8e9|d6a5e552-be65-4407-80d7-b6a37b762feb",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -527,8 +532,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "updatedPrecharge.net",
-      "plot": "",
-      "pos_files": "",
+      "plot": "fabrication/gerbers/",
+      "pos_files": "fabrication/",
       "specctra_dsn": "",
       "step": "updatedPrecharge.step",
       "svg": "",
@@ -538,7 +543,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "fabrication/2026Precharge.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": "\t",
@@ -809,6 +814,12 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB Part Number",
+          "name": "JLCPCB Part Number",
           "show": false
         }
       ],

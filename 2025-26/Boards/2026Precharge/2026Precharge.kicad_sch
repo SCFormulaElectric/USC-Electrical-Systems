@@ -1626,155 +1626,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BZT52Bxx"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BZT52Bxx"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-123F"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "500mW Zener Diode, SOD-123F"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D?SOD?123F*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BZT52Bxx_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BZT52Bxx_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:MMBZxx"
 			(pin_names
 				(offset 1.016)
@@ -2002,7 +1853,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:PTVS15VZ1USK"
+		(symbol "Diode:PESD3V3S1UL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2020,7 +1871,7 @@
 					)
 				)
 			)
-			(property "Value" "PTVS15VZ1USK"
+			(property "Value" "PESD3V3S1UL"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -2028,8 +1879,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
-				(at 0 -4.445 0)
+			(property "Footprint" "Diode_SMD:D_SOD-882"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2037,7 +1888,25 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS15VZ1USK.pdf"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD3V3S1UL.pdf"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unidirectional ESD protection diode, 3.3V, SOD-882"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2046,7 +1915,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "15V, 1900W TVS unidirectional diode, DSN1608-2"
+			(property "ki_fp_filters" "D*SOD?882"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2055,25 +1924,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "TVS diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*DSN1608?2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PTVS15VZ1USK_0_1"
+			(symbol "PESD3V3S1UL_0_1"
 				(polyline
 					(pts
 						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
@@ -2111,7 +1962,7 @@
 					)
 				)
 			)
-			(symbol "PTVS15VZ1USK_1_1"
+			(symbol "PESD3V3S1UL_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -4162,6 +4013,226 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_JLCPCB-Diodes:Zener,BZT52C10S"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BZT52C10S"
+				(at 2.032 -1.2122 0)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SOD-323"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C10S_C19077446.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Independent Type 200mW 9.4V~10.6V 10V SOD-323 Zener Diodes ROHS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C19077446"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Stock" "178615"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "0.019USD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Attrition Qty" "6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Category" "Diodes,Zener Diodes"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Part" "BZT52C10S"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Zener,BZT52C10S_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 -1.27) (xy 1.27 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Zener,BZT52C10S_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:UA78M33QDCYRQ1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5530,7 +5601,7 @@
 	)
 	(text "update: this pin also\ngoes to U7"
 		(exclude_from_sim no)
-		(at 273.05 50.8 90)
+		(at 273.685 52.07 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5806,10 +5877,10 @@
 		(uuid "10e579ba-96b7-4eeb-bfa4-d713dc0d7fb0")
 	)
 	(junction
-		(at 267.97 41.275)
+		(at 267.97 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34513ddc-98ee-4284-a98b-b1db20a3e657")
+		(uuid "2f86f2de-a738-448d-af88-f0df3e764b43")
 	)
 	(junction
 		(at 268.605 121.92)
@@ -5846,12 +5917,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f3abe57-b847-4c1f-9cb6-6c49889c39c4")
-	)
-	(junction
-		(at 267.97 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60a28d6d-86de-4079-ac87-703b39805186")
 	)
 	(junction
 		(at 136.525 27.94)
@@ -5906,12 +5971,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "899f99fa-c085-44ef-b7a8-a2d652a55e7d")
-	)
-	(junction
-		(at 254.635 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89b824e2-974f-4bbe-92de-06d75ebaa355")
 	)
 	(junction
 		(at 198.12 123.19)
@@ -6381,16 +6440,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 41.275) (xy 267.97 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21625c14-ced5-40d9-987e-bf0986022224")
-	)
-	(wire
-		(pts
 			(xy 120.015 83.185) (xy 120.015 106.68)
 		)
 		(stroke
@@ -6491,16 +6540,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 39.37) (xy 267.97 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "305779e2-3a6c-4eb2-8eed-d0698fe0a9a2")
-	)
-	(wire
-		(pts
 			(xy 120.015 160.02) (xy 120.015 183.515)
 		)
 		(stroke
@@ -6538,16 +6577,6 @@
 			(type default)
 		)
 		(uuid "33e81bc0-b8b7-4f39-88e7-98370b45cef8")
-	)
-	(wire
-		(pts
-			(xy 254.635 31.75) (xy 250.825 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "354421bb-910b-4826-8699-d7896cc40673")
 	)
 	(wire
 		(pts
@@ -7171,16 +7200,6 @@
 	)
 	(wire
 		(pts
-			(xy 254.635 41.275) (xy 267.97 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68470943-5567-436c-ba37-1e7e758963cd")
-	)
-	(wire
-		(pts
 			(xy 135.255 76.2) (xy 135.255 83.185)
 		)
 		(stroke
@@ -7391,16 +7410,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 29.21) (xy 231.14 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f59c1a9-19cb-4a38-8f58-75bae10fa8b8")
-	)
-	(wire
-		(pts
 			(xy 46.355 83.185) (xy 46.355 84.455)
 		)
 		(stroke
@@ -7491,7 +7500,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 29.21) (xy 220.98 29.21)
+			(xy 220.98 29.21) (xy 234.95 29.21)
 		)
 		(stroke
 			(width 0)
@@ -7558,16 +7567,6 @@
 			(type default)
 		)
 		(uuid "9783b60d-5731-4348-b374-5755bb84e3df")
-	)
-	(wire
-		(pts
-			(xy 254.635 31.75) (xy 254.635 33.655)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9add41dd-2a17-4adc-8211-3882cbcf0cf3")
 	)
 	(wire
 		(pts
@@ -7758,6 +7757,16 @@
 			(type default)
 		)
 		(uuid "ade9272d-fb57-4a94-a83e-a04520d14d46")
+	)
+	(wire
+		(pts
+			(xy 267.97 39.37) (xy 267.97 42.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af788902-08c0-4aae-aafa-ab269756a971")
 	)
 	(wire
 		(pts
@@ -8401,6 +8410,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 47.625) (xy 267.97 51.435)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f40c7e75-1152-4870-b339-7281328ca19e")
+	)
+	(wire
+		(pts
 			(xy 135.255 64.135) (xy 135.255 65.405)
 		)
 		(stroke
@@ -8451,7 +8470,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 31.75) (xy 254.635 31.75)
+			(xy 250.825 31.75) (xy 257.81 31.75)
 		)
 		(stroke
 			(width 0)
@@ -8649,7 +8668,7 @@
 	)
 	(global_label "Charge_on"
 		(shape input)
-		(at 267.97 44.45 270)
+		(at 267.97 51.435 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8659,7 +8678,7 @@
 		)
 		(uuid "0917b997-15ba-492b-a833-aa0762301a4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 57.2926 90)
+			(at 267.97 64.2776 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9990,7 +10009,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 115.8748 27.94 0)
 			(effects
 				(font
@@ -10252,8 +10271,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "12k"
-			(at 262.89 87.63 0)
+		(property "Value" "220k"
+			(at 271.145 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10298,6 +10317,74 @@
 			(project "2026Precharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 267.97 45.085 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ba5a1ea-b2af-410c-b456-4f4aa300a42d")
+		(property "Reference" "R26"
+			(at 262.89 45.085 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 266.065 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 267.97 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07df466d-fdd5-4f8c-8ef2-7c51a0e1c70e")
+		)
+		(pin "2"
+			(uuid "4d1ab1c8-29e4-4f27-aee2-fb017096f59d")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -11045,7 +11132,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2ac6d5c0-21c6-455d-9c8a-d32f60e10901")
 		(property "Reference" "R5"
 			(at 261.62 34.29 90)
@@ -11056,14 +11142,14 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 261.62 36.83 90)
+			(at 262.255 37.465 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 261.62 39.37 0)
 			(effects
 				(font
@@ -11244,6 +11330,166 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:Zener,BZT52C10S")
+		(at 191.77 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d7c654e-2c29-4962-bb10-eafd5b4e8456")
+		(property "Reference" "D6"
+			(at 194.945 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BZT52C10S"
+			(at 194.945 67.31 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 193.548 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2403280435_hongjiacheng-BZT52C10S_C19077446.pdf"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Independent Type 200mW 9.4V~10.6V 10V SOD-323 Zener Diodes ROHS"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19077446"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "178615"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.019USD"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "6"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Diodes,Zener Diodes"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "BZT52C10S"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e124f3d-0fc9-4628-bb58-ebff8ae5dd78")
+		)
+		(pin "2"
+			(uuid "6796cdf0-1162-4fa9-bbcb-06a961c8c38b")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -11684,7 +11930,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:FUSE_BK_PCS"
+		(property "Footprint" "HV_Fuse:FUSE_BK_PCS"
 			(at 34.163 62.865 90)
 			(effects
 				(font
@@ -12548,7 +12794,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 129.54 182.5498 0)
 			(effects
 				(font
@@ -13019,7 +13265,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 255.905 77.47 90)
+			(at 260.985 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13102,7 +13348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 137.4902 35.56 0)
 			(effects
 				(font
@@ -13561,75 +13807,6 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:PTVS15VZ1USK")
-		(at 254.635 37.465 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "662595fd-200f-44b0-af4a-a3820f53424b")
-		(property "Reference" "D5"
-			(at 259.08 34.925 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PTVS15VZ1USK"
-			(at 253.365 40.005 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
-			(at 250.19 37.465 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS15VZ1USK.pdf"
-			(at 254.635 37.465 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "15V, 1900W TVS unidirectional diode, DSN1608-2"
-			(at 254.635 37.465 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7a94b638-26a7-4894-9e2f-2958924b9241")
-		)
-		(pin "1"
-			(uuid "2d51ea16-7f9d-4c9e-8655-62e617d42ebd")
-		)
-		(instances
-			(project "2026Precharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -14114,74 +14291,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 227.33 29.21 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "712a3de5-893a-494e-ac34-809858ef48d1")
-		(property "Reference" "F6"
-			(at 227.33 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "700mA"
-			(at 227.33 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 227.33 30.988 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 227.33 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a002f211-9d32-42e9-af2e-22061dbb2352")
-		)
-		(pin "2"
-			(uuid "34bdf85e-aac0-44fb-bf8a-684ccffc4440")
-		)
-		(instances
-			(project ""
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "F6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:AO3401A")
 		(at 267.97 34.29 270)
 		(mirror x)
@@ -14199,7 +14308,7 @@
 				)
 			)
 		)
-		(property "Value" "AO3407A"
+		(property "Value" "AO3401A"
 			(at 267.97 27.94 90)
 			(effects
 				(font
@@ -14417,7 +14526,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:FUSE_BK_PCS"
+		(property "Footprint" "HV_Fuse:FUSE_BK_PCS"
 			(at 34.163 86.36 90)
 			(effects
 				(font
@@ -14478,7 +14587,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "BORN SMD1206-050/30N"
 			(at 325.12 61.5949 0)
 			(effects
 				(font
@@ -14506,6 +14615,15 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 323.215 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part Number" "C6165188"
 			(at 323.215 60.325 0)
 			(effects
 				(font
@@ -14590,6 +14708,76 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PESD3V3S1UL")
+		(at 327.66 78.105 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80d060f6-52ac-4d0d-a20c-9ec1357f1019")
+		(property "Reference" "D1"
+			(at 330.2 76.8349 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PESD15VS1UB"
+			(at 330.2 79.3749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 322.58 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD15VS1UB.pdf"
+			(at 332.74 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unidirectional ESD protection diode, 3.3V, SOD-882"
+			(at 335.28 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e295271-15a1-4b40-98dd-7602794e75cf")
+		)
+		(pin "1"
+			(uuid "d1f4ea19-0d69-45f9-989b-9c06db9dcde8")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -14798,6 +14986,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:PESD3V3S1UL")
+		(at 234.95 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89a39361-9040-4b5a-a036-dd700950c471")
+		(property "Reference" "D3"
+			(at 237.49 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PESD15VS1UB"
+			(at 237.49 35.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 229.87 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD15VS1UB.pdf"
+			(at 240.03 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unidirectional ESD protection diode, 3.3V, SOD-882"
+			(at 242.57 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bcb29d40-9311-4b1c-b7ec-724e772b8514")
+		)
+		(pin "1"
+			(uuid "1e21d149-3c8d-403d-979d-a65f4901a3b5")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 67.945 175.895 0)
 		(unit 1)
@@ -14962,7 +15220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 221.9452 38.735 0)
 			(effects
 				(font
@@ -15291,7 +15549,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "47k"
 			(at 204.47 77.4699 0)
 			(effects
 				(font
@@ -15494,8 +15752,8 @@
 				)
 			)
 		)
-		(property "Value" "12k"
-			(at 259.08 84.455 90)
+		(property "Value" "220k"
+			(at 258.445 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15897,7 +16155,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STM32C011F4Px"
+		(property "Value" "STM32C011F6P6"
 			(at 230.7433 104.14 0)
 			(effects
 				(font
@@ -16311,7 +16569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 129.54 105.7148 0)
 			(effects
 				(font
@@ -16913,7 +17171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 172.4152 38.735 0)
 			(effects
 				(font
@@ -16960,7 +17218,7 @@
 		(at 276.225 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -17430,75 +17688,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:PTVS15VZ1USK")
-		(at 327.66 78.105 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3d592b5-0d68-4cc2-9bed-dda8a23480ac")
-		(property "Reference" "D3"
-			(at 332.105 75.565 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PTVS15VZ1USK"
-			(at 325.12 79.3749 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
-			(at 323.215 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS15VZ1USK.pdf"
-			(at 327.66 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "15V, 1900W TVS unidirectional diode, DSN1608-2"
-			(at 327.66 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5cd8ddbd-d7f0-4cae-89a0-04adaad835a0")
-		)
-		(pin "1"
-			(uuid "cab89b98-7034-4d0c-8ae7-e47bdd9e844b")
-		)
-		(instances
-			(project "2026Precharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDC")
 		(at 115.57 142.875 0)
 		(unit 1)
@@ -17658,7 +17847,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "footprints:FUSE_BK_PCS"
+		(property "Footprint" "HV_Fuse:FUSE_BK_PCS"
 			(at 34.163 162.56 90)
 			(effects
 				(font
@@ -17761,76 +17950,6 @@
 			(project "2025Precharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZT52Bxx")
-		(at 191.77 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de654ab4-6468-4c17-9036-2a3ac430ecb9")
-		(property "Reference" "D7"
-			(at 194.31 64.7699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BZT52B-7-F"
-			(at 194.31 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 187.325 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-			(at 191.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500mW Zener Diode, SOD-123F"
-			(at 191.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4130db94-24d9-46f1-9f04-258de97c87b7")
-		)
-		(pin "1"
-			(uuid "c89e0f33-11ba-49ee-8966-0786fbad3e36")
-		)
-		(instances
-			(project "2024Precharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -18775,76 +18894,6 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:PTVS15VZ1USK")
-		(at 234.95 34.29 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f273624d-8b74-4de3-a2ec-dab884c5de67")
-		(property "Reference" "D1"
-			(at 237.49 33.0199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PTVS15VZ1USK"
-			(at 236.855 34.925 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
-			(at 239.395 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS15VZ1USK.pdf"
-			(at 234.95 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "15V, 1900W TVS unidirectional diode, DSN1608-2"
-			(at 234.95 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ef590047-2299-4c56-b0f7-8033a71dec1e")
-		)
-		(pin "1"
-			(uuid "441bfbaa-1559-4e88-92a6-53d6a8977f4d")
-		)
-		(instances
-			(project "updatedPrecharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "D1")
 					(unit 1)
 				)
 			)
