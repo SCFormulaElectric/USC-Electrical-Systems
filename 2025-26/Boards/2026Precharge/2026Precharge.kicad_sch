@@ -6076,16 +6076,6 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 74.295) (xy 327.66 73.025)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "009bde3e-ce67-47bb-9709-8de80105c028")
-	)
-	(wire
-		(pts
 			(xy 228.6 100.33) (xy 236.22 100.33)
 		)
 		(stroke
@@ -6306,16 +6296,6 @@
 	)
 	(wire
 		(pts
-			(xy 343.535 40.005) (xy 343.535 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d077a4f-9775-4ebb-89c3-a34d67b74fbe")
-	)
-	(wire
-		(pts
 			(xy 115.57 78.105) (xy 113.665 78.105)
 		)
 		(stroke
@@ -6336,7 +6316,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 73.025) (xy 323.215 73.025)
+			(xy 323.215 73.025) (xy 332.74 73.025)
 		)
 		(stroke
 			(width 0)
@@ -6513,6 +6493,16 @@
 			(type default)
 		)
 		(uuid "32f6d9a6-d4fb-425b-ad66-2b95328b0c8f")
+	)
+	(wire
+		(pts
+			(xy 261.62 124.46) (xy 262.89 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e81bc0-b8b7-4f39-88e7-98370b45cef8")
 	)
 	(wire
 		(pts
@@ -6793,16 +6783,6 @@
 			(type default)
 		)
 		(uuid "4ab091f4-ad90-4de1-b8ff-6294f194306f")
-	)
-	(wire
-		(pts
-			(xy 327.66 81.915) (xy 327.66 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bd751d5-6f12-4b51-ba04-1ca6e32507dc")
 	)
 	(wire
 		(pts
@@ -7396,7 +7376,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 124.46) (xy 250.825 124.46)
+			(xy 246.38 124.46) (xy 256.54 124.46)
 		)
 		(stroke
 			(width 0)
@@ -7813,6 +7793,16 @@
 			(type default)
 		)
 		(uuid "c35e3817-1378-4270-8716-96764145e30d")
+	)
+	(wire
+		(pts
+			(xy 332.74 73.025) (xy 332.74 74.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4796f56-5b5d-47c3-b294-476cf1c0c286")
 	)
 	(wire
 		(pts
@@ -8710,6 +8700,28 @@
 			)
 		)
 	)
+	(global_label "Charge_on"
+		(shape bidirectional)
+		(at 327.66 74.295 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5037667e-5fc0-4567-a491-82e5a527e311")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 327.66 60.3411 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Pre_GLV+"
 		(shape input)
 		(at 214.63 59.69 0)
@@ -8998,7 +9010,7 @@
 	)
 	(global_label "Precharge_Fault"
 		(shape output)
-		(at 250.825 124.46 0)
+		(at 262.89 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9008,7 +9020,7 @@
 		)
 		(uuid "b4cb1c13-4b8a-4809-b3cf-4454cce8c8a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.1105 124.46 0)
+			(at 281.1755 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9606,6 +9618,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MMBZxx")
+		(at 330.2 79.375 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "051feb33-8f84-4c15-bdb4-09e59dd4edc9")
+		(property "Reference" "D5"
+			(at 335.915 78.2319 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBZxx"
+			(at 335.915 80.7719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 334.01 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/MMBZ5V6ALT1-D.PDF"
+			(at 327.66 79.375 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Double Zener Diode, Common Anode, 225mW, SOT-23"
+			(at 330.2 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aa8c51d-f496-4434-992b-f6c4656dcc76")
+		)
+		(pin "3"
+			(uuid "cb560b81-36d3-40f8-9271-23f45c2c13b7")
+		)
+		(pin "2"
+			(uuid "5dae10d0-457c-4798-86b8-08b04f4ba148")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 46.355 137.795 0)
 		(unit 1)
@@ -10139,6 +10225,72 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 330.2 84.455 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f7869cc-6ee3-4a4f-8d20-425b0f3517bb")
+		(property "Reference" "#PWR037"
+			(at 330.2 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GLV-"
+			(at 330.2 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 330.2 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a23c1074-967d-42b3-9607-648a098338a9")
+		)
+		(instances
+			(project "2026Precharge"
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -12927,6 +13079,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 259.08 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d270b9f-e765-4201-9006-38c00d2c6b92")
+		(property "Reference" "R27"
+			(at 259.08 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47"
+			(at 259.08 127.635 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 259.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 259.08 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37141b40-294b-4b77-8287-06646bbe36cb")
+		)
+		(pin "2"
+			(uuid "6b6abe25-fc0b-421f-a3ac-7d216ace1776")
+		)
+		(instances
+			(project ""
+				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 139.065 109.855 90)
 		(mirror x)
@@ -14048,7 +14267,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7b94a5df-4011-475c-b2c0-0d54b91b4497")
 		(property "Reference" "F7"
 			(at 325.12 59.0549 0)
@@ -14060,7 +14278,7 @@
 			)
 		)
 		(property "Value" "BORN SMD1206-050/30N"
-			(at 325.12 61.5949 0)
+			(at 323.85 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14180,76 +14398,6 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:PESD3V3S1UL")
-		(at 327.66 78.105 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80d060f6-52ac-4d0d-a20c-9ec1357f1019")
-		(property "Reference" "D1"
-			(at 330.2 76.8349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PESD15VS1UB"
-			(at 330.2 79.3749 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 322.58 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD15VS1UB.pdf"
-			(at 332.74 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unidirectional ESD protection diode, 3.3V, SOD-882"
-			(at 335.28 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5e295271-15a1-4b40-98dd-7602794e75cf")
-		)
-		(pin "1"
-			(uuid "d1f4ea19-0d69-45f9-989b-9c06db9dcde8")
-		)
-		(instances
-			(project "2026Precharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -15066,72 +15214,6 @@
 			(project "updatedPrecharge"
 				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND1")
-		(at 327.66 83.185 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95cb0be8-a99a-479a-985b-613c0defc8ec")
-		(property "Reference" "#PWR019"
-			(at 327.66 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GLV-"
-			(at 327.66 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 327.66 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.66 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 327.66 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0ac9c5d-a184-4cf1-8f81-21006c8941ad")
-		)
-		(instances
-			(project "2026Precharge"
-				(path "/8c3ced22-9a25-46a3-83b9-5a5624b3f3cb"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
