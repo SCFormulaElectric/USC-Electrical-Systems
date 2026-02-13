@@ -1,15 +1,9 @@
 1/4/26 Sonia notes
 
 - ESD protection is for nets on the connector, more useful to clamp the fault signals not gate signals
-- the Reset btn voltage divider doesn't really make sense, is it a 12V signal? 5V signal? double check calcs
-- The reset circuit with the reset latch won't work. You can't turn off the PMOS with 3.3V at the gate and 12V at the source
-- you don't necessarily need ESD protection on the no faults signal since the stm32 has internal protection
-- also whats the 330 ohm resistor for? not familiar with what is off the board
-- again, not sure if you need the gate series resistor (ig that would be safer thing to do)
-- choose value for R1
-- idk if you planned what the extra GPIOs will be used for but keep in mind you'll need a pullup rsistor for whatever that is
-  or use it as a sink or smth, either way need a resistor
-- i think the BMS fault circuitry should just take in BMS_gate since its active high and gets inverted through software
+
+
+
 - also in general you can get rid of a lot of the resistors if you just directly feed the Fault signals into the microcontroller directly and have the gates be completely software controlled (see last years board for reference) 
   mostly talking about the IMD and BMS since those signals probably need to be routed there anyway
 - also you can just have one type of ESD protection to reduce BOM count
