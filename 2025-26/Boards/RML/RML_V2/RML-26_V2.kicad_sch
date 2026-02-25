@@ -3043,6 +3043,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 52.07) (xy 36.83 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9656d7-76fa-4a0e-bb22-d91a6c3b6520")
+	)
+	(wire
+		(pts
 			(xy 59.69 76.2) (xy 59.69 80.01)
 		)
 		(stroke
@@ -3133,16 +3143,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 52.07) (xy 36.83 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "590bf982-ff65-4a2b-918f-4c2159084ba2")
-	)
-	(wire
-		(pts
 			(xy 157.48 38.1) (xy 157.48 41.91)
 		)
 		(stroke
@@ -3200,6 +3200,16 @@
 			(type default)
 		)
 		(uuid "6e9bf582-f3f7-464e-a77c-d230a2d94049")
+	)
+	(wire
+		(pts
+			(xy 36.83 85.09) (xy 36.83 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b727472-7a18-4989-9f90-319c3f8b1d59")
 	)
 	(wire
 		(pts
@@ -3353,6 +3363,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 75.565) (xy 36.83 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad34bde3-5a8a-410f-b8f0-784a5ad0a831")
+	)
+	(wire
+		(pts
 			(xy 86.36 68.58) (xy 102.87 68.58)
 		)
 		(stroke
@@ -3420,16 +3440,6 @@
 			(type default)
 		)
 		(uuid "c595c8db-523a-444e-a7ec-10d410c7c531")
-	)
-	(wire
-		(pts
-			(xy 36.83 82.55) (xy 36.83 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c85af955-ee04-461d-a504-99ca7e551c8c")
 	)
 	(wire
 		(pts
@@ -4883,6 +4893,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 31.75 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "994ec527-cf6b-4f9d-9940-70b810ded3b4")
+		(property "Reference" "Molex2"
+			(at 22.225 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "043045-0212"
+			(at 22.225 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical"
+			(at 31.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 31.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2cf8230-ee88-4103-b7fa-8f702c697976")
+		)
+		(pin "2"
+			(uuid "e4761544-26a8-418f-bb4d-e80c5e856832")
+		)
+		(instances
+			(project "RML-26_V2"
+				(path "/d0262e13-a8ab-42db-962e-1ef7dd9c8d4a"
+					(reference "Molex2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 36.83 93.98 180)
 		(unit 1)
@@ -5264,7 +5341,7 @@
 			)
 		)
 		(property "Value" "043045-0412"
-			(at 111.76 30.48 0)
+			(at 120.65 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5452,7 +5529,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 31.75 82.55 180)
+		(at 30.48 75.565 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5460,7 +5537,7 @@
 		(dnp no)
 		(uuid "c5bba47c-a331-411d-8489-200ae8fdb5f4")
 		(property "Reference" "Molex1"
-			(at 22.225 80.01 0)
+			(at 20.955 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5468,7 +5545,7 @@
 			)
 		)
 		(property "Value" "043045-0212"
-			(at 22.225 82.55 0)
+			(at 20.955 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5476,7 +5553,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical"
-			(at 31.75 82.55 0)
+			(at 30.48 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5485,7 +5562,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 82.55 0)
+			(at 30.48 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5494,7 +5571,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 82.55 0)
+			(at 30.48 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
