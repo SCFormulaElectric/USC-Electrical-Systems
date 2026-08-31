@@ -1,0 +1,9247 @@
+{
+ "board": "Custom_BMS",
+ "components": {
+  "C1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C23733",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,4.7uF",
+   "pcb_value": "4.7uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/CVDD"
+    }
+   },
+   "ref": "C1",
+   "sheet": "BMS Chips",
+   "value": "4.7uF"
+  },
+  "C10": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C96446",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,10uF,(2)",
+   "pcb_value": "10uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C10",
+   "sheet": "Power",
+   "value": "10uF"
+  },
+  "C11": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C53987",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,4.7nF",
+   "pcb_value": "4.7nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/Comms Interfaces/CAN_VREF"
+    }
+   },
+   "ref": "C11",
+   "sheet": "Comms Interfaces",
+   "value": "4.7nF"
+  },
+  "C12": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C12",
+   "sheet": "Comms Interfaces",
+   "value": "100nF"
+  },
+  "C13": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC11"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC10"
+    }
+   },
+   "ref": "C13",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C14": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC12"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC11"
+    }
+   },
+   "ref": "C14",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C15": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC10"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC9"
+    }
+   },
+   "ref": "C15",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C16": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC9"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC8"
+    }
+   },
+   "ref": "C16",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C17": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC7"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC6"
+    }
+   },
+   "ref": "C17",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C18": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC5"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC4"
+    }
+   },
+   "ref": "C18",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C19": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC3"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC2"
+    }
+   },
+   "ref": "C19",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C2": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C52923",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,1uF",
+   "pcb_value": "1uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U1-REFHP)"
+    }
+   },
+   "ref": "C2",
+   "sheet": "BMS Chips",
+   "value": "1uF"
+  },
+  "C20": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC8"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC7"
+    }
+   },
+   "ref": "C20",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C21": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC6"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC5"
+    }
+   },
+   "ref": "C21",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C22": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC4"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC3"
+    }
+   },
+   "ref": "C22",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C23": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC2"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC1"
+    }
+   },
+   "ref": "C23",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C24": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/BAT"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB16"
+    }
+   },
+   "ref": "C24",
+   "sheet": "BMS Chips",
+   "value": "470nF"
+  },
+  "C25": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:C0603",
+   "lcsc": "C107059",
+   "lib_id": "easyeda2kicad:CC0603KRX7R0BB103",
+   "pcb_value": "CC0603KRX7R0BB103",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "GND"
+    },
+    "2": {
+     "name": "2",
+     "net": "/BMS Chips/BAT"
+    }
+   },
+   "ref": "C25",
+   "sheet": "BMS Chips",
+   "value": "CC0603KRX7R0BB103"
+  },
+  "C26": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C23630",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,2.2uF",
+   "pcb_value": "2.2uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U6-VCAP_1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C26",
+   "sheet": "MCU",
+   "value": "2.2uF"
+  },
+  "C27": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C23630",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,2.2uF",
+   "pcb_value": "2.2uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U6-VCAP_2)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C27",
+   "sheet": "MCU",
+   "value": "2.2uF"
+  },
+  "C28": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB12"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB11"
+    }
+   },
+   "ref": "C28",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C29": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C29",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C3": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U2-BST)"
+    },
+    "2": {
+     "name": "~",
+     "net": "/Power/SW"
+    }
+   },
+   "ref": "C3",
+   "sheet": "Power",
+   "value": "100nF"
+  },
+  "C30": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB10"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB9"
+    }
+   },
+   "ref": "C30",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C31": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB8"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB7"
+    }
+   },
+   "ref": "C31",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C32": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB11"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB10"
+    }
+   },
+   "ref": "C32",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C33": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB9"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB8"
+    }
+   },
+   "ref": "C33",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C34": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB6"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB5"
+    }
+   },
+   "ref": "C34",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C35": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB4"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB3"
+    }
+   },
+   "ref": "C35",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C36": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB2"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB1"
+    }
+   },
+   "ref": "C36",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C37": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB0"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C37",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C38": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB7"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB6"
+    }
+   },
+   "ref": "C38",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C39": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB5"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB4"
+    }
+   },
+   "ref": "C39",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C4": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C52923",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,1uF",
+   "pcb_value": "1uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U1-AVDD)"
+    }
+   },
+   "ref": "C4",
+   "sheet": "BMS Chips",
+   "value": "1uF"
+  },
+  "C40": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB3"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB2"
+    }
+   },
+   "ref": "C40",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C41": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB1"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB0"
+    }
+   },
+   "ref": "C41",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C42": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C42",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C43": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMHP"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C43",
+   "sheet": "BMS Chips",
+   "value": "220pF"
+  },
+  "C44": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMHN"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C44",
+   "sheet": "BMS Chips",
+   "value": "220pF"
+  },
+  "C45": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:C1206",
+   "lcsc": "C9191",
+   "lib_id": "easyeda2kicad:1206B222K102NT",
+   "pcb_value": "1206B222K102NT",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C45-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C45-Pad2)"
+    }
+   },
+   "ref": "C45",
+   "sheet": "BMS Chips",
+   "value": "1206B222K102NT"
+  },
+  "C46": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:C1206",
+   "lcsc": "C9191",
+   "lib_id": "easyeda2kicad:1206B222K102NT",
+   "pcb_value": "1206B222K102NT",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C46-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C46-Pad2)"
+    }
+   },
+   "ref": "C46",
+   "sheet": "BMS Chips",
+   "value": "1206B222K102NT"
+  },
+  "C47": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14858",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100pF",
+   "pcb_value": "100pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C47-Pad2)"
+    }
+   },
+   "ref": "C47",
+   "sheet": "BMS Chips",
+   "value": "100pF"
+  },
+  "C48": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMLP"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C48",
+   "sheet": "BMS Chips",
+   "value": "220pF"
+  },
+  "C49": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMLN"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C49",
+   "sheet": "BMS Chips",
+   "value": "220pF"
+  },
+  "C5": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C52923",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,1uF",
+   "pcb_value": "1uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/TSREF"
+    }
+   },
+   "ref": "C5",
+   "sheet": "BMS Chips",
+   "value": "1uF"
+  },
+  "C50": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14858",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100pF",
+   "pcb_value": "100pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C50-Pad2)"
+    }
+   },
+   "ref": "C50",
+   "sheet": "BMS Chips",
+   "value": "100pF"
+  },
+  "C51": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:C1206",
+   "lcsc": "C9191",
+   "lib_id": "easyeda2kicad:1206B222K102NT",
+   "pcb_value": "1206B222K102NT",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C51-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C51-Pad2)"
+    }
+   },
+   "ref": "C51",
+   "sheet": "BMS Chips",
+   "value": "1206B222K102NT"
+  },
+  "C52": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:C1206",
+   "lcsc": "C9191",
+   "lib_id": "easyeda2kicad:1206B222K102NT",
+   "pcb_value": "1206B222K102NT",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C52-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C52-Pad2)"
+    }
+   },
+   "ref": "C52",
+   "sheet": "BMS Chips",
+   "value": "1206B222K102NT"
+  },
+  "C53": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C53",
+   "sheet": "Comms Interfaces",
+   "value": "220pF"
+  },
+  "C54": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHP_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C54",
+   "sheet": "Comms Interfaces",
+   "value": "220pF"
+  },
+  "C55": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C96446",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,10uF,(2)",
+   "pcb_value": "10uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+5V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C55",
+   "sheet": "Power",
+   "value": "10uF"
+  },
+  "C56": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C56",
+   "sheet": "Comms Interfaces",
+   "value": "220pF"
+  },
+  "C57": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1603",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220pF",
+   "pcb_value": "220pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLP_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C57",
+   "sheet": "Comms Interfaces",
+   "value": "220pF"
+  },
+  "C58": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C58",
+   "sheet": "Power",
+   "value": "100nF"
+  },
+  "C59": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C21120",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220nF",
+   "pcb_value": "220nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(C59-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C59",
+   "sheet": "Comms Interfaces",
+   "value": "220nF"
+  },
+  "C6": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/LDOIN"
+    }
+   },
+   "ref": "C6",
+   "sheet": "BMS Chips",
+   "value": "100nF"
+  },
+  "C60": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C21120",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220nF",
+   "pcb_value": "220nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(C60-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C60",
+   "sheet": "Comms Interfaces",
+   "value": "220nF"
+  },
+  "C61": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C61",
+   "sheet": "Comms Interfaces",
+   "value": "100nF"
+  },
+  "C62": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C62",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C63": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C63",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C64": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C64",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C65": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C19666",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,4.7uF",
+   "pcb_value": "4.7uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C65",
+   "sheet": "MCU",
+   "value": "4.7uF"
+  },
+  "C66": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C15849",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,1uF",
+   "pcb_value": "1uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C66",
+   "sheet": "MCU",
+   "value": "1uF"
+  },
+  "C67": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C96446",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,10uF,(2)",
+   "pcb_value": "10uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+5V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C67",
+   "sheet": "Power",
+   "value": "10uF"
+  },
+  "C68": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+5V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C68",
+   "sheet": "Power",
+   "value": "100nF"
+  },
+  "C69": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0805",
+   "lcsc": "C45783",
+   "lib_id": "PCM_JLCPCB-Capacitors:0805,22uF",
+   "pcb_value": "22uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C69",
+   "sheet": "Power",
+   "value": "22uF"
+  },
+  "C7": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C12530",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,2.2uF",
+   "pcb_value": "2.2uF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U1-DVDD)"
+    }
+   },
+   "ref": "C7",
+   "sheet": "BMS Chips",
+   "value": "2.2uF"
+  },
+  "C70": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(S1-B)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C70",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C71": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1554",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,20pF",
+   "pcb_value": "20pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U6-PH1)"
+    }
+   },
+   "ref": "C71",
+   "sheet": "MCU",
+   "value": "20pF"
+  },
+  "C72": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC0"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C72",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C73": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE1"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C73",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C74": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C21117",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,33nF",
+   "pcb_value": "33nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE1"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C74",
+   "sheet": "MCU",
+   "value": "33nF"
+  },
+  "C75": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14663",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE2"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C75",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C76": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C21117",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,33nF",
+   "pcb_value": "33nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE2"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C76",
+   "sheet": "MCU",
+   "value": "33nF"
+  },
+  "C77": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C21120",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,220nF",
+   "pcb_value": "220nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/collector"
+    },
+    "2": {
+     "name": "~",
+     "net": "GND"
+    }
+   },
+   "ref": "C77",
+   "sheet": "BMS Chips",
+   "value": "220nF"
+  },
+  "C78": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U1-NEG5V)"
+    }
+   },
+   "ref": "C78",
+   "sheet": "BMS Chips",
+   "value": "100nF"
+  },
+  "C79": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB13"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB12"
+    }
+   },
+   "ref": "C79",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C8": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "VC1"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC0"
+    }
+   },
+   "ref": "C8",
+   "sheet": "Cell Tap Filters",
+   "value": "470nF"
+  },
+  "C80": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB14"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB13"
+    }
+   },
+   "ref": "C80",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C81": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB15"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB14"
+    }
+   },
+   "ref": "C81",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C82": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C1623",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,470nF",
+   "pcb_value": "470nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CB16"
+    },
+    "2": {
+     "name": "~",
+     "net": "CB15"
+    }
+   },
+   "ref": "C82",
+   "sheet": "Cell Balancing",
+   "value": "470nF"
+  },
+  "C83": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14858",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100pF",
+   "pcb_value": "100pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C83-Pad2)"
+    }
+   },
+   "ref": "C83",
+   "sheet": "Comms Interfaces",
+   "value": "100pF"
+  },
+  "C84": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0603",
+   "lcsc": "C14858",
+   "lib_id": "PCM_JLCPCB-Capacitors:0603,100pF",
+   "pcb_value": "100pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C84-Pad2)"
+    }
+   },
+   "ref": "C84",
+   "sheet": "Comms Interfaces",
+   "value": "100pF"
+  },
+  "C85": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C85",
+   "sheet": "Comms Interfaces",
+   "value": "100nF"
+  },
+  "C86": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1525",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,100nF",
+   "pcb_value": "100nF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "C86",
+   "sheet": "MCU",
+   "value": "100nF"
+  },
+  "C9": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:C_0402",
+   "lcsc": "C1554",
+   "lib_id": "PCM_JLCPCB-Capacitors:0402,20pF",
+   "pcb_value": "20pF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U6-PH0)"
+    }
+   },
+   "ref": "C9",
+   "sheet": "MCU",
+   "value": "20pF"
+  },
+  "CN1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:CONN-TH_C4201WR-F-2X8P",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:C4201WR-F-2X8P_C5355564",
+   "pcb_value": "C4201WR-F-2X8P_C5355564",
+   "pin_count": 16,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL1+"
+    },
+    "10": {
+     "name": "10",
+     "net": "CELL2+"
+    },
+    "11": {
+     "name": "11",
+     "net": "CELL4+"
+    },
+    "12": {
+     "name": "12",
+     "net": "CELL6+"
+    },
+    "13": {
+     "name": "13",
+     "net": "CELL8+"
+    },
+    "14": {
+     "name": "14",
+     "net": "CELL10+"
+    },
+    "15": {
+     "name": "15",
+     "net": "CELL12+"
+    },
+    "16": {
+     "name": "16",
+     "net": "CELL_TOP"
+    },
+    "2": {
+     "name": "2",
+     "net": "CELL3+"
+    },
+    "3": {
+     "name": "3",
+     "net": "CELL5+"
+    },
+    "4": {
+     "name": "4",
+     "net": "CELL7+"
+    },
+    "5": {
+     "name": "5",
+     "net": "CELL9+"
+    },
+    "6": {
+     "name": "6",
+     "net": "CELL11+"
+    },
+    "7": {
+     "name": "7",
+     "net": "GND"
+    },
+    "8": {
+     "name": "8",
+     "net": "unconnected-(CN1-Pad8)"
+    },
+    "9": {
+     "name": "9",
+     "net": "CELL1-"
+    }
+   },
+   "ref": "CN1",
+   "sheet": "BMS Chips",
+   "value": "C4201WR-F-2X8P_C5355564"
+  },
+  "CN2": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/BMS Chips/COMHP_ext"
+    },
+    "2": {
+     "name": "2",
+     "net": "/BMS Chips/COMHN_ext"
+    }
+   },
+   "ref": "CN2",
+   "sheet": "BMS Chips",
+   "value": "0530470210"
+  },
+  "CN3": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/BMS Chips/COMLP_ext"
+    },
+    "2": {
+     "name": "2",
+     "net": "/BMS Chips/COMLN_ext"
+    }
+   },
+   "ref": "CN3",
+   "sheet": "BMS Chips",
+   "value": "0530470210"
+  },
+  "CN4": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/COMHP_mb_ext"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Comms Interfaces/COMHN_mb_ext"
+    }
+   },
+   "ref": "CN4",
+   "sheet": "Comms Interfaces",
+   "value": "0530470210"
+  },
+  "CN5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/COMLP_mb_ext"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Comms Interfaces/COMLN_mb_ext"
+    }
+   },
+   "ref": "CN5",
+   "sheet": "Comms Interfaces",
+   "value": "0530470210"
+  },
+  "CN6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(CN6-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(CN6-Pad2)"
+    }
+   },
+   "ref": "CN6",
+   "sheet": "Comms Interfaces",
+   "value": "0530470210"
+  },
+  "CN7": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:CONN-TH_6P-P1.25_530470610",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:530470610",
+   "pcb_value": "530470610",
+   "pin_count": 6,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/BMS Chips/TSREF"
+    },
+    "2": {
+     "name": "2",
+     "net": "/BMS Chips/temp1"
+    },
+    "3": {
+     "name": "3",
+     "net": "/BMS Chips/temp2"
+    },
+    "4": {
+     "name": "4",
+     "net": "/BMS Chips/temp3"
+    },
+    "5": {
+     "name": "5",
+     "net": "/BMS Chips/temp4"
+    },
+    "6": {
+     "name": "6",
+     "net": "GND"
+    }
+   },
+   "ref": "CN7",
+   "sheet": "BMS Chips",
+   "value": "530470610"
+  },
+  "CN8": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:CONN-TH_0530470210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:0530470210",
+   "pcb_value": "0530470210",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "VBAT"
+    },
+    "2": {
+     "name": "2",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "CN8",
+   "sheet": "Power",
+   "value": "0530470210"
+  },
+  "CN9": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:CONN-TH_530471010",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:530471010",
+   "pcb_value": "530471010",
+   "pin_count": 10,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/MCU/CURR_CHANNEL1"
+    },
+    "10": {
+     "name": "10",
+     "net": "unconnected-(CN9-Pad10)"
+    },
+    "2": {
+     "name": "2",
+     "net": "/MCU/CURR_CHANNEL2"
+    },
+    "3": {
+     "name": "3",
+     "net": "/MCU/PROX_DETECT"
+    },
+    "4": {
+     "name": "4",
+     "net": "/MCU/CTRL_PILOT"
+    },
+    "5": {
+     "name": "5",
+     "net": "/MCU/DISCHARGE_EN_12V"
+    },
+    "6": {
+     "name": "6",
+     "net": "/MCU/CHARGE_EN_12V"
+    },
+    "7": {
+     "name": "7",
+     "net": "/MCU/CHARGE_ON_12V"
+    },
+    "8": {
+     "name": "8",
+     "net": "/MCU/FAN_EN_12V"
+    },
+    "9": {
+     "name": "9",
+     "net": "unconnected-(CN9-Pad9)"
+    }
+   },
+   "ref": "CN9",
+   "sheet": "MCU",
+   "value": "530471010"
+  },
+  "D1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:SMD-6_L7.6-W6.9-P2.54-LS8.9-BL",
+   "lcsc": "C915690",
+   "lib_id": "easyeda2kicad:SM91502ALE",
+   "pcb_value": "SM91502ALE",
+   "pin_count": 6,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C45-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C47-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "Net-(C46-Pad1)"
+    },
+    "4": {
+     "name": "4",
+     "net": "/BMS Chips/COMHN_ext"
+    },
+    "5": {
+     "name": "5",
+     "net": "unconnected-(D1-Pad5)"
+    },
+    "6": {
+     "name": "6",
+     "net": "/BMS Chips/COMHP_ext"
+    }
+   },
+   "ref": "D1",
+   "sheet": "BMS Chips",
+   "value": "SM91502ALE"
+  },
+  "D10": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SOT-23-3_L2.9-W1.3-P1.90-LS2.3-BR",
+   "lcsc": "C20345392",
+   "lib_id": "easyeda2kicad:ESD2CANFD24DBZRQ1",
+   "pcb_value": "ESD2CANFD24DBZRQ1",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "IO",
+     "net": "/Comms Interfaces/CANL"
+    },
+    "2": {
+     "name": "GND",
+     "net": "/Comms Interfaces/CANH"
+    },
+    "3": {
+     "name": "GND",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "D10",
+   "sheet": "Comms Interfaces",
+   "value": "ESD2CANFD24DBZRQ1"
+  },
+  "D11": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SMD-6_L7.6-W6.9-P2.54-LS8.9-BL",
+   "lcsc": "C915690",
+   "lib_id": "easyeda2kicad:SM91502ALE",
+   "pcb_value": "SM91502ALE",
+   "pin_count": 6,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(D11-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C83-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "Net-(D11-Pad3)"
+    },
+    "4": {
+     "name": "4",
+     "net": "/Comms Interfaces/COMHP_mb_ext"
+    },
+    "5": {
+     "name": "5",
+     "net": "unconnected-(D11-Pad5)"
+    },
+    "6": {
+     "name": "6",
+     "net": "/Comms Interfaces/COMHN_mb_ext"
+    }
+   },
+   "ref": "D11",
+   "sheet": "Comms Interfaces",
+   "value": "SM91502ALE"
+  },
+  "D12": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SMD-6_L7.6-W6.9-P2.54-LS8.9-BL",
+   "lcsc": "C915690",
+   "lib_id": "easyeda2kicad:SM91502ALE",
+   "pcb_value": "SM91502ALE",
+   "pin_count": 6,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(D12-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C84-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "Net-(D12-Pad3)"
+    },
+    "4": {
+     "name": "4",
+     "net": "/Comms Interfaces/COMLP_mb_ext"
+    },
+    "5": {
+     "name": "5",
+     "net": "unconnected-(D12-Pad5)"
+    },
+    "6": {
+     "name": "6",
+     "net": "/Comms Interfaces/COMLN_mb_ext"
+    }
+   },
+   "ref": "D12",
+   "sheet": "Comms Interfaces",
+   "value": "SM91502ALE"
+  },
+  "D13": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_0805",
+   "lcsc": "C2297",
+   "lib_id": "PCM_JLCPCB-Diodes:LED,0805,Green",
+   "pcb_value": "Green",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D13-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U6-PB0)"
+    }
+   },
+   "ref": "D13",
+   "sheet": "MCU",
+   "value": "Green"
+  },
+  "D14": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Diode_SMD:D_SOD-523",
+   "lcsc": "",
+   "lib_id": "Diode:1N4148WT",
+   "pcb_value": "1N4148WT",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "K",
+     "net": "/MCU/CP_read"
+    },
+    "2": {
+     "name": "A",
+     "net": "/MCU/CTRL_PILOT"
+    }
+   },
+   "ref": "D14",
+   "sheet": "MCU",
+   "value": "1N4148WT"
+  },
+  "D15": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/DISCHARGE_EN_12V"
+    }
+   },
+   "ref": "D15",
+   "sheet": "MCU",
+   "value": "SMF18CA"
+  },
+  "D16": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CHARGE_EN_12V"
+    }
+   },
+   "ref": "D16",
+   "sheet": "MCU",
+   "value": "SMF18CA"
+  },
+  "D17": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/FAN_EN_12V"
+    }
+   },
+   "ref": "D17",
+   "sheet": "MCU",
+   "value": "SMF18CA"
+  },
+  "D18": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CTRL_PILOT"
+    }
+   },
+   "ref": "D18",
+   "sheet": "MCU",
+   "value": "SMF18CA"
+  },
+  "D19": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/PROX_DETECT"
+    }
+   },
+   "ref": "D19",
+   "sheet": "MCU",
+   "value": "SMF18CA"
+  },
+  "D2": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:SMD-6_L7.6-W6.9-P2.54-LS8.9-BL",
+   "lcsc": "C915690",
+   "lib_id": "easyeda2kicad:SM91502ALE",
+   "pcb_value": "SM91502ALE",
+   "pin_count": 6,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C51-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C50-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "Net-(C52-Pad1)"
+    },
+    "4": {
+     "name": "4",
+     "net": "/BMS Chips/COMLP_ext"
+    },
+    "5": {
+     "name": "5",
+     "net": "unconnected-(D2-Pad5)"
+    },
+    "6": {
+     "name": "6",
+     "net": "/BMS Chips/COMLN_ext"
+    }
+   },
+   "ref": "D2",
+   "sheet": "BMS Chips",
+   "value": "SM91502ALE"
+  },
+  "D20": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-123FL",
+   "lcsc": "C19077513",
+   "lib_id": "PCM_JLCPCB-Diodes:TVS-Bi,SMF18CA",
+   "pcb_value": "SMF18CA",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(Q2-D)"
+    }
+   },
+   "ref": "D20",
+   "sheet": "Power",
+   "value": "SMF18CA"
+  },
+  "D3": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "lcsc": "C15771",
+   "lib_id": "easyeda2kicad:PESD1CAN,215",
+   "pcb_value": "PESD1CAN,215",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C45-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C46-Pad1)"
+    },
+    "3": {
+     "name": "3",
+     "net": "GND"
+    }
+   },
+   "ref": "D3",
+   "sheet": "BMS Chips",
+   "value": "PESD1CAN,215"
+  },
+  "D4": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "lcsc": "C15771",
+   "lib_id": "easyeda2kicad:PESD1CAN,215",
+   "pcb_value": "PESD1CAN,215",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C51-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C52-Pad1)"
+    },
+    "3": {
+     "name": "3",
+     "net": "GND"
+    }
+   },
+   "ref": "D4",
+   "sheet": "BMS Chips",
+   "value": "PESD1CAN,215"
+  },
+  "D5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "lcsc": "C15771",
+   "lib_id": "easyeda2kicad:PESD1CAN,215",
+   "pcb_value": "PESD1CAN,215",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(D11-Pad3)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(D11-Pad1)"
+    },
+    "3": {
+     "name": "3",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "D5",
+   "sheet": "Comms Interfaces",
+   "value": "PESD1CAN,215"
+  },
+  "D6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_0603",
+   "lcsc": "C2286",
+   "lib_id": "PCM_JLCPCB-Diodes:LED,0603,Red",
+   "pcb_value": "Red",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D6-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "+12V"
+    }
+   },
+   "ref": "D6",
+   "sheet": "Power",
+   "value": "Red"
+  },
+  "D7": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+   "lcsc": "C15771",
+   "lib_id": "easyeda2kicad:PESD1CAN,215",
+   "pcb_value": "PESD1CAN,215",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(D12-Pad3)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(D12-Pad1)"
+    },
+    "3": {
+     "name": "3",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "D7",
+   "sheet": "Comms Interfaces",
+   "value": "PESD1CAN,215"
+  },
+  "D8": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_0603",
+   "lcsc": "C89811",
+   "lib_id": "PCM_JLCPCB-Diodes:LED,0603,Yellow",
+   "pcb_value": "Yellow",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D8-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "+3.3V"
+    }
+   },
+   "ref": "D8",
+   "sheet": "Power",
+   "value": "Yellow"
+  },
+  "D9": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:D_SOD-323",
+   "lcsc": "C19077446",
+   "lib_id": "PCM_JLCPCB-Diodes:Zener,BZT52C10S",
+   "pcb_value": "BZT52C10S",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/Power/OVP_gate"
+    }
+   },
+   "ref": "D9",
+   "sheet": "Power",
+   "value": "BZT52C10S"
+  },
+  "F1": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:F0805",
+   "lcsc": "C70055",
+   "lib_id": "easyeda2kicad:SMD0805-010-24V",
+   "pcb_value": "SMD0805-010-24V",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "VBAT"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(Q2-D)"
+    }
+   },
+   "ref": "F1",
+   "sheet": "Power",
+   "value": "SMD0805-010-24V"
+  },
+  "J1": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical",
+   "lcsc": null,
+   "lib_id": "Connector:Conn_01x04_Pin",
+   "pcb_value": "Conn_01x04_Pin",
+   "pin_count": 4,
+   "pins": {
+    "1": {
+     "name": "Pin_1",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "Pin_2",
+     "net": "/MCU/SWCLK"
+    },
+    "3": {
+     "name": "Pin_3",
+     "net": "/MCU/SWDIO"
+    },
+    "4": {
+     "name": "Pin_4",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "J1",
+   "sheet": "MCU",
+   "value": "Conn_01x04_Pin"
+  },
+  "J4": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical",
+   "lcsc": null,
+   "lib_id": "Connector:Conn_01x03_Pin",
+   "pcb_value": "Conn_01x03_Pin",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "Pin_1",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "Pin_2",
+     "net": "Net-(J4-Pin_2)"
+    },
+    "3": {
+     "name": "Pin_3",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "J4",
+   "sheet": "MCU",
+   "value": "Conn_01x03_Pin"
+  },
+  "J5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical",
+   "lcsc": null,
+   "lib_id": "Connector:Conn_01x02_Pin",
+   "pcb_value": "Conn_01x02_Pin",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "Pin_1",
+     "net": "USART1_RX"
+    },
+    "2": {
+     "name": "Pin_2",
+     "net": "USART1_TX"
+    }
+   },
+   "ref": "J5",
+   "sheet": "MCU",
+   "value": "Conn_01x02_Pin"
+  },
+  "JP3": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+   "lcsc": null,
+   "lib_id": "Jumper:SolderJumper_2_Bridged",
+   "pcb_value": "SolderJumper_2_Bridged",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "A",
+     "net": "Net-(JP3-A)"
+    },
+    "2": {
+     "name": "B",
+     "net": "/BMS Chips/collector"
+    }
+   },
+   "ref": "JP3",
+   "sheet": "BMS Chips",
+   "value": "SolderJumper_2_Bridged"
+  },
+  "JP4": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+   "lcsc": null,
+   "lib_id": "Jumper:SolderJumper_2_Open",
+   "pcb_value": "SolderJumper_2_Open",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "A",
+     "net": "Net-(JP4-A)"
+    },
+    "2": {
+     "name": "B",
+     "net": "/BMS Chips/collector"
+    }
+   },
+   "ref": "JP4",
+   "sheet": "BMS Chips",
+   "value": "SolderJumper_2_Open"
+  },
+  "L1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:FILTER-SMD_4P-L4.5-W3.2-TL_ACT45B",
+   "lcsc": "C88056",
+   "lib_id": "easyeda2kicad:ACT45B-101-2P-TL003",
+   "pcb_value": "ACT45B-101-2P-TL003",
+   "pin_count": 4,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C46-Pad2)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C45-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "/BMS Chips/COMHP_ext"
+    },
+    "4": {
+     "name": "4",
+     "net": "/BMS Chips/COMHN_ext"
+    }
+   },
+   "ref": "L1",
+   "sheet": "BMS Chips",
+   "value": "ACT45B-101-2P-TL003"
+  },
+  "L2": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:FILTER-SMD_4P-L4.5-W3.2-TL_ACT45B",
+   "lcsc": "C88056",
+   "lib_id": "easyeda2kicad:ACT45B-101-2P-TL003",
+   "pcb_value": "ACT45B-101-2P-TL003",
+   "pin_count": 4,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C52-Pad2)"
+    },
+    "2": {
+     "name": "2",
+     "net": "Net-(C51-Pad2)"
+    },
+    "3": {
+     "name": "3",
+     "net": "/BMS Chips/COMLN_ext"
+    },
+    "4": {
+     "name": "4",
+     "net": "/BMS Chips/COMLP_ext"
+    }
+   },
+   "ref": "L2",
+   "sheet": "BMS Chips",
+   "value": "ACT45B-101-2P-TL003"
+  },
+  "L5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "IND_BOURNS_SRR1240",
+   "lcsc": "",
+   "lib_id": "SRR1206-120ML:SRR1206-120ML",
+   "pcb_value": "SRR1206-120ML",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "+5V"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Power/SW"
+    }
+   },
+   "ref": "L5",
+   "sheet": "Power",
+   "value": "SRR1206-120ML"
+  },
+  "L6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:FILTER-SMD_4P-L3.9-W2.5-BL",
+   "lcsc": "C529452",
+   "lib_id": "easyeda2kicad:ACT1210-101-2P-TL00",
+   "pcb_value": "ACT1210-101-2P-TL00",
+   "pin_count": 4,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/CANH"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Comms Interfaces/CANL"
+    },
+    "3": {
+     "name": "3",
+     "net": "Net-(CN6-Pad2)"
+    },
+    "4": {
+     "name": "4",
+     "net": "Net-(CN6-Pad1)"
+    }
+   },
+   "ref": "L6",
+   "sheet": "Comms Interfaces",
+   "value": "ACT1210-101-2P-TL00"
+  },
+  "Q1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:TO-252-2_L6.6-W6.1-P4.58-LS9.9-TL",
+   "lcsc": "C157603",
+   "lib_id": "easyeda2kicad:ZXTN4004KTC",
+   "pcb_value": "ZXTN4004KTC",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "B",
+     "net": "/BMS Chips/NPNB"
+    },
+    "2": {
+     "name": "C",
+     "net": "/BMS Chips/collector"
+    },
+    "3": {
+     "name": "E",
+     "net": "/BMS Chips/LDOIN"
+    }
+   },
+   "ref": "Q1",
+   "sheet": "BMS Chips",
+   "value": "ZXTN4004KTC"
+  },
+  "Q2": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3401A",
+   "pcb_value": "AO3401A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/Power/OVP_gate"
+    },
+    "2": {
+     "name": "S",
+     "net": "+12V"
+    },
+    "3": {
+     "name": "D",
+     "net": "Net-(Q2-D)"
+    }
+   },
+   "ref": "Q2",
+   "sheet": "Power",
+   "value": "AO3401A"
+  },
+  "Q3": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3400A",
+   "pcb_value": "AO3400A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/MCU/nDISCHARGE_EN"
+    },
+    "2": {
+     "name": "S",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "D",
+     "net": "/MCU/DISCHARGE_EN_12V"
+    }
+   },
+   "ref": "Q3",
+   "sheet": "MCU",
+   "value": "AO3400A"
+  },
+  "Q4": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3400A",
+   "pcb_value": "AO3400A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/MCU/nCHARGE_EN"
+    },
+    "2": {
+     "name": "S",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "D",
+     "net": "/MCU/CHARGE_EN_12V"
+    }
+   },
+   "ref": "Q4",
+   "sheet": "MCU",
+   "value": "AO3400A"
+  },
+  "Q5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3400A",
+   "pcb_value": "AO3400A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/MCU/nFAN_EN"
+    },
+    "2": {
+     "name": "S",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "D",
+     "net": "/MCU/FAN_EN_12V"
+    }
+   },
+   "ref": "Q5",
+   "sheet": "MCU",
+   "value": "AO3400A"
+  },
+  "Q6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3400A",
+   "pcb_value": "AO3400A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/MCU/CP_CTRL"
+    },
+    "2": {
+     "name": "S",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "D",
+     "net": "Net-(Q6-D)"
+    }
+   },
+   "ref": "Q6",
+   "sheet": "MCU",
+   "value": "AO3400A"
+  },
+  "Q7": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23",
+   "lcsc": "",
+   "lib_id": "Transistor_FET:AO3400A",
+   "pcb_value": "AO3400A",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "G",
+     "net": "/MCU/PROX_DETECT"
+    },
+    "2": {
+     "name": "S",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "D",
+     "net": "Net-(Q7-D)"
+    }
+   },
+   "ref": "Q7",
+   "sheet": "MCU",
+   "value": "AO3400A"
+  },
+  "R1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_1206",
+   "lcsc": "C17887",
+   "lib_id": "PCM_JLCPCB-Resistors:1206,300\u03a9",
+   "pcb_value": "300\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(JP3-A)"
+    },
+    "2": {
+     "name": "~",
+     "net": "CELL_TOP"
+    }
+   },
+   "ref": "R1",
+   "sheet": "BMS Chips",
+   "value": "300\u03a9"
+  },
+  "R10": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL8+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC8"
+    }
+   },
+   "ref": "R10",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R11": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL7+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC7"
+    }
+   },
+   "ref": "R11",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R12": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL6+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC6"
+    }
+   },
+   "ref": "R12",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R13": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL5+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC5"
+    }
+   },
+   "ref": "R13",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R14": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL4+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC4"
+    }
+   },
+   "ref": "R14",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R15": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL3+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC3"
+    }
+   },
+   "ref": "R15",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R16": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL2+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC2"
+    }
+   },
+   "ref": "R16",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R17": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL1+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC1"
+    }
+   },
+   "ref": "R17",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R18": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21189",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,0\u03a9",
+   "pcb_value": "0\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U5-RS)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R18",
+   "sheet": "Comms Interfaces",
+   "value": "0\u03a9"
+  },
+  "R19": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22797",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,13k\u03a9",
+   "pcb_value": "13k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D6-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R19",
+   "sheet": "Power",
+   "value": "13k\u03a9"
+  },
+  "R2": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22775",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL1-"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC0"
+    }
+   },
+   "ref": "R2",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R20": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL12+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB12"
+    }
+   },
+   "ref": "R20",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R21": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23260",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,9.1k\u03a9",
+   "pcb_value": "9.1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U2-FB)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R21",
+   "sheet": "Power",
+   "value": "9.1k\u03a9"
+  },
+  "R22": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL10+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB10"
+    }
+   },
+   "ref": "R22",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R23": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL8+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB8"
+    }
+   },
+   "ref": "R23",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R24": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL11+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB11"
+    }
+   },
+   "ref": "R24",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R25": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL9+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB9"
+    }
+   },
+   "ref": "R25",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R26": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL6+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB6"
+    }
+   },
+   "ref": "R26",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R27": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL4+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB4"
+    }
+   },
+   "ref": "R27",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R28": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL2+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB2"
+    }
+   },
+   "ref": "R28",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R29": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL1-"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB0"
+    }
+   },
+   "ref": "R29",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R3": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22797",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,13k\u03a9",
+   "pcb_value": "13k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Power/OVP_gate"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R3",
+   "sheet": "Power",
+   "value": "13k\u03a9"
+  },
+  "R30": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": null,
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL7+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB7"
+    }
+   },
+   "ref": "R30",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R31": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL5+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB5"
+    }
+   },
+   "ref": "R31",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R32": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL3+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB3"
+    }
+   },
+   "ref": "R32",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R33": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:R1210",
+   "lcsc": "C104957",
+   "lib_id": "easyeda2kicad:RTT12100JTP",
+   "pcb_value": "RTT12100JTP",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL1+"
+    },
+    "2": {
+     "name": "2",
+     "net": "CB1"
+    }
+   },
+   "ref": "R33",
+   "sheet": "Cell Balancing",
+   "value": "RTT12100JTP"
+  },
+  "R34": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25792",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,47k\u03a9",
+   "pcb_value": "47k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+5V"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U2-FB)"
+    }
+   },
+   "ref": "R34",
+   "sheet": "Power",
+   "value": "47k\u03a9"
+  },
+  "R35": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C11702",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMHP"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/COMHN"
+    }
+   },
+   "ref": "R35",
+   "sheet": "BMS Chips",
+   "value": "1k\u03a9"
+  },
+  "R36": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMHP"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C45-Pad1)"
+    }
+   },
+   "ref": "R36",
+   "sheet": "BMS Chips",
+   "value": "49.9\u03a9"
+  },
+  "R37": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMHN"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C46-Pad1)"
+    }
+   },
+   "ref": "R37",
+   "sheet": "BMS Chips",
+   "value": "49.9\u03a9"
+  },
+  "R38": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C11702",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMLP"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/COMLN"
+    }
+   },
+   "ref": "R38",
+   "sheet": "BMS Chips",
+   "value": "1k\u03a9"
+  },
+  "R39": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMLP"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C52-Pad1)"
+    }
+   },
+   "ref": "R39",
+   "sheet": "BMS Chips",
+   "value": "49.9\u03a9"
+  },
+  "R4": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:R0603",
+   "lcsc": "C23090",
+   "lib_id": "easyeda2kicad:0603WAF604JT5E",
+   "pcb_value": "0603WAF604JT5E",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/CAN_VREF"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Comms Interfaces/CANH"
+    }
+   },
+   "ref": "R4",
+   "sheet": "Comms Interfaces",
+   "value": "0603WAF604JT5E"
+  },
+  "R40": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/COMLN"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(C51-Pad1)"
+    }
+   },
+   "ref": "R40",
+   "sheet": "BMS Chips",
+   "value": "49.9\u03a9"
+  },
+  "R41": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25130",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,680\u03a9",
+   "pcb_value": "680\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/temp1"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/TSREF"
+    }
+   },
+   "ref": "R41",
+   "sheet": "BMS Chips",
+   "value": "680\u03a9"
+  },
+  "R42": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25130",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,680\u03a9",
+   "pcb_value": "680\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/temp2"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/TSREF"
+    }
+   },
+   "ref": "R42",
+   "sheet": "BMS Chips",
+   "value": "680\u03a9"
+  },
+  "R43": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25130",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,680\u03a9",
+   "pcb_value": "680\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/temp3"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/TSREF"
+    }
+   },
+   "ref": "R43",
+   "sheet": "BMS Chips",
+   "value": "680\u03a9"
+  },
+  "R44": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25130",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,680\u03a9",
+   "pcb_value": "680\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/temp4"
+    },
+    "2": {
+     "name": "~",
+     "net": "/BMS Chips/TSREF"
+    }
+   },
+   "ref": "R44",
+   "sheet": "BMS Chips",
+   "value": "680\u03a9"
+  },
+  "R45": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHP_mb"
+    }
+   },
+   "ref": "R45",
+   "sheet": "Comms Interfaces",
+   "value": "1k\u03a9"
+  },
+  "R46": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(D11-Pad1)"
+    }
+   },
+   "ref": "R46",
+   "sheet": "Comms Interfaces",
+   "value": "49.9\u03a9"
+  },
+  "R47": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMHP_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(D11-Pad3)"
+    }
+   },
+   "ref": "R47",
+   "sheet": "Comms Interfaces",
+   "value": "49.9\u03a9"
+  },
+  "R48": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLP_mb"
+    }
+   },
+   "ref": "R48",
+   "sheet": "Comms Interfaces",
+   "value": "1k\u03a9"
+  },
+  "R49": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLN_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(D12-Pad1)"
+    }
+   },
+   "ref": "R49",
+   "sheet": "Comms Interfaces",
+   "value": "49.9\u03a9"
+  },
+  "R5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:R0603",
+   "lcsc": "C23090",
+   "lib_id": "easyeda2kicad:0603WAF604JT5E",
+   "pcb_value": "0603WAF604JT5E",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/CANL"
+    },
+    "2": {
+     "name": "2",
+     "net": "/Comms Interfaces/CAN_VREF"
+    }
+   },
+   "ref": "R5",
+   "sheet": "Comms Interfaces",
+   "value": "0603WAF604JT5E"
+  },
+  "R50": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23185",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,49.9\u03a9",
+   "pcb_value": "49.9\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/Comms Interfaces/COMLP_mb"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(D12-Pad3)"
+    }
+   },
+   "ref": "R50",
+   "sheet": "Comms Interfaces",
+   "value": "49.9\u03a9"
+  },
+  "R51": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25803",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100k\u03a9",
+   "pcb_value": "100k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "SPI_RDY"
+    }
+   },
+   "ref": "R51",
+   "sheet": "Comms Interfaces",
+   "value": "100k\u03a9"
+  },
+  "R52": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25803",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100k\u03a9",
+   "pcb_value": "100k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "nFAULT"
+    }
+   },
+   "ref": "R52",
+   "sheet": "Comms Interfaces",
+   "value": "100k\u03a9"
+  },
+  "R53": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,0\u03a9",
+   "pcb_value": "0\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "SPI_RDY"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R53",
+   "sheet": "Comms Interfaces",
+   "value": "0\u03a9"
+  },
+  "R54": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22859",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,10\u03a9",
+   "pcb_value": "10\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(R54-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "+12V"
+    }
+   },
+   "ref": "R54",
+   "sheet": "Comms Interfaces",
+   "value": "10\u03a9"
+  },
+  "R55": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25804",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,10k\u03a9",
+   "pcb_value": "10k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "SPI1_MISO"
+    }
+   },
+   "ref": "R55",
+   "sheet": "Comms Interfaces",
+   "value": "10k\u03a9"
+  },
+  "R56": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25804",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,10k\u03a9",
+   "pcb_value": "10k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "SPI1_MOSI"
+    }
+   },
+   "ref": "R56",
+   "sheet": "Comms Interfaces",
+   "value": "10k\u03a9"
+  },
+  "R57": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25804",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,10k\u03a9",
+   "pcb_value": "10k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "SPI1_SCLK"
+    }
+   },
+   "ref": "R57",
+   "sheet": "Comms Interfaces",
+   "value": "10k\u03a9"
+  },
+  "R58": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C25804",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,10k\u03a9",
+   "pcb_value": "10k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "SPI1_nSS"
+    }
+   },
+   "ref": "R58",
+   "sheet": "Comms Interfaces",
+   "value": "10k\u03a9"
+  },
+  "R59": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25879",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,2.2k\u03a9",
+   "pcb_value": "2.2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(U2-EN)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R59",
+   "sheet": "Power",
+   "value": "2.2k\u03a9"
+  },
+  "R6": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL12+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC12"
+    }
+   },
+   "ref": "R6",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R60": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25744",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,10k\u03a9",
+   "pcb_value": "10k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U2-EN)"
+    }
+   },
+   "ref": "R60",
+   "sheet": "Power",
+   "value": "10k\u03a9"
+  },
+  "R61": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C4211",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,3k\u03a9",
+   "pcb_value": "3k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D8-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R61",
+   "sheet": "Power",
+   "value": "3k\u03a9"
+  },
+  "R62": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22975",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2k\u03a9",
+   "pcb_value": "2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_CHANNEL1"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE1"
+    }
+   },
+   "ref": "R62",
+   "sheet": "MCU",
+   "value": "2k\u03a9"
+  },
+  "R63": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C4211",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,3k\u03a9",
+   "pcb_value": "3k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE1"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R63",
+   "sheet": "MCU",
+   "value": "3k\u03a9"
+  },
+  "R64": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22975",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2k\u03a9",
+   "pcb_value": "2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_CHANNEL2"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE2"
+    }
+   },
+   "ref": "R64",
+   "sheet": "MCU",
+   "value": "2k\u03a9"
+  },
+  "R65": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C4211",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,3k\u03a9",
+   "pcb_value": "3k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CURR_SENSE2"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R65",
+   "sheet": "MCU",
+   "value": "3k\u03a9"
+  },
+  "R66": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C13167",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2.7k\u03a9",
+   "pcb_value": "2.7k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/PROX_DETECT"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R66",
+   "sheet": "MCU",
+   "value": "2.7k\u03a9"
+  },
+  "R67": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C23138",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,330\u03a9",
+   "pcb_value": "330\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/PROX_DETECT"
+    },
+    "2": {
+     "name": "~",
+     "net": "+5V"
+    }
+   },
+   "ref": "R67",
+   "sheet": "MCU",
+   "value": "330\u03a9"
+  },
+  "R68": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C13167",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2.7k\u03a9",
+   "pcb_value": "2.7k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CP_read"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R68",
+   "sheet": "MCU",
+   "value": "2.7k\u03a9"
+  },
+  "R69": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2.7k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/DISCHARGE_EN_12V"
+    }
+   },
+   "ref": "R69",
+   "sheet": "MCU",
+   "value": "2.7k\u03a9"
+  },
+  "R7": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL11+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC11"
+    }
+   },
+   "ref": "R7",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R70": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C4260",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,6.2k\u03a9",
+   "pcb_value": "6.2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CHARGE_ON_12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CHARGE_ON"
+    }
+   },
+   "ref": "R70",
+   "sheet": "MCU",
+   "value": "6.2k\u03a9"
+  },
+  "R71": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C4109",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,2k\u03a9",
+   "pcb_value": "2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CHARGE_ON"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R71",
+   "sheet": "MCU",
+   "value": "2k\u03a9"
+  },
+  "R72": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/nDISCHARGE_EN"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R72",
+   "sheet": "MCU",
+   "value": "1k\u03a9"
+  },
+  "R73": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/nCHARGE_EN"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R73",
+   "sheet": "MCU",
+   "value": "1k\u03a9"
+  },
+  "R74": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2.7k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CHARGE_EN_12V"
+    }
+   },
+   "ref": "R74",
+   "sheet": "MCU",
+   "value": "2.7k\u03a9"
+  },
+  "R75": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/nFAN_EN"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R75",
+   "sheet": "MCU",
+   "value": "1k\u03a9"
+  },
+  "R76": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,2.7k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/FAN_EN_12V"
+    }
+   },
+   "ref": "R76",
+   "sheet": "MCU",
+   "value": "2.7k\u03a9"
+  },
+  "R77": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder",
+   "lcsc": "",
+   "lib_id": "Device:R",
+   "pcb_value": "CMP2512-FX-1001ELF",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(JP4-A)"
+    },
+    "2": {
+     "name": "~",
+     "net": "CELL_TOP"
+    }
+   },
+   "ref": "R77",
+   "sheet": "BMS Chips",
+   "value": "CMP2512-FX-1001ELF"
+  },
+  "R78": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C22765",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1.2k\u03a9",
+   "pcb_value": "1.2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/MCU/CP_read"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(Q6-D)"
+    }
+   },
+   "ref": "R78",
+   "sheet": "MCU",
+   "value": "1.2k\u03a9"
+  },
+  "R79": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C4211",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,3k\u03a9",
+   "pcb_value": "3k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "Net-(D13-Pad1)"
+    },
+    "2": {
+     "name": "~",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "R79",
+   "sheet": "MCU",
+   "value": "3k\u03a9"
+  },
+  "R8": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL10+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC10"
+    }
+   },
+   "ref": "R8",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "R80": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C25105",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,33\u03a9",
+   "pcb_value": "33\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "/BMS Chips/BAT"
+    },
+    "2": {
+     "name": "~",
+     "net": "CELL_TOP"
+    }
+   },
+   "ref": "R80",
+   "sheet": "BMS Chips",
+   "value": "33\u03a9"
+  },
+  "R81": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C51721",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,3.9k\u03a9",
+   "pcb_value": "3.9k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+12V"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U7--)"
+    }
+   },
+   "ref": "R81",
+   "sheet": "MCU",
+   "value": "3.9k\u03a9"
+  },
+  "R82": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0402",
+   "lcsc": "C4109",
+   "lib_id": "PCM_JLCPCB-Resistors:0402,2k\u03a9",
+   "pcb_value": "2k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(U7--)"
+    }
+   },
+   "ref": "R82",
+   "sheet": "MCU",
+   "value": "2k\u03a9"
+  },
+  "R83": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "Net-(Q7-D)"
+    }
+   },
+   "ref": "R83",
+   "sheet": "MCU",
+   "value": "1k\u03a9"
+  },
+  "R84": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": "C21190",
+   "lib_id": "PCM_JLCPCB-Resistors:0603,1k\u03a9",
+   "pcb_value": "1k\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "~",
+     "net": "/MCU/CP_DETECT"
+    }
+   },
+   "ref": "R84",
+   "sheet": "MCU",
+   "value": "1k\u03a9"
+  },
+  "R9": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "PCM_JLCPCB:R_0603",
+   "lcsc": null,
+   "lib_id": "PCM_JLCPCB-Resistors:0603,100\u03a9",
+   "pcb_value": "100\u03a9",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "~",
+     "net": "CELL9+"
+    },
+    "2": {
+     "name": "~",
+     "net": "VC9"
+    }
+   },
+   "ref": "R9",
+   "sheet": "Cell Tap Filters",
+   "value": "100\u03a9"
+  },
+  "S1": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:SW_TS-1088-AR02016",
+   "lcsc": "C720477",
+   "lib_id": "PCM_JLCPCB-Connectors_Buttons:Tactile Button, 160gf, 12V, 50mA, 4.0mm",
+   "pcb_value": "Tactile Button, 160gf",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "A",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "B",
+     "net": "Net-(S1-B)"
+    }
+   },
+   "ref": "S1",
+   "sheet": "MCU",
+   "value": "Tactile Button, 160gf"
+  },
+  "TP1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CELL_TOP"
+    }
+   },
+   "ref": "TP1",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP10": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "SPI1_SCLK"
+    }
+   },
+   "ref": "TP10",
+   "sheet": "MCU",
+   "value": "TestPoint_Small"
+  },
+  "TP11": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CAN1_RX"
+    }
+   },
+   "ref": "TP11",
+   "sheet": "MCU",
+   "value": "TestPoint_Small"
+  },
+  "TP12": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "CAN1_TX"
+    }
+   },
+   "ref": "TP12",
+   "sheet": "MCU",
+   "value": "TestPoint_Small"
+  },
+  "TP13": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(U2-FB)"
+    }
+   },
+   "ref": "TP13",
+   "sheet": "Power",
+   "value": "TestPoint_Small"
+  },
+  "TP19": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/CANH"
+    }
+   },
+   "ref": "TP19",
+   "sheet": "Comms Interfaces",
+   "value": "TestPoint_Small"
+  },
+  "TP20": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/Comms Interfaces/CANL"
+    }
+   },
+   "ref": "TP20",
+   "sheet": "Comms Interfaces",
+   "value": "TestPoint_Small"
+  },
+  "TP21": {
+   "domain": null,
+   "footprint": "TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": null,
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": null,
+     "net": "Net-(C45-Pad1)"
+    }
+   },
+   "ref": "TP21",
+   "sheet": null,
+   "value": "TestPoint_Small"
+  },
+  "TP22": {
+   "domain": null,
+   "footprint": "TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": null,
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": null,
+     "net": "Net-(C46-Pad1)"
+    }
+   },
+   "ref": "TP22",
+   "sheet": null,
+   "value": "TestPoint_Small"
+  },
+  "TP23": {
+   "domain": null,
+   "footprint": "TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": null,
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": null,
+     "net": "Net-(C52-Pad1)"
+    }
+   },
+   "ref": "TP23",
+   "sheet": null,
+   "value": "TestPoint_Small"
+  },
+  "TP24": {
+   "domain": null,
+   "footprint": "TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": null,
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": null,
+     "net": "Net-(C51-Pad1)"
+    }
+   },
+   "ref": "TP24",
+   "sheet": null,
+   "value": "TestPoint_Small"
+  },
+  "TP25": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "GND"
+    }
+   },
+   "ref": "TP25",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP26": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "GND"
+    }
+   },
+   "ref": "TP26",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP27": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "GND"
+    }
+   },
+   "ref": "TP27",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP28": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "GND"
+    }
+   },
+   "ref": "TP28",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP29": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "/BMS Chips/LDOIN"
+    }
+   },
+   "ref": "TP29",
+   "sheet": "BMS Chips",
+   "value": "TestPoint_Small"
+  },
+  "TP5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "+12V"
+    }
+   },
+   "ref": "TP5",
+   "sheet": "Power",
+   "value": "TestPoint_Small"
+  },
+  "TP6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "+3.3V"
+    }
+   },
+   "ref": "TP6",
+   "sheet": "Power",
+   "value": "TestPoint_Small"
+  },
+  "TP7": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "+5V"
+    }
+   },
+   "ref": "TP7",
+   "sheet": "Power",
+   "value": "TestPoint_Small"
+  },
+  "TP8": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "SPI1_MOSI"
+    }
+   },
+   "ref": "TP8",
+   "sheet": "MCU",
+   "value": "TestPoint_Small"
+  },
+  "TP9": {
+   "domain": "LV (Motherboard)",
+   "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+   "lcsc": "",
+   "lib_id": "Connector:TestPoint_Small",
+   "pcb_value": "TestPoint_Small",
+   "pin_count": 1,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "SPI1_MISO"
+    }
+   },
+   "ref": "TP9",
+   "sheet": "MCU",
+   "value": "TestPoint_Small"
+  },
+  "U1": {
+   "domain": "HV (Daughterboard)",
+   "footprint": "easyeda2kicad:HTQFP-64_L10.0-W10.0-P0.50-LS12.0-BL-EP5.9",
+   "lcsc": "",
+   "lib_id": "BQ79616PAPRQ1:BQ79616PAPRQ1",
+   "pcb_value": "BQ79616PAPRQ1",
+   "pin_count": 65,
+   "pins": {
+    "1": {
+     "name": "BAT",
+     "net": "/BMS Chips/BAT"
+    },
+    "10": {
+     "name": "CB12",
+     "net": "CB12"
+    },
+    "11": {
+     "name": "VC12",
+     "net": "VC12"
+    },
+    "12": {
+     "name": "CB11",
+     "net": "CB11"
+    },
+    "13": {
+     "name": "VC11",
+     "net": "VC11"
+    },
+    "14": {
+     "name": "CB10",
+     "net": "CB10"
+    },
+    "15": {
+     "name": "VC10",
+     "net": "VC10"
+    },
+    "16": {
+     "name": "CB9",
+     "net": "CB9"
+    },
+    "17": {
+     "name": "VC9",
+     "net": "VC9"
+    },
+    "18": {
+     "name": "CB8",
+     "net": "CB8"
+    },
+    "19": {
+     "name": "VC8",
+     "net": "VC8"
+    },
+    "2": {
+     "name": "CB16",
+     "net": "CB16"
+    },
+    "20": {
+     "name": "CB7",
+     "net": "CB7"
+    },
+    "21": {
+     "name": "VC7",
+     "net": "VC7"
+    },
+    "22": {
+     "name": "CB6",
+     "net": "CB6"
+    },
+    "23": {
+     "name": "VC6",
+     "net": "VC6"
+    },
+    "24": {
+     "name": "CB5",
+     "net": "CB5"
+    },
+    "25": {
+     "name": "VC5",
+     "net": "VC5"
+    },
+    "26": {
+     "name": "CB4",
+     "net": "CB4"
+    },
+    "27": {
+     "name": "VC4",
+     "net": "VC4"
+    },
+    "28": {
+     "name": "CB3",
+     "net": "CB3"
+    },
+    "29": {
+     "name": "VC3",
+     "net": "VC3"
+    },
+    "3": {
+     "name": "VC16",
+     "net": "VC16"
+    },
+    "30": {
+     "name": "CB2",
+     "net": "CB2"
+    },
+    "31": {
+     "name": "VC2",
+     "net": "VC2"
+    },
+    "32": {
+     "name": "CB1",
+     "net": "CB1"
+    },
+    "33": {
+     "name": "VC1",
+     "net": "VC1"
+    },
+    "34": {
+     "name": "CB0",
+     "net": "CB0"
+    },
+    "35": {
+     "name": "VC0",
+     "net": "VC0"
+    },
+    "36": {
+     "name": "REFHM",
+     "net": "GND"
+    },
+    "37": {
+     "name": "REFHP",
+     "net": "Net-(U1-REFHP)"
+    },
+    "38": {
+     "name": "AVDD",
+     "net": "Net-(U1-AVDD)"
+    },
+    "39": {
+     "name": "AVSS",
+     "net": "GND"
+    },
+    "4": {
+     "name": "CB15",
+     "net": "CB15"
+    },
+    "40": {
+     "name": "COMLP",
+     "net": "/BMS Chips/COMLP"
+    },
+    "41": {
+     "name": "COMLN",
+     "net": "/BMS Chips/COMLN"
+    },
+    "42": {
+     "name": "COMHN",
+     "net": "/BMS Chips/COMHN"
+    },
+    "43": {
+     "name": "COMHP",
+     "net": "/BMS Chips/COMHP"
+    },
+    "44": {
+     "name": "NEG5V",
+     "net": "Net-(U1-NEG5V)"
+    },
+    "45": {
+     "name": "CVDD",
+     "net": "/BMS Chips/CVDD"
+    },
+    "46": {
+     "name": "CVSS",
+     "net": "GND"
+    },
+    "47": {
+     "name": "LDOIN",
+     "net": "/BMS Chips/LDOIN"
+    },
+    "48": {
+     "name": "NPNB",
+     "net": "/BMS Chips/NPNB"
+    },
+    "49": {
+     "name": "DVDD",
+     "net": "Net-(U1-DVDD)"
+    },
+    "5": {
+     "name": "VC15",
+     "net": "VC15"
+    },
+    "50": {
+     "name": "DVSS",
+     "net": "GND"
+    },
+    "51": {
+     "name": "TSREF",
+     "net": "/BMS Chips/TSREF"
+    },
+    "52": {
+     "name": "RX",
+     "net": "/BMS Chips/CVDD"
+    },
+    "53": {
+     "name": "TX",
+     "net": "unconnected-(U1-TX-Pad53)"
+    },
+    "54": {
+     "name": "GPIO8",
+     "net": "unconnected-(U1-GPIO8-Pad54)"
+    },
+    "55": {
+     "name": "GPIO7",
+     "net": "unconnected-(U1-GPIO7-Pad55)"
+    },
+    "56": {
+     "name": "GPIO6",
+     "net": "unconnected-(U1-GPIO6-Pad56)"
+    },
+    "57": {
+     "name": "GPIO5",
+     "net": "unconnected-(U1-GPIO5-Pad57)"
+    },
+    "58": {
+     "name": "GPIO4",
+     "net": "/BMS Chips/temp4"
+    },
+    "59": {
+     "name": "GPIO3",
+     "net": "/BMS Chips/temp3"
+    },
+    "6": {
+     "name": "CB14",
+     "net": "CB14"
+    },
+    "60": {
+     "name": "GPIO2",
+     "net": "/BMS Chips/temp2"
+    },
+    "61": {
+     "name": "GPIO1",
+     "net": "/BMS Chips/temp1"
+    },
+    "62": {
+     "name": "FAULT_N",
+     "net": "unconnected-(U1-FAULT_N-Pad62)"
+    },
+    "63": {
+     "name": "BBN",
+     "net": "unconnected-(U1-BBN-Pad63)"
+    },
+    "64": {
+     "name": "BBP",
+     "net": "unconnected-(U1-BBP-Pad64)"
+    },
+    "65": {
+     "name": "PAD",
+     "net": "GND"
+    },
+    "7": {
+     "name": "VC14",
+     "net": "VC14"
+    },
+    "8": {
+     "name": "CB13",
+     "net": "CB13"
+    },
+    "9": {
+     "name": "VC13",
+     "net": "VC13"
+    }
+   },
+   "ref": "U1",
+   "sheet": "BMS Chips",
+   "value": "BQ79616PAPRQ1"
+  },
+  "U2": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-583-8",
+   "lcsc": "",
+   "lib_id": "Regulator_Switching:TPS563300",
+   "pcb_value": "TPS563300",
+   "pin_count": 8,
+   "pins": {
+    "1": {
+     "name": "NC",
+     "net": "unconnected-(U2-NC-Pad1)"
+    },
+    "2": {
+     "name": "EN",
+     "net": "Net-(U2-EN)"
+    },
+    "3": {
+     "name": "VIN",
+     "net": "+12V"
+    },
+    "4": {
+     "name": "GND",
+     "net": "LV_GND"
+    },
+    "5": {
+     "name": "SW",
+     "net": "/Power/SW"
+    },
+    "6": {
+     "name": "BST",
+     "net": "Net-(U2-BST)"
+    },
+    "7": {
+     "name": "NC",
+     "net": "unconnected-(U2-NC-Pad7)"
+    },
+    "8": {
+     "name": "FB",
+     "net": "Net-(U2-FB)"
+    }
+   },
+   "ref": "U2",
+   "sheet": "Power",
+   "value": "TPS563300"
+  },
+  "U3": {
+   "domain": "LV (Motherboard)",
+   "footprint": "easyeda2kicad:SOIC_9600PWQ1_TEX",
+   "lcsc": "",
+   "lib_id": "bq79600:PBQ79600PWQ1",
+   "pcb_value": "PBQ79600PWQ1",
+   "pin_count": 16,
+   "pins": {
+    "1": {
+     "name": "1",
+     "net": "Net-(C60-Pad1)"
+    },
+    "10": {
+     "name": "10",
+     "net": "/Comms Interfaces/COMLP_mb"
+    },
+    "11": {
+     "name": "11",
+     "net": "/Comms Interfaces/COMLN_mb"
+    },
+    "12": {
+     "name": "12",
+     "net": "/Comms Interfaces/COMHP_mb"
+    },
+    "13": {
+     "name": "13",
+     "net": "/Comms Interfaces/COMHN_mb"
+    },
+    "14": {
+     "name": "14",
+     "net": "Net-(C59-Pad1)"
+    },
+    "15": {
+     "name": "15",
+     "net": "Net-(R54-Pad1)"
+    },
+    "16": {
+     "name": "16",
+     "net": "Net-(R54-Pad1)"
+    },
+    "2": {
+     "name": "2",
+     "net": "nFAULT"
+    },
+    "3": {
+     "name": "3",
+     "net": "+3.3V"
+    },
+    "4": {
+     "name": "4",
+     "net": "SPI1_MOSI"
+    },
+    "5": {
+     "name": "5",
+     "net": "SPI1_MISO"
+    },
+    "6": {
+     "name": "6",
+     "net": "SPI1_SCLK"
+    },
+    "7": {
+     "name": "7",
+     "net": "SPI1_nSS"
+    },
+    "8": {
+     "name": "8",
+     "net": "SPI_RDY"
+    },
+    "9": {
+     "name": "9",
+     "net": "LV_GND"
+    }
+   },
+   "ref": "U3",
+   "sheet": "Comms Interfaces",
+   "value": "PBQ79600PWQ1"
+  },
+  "U4": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+   "lcsc": "",
+   "lib_id": "Regulator_Linear:AMS1117-3.3",
+   "pcb_value": "AMS1117-3.3",
+   "pin_count": 3,
+   "pins": {
+    "1": {
+     "name": "GND",
+     "net": "LV_GND"
+    },
+    "2": {
+     "name": "VO",
+     "net": "+3.3V"
+    },
+    "3": {
+     "name": "VI",
+     "net": "+5V"
+    }
+   },
+   "ref": "U4",
+   "sheet": "Power",
+   "value": "AMS1117-3.3"
+  },
+  "U5": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+   "lcsc": "C12084",
+   "lib_id": "PCM_JLCPCB-Interface:Transceiver, CAN, SN65HVD230DR",
+   "pcb_value": "SN65HVD230DR",
+   "pin_count": 8,
+   "pins": {
+    "1": {
+     "name": "D",
+     "net": "CAN1_TX"
+    },
+    "2": {
+     "name": "GND",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "VCC",
+     "net": "+3.3V"
+    },
+    "4": {
+     "name": "R",
+     "net": "CAN1_RX"
+    },
+    "5": {
+     "name": "VREF",
+     "net": "/Comms Interfaces/CAN_VREF"
+    },
+    "6": {
+     "name": "CANL",
+     "net": "/Comms Interfaces/CANL"
+    },
+    "7": {
+     "name": "CANH",
+     "net": "/Comms Interfaces/CANH"
+    },
+    "8": {
+     "name": "RS",
+     "net": "Net-(U5-RS)"
+    }
+   },
+   "ref": "U5",
+   "sheet": "Comms Interfaces",
+   "value": "SN65HVD230DR"
+  },
+  "U6": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+   "lcsc": "",
+   "lib_id": "MCU_ST_STM32F4:STM32F405RGTx",
+   "pcb_value": "STM32F405RGTx",
+   "pin_count": 64,
+   "pins": {
+    "1": {
+     "name": "VBAT",
+     "net": "unconnected-(U6-VBAT-Pad1)"
+    },
+    "10": {
+     "name": "PC2",
+     "net": "unconnected-(U6-PC2-Pad10)"
+    },
+    "11": {
+     "name": "PC3",
+     "net": "unconnected-(U6-PC3-Pad11)"
+    },
+    "12": {
+     "name": "VSSA",
+     "net": "LV_GND"
+    },
+    "13": {
+     "name": "VDDA",
+     "net": "+3.3V"
+    },
+    "14": {
+     "name": "PA0",
+     "net": "unconnected-(U6-PA0-Pad14)"
+    },
+    "15": {
+     "name": "PA1",
+     "net": "/MCU/CURR_SENSE1"
+    },
+    "16": {
+     "name": "PA2",
+     "net": "/MCU/CURR_SENSE2"
+    },
+    "17": {
+     "name": "PA3",
+     "net": "SPI_RDY"
+    },
+    "18": {
+     "name": "VSS",
+     "net": "LV_GND"
+    },
+    "19": {
+     "name": "VDD",
+     "net": "+3.3V"
+    },
+    "2": {
+     "name": "PC13",
+     "net": "unconnected-(U6-PC13-Pad2)"
+    },
+    "20": {
+     "name": "PA4",
+     "net": "SPI1_nSS"
+    },
+    "21": {
+     "name": "PA5",
+     "net": "SPI1_SCLK"
+    },
+    "22": {
+     "name": "PA6",
+     "net": "SPI1_MISO"
+    },
+    "23": {
+     "name": "PA7",
+     "net": "SPI1_MOSI"
+    },
+    "24": {
+     "name": "PC4",
+     "net": "unconnected-(U6-PC4-Pad24)"
+    },
+    "25": {
+     "name": "PC5",
+     "net": "unconnected-(U6-PC5-Pad25)"
+    },
+    "26": {
+     "name": "PB0",
+     "net": "Net-(U6-PB0)"
+    },
+    "27": {
+     "name": "PB1",
+     "net": "/MCU/CP_CTRL"
+    },
+    "28": {
+     "name": "PB2",
+     "net": "unconnected-(U6-PB2-Pad28)"
+    },
+    "29": {
+     "name": "PB10",
+     "net": "unconnected-(U6-PB10-Pad29)"
+    },
+    "3": {
+     "name": "PC14",
+     "net": "unconnected-(U6-PC14-Pad3)"
+    },
+    "30": {
+     "name": "PB11",
+     "net": "unconnected-(U6-PB11-Pad30)"
+    },
+    "31": {
+     "name": "VCAP_1",
+     "net": "Net-(U6-VCAP_1)"
+    },
+    "32": {
+     "name": "VDD",
+     "net": "+3.3V"
+    },
+    "33": {
+     "name": "PB12",
+     "net": "unconnected-(U6-PB12-Pad33)"
+    },
+    "34": {
+     "name": "PB13",
+     "net": "unconnected-(U6-PB13-Pad34)"
+    },
+    "35": {
+     "name": "PB14",
+     "net": "unconnected-(U6-PB14-Pad35)"
+    },
+    "36": {
+     "name": "PB15",
+     "net": "unconnected-(U6-PB15-Pad36)"
+    },
+    "37": {
+     "name": "PC6",
+     "net": "unconnected-(U6-PC6-Pad37)"
+    },
+    "38": {
+     "name": "PC7",
+     "net": "unconnected-(U6-PC7-Pad38)"
+    },
+    "39": {
+     "name": "PC8",
+     "net": "unconnected-(U6-PC8-Pad39)"
+    },
+    "4": {
+     "name": "PC15",
+     "net": "unconnected-(U6-PC15-Pad4)"
+    },
+    "40": {
+     "name": "PC9",
+     "net": "unconnected-(U6-PC9-Pad40)"
+    },
+    "41": {
+     "name": "PA8",
+     "net": "nFAULT"
+    },
+    "42": {
+     "name": "PA9",
+     "net": "USART1_TX"
+    },
+    "43": {
+     "name": "PA10",
+     "net": "USART1_RX"
+    },
+    "44": {
+     "name": "PA11",
+     "net": "CAN1_RX"
+    },
+    "45": {
+     "name": "PA12",
+     "net": "CAN1_TX"
+    },
+    "46": {
+     "name": "PA13",
+     "net": "/MCU/SWDIO"
+    },
+    "47": {
+     "name": "VCAP_2",
+     "net": "Net-(U6-VCAP_2)"
+    },
+    "48": {
+     "name": "VDD",
+     "net": "+3.3V"
+    },
+    "49": {
+     "name": "PA14",
+     "net": "/MCU/SWCLK"
+    },
+    "5": {
+     "name": "PH0",
+     "net": "Net-(U6-PH0)"
+    },
+    "50": {
+     "name": "PA15",
+     "net": "Net-(Q7-D)"
+    },
+    "51": {
+     "name": "PC10",
+     "net": "/MCU/CP_DETECT"
+    },
+    "52": {
+     "name": "PC11",
+     "net": "unconnected-(U6-PC11-Pad52)"
+    },
+    "53": {
+     "name": "PC12",
+     "net": "unconnected-(U6-PC12-Pad53)"
+    },
+    "54": {
+     "name": "PD2",
+     "net": "unconnected-(U6-PD2-Pad54)"
+    },
+    "55": {
+     "name": "PB3",
+     "net": "/MCU/nDISCHARGE_EN"
+    },
+    "56": {
+     "name": "PB4",
+     "net": "/MCU/nCHARGE_EN"
+    },
+    "57": {
+     "name": "PB5",
+     "net": "/MCU/CHARGE_ON"
+    },
+    "58": {
+     "name": "PB6",
+     "net": "/MCU/nFAN_EN"
+    },
+    "59": {
+     "name": "PB7",
+     "net": "unconnected-(U6-PB7-Pad59)"
+    },
+    "6": {
+     "name": "PH1",
+     "net": "Net-(U6-PH1)"
+    },
+    "60": {
+     "name": "BOOT0",
+     "net": "Net-(J4-Pin_2)"
+    },
+    "61": {
+     "name": "PB8",
+     "net": "unconnected-(U6-PB8-Pad61)"
+    },
+    "62": {
+     "name": "PB9",
+     "net": "unconnected-(U6-PB9-Pad62)"
+    },
+    "63": {
+     "name": "VSS",
+     "net": "LV_GND"
+    },
+    "64": {
+     "name": "VDD",
+     "net": "+3.3V"
+    },
+    "7": {
+     "name": "NRST",
+     "net": "Net-(S1-B)"
+    },
+    "8": {
+     "name": "PC0",
+     "net": "unconnected-(U6-PC0-Pad8)"
+    },
+    "9": {
+     "name": "PC1",
+     "net": "unconnected-(U6-PC1-Pad9)"
+    }
+   },
+   "ref": "U6",
+   "sheet": "MCU",
+   "value": "STM32F405RGTx"
+  },
+  "U7": {
+   "domain": "LV (Motherboard)",
+   "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+   "lcsc": "",
+   "lib_id": "Comparator:LM397",
+   "pcb_value": "LM397",
+   "pin_count": 5,
+   "pins": {
+    "1": {
+     "name": "-",
+     "net": "Net-(U7--)"
+    },
+    "2": {
+     "name": "V-",
+     "net": "LV_GND"
+    },
+    "3": {
+     "name": "+",
+     "net": "/MCU/CP_read"
+    },
+    "4": {
+     "name": "~",
+     "net": "/MCU/CP_DETECT"
+    },
+    "5": {
+     "name": "V+",
+     "net": "+12V"
+    }
+   },
+   "ref": "U7",
+   "sheet": "MCU",
+   "value": "LM397"
+  },
+  "X1": {
+   "domain": "LV (Motherboard)",
+   "footprint": "PCM_JLCPCB:CRYSTAL-SMD_L5.0-W3.2",
+   "lcsc": "C115962",
+   "lib_id": "PCM_JLCPCB-Crystals:Crystal, 8MHz, 20pF, \u00b110ppm",
+   "pcb_value": "X50328MSB2GI",
+   "pin_count": 2,
+   "pins": {
+    "1": {
+     "name": "",
+     "net": "Net-(U6-PH1)"
+    },
+    "2": {
+     "name": "",
+     "net": "Net-(U6-PH0)"
+    }
+   },
+   "ref": "X1",
+   "sheet": "MCU",
+   "value": "X50328MSB2GI"
+  }
+ },
+ "counts": {
+  "components": 246,
+  "ipc_components": 246,
+  "ipc_nets": 204,
+  "nets": 204
+ },
+ "nets": {
+  "+12V": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "+12V",
+   "members": [
+    "C10.1",
+    "C58.1",
+    "C61.1",
+    "C86.1",
+    "D6.2",
+    "D9.1",
+    "Q2.2",
+    "R54.2",
+    "R60.1",
+    "R69.1",
+    "R74.1",
+    "R76.1",
+    "R81.1",
+    "TP5.1",
+    "U2.3",
+    "U7.5"
+   ],
+   "name": "+12V",
+   "pin_count": 16,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU",
+    "Power"
+   ]
+  },
+  "+3.3V": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "+3.3V",
+   "members": [
+    "C12.1",
+    "C29.1",
+    "C42.1",
+    "C62.1",
+    "C63.1",
+    "C64.1",
+    "C65.1",
+    "C66.1",
+    "C69.1",
+    "C85.1",
+    "D8.2",
+    "J1.1",
+    "J4.1",
+    "R51.1",
+    "R52.1",
+    "R55.1",
+    "R56.1",
+    "R58.1",
+    "R83.1",
+    "R84.1",
+    "TP6.1",
+    "U3.3",
+    "U4.2",
+    "U5.3",
+    "U6.13",
+    "U6.19",
+    "U6.32",
+    "U6.48",
+    "U6.64"
+   ],
+   "name": "+3.3V",
+   "pin_count": 29,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU",
+    "Power"
+   ]
+  },
+  "+5V": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "+5V",
+   "members": [
+    "C55.1",
+    "C67.1",
+    "C68.1",
+    "L5.1",
+    "R34.1",
+    "R67.2",
+    "TP7.1",
+    "U4.3"
+   ],
+   "name": "+5V",
+   "pin_count": 8,
+   "sheets": [
+    "MCU",
+    "Power"
+   ]
+  },
+  "/BMS Chips/BAT": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/BMS?CHIPS/BAT",
+   "members": [
+    "C24.1",
+    "C25.2",
+    "R80.1",
+    "U1.1"
+   ],
+   "name": "/BMS Chips/BAT",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMHN": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/COMHN",
+   "members": [
+    "C44.1",
+    "R35.2",
+    "R37.1",
+    "U1.42"
+   ],
+   "name": "/BMS Chips/COMHN",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMHN_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "HIPS/COMHN_EXT",
+   "members": [
+    "CN2.2",
+    "D1.4",
+    "L1.4"
+   ],
+   "name": "/BMS Chips/COMHN_ext",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMHP": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/COMHP",
+   "members": [
+    "C43.1",
+    "R35.1",
+    "R36.1",
+    "U1.43"
+   ],
+   "name": "/BMS Chips/COMHP",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMHP_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "HIPS/COMHP_EXT",
+   "members": [
+    "CN2.1",
+    "D1.6",
+    "L1.3"
+   ],
+   "name": "/BMS Chips/COMHP_ext",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMLN": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/COMLN",
+   "members": [
+    "C49.1",
+    "R38.2",
+    "R40.1",
+    "U1.41"
+   ],
+   "name": "/BMS Chips/COMLN",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMLN_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "HIPS/COMLN_EXT",
+   "members": [
+    "CN3.2",
+    "D2.6",
+    "L2.3"
+   ],
+   "name": "/BMS Chips/COMLN_ext",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMLP": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/COMLP",
+   "members": [
+    "C48.1",
+    "R38.1",
+    "R39.1",
+    "U1.40"
+   ],
+   "name": "/BMS Chips/COMLP",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/COMLP_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "HIPS/COMLP_EXT",
+   "members": [
+    "CN3.1",
+    "D2.4",
+    "L2.4"
+   ],
+   "name": "/BMS Chips/COMLP_ext",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/CVDD": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "BMS?CHIPS/CVDD",
+   "members": [
+    "C1.2",
+    "U1.45",
+    "U1.52"
+   ],
+   "name": "/BMS Chips/CVDD",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/LDOIN": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/LDOIN",
+   "members": [
+    "C6.2",
+    "Q1.3",
+    "TP29.1",
+    "U1.47"
+   ],
+   "name": "/BMS Chips/LDOIN",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/NPNB": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "BMS?CHIPS/NPNB",
+   "members": [
+    "Q1.1",
+    "U1.48"
+   ],
+   "name": "/BMS Chips/NPNB",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/TSREF": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/TSREF",
+   "members": [
+    "C5.2",
+    "CN7.1",
+    "R41.2",
+    "R42.2",
+    "R43.2",
+    "R44.2",
+    "U1.51"
+   ],
+   "name": "/BMS Chips/TSREF",
+   "pin_count": 7,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/collector": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "HIPS/COLLECTOR",
+   "members": [
+    "C77.1",
+    "JP3.2",
+    "JP4.2",
+    "Q1.2"
+   ],
+   "name": "/BMS Chips/collector",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/temp1": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MS?CHIPS/TEMP1",
+   "members": [
+    "CN7.2",
+    "R41.1",
+    "U1.61"
+   ],
+   "name": "/BMS Chips/temp1",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/temp2": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "MS?CHIPS/TEMP2",
+   "members": [
+    "CN7.3",
+    "R42.1",
+    "U1.60"
+   ],
+   "name": "/BMS Chips/temp2",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/temp3": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "MS?CHIPS/TEMP3",
+   "members": [
+    "CN7.4",
+    "R43.1",
+    "U1.59"
+   ],
+   "name": "/BMS Chips/temp3",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/BMS Chips/temp4": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "MS?CHIPS/TEMP4",
+   "members": [
+    "CN7.5",
+    "R44.1",
+    "U1.58"
+   ],
+   "name": "/BMS Chips/temp4",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "/Comms Interfaces/CANH": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "NTERFACES/CANH",
+   "members": [
+    "D10.2",
+    "L6.1",
+    "R4.2",
+    "TP19.1",
+    "U5.7"
+   ],
+   "name": "/Comms Interfaces/CANH",
+   "pin_count": 5,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/CANL": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "NTERFACES/CANL",
+   "members": [
+    "D10.1",
+    "L6.2",
+    "R5.1",
+    "TP20.1",
+    "U5.6"
+   ],
+   "name": "/Comms Interfaces/CANL",
+   "pin_count": 5,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/CAN_VREF": {
+   "class": "daisy-chain",
+   "has_vias": true,
+   "ipc_name": "FACES/CAN_VREF",
+   "members": [
+    "C11.2",
+    "R4.1",
+    "R5.2",
+    "U5.5"
+   ],
+   "name": "/Comms Interfaces/CAN_VREF",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMHN_mb": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "FACES/COMHN_MB",
+   "members": [
+    "C53.1",
+    "R45.1",
+    "R46.1",
+    "U3.13"
+   ],
+   "name": "/Comms Interfaces/COMHN_mb",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMHN_mb_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "S/COMHN_MB_EXT",
+   "members": [
+    "CN4.2",
+    "D11.6"
+   ],
+   "name": "/Comms Interfaces/COMHN_mb_ext",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMHP_mb": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "FACES/COMHP_MB",
+   "members": [
+    "C54.1",
+    "R45.2",
+    "R47.1",
+    "U3.12"
+   ],
+   "name": "/Comms Interfaces/COMHP_mb",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMHP_mb_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "S/COMHP_MB_EXT",
+   "members": [
+    "CN4.1",
+    "D11.4"
+   ],
+   "name": "/Comms Interfaces/COMHP_mb_ext",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMLN_mb": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "FACES/COMLN_MB",
+   "members": [
+    "C56.1",
+    "R48.1",
+    "R49.1",
+    "U3.11"
+   ],
+   "name": "/Comms Interfaces/COMLN_mb",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMLN_mb_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "S/COMLN_MB_EXT",
+   "members": [
+    "CN5.2",
+    "D12.6"
+   ],
+   "name": "/Comms Interfaces/COMLN_mb_ext",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMLP_mb": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "FACES/COMLP_MB",
+   "members": [
+    "C57.1",
+    "R48.2",
+    "R50.1",
+    "U3.10"
+   ],
+   "name": "/Comms Interfaces/COMLP_mb",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/Comms Interfaces/COMLP_mb_ext": {
+   "class": "daisy-chain",
+   "has_vias": false,
+   "ipc_name": "S/COMLP_MB_EXT",
+   "members": [
+    "CN5.1",
+    "D12.4"
+   ],
+   "name": "/Comms Interfaces/COMLP_mb_ext",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "/MCU/CHARGE_EN_12V": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/CHARGE_EN_12V",
+   "members": [
+    "CN9.6",
+    "D16.2",
+    "Q4.3",
+    "R74.2"
+   ],
+   "name": "/MCU/CHARGE_EN_12V",
+   "pin_count": 4,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CHARGE_ON": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/MCU/CHARGE_ON",
+   "members": [
+    "R70.2",
+    "R71.1",
+    "U6.57"
+   ],
+   "name": "/MCU/CHARGE_ON",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CHARGE_ON_12V": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/CHARGE_ON_12V",
+   "members": [
+    "CN9.7",
+    "R70.1"
+   ],
+   "name": "/MCU/CHARGE_ON_12V",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CP_CTRL": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/MCU/CP_CTRL",
+   "members": [
+    "Q6.1",
+    "U6.27"
+   ],
+   "name": "/MCU/CP_CTRL",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CP_DETECT": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/MCU/CP_DETECT",
+   "members": [
+    "R84.2",
+    "U6.51",
+    "U7.4"
+   ],
+   "name": "/MCU/CP_DETECT",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CP_read": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/MCU/CP_READ",
+   "members": [
+    "D14.1",
+    "R68.1",
+    "R78.1",
+    "U7.3"
+   ],
+   "name": "/MCU/CP_read",
+   "pin_count": 4,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CTRL_PILOT": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MCU/CTRL_PILOT",
+   "members": [
+    "CN9.4",
+    "D14.2",
+    "D18.2"
+   ],
+   "name": "/MCU/CTRL_PILOT",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CURR_CHANNEL1": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/CURR_CHANNEL1",
+   "members": [
+    "CN9.1",
+    "R62.1"
+   ],
+   "name": "/MCU/CURR_CHANNEL1",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CURR_CHANNEL2": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/CURR_CHANNEL2",
+   "members": [
+    "CN9.2",
+    "R64.1"
+   ],
+   "name": "/MCU/CURR_CHANNEL2",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CURR_SENSE1": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "CU/CURR_SENSE1",
+   "members": [
+    "C73.1",
+    "C74.1",
+    "R62.2",
+    "R63.1",
+    "U6.15"
+   ],
+   "name": "/MCU/CURR_SENSE1",
+   "pin_count": 5,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/CURR_SENSE2": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "CU/CURR_SENSE2",
+   "members": [
+    "C75.1",
+    "C76.1",
+    "R64.2",
+    "R65.1",
+    "U6.16"
+   ],
+   "name": "/MCU/CURR_SENSE2",
+   "pin_count": 5,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/DISCHARGE_EN_12V": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "SCHARGE_EN_12V",
+   "members": [
+    "CN9.5",
+    "D15.2",
+    "Q3.3",
+    "R69.2"
+   ],
+   "name": "/MCU/DISCHARGE_EN_12V",
+   "pin_count": 4,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/FAN_EN_12V": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MCU/FAN_EN_12V",
+   "members": [
+    "CN9.8",
+    "D17.2",
+    "Q5.3",
+    "R76.2"
+   ],
+   "name": "/MCU/FAN_EN_12V",
+   "pin_count": 4,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/PROX_DETECT": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "CU/PROX_DETECT",
+   "members": [
+    "CN9.3",
+    "D19.2",
+    "Q7.1",
+    "R66.1",
+    "R67.1"
+   ],
+   "name": "/MCU/PROX_DETECT",
+   "pin_count": 5,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/SWCLK": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/MCU/SWCLK",
+   "members": [
+    "J1.2",
+    "U6.49"
+   ],
+   "name": "/MCU/SWCLK",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/SWDIO": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "/MCU/SWDIO",
+   "members": [
+    "J1.3",
+    "U6.46"
+   ],
+   "name": "/MCU/SWDIO",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/nCHARGE_EN": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "MCU/NCHARGE_EN",
+   "members": [
+    "Q4.1",
+    "R73.1",
+    "U6.56"
+   ],
+   "name": "/MCU/nCHARGE_EN",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/nDISCHARGE_EN": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/NDISCHARGE_EN",
+   "members": [
+    "Q3.1",
+    "R72.1",
+    "U6.55"
+   ],
+   "name": "/MCU/nDISCHARGE_EN",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/MCU/nFAN_EN": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/MCU/NFAN_EN",
+   "members": [
+    "Q5.1",
+    "R75.1",
+    "U6.58"
+   ],
+   "name": "/MCU/nFAN_EN",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "/Power/OVP_gate": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "POWER/OVP_GATE",
+   "members": [
+    "D9.2",
+    "Q2.1",
+    "R3.1"
+   ],
+   "name": "/Power/OVP_gate",
+   "pin_count": 3,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "/Power/SW": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "/POWER/SW",
+   "members": [
+    "C3.2",
+    "L5.2",
+    "U2.5"
+   ],
+   "name": "/Power/SW",
+   "pin_count": 3,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "CAN1_RX": {
+   "class": "can",
+   "has_vias": false,
+   "ipc_name": "CAN1_RX",
+   "members": [
+    "TP11.1",
+    "U5.4",
+    "U6.44"
+   ],
+   "name": "CAN1_RX",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "CAN1_TX": {
+   "class": "can",
+   "has_vias": false,
+   "ipc_name": "CAN1_TX",
+   "members": [
+    "TP12.1",
+    "U5.1",
+    "U6.45"
+   ],
+   "name": "CAN1_TX",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "CB0": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB0",
+   "members": [
+    "C37.1",
+    "C41.2",
+    "R29.2",
+    "U1.34"
+   ],
+   "name": "CB0",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB1": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB1",
+   "members": [
+    "C36.2",
+    "C41.1",
+    "R33.2",
+    "U1.32"
+   ],
+   "name": "CB1",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB10": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB10",
+   "members": [
+    "C30.1",
+    "C32.2",
+    "R22.2",
+    "U1.14"
+   ],
+   "name": "CB10",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB11": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB11",
+   "members": [
+    "C28.2",
+    "C32.1",
+    "R24.2",
+    "U1.12"
+   ],
+   "name": "CB11",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB12": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB12",
+   "members": [
+    "C28.1",
+    "C79.2",
+    "R20.2",
+    "U1.10"
+   ],
+   "name": "CB12",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB13": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB13",
+   "members": [
+    "C79.1",
+    "C80.2",
+    "U1.8"
+   ],
+   "name": "CB13",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB14": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB14",
+   "members": [
+    "C80.1",
+    "C81.2",
+    "U1.6"
+   ],
+   "name": "CB14",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB15": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB15",
+   "members": [
+    "C81.1",
+    "C82.2",
+    "U1.4"
+   ],
+   "name": "CB15",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB16": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB16",
+   "members": [
+    "C24.2",
+    "C82.1",
+    "U1.2"
+   ],
+   "name": "CB16",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB2": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB2",
+   "members": [
+    "C36.1",
+    "C40.2",
+    "R28.2",
+    "U1.30"
+   ],
+   "name": "CB2",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB3": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB3",
+   "members": [
+    "C35.2",
+    "C40.1",
+    "R32.2",
+    "U1.28"
+   ],
+   "name": "CB3",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB4": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB4",
+   "members": [
+    "C35.1",
+    "C39.2",
+    "R27.2",
+    "U1.26"
+   ],
+   "name": "CB4",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB5": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB5",
+   "members": [
+    "C34.2",
+    "C39.1",
+    "R31.2",
+    "U1.24"
+   ],
+   "name": "CB5",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB6": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB6",
+   "members": [
+    "C34.1",
+    "C38.2",
+    "R26.2",
+    "U1.22"
+   ],
+   "name": "CB6",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB7": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB7",
+   "members": [
+    "C31.2",
+    "C38.1",
+    "R30.2",
+    "U1.20"
+   ],
+   "name": "CB7",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB8": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB8",
+   "members": [
+    "C31.1",
+    "C33.2",
+    "R23.2",
+    "U1.18"
+   ],
+   "name": "CB8",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CB9": {
+   "class": "cell-balance",
+   "has_vias": true,
+   "ipc_name": "CB9",
+   "members": [
+    "C30.2",
+    "C33.1",
+    "R25.2",
+    "U1.16"
+   ],
+   "name": "CB9",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing"
+   ]
+  },
+  "CELL1+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL1+",
+   "members": [
+    "CN1.1",
+    "R17.1",
+    "R33.1"
+   ],
+   "name": "CELL1+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL1-": {
+   "class": "cell-tap",
+   "has_vias": true,
+   "ipc_name": "CELL1-",
+   "members": [
+    "CN1.9",
+    "R2.1",
+    "R29.1"
+   ],
+   "name": "CELL1-",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL10+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL10+",
+   "members": [
+    "CN1.14",
+    "R22.1",
+    "R8.1"
+   ],
+   "name": "CELL10+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL11+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL11+",
+   "members": [
+    "CN1.6",
+    "R24.1",
+    "R7.1"
+   ],
+   "name": "CELL11+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL12+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL12+",
+   "members": [
+    "CN1.15",
+    "R20.1",
+    "R6.1"
+   ],
+   "name": "CELL12+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL2+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL2+",
+   "members": [
+    "CN1.10",
+    "R16.1",
+    "R28.1"
+   ],
+   "name": "CELL2+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL3+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL3+",
+   "members": [
+    "CN1.2",
+    "R15.1",
+    "R32.1"
+   ],
+   "name": "CELL3+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL4+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL4+",
+   "members": [
+    "CN1.11",
+    "R14.1",
+    "R27.1"
+   ],
+   "name": "CELL4+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL5+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL5+",
+   "members": [
+    "CN1.3",
+    "R13.1",
+    "R31.1"
+   ],
+   "name": "CELL5+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL6+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL6+",
+   "members": [
+    "CN1.12",
+    "R12.1",
+    "R26.1"
+   ],
+   "name": "CELL6+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL7+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL7+",
+   "members": [
+    "CN1.4",
+    "R11.1",
+    "R30.1"
+   ],
+   "name": "CELL7+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL8+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL8+",
+   "members": [
+    "CN1.13",
+    "R10.1",
+    "R23.1"
+   ],
+   "name": "CELL8+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL9+": {
+   "class": "cell-tap",
+   "has_vias": false,
+   "ipc_name": "CELL9+",
+   "members": [
+    "CN1.5",
+    "R25.1",
+    "R9.1"
+   ],
+   "name": "CELL9+",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "CELL_TOP": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "CELL_TOP",
+   "members": [
+    "CN1.16",
+    "R1.2",
+    "R77.2",
+    "R80.2",
+    "TP1.1"
+   ],
+   "name": "CELL_TOP",
+   "pin_count": 5,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "GND": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "GND",
+   "members": [
+    "C1.1",
+    "C2.1",
+    "C25.1",
+    "C37.2",
+    "C4.1",
+    "C43.2",
+    "C44.2",
+    "C47.1",
+    "C48.2",
+    "C49.2",
+    "C5.1",
+    "C50.1",
+    "C6.1",
+    "C7.1",
+    "C72.2",
+    "C77.2",
+    "C78.1",
+    "CN1.7",
+    "CN7.6",
+    "D3.3",
+    "D4.3",
+    "TP25.1",
+    "TP26.1",
+    "TP27.1",
+    "TP28.1",
+    "U1.36",
+    "U1.39",
+    "U1.46",
+    "U1.50",
+    "U1.65"
+   ],
+   "name": "GND",
+   "pin_count": 30,
+   "sheets": [
+    "BMS Chips",
+    "Cell Balancing",
+    "Cell Tap Filters"
+   ]
+  },
+  "LV_GND": {
+   "class": "power",
+   "has_vias": true,
+   "ipc_name": "LV_GND",
+   "members": [
+    "C10.2",
+    "C11.1",
+    "C12.2",
+    "C26.2",
+    "C27.2",
+    "C29.2",
+    "C42.2",
+    "C53.2",
+    "C54.2",
+    "C55.2",
+    "C56.2",
+    "C57.2",
+    "C58.2",
+    "C59.2",
+    "C60.2",
+    "C61.2",
+    "C62.2",
+    "C63.2",
+    "C64.2",
+    "C65.2",
+    "C66.2",
+    "C67.2",
+    "C68.2",
+    "C69.2",
+    "C70.2",
+    "C71.1",
+    "C73.2",
+    "C74.2",
+    "C75.2",
+    "C76.2",
+    "C83.1",
+    "C84.1",
+    "C85.2",
+    "C86.2",
+    "C9.1",
+    "CN8.2",
+    "D10.3",
+    "D15.1",
+    "D16.1",
+    "D17.1",
+    "D18.1",
+    "D19.1",
+    "D20.1",
+    "D5.3",
+    "D7.3",
+    "J1.4",
+    "J4.3",
+    "Q3.2",
+    "Q4.2",
+    "Q5.2",
+    "Q6.2",
+    "Q7.2",
+    "R18.2",
+    "R19.2",
+    "R21.2",
+    "R3.2",
+    "R53.2",
+    "R57.1",
+    "R59.2",
+    "R61.2",
+    "R63.2",
+    "R65.2",
+    "R66.2",
+    "R68.2",
+    "R71.2",
+    "R72.2",
+    "R73.2",
+    "R75.2",
+    "R79.2",
+    "R82.1",
+    "S1.1",
+    "U2.4",
+    "U3.9",
+    "U4.1",
+    "U5.2",
+    "U6.12",
+    "U6.18",
+    "U6.63",
+    "U7.2"
+   ],
+   "name": "LV_GND",
+   "pin_count": 79,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU",
+    "Power"
+   ]
+  },
+  "Net-(C45-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C45-PAD1)",
+   "members": [
+    "C45.1",
+    "D1.1",
+    "D3.1",
+    "R36.2",
+    "TP21.1"
+   ],
+   "name": "Net-(C45-Pad1)",
+   "pin_count": 5,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C45-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C45-PAD2)",
+   "members": [
+    "C45.2",
+    "L1.2"
+   ],
+   "name": "Net-(C45-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C46-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C46-PAD1)",
+   "members": [
+    "C46.1",
+    "D1.3",
+    "D3.2",
+    "R37.2",
+    "TP22.1"
+   ],
+   "name": "Net-(C46-Pad1)",
+   "pin_count": 5,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C46-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C46-PAD2)",
+   "members": [
+    "C46.2",
+    "L1.1"
+   ],
+   "name": "Net-(C46-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C47-Pad2)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C47-PAD2)",
+   "members": [
+    "C47.2",
+    "D1.2"
+   ],
+   "name": "Net-(C47-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C50-Pad2)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C50-PAD2)",
+   "members": [
+    "C50.2",
+    "D2.2"
+   ],
+   "name": "Net-(C50-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C51-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C51-PAD1)",
+   "members": [
+    "C51.1",
+    "D2.1",
+    "D4.1",
+    "R40.2",
+    "TP24.1"
+   ],
+   "name": "Net-(C51-Pad1)",
+   "pin_count": 5,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C51-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C51-PAD2)",
+   "members": [
+    "C51.2",
+    "L2.2"
+   ],
+   "name": "Net-(C51-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C52-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C52-PAD1)",
+   "members": [
+    "C52.1",
+    "D2.3",
+    "D4.2",
+    "R39.2",
+    "TP23.1"
+   ],
+   "name": "Net-(C52-Pad1)",
+   "pin_count": 5,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C52-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C52-PAD2)",
+   "members": [
+    "C52.2",
+    "L2.1"
+   ],
+   "name": "Net-(C52-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(C59-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C59-PAD1)",
+   "members": [
+    "C59.1",
+    "U3.14"
+   ],
+   "name": "Net-(C59-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(C60-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(C60-PAD1)",
+   "members": [
+    "C60.1",
+    "U3.1"
+   ],
+   "name": "Net-(C60-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(C83-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C83-PAD2)",
+   "members": [
+    "C83.2",
+    "D11.2"
+   ],
+   "name": "Net-(C83-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(C84-Pad2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(C84-PAD2)",
+   "members": [
+    "C84.2",
+    "D12.2"
+   ],
+   "name": "Net-(C84-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(CN6-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(CN6-PAD1)",
+   "members": [
+    "CN6.1",
+    "L6.4"
+   ],
+   "name": "Net-(CN6-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(CN6-Pad2)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(CN6-PAD2)",
+   "members": [
+    "CN6.2",
+    "L6.3"
+   ],
+   "name": "Net-(CN6-Pad2)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(D11-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D11-PAD1)",
+   "members": [
+    "D11.1",
+    "D5.2",
+    "R46.2"
+   ],
+   "name": "Net-(D11-Pad1)",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(D11-Pad3)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D11-PAD3)",
+   "members": [
+    "D11.3",
+    "D5.1",
+    "R47.2"
+   ],
+   "name": "Net-(D11-Pad3)",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(D12-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D12-PAD1)",
+   "members": [
+    "D12.1",
+    "D7.2",
+    "R49.2"
+   ],
+   "name": "Net-(D12-Pad1)",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(D12-Pad3)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D12-PAD3)",
+   "members": [
+    "D12.3",
+    "D7.1",
+    "R50.2"
+   ],
+   "name": "Net-(D12-Pad3)",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(D13-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D13-PAD1)",
+   "members": [
+    "D13.1",
+    "R79.1"
+   ],
+   "name": "Net-(D13-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(D6-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D6-PAD1)",
+   "members": [
+    "D6.1",
+    "R19.1"
+   ],
+   "name": "Net-(D6-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(D8-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(D8-PAD1)",
+   "members": [
+    "D8.1",
+    "R61.1"
+   ],
+   "name": "Net-(D8-Pad1)",
+   "pin_count": 2,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(J4-Pin_2)": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "NET-(J4-PIN_2)",
+   "members": [
+    "J4.2",
+    "U6.60"
+   ],
+   "name": "Net-(J4-Pin_2)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(JP3-A)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(JP3-A)",
+   "members": [
+    "JP3.1",
+    "R1.1"
+   ],
+   "name": "Net-(JP3-A)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(JP4-A)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(JP4-A)",
+   "members": [
+    "JP4.1",
+    "R77.1"
+   ],
+   "name": "Net-(JP4-A)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(Q2-D)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(Q2-D)",
+   "members": [
+    "D20.2",
+    "F1.2",
+    "Q2.3"
+   ],
+   "name": "Net-(Q2-D)",
+   "pin_count": 3,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(Q6-D)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(Q6-D)",
+   "members": [
+    "Q6.3",
+    "R78.2"
+   ],
+   "name": "Net-(Q6-D)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(Q7-D)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(Q7-D)",
+   "members": [
+    "Q7.3",
+    "R83.2",
+    "U6.50"
+   ],
+   "name": "Net-(Q7-D)",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(R54-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(R54-PAD1)",
+   "members": [
+    "R54.1",
+    "U3.15",
+    "U3.16"
+   ],
+   "name": "Net-(R54-Pad1)",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(S1-B)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(S1-B)",
+   "members": [
+    "C70.1",
+    "S1.2",
+    "U6.7"
+   ],
+   "name": "Net-(S1-B)",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U1-AVDD)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U1-AVDD)",
+   "members": [
+    "C4.2",
+    "U1.38"
+   ],
+   "name": "Net-(U1-AVDD)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(U1-DVDD)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U1-DVDD)",
+   "members": [
+    "C7.2",
+    "U1.49"
+   ],
+   "name": "Net-(U1-DVDD)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(U1-NEG5V)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U1-NEG5V)",
+   "members": [
+    "C78.2",
+    "U1.44"
+   ],
+   "name": "Net-(U1-NEG5V)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(U1-REFHP)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U1-REFHP)",
+   "members": [
+    "C2.2",
+    "U1.37"
+   ],
+   "name": "Net-(U1-REFHP)",
+   "pin_count": 2,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "Net-(U2-BST)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U2-BST)",
+   "members": [
+    "C3.1",
+    "U2.6"
+   ],
+   "name": "Net-(U2-BST)",
+   "pin_count": 2,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(U2-EN)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U2-EN)",
+   "members": [
+    "R59.1",
+    "R60.2",
+    "U2.2"
+   ],
+   "name": "Net-(U2-EN)",
+   "pin_count": 3,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(U2-FB)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U2-FB)",
+   "members": [
+    "R21.1",
+    "R34.2",
+    "TP13.1",
+    "U2.8"
+   ],
+   "name": "Net-(U2-FB)",
+   "pin_count": 4,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "Net-(U5-RS)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U5-RS)",
+   "members": [
+    "R18.1",
+    "U5.8"
+   ],
+   "name": "Net-(U5-RS)",
+   "pin_count": 2,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "Net-(U6-PB0)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U6-PB0)",
+   "members": [
+    "D13.2",
+    "U6.26"
+   ],
+   "name": "Net-(U6-PB0)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U6-PH0)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U6-PH0)",
+   "members": [
+    "C9.2",
+    "U6.5",
+    "X1.2"
+   ],
+   "name": "Net-(U6-PH0)",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U6-PH1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U6-PH1)",
+   "members": [
+    "C71.2",
+    "U6.6",
+    "X1.1"
+   ],
+   "name": "Net-(U6-PH1)",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U6-VCAP_1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "ET-(U6-VCAP_1)",
+   "members": [
+    "C26.1",
+    "U6.31"
+   ],
+   "name": "Net-(U6-VCAP_1)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U6-VCAP_2)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "ET-(U6-VCAP_2)",
+   "members": [
+    "C27.1",
+    "U6.47"
+   ],
+   "name": "Net-(U6-VCAP_2)",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "Net-(U7--)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NET-(U7--)",
+   "members": [
+    "R81.2",
+    "R82.2",
+    "U7.1"
+   ],
+   "name": "Net-(U7--)",
+   "pin_count": 3,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "SPI1_MISO": {
+   "class": "spi",
+   "has_vias": true,
+   "ipc_name": "SPI1_MISO",
+   "members": [
+    "R55.2",
+    "TP9.1",
+    "U3.5",
+    "U6.22"
+   ],
+   "name": "SPI1_MISO",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "SPI1_MOSI": {
+   "class": "spi",
+   "has_vias": true,
+   "ipc_name": "SPI1_MOSI",
+   "members": [
+    "R56.2",
+    "TP8.1",
+    "U3.4",
+    "U6.23"
+   ],
+   "name": "SPI1_MOSI",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "SPI1_SCLK": {
+   "class": "spi",
+   "has_vias": false,
+   "ipc_name": "SPI1_SCLK",
+   "members": [
+    "R57.2",
+    "TP10.1",
+    "U3.6",
+    "U6.21"
+   ],
+   "name": "SPI1_SCLK",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "SPI1_nSS": {
+   "class": "spi",
+   "has_vias": false,
+   "ipc_name": "SPI1_NSS",
+   "members": [
+    "R58.2",
+    "U3.7",
+    "U6.20"
+   ],
+   "name": "SPI1_nSS",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "SPI_RDY": {
+   "class": "spi",
+   "has_vias": false,
+   "ipc_name": "SPI_RDY",
+   "members": [
+    "R51.2",
+    "R53.1",
+    "U3.8",
+    "U6.17"
+   ],
+   "name": "SPI_RDY",
+   "pin_count": 4,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "USART1_RX": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "USART1_RX",
+   "members": [
+    "J5.1",
+    "U6.43"
+   ],
+   "name": "USART1_RX",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "USART1_TX": {
+   "class": "signal",
+   "has_vias": true,
+   "ipc_name": "USART1_TX",
+   "members": [
+    "J5.2",
+    "U6.42"
+   ],
+   "name": "USART1_TX",
+   "pin_count": 2,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "VBAT": {
+   "class": "power",
+   "has_vias": false,
+   "ipc_name": "VBAT",
+   "members": [
+    "CN8.1",
+    "F1.1"
+   ],
+   "name": "VBAT",
+   "pin_count": 2,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "VC0": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC0",
+   "members": [
+    "C72.1",
+    "C8.2",
+    "R2.2",
+    "U1.35"
+   ],
+   "name": "VC0",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC1": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC1",
+   "members": [
+    "C23.2",
+    "C8.1",
+    "R17.2",
+    "U1.33"
+   ],
+   "name": "VC1",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC10": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC10",
+   "members": [
+    "C13.2",
+    "C15.1",
+    "R8.2",
+    "U1.15"
+   ],
+   "name": "VC10",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC11": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC11",
+   "members": [
+    "C13.1",
+    "C14.2",
+    "R7.2",
+    "U1.13"
+   ],
+   "name": "VC11",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC12": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC12",
+   "members": [
+    "C14.1",
+    "R6.2",
+    "U1.11"
+   ],
+   "name": "VC12",
+   "pin_count": 3,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC13": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC13",
+   "members": [
+    "U1.9"
+   ],
+   "name": "VC13",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "VC14": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC14",
+   "members": [
+    "U1.7"
+   ],
+   "name": "VC14",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "VC15": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC15",
+   "members": [
+    "U1.5"
+   ],
+   "name": "VC15",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "VC16": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC16",
+   "members": [
+    "U1.3"
+   ],
+   "name": "VC16",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "VC2": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC2",
+   "members": [
+    "C19.2",
+    "C23.1",
+    "R16.2",
+    "U1.31"
+   ],
+   "name": "VC2",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC3": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC3",
+   "members": [
+    "C19.1",
+    "C22.2",
+    "R15.2",
+    "U1.29"
+   ],
+   "name": "VC3",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC4": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC4",
+   "members": [
+    "C18.2",
+    "C22.1",
+    "R14.2",
+    "U1.27"
+   ],
+   "name": "VC4",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC5": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC5",
+   "members": [
+    "C18.1",
+    "C21.2",
+    "R13.2",
+    "U1.25"
+   ],
+   "name": "VC5",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC6": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC6",
+   "members": [
+    "C17.2",
+    "C21.1",
+    "R12.2",
+    "U1.23"
+   ],
+   "name": "VC6",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC7": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC7",
+   "members": [
+    "C17.1",
+    "C20.2",
+    "R11.2",
+    "U1.21"
+   ],
+   "name": "VC7",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC8": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC8",
+   "members": [
+    "C16.2",
+    "C20.1",
+    "R10.2",
+    "U1.19"
+   ],
+   "name": "VC8",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "VC9": {
+   "class": "cell-sense",
+   "has_vias": false,
+   "ipc_name": "VC9",
+   "members": [
+    "C15.2",
+    "C16.1",
+    "R9.2",
+    "U1.17"
+   ],
+   "name": "VC9",
+   "pin_count": 4,
+   "sheets": [
+    "BMS Chips",
+    "Cell Tap Filters"
+   ]
+  },
+  "nFAULT": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "NFAULT",
+   "members": [
+    "R52.2",
+    "U3.2",
+    "U6.41"
+   ],
+   "name": "nFAULT",
+   "pin_count": 3,
+   "sheets": [
+    "Comms Interfaces",
+    "MCU"
+   ]
+  },
+  "unconnected-(CN1-Pad8)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "TED-(CN1-PAD8)",
+   "members": [
+    "CN1.8"
+   ],
+   "name": "unconnected-(CN1-Pad8)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(CN9-Pad10)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "ED-(CN9-PAD10)",
+   "members": [
+    "CN9.10"
+   ],
+   "name": "unconnected-(CN9-Pad10)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(CN9-Pad9)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "TED-(CN9-PAD9)",
+   "members": [
+    "CN9.9"
+   ],
+   "name": "unconnected-(CN9-Pad9)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(D1-Pad5)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "CTED-(D1-PAD5)",
+   "members": [
+    "D1.5"
+   ],
+   "name": "unconnected-(D1-Pad5)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(D11-Pad5)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "TED-(D11-PAD5)",
+   "members": [
+    "D11.5"
+   ],
+   "name": "unconnected-(D11-Pad5)",
+   "pin_count": 1,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "unconnected-(D12-Pad5)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "TED-(D12-PAD5)",
+   "members": [
+    "D12.5"
+   ],
+   "name": "unconnected-(D12-Pad5)",
+   "pin_count": 1,
+   "sheets": [
+    "Comms Interfaces"
+   ]
+  },
+  "unconnected-(D2-Pad5)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "CTED-(D2-PAD5)",
+   "members": [
+    "D2.5"
+   ],
+   "name": "unconnected-(D2-Pad5)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-BBN-Pad63)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U1-BBN-PAD63)",
+   "members": [
+    "U1.63"
+   ],
+   "name": "unconnected-(U1-BBN-Pad63)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-BBP-Pad64)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U1-BBP-PAD64)",
+   "members": [
+    "U1.64"
+   ],
+   "name": "unconnected-(U1-BBP-Pad64)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-FAULT_N-Pad62)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "FAULT_N-PAD62)",
+   "members": [
+    "U1.62"
+   ],
+   "name": "unconnected-(U1-FAULT_N-Pad62)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-GPIO5-Pad57)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "1-GPIO5-PAD57)",
+   "members": [
+    "U1.57"
+   ],
+   "name": "unconnected-(U1-GPIO5-Pad57)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-GPIO6-Pad56)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "1-GPIO6-PAD56)",
+   "members": [
+    "U1.56"
+   ],
+   "name": "unconnected-(U1-GPIO6-Pad56)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-GPIO7-Pad55)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "1-GPIO7-PAD55)",
+   "members": [
+    "U1.55"
+   ],
+   "name": "unconnected-(U1-GPIO7-Pad55)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-GPIO8-Pad54)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "1-GPIO8-PAD54)",
+   "members": [
+    "U1.54"
+   ],
+   "name": "unconnected-(U1-GPIO8-Pad54)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U1-TX-Pad53)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "-(U1-TX-PAD53)",
+   "members": [
+    "U1.53"
+   ],
+   "name": "unconnected-(U1-TX-Pad53)",
+   "pin_count": 1,
+   "sheets": [
+    "BMS Chips"
+   ]
+  },
+  "unconnected-(U2-NC-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "D-(U2-NC-PAD1)",
+   "members": [
+    "U2.1"
+   ],
+   "name": "unconnected-(U2-NC-Pad1)",
+   "pin_count": 1,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "unconnected-(U2-NC-Pad7)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "D-(U2-NC-PAD7)",
+   "members": [
+    "U2.7"
+   ],
+   "name": "unconnected-(U2-NC-Pad7)",
+   "pin_count": 1,
+   "sheets": [
+    "Power"
+   ]
+  },
+  "unconnected-(U6-PA0-Pad14)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PA0-PAD14)",
+   "members": [
+    "U6.14"
+   ],
+   "name": "unconnected-(U6-PA0-Pad14)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB10-Pad29)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB10-PAD29)",
+   "members": [
+    "U6.29"
+   ],
+   "name": "unconnected-(U6-PB10-Pad29)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB11-Pad30)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB11-PAD30)",
+   "members": [
+    "U6.30"
+   ],
+   "name": "unconnected-(U6-PB11-Pad30)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB12-Pad33)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB12-PAD33)",
+   "members": [
+    "U6.33"
+   ],
+   "name": "unconnected-(U6-PB12-Pad33)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB13-Pad34)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB13-PAD34)",
+   "members": [
+    "U6.34"
+   ],
+   "name": "unconnected-(U6-PB13-Pad34)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB14-Pad35)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB14-PAD35)",
+   "members": [
+    "U6.35"
+   ],
+   "name": "unconnected-(U6-PB14-Pad35)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB15-Pad36)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PB15-PAD36)",
+   "members": [
+    "U6.36"
+   ],
+   "name": "unconnected-(U6-PB15-Pad36)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB2-Pad28)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PB2-PAD28)",
+   "members": [
+    "U6.28"
+   ],
+   "name": "unconnected-(U6-PB2-Pad28)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB7-Pad59)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PB7-PAD59)",
+   "members": [
+    "U6.59"
+   ],
+   "name": "unconnected-(U6-PB7-Pad59)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB8-Pad61)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PB8-PAD61)",
+   "members": [
+    "U6.61"
+   ],
+   "name": "unconnected-(U6-PB8-Pad61)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PB9-Pad62)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PB9-PAD62)",
+   "members": [
+    "U6.62"
+   ],
+   "name": "unconnected-(U6-PB9-Pad62)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC0-Pad8)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "-(U6-PC0-PAD8)",
+   "members": [
+    "U6.8"
+   ],
+   "name": "unconnected-(U6-PC0-Pad8)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC1-Pad9)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "-(U6-PC1-PAD9)",
+   "members": [
+    "U6.9"
+   ],
+   "name": "unconnected-(U6-PC1-Pad9)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC11-Pad52)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PC11-PAD52)",
+   "members": [
+    "U6.52"
+   ],
+   "name": "unconnected-(U6-PC11-Pad52)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC12-Pad53)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "U6-PC12-PAD53)",
+   "members": [
+    "U6.53"
+   ],
+   "name": "unconnected-(U6-PC12-Pad53)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC13-Pad2)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC13-PAD2)",
+   "members": [
+    "U6.2"
+   ],
+   "name": "unconnected-(U6-PC13-Pad2)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC14-Pad3)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC14-PAD3)",
+   "members": [
+    "U6.3"
+   ],
+   "name": "unconnected-(U6-PC14-Pad3)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC15-Pad4)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC15-PAD4)",
+   "members": [
+    "U6.4"
+   ],
+   "name": "unconnected-(U6-PC15-Pad4)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC2-Pad10)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC2-PAD10)",
+   "members": [
+    "U6.10"
+   ],
+   "name": "unconnected-(U6-PC2-Pad10)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC3-Pad11)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC3-PAD11)",
+   "members": [
+    "U6.11"
+   ],
+   "name": "unconnected-(U6-PC3-Pad11)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC4-Pad24)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC4-PAD24)",
+   "members": [
+    "U6.24"
+   ],
+   "name": "unconnected-(U6-PC4-Pad24)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC5-Pad25)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC5-PAD25)",
+   "members": [
+    "U6.25"
+   ],
+   "name": "unconnected-(U6-PC5-Pad25)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC6-Pad37)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC6-PAD37)",
+   "members": [
+    "U6.37"
+   ],
+   "name": "unconnected-(U6-PC6-Pad37)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC7-Pad38)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC7-PAD38)",
+   "members": [
+    "U6.38"
+   ],
+   "name": "unconnected-(U6-PC7-Pad38)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC8-Pad39)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC8-PAD39)",
+   "members": [
+    "U6.39"
+   ],
+   "name": "unconnected-(U6-PC8-Pad39)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PC9-Pad40)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PC9-PAD40)",
+   "members": [
+    "U6.40"
+   ],
+   "name": "unconnected-(U6-PC9-Pad40)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-PD2-Pad54)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-PD2-PAD54)",
+   "members": [
+    "U6.54"
+   ],
+   "name": "unconnected-(U6-PD2-Pad54)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  },
+  "unconnected-(U6-VBAT-Pad1)": {
+   "class": "signal",
+   "has_vias": false,
+   "ipc_name": "(U6-VBAT-PAD1)",
+   "members": [
+    "U6.1"
+   ],
+   "name": "unconnected-(U6-VBAT-Pad1)",
+   "pin_count": 1,
+   "sheets": [
+    "MCU"
+   ]
+  }
+ },
+ "sheets": [
+  {
+   "domain": "LV (Motherboard)",
+   "file": "comms.kicad_sch",
+   "name": "Comms Interfaces"
+  },
+  {
+   "domain": "LV (Motherboard)",
+   "file": "mcu.kicad_sch",
+   "name": "MCU"
+  },
+  {
+   "domain": "HV (Daughterboard)",
+   "file": "bms_chip.kicad_sch",
+   "name": "BMS Chips"
+  },
+  {
+   "domain": "HV (Daughterboard)",
+   "file": "cell_tap.kicad_sch",
+   "name": "Cell Tap Filters"
+  },
+  {
+   "domain": "LV (Motherboard)",
+   "file": "power.kicad_sch",
+   "name": "Power"
+  },
+  {
+   "domain": "HV (Daughterboard)",
+   "file": "cell_balance.kicad_sch",
+   "name": "Cell Balancing"
+  }
+ ],
+ "source": {
+  "connectivity": "production/netlist.ipc (IPC-D-356, derived from the PCB)",
+  "note": "Net names reconstructed from schematic labels; see module docstring.",
+  "root_schematic": "Custom_BMS.kicad_sch"
+ },
+ "value_mismatches": [
+  {
+   "pcb": "1k\u03a9",
+   "ref": "R69",
+   "schematic": "2.7k\u03a9",
+   "sheet": "MCU"
+  },
+  {
+   "pcb": "1k\u03a9",
+   "ref": "R74",
+   "schematic": "2.7k\u03a9",
+   "sheet": "MCU"
+  },
+  {
+   "pcb": "1k\u03a9",
+   "ref": "R76",
+   "schematic": "2.7k\u03a9",
+   "sheet": "MCU"
+  }
+ ],
+ "warnings": [
+  "local label 'MISO' on sheet Comms Interfaces has no net in the PCB netlist",
+  "local label 'SCLK' on sheet Comms Interfaces has no net in the PCB netlist",
+  "local label 'nCS' on sheet Comms Interfaces has no net in the PCB netlist",
+  "local label 'MOSI' on sheet Comms Interfaces has no net in the PCB netlist",
+  "value mismatch R69: schematic='2.7k\u03a9' but PCB/BOM='1k\u03a9'",
+  "value mismatch R74: schematic='2.7k\u03a9' but PCB/BOM='1k\u03a9'",
+  "value mismatch R76: schematic='2.7k\u03a9' but PCB/BOM='1k\u03a9'",
+  "component TP21 is in the PCB netlist but not in any schematic sheet",
+  "component TP22 is in the PCB netlist but not in any schematic sheet",
+  "component TP23 is in the PCB netlist but not in any schematic sheet",
+  "component TP24 is in the PCB netlist but not in any schematic sheet"
+ ]
+}
