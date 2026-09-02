@@ -1,0 +1,11 @@
+(version 1)
+
+# Maintain at least 4.5 mm of copper clearance between each HV+ rail and
+# its corresponding HV- rail. KiCad evaluates both A/B object orderings.
+(rule "Post-AIR HV+ to HV- clearance"
+  (condition "A.NetName == '/HV+_postAIR' && B.NetName == 'POST_HV-'")
+  (constraint clearance (min 4.5mm)))
+
+(rule "Pre-AIR HV+ to HV- clearance"
+  (condition "A.NetName == '/HV+_preAIR' && B.NetName == 'PRE_HV-'")
+  (constraint clearance (min 4.5mm)))
