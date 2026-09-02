@@ -3,21 +3,21 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.4"
+      "Version": "10.0.6"
     },
-    "CreationDate": "2026-01-14T13:13:59-08:00"
+    "CreationDate": "2026-09-01T18:20:09-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "2026Precharge",
-      "GUID": "32303236-5072-4656-9368-617267652e6b",
+      "Name": "Precharge_2027",
+      "GUID": "50726563-6861-4726-9765-5f323032372e",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 96.855,
-      "Y": 40.67
+      "X": 96.694,
+      "Y": 40.7304
     },
-    "LayerNumber": 2,
+    "LayerNumber": 4,
     "BoardThickness": 1.6,
     "Finish": "None"
   },
@@ -30,51 +30,69 @@
       "MinLineWidth": 0.2,
       "TrackToRegion": 0.4,
       "RegionToRegion": 0.4
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "TrackToRegion": 0.4,
+      "RegionToRegion": 0.4
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "2026Precharge-F_Cu.gbr",
+      "Path": "Precharge_2027-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-B_Cu.gbr",
-      "FileFunction": "Copper,L2,Bot",
+      "Path": "Precharge_2027-In1_Cu.gbr",
+      "FileFunction": "Copper,L2,Inr",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-F_Paste.gbr",
+      "Path": "Precharge_2027-In2_Cu.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Precharge_2027-B_Cu.gbr",
+      "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Precharge_2027-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-B_Paste.gbr",
+      "Path": "Precharge_2027-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-F_Silkscreen.gbr",
+      "Path": "Precharge_2027-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-B_Silkscreen.gbr",
+      "Path": "Precharge_2027-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "2026Precharge-F_Mask.gbr",
+      "Path": "Precharge_2027-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "2026Precharge-B_Mask.gbr",
+      "Path": "Precharge_2027-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "2026Precharge-Edge_Cuts.gbr",
+      "Path": "Precharge_2027-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
@@ -100,10 +118,34 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.51,
+      "Thickness": 0.1,
       "Material": "FR4",
-      "Name": "F.Cu/B.Cu",
-      "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
+      "Name": "F.Cu/In1.Cu",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In1.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 1.24,
+      "Material": "FR4",
+      "Name": "In1.Cu/In2.Cu",
+      "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In2.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "In2.Cu/B.Cu",
+      "Notes": "Type: dielectric layer 3 (from In2.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
