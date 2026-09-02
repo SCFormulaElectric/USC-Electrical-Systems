@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.6,
+          "height": 2.4,
+          "width": 2.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,16 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "clearance|90980000|64810000|925bb404-2c3d-47de-8fab-f0ee33e61df7|9cc87e3d-d6cd-4991-bbf1-f989eb26768b",
-          ""
-        ],
-        [
-          "clearance|90996000|65077176|75770a5b-5c49-455a-a2d5-611fbf4cad71|f795ba3e-d008-4a9a-b9a5-175f83a0c68c",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -198,9 +189,10 @@
       ],
       "track_widths": [
         0.0,
-        0.25,
-        0.5,
-        1.0
+        2.0,
+        7.0,
+        10.0,
+        15.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -237,28 +229,17 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
-      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": "",
-      "sch_revision": ""
+      "mpn": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
-  "component_class_settings": {
-    "assignments": [],
-    "meta": {
-      "version": 0
-    },
-    "sheet_component_classes": {
-      "enabled": false
-    }
-  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -449,14 +430,11 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
-      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -479,7 +457,6 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
-      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -493,7 +470,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "relayBoard.kicad_pro",
+    "filename": "Power_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -512,14 +489,13 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 5
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -529,11 +505,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "updated_relay_draft.net",
-      "plot": "fabrication/relayboard_gerbers/",
-      "pos_files": "fabrication/",
+      "netlist": "Power_board.net",
+      "plot": "Fabrication/",
+      "pos_files": "",
       "specctra_dsn": "",
-      "step": "updated_relay_draft.step",
+      "step": "Power_board.step",
       "svg": "",
       "vrml": ""
     },
@@ -541,11 +517,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "annotation": {
-      "method": 0,
-      "sort_order": 0
-    },
-    "bom_export_filename": "fabrication/relayBoard.csv",
+    "bom_export_filename": "/home/zoomingguy2/Downloads/Power_board.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -604,122 +576,56 @@
         },
         {
           "group_by": false,
-          "label": "LCSC Part",
-          "name": "LCSC Part",
+          "label": "Availability",
+          "name": "Availability",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
+          "label": "Check_prices",
+          "name": "Check_prices",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
+          "label": "Description_1",
+          "name": "Description_1",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Dominant Wavelength",
-          "name": "Dominant Wavelength",
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Emitted Color",
-          "name": "Emitted Color",
+          "label": "MF",
+          "name": "MF",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Forward Current",
-          "name": "Forward Current",
+          "label": "MP",
+          "name": "MP",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Forward Voltage (VF)",
-          "name": "Forward Voltage (VF)",
+          "label": "PARTREV",
+          "name": "PARTREV",
           "show": false
         },
         {
           "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Attrition Qty",
-          "name": "Attrition Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Lens Color",
-          "name": "Lens Color",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Luminous Intensity",
-          "name": "Luminous Intensity",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Minimum Qty",
-          "name": "Minimum Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature",
-          "name": "Operating Temperature",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature Range",
-          "name": "Operating Temperature Range",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Overload Voltage (Max)",
-          "name": "Overload Voltage (Max)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part",
-          "name": "Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power Dissipation",
-          "name": "Power Dissipation",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power(Watts)",
-          "name": "Power(Watts)",
+          "label": "Package",
+          "name": "Package",
           "show": false
         },
         {
@@ -730,62 +636,32 @@
         },
         {
           "group_by": false,
-          "label": "Process",
-          "name": "Process",
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Resistance",
-          "name": "Resistance",
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Category",
-          "name": "Category",
+          "label": "STANDARD",
+          "name": "STANDARD",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Class",
-          "name": "Class",
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Stock",
-          "name": "Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Temperature Coefficient",
-          "name": "Temperature Coefficient",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Type",
-          "name": "Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Viewing Angle",
-          "name": "Viewing Angle",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Diode Configuration",
-          "name": "Diode Configuration",
+          "label": "Description",
+          "name": "Description",
           "show": false
         }
       ],
@@ -796,7 +672,6 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -804,7 +679,6 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -826,17 +700,8 @@
       "version": 1
     },
     "net_format_name": "KiCad",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": "relayBoard.wbk"
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -845,28 +710,13 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0,
-    "top_level_sheets": [
-      {
-        "filename": "relayBoard.kicad_sch",
-        "name": "relayBoard",
-        "uuid": "2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36"
-      }
-    ],
-    "used_designators": "",
-    "variants": []
+    "subpart_id_separator": 0
   },
   "sheets": [
     [
-      "2a7e80c0-82e1-4cad-9ed6-7b6ebe27ce36",
-      "relayBoard"
+      "c7bceacb-49ea-4a13-95e2-5e56f8e6630a",
+      "Root"
     ]
   ],
-  "text_variables": {},
-  "tuning_profiles": {
-    "meta": {
-      "version": 0
-    },
-    "tuning_profiles_impedance_geometric": []
-  }
+  "text_variables": {}
 }
