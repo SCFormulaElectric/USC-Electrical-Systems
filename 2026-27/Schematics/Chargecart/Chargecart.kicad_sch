@@ -4352,6 +4352,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
@@ -4731,17 +4921,6 @@
 		)
 		(uuid "171782e8-2f9b-46e1-81a9-6a0f3db67531")
 	)
-	(text "where is BMS fault & PC error "
-		(exclude_from_sim no)
-		(at 220.98 76.454 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-		)
-		(uuid "27c534e9-02cf-4244-8ee7-5659d62814fa")
-	)
 	(text "tied high for active-low logic"
 		(exclude_from_sim no)
 		(at 150.114 46.482 0)
@@ -4762,16 +4941,6 @@
 		)
 		(uuid "451ec597-2e3f-4611-ab63-90fb38cafb38")
 	)
-	(text "Leave closed"
-		(exclude_from_sim no)
-		(at 110.236 70.866 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "4f0efb55-cfb2-4534-a26e-7ec1de69d7b7")
-	)
 	(text "Outside Chargecart"
 		(exclude_from_sim no)
 		(at 36.83 17.78 0)
@@ -4791,16 +4960,6 @@
 			)
 		)
 		(uuid "5a895f3c-1b53-4a37-bb54-00fde5d6b9ca")
-	)
-	(text "Leave closed"
-		(exclude_from_sim no)
-		(at 110.49 45.466 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "5c8fd16b-c016-4947-9957-2f7f158a603c")
 	)
 	(text "LV Harness"
 		(exclude_from_sim no)
@@ -4829,10 +4988,28 @@
 		(uuid "1c8f662f-af0e-4c35-a521-87b3f0406ec2")
 	)
 	(junction
+		(at 77.47 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f32bf62-0dc9-4ab1-8abb-b713c2d75e1d")
+	)
+	(junction
+		(at 77.47 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fc0e2a0-86df-48a3-b43d-73a4e8275922")
+	)
+	(junction
 		(at 149.86 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d917c10-75de-4327-b96d-5767a0302d33")
+	)
+	(junction
+		(at 77.47 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0459ff8-9b8b-42a9-914d-0379f9f87617")
 	)
 	(junction
 		(at 246.38 39.37)
@@ -4845,6 +5022,12 @@
 		(diameter 0)
 		(color 255 153 0 1)
 		(uuid "bbc698b0-868f-471b-8c77-b370c027293d")
+	)
+	(junction
+		(at 77.47 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d763da90-c18d-4469-bfe5-8a851e913392")
 	)
 	(junction
 		(at 196.85 69.85)
@@ -4865,6 +5048,10 @@
 	(no_connect
 		(at 153.67 35.56)
 		(uuid "2f016b17-a011-4277-b229-a8bbacf08cca")
+	)
+	(no_connect
+		(at 153.67 34.29)
+		(uuid "4b721076-eba7-46a4-9538-70756221ebb0")
 	)
 	(no_connect
 		(at 151.13 64.77)
@@ -4909,7 +5096,7 @@
 			(xy 250.19 71.12) (xy 250.19 69.85)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -4988,6 +5175,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 34.29) (xy 130.81 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb29726-5e4e-41ac-a856-560d6d6ad37d")
+	)
+	(wire
+		(pts
 			(xy 107.95 34.29) (xy 105.41 34.29)
 		)
 		(stroke
@@ -5045,6 +5242,16 @@
 			(type default)
 		)
 		(uuid "25038c92-75cb-4170-a694-0edc3332737c")
+	)
+	(wire
+		(pts
+			(xy 116.84 48.26) (xy 116.84 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d983af-a0f7-4935-81a1-05bce94d8337")
 	)
 	(wire
 		(pts
@@ -5129,26 +5336,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 59.69) (xy 124.46 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36c5d4ec-e67f-49b1-b000-e4704ace73ab")
-	)
-	(wire
-		(pts
-			(xy 115.57 34.29) (xy 130.81 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37095592-c252-4d18-a98b-8b7df127ad4f")
-	)
-	(wire
-		(pts
 			(xy 207.01 55.88) (xy 207.01 49.53)
 		)
 		(stroke
@@ -5169,27 +5356,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 71.12) (xy 210.82 71.12)
-		)
-		(stroke
-			(width 0.381)
-			(type default)
-			(color 255 153 0 1)
-		)
-		(uuid "47b5c25b-ac31-409f-8a9e-738e5a7858c8")
-	)
-	(wire
-		(pts
-			(xy 115.57 41.91) (xy 119.38 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48268b6f-3969-410b-adff-cefe4e3f638b")
-	)
-	(wire
-		(pts
 			(xy 35.56 59.69) (xy 77.47 59.69)
 		)
 		(stroke
@@ -5203,7 +5369,7 @@
 			(xy 250.19 73.66) (xy 250.19 74.93)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5228,6 +5394,16 @@
 			(type default)
 		)
 		(uuid "4e09a6ad-ee93-40a4-9d69-07e5364221fc")
+	)
+	(wire
+		(pts
+			(xy 116.84 59.69) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ffd12b4-3a59-4c47-bfae-866605673d06")
 	)
 	(wire
 		(pts
@@ -5271,6 +5447,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 41.91) (xy 105.41 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5677d2a8-a4a5-45ac-af82-a16bc792daa1")
+	)
+	(wire
+		(pts
 			(xy 199.39 25.4) (xy 176.53 25.4)
 		)
 		(stroke
@@ -5284,7 +5470,7 @@
 			(xy 242.57 74.93) (xy 241.3 74.93)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5342,14 +5528,24 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 67.31) (xy 184.15 69.85)
+			(xy 115.57 34.29) (xy 120.65 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663157ea-0027-4326-997b-b26c4c8fea19")
+	)
+	(wire
+		(pts
+			(xy 184.15 68.58) (xy 184.15 69.85)
 		)
 		(stroke
 			(width 0.381)
 			(type default)
 			(color 255 153 0 1)
 		)
-		(uuid "68a3789d-b9cb-4c52-89e2-04c83057444a")
+		(uuid "68e4d8e3-2fb6-4e82-81cf-fe77bf4e534c")
 	)
 	(wire
 		(pts
@@ -5391,6 +5587,17 @@
 			(type default)
 		)
 		(uuid "6f08b24b-6302-4de5-aba6-b7433a64ad85")
+	)
+	(wire
+		(pts
+			(xy 184.15 59.69) (xy 184.15 60.96)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(uuid "748c535a-7ca9-4a0a-8e53-d9845d6a8f62")
 	)
 	(wire
 		(pts
@@ -5464,13 +5671,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 34.29) (xy 153.67 34.29)
+			(xy 115.57 67.31) (xy 118.11 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83145e98-d433-4d6c-93e5-f28337380365")
+		(uuid "82114457-2b8a-41bb-97c9-e4c8ebcee70f")
 	)
 	(wire
 		(pts
@@ -5494,10 +5701,10 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 69.85) (xy 242.57 69.85)
+			(xy 196.85 69.85) (xy 207.01 69.85)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5545,6 +5752,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 67.31) (xy 107.95 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d64f2f0-1481-45c7-a54e-21c59ffa3724")
+	)
+	(wire
+		(pts
 			(xy 151.13 31.75) (xy 153.67 31.75)
 		)
 		(stroke
@@ -5575,10 +5792,20 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 71.12) (xy 195.58 71.12)
+			(xy 105.41 45.72) (xy 106.68 45.72)
 		)
 		(stroke
-			(width 0.381)
+			(width 0)
+			(type default)
+		)
+		(uuid "a3213c4a-07cc-461f-baae-e67a8fb63a4e")
+	)
+	(wire
+		(pts
+			(xy 195.58 71.12) (xy 217.17 71.12)
+		)
+		(stroke
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5654,6 +5881,17 @@
 			(type default)
 		)
 		(uuid "b8afb063-1fdd-47d5-b776-cae3302bd4e9")
+	)
+	(wire
+		(pts
+			(xy 224.79 71.12) (xy 241.3 71.12)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(uuid "b90c4d26-eb58-4dd8-b085-9e87e2b94614")
 	)
 	(wire
 		(pts
@@ -5811,7 +6049,7 @@
 			(xy 256.54 71.12) (xy 250.19 71.12)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5846,16 +6084,6 @@
 			(type default)
 		)
 		(uuid "d5e5bf23-1f2d-4557-be35-687aa9bbfc75")
-	)
-	(wire
-		(pts
-			(xy 130.81 67.31) (xy 115.57 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d61290a5-5920-4d59-85f7-89792efe6d44")
 	)
 	(wire
 		(pts
@@ -5902,11 +6130,22 @@
 			(xy 241.3 74.93) (xy 241.3 71.12)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
 		(uuid "eaa3138c-52a3-43ec-8334-ac017fa30a64")
+	)
+	(wire
+		(pts
+			(xy 214.63 69.85) (xy 242.57 69.85)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 255 153 0 1)
+		)
+		(uuid "ed95200f-ff44-4286-a411-4c1a394287b1")
 	)
 	(wire
 		(pts
@@ -5923,7 +6162,7 @@
 			(xy 256.54 73.66) (xy 250.19 73.66)
 		)
 		(stroke
-			(width 0.381)
+			(width 0.2032)
 			(type default)
 			(color 255 153 0 1)
 		)
@@ -5931,7 +6170,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 69.85) (xy 184.15 69.85)
+			(xy 184.15 69.85) (xy 196.85 69.85)
 		)
 		(stroke
 			(width 0.381)
@@ -5959,16 +6198,6 @@
 			(type default)
 		)
 		(uuid "f2e95e9a-a066-4070-850a-71348b1365ee")
-	)
-	(wire
-		(pts
-			(xy 130.81 34.29) (xy 130.81 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f30390a3-d208-46af-b3a6-d7619356ede0")
 	)
 	(wire
 		(pts
@@ -6012,6 +6241,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 43.18) (xy 119.38 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf65a09-8f79-45d0-b34e-8a2ef4d3a7dc")
+	)
+	(wire
+		(pts
 			(xy 209.55 34.29) (xy 209.55 24.13)
 		)
 		(stroke
@@ -6031,8 +6270,8 @@
 		)
 		(uuid "ffb374cc-d44e-4f48-8e79-0eb3b10c0a00")
 	)
-	(global_label "GLV-"
-		(shape input)
+	(global_label "BMS_Fault"
+		(shape output)
 		(at 214.63 82.55 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6043,7 +6282,7 @@
 		)
 		(uuid "00108679-a4f8-4c0c-ba3c-53587376e408")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 79.3723 90)
+			(at 214.63 77.4855 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6076,6 +6315,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "GLV-"
+		(shape input)
+		(at 118.11 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "0db7d5d9-2202-4509-bcef-d80eefbc14a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.8768 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -6151,30 +6414,6 @@
 			)
 		)
 	)
-	(global_label "GLV+"
-		(shape input)
-		(at 124.46 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "1f694adf-6be9-4654-972a-3705858f62ff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.2268 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "ChargerStop"
 		(shape input)
 		(at 109.22 21.59 180)
@@ -6220,30 +6459,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "PCErr"
-		(shape input)
-		(at 151.13 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.508 0.508)
-			)
-			(justify right)
-		)
-		(uuid "3346bda5-f99d-40c2-a862-337a3ed8971a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.8313 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -6320,7 +6535,7 @@
 		)
 	)
 	(global_label "CANL"
-		(shape input)
+		(shape bidirectional)
 		(at 217.17 82.55 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6331,7 +6546,7 @@
 		)
 		(uuid "4c8a2788-a030-4f63-bdf8-d03665c2a21a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.17 79.4691 90)
+			(at 217.17 79.0246 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6356,30 +6571,6 @@
 		(uuid "4cebed09-907e-4111-96fe-7a397b2d8e49")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 163.5168 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GLV-"
-		(shape input)
-		(at 119.38 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "5057ab44-0dd2-4200-bb2b-8b7a933f79c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.1468 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6464,7 +6655,7 @@
 		)
 	)
 	(global_label "CANS"
-		(shape input)
+		(shape bidirectional)
 		(at 218.44 82.55 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6475,7 +6666,7 @@
 		)
 		(uuid "601ce92b-9dd7-4ccd-90fe-cbcf04f9a3c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.44 79.3965 90)
+			(at 218.44 78.952 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6631,6 +6822,30 @@
 			)
 		)
 	)
+	(global_label "GLV-"
+		(shape input)
+		(at 119.38 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "805d4e50-32f1-4696-9f20-8847b6a77864")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.1468 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "GLV+"
 		(shape input)
 		(at 151.13 31.75 180)
@@ -6656,7 +6871,7 @@
 		)
 	)
 	(global_label "CANH"
-		(shape input)
+		(shape bidirectional)
 		(at 215.9 82.55 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6667,7 +6882,7 @@
 		)
 		(uuid "98ecf08f-8d4f-4bd9-ba3b-ff38c5d20e6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9 79.3481 90)
+			(at 215.9 78.9036 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6676,6 +6891,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "GLV+"
+		(shape input)
+		(at 130.81 38.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right)
+		)
+		(uuid "9c5f251e-43bc-4c3a-b311-292f2d26b3d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 42.8668 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -6776,7 +7015,7 @@
 		)
 	)
 	(global_label "IMD_fault"
-		(shape input)
+		(shape output)
 		(at 213.36 82.55 90)
 		(fields_autoplaced yes)
 		(effects
@@ -7098,7 +7337,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0115df0c-8a66-4468-8972-2379a2923f8e")
-		(property "Reference" "J1"
+		(property "Reference" "J5"
 			(at 259.08 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7169,7 +7408,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "J1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -7177,7 +7416,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 109.22 59.69 90)
+		(at 111.76 67.31 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7187,7 +7426,7 @@
 		(dnp no)
 		(uuid "043853a5-07ea-4be1-b2ca-2d2d0e829684")
 		(property "Reference" "F2"
-			(at 109.22 57.658 90)
+			(at 111.76 65.278 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7197,7 +7436,7 @@
 			)
 		)
 		(property "Value" "Blade Fuse, 30A"
-			(at 108.966 61.468 90)
+			(at 111.506 69.088 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7207,7 +7446,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 61.468 90)
+			(at 111.76 69.088 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7218,7 +7457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 59.69 0)
+			(at 111.76 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7229,7 +7468,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 109.22 59.69 0)
+			(at 111.76 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7240,7 +7479,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 109.22 59.69 0)
+			(at 111.76 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7275,7 +7514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e5a4d60-471d-46f1-9468-523888fcbfc2")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 257.556 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7339,7 +7578,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -7643,7 +7882,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "29bed4e9-5424-4873-84c9-7ef15ff4d5cf")
-		(property "Reference" "F4"
+		(property "Reference" "F7"
 			(at 228.6 59.944 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7705,7 +7944,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F4")
+					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -7947,7 +8186,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "451d7fc8-9347-40d6-a452-572c8e29bd9b")
-		(property "Reference" "SW3"
+		(property "Reference" "SW2"
 			(at 116.84 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8009,7 +8248,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -8108,85 +8347,6 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 110.49 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4e7781cf-c22b-4d83-ba73-cbe7085ccf00")
-		(property "Reference" "SW1"
-			(at 110.49 38.735 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 110.49 43.942 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 110.49 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eefcf015-6e2e-456b-9e07-8a2eb0300361")
-		)
-		(pin "1"
-			(uuid "aab66f35-587c-497b-9b04-6caa6553833f")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8399,86 +8559,6 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 207.01 71.12 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "581eb88a-656b-40c7-8703-37aad6736726")
-		(property "Reference" "F6"
-			(at 207.01 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 207.01 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 72.898 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 207.01 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "541d227a-42a5-4216-b65e-1b556d0531f2")
-		)
-		(pin "1"
-			(uuid "3ad50ab8-ed7a-47c2-a803-dbe2c5de72a4")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
 		(at 111.76 34.29 90)
 		(unit 1)
 		(body_style 1)
@@ -8504,7 +8584,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -8678,7 +8758,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63a0424c-c7c1-4827-899a-3e0dc915561c")
-		(property "Reference" "R8"
+		(property "Reference" "R3"
 			(at 242.824 24.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8740,7 +8820,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R8")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8757,7 +8837,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6cac8aa9-ffbf-4741-8305-9875aa81d8ba")
-		(property "Reference" "J5"
+		(property "Reference" "J1"
 			(at 199.136 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8825,7 +8905,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "J5")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8842,7 +8922,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f8a4144-b3d6-431b-a9e5-24ec352a84a2")
-		(property "Reference" "R2"
+		(property "Reference" "R5"
 			(at 244.602 72.644 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8904,7 +8984,166 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R2")
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 77.47 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87c72359-7f1e-46e9-946f-b3357bdfa0dc")
+		(property "Reference" "#FLG05"
+			(at 77.47 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 77.4701 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 77.47 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a27df110-0bd9-4376-8ac7-f102cc8f67bd")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 210.82 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a518765-c25c-4c8f-ab8d-b1354ae70bb6")
+		(property "Reference" "F4"
+			(at 210.566 66.802 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1A"
+			(at 210.566 68.326 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 71.628 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 210.82 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e6fefd57-a4ec-4d3b-93bd-39ecb314d536")
+		)
+		(pin "1"
+			(uuid "51cda073-9b75-4c11-a613-444a51122480")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "F4")
 					(unit 1)
 				)
 			)
@@ -8921,7 +9160,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a72dfa8-edda-4579-b242-b3c3c57f63b9")
-		(property "Reference" "F3"
+		(property "Reference" "F6"
 			(at 228.6 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8983,15 +9222,15 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F3")
+					(reference "F6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 118.11 59.69 0)
+		(lib_id "Switch:SW_SPDT")
+		(at 111.76 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8999,9 +9238,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "95d371d5-b58c-43f8-a4a0-7d825d3e1b79")
-		(property "Reference" "SW5"
-			(at 118.11 54.61 0)
+		(uuid "90780491-7e9d-4d36-80f5-0d651a34175a")
+		(property "Reference" "SW1"
+			(at 111.76 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9010,8 +9249,8 @@
 				)
 			)
 		)
-		(property "Value" "LV Switch"
-			(at 118.11 56.388 0)
+		(property "Value" "SW_SPDT"
+			(at 111.76 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9021,7 +9260,89 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 59.69 0)
+			(at 111.76 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 111.76 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "991cb2cc-051c-4375-baed-28083d226acf")
+		)
+		(pin "2"
+			(uuid "215aace7-32a9-4b9a-a434-d392185bf076")
+		)
+		(pin "1"
+			(uuid "cc763fd3-a10e-4ba6-9727-0f20dee6e6ce")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 125.73 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95d371d5-b58c-43f8-a4a0-7d825d3e1b79")
+		(property "Reference" "SW3"
+			(at 125.73 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LV Switch"
+			(at 125.73 30.988 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9032,7 +9353,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/omron-automation-and-safety/a22ns-2bm-nba-g101-nn/6203738"
-			(at 118.11 59.69 0)
+			(at 125.73 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9043,7 +9364,7 @@
 			)
 		)
 		(property "Description" "Selector Switch 2 Position DPST-NO 10A (AC/DC) 120 V Panel Mount"
-			(at 118.11 59.69 0)
+			(at 125.73 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9062,7 +9383,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "SW5")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -9206,7 +9527,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab75be3a-ec3a-4dd9-8250-e915d0b4b2cc")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 151.384 18.034 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9279,15 +9600,15 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "D3")
+					(reference "D1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 110.49 67.31 0)
+		(lib_id "power:PWR_FLAG")
+		(at 77.47 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9295,9 +9616,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b17a6d42-ead5-4054-ac40-6d94f9d24fbf")
-		(property "Reference" "SW2"
-			(at 110.49 64.135 0)
+		(fields_autoplaced yes)
+		(uuid "b3b91264-a791-4df8-9f0e-e44f8257f98e")
+		(property "Reference" "#FLG06"
+			(at 77.47 65.405 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9306,18 +9629,20 @@
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 110.236 69.088 0)
+		(property "Value" "PWR_FLAG"
+			(at 77.4701 63.5 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 67.31 0)
+			(at 77.47 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9328,7 +9653,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 67.31 0)
+			(at 77.47 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9338,8 +9663,8 @@
 				)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 110.49 67.31 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 77.47 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9348,17 +9673,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "3110793e-7308-47c7-b4e1-c06bc95dbc9a")
 		)
 		(pin "1"
-			(uuid "5baf88fc-950e-4dcd-93c3-ab2007feff3b")
+			(uuid "8d87b6bd-5497-4fe2-a40a-d5ec203eebf3")
 		)
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "SW2")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -9375,7 +9697,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b45a08c8-44d0-4c5a-ba6b-2b74e68e5a8c")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 143.51 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9439,7 +9761,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -9456,7 +9778,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6ca5a15-622a-40f4-863f-b53fada4963d")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 257.81 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9523,89 +9845,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 184.15 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c006ac36-a68a-4bb1-9064-1c9a75c734cf")
-		(property "Reference" "F5"
-			(at 186.69 62.8649 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20A 500V DC"
-			(at 186.69 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.372 63.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 184.15 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c86cc64c-7f56-45dd-bd9d-e9adf10b86ba")
-		)
-		(pin "1"
-			(uuid "1510b8fe-fb96-4380-85de-b00b4778d0b1")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F5")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9622,7 +9862,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c70059f6-c25b-4bb4-ba7d-86db6bd700e3")
-		(property "Reference" "R7"
+		(property "Reference" "R2"
 			(at 233.68 35.306 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9684,7 +9924,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R7")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9765,6 +10005,247 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 184.15 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d59f52b8-c1c0-4c43-89c1-24ee3e0b8651")
+		(property "Reference" "F3"
+			(at 186.69 64.1349 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20A 500V DC"
+			(at 186.69 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.372 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 184.15 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b0d7b0c8-2886-4607-9c98-93b7cee9dbce")
+		)
+		(pin "1"
+			(uuid "782b917c-723e-4af2-934d-5e2696749084")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 77.47 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5b0b6ec-9c65-48cf-b5e5-c4da8d505424")
+		(property "Reference" "#FLG04"
+			(at 77.47 40.005 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 77.4701 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 77.47 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee73ede0-c297-453a-a71d-ec9562840673")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 220.98 71.12 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e1634925-6173-419d-ae62-4ea8ec29006d")
+		(property "Reference" "F5"
+			(at 220.98 74.168 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1A"
+			(at 220.98 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 72.898 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 220.98 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "819f9ac8-08f1-471c-85a2-ff726401f02e")
+		)
+		(pin "1"
+			(uuid "22147ee4-2025-43b1-af23-2fd4227e697b")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -9869,6 +10350,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 77.47 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f44fa353-c76c-442c-8257-e7e869f0534b")
+		(property "Reference" "#FLG03"
+			(at 77.47 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 77.4701 30.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 77.47 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "149f3970-9094-44eb-9fee-477189e46085")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x12_Socket")
 		(at 228.6 91.44 270)
 		(unit 1)
@@ -9879,7 +10440,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb688e68-2b00-4428-ba22-0ade7f04826f")
-		(property "Reference" "J4"
+		(property "Reference" "J2"
 			(at 229.616 87.376 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9971,7 +10532,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9988,7 +10549,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff7b8aec-4980-400b-8bd5-077b182ea826")
-		(property "Reference" "R1"
+		(property "Reference" "R4"
 			(at 244.602 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10050,7 +10611,7 @@
 		(instances
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R1")
+					(reference "R4")
 					(unit 1)
 				)
 			)
