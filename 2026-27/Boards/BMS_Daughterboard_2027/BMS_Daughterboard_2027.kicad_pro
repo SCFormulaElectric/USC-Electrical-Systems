@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -69,14 +69,20 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "ignore",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -140,11 +146,11 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.8,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.2,
+        "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
@@ -152,11 +158,11 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.1,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.25,
-        "solder_mask_to_copper_clearance": 0.005,
+        "min_via_diameter": 0.5,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -203,7 +209,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.5,
+        10.6
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +240,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -486,10 +501,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "FSAE"
+    ]
   },
   "meta": {
-    "filename": "Custom_BMS.kicad_pro",
+    "filename": "BMS_Daughterboard_2027.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -525,11 +542,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "Custom_BMS.net",
+      "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../CAD/SCFE26/SCFE262000-101 (Powertrain)/SCFE26 BatteryPack/Celltap_Negative.step",
       "svg": "",
       "vrml": ""
     },
@@ -563,16 +580,82 @@
           "show": true
         },
         {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
         },
         {
           "group_by": true,
@@ -591,390 +674,6 @@
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Actuator/Cap Color",
-          "name": "Actuator/Cap Color",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Attrition Qty",
-          "name": "Attrition Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Capacitance",
-          "name": "Capacitance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Category",
-          "name": "Category",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Circuit",
-          "name": "Circuit",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Class",
-          "name": "Class",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Contact Current",
-          "name": "Contact Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Crystal Type",
-          "name": "Crystal Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Data Rate",
-          "name": "Data Rate",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Dominant Wavelength",
-          "name": "Dominant Wavelength",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Emitted Color",
-          "name": "Emitted Color",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Forward Current",
-          "name": "Forward Current",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Forward Voltage (VF)",
-          "name": "Forward Voltage (VF)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Frequency",
-          "name": "Frequency",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Frequency Stability",
-          "name": "Frequency Stability",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Frequency Tolerance",
-          "name": "Frequency Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Insulation Resistance",
-          "name": "Insulation Resistance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part",
-          "name": "LCSC Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Lens Color",
-          "name": "Lens Color",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Load Capacitance",
-          "name": "Load Capacitance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Luminous Intensity",
-          "name": "Luminous Intensity",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mechanical Life",
-          "name": "Mechanical Life",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Minimum Qty",
-          "name": "Minimum Qty",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mounting Style",
-          "name": "Mounting Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Normal Temperature Frequency Tolerance",
-          "name": "Normal Temperature Frequency Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Force",
-          "name": "Operating Force",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature",
-          "name": "Operating Temperature",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Operating Temperature Range",
-          "name": "Operating Temperature Range",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Overload Voltage (Max)",
-          "name": "Overload Voltage (Max)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part",
-          "name": "Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Pin Style",
-          "name": "Pin Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power Dissipation",
-          "name": "Power Dissipation",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Power(Watts)",
-          "name": "Power(Watts)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Process",
-          "name": "Process",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Resistance",
-          "name": "Resistance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Stock",
-          "name": "Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Strike Gundam",
-          "name": "Strike Gundam",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Supply Voltage",
-          "name": "Supply Voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Height",
-          "name": "Switch Height",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Length",
-          "name": "Switch Length",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Switch Width",
-          "name": "Switch Width",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Temperature Coefficient",
-          "name": "Temperature Coefficient",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Type",
-          "name": "Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Viewing Angle",
-          "name": "Viewing Angle",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage",
-          "name": "Voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage Rated",
-          "name": "Voltage Rated",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage Rating (Dc)",
-          "name": "Voltage Rating (Dc)",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "With Lamp",
-          "name": "With Lamp",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "capacitance",
-          "name": "capacitance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "voltage",
-          "name": "voltage",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Actuator Style",
-          "name": "Actuator Style",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
       "filter_string": "",
@@ -1013,7 +712,15 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "KiCad",
+    "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -1028,42 +735,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Custom_BMS.kicad_sch",
-        "name": "Custom_BMS",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "BMS_Daughterboard_2027.kicad_sch",
+        "name": "BMS_Daughterboard_2027",
+        "uuid": "186015ea-dd0d-4099-bb47-23b5e4079954"
       }
     ],
-    "used_designators": "",
+    "used_designators": "L1-2,D1-4,#PWR2-13,#PWR70,#PWR74,#PWR80-81,C1-2,C4-8,C13-25,C28,C30-41,C43-52,C72,C77-82,Q1,CN1-3,CN7,JP3-4,R1-2,R6-17,R20,R22-33,R35-44,R77,R80,TP1,TP25-29,U1-2,F14",
     "variants": []
   },
   "sheets": [
     [
-      "570d6d9c-ebf5-4f83-96f6-d3309a3e637d",
-      "Root"
-    ],
-    [
-      "730c9124-1e05-4e73-95cf-1be5bb1149a5",
-      "BMS Chips"
-    ],
-    [
-      "e94a219a-300a-4436-8821-3bf884f472d1",
-      "Cell Balancing"
-    ],
-    [
-      "79608325-127c-4680-902d-ec74fc3ac03d",
-      "Cell Tap Filters"
-    ],
-    [
-      "4346a30a-37d6-4835-9af2-035eae8e4fc9",
-      "MCU"
-    ],
-    [
-      "1cccc059-0a92-4ce8-a103-c4b369835867",
-      "Comms Interfaces"
-    ],
-    [
-      "ac1bd3bc-1261-453f-909d-f00789f9c421",
-      "Power"
+      "186015ea-dd0d-4099-bb47-23b5e4079954",
+      "BMS_Daughterboard_2027"
     ]
   ],
   "text_variables": {},
