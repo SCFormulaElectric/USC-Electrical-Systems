@@ -1643,16 +1643,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 60.96) (xy 107.95 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48d8f058-73de-4e5e-a8cc-5563bc030f3e")
-	)
-	(wire
-		(pts
 			(xy 203.2 72.39) (xy 203.2 64.77)
 		)
 		(stroke
@@ -1730,26 +1720,6 @@
 			(type default)
 		)
 		(uuid "7a031456-3e0d-4442-b072-9b872cf8ae64")
-	)
-	(wire
-		(pts
-			(xy 114.3 60.96) (xy 107.95 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d07c78d-38d1-4371-a7b6-3326737f95c9")
-	)
-	(wire
-		(pts
-			(xy 114.3 71.12) (xy 114.3 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "827a60c4-6610-48c2-8c9c-b5fbce961122")
 	)
 	(wire
 		(pts
@@ -1961,30 +1931,6 @@
 		)
 		(uuid "fe477d40-ddb1-49ba-9698-a04cf3ced10b")
 	)
-	(global_label "Light+"
-		(shape bidirectional)
-		(at 107.95 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0013acd8-c3e9-4559-b5c0-98678b7a5a94")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.6245 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "GLV+"
 		(shape bidirectional)
 		(at 137.16 116.84 270)
@@ -2006,6 +1952,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "GLV+"
+		(shape bidirectional)
+		(at 97.79 63.5 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e0dec1d-e650-4939-836f-350d62e2a600")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.79 54.4444 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -2183,7 +2153,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:VDC")
-		(at 118.11 109.22 90)
+		(at 118.11 109.22 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2194,7 +2164,7 @@
 		(fields_autoplaced yes)
 		(uuid "0bf30c83-8394-4dbf-a980-ae1f85caf00f")
 		(property "Reference" "V1"
-			(at 117.9802 101.6 90)
+			(at 118.2398 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2204,7 +2174,7 @@
 			)
 		)
 		(property "Value" "5"
-			(at 117.9802 104.14 90)
+			(at 118.2398 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3437,122 +3407,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 114.3 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad4607a8-433c-4cdc-ac41-bb53d6e455cb")
-		(property "Reference" "V2"
-			(at 118.11 64.6401 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5"
-			(at 118.11 67.1801 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 114.3 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "9dd3d8a2-fd63-43c1-9833-7827556b3c26")
-		)
-		(pin "2"
-			(uuid "4a791be0-aa4c-4304-b46a-f78072aad1df")
-		)
-		(instances
-			(project "VIL_RML_lowV_SIM"
-				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
-					(reference "V2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 151.13 73.66 0)
 		(unit 1)
@@ -3625,85 +3479,6 @@
 			(project "VIL_RML_lowV_SIM"
 				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.3 74.93 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d11fb9a0-7141-4915-a84f-9790e4f3462d")
-		(property "Reference" "#PWR09"
-			(at 114.3 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 114.3 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8dfac92-a21f-4d6a-b7f4-b565125f7139")
-		)
-		(instances
-			(project "VIL_RML_lowV_SIM"
-				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3932,6 +3707,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 97.79 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec4ae953-1065-4e40-8b85-6182010e7eb9")
+		(property "Reference" "#PWR07"
+			(at 97.79 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e8598d9-85ca-406b-b69f-48ded42d50ef")
+		)
+		(instances
+			(project "VIL_RML_lowV_SIM"
+				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 151.13 69.85 180)
 		(unit 1)
@@ -4028,6 +3881,122 @@
 			(project "VIL_RML_lowV_SIM"
 				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VDC")
+		(at 97.79 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f920ddf0-7729-4c27-928a-1190a43a6e72")
+		(property "Reference" "V2"
+			(at 101.6 67.1801 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5"
+			(at 101.6 69.7201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 97.79 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "10ecc29c-876a-4d5d-bd40-8b96520dc4a8")
+		)
+		(pin "2"
+			(uuid "13bd2e7b-b9ae-46ea-a508-b1446f883750")
+		)
+		(instances
+			(project "VIL_RML_lowV_SIM"
+				(path "/3a694183-d324-4a59-b818-27b5c9e5143b"
+					(reference "V2")
 					(unit 1)
 				)
 			)
