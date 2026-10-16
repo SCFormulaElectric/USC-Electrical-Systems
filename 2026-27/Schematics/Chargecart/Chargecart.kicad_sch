@@ -3381,164 +3381,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Milwaukee_M12_Adapter_2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U1"
-				(at 0 9.906 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Milwaukee M12 Adapter"
-				(at -0.508 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Milwaukee_M12_Adapter_2_0_1"
-				(rectangle
-					(start -8.89 5.715)
-					(end 8.89 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Milwaukee_M12_Adapter_2_1_1"
-				(pin power_in line
-					(at -13.97 3.81 0)
-					(length 5.08)
-					(name "VIN+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -13.97 -3.81 0)
-					(length 5.08)
-					(name "VIN-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 13.97 3.81 180)
-					(length 5.08)
-					(name "VOUT+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 13.97 -3.81 180)
-					(length 5.08)
-					(name "VOUT-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Relay:Relay_DPST-NO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4988,12 +4830,6 @@
 		(uuid "1c8f662f-af0e-4c35-a521-87b3f0406ec2")
 	)
 	(junction
-		(at 77.47 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f32bf62-0dc9-4ab1-8abb-b713c2d75e1d")
-	)
-	(junction
 		(at 77.47 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5004,12 +4840,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d917c10-75de-4327-b96d-5767a0302d33")
-	)
-	(junction
-		(at 77.47 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0459ff8-9b8b-42a9-914d-0379f9f87617")
 	)
 	(junction
 		(at 246.38 39.37)
@@ -5056,6 +4886,10 @@
 	(no_connect
 		(at 151.13 64.77)
 		(uuid "7fa1be73-57f1-46df-ba98-0d23823dcf46")
+	)
+	(no_connect
+		(at 69.85 48.26)
+		(uuid "8ebf0ee3-40f1-4cab-afad-dcf29ffba925")
 	)
 	(no_connect
 		(at 226.06 82.55)
@@ -5239,26 +5073,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 67.31) (xy 77.47 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25038c92-75cb-4170-a694-0edc3332737c")
-	)
-	(wire
-		(pts
-			(xy 116.84 48.26) (xy 116.84 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26d983af-a0f7-4935-81a1-05bce94d8337")
-	)
-	(wire
-		(pts
 			(xy 35.56 41.91) (xy 77.47 41.91)
 		)
 		(stroke
@@ -5300,17 +5114,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 52.07) (xy 232.41 52.07)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "2d50962b-cc5b-4f66-a89a-af3180decc0a")
-	)
-	(wire
-		(pts
 			(xy 237.49 39.37) (xy 246.38 39.37)
 		)
 		(stroke
@@ -5343,7 +5146,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 55.88) (xy 207.01 49.53)
+			(xy 207.01 54.61) (xy 207.01 49.53)
 		)
 		(stroke
 			(width 0.254)
@@ -5351,6 +5154,16 @@
 			(color 132 0 132 1)
 		)
 		(uuid "3766ecda-584b-4e69-90d0-1bac1b763d7e")
+	)
+	(wire
+		(pts
+			(xy 64.77 48.26) (xy 64.77 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c51226-df10-44f1-baaa-bbba3086e67c")
 	)
 	(wire
 		(pts
@@ -5364,13 +5177,13 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 59.69) (xy 77.47 59.69)
+			(xy 105.41 45.72) (xy 105.41 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a50f50e-0950-47ce-9a30-f7ab02e75680")
+		(uuid "3fb1b894-16cd-49c6-9f57-46092a691c3c")
 	)
 	(wire
 		(pts
@@ -5405,16 +5218,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 59.69) (xy 105.41 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ffd12b4-3a59-4c47-bfae-866605673d06")
-	)
-	(wire
-		(pts
 			(xy 143.51 45.72) (xy 153.67 45.72)
 		)
 		(stroke
@@ -5445,7 +5248,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 55.88) (xy 207.01 55.88)
+			(xy 207.01 54.61) (xy 214.63 54.61)
 		)
 		(stroke
 			(width 0.254)
@@ -5453,16 +5256,6 @@
 			(color 132 0 132 1)
 		)
 		(uuid "5604cc0b-8330-4de3-b695-2b0447d241e1")
-	)
-	(wire
-		(pts
-			(xy 105.41 41.91) (xy 105.41 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5677d2a8-a4a5-45ac-af82-a16bc792daa1")
 	)
 	(wire
 		(pts
@@ -5592,7 +5385,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 52.07) (xy 196.85 52.07)
+			(xy 196.85 52.07) (xy 223.52 52.07)
 		)
 		(stroke
 			(width 0.254)
@@ -5600,6 +5393,17 @@
 			(color 132 0 132 1)
 		)
 		(uuid "6f08b24b-6302-4de5-aba6-b7433a64ad85")
+	)
+	(wire
+		(pts
+			(xy 247.65 38.1) (xy 247.65 54.61)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "71725a61-fd1a-4f5f-b4d9-25418a2b9c41")
 	)
 	(wire
 		(pts
@@ -5631,6 +5435,17 @@
 			(type default)
 		)
 		(uuid "7852ff8b-3de1-4e4a-864d-bbe44fe12fd3")
+	)
+	(wire
+		(pts
+			(xy 246.38 39.37) (xy 246.38 55.88)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "789aae5d-ab27-48db-bb73-817af65c5272")
 	)
 	(wire
 		(pts
@@ -5687,13 +5502,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 67.31) (xy 118.11 67.31)
+			(xy 64.77 45.72) (xy 105.41 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82114457-2b8a-41bb-97c9-e4c8ebcee70f")
+		(uuid "8519cf6a-6efc-459e-9278-8e4e67a35901")
 	)
 	(wire
 		(pts
@@ -5704,6 +5519,17 @@
 			(type default)
 		)
 		(uuid "85412490-957e-46c1-98ab-166496bd9016")
+	)
+	(wire
+		(pts
+			(xy 222.25 54.61) (xy 237.49 54.61)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "858c0994-dc31-4f3c-bd4d-431beda61d6c")
 	)
 	(wire
 		(pts
@@ -5738,6 +5564,17 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 52.07) (xy 236.22 52.07)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 132 0 132 1)
+		)
+		(uuid "8b0ed677-883d-419d-8c49-7aa0bf9f456c")
+	)
+	(wire
+		(pts
 			(xy 176.53 76.2) (xy 173.99 76.2)
 		)
 		(stroke
@@ -5769,16 +5606,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 67.31) (xy 107.95 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d64f2f0-1481-45c7-a54e-21c59ffa3724")
-	)
-	(wire
-		(pts
 			(xy 151.13 31.75) (xy 153.67 31.75)
 		)
 		(stroke
@@ -5799,7 +5626,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 39.37) (xy 237.49 55.88)
+			(xy 237.49 39.37) (xy 237.49 54.61)
 		)
 		(stroke
 			(width 0.254)
@@ -5807,16 +5634,6 @@
 			(color 132 0 132 1)
 		)
 		(uuid "a1ffb010-4e86-4dd2-a5f7-9f813699432f")
-	)
-	(wire
-		(pts
-			(xy 105.41 45.72) (xy 106.68 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3213c4a-07cc-461f-baae-e67a8fb63a4e")
 	)
 	(wire
 		(pts
@@ -5828,17 +5645,6 @@
 			(color 255 153 0 1)
 		)
 		(uuid "a4165986-a032-44aa-b41f-1d53487d81d7")
-	)
-	(wire
-		(pts
-			(xy 232.41 55.88) (xy 237.49 55.88)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "a57eeb91-97ec-4799-b8aa-854e1251dd58")
 	)
 	(wire
 		(pts
@@ -6027,17 +5833,6 @@
 			(type default)
 		)
 		(uuid "c9257648-0dd3-4d8e-86c3-baa3604099a2")
-	)
-	(wire
-		(pts
-			(xy 247.65 38.1) (xy 247.65 54.61)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "ca0535b8-baf6-4f85-9a38-78302a4d0e60")
 	)
 	(wire
 		(pts
@@ -6238,17 +6033,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 39.37) (xy 246.38 55.88)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 132 0 132 1)
-		)
-		(uuid "f98b1c80-c4b2-4d86-8704-04ea5ccd3572")
-	)
-	(wire
-		(pts
 			(xy 214.63 82.55) (xy 214.63 86.36)
 		)
 		(stroke
@@ -6269,7 +6053,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 43.18) (xy 119.38 43.18)
+			(xy 67.31 58.42) (xy 78.74 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6344,30 +6128,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "GLV-"
-		(shape input)
-		(at 118.11 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "0db7d5d9-2202-4509-bcef-d80eefbc14a9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.8768 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -6853,7 +6613,7 @@
 	)
 	(global_label "GLV-"
 		(shape input)
-		(at 119.38 43.18 0)
+		(at 78.74 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6863,7 +6623,7 @@
 		)
 		(uuid "805d4e50-32f1-4696-9f20-8847b6a77864")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.1468 43.18 0)
+			(at 83.5068 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,95 +7204,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 111.76 67.31 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "043853a5-07ea-4be1-b2ca-2d2d0e829684")
-		(property "Reference" "F2"
-			(at 111.76 65.278 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Blade Fuse, 30A"
-			(at 111.506 69.088 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 69.088 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 111.76 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 111.76 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cd529c6e-ca1f-4ea0-9905-715a258b4274")
-		)
-		(pin "1"
-			(uuid "7f284dc3-d704-493f-9eec-6943b77a74b1")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Charge_Cart:TSMP")
 		(at 260.35 68.58 0)
 		(unit 1)
@@ -7901,85 +7572,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 228.6 55.88 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "29bed4e9-5424-4873-84c9-7ef15ff4d5cf")
-		(property "Reference" "F7"
-			(at 228.6 59.944 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20A 500VAC"
-			(at 228.6 58.166 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 57.658 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_505_datasheet.pdf?assetguid=5688ddaa-f0db-4dd2-936d-4e678e1f8f31"
-			(at 228.6 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "FUSE CERM 20A 500VAC 500VDC 3AB"
-			(at 228.6 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "61d0f591-8f4b-4e5c-95a3-9d2b0cf5dd8d")
-		)
-		(pin "1"
-			(uuid "301921b8-1bbe-45c8-a08d-67e4b8fac0df")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Charge_Cart:6.6kW_Elcon_Charger")
 		(at 162.56 55.88 0)
 		(unit 1)
@@ -8199,6 +7791,85 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 227.33 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "415093cd-404d-4125-ab51-56053c2c2e4e")
+		(property "Reference" "F7"
+			(at 227.33 48.006 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20A 500VAC"
+			(at 227.33 49.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 50.292 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_505_datasheet.pdf?assetguid=5688ddaa-f0db-4dd2-936d-4e678e1f8f31"
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FUSE CERM 20A 500VAC 500VDC 3AB"
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "760e3566-6a18-47b2-acf9-0d010eda486f")
+		)
+		(pin "1"
+			(uuid "a59779ae-28ce-4243-ba63-5fd20e1e3d76")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -8941,6 +8612,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Fuse")
+		(at 218.44 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72ede0d5-e1d8-427b-89d5-7b8e4768ad07")
+		(property "Reference" "F6"
+			(at 218.44 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20A 500VAC"
+			(at 218.44 56.642 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 52.832 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_505_datasheet.pdf?assetguid=5688ddaa-f0db-4dd2-936d-4e678e1f8f31"
+			(at 218.44 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FUSE CERM 20A 500VAC 500VDC 3AB"
+			(at 218.44 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "198a2bb8-91e6-42e4-bd2a-085545c06497")
+		)
+		(pin "1"
+			(uuid "e5e51600-9794-4dfb-a4f2-6e6d755747cd")
+		)
+		(instances
+			(project "Chargecart"
+				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
+					(reference "F6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 246.38 74.93 90)
 		(unit 1)
@@ -9014,86 +8764,6 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 77.47 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87c72359-7f1e-46e9-946f-b3357bdfa0dc")
-		(property "Reference" "#FLG05"
-			(at 77.47 57.785 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 77.4701 55.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 77.47 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a27df110-0bd9-4376-8ac7-f102cc8f67bd")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -9179,87 +8849,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 228.6 52.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8a72dfa8-edda-4579-b242-b3c3c57f63b9")
-		(property "Reference" "F6"
-			(at 228.6 48.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "20A 500VAC"
-			(at 228.6 50.038 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 53.848 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse_fuse_505_datasheet.pdf?assetguid=5688ddaa-f0db-4dd2-936d-4e678e1f8f31"
-			(at 228.6 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "FUSE CERM 20A 500VAC 500VDC 3AB"
-			(at 228.6 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c809b8c4-d7ce-4644-836c-3b5ab14fa129")
-		)
-		(pin "1"
-			(uuid "f032f7db-f793-4042-bc6b-7e9544d0694f")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "F6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 111.76 45.72 0)
+		(at 67.31 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9269,7 +8860,7 @@
 		(dnp no)
 		(uuid "90780491-7e9d-4d36-80f5-0d651a34175a")
 		(property "Reference" "SW1"
-			(at 111.76 38.862 0)
+			(at 60.452 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9279,7 +8870,7 @@
 			)
 		)
 		(property "Value" "LV Switch"
-			(at 111.76 40.64 0)
+			(at 62.23 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9289,7 +8880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 45.72 0)
+			(at 67.31 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9300,7 +8891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 53.34 0)
+			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9311,7 +8902,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 111.76 45.72 0)
+			(at 67.31 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9419,132 +9010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 35.56 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9b46edc1-ef84-4eb6-8636-6df03c47b5da")
-		(property "Reference" "BT2"
-			(at 38.1 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Milwaukee_Battery_Cell"
-			(at 38.354 64.008 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(thickness 0.1524)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 63.246 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 63.246 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 35.56 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 35.56 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 35.56 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 35.56 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 35.56 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "183f5071-8b28-4884-926d-97aa439d6dc9")
-		)
-		(pin "1"
-			(uuid "a3ab6e85-6499-42c2-ace6-8e0338f30dd6")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "BT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 152.4 21.59 0)
 		(mirror x)
@@ -9630,86 +9095,6 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 77.47 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3b91264-a791-4df8-9f0e-e44f8257f98e")
-		(property "Reference" "#FLG06"
-			(at 77.47 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 77.4701 63.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 77.47 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8d87b6bd-5497-4fe2-a40a-d5ec203eebf3")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -10275,104 +9660,6 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "F5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Milwaukee_M12_Adapter_2")
-		(lib_id "FSAE:Milwaukee_M12_Adapter")
-		(at 91.44 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "eae7e8a0-2cf5-4db9-b096-de594ff79436")
-		(property "Reference" "U2"
-			(at 91.44 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Milwaukee M12 Adapter"
-			(at 91.44 56.388 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(thickness 0.1524)
-					(bold yes)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 91.44 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8d6904d0-e1da-49fd-8ef7-bf53652bc68c")
-		)
-		(pin "2"
-			(uuid "ed82dfbd-7117-496d-bf25-6b378437cc79")
-		)
-		(pin "3"
-			(uuid "e01956d1-2c54-41f3-8e4a-450ef49c5235")
-		)
-		(pin "4"
-			(uuid "df46a15b-6a63-4bc0-8ca8-7963314c600f")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "U2")
 					(unit 1)
 				)
 			)
