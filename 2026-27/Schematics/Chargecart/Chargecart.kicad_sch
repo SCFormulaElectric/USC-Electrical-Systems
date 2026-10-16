@@ -4752,6 +4752,16 @@
 		)
 		(uuid "e55c4b1e-8842-4b9f-b801-e467a4992451")
 	)
+	(text "leave closed"
+		(exclude_from_sim no)
+		(at 125.222 36.068 0)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+		)
+		(uuid "0ccb5f2a-7e99-491f-9ecf-391eac494d1f")
+	)
 	(text "J1772 Control Spoof"
 		(exclude_from_sim no)
 		(at 221.234 22.606 0)
@@ -4802,6 +4812,16 @@
 			)
 		)
 		(uuid "5a895f3c-1b53-4a37-bb54-00fde5d6b9ca")
+	)
+	(text "internal resistor, 12V rated"
+		(exclude_from_sim no)
+		(at 154.178 24.13 0)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+		)
+		(uuid "b05853c2-97e3-4112-a5f7-222205b6de58")
 	)
 	(text "LV Harness"
 		(exclude_from_sim no)
@@ -4888,7 +4908,7 @@
 		(uuid "7fa1be73-57f1-46df-ba98-0d23823dcf46")
 	)
 	(no_connect
-		(at 69.85 48.26)
+		(at 77.47 48.26)
 		(uuid "8ebf0ee3-40f1-4cab-afad-dcf29ffba925")
 	)
 	(no_connect
@@ -5157,7 +5177,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 48.26) (xy 64.77 45.72)
+			(xy 72.39 48.26) (xy 72.39 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5502,7 +5522,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 45.72) (xy 105.41 45.72)
+			(xy 72.39 45.72) (xy 105.41 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5586,7 +5606,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 73.66) (xy 78.74 73.66)
+			(xy 72.39 73.66) (xy 78.74 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5836,7 +5856,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 31.75) (xy 186.69 34.29)
+			(xy 186.69 33.02) (xy 186.69 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5929,7 +5949,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 83.82) (xy 78.74 83.82)
+			(xy 72.39 83.82) (xy 78.74 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6053,7 +6073,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 58.42) (xy 78.74 58.42)
+			(xy 74.93 58.42) (xy 78.74 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6179,7 +6199,7 @@
 			)
 		)
 	)
-	(global_label "SDCAcc"
+	(global_label "SDC_IN"
 		(shape input)
 		(at 193.04 83.82 90)
 		(fields_autoplaced yes)
@@ -6191,7 +6211,7 @@
 		)
 		(uuid "1edc497f-360d-4408-bafe-c038b7b009ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.04 79.8199 90)
+			(at 193.04 79.965 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +6223,7 @@
 			)
 		)
 	)
-	(global_label "ChargerStop"
+	(global_label "SDC_OUT"
 		(shape input)
 		(at 109.22 21.59 180)
 		(fields_autoplaced yes)
@@ -6215,7 +6235,7 @@
 		)
 		(uuid "2e2053a6-74a4-4fb4-add3-24a9e124040e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.3814 21.59 0)
+			(at 104.6877 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6395,7 +6415,7 @@
 			)
 		)
 	)
-	(global_label "ChargeOn"
+	(global_label "CHG"
 		(shape input)
 		(at 223.52 82.55 90)
 		(fields_autoplaced yes)
@@ -6407,7 +6427,7 @@
 		)
 		(uuid "559dde45-5414-45c8-8275-4f76c6010a05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.52 77.7274 90)
+			(at 223.52 79.8077 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,6 +6644,30 @@
 		(uuid "805d4e50-32f1-4696-9f20-8847b6a77864")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.5068 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SDC_IN"
+		(shape input)
+		(at 219.71 82.55 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+			(justify left)
+		)
+		(uuid "830177c8-4826-470d-be32-ca163953378e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 78.695 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6899,30 +6943,6 @@
 			)
 		)
 	)
-	(global_label "SDCAcc"
-		(shape input)
-		(at 219.71 82.55 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.508 0.508)
-			)
-			(justify left)
-		)
-		(uuid "c08d2a0a-daa8-4ba5-8534-778d0df1431a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.71 78.5499 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "CANL"
 		(shape input)
 		(at 148.59 62.23 180)
@@ -6995,9 +7015,9 @@
 			)
 		)
 	)
-	(global_label "GLV+"
+	(global_label "SDC_IN"
 		(shape input)
-		(at 186.69 31.75 90)
+		(at 186.69 33.02 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7007,7 +7027,7 @@
 		)
 		(uuid "cb97ab6e-6454-4e01-b55b-8e75b60c9972")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.69 26.9832 90)
+			(at 186.69 27.2371 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7019,7 +7039,7 @@
 			)
 		)
 	)
-	(global_label "ChargerStop"
+	(global_label "SDC_OUT"
 		(shape input)
 		(at 194.31 83.82 90)
 		(fields_autoplaced yes)
@@ -7031,7 +7051,7 @@
 		)
 		(uuid "d5f05928-62d1-46cf-a31d-4e6550476a8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.31 77.9814 90)
+			(at 194.31 79.2877 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7399,7 +7419,7 @@
 	)
 	(symbol
 		(lib_id "Device:Voltmeter_DC")
-		(at 63.5 78.74 0)
+		(at 72.39 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7409,7 +7429,7 @@
 		(dnp no)
 		(uuid "212453b7-00a9-4b9e-8a4d-3be2c1719b71")
 		(property "Reference" "MES1"
-			(at 57.404 78.74 90)
+			(at 66.294 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7419,7 +7439,7 @@
 			)
 		)
 		(property "Value" "Digital Panel Voltmeter"
-			(at 58.928 78.486 90)
+			(at 67.818 78.486 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7429,7 +7449,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 76.2 90)
+			(at 72.39 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7440,7 +7460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 76.2 90)
+			(at 72.39 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7451,7 +7471,7 @@
 			)
 		)
 		(property "Description" "DC voltmeter"
-			(at 63.5 78.74 0)
+			(at 72.39 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8850,7 +8870,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 67.31 53.34 90)
+		(at 74.93 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8860,7 +8880,7 @@
 		(dnp no)
 		(uuid "90780491-7e9d-4d36-80f5-0d651a34175a")
 		(property "Reference" "SW1"
-			(at 60.452 53.34 0)
+			(at 68.072 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8870,7 +8890,7 @@
 			)
 		)
 		(property "Value" "LV Switch"
-			(at 62.23 53.34 0)
+			(at 69.85 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8880,17 +8900,6 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
 			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8901,8 +8910,19 @@
 				)
 			)
 		)
+		(property "Datasheet" ""
+			(at 82.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Description" "Switch, single pole double throw"
-			(at 67.31 53.34 0)
+			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
