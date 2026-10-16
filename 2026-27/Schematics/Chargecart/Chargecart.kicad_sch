@@ -4896,6 +4896,10 @@
 		(uuid "14fac699-189a-4fae-86d1-7f2a8b3c437b")
 	)
 	(no_connect
+		(at 254 45.72)
+		(uuid "241b8b62-f7e5-4c89-802b-e482462baef1")
+	)
+	(no_connect
 		(at 153.67 38.1)
 		(uuid "264def0a-88d0-4d20-8963-eb6559404e59")
 	)
@@ -5367,6 +5371,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 86.36) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "565f4708-773f-474d-854f-c1e1a8ac89c4")
+	)
+	(wire
+		(pts
 			(xy 105.41 49.53) (xy 105.41 45.72)
 		)
 		(stroke
@@ -5811,16 +5825,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 35.56) (xy 240.03 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae0dc88c-e3be-45ff-af6b-a352f1834d22")
-	)
-	(wire
-		(pts
 			(xy 107.95 38.1) (xy 105.41 38.1)
 		)
 		(stroke
@@ -5828,16 +5832,6 @@
 			(type default)
 		)
 		(uuid "b49cd740-fcad-4bd3-b45e-5abe9b9db201")
-	)
-	(wire
-		(pts
-			(xy 226.06 35.56) (xy 229.87 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7c1cc81-75ee-4398-863f-ede95a726076")
 	)
 	(wire
 		(pts
@@ -6463,30 +6457,6 @@
 			)
 		)
 	)
-	(global_label "ProxDetect"
-		(shape input)
-		(at 254 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.508 0.508)
-			)
-			(justify right)
-		)
-		(uuid "5610f23f-7509-4915-8ebd-ed28b8e51190")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.7178 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "ControlPilot"
 		(shape input)
 		(at 226.06 31.75 180)
@@ -6655,30 +6625,6 @@
 			)
 		)
 	)
-	(global_label "ProxDetect"
-		(shape input)
-		(at 226.06 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify right)
-		)
-		(uuid "91cb757d-2ec4-4f94-85e0-72ea1a614766")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.457 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "CANL"
 		(shape bidirectional)
 		(at 217.17 86.36 90)
@@ -6800,7 +6746,7 @@
 		)
 	)
 	(global_label "CSS"
-		(shape input)
+		(shape output)
 		(at 224.79 86.36 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6824,7 +6770,7 @@
 		)
 	)
 	(global_label "SDC_IN"
-		(shape input)
+		(shape output)
 		(at 193.04 87.63 90)
 		(fields_autoplaced yes)
 		(effects
@@ -7040,7 +6986,7 @@
 		)
 	)
 	(global_label "SDC_OUT"
-		(shape input)
+		(shape output)
 		(at 109.22 25.4 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7084,30 +7030,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "GLV-"
-		(shape input)
-		(at 240.03 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "e763806e-1b02-4180-9d1e-34de955e1015")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 244.0022 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -9261,85 +9183,6 @@
 			(project "Chargecart"
 				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 233.68 35.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d4ff594f-142b-4851-b88a-7181fc1d5baf")
-		(property "Reference" "R2"
-			(at 233.68 39.116 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "150"
-			(at 233.68 37.592 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 37.338 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 233.68 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ff02abec-7d3f-4998-8ce6-15eac6047412")
-		)
-		(pin "1"
-			(uuid "da6a35d2-d45a-45ba-a95f-448201031c9a")
-		)
-		(instances
-			(project "Chargecart"
-				(path "/194b75eb-b11c-4083-9fe4-c81f17540fbb"
-					(reference "R2")
 					(unit 1)
 				)
 			)
