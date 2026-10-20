@@ -15,7 +15,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 100m 4 0",
+        ".tran 100m 100 0",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -30,7 +30,13 @@
       },
       "measurements": [],
       "showGrid": true,
-      "traces": []
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(Net-_Q2-G_)",
+          "trace_type": 257
+        }
+      ]
     }
   ],
   "user_defined_signals": [],

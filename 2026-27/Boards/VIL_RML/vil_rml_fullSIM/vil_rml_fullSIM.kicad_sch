@@ -2833,16 +2833,16 @@
 		(uuid "18ce3677-8f54-41a3-a453-07c0513724a0")
 	)
 	(junction
-		(at 43.18 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24630433-5cbd-4ec1-87a2-58ef1e3ad458")
-	)
-	(junction
 		(at 181.61 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36c69ef4-cb3a-4d00-be75-0b6830f50425")
+	)
+	(junction
+		(at 43.18 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4150b3d9-3b64-4483-8e57-d2aae15ca697")
 	)
 	(junction
 		(at 127 81.28)
@@ -2918,6 +2918,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 83.82) (xy 43.18 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05200251-3d05-4b59-b123-408d6b57cefc")
+	)
+	(wire
+		(pts
 			(xy 200.66 69.85) (xy 207.01 69.85)
 		)
 		(stroke
@@ -2975,6 +2985,16 @@
 			(type default)
 		)
 		(uuid "12db621c-9abf-42fa-a0bb-fb1f5f0af771")
+	)
+	(wire
+		(pts
+			(xy 214.63 46.99) (xy 214.63 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131915ee-b1b2-44eb-9c5c-976463cf4c6c")
 	)
 	(wire
 		(pts
@@ -3158,7 +3178,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 74.93) (xy 214.63 82.55)
+			(xy 214.63 74.93) (xy 214.63 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3175,16 +3195,6 @@
 			(type default)
 		)
 		(uuid "5b4e1bb8-a678-4fd8-877c-3bc0c89bb77d")
-	)
-	(wire
-		(pts
-			(xy 43.18 64.77) (xy 43.18 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c3bd230-9844-4bad-9d28-c6436e782be8")
 	)
 	(wire
 		(pts
@@ -3218,7 +3228,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 85.09) (xy 43.18 119.38)
+			(xy 43.18 64.77) (xy 43.18 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3606,6 +3616,16 @@
 		)
 		(uuid "fc632541-9088-4d40-8e49-9ecbc738cc94")
 	)
+	(wire
+		(pts
+			(xy 214.63 35.56) (xy 214.63 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5b6164-853b-4714-9530-fd846944e2bf")
+	)
 	(label "LED+"
 		(at 77.47 93.98 0)
 		(effects
@@ -3615,6 +3635,30 @@
 			(justify left bottom)
 		)
 		(uuid "486b175c-0b5c-48da-94c9-3a8eed2f0e0f")
+	)
+	(global_label "GLV+"
+		(shape bidirectional)
+		(at 214.63 35.56 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36d3729e-c108-41b1-9987-49fb0cac3d54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 214.63 26.5044 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(global_label "GLV+"
 		(shape bidirectional)
@@ -3661,54 +3705,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "GLV+"
-		(shape bidirectional)
-		(at 214.63 57.15 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "926019f6-7f4b-4727-9c95-bebd91c0fb56")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 48.0944 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "Light+"
-		(shape bidirectional)
-		(at 214.63 82.55 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa0ed134-fe6a-465e-9086-5182b867cbff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 92.8755 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -4075,7 +4071,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5"
+		(property "Value" "12"
 			(at 106.68 36.7001 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5106,7 +5102,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "1=G 2=S 3=D"
 			(at 212.09 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5823,6 +5819,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 43.18 83.82 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "965b2ebe-3ccb-4c23-8a4a-5c9843e0f678")
+		(property "Reference" "#PWR01"
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 83.8199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "060396c3-50a6-4bd7-a3f6-1ad5eaf1ca0e")
+		)
+		(instances
+			(project "vil_rml_fullSIM"
+				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 162.56 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -6111,6 +6186,203 @@
 			(project "vil_rml_fullSIM"
 				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 214.63 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1115580-3155-4baf-af22-4e21af56c122")
+		(property "Reference" "D10"
+			(at 218.44 53.6574 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 218.44 56.1974 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 214.63 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 214.63 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "type=\"D\" model=\"led\" "
+			(at 35.56 -22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "2=1 1=2"
+			(at 214.63 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3cea5271-89b9-43e7-9698-72daf3921f0a")
+		)
+		(pin "2"
+			(uuid "b9e84055-2c19-4bc3-b03a-0cc09abfd26e")
+		)
+		(instances
+			(project "vil_rml_fullSIM"
+				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 214.63 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c32d91a9-71a3-47d3-a7b8-03ecf322dd98")
+		(property "Reference" "R6"
+			(at 217.17 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2000"
+			(at 217.17 44.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 212.852 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 214.63 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32563ad9-39ff-4fa2-9ce9-5adb5d09fb1b")
+		)
+		(pin "2"
+			(uuid "d67b709f-f279-46b9-b154-a681babba160")
+		)
+		(instances
+			(project "vil_rml_fullSIM"
+				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6562,6 +6834,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 214.63 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5ecda23-a49e-4417-a2b1-3fc71f714ead")
+		(property "Reference" "#PWR010"
+			(at 214.63 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26a43f09-11f3-4081-9429-b156b733664d")
+		)
+		(instances
+			(project "vil_rml_fullSIM"
+				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 77.47 104.14 90)
 		(unit 1)
@@ -6671,85 +7021,6 @@
 			(project "vil_rml_fullSIM"
 				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
 					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 85.09 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7ab44fe-45b3-40c5-aed3-d77faa7624d6")
-		(property "Reference" "#PWR01"
-			(at 36.83 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 39.37 85.0899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4306464b-e579-4771-8e31-9cd11850253a")
-		)
-		(instances
-			(project "vil_rml_fullSIM"
-				(path "/6473edfc-f870-480c-88a7-ef3d8d8858e3"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
