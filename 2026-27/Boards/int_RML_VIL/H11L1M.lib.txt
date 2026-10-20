@@ -1,0 +1,23 @@
+* H11L1M Behavioral SPICE Subcircuit Model
+* Pin Order: Anode Cathode VCC GND OUT
+.SUBCKT H11L1M A K VCC GND OUT
+
+* --- INPUT STAGE (LED) ---
+D1 A K DLED
+.MODEL DLED D(IS=1e-12 N=1.5 CJO=18P RS=0.8)
+
+* --- COUPLING & THRESHOLD HYSTERESIS ---
+* Measures LED current via a current-controlled voltage source
+H1 1 0 VM 1K
+VM 1 2 DC 0
+
+* Schmitt Trigger threshold logic via a non-linear voltage-controlled switch
+* Turn-on threshold (I_F_on) is roughly 1.6mA
+S1 3 0 1 0 ST_SWITCH
+.MODEL ST_SWITCH SW(VT=1.6 VH=0.4 RON=1 ROFF=1MEG)
+
+* --- OUTPUT STAGE (Open-Collector Transistor) ---
+Q1 OUT 3 GND QOPTO
+.MODEL QOPTO NPN(BF=100 VAF=100 TF=15N TR=15N)
+
+.ENDS H11L1M
