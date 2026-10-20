@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.8,
+        "min_clearance": 0.5,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -212,6 +212,7 @@
       "track_widths": [
         0.0,
         0.5,
+        0.625,
         1.0,
         10.6
       ],
@@ -258,7 +259,18 @@
       "mpn": "",
       "sch_revision": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 4,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 6,
+        "enabled": true,
+        "topLayer": 0
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -673,6 +685,24 @@
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -739,7 +769,7 @@
         "uuid": "186015ea-dd0d-4099-bb47-23b5e4079954"
       }
     ],
-    "used_designators": "H8-13,H20-24,C7\\-,C3\\-,U1-3,U,C1,C4+1,C4+,C6+1,C6+,C5\\-,C4\\-,C1\\-,C3+1,C3+,C2\\-,J1-2,C5+1,C5+,C2+1,C2+,C6\\-,C1+1,C1+",
+    "used_designators": "C1+1,C1+,C6\\-,C2+1,C2+,C5+1,C5+,C2\\-,J1-7,C3+1,C3+,C1\\-,C6+1,C6+,C4\\-,C5\\-,C4+1,C4+,C1,U1-3,U,F13-14,C7\\-,C3\\-,H8-13,H20-24",
     "variants": []
   },
   "sheets": [
