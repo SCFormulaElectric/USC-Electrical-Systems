@@ -1,0 +1,8 @@
+.subckt H11L1M_BEH 1 2 3 4 5 6
+* 1=anode 2=cathode 4=VO 5=GND 6=VCC (3 is NC)
+Vsense 1 a 0
+D1 a 2 DIR
+.model DIR D(Is=1e-12 N=2 Rs=1 Eg=1.42 Cjo=100p Bv=6 Ibv=10u)
+W1 4 5 Vsense SWOPT
+.model SWOPT CSW(It=0.9m Ih=0.4m Ron=15 Roff=1G)
+.ends
