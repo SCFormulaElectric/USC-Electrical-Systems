@@ -1,0 +1,19 @@
+* AO3400 manufacturer coefficients, adapted for ngspice and existing pin order.
+* Source: https://www.aosmd.com/res/spice_models/AO3400.mod
+* This is an AO3400 model used as a PROXY for the schematic's AO3400A.
+* Exact AO3400A equivalence, limits and production corners are not established.
+* Existing public order is preserved: Gate(1), Source(2), Drain(4).
+* Restore published body diode and resistor temperature coefficients.
+.SUBCKT AO3400 1 2 4
+M1 3 1 2 2 NMOS W=998956u L=1u
+M2 2 1 2 4 PMOS W=998956u L=0.4u
+R1 4 3 15m TC1=6.5e-3 TC2=1e-6
+CGS 1 2 225p
+DBD 2 3 DBD
+.MODEL NMOS NMOS (LEVEL=3 TOX=2.5e-8 RS=2e-4 RD=0 NSUB=1.6e17
++ KP=3e-5 UO=600 THETA=0 VMAX=0 XJ=4e-7 KAPPA=1.1 ETA=0 TPG=1
++ IS=0 LD=0 CGSO=0 CGDO=0 CGBO=0 NFS=2e10 DELTA=0.1)
+.MODEL PMOS PMOS (LEVEL=3 TOX=2.5e-8 NSUB=2e16 TPG=-1)
+.MODEL DBD D (CJO=690p VJ=0.6 M=0.3 RS=0.005 FC=0.5
++ IS=1e-11 TT=15n N=1 BV=36 IBV=1e-4)
+.ENDS AO3400

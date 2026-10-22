@@ -1,0 +1,21 @@
+* Functional approximation for the Everlight H11L1 fitted in this schematic.
+* Legacy public subcircuit name H11L1M retained for KiCad compatibility.
+* Datasheet: https://en.everlight.com/wp-content/plugins/ItemRelationship/product_files/pdf/H11LX.pdf
+* Not a manufacturer model; not validated over process/temperature.
+* Same terminal order as the user's original model: A K VCC OUT GND.
+* Open-collector output: external pull-up is required (R1 in this schematic).
+* Assumed thresholds: ON 1.6 mA, OFF 1.0 mA, ratio 0.625.
+* These select one curve using a maximum ON threshold and typical OFF threshold.
+* They do not implement all production, temperature, supply or aging corners.
+* Does not model supply current, switching delays, output leakage, or isolation limits.
+.SUBCKT H11L1M A K VCC OUT GND
+V_SENSE A LED_A 0
+D_LED LED_A K LED_MOD
+.MODEL LED_MOD D(IS=1p N=1.9 RS=1 CJO=100p BV=6 IBV=10u)
+
+* 1000 V/A maps 1.6 mA to 1.6 V; no electrical HV-to-GLV connection.
+* Simple power qualification below 3 V, not a detailed supply-startup model.
+B_CTRL CTRL GND V={if(V(VCC,GND)<3,-1,1000*I(V_SENSE))}
+S_OUT OUT GND CTRL GND SW_OPTO OFF
+.MODEL SW_OPTO SW(RON=20 ROFF=1e12 VT=1.3 VH=0.3)
+.ENDS H11L1M
