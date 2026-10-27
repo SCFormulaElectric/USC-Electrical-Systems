@@ -2869,16 +2869,16 @@
 		(uuid "60262bff-bce6-4d99-9a01-4434c81cb4bb")
 	)
 	(junction
+		(at 148.59 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cd5f6e1-8208-458a-bf95-c746e529d820")
+	)
+	(junction
 		(at 167.64 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70f7ec39-26bb-49ed-b1e7-c792a876c4c9")
-	)
-	(junction
-		(at 148.59 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71174411-c638-4c44-a7ed-26eb91cd43bf")
 	)
 	(junction
 		(at 52.07 119.38)
@@ -2891,12 +2891,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fa3d813-8f55-4659-8e06-148193f7e78b")
-	)
-	(junction
-		(at 127 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9664f95a-8697-4e4e-abaf-1cc4d2fc0809")
 	)
 	(junction
 		(at 77.47 78.74)
@@ -2915,6 +2909,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed917ad6-8353-49a9-b56f-3e87191319fa")
+	)
+	(junction
+		(at 127 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb09c531-096f-4b81-b6ee-35b8696fd783")
 	)
 	(wire
 		(pts
@@ -2935,16 +2935,6 @@
 			(type default)
 		)
 		(uuid "06b014e8-d3d4-43b3-b0eb-b108992d6d9e")
-	)
-	(wire
-		(pts
-			(xy 148.59 87.63) (xy 162.56 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "075168fe-85ae-4b16-aac2-1271ecd73f2d")
 	)
 	(wire
 		(pts
@@ -3128,16 +3118,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 87.63) (xy 148.59 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d4a996b-1b09-478c-b07f-6dc6df671200")
-	)
-	(wire
-		(pts
 			(xy 127 91.44) (xy 127 101.6)
 		)
 		(stroke
@@ -3145,6 +3125,16 @@
 			(type default)
 		)
 		(uuid "509e110f-e2f1-42aa-8095-addc0efde24d")
+	)
+	(wire
+		(pts
+			(xy 148.59 87.63) (xy 162.56 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ea9500-e817-4b97-8927-f552464fbd2e")
 	)
 	(wire
 		(pts
@@ -3468,6 +3458,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 87.63) (xy 148.59 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05c2daa-4c8d-4890-820a-5580e5a3f1a9")
+	)
+	(wire
+		(pts
 			(xy 52.07 69.85) (xy 52.07 78.74)
 		)
 		(stroke
@@ -3638,6 +3638,30 @@
 	)
 	(global_label "GLV+"
 		(shape bidirectional)
+		(at 148.59 109.22 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0cfaaf5e-4967-4e31-a9a8-592598d2ccc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.59 118.2756 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GLV+"
+		(shape bidirectional)
 		(at 214.63 35.56 90)
 		(fields_autoplaced yes)
 		(effects
@@ -3705,30 +3729,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "GLV+"
-		(shape bidirectional)
-		(at 148.59 109.22 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "adb021a8-28df-4e52-a9a4-f15001856e92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.59 118.2756 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -6782,7 +6782,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" "NMOS"
+		(property "Sim.Device" "PMOS"
 			(at 146.05 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6804,7 +6804,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
+		(property "Sim.Pins" "1=G 2=S 3=D"
 			(at 146.05 101.6 0)
 			(hide yes)
 			(show_name no)
