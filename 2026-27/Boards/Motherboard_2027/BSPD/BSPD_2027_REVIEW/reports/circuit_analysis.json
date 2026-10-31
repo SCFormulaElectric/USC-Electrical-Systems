@@ -1,0 +1,1718 @@
+{
+  "analysis_type": "R2 non-latching analytical nodal/corner and conceptual model; NOT SPICE or hardware evidence",
+  "spec_path": "/Users/nick333/Desktop/project/BSPD_2027_no_latch/circuit_spec.json",
+  "spec_sha256": "5227dea3e10a33c366f1dcf5c5b6c69a95dd7cc5786f8fa5e50a430dbc202ab4",
+  "part_count": 66,
+  "release_status": "ENGINEERING_REVIEW_CALIBRATION_PENDING",
+  "assumptions": {
+    "board_temperature_C": [
+      -20.0,
+      85.0
+    ],
+    "reference_temperature_C": 25.0,
+    "resistor_TCR_bound_ppm_per_C": 100.0,
+    "reference_initial_tolerance": 0.001,
+    "reference_TCR_bound_ppm_per_C": 100.0,
+    "comparator_offset_bound_V": 0.0055,
+    "comparator_input_outward_bias_bound_A": 5e-08,
+    "timer_FET_sink_leakage_bound_A": 1e-05,
+    "timer_C_positive_temperature_change": 0.15,
+    "timer_C_negative_temperature_change": -0.15,
+    "timer_half_initial_ratio_relative_bound": 0.001,
+    "external_relay_and_output_budget_s": 0.02,
+    "input_filter_and_sensor_budget_s": 0.002,
+    "motherboard_input_load_ohm": 24000.0,
+    "PNP_source_drop_assumed_V": [
+      0.05,
+      0.3
+    ],
+    "current_sensor_supply_V": [
+      4.75,
+      5.25
+    ],
+    "current_sensor_offset_nominal_V": 2.5,
+    "current_sensor_channel2_gain_V_per_A": 0.01,
+    "current_sensor_channel2_range_A": [
+      -200.0,
+      200.0
+    ],
+    "current_sensor_channel2_offset_bound_A": 1.5,
+    "current_sensor_channel2_gain_relative_bound": 0.012,
+    "current_sensor_linearity_assumed_bound_A": 1.0,
+    "current_sensor_ratiometric_relative_bound": 0.006,
+    "current_sensor_noise_conservative_bound_V": 0.01,
+    "current_sensor_output_resistance_bound_ohm": 10.0,
+    "TS_nominal_voltage_assumed_V": 360.0,
+    "TS_max_voltage_user_declared_V": 404.0,
+    "target_raw_GLV_range_V_tentative": [
+      11.5,
+      16.0
+    ],
+    "power_criterion_W": 5000.0,
+    "AiM_brake_output_nominal_V": [
+      1.0,
+      5.0
+    ],
+    "logic_supply_assumed_V": [
+      4.75,
+      5.25
+    ],
+    "comparator_output_LOW_for_nominal_model_V": 0.0,
+    "comparator_output_LOW_upper_bound_V": 0.55,
+    "timer_reset_FET_on_resistance_assumed_ohm": 10.0,
+    "conceptual_trace_step_s": 0.00025
+  },
+  "sources": {
+    "LM2901B": "https://www.ti.com/lit/ds/symlink/lm339.pdf",
+    "LM4040": "https://www.ti.com/lit/ds/symlink/lm4040-n.pdf",
+    "HC132": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf",
+    "DHAB_S134": "https://www.lem.com/sites/default/files/products_datasheets/dhab_s_134.pdf",
+    "BAT54S": "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf",
+    "BAV199_candidate": "https://assets.nexperia.com/documents/data-sheet/BAV199.pdf",
+    "Microchip_MCP809": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/11194c.pdf",
+    "AiM_0_135bar": "https://www.aim-sportline.com/download/doc/eng/sensors/oldies/Datasheet_BrakePressure0-2000PSI_101_eng.pdf"
+  },
+  "topology_checks": {
+    "permit_NAND_fault_input": true,
+    "permit_NAND_supervisor_input": true,
+    "permit_NAND_output": true,
+    "permit_inverter_inputs": true,
+    "permit_inverter_output": true,
+    "output_base_driven_by_permit": true,
+    "onboard_trip_memory_absent": true,
+    "startup_memory_network_absent": true,
+    "current_reference_still_absolute_REF5": true,
+    "NAND_current_brake": true,
+    "timer_ref_correlated": true
+  },
+  "thresholds": {
+    "current": {
+      "setpoint_comparator_V": 1.3157894736842106,
+      "input_gain": 0.5,
+      "input_Thevenin_ohm": 5000.0,
+      "loaded_HIGH_at_switch_V": 4.992177896971729,
+      "raw_rising_V": 2.6349384098544233,
+      "raw_falling_V": 2.6221924237344956,
+      "raw_hysteresis_V": 0.012745986119927721,
+      "rising_corner_bound_without_clamp_leakage_V": {
+        "min": 2.557637251613889,
+        "max": 2.7130033503273134,
+        "min_corner": {
+          "current_series": 9930.06,
+          "current_open_bias": 10070.059999999998,
+          "current_hysteresis_input": 984.06,
+          "current_hysteresis_feedback": 4775482.0,
+          "current_set_top": 28196.167999999998,
+          "current_set_bottom": 9930.06,
+          "reference_V": 4.965,
+          "comparator_offset_V": -0.0055,
+          "output_LOW_V": 0.55,
+          "sensor_Rout_ohm": 0,
+          "threshold_input_outward_A": 0,
+          "direct_sense_outward_A": 1e-07,
+          "plus_input_outward_A": 5e-08
+        },
+        "max_corner": {
+          "current_series": 10070.059999999998,
+          "current_open_bias": 9930.06,
+          "current_hysteresis_input": 1016.0600000000001,
+          "current_hysteresis_feedback": 4625082.0,
+          "current_set_top": 27804.168,
+          "current_set_bottom": 10070.059999999998,
+          "reference_V": 5.034999999999999,
+          "comparator_offset_V": 0.0055,
+          "output_LOW_V": 0,
+          "sensor_Rout_ohm": 10.0,
+          "threshold_input_outward_A": 5e-08,
+          "direct_sense_outward_A": 0,
+          "plus_input_outward_A": 0
+        },
+        "corners_evaluated": 8192
+      },
+      "bound_exclusions": [
+        "Input clamp leakage",
+        "Reference load regulation and thermal self-heating",
+        "PCB leakage",
+        "Sensor transfer error",
+        "Actual resistor TCR certificates"
+      ],
+      "independent_nodal_verification": {
+        "rising_nodes": {
+          "SENSE_V": 1.3160694288913763,
+          "CMP_V": 1.3157894736842095,
+          "OUT_V": 0
+        },
+        "falling_nodes": {
+          "SENSE_V": 1.3150072633813823,
+          "CMP_V": 1.3157894736842095,
+          "OUT_V": 4.992177896971728
+        },
+        "maximum_threshold_residual_V": 1.1102230246251565e-15,
+        "passed": true
+      },
+      "fault_window": {
+        "low": {
+          "nominal_raw_V": 0.09900990099009901,
+          "corner_bound_without_bias_or_leak_V": {
+            "min": 0.08451604339991008,
+            "max": 0.11380086437518426,
+            "min_corner": {
+              "series_ohm": 9930.06,
+              "ground_ohm": 10070.059999999998,
+              "threshold_top_ohm": 1016060.0,
+              "threshold_bottom_ohm": 9930.06,
+              "reference_V": 4.965,
+              "offset_V": -0.0055
+            },
+            "max_corner": {
+              "series_ohm": 10070.059999999998,
+              "ground_ohm": 9930.06,
+              "threshold_top_ohm": 984060.0,
+              "threshold_bottom_ohm": 10070.059999999998,
+              "reference_V": 5.034999999999999,
+              "offset_V": 0.0055
+            },
+            "corners_evaluated": 64
+          }
+        },
+        "high": {
+          "nominal_raw_V": 4.8796722990271375,
+          "corner_bound_without_bias_or_leak_V": {
+            "min": 4.766421033003843,
+            "max": 4.99502528363977,
+            "min_corner": {
+              "series_ohm": 9930.06,
+              "ground_ohm": 10070.059999999998,
+              "threshold_top_ohm": 10070.059999999998,
+              "threshold_bottom_ohm": 9463.347179999999,
+              "reference_V": 4.965,
+              "offset_V": -0.0055
+            },
+            "max_corner": {
+              "series_ohm": 10070.059999999998,
+              "ground_ohm": 9930.06,
+              "threshold_top_ohm": 9930.06,
+              "threshold_bottom_ohm": 9596.767179999999,
+              "reference_V": 5.034999999999999,
+              "offset_V": 0.0055
+            },
+            "corners_evaluated": 64
+          }
+        }
+      },
+      "nominal_rising_current_A_at_Uc5": 13.49384098544233,
+      "nominal_hysteresis_A_at_Uc5": 1.2745986119927721
+    },
+    "brake": {
+      "setpoint_comparator_V": 0.9960159362549801,
+      "input_gain": 0.5,
+      "input_Thevenin_ohm": 5000.0,
+      "loaded_HIGH_at_switch_V": 4.9818824250509275,
+      "raw_rising_V": 2.0056139080043462,
+      "raw_falling_V": 1.9376791476627426,
+      "raw_hysteresis_V": 0.06793476034160362,
+      "rising_corner_bound_without_clamp_leakage_V": {
+        "min": 1.9345880885914781,
+        "max": 2.0691364682845825,
+        "min_corner": {
+          "brake_series": 9930.06,
+          "brake_open_bias": 10070.059999999998,
+          "brake_hysteresis_input": 9840.6,
+          "brake_hysteresis_feedback": 2235332.0,
+          "brake_set_top": 40481.6412,
+          "brake_set_bottom": 9930.06,
+          "reference_V": 4.965,
+          "comparator_offset_V": -0.0055,
+          "output_LOW_V": 0.55,
+          "sensor_Rout_ohm": 0,
+          "threshold_input_outward_A": 0,
+          "direct_sense_outward_A": 1e-07,
+          "plus_input_outward_A": 5e-08
+        },
+        "max_corner": {
+          "brake_series": 10070.059999999998,
+          "brake_open_bias": 9930.06,
+          "brake_hysteresis_input": 10160.6,
+          "brake_hysteresis_feedback": 2164932.0,
+          "brake_set_top": 39918.8412,
+          "brake_set_bottom": 10070.059999999998,
+          "reference_V": 5.034999999999999,
+          "comparator_offset_V": 0.0055,
+          "output_LOW_V": 0,
+          "sensor_Rout_ohm": 0,
+          "threshold_input_outward_A": 5e-08,
+          "direct_sense_outward_A": 0,
+          "plus_input_outward_A": 0
+        },
+        "corners_evaluated": 8192
+      },
+      "bound_exclusions": [
+        "Input clamp leakage",
+        "Reference load regulation and thermal self-heating",
+        "PCB leakage",
+        "Sensor transfer error",
+        "Actual resistor TCR certificates"
+      ],
+      "independent_nodal_verification": {
+        "rising_nodes": {
+          "SENSE_V": 1.0005432814197754,
+          "CMP_V": 0.9960159362549801,
+          "OUT_V": 0
+        },
+        "falling_nodes": {
+          "SENSE_V": 0.9778983613059075,
+          "CMP_V": 0.9960159362549799,
+          "OUT_V": 4.9818824250509275
+        },
+        "maximum_threshold_residual_V": 2.220446049250313e-16,
+        "passed": true
+      },
+      "fault_window": {
+        "low": {
+          "nominal_raw_V": 0.8,
+          "corner_bound_without_bias_or_leak_V": {
+            "min": 0.7550391425189517,
+            "max": 0.8465644144639569,
+            "min_corner": {
+              "series_ohm": 9930.06,
+              "ground_ohm": 10070.059999999998,
+              "threshold_top_ohm": 116846.9,
+              "threshold_bottom_ohm": 9840.6,
+              "reference_V": 4.965,
+              "offset_V": -0.0055
+            },
+            "max_corner": {
+              "series_ohm": 10070.059999999998,
+              "ground_ohm": 9930.06,
+              "threshold_top_ohm": 113166.9,
+              "threshold_bottom_ohm": 10160.6,
+              "reference_V": 5.034999999999999,
+              "offset_V": 0.0055
+            },
+            "corners_evaluated": 64
+          }
+        },
+        "high": {
+          "nominal_raw_V": 5.359056806002144,
+          "corner_bound_without_bias_or_leak_V": {
+            "min": 5.195061700109356,
+            "max": 5.526301870745325,
+            "min_corner": {
+              "series_ohm": 9930.06,
+              "ground_ohm": 10070.059999999998,
+              "threshold_top_ohm": 8799.079600000001,
+              "threshold_bottom_ohm": 9840.6,
+              "reference_V": 4.965,
+              "offset_V": -0.0055
+            },
+            "max_corner": {
+              "series_ohm": 10070.059999999998,
+              "ground_ohm": 9930.06,
+              "threshold_top_ohm": 8521.9596,
+              "threshold_bottom_ohm": 10160.6,
+              "reference_V": 5.034999999999999,
+              "offset_V": 0.0055
+            },
+            "corners_evaluated": 64
+          }
+        }
+      }
+    }
+  },
+  "UV": {
+    "nominal_VP_cutoff_V": 10.75,
+    "corner_bound_V": {
+      "min": 10.391425916104545,
+      "max": 11.119323637488618,
+      "min_corner": {
+        "UV_top_ohm": 32473.98,
+        "UV_bottom_ohm": 10070.059999999998,
+        "correlated_reference_V": 4.965,
+        "half_top_ohm": 47329.28199999999,
+        "half_bottom_ohm": 46671.282,
+        "offset_V": -0.0055
+      },
+      "max_corner": {
+        "UV_top_ohm": 33529.98,
+        "UV_bottom_ohm": 9930.06,
+        "correlated_reference_V": 5.034999999999999,
+        "half_top_ohm": 46671.282,
+        "half_bottom_ohm": 47329.28199999999,
+        "offset_V": 0.0055
+      },
+      "corners_evaluated": 64
+    },
+    "additional_conservative_input_bias_VP_budget_V": 0.0067025,
+    "VP_cutoff_range_including_bias_budget_V": [
+      10.384723416104546,
+      11.126026137488617
+    ],
+    "raw_VIN_equation": "VIN = VP + SS14 forward drop; actual drop is not established",
+    "raw_VIN_cutoff_lower_bound_without_relying_on_minimum_diode_drop_V": 10.384723416104546,
+    "AiM_nominal_10V_min_supply_margin_V": 0.38472341610454563,
+    "diode_drop_max_to_guarantee_target_raw_GLV_min_operation_V": 0.37397386251138265,
+    "inlet_diode_loss_not_included_in_VP_bounds": true
+  },
+  "output": {
+    "parallel_load_ohm": 15887.323943661971,
+    "nominal_source_to_signal_ratio": 0.8783678554742252,
+    "rows": [
+      {
+        "VP_V": 10.75,
+        "PNP_drop_assumed_V": 0.05,
+        "BSPD_signal_V": 9.39853605357421,
+        "motherboard_gate_V": 4.699268026787105,
+        "source_current_A": 0.0005915745211026321,
+        "series_R_short_power_W": 0.05204090909090908
+      },
+      {
+        "VP_V": 10.75,
+        "PNP_drop_assumed_V": 0.3,
+        "BSPD_signal_V": 9.178944089705654,
+        "motherboard_gate_V": 4.589472044852827,
+        "source_current_A": 0.0005777526864974304,
+        "series_R_short_power_W": 0.049637499999999994
+      },
+      {
+        "VP_V": 12.0,
+        "PNP_drop_assumed_V": 0.05,
+        "BSPD_signal_V": 10.496495872916991,
+        "motherboard_gate_V": 5.248247936458496,
+        "source_current_A": 0.0006606836941286404,
+        "series_R_short_power_W": 0.06491022727272726
+      },
+      {
+        "VP_V": 12.0,
+        "PNP_drop_assumed_V": 0.3,
+        "BSPD_signal_V": 10.276903909048436,
+        "motherboard_gate_V": 5.138451954524218,
+        "source_current_A": 0.0006468618595234387,
+        "series_R_short_power_W": 0.06222272727272727
+      },
+      {
+        "VP_V": 16.0,
+        "PNP_drop_assumed_V": 0.05,
+        "BSPD_signal_V": 14.009967294813892,
+        "motherboard_gate_V": 7.004983647406946,
+        "source_current_A": 0.0008818330478118674,
+        "series_R_short_power_W": 0.11563749999999999
+      },
+      {
+        "VP_V": 16.0,
+        "PNP_drop_assumed_V": 0.3,
+        "BSPD_signal_V": 13.790375330945336,
+        "motherboard_gate_V": 6.895187665472668,
+        "source_current_A": 0.0008680112132066657,
+        "series_R_short_power_W": 0.11204090909090908
+      }
+    ]
+  },
+  "timer": {
+    "nominal_s": 0.2703274004183786,
+    "C_max_F": 1.265e-05,
+    "reference_V_range_correlated_in_model": [
+      4.965,
+      5.034999999999999
+    ],
+    "half_fraction_with_independent_resistor_TCR": [
+      0.49650002099987406,
+      0.503499979000126
+    ],
+    "corner_bound_s": {
+      "min": 0.26249783550332106,
+      "max": 0.39901471007798384,
+      "min_corner": {
+        "R_ohm": 38378.34,
+        "C_F": 9.999999999999999e-06,
+        "correlated_reference_V": 4.965,
+        "half_fraction": 0.49650002099987406,
+        "offset_V": -0.0055,
+        "sink_A": 0,
+        "half_input_bias_V": 0
+      },
+      "max_corner": {
+        "R_ohm": 39626.340000000004,
+        "C_F": 1.265e-05,
+        "correlated_reference_V": 4.965,
+        "half_fraction": 0.503499979000126,
+        "offset_V": 0.0055,
+        "sink_A": 1.005e-05,
+        "half_input_bias_V": 0.0011832320499999998
+      },
+      "corners_evaluated": 128
+    },
+    "total_including_assumed_sensor_relay_budget_s": 0.42101471007798386,
+    "500ms_margin_s": 0.07898528992201614,
+    "passes_analytical_500ms_budget": true,
+    "limitations": [
+      "Evaluated minimum is not a physical lower timing guarantee: DC bias and aging can reduce C further",
+      "Uses assumed 100 ppm/C resistor bounds; actual procurement data must agree",
+      "10 uA FET leakage is a conservative 125C allowance; board target ends at85C",
+      "Capacitor leakage/PCB contamination and extra negative current are not separately bounded",
+      "Relay release budget must be measured with the installed suppression circuit"
+    ],
+    "reset_recovery_example": {
+      "condition": "Either C_HIGH or B_HARD clears, turning the timer reset FET on",
+      "reset_FET_Ron_assumed_ohm": 10.0,
+      "reset_final_V": 0.001281722635221738,
+      "reset_time_constant_s": 9.997436554729556e-05,
+      "initial_timer_V": 5.0,
+      "time_to_fall_below_nominal_half_reference_s": 6.932258734711186e-05,
+      "status": "Illustrative first-order model with assumed FET on-resistance, not a guaranteed or measured recovery time"
+    }
+  },
+  "logic": {
+    "implementation": "U8 gate2 NAND(FAULT_OK, POR_N), followed by gate3 inverter",
+    "permit_equation": "PERMIT = FAULT_OK AND POR_N",
+    "onboard_trip_memory": false,
+    "fault_clearance_requires_GLV_reset": false,
+    "external_relay_retention_user_confirmed": true,
+    "healthy_FAULT_OK_V_if_directly_loaded_by_base_resistor": 2.85,
+    "nominal_gate_output_base_resistor_current_A": 0.00043,
+    "NPN_VBE_assumption_V": 0.7,
+    "truth_table": [
+      {
+        "POR_N": false,
+        "VALID": false,
+        "TIMER_OK": false,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": false,
+        "VALID": false,
+        "TIMER_OK": true,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": false,
+        "VALID": true,
+        "TIMER_OK": false,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": false,
+        "VALID": true,
+        "TIMER_OK": true,
+        "FAULT_OK": true,
+        "PERMIT": false
+      },
+      {
+        "POR_N": true,
+        "VALID": false,
+        "TIMER_OK": false,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": true,
+        "VALID": false,
+        "TIMER_OK": true,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": true,
+        "VALID": true,
+        "TIMER_OK": false,
+        "FAULT_OK": false,
+        "PERMIT": false
+      },
+      {
+        "POR_N": true,
+        "VALID": true,
+        "TIMER_OK": true,
+        "FAULT_OK": true,
+        "PERMIT": true
+      }
+    ],
+    "qualification": "Combinational model excludes propagation delays, analogue gate levels and the mechanical relay; the retained output/relay budget requires physical verification."
+  },
+  "power_supervision": {
+    "permit_equation": "PERMIT = FAULT_OK AND POR_N",
+    "MCP809_post_recovery_reset_time_s": {
+      "min": 0.15,
+      "typical": 0.35,
+      "max": 0.7
+    },
+    "MCP809T_450_trip_V": {
+      "min": 4.25,
+      "typical": 4.375,
+      "max": 4.5
+    },
+    "source": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/11194c.pdf",
+    "behavior": "LOW POR_N inhibits permit. HIGH POR_N permits immediately when all comparator conditions are healthy; no onboard reset or stored trip is used.",
+    "external_relay_retention": "User-confirmed relay-board latch retains a shutdown after its relay has opened."
+  },
+  "conceptual_functional_traces": [
+    {
+      "name": "healthy_startup_after_POR",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "current_only_no_trip",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.9,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "brake_only_no_trip",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.9,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": true,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "coincidence_trip_stays_LOW_while_held",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.57025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 2.5001447827515504
+        },
+        {
+          "t_s": 0.7,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 3.2076268759862474
+        },
+        {
+          "t_s": 0.8,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 3.613017876010603
+        }
+      ],
+      "final_permit": false,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "timer_trip_recovers_when_current_clears_without_reset",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.57025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 2.5001447827515504
+        },
+        {
+          "t_s": 0.7,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 3.2076268759862474
+        },
+        {
+          "t_s": 0.70025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": true,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.26430590084165456
+        },
+        {
+          "t_s": 0.8,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": true,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "timer_trip_recovers_when_brake_clears_without_reset",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.57025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 2.5001447827515504
+        },
+        {
+          "t_s": 0.7,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": false,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 3.2076268759862474
+        },
+        {
+          "t_s": 0.70025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.26430590084165456
+        },
+        {
+          "t_s": 0.8,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "brief_coincidence_resets_timer",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.4,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": true,
+          "B_HARD": true,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 1.1318696421656322
+        },
+        {
+          "t_s": 0.6,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "sensor_fault_clears_and_permit_recovers_without_reset",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.30025,
+          "POR_N": true,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.32,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.32025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.52,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "UV_fault_clears_and_permit_recovers_without_reset",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.20025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.30025,
+          "POR_N": true,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.32,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.32025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.52,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 4,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "initial_sensor_late_ready_automatically_permits",
+      "events": [
+        {
+          "t_s": 0.2,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": false,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": false,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.30025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.5,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    },
+    {
+      "name": "POR_inhibit_and_recovery",
+      "events": [
+        {
+          "t_s": 0.00025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.0011765798552981713
+        },
+        {
+          "t_s": 0.1,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.10025,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.3,
+          "segment_end": true,
+          "POR_N": false,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": false,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.30025,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT_N": false,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        },
+        {
+          "t_s": 0.5,
+          "segment_end": true,
+          "POR_N": true,
+          "VALID": true,
+          "C_HIGH": false,
+          "B_HARD": false,
+          "TIMER_OK": true,
+          "FAULT_OK": true,
+          "PERMIT": true,
+          "timer_V": 0.001281722635221738
+        }
+      ],
+      "final_permit": true,
+      "segment_expectations": [
+        {
+          "segment": 1,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        },
+        {
+          "segment": 2,
+          "PERMIT": false,
+          "expected_PERMIT": false,
+          "passed": true
+        },
+        {
+          "segment": 3,
+          "PERMIT": true,
+          "expected_PERMIT": true,
+          "passed": true
+        }
+      ],
+      "conceptual_expectation_passed": true,
+      "model_limitations": [
+        "Ideal comparator/Schmitt logic and output stage",
+        "No comparator propagation, input-clamp behavior, sensor dynamics or mechanical relay model",
+        "Reset FET uses an assumed constant 10-ohm on-resistance; recovery is not a measured bound",
+        "POR_N is supplied by the test scenario; supervisor analogue behavior is not simulated",
+        "External relay-board fault retention is user confirmed and is not simulated"
+      ]
+    }
+  ],
+  "current_sensor_constraints": {
+    "I_at_5kW_nominal_TS_A": 13.88888888888889,
+    "ideal_5kW_output_at_Uc_min_V": 2.506944444444444,
+    "ideal_zero_output_at_Uc_max_V": 2.625,
+    "fixed_threshold_zero_vs_5kW_intervals_overlap": true,
+    "nominal_threshold_current_A_by_Uc": {
+      "4.75": 27.361937879412988,
+      "5.0": 13.49384098544233,
+      "5.25": 0.946515224230815
+    },
+    "channel2_plus200A_at_Uc5p25_raw_V": 4.7250000000000005,
+    "current_high_fault_threshold_nominal_raw_V": 4.8796722990271375,
+    "nominal_high_fault_current_A_at_Uc5p25": 214.7306951454417,
+    "full_channel2_plus200A_valid_with_current_fault_window": true,
+    "overload_clamp_min_at_Uc5p25_V": 4.9350000000000005,
+    "limitations": [
+      "TS maximum voltage remains unconfirmed; nominal360V is not a maximum-voltage calibration",
+      "Linearity error is specified at25C; extending it tofull temperature is an explicit assumption",
+      "No Orion rail tolerance is established by a nominal5V label",
+      "No input-voltage window alone distinguishes all sensor-supply/ground-wire faults"
+    ],
+    "ratiometric_normalized_5V_error_example": {
+      "zero_max_V": 2.5406163157894737,
+      "5kW_min_V_assuming_linearity_bound_at_all_temperatures": 2.5860225730994153,
+      "status": "Illustrative assumed sensor-error model; not a validated full-temperature guarantee"
+    }
+  },
+  "clamp_selected": "BAT54S,215",
+  "hard_release_blockers": [
+    "Unknown Orion sensor5V rail; unusedJ1pin1sensewire decision is not approved in thissnapshot",
+    "FixedCH2 threshold cannot guaranteehealthy0A and5kW over full4.75-5.25V supplyrange",
+    "Actual brake hard-braking hydraulic calibration pending",
+    "Clamp leakage and sustainednegative/unpoweredfault behavior pendingphysicalqualification",
+    "Physical timer/output/relay timing, including suppression release time, remains unmeasured"
+  ],
+  "not_measured": [
+    "Actual board",
+    "SPICE transistor model",
+    "Relay contacts",
+    "Sensor voltages/currents",
+    "Thermal chamber behavior",
+    "Negative input fault behavior"
+  ]
+}

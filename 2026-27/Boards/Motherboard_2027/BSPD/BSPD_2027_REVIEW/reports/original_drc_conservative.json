@@ -1,0 +1,2529 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-05T16:59:54",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "BSPD_5.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 3.4440 mm",
+                    "pos": {
+                        "x": 152.94,
+                        "y": 89.171
+                    },
+                    "uuid": "03f6d23f-660a-4455-8d0d-586df45d6dfa"
+                },
+                {
+                    "description": "Pad 5 [brake] of U1 on F.Cu",
+                    "pos": {
+                        "x": 154.24,
+                        "y": 90.17
+                    },
+                    "uuid": "07e11312-236c-4b8a-9469-eb37600c0910"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(D1-A)] on F.Cu, length 6.6997 mm",
+                    "pos": {
+                        "x": 177.457396,
+                        "y": 80.354
+                    },
+                    "uuid": "9f8cedc0-fd34-4dea-b758-24da17a2fed2"
+                },
+                {
+                    "description": "Track [4.5V] on F.Cu, length 8.1317 mm",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "b9428988-0145-431a-b680-f260c6826fee"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Track [fault] on F.Cu, length 9.2018 mm",
+                    "pos": {
+                        "x": 180.975,
+                        "y": 87.306751
+                    },
+                    "uuid": "2d7bd666-6ccc-461c-b5e0-43b88a3a97eb"
+                },
+                {
+                    "description": "Via [Net-(U4A-+)] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 180.2505,
+                        "y": 80.01
+                    },
+                    "uuid": "5c87ddc1-73f5-423d-923e-47a58a9b3dce"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [brake] of R7",
+                    "pos": {
+                        "x": 160.655,
+                        "y": 66.675
+                    },
+                    "uuid": "286b5944-8a70-415c-ae2d-7f8ebea95b99"
+                },
+                {
+                    "description": "Track [current] on F.Cu, length 5.2050 mm",
+                    "pos": {
+                        "x": 159.53,
+                        "y": 69.975
+                    },
+                    "uuid": "ae16440e-7541-45e6-a788-4c71e17efddf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2054 mm)",
+            "items": [
+                {
+                    "description": "Track [brake_short_power] on F.Cu, length 3.5551 mm",
+                    "pos": {
+                        "x": 160.568175,
+                        "y": 88.30348
+                    },
+                    "uuid": "20873e5e-325d-4d96-bf72-fc12f8c245c5"
+                },
+                {
+                    "description": "Via [brake_short_ground] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 160.118175,
+                        "y": 87.728175
+                    },
+                    "uuid": "6d49af54-1f7b-4777-8eb5-3157fa0bfd9f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Via [brake_short_ground] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 160.037686,
+                        "y": 86.2705
+                    },
+                    "uuid": "392c6046-87b8-4b0f-b629-e2cf74f854ff"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 3.6915 mm",
+                    "pos": {
+                        "x": 163.518249,
+                        "y": 86.995
+                    },
+                    "uuid": "baaa588e-a378-4e13-bbdf-3be64c47af02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 6.0811 mm",
+                    "pos": {
+                        "x": 163.674009,
+                        "y": 69.995
+                    },
+                    "uuid": "0c114430-2f46-4224-9819-a0e28bb9b359"
+                },
+                {
+                    "description": "PTH pad 1 [brake] of C2",
+                    "pos": {
+                        "x": 166.39,
+                        "y": 71.12
+                    },
+                    "uuid": "6324b84b-7dca-4f3f-a4a1-a22abab122a9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1B--)] on F.Cu, length 10.3849 mm",
+                    "pos": {
+                        "x": 162.883249,
+                        "y": 79.375
+                    },
+                    "uuid": "18c01703-7266-4837-bab6-cb0115abdf1f"
+                },
+                {
+                    "description": "Pad 1 [brake_short_ground] of U2 on F.Cu",
+                    "pos": {
+                        "x": 157.545,
+                        "y": 86.36
+                    },
+                    "uuid": "7cd2c00d-9604-4c2e-976a-e85285061957"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [fault] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 96.52
+                    },
+                    "uuid": "7cb813fc-c520-4143-861d-b05634aa36ac"
+                },
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 2.6799 mm",
+                    "pos": {
+                        "x": 159.771751,
+                        "y": 95.895
+                    },
+                    "uuid": "da8a0bf1-070d-4e71-b922-9b5763ff1e59"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [fault] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 96.52
+                    },
+                    "uuid": "7cb813fc-c520-4143-861d-b05634aa36ac"
+                },
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 2.0435 mm",
+                    "pos": {
+                        "x": 157.728249,
+                        "y": 95.895
+                    },
+                    "uuid": "c74d3a42-4b5d-47d1-82f3-4973e8209811"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 5 [Net-(U5-2A)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 99.06
+                    },
+                    "uuid": "03e2b5a3-8ebe-49d3-96fd-b8de195a78e2"
+                },
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 1.3057 mm",
+                    "pos": {
+                        "x": 158.373249,
+                        "y": 100.33
+                    },
+                    "uuid": "c9547b11-d7ee-42c9-a21b-b996a762c7ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 3.2335 mm",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 99.406751
+                    },
+                    "uuid": "457b9d6c-102b-4cf8-b973-f304a80bd310"
+                },
+                {
+                    "description": "Pad 3 [fault] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 96.52
+                    },
+                    "uuid": "7cb813fc-c520-4143-861d-b05634aa36ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 0.3935 mm",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 96.173249
+                    },
+                    "uuid": "23b5af08-91b2-4ad7-8865-dbcf1eb4bc14"
+                },
+                {
+                    "description": "Pad 3 [fault] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 96.52
+                    },
+                    "uuid": "7cb813fc-c520-4143-861d-b05634aa36ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Via [Net-(U5-1B)] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 95.1705
+                    },
+                    "uuid": "b6a98bde-77c5-4fb8-bc61-1f1a1d66c643"
+                },
+                {
+                    "description": "Track [Net-(U5-2B)] on F.Cu, length 2.0435 mm",
+                    "pos": {
+                        "x": 157.728249,
+                        "y": 95.895
+                    },
+                    "uuid": "c74d3a42-4b5d-47d1-82f3-4973e8209811"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [BSPD_signal] of U4 on F.Cu",
+                    "pos": {
+                        "x": 174.055,
+                        "y": 86.36
+                    },
+                    "uuid": "369d8186-e160-4f18-ae40-0b10e035f097"
+                },
+                {
+                    "description": "Track [Net-(D1-A)] on F.Cu, length 1.3552 mm",
+                    "pos": {
+                        "x": 172.72,
+                        "y": 86.671751
+                    },
+                    "uuid": "96713db2-3d11-4ac8-8565-a82162f56b0b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1B--)] on F.Cu, length 1.2585 mm",
+                    "pos": {
+                        "x": 155.54,
+                        "y": 86.718249
+                    },
+                    "uuid": "6660472e-5f25-403f-9bd4-e51f41418b9b"
+                },
+                {
+                    "description": "Pad 7 [hard_brake] of U1 on F.Cu",
+                    "pos": {
+                        "x": 154.24,
+                        "y": 87.63
+                    },
+                    "uuid": "b5306792-ced4-49dc-8561-54ea735aed3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U1B--)] on F.Cu, length 1.3057 mm",
+                    "pos": {
+                        "x": 155.54,
+                        "y": 87.976751
+                    },
+                    "uuid": "7b13359b-64f4-4afd-a9d6-390517043103"
+                },
+                {
+                    "description": "Pad 7 [hard_brake] of U1 on F.Cu",
+                    "pos": {
+                        "x": 154.24,
+                        "y": 87.63
+                    },
+                    "uuid": "b5306792-ced4-49dc-8561-54ea735aed3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2359 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U5-1B)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 95.25
+                    },
+                    "uuid": "0ae2a7f9-61ec-449e-808e-1c8ee900ac3c"
+                },
+                {
+                    "description": "Track [fault_1] on F.Cu, length 0.9051 mm",
+                    "pos": {
+                        "x": 156.81,
+                        "y": 95.551853
+                    },
+                    "uuid": "2b8e6809-7adb-416d-8201-c617490be9f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad C [5V] of R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 81.915
+                    },
+                    "uuid": "eda2c9a0-c4b7-4baa-96ba-af5bcd250b02"
+                },
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 3.0186 mm",
+                    "pos": {
+                        "x": 178.779,
+                        "y": 82.320516
+                    },
+                    "uuid": "fb9cc170-1c1a-47af-bb54-b0eb64c96582"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Pad 12 [unconnected-(U7-4A-Pad12)] of U7 on F.Cu",
+                    "pos": {
+                        "x": 155.51,
+                        "y": 96.52
+                    },
+                    "uuid": "55b57f58-69b6-4d71-8df7-9b0e2785df15"
+                },
+                {
+                    "description": "Track [fault_1] on F.Cu, length 3.2285 mm",
+                    "pos": {
+                        "x": 153.303249,
+                        "y": 95.875
+                    },
+                    "uuid": "acfa8a0a-6708-4068-8cf8-90995d4d79d4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [fault_1] on F.Cu, length 0.3935 mm",
+                    "pos": {
+                        "x": 156.531751,
+                        "y": 95.875
+                    },
+                    "uuid": "9f596d4a-e277-4bc0-9286-84331539293e"
+                },
+                {
+                    "description": "Pad 13 [unconnected-(U7-4B-Pad13)] of U7 on F.Cu",
+                    "pos": {
+                        "x": 155.51,
+                        "y": 95.25
+                    },
+                    "uuid": "f46c06ed-863f-4169-8c9d-ab2d7966d6ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 0.8110 mm",
+                    "pos": {
+                        "x": 178.205516,
+                        "y": 80.936
+                    },
+                    "uuid": "e13287a8-a7bb-469b-95bc-6f39a5f760c3"
+                },
+                {
+                    "description": "PTH pad C [5V] of R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 81.915
+                    },
+                    "uuid": "eda2c9a0-c4b7-4baa-96ba-af5bcd250b02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 0.8110 mm",
+                    "pos": {
+                        "x": 178.779,
+                        "y": 81.509484
+                    },
+                    "uuid": "7663b78f-5a80-4171-97d6-6c54497cea89"
+                },
+                {
+                    "description": "PTH pad C [5V] of R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 81.915
+                    },
+                    "uuid": "eda2c9a0-c4b7-4baa-96ba-af5bcd250b02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 1.2700 mm",
+                    "pos": {
+                        "x": 176.935516,
+                        "y": 80.936
+                    },
+                    "uuid": "48bca538-2b69-4025-8b85-6e60c9202db7"
+                },
+                {
+                    "description": "PTH pad C [5V] of R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 81.915
+                    },
+                    "uuid": "eda2c9a0-c4b7-4baa-96ba-af5bcd250b02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2237 mm)",
+            "items": [
+                {
+                    "description": "Track [fault_1] on F.Cu, length 0.0449 mm",
+                    "pos": {
+                        "x": 156.81,
+                        "y": 95.596751
+                    },
+                    "uuid": "9e314807-3abf-4511-8f1e-08b1a605f6cc"
+                },
+                {
+                    "description": "Pad 13 [unconnected-(U7-4B-Pad13)] of U7 on F.Cu",
+                    "pos": {
+                        "x": 155.51,
+                        "y": 95.25
+                    },
+                    "uuid": "f46c06ed-863f-4169-8c9d-ab2d7966d6ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [BSPD_signal] on B.Cu, length 1.2900 mm",
+                    "pos": {
+                        "x": 162.384009,
+                        "y": 69.995
+                    },
+                    "uuid": "312c6bce-6d40-4572-89fa-c70b5bb1cb24"
+                },
+                {
+                    "description": "PTH pad 2 [GND] of C1",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 71.12
+                    },
+                    "uuid": "456532a1-c505-47d9-be8e-7fd9386f604b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2359 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U5-1B)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 95.25
+                    },
+                    "uuid": "0ae2a7f9-61ec-449e-808e-1c8ee900ac3c"
+                },
+                {
+                    "description": "Track [fault_1] on F.Cu, length 0.9019 mm",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 94.911853
+                    },
+                    "uuid": "52fc6d21-e5fe-4134-a449-2c2f4af045b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [current_short_ground] on B.Cu, length 8.0750 mm",
+                    "pos": {
+                        "x": 161.2,
+                        "y": 101.51
+                    },
+                    "uuid": "15e2d4c3-969e-4945-b171-95eb2c6dc5fa"
+                },
+                {
+                    "description": "Via [current_short_power] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 161.925,
+                        "y": 100.33
+                    },
+                    "uuid": "6051bcf5-e5ee-4059-865c-bf4a210192f3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 1.3057 mm",
+                    "pos": {
+                        "x": 172.05,
+                        "y": 87.976751
+                    },
+                    "uuid": "c5e82163-29ed-4dfe-a96f-86523e0f42fb"
+                },
+                {
+                    "description": "Pad 7 [current_short_power] of U3 on F.Cu",
+                    "pos": {
+                        "x": 170.75,
+                        "y": 87.63
+                    },
+                    "uuid": "e3efd57a-c0e1-4d88-8e92-6fdd07c948ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 2.8518 mm",
+                    "pos": {
+                        "x": 172.05,
+                        "y": 85.125
+                    },
+                    "uuid": "af23f4d9-2582-41a9-9c6d-2e77ce46138e"
+                },
+                {
+                    "description": "Pad 7 [current_short_power] of U3 on F.Cu",
+                    "pos": {
+                        "x": 170.75,
+                        "y": 87.63
+                    },
+                    "uuid": "e3efd57a-c0e1-4d88-8e92-6fdd07c948ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Pad 5 [brake] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 90.17
+                    },
+                    "uuid": "51010c77-fd6d-486c-9ec9-9cb324a095a3"
+                },
+                {
+                    "description": "Track [4.5V] on F.Cu, length 0.8839 mm",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 88.9
+                    },
+                    "uuid": "67c5480b-8560-4269-a0dd-9655107d1a5e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 7.0050 mm",
+                    "pos": {
+                        "x": 163.12,
+                        "y": 89.525
+                    },
+                    "uuid": "45af28ea-508b-4adf-91ae-22dc0cbc7ef8"
+                },
+                {
+                    "description": "Pad 5 [current] of U3 on F.Cu",
+                    "pos": {
+                        "x": 170.75,
+                        "y": 90.17
+                    },
+                    "uuid": "b75c147c-1ddf-4d6f-bf11-821fa8177281"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Track [current_short_power] on B.Cu, length 6.3500 mm",
+                    "pos": {
+                        "x": 163.83,
+                        "y": 92.075
+                    },
+                    "uuid": "99cdf41c-b706-4cf4-9ee7-217dbc42cb8e"
+                },
+                {
+                    "description": "Via [brake_short_power] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 164.5545,
+                        "y": 96.5995
+                    },
+                    "uuid": "dd693327-2eda-4c37-8533-853c7db27cf4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2085 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [brake_short_power] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 87.63
+                    },
+                    "uuid": "0247b9f0-762d-4465-a07c-123c83582807"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 2.4736 mm",
+                    "pos": {
+                        "x": 165.423249,
+                        "y": 88.9
+                    },
+                    "uuid": "787afe7f-a589-47b7-88ce-373d3ccedd64"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 0.8839 mm",
+                    "pos": {
+                        "x": 170.125,
+                        "y": 89.525
+                    },
+                    "uuid": "1518ab3b-eabf-4ddb-90c1-f3c1ecc97633"
+                },
+                {
+                    "description": "Pad 5 [current] of U3 on F.Cu",
+                    "pos": {
+                        "x": 170.75,
+                        "y": 90.17
+                    },
+                    "uuid": "b75c147c-1ddf-4d6f-bf11-821fa8177281"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [brake] of U2 on F.Cu",
+                    "pos": {
+                        "x": 157.545,
+                        "y": 87.63
+                    },
+                    "uuid": "0a5a3ade-5d74-4dd0-b808-d42237021d25"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 2.6941 mm",
+                    "pos": {
+                        "x": 159.826751,
+                        "y": 86.995
+                    },
+                    "uuid": "4816d66f-e23c-4d9d-a4f1-8356a8cbf5ea"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2100 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [brake_short_power] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 87.63
+                    },
+                    "uuid": "0247b9f0-762d-4465-a07c-123c83582807"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 3.6915 mm",
+                    "pos": {
+                        "x": 163.518249,
+                        "y": 86.995
+                    },
+                    "uuid": "baaa588e-a378-4e13-bbdf-3be64c47af02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2085 mm)",
+            "items": [
+                {
+                    "description": "Track [0.5V] on F.Cu, length 10.5559 mm",
+                    "pos": {
+                        "x": 171.138249,
+                        "y": 79.375
+                    },
+                    "uuid": "3dcdae2b-b9d5-4d24-acdc-5f93aac17fa4"
+                },
+                {
+                    "description": "Pad 8 [12V] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 86.36
+                    },
+                    "uuid": "782f8765-cf2c-4dcb-b26e-f5209d9efda5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [brake_short_power] on F.Cu, length 3.5551 mm",
+                    "pos": {
+                        "x": 160.568175,
+                        "y": 88.30348
+                    },
+                    "uuid": "20873e5e-325d-4d96-bf72-fc12f8c245c5"
+                },
+                {
+                    "description": "Track [brake_short_ground] on F.Cu, length 4.5327 mm",
+                    "pos": {
+                        "x": 163.323249,
+                        "y": 95.25
+                    },
+                    "uuid": "9c718fab-e631-4b20-817b-0d4d2b1942a5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [brake_short_power] on F.Cu, length 3.5551 mm",
+                    "pos": {
+                        "x": 160.568175,
+                        "y": 88.30348
+                    },
+                    "uuid": "20873e5e-325d-4d96-bf72-fc12f8c245c5"
+                },
+                {
+                    "description": "Track [brake_short_ground] on F.Cu, length 4.3168 mm",
+                    "pos": {
+                        "x": 160.118175,
+                        "y": 92.044926
+                    },
+                    "uuid": "97e9d048-7e23-4943-92d3-796aceec7152"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2041 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [high_current] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 93.98
+                    },
+                    "uuid": "64d3c858-c157-4a29-b010-6478999dcfd3"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 0.1344 mm",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 93.538249
+                    },
+                    "uuid": "ed78f8b9-43f9-4809-b032-34fbd49e2567"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2085 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [brake_short_power] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 87.63
+                    },
+                    "uuid": "0247b9f0-762d-4465-a07c-123c83582807"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 0.3118 mm",
+                    "pos": {
+                        "x": 163.674124,
+                        "y": 87.150875
+                    },
+                    "uuid": "1669fe7c-5f64-484f-8053-a2f55d451568"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2041 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [high_current] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 93.98
+                    },
+                    "uuid": "64d3c858-c157-4a29-b010-6478999dcfd3"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 0.8282 mm",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 94.421751
+                    },
+                    "uuid": "77fa7452-937a-45d7-803b-bad653356f81"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2490 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [brake_short_power] of U2 on F.Cu",
+                    "pos": {
+                        "x": 162.495,
+                        "y": 87.63
+                    },
+                    "uuid": "0247b9f0-762d-4465-a07c-123c83582807"
+                },
+                {
+                    "description": "Track [0.5V] on F.Cu, length 0.2204 mm",
+                    "pos": {
+                        "x": 163.674124,
+                        "y": 86.839124
+                    },
+                    "uuid": "5585ed15-8ffc-4383-a445-8c13d1e63262"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [high_current] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 93.98
+                    },
+                    "uuid": "64d3c858-c157-4a29-b010-6478999dcfd3"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 0.6935 mm",
+                    "pos": {
+                        "x": 151.86,
+                        "y": 93.633249
+                    },
+                    "uuid": "71edeeb1-e861-458e-9f2f-f0881bcb3d75"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2041 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [high_current] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 93.98
+                    },
+                    "uuid": "64d3c858-c157-4a29-b010-6478999dcfd3"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 4.2479 mm",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 89.290305
+                    },
+                    "uuid": "e6462325-1be6-4fdf-bf99-043be6cbcdcf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2041 mm)",
+            "items": [
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 0.1344 mm",
+                    "pos": {
+                        "x": 151.86,
+                        "y": 94.326751
+                    },
+                    "uuid": "3a3d086b-2687-43b6-b60e-b71a6d2cc1e7"
+                },
+                {
+                    "description": "Pad 1 [high_current] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 93.98
+                    },
+                    "uuid": "64d3c858-c157-4a29-b010-6478999dcfd3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [high_current] on F.Cu, length 1.3057 mm",
+                    "pos": {
+                        "x": 147.99,
+                        "y": 87.283249
+                    },
+                    "uuid": "90d15750-6971-42c7-8dea-647aa98995af"
+                },
+                {
+                    "description": "Pad 2 [Net-(U1A--)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 149.29,
+                        "y": 87.63
+                    },
+                    "uuid": "accd0a9a-5768-41e2-b0ec-3368327d7a0f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [high_current] on F.Cu, length 5.3318 mm",
+                    "pos": {
+                        "x": 147.99,
+                        "y": 92.615
+                    },
+                    "uuid": "30ec7b10-e9df-40c9-8a2e-d5d363af60ca"
+                },
+                {
+                    "description": "Pad 2 [Net-(U1A--)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 149.29,
+                        "y": 87.63
+                    },
+                    "uuid": "accd0a9a-5768-41e2-b0ec-3368327d7a0f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 7.0050 mm",
+                    "pos": {
+                        "x": 163.12,
+                        "y": 89.525
+                    },
+                    "uuid": "45af28ea-508b-4adf-91ae-22dc0cbc7ef8"
+                },
+                {
+                    "description": "Via [current] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 90.2495
+                    },
+                    "uuid": "a3d51e0c-474c-4b62-a4a3-88346ce50dc3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Via [current] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 88.9
+                    },
+                    "uuid": "360f9fb1-3e2d-4f03-befd-4885b9631f70"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 4.2479 mm",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 89.290305
+                    },
+                    "uuid": "e6462325-1be6-4fdf-bf99-043be6cbcdcf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 7.0050 mm",
+                    "pos": {
+                        "x": 163.12,
+                        "y": 89.525
+                    },
+                    "uuid": "45af28ea-508b-4adf-91ae-22dc0cbc7ef8"
+                },
+                {
+                    "description": "Via [current] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 88.8005
+                    },
+                    "uuid": "6e9fb6e5-f189-41e6-9ece-334aaa253977"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2082 mm)",
+            "items": [
+                {
+                    "description": "Track [brake_short_ground] on F.Cu, length 4.3168 mm",
+                    "pos": {
+                        "x": 160.118175,
+                        "y": 92.044926
+                    },
+                    "uuid": "97e9d048-7e23-4943-92d3-796aceec7152"
+                },
+                {
+                    "description": "Via [brake] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 159.385,
+                        "y": 91.44
+                    },
+                    "uuid": "f370756f-b12f-42c1-9ba7-9123374bb167"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [current] of C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "45495d78-f71b-470d-87f5-bcf81933ee85"
+                },
+                {
+                    "description": "Track [brake] on F.Cu, length 3.7660 mm",
+                    "pos": {
+                        "x": 161.8,
+                        "y": 67.82
+                    },
+                    "uuid": "a618e6cd-8f7e-42ed-b561-50d391fff079"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [current] of C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "45495d78-f71b-470d-87f5-bcf81933ee85"
+                },
+                {
+                    "description": "Track [brake] on F.Cu, length 1.8510 mm",
+                    "pos": {
+                        "x": 161.140991,
+                        "y": 72.245
+                    },
+                    "uuid": "84d79fcb-fad9-45d5-a083-2aac96c59e65"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U4A-+)] on B.Cu, length 14.5410 mm",
+                    "pos": {
+                        "x": 180.83,
+                        "y": 79.4305
+                    },
+                    "uuid": "118762b2-6fc4-4503-b366-4f87ff3e5628"
+                },
+                {
+                    "description": "PTH pad 2 [fault] of R3",
+                    "pos": {
+                        "x": 179.705,
+                        "y": 66.675
+                    },
+                    "uuid": "3ae1783d-87be-449a-a8fa-d80bf001fb60"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [brake] on F.Cu, length 0.9320 mm",
+                    "pos": {
+                        "x": 161.8,
+                        "y": 71.585991
+                    },
+                    "uuid": "30076b8f-61e0-4f8c-b5a7-2fda505952c6"
+                },
+                {
+                    "description": "PTH pad 1 [current] of C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "45495d78-f71b-470d-87f5-bcf81933ee85"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(D1-A)] of U4 on F.Cu",
+                    "pos": {
+                        "x": 174.055,
+                        "y": 87.63
+                    },
+                    "uuid": "35c2c3aa-0275-41bc-8f39-883b17bd1fe6"
+                },
+                {
+                    "description": "Track [Net-(U4A-+)] on F.Cu, length 8.1505 mm",
+                    "pos": {
+                        "x": 174.431751,
+                        "y": 88.9
+                    },
+                    "uuid": "78eef8b4-654a-4c80-8ab1-79a418c25c36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 8.1317 mm",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "b9428988-0145-431a-b680-f260c6826fee"
+                },
+                {
+                    "description": "Track [Net-(D1-A)] on F.Cu, length 0.7481 mm",
+                    "pos": {
+                        "x": 178.205516,
+                        "y": 80.354
+                    },
+                    "uuid": "fe64a4cd-5224-4a4f-a07a-bdaf1a22ba1d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 3 [0.5V] of U2 on F.Cu",
+                    "pos": {
+                        "x": 157.545,
+                        "y": 88.9
+                    },
+                    "uuid": "104599cd-6b0d-479b-8153-c68414675072"
+                },
+                {
+                    "description": "Track [brake] on F.Cu, length 3.5921 mm",
+                    "pos": {
+                        "x": 157.168249,
+                        "y": 87.63
+                    },
+                    "uuid": "fd0a33a8-cd2f-41bf-89a0-2ddf2d07dc0e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(D1-A)] on F.Cu, length 2.1206 mm",
+                    "pos": {
+                        "x": 179.705,
+                        "y": 78.854516
+                    },
+                    "uuid": "a7078be6-d7b1-489d-9708-20e3688caf9b"
+                },
+                {
+                    "description": "PTH pad B [4.5V] of R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "edee7399-abd4-4203-a747-60111d3ecd43"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [4.5V] on F.Cu, length 8.1317 mm",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "b9428988-0145-431a-b680-f260c6826fee"
+                },
+                {
+                    "description": "Track [Net-(D1-A)] on F.Cu, length 1.5804 mm",
+                    "pos": {
+                        "x": 172.72,
+                        "y": 85.091396
+                    },
+                    "uuid": "c9fa156d-4916-4d51-b6ca-0abca27a5b9f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B [0.5V] of R11",
+                    "pos": {
+                        "x": 171.45,
+                        "y": 79.375
+                    },
+                    "uuid": "3c533a14-c935-4c77-ae94-33270d0ae94f"
+                },
+                {
+                    "description": "Track [5V] on F.Cu, length 0.8110 mm",
+                    "pos": {
+                        "x": 171.044484,
+                        "y": 78.396
+                    },
+                    "uuid": "98192c34-3085-45e1-b9c5-7cf38403559f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [5V] on F.Cu, length 1.2226 mm",
+                    "pos": {
+                        "x": 171.855516,
+                        "y": 78.396
+                    },
+                    "uuid": "1921ca2c-9bed-434e-8797-c042ae016b71"
+                },
+                {
+                    "description": "PTH pad B [0.5V] of R11",
+                    "pos": {
+                        "x": 171.45,
+                        "y": 79.375
+                    },
+                    "uuid": "3c533a14-c935-4c77-ae94-33270d0ae94f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B [Net-(U1B--)] of R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "2ee23190-ecac-47c8-bbf7-7e7b181ad3d4"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 0.8110 mm",
+                    "pos": {
+                        "x": 166.079,
+                        "y": 78.969484
+                    },
+                    "uuid": "df5ba7af-6006-4d38-b366-de1305cb77a2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Via [12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.5795,
+                        "y": 88.8105
+                    },
+                    "uuid": "3d1aec54-c96c-44a2-bf20-ac2da95ad5f3"
+                },
+                {
+                    "description": "Track [hard_brake] on F.Cu, length 0.6006 mm",
+                    "pos": {
+                        "x": 151.855,
+                        "y": 88.599695
+                    },
+                    "uuid": "5c78030f-9a91-4db5-94d5-65d5f86ab708"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Via [12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 176.628175,
+                        "y": 87.728175
+                    },
+                    "uuid": "2c6669b8-5765-4ed3-b9d5-c21b3815be5c"
+                },
+                {
+                    "description": "Track [Net-(U4A-+)] on F.Cu, length 8.1505 mm",
+                    "pos": {
+                        "x": 174.431751,
+                        "y": 88.9
+                    },
+                    "uuid": "78eef8b4-654a-4c80-8ab1-79a418c25c36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.1995 mm)",
+            "items": [
+                {
+                    "description": "Via [12V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.5795,
+                        "y": 88.8105
+                    },
+                    "uuid": "3d1aec54-c96c-44a2-bf20-ac2da95ad5f3"
+                },
+                {
+                    "description": "Track [current] on B.Cu, length 12.1300 mm",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 89.535
+                    },
+                    "uuid": "aa4de7b1-45cb-4897-9f11-820bc4f58f98"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 12.2100 mm",
+                    "pos": {
+                        "x": 176.04,
+                        "y": 56.66
+                    },
+                    "uuid": "c66e0554-98ee-4978-941a-068aa3d90368"
+                },
+                {
+                    "description": "PTH pad 2 [5V] of R2",
+                    "pos": {
+                        "x": 166.37,
+                        "y": 57.785
+                    },
+                    "uuid": "dab0bd8c-74ca-4a2d-97aa-c55e6a381183"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [Net-(U7-1Y)] on F.Cu, length 1.4471 mm",
+                    "pos": {
+                        "x": 148.59,
+                        "y": 97.543249
+                    },
+                    "uuid": "09e5638b-063d-4456-8748-3d59dc90533e"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 3.4035 mm",
+                    "pos": {
+                        "x": 148.14,
+                        "y": 99.491751
+                    },
+                    "uuid": "da9f9fc2-96e6-439c-a0d0-db810b946e4b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 13 [brake_short_ground] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 95.25
+                    },
+                    "uuid": "c04243c2-3d54-4884-9750-ee0b97137269"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 0.3935 mm",
+                    "pos": {
+                        "x": 164.721751,
+                        "y": 95.875
+                    },
+                    "uuid": "d154feda-aa35-45d9-ae77-03b13e57727a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [fault_1] of U5 on F.Cu",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 93.98
+                    },
+                    "uuid": "a3875a56-455c-4dbe-be04-e3fd552b8117"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 5.2282 mm",
+                    "pos": {
+                        "x": 154.93,
+                        "y": 93.355
+                    },
+                    "uuid": "a7e7c342-8b57-43b4-a6ce-202b43787f59"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 1.3057 mm",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 94.903249
+                    },
+                    "uuid": "a4efba15-44b0-4553-a15d-bb355d07d6d1"
+                },
+                {
+                    "description": "Pad 13 [brake_short_ground] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 95.25
+                    },
+                    "uuid": "c04243c2-3d54-4884-9750-ee0b97137269"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [hard_brake] of U7 on F.Cu",
+                    "pos": {
+                        "x": 150.56,
+                        "y": 95.25
+                    },
+                    "uuid": "13276bd3-fabc-4faa-9353-943d72f11c43"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 4.0568 mm",
+                    "pos": {
+                        "x": 148.333249,
+                        "y": 95.895
+                    },
+                    "uuid": "82f7dfc6-5293-40c8-bd23-92f1be3151b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2152 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 0.5098 mm",
+                    "pos": {
+                        "x": 152.5795,
+                        "y": 88.8105
+                    },
+                    "uuid": "662ffeef-e850-4b71-b6a6-4bf8bc1da736"
+                },
+                {
+                    "description": "Pad 6 [Net-(U1B--)] of U1 on F.Cu",
+                    "pos": {
+                        "x": 154.24,
+                        "y": 88.9
+                    },
+                    "uuid": "b11463e3-745f-43b1-b809-2b83fcc02ed1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B [Net-(U1B--)] of R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "2ee23190-ecac-47c8-bbf7-7e7b181ad3d4"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 3.8065 mm",
+                    "pos": {
+                        "x": 166.079,
+                        "y": 82.776
+                    },
+                    "uuid": "a5396913-dcfb-4ebc-8b6e-e1f0c5a8488d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 3.5638 mm",
+                    "pos": {
+                        "x": 160.158249,
+                        "y": 93.355
+                    },
+                    "uuid": "5798ceb1-23db-4eef-8d2d-0ceba5d3797e"
+                },
+                {
+                    "description": "Pad 13 [brake_short_ground] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 95.25
+                    },
+                    "uuid": "c04243c2-3d54-4884-9750-ee0b97137269"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2158 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B [Net-(U1B--)] of R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "2ee23190-ecac-47c8-bbf7-7e7b181ad3d4"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 2.8627 mm",
+                    "pos": {
+                        "x": 165.276484,
+                        "y": 78.396
+                    },
+                    "uuid": "888d2a5d-2ad7-4e3f-9b8d-59796245cf75"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2158 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 0.4055 mm",
+                    "pos": {
+                        "x": 158.168,
+                        "y": 80.936
+                    },
+                    "uuid": "88b8d957-7ebb-4876-8792-2109f33575c3"
+                },
+                {
+                    "description": "PTH pad C [5V] of R9",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 81.915
+                    },
+                    "uuid": "b7e24c00-e835-487d-80e2-a8fa7df43272"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 2.0435 mm",
+                    "pos": {
+                        "x": 162.678249,
+                        "y": 95.875
+                    },
+                    "uuid": "48dd80b7-7d37-4a7e-b859-8d21c7e041a8"
+                },
+                {
+                    "description": "Pad 13 [brake_short_ground] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 95.25
+                    },
+                    "uuid": "c04243c2-3d54-4884-9750-ee0b97137269"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2158 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 0.2290 mm",
+                    "pos": {
+                        "x": 165.505516,
+                        "y": 78.396
+                    },
+                    "uuid": "09c10d4b-3d2b-439f-a1af-d20adc866346"
+                },
+                {
+                    "description": "PTH pad B [Net-(U1B--)] of R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "2ee23190-ecac-47c8-bbf7-7e7b181ad3d4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "PTH pad B [Net-(U1A--)] of R9",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 79.375
+                    },
+                    "uuid": "172ea7fd-612d-4e69-bed0-15730efbeb46"
+                },
+                {
+                    "description": "Track [12V] on F.Cu, length 6.6167 mm",
+                    "pos": {
+                        "x": 158.573516,
+                        "y": 80.936
+                    },
+                    "uuid": "36cc0cf3-f32f-438c-b40f-782da9cef422"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [<no net>] of U4 on F.Cu",
+                    "pos": {
+                        "x": 179.005,
+                        "y": 88.9
+                    },
+                    "uuid": "0ddb4b70-0d88-4746-b204-aea46b7e1f55"
+                },
+                {
+                    "description": "Track [fault] on F.Cu, length 2.0435 mm",
+                    "pos": {
+                        "x": 177.983249,
+                        "y": 88.255
+                    },
+                    "uuid": "d6d0e90d-a315-49ef-b8f2-8d3d714547bc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Track [12V] on F.Cu, length 0.6935 mm",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 95.596751
+                    },
+                    "uuid": "5275cff7-3265-46a5-b7f0-7963db98ac3a"
+                },
+                {
+                    "description": "Pad 13 [brake_short_ground] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 95.25
+                    },
+                    "uuid": "c04243c2-3d54-4884-9750-ee0b97137269"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2100 mm)",
+            "items": [
+                {
+                    "description": "Pad 11 [Net-(U5-2B)] of U5 on F.Cu",
+                    "pos": {
+                        "x": 163.7,
+                        "y": 97.79
+                    },
+                    "uuid": "26d3304a-5379-4650-8e7e-af31dea01f7d"
+                },
+                {
+                    "description": "Track [fault] on F.Cu, length 4.3064 mm",
+                    "pos": {
+                        "x": 165.59637,
+                        "y": 98.425
+                    },
+                    "uuid": "d1b10e77-15d9-4108-a381-13063f847a94"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2141 mm)",
+            "items": [
+                {
+                    "description": "Pad 6 [<no net>] of U4 on F.Cu",
+                    "pos": {
+                        "x": 179.005,
+                        "y": 88.9
+                    },
+                    "uuid": "0ddb4b70-0d88-4746-b204-aea46b7e1f55"
+                },
+                {
+                    "description": "Track [fault] on F.Cu, length 4.5043 mm",
+                    "pos": {
+                        "x": 174.798249,
+                        "y": 91.44
+                    },
+                    "uuid": "8df957f2-68fb-4f2b-aa07-62774d49ef70"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Pad 7 [<no net>] of U4 on F.Cu",
+                    "pos": {
+                        "x": 179.005,
+                        "y": 87.63
+                    },
+                    "uuid": "231a59cd-5326-4313-9ddb-5f29b513f587"
+                },
+                {
+                    "description": "Track [fault] on F.Cu, length 1.3410 mm",
+                    "pos": {
+                        "x": 180.026751,
+                        "y": 88.255
+                    },
+                    "uuid": "d7fae96f-7d70-4229-9178-ea4bf2450a46"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [<no net>] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 81.28
+                    },
+                    "uuid": "ffca05c4-84b3-4b05-aa13-fc794a05197a"
+                },
+                {
+                    "description": "PTH pad 2 [5V] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 80.01
+                    },
+                    "uuid": "2608cdf3-b762-4584-8a22-63ca0f454fc7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [<no net>] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 81.28
+                    },
+                    "uuid": "ffca05c4-84b3-4b05-aa13-fc794a05197a"
+                },
+                {
+                    "description": "PTH pad 2 [5V] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 80.01
+                    },
+                    "uuid": "2608cdf3-b762-4584-8a22-63ca0f454fc7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 2 [5V] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 80.01
+                    },
+                    "uuid": "2608cdf3-b762-4584-8a22-63ca0f454fc7"
+                },
+                {
+                    "description": "PTH pad 3 [GND] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 78.74
+                    },
+                    "uuid": "73f9664c-4c04-406d-8b27-3c1d4f8529cc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2500 mm; actual 0.2200 mm)",
+            "items": [
+                {
+                    "description": "PTH pad 2 [5V] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 80.01
+                    },
+                    "uuid": "2608cdf3-b762-4584-8a22-63ca0f454fc7"
+                },
+                {
+                    "description": "PTH pad 3 [GND] of U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 78.74
+                    },
+                    "uuid": "73f9664c-4c04-406d-8b27-3c1d4f8529cc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Footprint 'C_Disc_D3.4mm_W2.1mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "0044784f-0e07-4494-8df6-8acc722971b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 169.545,
+                        "y": 57.785
+                    },
+                    "uuid": "184b2949-3c96-4542-91c2-021efc8915dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical' does not match copy in library 'Connector_Molex'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 149.6538,
+                        "y": 68.9186
+                    },
+                    "uuid": "217ea859-6917-4e2e-9aa6-b4addc76a279"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 57.785
+                    },
+                    "uuid": "32d9216c-7d70-4a31-93c9-66910ffa5a42"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 176.53,
+                        "y": 88.265
+                    },
+                    "uuid": "3cbdd93e-3ad6-45e7-96a1-32136b0f297c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_Disc_D3.4mm_W2.1mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 166.39,
+                        "y": 71.12
+                    },
+                    "uuid": "3d04513b-7a78-4bb7-9904-41956a0f6304"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "4cca0d6f-d058-4c08-8332-d81149d5ac2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 167.64,
+                        "y": 101.6
+                    },
+                    "uuid": "66e9a538-1671-439f-a55f-d1239517cab9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 160.02,
+                        "y": 88.265
+                    },
+                    "uuid": "6941e138-0182-400c-adf2-5d1c5e363567"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 160.655,
+                        "y": 66.675
+                    },
+                    "uuid": "74def546-608f-4e5b-a15b-1c072cf297d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 61.595
+                    },
+                    "uuid": "7c02436f-da94-48bd-b761-25dbf0f9dae8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 66.675
+                    },
+                    "uuid": "8cdf80e6-8dd0-4f64-bfa1-96254fa2ae66"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'D_DO-35_SOD27_P7.62mm_Horizontal' does not match copy in library 'Diode_THT'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 170.815,
+                        "y": 93.98
+                    },
+                    "uuid": "9844a8ae-b072-47ad-aa26-b94605037206"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-14_3.9x8.7mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 161.225,
+                        "y": 97.79
+                    },
+                    "uuid": "9cd41da0-7690-48df-a616-b0ce4eee635f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "a855a641-2005-4333-a919-38d469127579"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 88.265
+                    },
+                    "uuid": "bc073b95-b9de-4a8f-aaa6-dbcea7c0c942"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-14_3.9x8.7mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U7",
+                    "pos": {
+                        "x": 153.035,
+                        "y": 97.79
+                    },
+                    "uuid": "c12d1253-81af-422f-a802-720af225ff99"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 171.45,
+                        "y": 79.375
+                    },
+                    "uuid": "d58e63e4-2b1a-4b49-b13e-c9d6fa456cc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 79.375
+                    },
+                    "uuid": "de4ef744-328c-47dd-9c6e-9e845a0b35f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 61.835
+                    },
+                    "uuid": "dedeeeb8-b185-49ba-b8c0-0d0c79c5fc24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 88.265
+                    },
+                    "uuid": "e14134b6-c8b3-40db-acdc-c0f57b580675"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'CP_Radial_D6.3mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 175.3,
+                        "y": 96.52
+                    },
+                    "uuid": "e32f0142-3728-4f4f-a36d-faa666a5c9d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 70.725
+                    },
+                    "uuid": "f3f480e0-f5fa-4e62-9708-3fa1367eb9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0548 mm)",
+            "items": [
+                {
+                    "description": "Segment of C1 on F.Silkscreen",
+                    "pos": {
+                        "x": 160.105,
+                        "y": 72.29
+                    },
+                    "uuid": "180261a8-ebf6-4a6e-bf66-2445f50d9133"
+                },
+                {
+                    "description": "Reference field of C1",
+                    "pos": {
+                        "x": 161.925,
+                        "y": 73.025
+                    },
+                    "uuid": "68aa3083-bffa-45af-ab21-15816d8c0a2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1000 mm; actual 0.0548 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C2",
+                    "pos": {
+                        "x": 167.64,
+                        "y": 73.025
+                    },
+                    "uuid": "85e14176-4621-4326-a0e5-e125c889f471"
+                },
+                {
+                    "description": "Segment of C2 on F.Silkscreen",
+                    "pos": {
+                        "x": 165.82,
+                        "y": 72.29
+                    },
+                    "uuid": "fefbe111-5433-4e0f-b761-9a58184531a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

@@ -1,0 +1,3147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/nick333/Desktop/project/BSPD_2027_no_latch/revised/BSPD_2027.kicad_sch</source>
+    <date>2026-10-30T18:06:01</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>BSPD 2027 engineering review</title>
+        <company/>
+        <rev>R2 — external relay latch</rev>
+        <date>2026-10-30</date>
+        <source>BSPD_2027.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF/50V</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM31CR61H106KA12L_C77092.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C77092</field>
+        <field name="LCSC Part #">C77092</field>
+        <field name="MPN">GRM31CR61H106KA12L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C77092.html</field>
+        <field name="Role">input_bulk</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM31CR61H106KA12L_C77092.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C77092"/>
+      <property name="LCSC Part #" value="C77092"/>
+      <property name="MPN" value="GRM31CR61H106KA12L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C77092.html"/>
+      <property name="Role" value="input_bulk"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e74d476-5c7b-55d0-b094-0cce4e2ce065</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">input_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="input_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3882ff8e-1711-5cd4-8930-70f3650d91d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>1uF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C28323</field>
+        <field name="LCSC Part #">C28323</field>
+        <field name="MPN">CL21B105KBFNNNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C28323.html</field>
+        <field name="Role">logic_bulk</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C28323"/>
+      <property name="LCSC Part #" value="C28323"/>
+      <property name="MPN" value="CL21B105KBFNNNE"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C28323.html"/>
+      <property name="Role" value="logic_bulk"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b66e53c-e8fd-5136-9d2f-738a6a49ea99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">logic_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="logic_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9af80696-4e95-5032-87f9-b43bb98b0cf2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">reference_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="reference_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6e08aeb8-3940-5bf9-b2fe-391c38502451</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">supervisor_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="supervisor_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edae59c4-650b-5737-9c7a-83770ac0aed9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">current_ic_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="current_ic_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40dad27b-f033-589f-9e13-24c6c0d5d02f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>10nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C282728</field>
+        <field name="LCSC Part #">C282728</field>
+        <field name="MPN">TCC0805X7R103K500DT</field>
+        <field name="Manufacturer">CCTC</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C282728.html</field>
+        <field name="Role">current_filter</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C282728"/>
+      <property name="LCSC Part #" value="C282728"/>
+      <property name="MPN" value="TCC0805X7R103K500DT"/>
+      <property name="Manufacturer" value="CCTC"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C282728.html"/>
+      <property name="Role" value="current_filter"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb0c3231-cb4e-55c1-86c8-a5c285e3c272</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">brake_ic_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="brake_ic_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d9fe18b-eea9-5bbe-9b5c-783ea52c10a5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>10nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C282728</field>
+        <field name="LCSC Part #">C282728</field>
+        <field name="MPN">TCC0805X7R103K500DT</field>
+        <field name="Manufacturer">CCTC</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C282728.html</field>
+        <field name="Role">brake_filter</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C282728"/>
+      <property name="LCSC Part #" value="C282728"/>
+      <property name="MPN" value="TCC0805X7R103K500DT"/>
+      <property name="Manufacturer" value="CCTC"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C282728.html"/>
+      <property name="Role" value="brake_filter"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3584f3ff-646f-5123-a0e5-9a0357ac92e8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C1711</field>
+        <field name="LCSC Part #">C1711</field>
+        <field name="MPN">CL21B104KBCNNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C1711.html</field>
+        <field name="Role">nand_bypass</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C1711"/>
+      <property name="LCSC Part #" value="C1711"/>
+      <property name="MPN" value="CL21B104KBCNNNC"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C1711.html"/>
+      <property name="Role" value="nand_bypass"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0478c970-9abd-523a-acf6-9898ee5c3985</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>10uF/25V X7R 10%</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2305301153_Murata-Electronics-GRM21BZ71E106KE15L_C237493.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C237493</field>
+        <field name="LCSC Part #">C237493</field>
+        <field name="MPN">GRM21BZ71E106KE15L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C237493.html</field>
+        <field name="Role">timer_cap</field>
+        <field name="Design Notes">Timer is conservatively early: nominal ~270ms; capacitance positive tolerance/temp and reset-FET leakage must fit 500ms including external relay.</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">https://lcsc.com/datasheet/lcsc_datasheet_2305301153_Murata-Electronics-GRM21BZ71E106KE15L_C237493.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C237493"/>
+      <property name="LCSC Part #" value="C237493"/>
+      <property name="MPN" value="GRM21BZ71E106KE15L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C237493.html"/>
+      <property name="Role" value="timer_cap"/>
+      <property name="Design Notes" value="Timer is conservatively early: nominal ~270ms; capacitance positive tolerance/temp and reset-FET leakage must fit 500ms including external relay."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe653a69-5541-553e-bdbe-0fb62a03d600</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS14</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="LCSC">C2480</field>
+        <field name="LCSC Part #">C2480</field>
+        <field name="MPN">SS14</field>
+        <field name="Manufacturer">MDD</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C2480.html</field>
+        <field name="Role">reverse_protection</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="D" description="Diode"/>
+      <property name="LCSC" value="C2480"/>
+      <property name="LCSC Part #" value="C2480"/>
+      <property name="MPN" value="SS14"/>
+      <property name="Manufacturer" value="MDD"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C2480.html"/>
+      <property name="Role" value="reverse_protection"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9a748a5-62ef-5097-a9f8-094bf88cc0aa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>SMBJ18A</value>
+      <footprint>Diode_SMD:D_SMB</footprint>
+      <fields>
+        <field name="LCSC">C151256</field>
+        <field name="LCSC Part #">C151256</field>
+        <field name="MPN">SMBJ18A</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C151256.html</field>
+        <field name="Role">supply_tvs</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Diode_SMD:D_SMB</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C151256"/>
+      <property name="LCSC Part #" value="C151256"/>
+      <property name="MPN" value="SMBJ18A"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C151256.html"/>
+      <property name="Role" value="supply_tvs"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5a151b7-ed09-5d76-9e83-a893920b5ca6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>BZT52C15-7-F</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/BZT52C2V0-BZT52C75.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C177014</field>
+        <field name="LCSC Part #">C177014</field>
+        <field name="MPN">BZT52C15-7-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C177014.html</field>
+        <field name="Role">output_clamp</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/BZT52C2V0-BZT52C75.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="D_Zener" description="Zener diode"/>
+      <property name="LCSC" value="C177014"/>
+      <property name="LCSC Part #" value="C177014"/>
+      <property name="MPN" value="BZT52C15-7-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C177014.html"/>
+      <property name="Role" value="output_clamp"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f9d84c3-61c7-5e30-8047-15a3effd32f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>0451.250MRL</value>
+      <footprint>Fuse:Fuse_Littelfuse-NANO2-451_453</footprint>
+      <datasheet>https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1</datasheet>
+      <fields>
+        <field name="LCSC">C151116</field>
+        <field name="LCSC Part #">C151116</field>
+        <field name="MPN">0451.250MRL</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C151116.html</field>
+        <field name="Role">input_fuse</field>
+        <field name="Design Notes">Final interrupt rating must exceed GLV prospective short-circuit current.</field>
+        <field name="Footprint">Fuse:Fuse_Littelfuse-NANO2-451_453</field>
+        <field name="Datasheet">https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="Fuse" description="Fuse"/>
+      <property name="LCSC" value="C151116"/>
+      <property name="LCSC Part #" value="C151116"/>
+      <property name="MPN" value="0451.250MRL"/>
+      <property name="Manufacturer" value="Littelfuse"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C151116.html"/>
+      <property name="Role" value="input_fuse"/>
+      <property name="Design Notes" value="Final interrupt rating must exceed GLV prospective short-circuit current."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1e03f64-c07a-53e3-910b-1fbc6c32046c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>043045-0612</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/ja-jp/products/part-detail/430450612</datasheet>
+      <fields>
+        <field name="LCSC">C234188</field>
+        <field name="LCSC Part #">C234188</field>
+        <field name="MPN">430450612</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C234188.html</field>
+        <field name="Role">vehicle_connector</field>
+        <field name="Design Notes">Pin 1 stays unused. Pin 2 is non-latching: HIGH healthy, LOW fault. The external relayboard retains trips and controls manual reset.</field>
+        <field name="Footprint">Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</field>
+        <field name="Datasheet">https://www.molex.com/ja-jp/products/part-detail/430450612</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="vehicle_connector" description=""/>
+      <property name="LCSC" value="C234188"/>
+      <property name="LCSC Part #" value="C234188"/>
+      <property name="MPN" value="430450612"/>
+      <property name="Manufacturer" value="Molex"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C234188.html"/>
+      <property name="Role" value="vehicle_connector"/>
+      <property name="Design Notes" value="Pin 1 stays unused. Pin 2 is non-latching: HIGH healthy, LOW fault. The external relayboard retains trips and controls manual reset."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07503ff5-619c-5020-b1c6-2101152fae54</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>2N7002,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C65189</field>
+        <field name="LCSC Part #">C65189</field>
+        <field name="MPN">2N7002,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C65189.html</field>
+        <field name="Role">timer_reset_fet</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="timer_reset_fet" description=""/>
+      <property name="LCSC" value="C65189"/>
+      <property name="LCSC Part #" value="C65189"/>
+      <property name="MPN" value="2N7002,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C65189.html"/>
+      <property name="Role" value="timer_reset_fet"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3458147-5a9b-526e-9f4a-6061f33c8bcf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>MMBT3904,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C426835</field>
+        <field name="LCSC Part #">C426835</field>
+        <field name="MPN">MMBT3904,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C426835.html</field>
+        <field name="Role">output_level_shift</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="output_level_shift" description=""/>
+      <property name="LCSC" value="C426835"/>
+      <property name="LCSC Part #" value="C426835"/>
+      <property name="MPN" value="MMBT3904,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C426835.html"/>
+      <property name="Role" value="output_level_shift"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edefed31-b269-5c4b-a5c3-eb533b53b4f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q3">
+      <value>MMBT3906,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C75549</field>
+        <field name="LCSC Part #">C75549</field>
+        <field name="MPN">MMBT3906,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C75549.html</field>
+        <field name="Role">output_source</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/MMBT3906.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="output_source" description=""/>
+      <property name="LCSC" value="C75549"/>
+      <property name="LCSC Part #" value="C75549"/>
+      <property name="MPN" value="MMBT3906,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C75549.html"/>
+      <property name="Role" value="output_source"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dff1e2f-4491-51be-bbd3-e36d2b7f4d57</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>1k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="LCSC Part #">C17513</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17513.html</field>
+        <field name="Role">clamp_rail_bleed</field>
+        <field name="Design Notes">Provides sink load for clamp current; regulator itself cannot sink current.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="LCSC Part #" value="C17513"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17513.html"/>
+      <property name="Role" value="clamp_rail_bleed"/>
+      <property name="Design Notes" value="Provides sink load for clamp current; regulator itself cannot sink current."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c5ece69-c88a-5e47-b02e-19917130b30d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>3.3k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C26010</field>
+        <field name="LCSC Part #">C26010</field>
+        <field name="MPN">0805W8F3301T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C26010.html</field>
+        <field name="Role">reference_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C26010"/>
+      <property name="LCSC Part #" value="C26010"/>
+      <property name="MPN" value="0805W8F3301T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C26010.html"/>
+      <property name="Role" value="reference_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2eeb8274-87d9-5f5e-9044-3cc2dabc1af3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">current_series</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="current_series"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d881e9e-6789-5e8c-ab0d-40ae35f5ad58</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">current_open_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="current_open_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8cef335c-d73f-51f7-9ab4-9793c1bcdbf5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>1M 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17514</field>
+        <field name="LCSC Part #">C17514</field>
+        <field name="MPN">0805W8F1004T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17514.html</field>
+        <field name="Role">current_low_top</field>
+        <field name="Design Notes">Nominal raw low limit ~0.099V permits normal DHAB low clamping at a qualified sensor supply.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17514"/>
+      <property name="LCSC Part #" value="C17514"/>
+      <property name="MPN" value="0805W8F1004T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17514.html"/>
+      <property name="Role" value="current_low_top"/>
+      <property name="Design Notes" value="Nominal raw low limit ~0.099V permits normal DHAB low clamping at a qualified sensor supply."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6eeeabdc-39ad-5894-840d-304559cfff68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">current_low_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="current_low_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03e546ed-2caf-53af-943a-9e4eadad7bd4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">current_high_top</field>
+        <field name="Design Notes">Nominal raw high limit ~4.88V permits DHAB nominal high clamping; sensor-supply extremes still require reference qualification.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="current_high_top"/>
+      <property name="Design Notes" value="Nominal raw high limit ~4.88V permits DHAB nominal high clamping; sensor-supply extremes still require reference qualification."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c232dac4-6922-519f-834d-ec5b2cec6384</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>9.53k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C865722</field>
+        <field name="LCSC Part #">C865722</field>
+        <field name="MPN">RT0805BRD079K53L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-image/C865722.html?whichImg=0</field>
+        <field name="Role">current_high_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C865722"/>
+      <property name="LCSC Part #" value="C865722"/>
+      <property name="MPN" value="RT0805BRD079K53L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-image/C865722.html?whichImg=0"/>
+      <property name="Role" value="current_high_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c646689-7db5-58bd-a477-81aa015fd806</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>28k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0728KL</datasheet>
+      <fields>
+        <field name="LCSC">C865356</field>
+        <field name="LCSC Part #">C865356</field>
+        <field name="MPN">RT0805BRD0728KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C865356.html</field>
+        <field name="Role">current_set_top</field>
+        <field name="Design Notes">Channel 2 calibration part; not a final vehicle threshold until sensor supply and errors are measured.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0728KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C865356"/>
+      <property name="LCSC Part #" value="C865356"/>
+      <property name="MPN" value="RT0805BRD0728KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C865356.html"/>
+      <property name="Role" value="current_set_top"/>
+      <property name="Design Notes" value="Channel 2 calibration part; not a final vehicle threshold until sensor supply and errors are measured."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a01ded7-0f99-526a-b48b-8be5dcf9d2ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">current_set_bottom</field>
+        <field name="Design Notes">Change soldered resistor values to calibrate; no moving contacts.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="current_set_bottom"/>
+      <property name="Design Notes" value="Change soldered resistor values to calibrate; no moving contacts."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b213885-2fb6-530c-b233-3f8d3b965166</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>1k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17513</field>
+        <field name="LCSC Part #">C17513</field>
+        <field name="MPN">0805W8F1001T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17513.html</field>
+        <field name="Role">current_hysteresis_input</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17513"/>
+      <property name="LCSC Part #" value="C17513"/>
+      <property name="MPN" value="0805W8F1001T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17513.html"/>
+      <property name="Role" value="current_hysteresis_input"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d14ef22-365e-5d1c-bf91-3d59d950c138</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>4.7M 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17674</field>
+        <field name="LCSC Part #">C17674</field>
+        <field name="MPN">0805W8F4704T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17674.html</field>
+        <field name="Role">current_hysteresis_feedback</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17674"/>
+      <property name="LCSC Part #" value="C17674"/>
+      <property name="MPN" value="0805W8F4704T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17674.html"/>
+      <property name="Role" value="current_hysteresis_feedback"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>123c3cf7-0db3-53d5-9ed2-f55600d47c1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">current_pullup</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="current_pullup"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b33ce3a-e5eb-566e-8235-4ba25998ebb6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>33k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17633</field>
+        <field name="LCSC Part #">C17633</field>
+        <field name="MPN">0805W8F3302T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17633.html</field>
+        <field name="Role">undervoltage_top</field>
+        <field name="Design Notes">Conservative 12V-class undervoltage cutoff also protects AiM 10V minimum supply. Qualify actual GLV range.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17633"/>
+      <property name="LCSC Part #" value="C17633"/>
+      <property name="MPN" value="0805W8F3302T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17633.html"/>
+      <property name="Role" value="undervoltage_top"/>
+      <property name="Design Notes" value="Conservative 12V-class undervoltage cutoff also protects AiM 10V minimum supply. Qualify actual GLV range."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af956af2-a8cd-57c0-922a-c9a560138195</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">undervoltage_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="undervoltage_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c1b207e-35c6-5a22-b15a-d0ad37530879</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">brake_series</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="brake_series"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4c3441ee-01d8-5279-9da7-ba616fc3139e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">brake_open_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="brake_open_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>805fbbf8-ff53-5da4-b467-fb5b626b4953</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>115k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C407430</field>
+        <field name="LCSC Part #">C407430</field>
+        <field name="MPN">0805W8F1153T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C407430.html</field>
+        <field name="Role">brake_low_top</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C407430"/>
+      <property name="LCSC Part #" value="C407430"/>
+      <property name="MPN" value="0805W8F1153T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C407430.html"/>
+      <property name="Role" value="brake_low_top"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d37eeb2b-b6a6-5cff-8641-d608646122e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">brake_low_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="brake_low_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e3a4394-9f03-588f-b271-57921e953611</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>8.66k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17832</field>
+        <field name="LCSC Part #">C17832</field>
+        <field name="MPN">0805W8F8661T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17832.html</field>
+        <field name="Role">brake_high_top</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17832"/>
+      <property name="LCSC Part #" value="C17832"/>
+      <property name="MPN" value="0805W8F8661T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17832.html"/>
+      <property name="Role" value="brake_high_top"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>281b0c83-78c8-5cb8-abfd-273dd0a073a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">brake_high_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="brake_high_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d91d123-0765-5365-b8f4-d980c0c8ddc4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>40.2k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C865475</field>
+        <field name="LCSC Part #">C865475</field>
+        <field name="MPN">RT0805BRD0740K2L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C865475.html</field>
+        <field name="Role">brake_set_top</field>
+        <field name="Design Notes">Bench placeholder only (~35bar). AiM X05SNP13520 is confirmed; hard-brake pressure remains unconfirmed.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C865475"/>
+      <property name="LCSC Part #" value="C865475"/>
+      <property name="MPN" value="RT0805BRD0740K2L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C865475.html"/>
+      <property name="Role" value="brake_set_top"/>
+      <property name="Design Notes" value="Bench placeholder only (~35bar). AiM X05SNP13520 is confirmed; hard-brake pressure remains unconfirmed."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9739752-0f7d-57d0-a49e-29e0e0be0608</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</datasheet>
+      <fields>
+        <field name="LCSC">C110775</field>
+        <field name="LCSC Part #">C110775</field>
+        <field name="MPN">RT0805BRD0710KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C110775.html</field>
+        <field name="Role">brake_set_bottom</field>
+        <field name="Design Notes">Change soldered resistors only after hydraulic calibration.</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0710KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C110775"/>
+      <property name="LCSC Part #" value="C110775"/>
+      <property name="MPN" value="RT0805BRD0710KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C110775.html"/>
+      <property name="Role" value="brake_set_bottom"/>
+      <property name="Design Notes" value="Change soldered resistors only after hydraulic calibration."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05f11a86-e292-5d4c-898c-847760420f41</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">brake_hysteresis_input</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="brake_hysteresis_input"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38b867ba-b2f0-54d3-b7d1-2b71c2267601</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>2.2M 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C137552</field>
+        <field name="LCSC Part #">C137552</field>
+        <field name="MPN">RC0805FR-072M2L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C137552.html</field>
+        <field name="Role">brake_hysteresis_feedback</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C137552"/>
+      <property name="LCSC Part #" value="C137552"/>
+      <property name="MPN" value="RC0805FR-072M2L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C137552.html"/>
+      <property name="Role" value="brake_hysteresis_feedback"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f56ac556-e6bb-5871-aa0a-b34bbbbb1a68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">brake_pullup</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="brake_pullup"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>763e7cd0-62e5-5572-9e51-f94891621810</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>39k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C25826</field>
+        <field name="LCSC Part #">C25826</field>
+        <field name="MPN">0805W8F3902T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://jlcpcb.com/partdetail/26569-0805W8F3902T5E/C25826</field>
+        <field name="Role">timer_charge</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C25826"/>
+      <property name="LCSC Part #" value="C25826"/>
+      <property name="MPN" value="0805W8F3902T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://jlcpcb.com/partdetail/26569-0805W8F3902T5E/C25826"/>
+      <property name="Role" value="timer_charge"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>049ac21b-80c8-53f2-b426-5205a7ea1378</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>47k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0747KL</datasheet>
+      <fields>
+        <field name="LCSC">C865515</field>
+        <field name="LCSC Part #">C865515</field>
+        <field name="MPN">RT0805BRD0747KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C865515.html</field>
+        <field name="Role">timer_half_top</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0747KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C865515"/>
+      <property name="LCSC Part #" value="C865515"/>
+      <property name="MPN" value="RT0805BRD0747KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C865515.html"/>
+      <property name="Role" value="timer_half_top"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>175afdba-4fd2-5af5-995b-510f50bc28e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R29">
+      <value>47k 0.1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0747KL</datasheet>
+      <fields>
+        <field name="LCSC">C865515</field>
+        <field name="LCSC Part #">C865515</field>
+        <field name="MPN">RT0805BRD0747KL</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C865515.html</field>
+        <field name="Role">timer_half_bottom</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0747KL</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C865515"/>
+      <property name="LCSC Part #" value="C865515"/>
+      <property name="MPN" value="RT0805BRD0747KL"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C865515.html"/>
+      <property name="Role" value="timer_half_bottom"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bccc03e1-e2df-5b8d-ac90-6deaace7efe9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>470 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C17710</field>
+        <field name="LCSC Part #">C17710</field>
+        <field name="MPN">0805W8F4700T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17710.html</field>
+        <field name="Role">discharge_gate_series</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet">https://lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17710"/>
+      <property name="LCSC Part #" value="C17710"/>
+      <property name="MPN" value="0805W8F4700T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17710.html"/>
+      <property name="Role" value="discharge_gate_series"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44bd9efd-ca0c-5af0-a5ac-0991b25877d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C149504</field>
+        <field name="LCSC Part #">C149504</field>
+        <field name="MPN">0805W8F1003T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C149504.html</field>
+        <field name="Role">discharge_gate_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C149504"/>
+      <property name="LCSC Part #" value="C149504"/>
+      <property name="MPN" value="0805W8F1003T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C149504.html"/>
+      <property name="Role" value="discharge_gate_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>954c6ca0-335b-5823-aec4-716729588125</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">fault_bus_pullup</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="fault_bus_pullup"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e22d6276-b937-5b3d-970b-ee6ee92ba6f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+        <field name="LCSC Part #">C17414</field>
+        <field name="MPN">0805W8F1002T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17414.html</field>
+        <field name="Role">permit_base</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17414"/>
+      <property name="LCSC Part #" value="C17414"/>
+      <property name="MPN" value="0805W8F1002T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17414.html"/>
+      <property name="Role" value="permit_base"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6a0ab1d3-be7b-5c69-93f3-d990044d2e50</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C149504</field>
+        <field name="LCSC Part #">C149504</field>
+        <field name="MPN">0805W8F1003T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C149504.html</field>
+        <field name="Role">permit_base_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C149504"/>
+      <property name="LCSC Part #" value="C149504"/>
+      <property name="MPN" value="0805W8F1003T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C149504.html"/>
+      <property name="Role" value="permit_base_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8696c96d-d1e8-57d4-8814-6622d189ed17</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17713</field>
+        <field name="LCSC Part #">C17713</field>
+        <field name="MPN">0805W8F4702T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17713.html</field>
+        <field name="Role">source_base_limit</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17713"/>
+      <property name="LCSC Part #" value="C17713"/>
+      <property name="MPN" value="0805W8F4702T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17713.html"/>
+      <property name="Role" value="source_base_limit"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0b25a9d-c325-502c-8f14-358acc742bff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C149504</field>
+        <field name="LCSC Part #">C149504</field>
+        <field name="MPN">0805W8F1003T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C149504.html</field>
+        <field name="Role">source_base_off_bias</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C149504"/>
+      <property name="LCSC Part #" value="C149504"/>
+      <property name="MPN" value="0805W8F1003T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C149504.html"/>
+      <property name="Role" value="source_base_off_bias"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce4c7275-00ba-57ac-a45a-a47ebd2770ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>2.2k 1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <fields>
+        <field name="LCSC">C17948</field>
+        <field name="LCSC Part #">C17948</field>
+        <field name="MPN">1206W4F2201T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17948.html</field>
+        <field name="Role">output_short_limit</field>
+        <field name="Design Notes">Output load verified on motherboard: 24k divider. 1206 power rating required.</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17948"/>
+      <property name="LCSC Part #" value="C17948"/>
+      <property name="MPN" value="1206W4F2201T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17948.html"/>
+      <property name="Role" value="output_short_limit"/>
+      <property name="Design Notes" value="Output load verified on motherboard: 24k divider. 1206 power rating required."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>24b4ef5b-2210-58be-aa61-e4cc8f01b31f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R39">
+      <value>47k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C17713</field>
+        <field name="LCSC Part #">C17713</field>
+        <field name="MPN">0805W8F4702T5E</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C17713.html</field>
+        <field name="Role">output_default_low</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="R" description="Resistor"/>
+      <property name="LCSC" value="C17713"/>
+      <property name="LCSC Part #" value="C17713"/>
+      <property name="MPN" value="0805W8F4702T5E"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C17713.html"/>
+      <property name="Role" value="output_default_low"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94ec646a-827b-50ca-8370-61c27bccbc28</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>L78L05ABUTR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-89-3</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/l78l.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C42738</field>
+        <field name="LCSC Part #">C42738</field>
+        <field name="MPN">L78L05ABUTR</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C42738.html</field>
+        <field name="Role">logic_supply</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-89-3</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/l78l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="logic_supply" description=""/>
+      <property name="LCSC" value="C42738"/>
+      <property name="LCSC Part #" value="C42738"/>
+      <property name="MPN" value="L78L05ABUTR"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C42738.html"/>
+      <property name="Role" value="logic_supply"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8427fb9c-4363-55b5-9c98-12e9286176db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>LM4040AIM3-5.0/NOPB</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm4040-n.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C140239</field>
+        <field name="LCSC Part #">C140239</field>
+        <field name="MPN">LM4040AIM3-5.0/NOPB</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C140239.html</field>
+        <field name="Role">precision_reference</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm4040-n.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="precision_reference" description=""/>
+      <property name="LCSC" value="C140239"/>
+      <property name="LCSC Part #" value="C140239"/>
+      <property name="MPN" value="LM4040AIM3-5.0/NOPB"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C140239.html"/>
+      <property name="Role" value="precision_reference"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>115aeb20-6ad3-570e-aa1f-efd78c630b53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>MCP809T-450I/TT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/11194c.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C511285</field>
+        <field name="LCSC Part #">C511285</field>
+        <field name="MPN">MCP809T-450I/TT</field>
+        <field name="Manufacturer">Microchip</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C511285.html</field>
+        <field name="Role">power_supervisor</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/11194c.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="power_supervisor" description=""/>
+      <property name="LCSC" value="C511285"/>
+      <property name="LCSC Part #" value="C511285"/>
+      <property name="MPN" value="MCP809T-450I/TT"/>
+      <property name="Manufacturer" value="Microchip"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C511285.html"/>
+      <property name="Role" value="power_supervisor"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccdc509b-222c-5afc-8fb1-555fef189809</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>LM2901BIDR</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm2901b.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C22427890</field>
+        <field name="LCSC Part #">C22427890</field>
+        <field name="MPN">LM2901BIDR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C22427890.html</field>
+        <field name="Role">current_and_uv_comparators</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm2901b.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="current_and_uv_comparators" description=""/>
+      <property name="LCSC" value="C22427890"/>
+      <property name="LCSC Part #" value="C22427890"/>
+      <property name="MPN" value="LM2901BIDR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C22427890.html"/>
+      <property name="Role" value="current_and_uv_comparators"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e0e0970-b3d8-5ebb-a965-fce5fbee148a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>BAT54S,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C47546</field>
+        <field name="LCSC Part #">C47546</field>
+        <field name="MPN">BAT54S,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C47546.html</field>
+        <field name="Role">current_input_clamp</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="current_input_clamp" description=""/>
+      <property name="LCSC" value="C47546"/>
+      <property name="LCSC Part #" value="C47546"/>
+      <property name="MPN" value="BAT54S,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C47546.html"/>
+      <property name="Role" value="current_input_clamp"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67197f54-1619-5c3a-aff3-01414efd542e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>LM2901BIDR</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm2901b.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C22427890</field>
+        <field name="LCSC Part #">C22427890</field>
+        <field name="MPN">LM2901BIDR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C22427890.html</field>
+        <field name="Role">brake_and_timer_comparators</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm2901b.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="brake_and_timer_comparators" description=""/>
+      <property name="LCSC" value="C22427890"/>
+      <property name="LCSC Part #" value="C22427890"/>
+      <property name="MPN" value="LM2901BIDR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C22427890.html"/>
+      <property name="Role" value="brake_and_timer_comparators"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e00cf8e-c6ac-5fdb-be59-aefc5f52358e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>BAT54S,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C47546</field>
+        <field name="LCSC Part #">C47546</field>
+        <field name="MPN">BAT54S,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/C47546.html</field>
+        <field name="Role">brake_input_clamp</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BAT54_SER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="brake_input_clamp" description=""/>
+      <property name="LCSC" value="C47546"/>
+      <property name="LCSC Part #" value="C47546"/>
+      <property name="MPN" value="BAT54S,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/C47546.html"/>
+      <property name="Role" value="brake_input_clamp"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf952aa6-1fcf-5b3f-8425-687e90e70557</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>74HC132D,653</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C5601</field>
+        <field name="LCSC Part #">C5601</field>
+        <field name="MPN">74HC132D,653</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Source URL">https://www.lcsc.com/product-detail/Gates_Nexperia_C5601.html</field>
+        <field name="Role">coincidence_logic</field>
+        <field name="Design Notes">Gate 1 controls coincidence timing. Gates 2/3 buffer PERMIT=FAULT_OK AND POR_N; no fault memory is present.</field>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/74HC_HCT132.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Review" part="coincidence_logic" description=""/>
+      <property name="LCSC" value="C5601"/>
+      <property name="LCSC Part #" value="C5601"/>
+      <property name="MPN" value="74HC132D,653"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="Source URL" value="https://www.lcsc.com/product-detail/Gates_Nexperia_C5601.html"/>
+      <property name="Role" value="coincidence_logic"/>
+      <property name="Design Notes" value="Gate 1 controls coincidence timing. Gates 2/3 buffer PERMIT=FAULT_OK AND POR_N; no fault memory is present."/>
+      <property name="Sheetname" value="BSPD_2027"/>
+      <property name="Sheetfile" value="BSPD_2027.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>664d2609-129c-5015-b101-2db0819ab698</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Review" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Diode</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="D_Zener">
+      <description>Zener diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="Fuse">
+      <description>Fuse</description>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="brake_and_timer_comparators">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2901BIDR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT1" type="open_collector"/>
+        <pin num="2" name="OUT2" type="open_collector"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="IN1-" type="input"/>
+        <pin num="5" name="IN1+" type="input"/>
+        <pin num="6" name="IN2-" type="input"/>
+        <pin num="7" name="IN2+" type="input"/>
+        <pin num="8" name="IN3-" type="input"/>
+        <pin num="9" name="IN3+" type="input"/>
+        <pin num="10" name="IN4-" type="input"/>
+        <pin num="11" name="IN4+" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="OUT4" type="open_collector"/>
+        <pin num="14" name="OUT3" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="brake_input_clamp">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BAT54S,215</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2" type="passive"/>
+        <pin num="3" name="K1/A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="coincidence_logic">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC132D,653</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="2A" type="input"/>
+        <pin num="5" name="2B" type="input"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="output"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3B" type="input"/>
+        <pin num="11" name="4Y" type="output"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4B" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="current_and_uv_comparators">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2901BIDR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT1" type="open_collector"/>
+        <pin num="2" name="OUT2" type="open_collector"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="IN1-" type="input"/>
+        <pin num="5" name="IN1+" type="input"/>
+        <pin num="6" name="IN2-" type="input"/>
+        <pin num="7" name="IN2+" type="input"/>
+        <pin num="8" name="IN3-" type="input"/>
+        <pin num="9" name="IN3+" type="input"/>
+        <pin num="10" name="IN4-" type="input"/>
+        <pin num="11" name="IN4+" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="OUT4" type="open_collector"/>
+        <pin num="14" name="OUT3" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="current_input_clamp">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BAT54S,215</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="K2" type="passive"/>
+        <pin num="3" name="K1/A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="logic_supply">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L78L05ABUTR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="output_level_shift">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3904,215</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="output_source">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3906,215</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="power_supervisor">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP809T-450I/TT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="RESET_N" type="output"/>
+        <pin num="3" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="precision_reference">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM4040AIM3-5.0/NOPB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="A/NC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="timer_reset_fet">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N7002,215</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Review" part="vehicle_connector">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">043045-0612</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Review">
+      <uri>${KIPRJMOD}/Review.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="BSPD_SIGNAL" class="Default">
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+      <node ref="R39" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="B_CMP" class="Default">
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="U6" pin="9" pinfunction="IN3+_9" pintype="input"/>
+    </net>
+    <net code="3" name="B_HARD" class="Default">
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="U6" pin="14" pinfunction="OUT3_14" pintype="open_collector"/>
+      <node ref="U8" pin="2" pinfunction="1B_2" pintype="input"/>
+    </net>
+    <net code="4" name="B_HIGH" class="Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U6" pin="7" pinfunction="IN2+_7" pintype="input"/>
+    </net>
+    <net code="5" name="B_LOW" class="Default">
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="IN1-_4" pintype="input"/>
+    </net>
+    <net code="6" name="B_RAW" class="Default">
+      <node ref="J1" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="7" name="B_SENSE" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="IN1+_5" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="IN2-_6" pintype="input"/>
+      <node ref="U7" pin="3" pinfunction="K1/A2_3" pintype="passive"/>
+    </net>
+    <net code="8" name="B_THRESH" class="Default">
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="IN3-_8" pintype="input"/>
+    </net>
+    <net code="9" name="C_HIGH" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="U4" pin="14" pinfunction="OUT3_14" pintype="open_collector"/>
+      <node ref="U8" pin="1" pinfunction="1A_1" pintype="input"/>
+    </net>
+    <net code="10" name="DISCHARGE" class="Default">
+      <node ref="R30" pin="1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="1Y_3" pintype="output"/>
+    </net>
+    <net code="11" name="DIS_GATE" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="FAULT_OK" class="Default">
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="OUT1_1" pintype="open_collector"/>
+      <node ref="U4" pin="13" pinfunction="OUT4_13" pintype="open_collector"/>
+      <node ref="U4" pin="2" pinfunction="OUT2_2" pintype="open_collector"/>
+      <node ref="U6" pin="1" pinfunction="OUT1_1" pintype="open_collector"/>
+      <node ref="U6" pin="13" pinfunction="OUT4_13" pintype="open_collector"/>
+      <node ref="U6" pin="2" pinfunction="OUT2_2" pintype="open_collector"/>
+      <node ref="U8" pin="4" pinfunction="2A_4" pintype="input"/>
+    </net>
+    <net code="13" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="5_5" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="E_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="A/NC_3" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U4" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U5" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U7" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="U8" pin="12" pinfunction="4A_12" pintype="input"/>
+      <node ref="U8" pin="13" pinfunction="4B_13" pintype="input"/>
+      <node ref="U8" pin="7" pinfunction="GND_7" pintype="power_in"/>
+    </net>
+    <net code="14" name="I_CMP" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="IN3+_9" pintype="input"/>
+    </net>
+    <net code="15" name="I_HIGH" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="IN2+_7" pintype="input"/>
+    </net>
+    <net code="16" name="I_LOW" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="IN1-_4" pintype="input"/>
+    </net>
+    <net code="17" name="I_RAW" class="Default">
+      <node ref="J1" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="I_SENSE" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U4" pin="5" pinfunction="IN1+_5" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="IN2-_6" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="K1/A2_3" pintype="passive"/>
+    </net>
+    <net code="19" name="I_THRESH" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="IN3-_8" pintype="input"/>
+    </net>
+    <net code="20" name="N_BASE" class="Default">
+      <node ref="Q2" pin="1" pinfunction="B_1" pintype="passive"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="N_COL" class="Default">
+      <node ref="Q2" pin="3" pinfunction="C_3" pintype="passive"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="OUT_SRC" class="Default">
+      <node ref="Q3" pin="3" pinfunction="C_3" pintype="passive"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="PERMIT" class="Default">
+      <node ref="R34" pin="1" pintype="passive"/>
+      <node ref="U8" pin="8" pinfunction="3Y_8" pintype="output"/>
+    </net>
+    <net code="24" name="PERMIT_N" class="Default">
+      <node ref="U8" pin="10" pinfunction="3B_10" pintype="input"/>
+      <node ref="U8" pin="6" pinfunction="2Y_6" pintype="output"/>
+      <node ref="U8" pin="9" pinfunction="3A_9" pintype="input"/>
+    </net>
+    <net code="25" name="POR_N" class="Default">
+      <node ref="U3" pin="2" pinfunction="RESET_N_2" pintype="output"/>
+      <node ref="U8" pin="5" pinfunction="2B_5" pintype="input"/>
+    </net>
+    <net code="26" name="P_BASE" class="Default">
+      <node ref="Q3" pin="1" pinfunction="B_1" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="REF5" class="Default">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="K_1" pintype="passive"/>
+    </net>
+    <net code="28" name="REF_HALF" class="Default">
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="U4" pin="10" pinfunction="IN4-_10" pintype="input"/>
+      <node ref="U6" pin="11" pinfunction="IN4+_11" pintype="input"/>
+    </net>
+    <net code="29" name="TIMER" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="U6" pin="10" pinfunction="IN4-_10" pintype="input"/>
+    </net>
+    <net code="30" name="V5" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="OUT_1" pintype="power_out"/>
+      <node ref="U3" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="K2_2" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="K2_2" pintype="passive"/>
+      <node ref="U8" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+    </net>
+    <net code="31" name="VIN" class="Default">
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="32" name="VIN_DIV" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U4" pin="11" pinfunction="IN4+_11" pintype="input"/>
+    </net>
+    <net code="33" name="VIN_F" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+    </net>
+    <net code="34" name="VP" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="E_2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="IN_3" pintype="power_in"/>
+      <node ref="U4" pin="3" pinfunction="VCC_3" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="VCC_3" pintype="power_in"/>
+    </net>
+    <net code="35" name="unconnected-(J1-Pad1)" class="Default">
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U8-4Y-Pad11)" class="Default">
+      <node ref="U8" pin="11" pinfunction="4Y_11" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,1 @@
+R2 NON-LATCHING PERMIT. ENGINEERING REVIEW ONLY; current-reference/brake calibration and physical qualification remain pending. Four4mm mounting holes are routed Edge.Cuts circles. Use the matching R2 BOM/CPL.
