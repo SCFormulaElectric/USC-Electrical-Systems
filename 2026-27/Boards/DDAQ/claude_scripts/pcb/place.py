@@ -15,9 +15,12 @@ src, groups_json, out, stddir = sys.argv[1:5]
 b = pcbnew.LoadBoard(src)
 G = json.load(open(groups_json))
 group = G['group']
+# power-stage caps belong to the FETs, not to the rail's nearest IC
+group.update({c: 'Q3' for c in ('C126', 'C127', 'C128', 'C129')})
+group.update({c: 'Q5' for c in ('C130', 'C131', 'C132', 'C133', 'C134')})
 MM = pcbnew.FromMM
 X0, Y0, W, H, RAD = 100.0, 50.0, 120.0, 100.0, 3.0
-CLEAR = 0.4        # extra spacing between courtyards (mm)
+CLEAR = 0.6        # extra spacing between courtyards (mm)
 EDGE = 0.8         # courtyard to board edge, except edge connectors
 
 fps = {f.GetReference(): f for f in b.GetFootprints()}
@@ -58,13 +61,16 @@ J3Y = y1 - (12.15 + 19.075)     # J3 courtyard (incl. housing) flush with the bo
 ANCHORS = {
     'J3': (160.0, J3Y, 0, None),
     # LM5175 4-switch buck-boost: Q3/Q4 = SW1 leg, Q5/Q6 = SW2 leg, L8 between, R107 in the low-side return
-    'L8': (122.5, 63.0, 0, 'PWR'), 'Q3': (109.0, 61.0, 90, 'PWR'), 'Q4': (109.0, 69.5, 90, 'PWR'),
-    'Q5': (136.0, 61.0, 270, 'PWR'), 'Q6': (136.0, 69.5, 270, 'PWR'), 'R107': (122.5, 73.5, 0, 'PWR'),
-    'U11': (122.5, 81.0, 0, 'PWR'),
+    # LM5175 4-switch buck-boost. Q3 (VIN->SW1) and Q4 (SW1->RS) form the buck leg, Q5 (SW2->VOUT) and Q6 (SW2->RS)
+    # the boost leg. Q4/Q6 are rotated so both switch nodes face L8 and both low-side sources sit on the outer
+    # corners; R107 (sense) stands under L8. Input caps hug Q3's drains, output caps hug Q5's drains.
+    'L8': (125.5, 63.0, 0, 'PWR'), 'Q3': (112.0, 61.0, 90, 'PWR'), 'Q4': (112.0, 69.5, 270, 'PWR'),
+    'Q5': (139.0, 61.0, 270, 'PWR'), 'Q6': (139.0, 69.5, 90, 'PWR'), 'R107': (125.5, 75.5, 270, 'PWR'),
+    'U11': (125.5, 84.5, 0, 'PWR'),
     'U9': (108.0, 90.0, 0, 'PWR'), 'L7': (110.0, 103.0, 0, 'PWR'),
     'U2': (130.0, 90.0, 0, 'PWR'), 'U6': (131.0, 103.0, 0, 'PWR'),
     'Q2': (110.0, 120.0, 0, 'PIN'), 'F1': (110.0, 128.0, 90, 'PIN'),
-    'U4': (147.5, 59.0, 0, 'MCU'),
+    'U4': (147.75, 59.0, 0, 'MCU'),
     'U1': (164.0, 72.0, 0, 'MCU'), 'X1': (151.5, 74.0, 90, 'MCU'),
     'USBC1': (158.0, 54.5, 180, 'MCU'), 'U22': (158.0, 61.0, 0, 'MCU'), 'J5': (178.0, 52.6, 0, 'MCU'),
     'U5': (157.0, 96.5, 0, 'ANA'), 'U10': (143.5, 92.0, 0, 'ANA'),
