@@ -15,7 +15,7 @@ import pcbnew
 
 b = pcbnew.LoadBoard(sys.argv[1])
 MM, TO = pcbnew.FromMM, pcbnew.ToMM
-CLEAR = 0.2   # board default clearance; 0.25 blocked every pin-aligned stub on 0.5 mm-pitch ICs
+CLEAR = 0.25  # 0.2 lets fine-pitch pins fan out under the IC, but those vias block inner-layer escape (tried: pass-1 180 -> 250-316)
 import os
 PWR_LAYER = os.environ.get('DDAQ_PWR_LAYER', 'In2.Cu')
 ZONES = {}  # net -> list of power-layer zone outlines

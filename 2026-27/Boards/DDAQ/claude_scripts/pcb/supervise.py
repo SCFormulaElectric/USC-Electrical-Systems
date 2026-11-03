@@ -1,6 +1,6 @@
 """Unattended Freerouting supervisor: restart stalled runs, keep the best result, continue from it.
 
-python3 supervise.py <workdir> <prerouted.kicad_pcb> <fresh.dsn> <freerouting.jar> <minutes>
+python3 supervise.py <workdir> <prerouted.kicad_pcb> <fresh.dsn> <freerouting.jar> <minutes> [best.kicad_pcb unconnected]
 Writes progress lines to <workdir>/progress.log and the best routed board to <workdir>/best.kicad_pcb
 (best = fewest unconnected items reported by KiCad DRC after importing the session).
 Needs: java, docker image kicad/kicad:10.0.8-amd64, kicad-cli wrapper in $KICAD_CLI.
@@ -86,6 +86,10 @@ def run(dsn, timeout_min, stall_check):
 
 best = None  # (unconnected, board path)
 mode = 'fresh'
+if len(sys.argv) > 6:   # optional starting best board: begin with a continuation run from it
+    shutil.copy(sys.argv[6], os.path.join(work, 'best.kicad_pcb'))   # inside the container mounts
+    best = (int(sys.argv[7]) if len(sys.argv) > 7 else 10 ** 6, os.path.join(work, 'best.kicad_pcb'))
+    mode = 'cont'
 fails_in_cont = 0
 log(f'supervisor start, budget {minutes:.0f} min')
 while time.time() < deadline - 12 * 60:
@@ -95,8 +99,11 @@ while time.time() < deadline - 12 * 60:
     else:
         cdsn = os.path.join(work, 'cont.dsn')
         r = py(f"import pcbnew; b=pcbnew.LoadBoard({best[1]!r}); print(pcbnew.ExportSpecctraDSN(b,{cdsn!r}))")
+        if not os.path.exists(cdsn):
+            log(f'DSN export failed: {r.stdout[-200:]} {r.stderr[-300:]}'); mode = 'fresh'; continue
         log('continuation run from best (15 min)')
         ses, passes, why = run(cdsn, 15, False)
+        os.remove(cdsn)
     log(f'  run ended: {why}, passes={len(passes)}')
     if not ses:
         mode = 'fresh'
