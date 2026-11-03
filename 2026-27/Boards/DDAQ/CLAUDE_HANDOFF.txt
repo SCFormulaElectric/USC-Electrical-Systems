@@ -1,0 +1,112 @@
+CLAUDE SESSION HANDOFF - DDAQ board + kicad-batch tools
+Written 2026-10-27 at the end of a long Claude Code session. Read this before doing KiCad work here.
+Nothing below is committed to git; the user commits when they choose.
+
+==========================================================================================
+1. PROJECT AND TOOLING
+==========================================================================================
+Project:   C:\Git\USC-Electrical-Systems\2026-27\Boards\DDAQ\DDAQ\  (DDAQ.kicad_sch / DDAQ.kicad_pcb, KiCad 10.0.5)
+           Single E-size schematic sheet, 4-layer board (F.Cu, In1.Cu = GND plane, In2.Cu = power planes, B.Cu).
+           Design rules: 0.2 mm clearance, 0.2 mm tracks, vias 0.6/0.3, copper-to-edge 0.5.
+MCP:       ..\DDAQ\.mcp.json registers two servers:
+             kicad        - mcp-server-kicad 0.21.1 (third party, one item per call, full-size outputs)
+             kicad-batch  - the user's own server, built this session (see section 3). Prefer it.
+Part libs: JLCImport (project lib, filled by the user's JLCImport KiCad plugin; it also has a CLI for
+           LCSC search: see memory note "jlcimport-cli"). SamacSys_Parts (copied into the project this
+           session from the user's OneDrive ecadlibs and upgraded to the KiCad 10 format; the *.bak files
+           beside it are the pre-upgrade copies and can be deleted).
+
+==========================================================================================
+2. WHAT WAS DONE TO DDAQ THIS SESSION (current state)
+==========================================================================================
+Schematic
+- CAN1 fixed (a 0R resistor R2 shorted CANH/CANL; stub wires removed). CAN2 added as a copy (U7, PB5/PB6/PD3).
+- ADS7028 ADC (U5): AVDD was tied to GND - fixed. AVDD = +5V through ferrite FB1 (GZ1608D601TF, C1002)
+  with C81 1uF + C82 100nF; DVDD = +3.3V with C83.
+- 8 conditioned analog inputs AI0..AI7 -> ADC_AIN0..7. Per channel: 100k pulldown (R73-80), 1k series
+  (R65-72), BAT54S clamp to +5V/GND (D11-18, BAT54SLT1G C19726), 100nF (C73-80).
+- Sensor supply +5V_SNS = +5V through PTC F2 (nSMD050-33V, C70077) with C84 10uF.
+- Connector J3 = TE 3-6437285-2 (60 pin, 4 rows). Pins 1-32 used for analog: AIn = pin 4n+2,
+  GND = 4n+3, +5V_SNS = 4n+4, pin 4n+1 spare. Pins 33-60 and MH1-3 are unassigned (CAN, power and
+  other signals still need pins - ask the user before assigning).
+- Known: J3's symbol is embedded with a lib_id that has no library nickname, so mcp-server-kicad's
+  get_pin_positions / wire_pins_to_net cannot see its pins (KiCad itself is fine). J3 pin n sits at
+  x=182.88, y=279.4+2.54*(n-1) (left column, pins 1-32). Re-placing J3 from SamacSys_Parts would fix it.
+
+PCB
+- Outline: old 63x56 mm board kept on top (x 125.5-188.5, y 42-97, USB-C and SD socket on its edges);
+  widens to x 117.75-197.75 below y=97, bottom edge y=161 flush with J3's mating face.
+- J3 at (129.5, 134.5). 8 channel columns at x = 121.8 + 5.2*i (D at y108, C y110.6, R1k y113, R100k y116),
+  AI fan-out to J3's inner row (y126.5); ADC_AIN bus y 99.5-105 into U5.
+- U5 was MOVED from (175,73.25) to (166,102.25) next to the front end; SPI1 runs on B.Cu up x~172-174
+  to U1's fan-out. C11/C81/C82/C83/FB1 placed around U5. F2/C84 at y=119.
+- Planes: In1 GND and In2 +5V extended over the new area (merged with the old zones); +3.3V island on
+  In2 under U5's DVDD via (priority 3).
+- CAN2 parts (U7, C70-72, R62-64, D10) are PARKED OFF-BOARD at x 210-220, y 47-68: not laid out yet.
+- DRC: no errors in the new section. Remaining: 20 unconnected items (all CAN2), 2 dangling GPIO1/GPIO2
+  stubs near U1 and co-located USB+ vias at (183,49) - both pre-existing - plus old-area silkscreen warnings.
+- Open questions for the user: neither CAN bus is wired to a connector yet; verify J3's footprint body
+  outline against TE's drawing (it sets where the board edge is).
+- Backup of the board before the last cleanup: in the old session's scratchpad (temporary, may be gone).
+
+==========================================================================================
+3. kicad-batch (built this session)  ->  C:\Git\USC-Electrical-Systems\tools\kicad-batch\
+==========================================================================================
+Files: server.py (MCP server, `uv run --script`, deps inline), pcb_worker.py (runs under KiCad's
+bundled python.exe, does all board edits/queries), token_report.py (per-tool cost of a session
+transcript), README.md (full tool docs). Needs a Claude Code restart / `/mcp` reconnect to load.
+
+Tools
+- batch(calls)        any mcp-server-kicad tool, many calls in one round trip (schematic edits too).
+- pcb_apply(ops)      many board edits, one save. Ops: track, via, move, field, ref_text, edge_poly,
+                      zone, merge_zones, zone_priority, delete_vias, delete_tracks, delete_shapes.
+                      Nets by NAME (KiCad 10 renumbers nets). check=True -> applies to a scratch copy
+                      beside the board and returns only the DRC violations the edit adds.
+- pcb_query(kinds)    compact filtered tables: footprints, pads, tracks, vias, nets, zones, outline.
+- drc_summary / erc_summary   counts + a few filtered lines; only_new=True diffs against the last run.
+- render(bbox)        small PNG of a board region (use 400-900 px).
+Typical layout loop: pcb_query -> plan geometry in a local Python script -> pcb_apply(check=True)
+-> pcb_apply -> drc_summary(exclude silk types) -> render one region.
+
+Safety built in
+- Writes refused while kicad/pcbnew/eeschema runs (an open editor overwrites external edits on save);
+  force=True only for files KiCad does not have open. The user often has KiCad open - check first.
+- Saves only if every op succeeds; previous board kept as <board>.batch-bak.
+- After ops it refills zones, rebuilds connectivity and REFUSES the save if any new track/via changed
+  net: KiCad silently gives new copper the net of other-net copper it overlaps (hides shorts).
+- Removed items are kept referenced until the worker exits (GRAVE) and the worker exits via os._exit:
+  otherwise pcbnew's SWIG wrappers free removed C++ objects and segfault. Keep both if you edit it.
+
+Quirks handled: kicad-cli 10.0.5 ERC positions are labelled mm but divided by 100 (rescaled);
+DRC re-picks unconnected-item pairs every run (diffs compare per-net counts).
+
+Ideas not done yet: "commit the last checked ops" so check + apply do not send the op list twice
+(that is 33 of 38 KB of call data); schematic batch still loads/saves the file once per call inside.
+
+==========================================================================================
+4. MEASURED GAIN (tool level)
+==========================================================================================
+The J3 + layout + cleanup job, replayed on the pre-layout board with kicad-batch, ended with the same
+DRC result as the real board:
+  old: 415 tool calls, 256 KB text results (~73k tokens), 8 whole-page PDF reads (1.85 MB),
+       531 model turns, 163M cache-read tokens, 2.46M output tokens
+  new: 11 tool calls, 3 KB text results (~900 tokens), 2 PNGs (~750 tokens), 18 s of tool time
+Not yet measured: a real fresh session doing the task with kicad-batch (turns/tokens end to end).
+To do it: copy the project, restore the pre-layout board (git show HEAD:...DDAQ.kicad_pcb, commit
+3a55670), run the task in a new session, then `python tools/kicad-batch/token_report.py <transcript>`.
+
+==========================================================================================
+5. HAZARDS AND USER PREFERENCES
+==========================================================================================
+- KiCad editor saves overwrite external edits (this already wiped work once). Check for running KiCad
+  before writing; after writing, ask the user to reopen/revert rather than save over.
+- mcp-server-kicad cannot delete vias/zones/edge shapes or re-net traces, and its instructions forbid
+  direct file edits. The user approved edits via KiCad's Python (now: kicad-batch) with KiCad closed.
+- Old-format library parts (SamacSys) must be upgraded (upgrade_footprint_lib / upgrade_symbol_lib)
+  before mcp-server-kicad can see their pins/pads.
+- The user dislikes long question lists - proceed with sensible defaults and state them; ask only for
+  real decisions (e.g. connector pin assignment beyond the analog block, enclosure/outline changes).
+- No Java on this machine, so autoroute_pcb is unavailable.
+- Claude's own memory notes for this repo live in
+  C:\Users\thuta\.claude\projects\c--Git-USC-Electrical-Systems\memory\ (kicad-batch-server, kicad-mcp-limits,
+  kicad-editor-overwrites-mcp-edits, jlcimport-cli).
