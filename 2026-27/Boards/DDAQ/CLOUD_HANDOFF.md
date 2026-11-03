@@ -36,14 +36,16 @@ Placed at sheet x 365-530 / y 590-745 (was empty; guard check in the script).
 - mcp-server-kicad dropped the stale legacy top-level `(symbol_instances ...)` block (KiCad 7+ ignores it; each
   symbol keeps its own `(instances ...)`). New blocks are not eeschema-formatted; KiCad will reformat on next save.
 
-**STILL TO DO for this step (needs the user's machine, cloud network blocks easyeda/lcsc/jlcpcb/st.com):**
-1. Footprints + 3D models were NOT imported (the symbols were added to `JLCImport.kicad_sym` from the captured
-   importer output in `data/sym_*.txt`). Run locally:
-   `python -I -X utf8 claude_scripts/bin/jlc.py import C2655101 -p 2026-27/Boards/DDAQ/DDAQ` and the same for C5362283
-   (if it refuses because the symbol already exists, use its overwrite option; re-fix the ISM330 Datasheet field).
-2. ISM330DHCX pins 2/3/10/11 were checked against ST's pin table from memory (SDx/SCx: VDDIO or GND; OCS_Aux: leave
-   open; SDO_Aux: VDDIO or open), not against the PDF. Confirm in DS13012 Table 2.
-3. Cosmetic: power symbols on adjacent sensor pins overlap and the new #PWR refs are visible -> part of "sheet tidy".
+**Done locally afterwards (2026-11-02):**
+1. Footprints + 3D models imported: `JLCImport.pretty/{ISM330DHCXTR,BMP581}.kicad_mod` (14 / 10 pads, match the
+   symbols) and `JLCImport.3dshapes/{ISM330DHCXTR,BMP581}.{step,wrl}`. Symbols were left as committed (not
+   overwritten); lib tables unchanged. Netlist shows U23/U24 resolve to `JLCImport:ISM330DHCXTR` / `JLCImport:BMP581`.
+2. ISM330DHCX pins 2/3/10/11 confirmed against the ST datasheet (DocID033069 Rev 4, Table 2, Mode 1): SDx/SCx
+   "connect to VDDIO or GND" (GND ok), OCS_Aux "leave unconnected", SDO_Aux "connect to VDD_IO or leave
+   unconnected" (NC ok); 100 nF recommended on VDD and VDDIO. Wiring is correct as committed.
+
+**Still open for this step:** cosmetic — power symbols on adjacent sensor pins overlap and the new #PWR refs are
+visible -> part of "sheet tidy".
 
 ## (was NEXT TASK) add barometer + IMU on SPI3 (approved by the user)
 
