@@ -18,7 +18,7 @@ import pcbnew
 
 src, drcj, out = sys.argv[1:4]
 CLEAR, W, VD, VDR, MAXLEN = 0.22, 0.25, 0.6, 0.3, 12.0
-COPPER = ['F.Cu', 'In2.Cu', 'In3.Cu', 'B.Cu']   # routable layers (In1/In4 are planes)
+COPPER = ['F.Cu', 'In2.Cu', 'In3.Cu', 'B.Cu']   # routable layers on 6 layers (In1/In4 are planes); 4 layers: F/B
 MM, TO = pcbnew.FromMM, pcbnew.ToMM
 
 text = open(src, encoding='utf-8').read()
@@ -38,6 +38,8 @@ for m in re.finditer(r'\n\t\((segment|via)\b(.*?)\n\t\)', text, re.S):
 print('parsed segments', len(segs), 'vias', len(vias))
 
 b = pcbnew.LoadBoard(src)
+if b.GetCopperLayerCount() == 4:
+    COPPER = ['F.Cu', 'B.Cu']   # In1 GND plane, In2 split power planes
 pads = []  # (x0,y0,x1,y1, layers set, net)
 for fp in b.GetFootprints():
     for p in fp.Pads():
