@@ -1,0 +1,48 @@
+# DDAQ PCB layout notes (rev for STM32G474 schematic)
+
+Status 2026-11-03: **placement done, not routed.** `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
+(scripted "Update PCB from Schematic": `claude_scripts/pcb/build_board.py`, grouping `group.py`, placement
+`place.py`, planes `zones.py`). DRC: no courtyard/clearance violations, schematic parity 0, 499 unrouted
+connections. Placement picture: `layout_placement.png`.
+
+## Board
+- 120 x 100 mm rectangle, 3 mm corner radius (replaces the old 63x56 + wider-bottom shape). 4 layers kept:
+  F.Cu signal / In1.Cu solid GND plane / In2.Cu power + spare routing / B.Cu signal. Stackup and design rules
+  unchanged (0.2 mm default track/clearance, 0.6/0.3 vias, 0.14 mm fine-pitch pad rule).
+- 4x M3 plated holes (H1-H4, 4 mm from the corners, on GND, board-only footprints so a schematic sync keeps them).
+- Net classes added in `DDAQ.kicad_pro`: Power_HI 0.8 mm (VBAT, VIN_PROT, buck-boost switch/sense nodes,
+  +12V_SNS), Power 0.4 mm (rails, sensor supplies, gate drives), CAN 0.25 mm, USB 0.25 mm, Default 0.2 mm.
+
+## Floorplan
+- **J3 AMPSEAL 35** on the bottom edge, housing flush with the edge, pins facing in. Nothing placed under the
+  housing (31 mm deep). Supplies on the inner row, AI0-AI9 middle row, VBAT/12V outs/CAN on the edge row.
+- **Power (top-left quadrant)**: LM5175 H-bridge with Q3/Q4 (SW1 leg) left of L8, Q5/Q6 (SW2 leg) right,
+  R107 in the low-side return, controller U11 below; LMR33630 (+7V, L7) and TPS563300 (+5V, U6) below that.
+  Switchers are >= 25 mm from the ADC and on the opposite side from the barometer.
+- **Input protection** (F1, D20, Q2 reverse-polarity) in the strip left of J3.
+- **Analog (above the J3 AI pins)**: ADS8688 U5 with RC filter caps and PSM712 clamps at its pins on both
+  sides, REF U10 beside it; 100k pull-downs next to the connector.
+- **MCU centre-top**: U1 with decoupling at the supply pins, X1 at PF0/PF1, USB-C + USBLC6 ESD and the SWD
+  header on the top edge; AMS1117 3.3 V regulator next to the MCU.
+- **Top-right**: microSD (card inserts from the top edge), SD power switch Q7, barometer U24 (furthest from the
+  switchers). IMU U23 near the board centre.
+- **Right side**: CAN transceivers + ESD + choke + termination jumpers; frequency-input conditioning; the six
+  NCV8184 sensor-supply trackers in a column beside J3.
+
+## Deviations from best practice / open items
+1. **L6 (CAN2 common-mode choke) uses a stand-in footprint** (`Inductor_SMD:L_CommonModeChoke_Coilank_ACM3225`,
+   same pad numbers). The real one (`easyeda2kicad:FILTER-SMD_4P-L3.9-W2.5-BL`) only exists in your local library:
+   copy it into `JLCImport.pretty` (or run Update PCB from Schematic locally) before routing near L6.
+2. Placement is script-generated (anchors by hand, passives packed next to the pin they connect to). It needs a
+   human pass, especially: buck-boost hot loops (input caps tight to Q3/Q4, output caps tight to Q5/Q6), the
+   LMR33630/TPS563300 input-cap-to-GND loops, crystal load caps, and silkscreen.
+3. Silkscreen references are at library default positions (199 silk overlaps) - tidy last.
+4. USB D+/D- use a 0.25 mm class, not a 90-ohm controlled-impedance pair (full-speed USB, short run: acceptable).
+5. Mounting holes are plated and tied to GND; change to NPTH if the enclosure must not touch GND.
+6. Board size is generous (~57 % courtyard fill); shrink after routing if there is margin.
+7. C19, C20, R14, R15, D19 footprints switched to KiCad standard ones (were in local-only easyeda2kicad /
+   PCM_JLCPCB libraries); schematic updated to match.
+
+## Next
+Route: hand-route the switcher power loops and wide power nets, then autoroute the rest (Freerouting, via
+Specctra DSN; needs permission to run the jar in the cloud session), then pour GND on F/B, stitch, DRC, silk.
