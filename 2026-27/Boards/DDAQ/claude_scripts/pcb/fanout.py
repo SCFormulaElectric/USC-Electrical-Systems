@@ -49,6 +49,13 @@ def in_region(net, x, y):
     return any(o.Contains(pcbnew.VECTOR2I(MM(x), MM(y))) for o in ZONES.get(net, []))
 
 
+VIAS = []  # (x, y, diameter) of every via placed here
+
+
+def via_ok(x, y, d):
+    return all(math.hypot(x - a, y - c) >= (d + e) / 2 + 0.3 for a, c, e in VIAS)
+
+
 added = skipped = 0
 fails = []
 for fp in b.GetFootprints():
@@ -58,6 +65,20 @@ for fp in b.GetFootprints():
         if net not in PLANE_NETS or p.GetAttribute() != pcbnew.PAD_ATTRIB_SMD or not p.IsOnLayer(pcbnew.F_Cu):
             continue
         q = p.GetPosition(); px, py = TO(q.x), TO(q.y)
+        ebb = p.GetBoundingBox()
+        ew, eh = TO(ebb.GetWidth()), TO(ebb.GetHeight())
+        if net == 'GND' and ew >= 2.5 and eh >= 2.5:
+            nx, ny = max(1, int((ew - 0.8) // 1.2) + 1), max(1, int((eh - 0.8) // 1.2) + 1)
+            for i in range(nx):
+                for j in range(ny):
+                    vx = px - (nx - 1) * 0.6 + i * 1.2; vy = py - (ny - 1) * 0.6 + j * 1.2
+                    if not via_ok(vx, vy, 0.6):
+                        continue
+                    VIAS.append((vx, vy, 0.6))
+                    v = pcbnew.PCB_VIA(b); v.SetPosition(pcbnew.VECTOR2I(MM(vx), MM(vy)))
+                    v.SetWidth(MM(0.6)); v.SetDrill(MM(0.3)); v.SetNet(p.GetNet()); v.SetLocked(True); b.Add(v)
+                    added += 1
+            continue
         if not in_region(net, px, py):
             skipped += 1
             continue
@@ -68,12 +89,16 @@ for fp in b.GetFootprints():
         tw = max(0.25, min(0.5, pw * 0.8))
         base = math.atan2(py - cy, px - cx) if (px, py) != (cx, cy) else 0.0
         done = False
-        for r in (0.9, 1.2, 1.5, 1.8, 2.2):
+        radii = (0.9, 1.2, 1.5, 1.8, 2.2, 2.6, 3.0, 3.5)
+        # stagger fine-pitch rows: odd pads try the far ring first so neighbours do not compete
+        if pw < 0.45 and p.GetNumber().isdigit() and int(p.GetNumber()) % 2:
+            radii = (2.6, 3.0, 3.5, 0.9, 1.2, 1.5, 1.8, 2.2)
+        for r in radii:
             for k in range(16):
                 a = base + (k // 2 + 1) * (math.pi / 8) * (1 if k % 2 else -1) if k else base
                 vx, vy = px + r * math.cos(a), py + r * math.sin(a)
                 vx, vy = round(vx / 0.05) * 0.05, round(vy / 0.05) * 0.05
-                if not (EX0 < vx < EX1 and EY0 < vy < EY1) or not in_region(net, vx, vy):
+                if not (EX0 < vx < EX1 and EY0 < vy < EY1) or not in_region(net, vx, vy) or not via_ok(vx, vy, vd):
                     continue
                 ok = True
                 for o in obst:
@@ -91,6 +116,7 @@ for fp in b.GetFootprints():
                 v.SetPosition(pcbnew.VECTOR2I(MM(vx), MM(vy))); v.SetWidth(MM(vd)); v.SetDrill(MM(vdr))
                 v.SetNet(n); v.SetLocked(True); b.Add(v)
                 obst.append((vx - vd / 2, vy - vd / 2, vx + vd / 2, vy + vd / 2, net, 'via'))
+                VIAS.append((vx, vy, vd))
                 for kk in range(5):  # stub as obstacle samples
                     sx, sy = px + (vx - px) * kk / 4, py + (vy - py) * kk / 4
                     obst.append((sx - tw / 2, sy - tw / 2, sx + tw / 2, sy + tw / 2, net, 'trk'))
