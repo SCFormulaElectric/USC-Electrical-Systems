@@ -1,6 +1,7 @@
 # DDAQ PCB layout notes (rev for STM32G474 schematic)
 
-Status 2026-11-03: **placement done, not routed.** `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
+Status 2026-11-03: **routing in progress - 81 connections still unrouted** (`layout_routed_wip.png`).
+Earlier status: placement done, not routed. `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
 (scripted "Update PCB from Schematic": `claude_scripts/pcb/build_board.py`, grouping `group.py`, placement
 `place.py`, planes `zones.py`). DRC: no courtyard/clearance violations, schematic parity 0, 499 unrouted
 connections. Placement picture: `layout_placement.png`.
@@ -42,6 +43,19 @@ connections. Placement picture: `layout_placement.png`.
 6. Board size is generous (~57 % courtyard fill); shrink after routing if there is margin.
 7. C19, C20, R14, R15, D19 footprints switched to KiCad standard ones (were in local-only easyeda2kicad /
    PCM_JLCPCB libraries); schematic updated to match.
+
+## Routing status (WIP)
+- In1.Cu solid GND. In2.Cu split power planes: VIN_PROT (left column), +12V_SNS (buck-boost output), +7V
+  (analog/tracker band and right strip), +3.3V (MCU/digital), GND under J3.
+- 293 plane fan-out vias placed by script next to GND/rail pads (`fanout.py`, locked).
+- LM5175 power stage: Q4/Q6 rotated so both switch nodes face L8; input caps C126-C129 at Q3's drain, output caps
+  C130-C134 at Q5's drain; F.Cu pours for BB_SW1, BB_SW2, BB_RS, VIN_PROT, +12V_SNS (`powerpour.py`).
+- Signals autorouted with Freerouting 2.1 on F.Cu/B.Cu (In2 is a plane layer), 20 + 15 min. Converged at
+  81 unrouted; DRC has no clearance errors; 24 dangling vias + 10 dangling stubs + 1 hole-to-hole to clean.
+- Remaining unrouted: ~30 power hops (+7V, +12V_SNS, BB_*, VIN_PROT, AVDD), ~25 in the congested area between the
+  power stage, the 5 V buck and the MCU/analog corner (x 140-160, y 80-100), rest scattered signals.
+- Deviation: autorouted traces are not hand-quality (some long detours, many vias). Review the analog inputs and
+  the crystal before fab.
 
 ## Next
 Route: hand-route the switcher power loops and wide power nets, then autoroute the rest (Freerouting, via
