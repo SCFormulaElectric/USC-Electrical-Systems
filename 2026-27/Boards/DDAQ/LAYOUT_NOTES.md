@@ -1,6 +1,6 @@
 # DDAQ PCB layout notes (rev for STM32G474 schematic)
 
-Status 2026-11-03: **routing in progress - 81 connections still unrouted** (`layout_routed_wip.png`).
+Status 2026-11-03: **6-layer, routing in progress - 44 connections still unrouted, 0 clearance errors** (`layout_routed_wip.png`).
 Earlier status: placement done, not routed. `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
 (scripted "Update PCB from Schematic": `claude_scripts/pcb/build_board.py`, grouping `group.py`, placement
 `place.py`, planes `zones.py`). DRC: no courtyard/clearance violations, schematic parity 0, 499 unrouted
@@ -56,6 +56,21 @@ connections. Placement picture: `layout_placement.png`.
   power stage, the 5 V buck and the MCU/analog corner (x 140-160, y 80-100), rest scattered signals.
 - Deviation: autorouted traces are not hand-quality (some long detours, many vias). Review the analog inputs and
   the crystal before fab.
+
+## 6-layer switch (2026-11-03)
+- 4 layers converged at 81 unrouted; growing the board to 130x110 made Freerouting worse (stuck at ~280-300), so
+  the board went back to 120x100 and to **6 layers**: F.Cu sig / In1.Cu GND / In2.Cu sig / In3.Cu sig /
+  In4.Cu split power (VIN_PROT / +12V_SNS / +7V / +3.3V / GND under J3) / B.Cu sig.
+- **The stackup in the file is KiCad's default 6-layer one** (the old 4-layer stackup block was removed; the
+  SWIG build cannot edit stackups). Set JLCPCB's 6-layer impedance stackup in Board Setup before ordering.
+- Routing: `supervise.py` ran Freerouting unattended (restarts stalled runs, keeps the best KiCad-DRC result,
+  continues from it): 56 -> 53 -> 50 -> 46 unconnected; `finisher.py` closed 2 more -> **44**.
+- Remaining 44: ~23 plane/power hops (GND 10, +7V 6, +3.3V 5, +12V_SNS 2), ~8 in the LM5175 stage (BB_RS, BB_SW1,
+  gate drives BB_HD2/BB_LD1/BB_LD2 - hand-route these short and wide anyway), ~13 signals (SPI1 to the ADC, CAN
+  control lines, IMU CS, a frequency input). Most sit around the LM5175 controller / 5 V buck (x 140-160, y 80-100).
+- Also: 6 dangling vias + 5 dangling tracks (Tools > Cleanup Tracks & Vias), silkscreen.
+- Tried and rejected (notes in fanout.py): far-ring via staggering and 0.2 mm fan-out clearance both put vias
+  where the router needs to escape from under the MCU/ADC and made results worse.
 
 ## Next
 Route: hand-route the switcher power loops and wide power nets, then autoroute the rest (Freerouting, via
