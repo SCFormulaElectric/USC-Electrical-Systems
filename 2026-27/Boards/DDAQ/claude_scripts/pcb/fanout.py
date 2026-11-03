@@ -89,11 +89,9 @@ for fp in b.GetFootprints():
         tw = max(0.25, min(0.5, pw * 0.8))
         base = math.atan2(py - cy, px - cx) if (px, py) != (cx, cy) else 0.0
         done = False
-        radii = (0.9, 1.2, 1.5, 1.8, 2.2, 2.6, 3.0, 3.5)
-        # stagger fine-pitch rows: odd pads try the far ring first so neighbours do not compete
-        if pw < 0.45 and p.GetNumber().isdigit() and int(p.GetNumber()) % 2:
-            radii = (2.6, 3.0, 3.5, 0.9, 1.2, 1.5, 1.8, 2.2)
-        for r in radii:
+        # near rings only: far vias (2.6+ mm) around fine-pitch ICs block the router's signal escape (tried:
+        # pass-1 unrouted went 189 -> 344)
+        for r in (0.9, 1.2, 1.5, 1.8, 2.2):
             for k in range(16):
                 a = base + (k // 2 + 1) * (math.pi / 8) * (1 if k % 2 else -1) if k else base
                 vx, vy = px + r * math.cos(a), py + r * math.sin(a)
