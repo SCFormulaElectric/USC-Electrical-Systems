@@ -19,7 +19,12 @@ group = G['group']
 group.update({c: 'Q3' for c in ('C126', 'C127', 'C128', 'C129')})
 group.update({c: 'Q5' for c in ('C130', 'C131', 'C132', 'C133', 'C134')})
 MM = pcbnew.FromMM
-X0, Y0, W, H, RAD = 100.0, 50.0, 120.0, 100.0, 3.0
+X0, Y0, W, H, RAD = 100.0, 50.0, 130.0, 110.0, 3.0
+# The anchor/block tables below were laid out for 120 x 100. GROW_X/GROW_Y open the board up: everything right of
+# SPLIT_X moves right by GROW_X and everything below SPLIT_Y moves down by GROW_Y (power stage stays top-left).
+GROW_X, GROW_Y, SPLIT_X, SPLIT_Y = 10.0, 10.0, 141.0, 86.0
+gx = lambda x: x + GROW_X if x >= SPLIT_X else x
+gy = lambda y: y + GROW_Y if y >= SPLIT_Y else y
 CLEAR = 0.6        # extra spacing between courtyards (mm)
 EDGE = 0.8         # courtyard to board edge, except edge connectors
 
@@ -87,6 +92,10 @@ BLOCKS = {  # x0, x1, y0, y1
     'CAN': (184.0, 219.2, 66.0, 92.0), 'FRQ': (175.0, 203.0, 90.0, 111.5), 'TRK': (198.5, 219.2, 88.0, 149.2),
     'J3': (121.0, 199.0, 100.0, 112.0),
 }
+ANCHORS = {r: ((gx(x) if r != 'J3' else X0 + W / 2), (gy(y) if r != 'J3' else y), rot, blk)
+           for r, (x, y, rot, blk) in ANCHORS.items()}
+BLOCKS = {k: (gx(a), gx(b) if b < 219 else x1 - 0.8, gy(c), gy(d) if d < 149 else y1 - 0.8)
+          for k, (a, b, c, d) in BLOCKS.items()}
 BLOCK_OF = {r: a[3] for r, a in ANCHORS.items()}
 BLOCK_OF['J3'] = 'J3'
 for r in ('Q3', 'Q4', 'Q5', 'Q6', 'L8', 'R107', 'U11', 'U9', 'L7', 'U2', 'U6'):

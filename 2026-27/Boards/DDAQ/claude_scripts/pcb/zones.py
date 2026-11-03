@@ -10,14 +10,16 @@ MM = pcbnew.FromMM
 bb = b.GetBoardEdgesBoundingBox()
 X0, Y0, X1, Y1 = (pcbnew.ToMM(v) for v in (bb.GetLeft(), bb.GetTop(), bb.GetRight(), bb.GetBottom()))
 G = 0.3  # half gap between regions
+# Region boundaries for the 130 x 110 board (J3 courtyard x 126.4-203.6, top y 121.9; trackers in x > 208)
+VX, PX, BY, AY, JY, TX = 119, 151, 96, 102, 122, 208
 REGIONS = [  # (layer, net, polygon)
     ('In1.Cu', 'GND', [(X0, Y0), (X1, Y0), (X1, Y1), (X0, Y1)]),
-    ('In2.Cu', '/VIN_PROT', [(X0, Y0), (119 - G, Y0), (119 - G, Y1), (X0, Y1)]),
-    ('In2.Cu', '/+12V_SNS', [(119 + G, Y0), (141 - G, Y0), (141 - G, 86 - G), (119 + G, 86 - G)]),
-    ('In2.Cu', '/+7V', [(119 + G, 86 + G), (141 + G, 86 + G), (141 + G, 92 + G), (198 + G, 92 + G), (198 + G, 92 + G),
-                        (X1, 92 + G), (X1, Y1), (198 + G, Y1), (198 + G, 112 - G), (119 + G, 112 - G)]),
-    ('In2.Cu', '+3.3V', [(141 + G, Y0), (X1, Y0), (X1, 92 - G), (141 + G, 92 - G)]),
-    ('In2.Cu', 'GND', [(119 + G, 112 + G), (198 - G, 112 + G), (198 - G, Y1), (119 + G, Y1)]),
+    ('In2.Cu', '/VIN_PROT', [(X0, Y0), (VX - G, Y0), (VX - G, Y1), (X0, Y1)]),
+    ('In2.Cu', '/+12V_SNS', [(VX + G, Y0), (PX - G, Y0), (PX - G, BY - G), (VX + G, BY - G)]),
+    ('In2.Cu', '/+7V', [(VX + G, BY + G), (PX + G, BY + G), (PX + G, AY + G), (X1, AY + G), (X1, Y1), (TX + G, Y1),
+                        (TX + G, JY - G), (VX + G, JY - G)]),
+    ('In2.Cu', '+3.3V', [(PX + G, Y0), (X1, Y0), (X1, AY - G), (PX + G, AY - G)]),
+    ('In2.Cu', 'GND', [(VX + G, JY + G), (TX - G, JY + G), (TX - G, Y1), (VX + G, Y1)]),
 ]
 for layer, net, poly in REGIONS:
     z = pcbnew.ZONE(b)
