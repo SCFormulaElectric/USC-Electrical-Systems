@@ -1,6 +1,6 @@
 # DDAQ PCB layout notes (rev for STM32G474 schematic)
 
-Status 2026-11-03: **6-layer, routing in progress - 44 connections still unrouted, 0 clearance errors** (`layout_routed_wip.png`).
+Status 2026-11-03: **4-layer, J3 at TE's board-edge position, 49 connections unrouted, 0 clearance errors, schematic parity 0** (renders in `renders/`). The earlier 6-layer board (J3 housing on the PCB, 44 unrouted) is kept on branch `ddaq/pcb-6L-v1`.
 Earlier status: placement done, not routed. `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
 (scripted "Update PCB from Schematic": `claude_scripts/pcb/build_board.py`, grouping `group.py`, placement
 `place.py`, planes `zones.py`). DRC: no courtyard/clearance violations, schematic parity 0, 499 unrouted
@@ -90,3 +90,16 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
 - **Current board is wrong here**: its edge is at y = +31.2 (whole shroud on the PCB, ~21.7 mm too far out).
 - Footprint fixed to TE's layout: pin holes 1.9 mm drill (1.75 +/-0.1 after plating; was 2.0), retention-peg
   holes 2.85 mm NPTH (was 3.0). Board thickness 1.57 mm (TE).
+
+## J3 at the board edge, re-route (2026-11-03, current board)
+- Board stays 120 x 100. J3 moved to TE's edge rule (PCB edge 9 mm from the peg centreline) with the shroud
+  overhanging the bottom edge and two edge notches under the flange's lower screw bosses. The freed ~22 mm went to
+  moving the analog section, 7 V / 5 V bucks, frequency inputs, IMU and the lower parts of the MCU/CAN blocks down
+  16 mm, opening a band through the old congestion (`place.py`, `DDAQ_J3EDGE=1`).
+- **4 layers** (F sig / In1 GND / In2 split power / B sig): supervised Freerouting 66 -> 58 -> 53, finisher -> **49**.
+  (Before the move, 4 layers stalled at 81.)
+- 6 layers on the same placement: four Freerouting runs in a row stalled at pass 1-3 (195-379), so the time went
+  to 4 layers instead. The 6-layer v1 (old J3 position) reached 44.
+- Remaining 49 are spread out (no single hot spot): GND 8, +3.3V 6, +12V_SNS 3, +7V 2, LM5175 stage 4 (BB_RS,
+  BB_SW1, BB_HD2), the rest single signals (SPI1 to the ADC, SPI3, CAN2 control, crystal HSE_OUT, CAN1 term, ...).
+  Plus 16 dangling vias / 10 dangling tracks to clean (Tools > Cleanup Tracks & Vias) and silkscreen.
