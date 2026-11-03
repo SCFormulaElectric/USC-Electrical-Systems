@@ -25,8 +25,14 @@ X0, Y0, W, H, RAD = 100.0, 50.0, 120.0 + GROW, 100.0 + GROW, 3.0
 # The anchor/block tables below were laid out for 120 x 100. GROW_X/GROW_Y open the board up: everything right of
 # SPLIT_X moves right by GROW_X and everything below SPLIT_Y moves down by GROW_Y (power stage stays top-left).
 GROW_X, GROW_Y, SPLIT_X, SPLIT_Y = GROW, GROW, 141.0, 86.0
+# DDAQ_J3EDGE=1: J3 sits where TE 114-16016 Fig. 13a puts it (PCB edge 9 mm from the peg centreline, i.e. footprint
+# y = +9.5), the mating shroud overhangs the bottom edge, and the freed ~22 mm is used by moving the lower blocks
+# (analog, 7 V / 5 V bucks, frequency inputs, IMU, CAN/MCU block bottoms) down by J3SHIFT mm.
+J3EDGE = os.environ.get('DDAQ_J3EDGE', '0') == '1'
+J3SHIFT = 16.0 if J3EDGE else 0.0
+NO_SHIFT = {'U12', 'U13', 'U14', 'U16', 'U17', 'U18', 'L6'}   # tracker column / CAN choke keep their places
 gx = lambda x: x + GROW_X if x >= SPLIT_X else x
-gy = lambda y: y + GROW_Y if y >= SPLIT_Y else y
+gy = lambda y: y + GROW_Y + J3SHIFT if y >= SPLIT_Y else y
 CLEAR = 0.6        # extra spacing between courtyards (mm)
 EDGE = 0.8         # courtyard to board edge, except edge connectors
 
@@ -48,7 +54,22 @@ def arc(cx, cy, sx, sy, deg):
 
 x1, y1 = X0 + W, Y0 + H
 seg(X0 + RAD, Y0, x1 - RAD, Y0); seg(x1, Y0 + RAD, x1, y1 - RAD)
-seg(x1 - RAD, y1, X0 + RAD, y1); seg(X0, y1 - RAD, X0, Y0 + RAD)
+NOTCH = []   # (x0, y0, x1, y1) cut-outs in the bottom edge
+if J3EDGE:
+    jc = X0 + W / 2
+    for cx in (jc - 33.2, jc + 33.2):        # lower flange screw bosses, ~6.5 x 6 mm (figure, not dimensioned)
+        NOTCH.append((cx - 3.25, y1 - 6.0, cx + 3.25, y1))
+    xs = [X0 + RAD] + [v for n in sorted(NOTCH) for v in (n[0], n[2])] + [x1 - RAD]
+    # bottom edge right-to-left with the two notches
+    pts = sorted(xs)
+    seg(x1 - RAD, y1, NOTCH[1][2], y1); seg(NOTCH[1][2], y1, NOTCH[1][2], y1 - 6.0)
+    seg(NOTCH[1][2], y1 - 6.0, NOTCH[1][0], y1 - 6.0); seg(NOTCH[1][0], y1 - 6.0, NOTCH[1][0], y1)
+    seg(NOTCH[1][0], y1, NOTCH[0][2], y1); seg(NOTCH[0][2], y1, NOTCH[0][2], y1 - 6.0)
+    seg(NOTCH[0][2], y1 - 6.0, NOTCH[0][0], y1 - 6.0); seg(NOTCH[0][0], y1 - 6.0, NOTCH[0][0], y1)
+    seg(NOTCH[0][0], y1, X0 + RAD, y1)
+else:
+    seg(x1 - RAD, y1, X0 + RAD, y1)
+seg(X0, y1 - RAD, X0, Y0 + RAD)
 arc(x1 - RAD, Y0 + RAD, x1 - RAD, Y0, 90); arc(x1 - RAD, y1 - RAD, x1, y1 - RAD, 90)
 arc(X0 + RAD, y1 - RAD, X0 + RAD, y1, 90); arc(X0 + RAD, Y0 + RAD, X0, Y0 + RAD, 90)
 
@@ -64,7 +85,7 @@ for i, (x, y) in enumerate(((X0 + 4, Y0 + 4), (x1 - 4, Y0 + 4), (X0 + 4, y1 - 4)
     b.Add(h); fps[h.GetReference()] = h
 
 # ---------------- anchors: ref -> (x, y, rot, block) ----------------
-J3Y = y1 - (12.15 + 19.075)     # J3 courtyard (incl. housing) flush with the bottom edge
+J3Y = (y1 - 9.5) if J3EDGE else (y1 - (12.15 + 19.075))   # TE edge rule / old: whole courtyard on board
 ANCHORS = {
     'J3': (160.0, J3Y, 0, None),
     # LM5175 4-switch buck-boost: Q3/Q4 = SW1 leg, Q5/Q6 = SW2 leg, L8 between, R107 in the low-side return
@@ -76,7 +97,7 @@ ANCHORS = {
     'U11': (125.5, 84.5, 0, 'PWR'),
     'U9': (108.0, 90.0, 0, 'PWR'), 'L7': (110.0, 103.0, 0, 'PWR'),
     'U2': (130.0, 90.0, 0, 'PWR'), 'U6': (131.0, 103.0, 0, 'PWR'),
-    'Q2': (110.0, 120.0, 0, 'PIN'), 'F1': (110.0, 128.0, 90, 'PIN'),
+    'Q2': (110.0, 120.0, 0, 'PIN'), 'F1': (110.0, 128.0, 90, 'PIN'),   # moved to y 133/141 in J3EDGE mode
     'U4': (147.75, 59.0, 0, 'MCU'),
     'U1': (164.0, 72.0, 0, 'MCU'), 'X1': (151.5, 74.0, 90, 'MCU'),
     'USBC1': (158.0, 54.5, 180, 'MCU'), 'U22': (158.0, 61.0, 0, 'MCU'), 'J5': (178.0, 52.6, 0, 'MCU'),
@@ -94,9 +115,13 @@ BLOCKS = {  # x0, x1, y0, y1
     'CAN': (184.0, 219.2, 66.0, 92.0), 'FRQ': (175.0, 203.0, 90.0, 111.5), 'TRK': (198.5, 219.2, 88.0, 149.2),
     'J3': (121.0, 199.0, 100.0, 112.0),
 }
-ANCHORS = {r: ((gx(x) if r != 'J3' else X0 + W / 2), (gy(y) if r != 'J3' else y), rot, blk)
+if J3EDGE:
+    ANCHORS['Q2'] = (110.0, 133.0 - J3SHIFT, 0, 'PIN'); ANCHORS['F1'] = (110.0, 141.0 - J3SHIFT, 90, 'PIN')
+ANCHORS = {r: ((gx(x) if r != 'J3' else X0 + W / 2),
+               (y if r == 'J3' or r in NO_SHIFT or (blk == 'TRK') else gy(y)), rot, blk)
            for r, (x, y, rot, blk) in ANCHORS.items()}
-BLOCKS = {k: (gx(a), gx(b) if b < 219 else x1 - 0.8, gy(c), gy(d) if d < 149 else y1 - 0.8)
+BLOCKS = {k: (gx(a), gx(b) if b < 219 else x1 - 0.8,
+              (c if k in ('TRK', 'PIN') else min(gy(c), y1 - 1)), (d if k in ('TRK', 'PIN') else min(gy(d), y1 - 0.8)))
           for k, (a, b, c, d) in BLOCKS.items()}
 BLOCK_OF = {r: a[3] for r, a in ANCHORS.items()}
 BLOCK_OF['J3'] = 'J3'
@@ -117,6 +142,9 @@ def inside_board(r, edge_ok=False):
     if r[0] < X0 + m or r[2] > x1 - m or r[1] < Y0 + m or r[3] > y1 - m:
         return False
     # keep out of the rounded corners and the mounting holes (6.5 mm square around each)
+    for n in NOTCH:
+        if r[0] < n[2] + 0.8 and r[2] > n[0] - 0.8 and r[1] < n[3] and r[3] > n[1] - 0.8:
+            return False
     for hx, hy in ((X0 + 4, Y0 + 4), (x1 - 4, Y0 + 4), (X0 + 4, y1 - 4), (x1 - 4, y1 - 4)):
         if r[0] < hx + 3.6 and r[2] > hx - 3.6 and r[1] < hy + 3.6 and r[3] > hy - 3.6:
             return False
