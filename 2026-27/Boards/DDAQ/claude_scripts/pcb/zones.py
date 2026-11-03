@@ -15,6 +15,10 @@ import os
 GROW = round((X1 - X0) - 120)          # 0 for the 120 x 100 board, 10 for 130 x 110
 PWR = os.environ.get('DDAQ_PWR_LAYER', 'In2.Cu')   # In4.Cu on the 6-layer stackup
 VX, PX, BY, AY, JY, TX = 119, 141 + GROW, 86 + GROW, 92 + GROW, 112 + GROW, 198 + GROW
+if os.environ.get('DDAQ_J3EDGE', '0') == '1':
+    # J3 at TE's edge position: +3.3V region reaches down to y 100 (MCU/sensors moved down 16 mm),
+    # GND-under-J3 region starts just above J3's courtyard (y ~133.6)
+    AY, JY = 100, 132
 REGIONS = [  # (layer, net, polygon)
     ('In1.Cu', 'GND', [(X0, Y0), (X1, Y0), (X1, Y1), (X0, Y1)]),
     (PWR, '/VIN_PROT', [(X0, Y0), (VX - G, Y0), (VX - G, Y1), (X0, Y1)]),
