@@ -15,7 +15,7 @@ import pcbnew
 
 b = pcbnew.LoadBoard(sys.argv[1])
 MM, TO = pcbnew.FromMM, pcbnew.ToMM
-CLEAR = 0.25
+CLEAR = 0.2   # board default clearance; 0.25 blocked every pin-aligned stub on 0.5 mm-pitch ICs
 import os
 PWR_LAYER = os.environ.get('DDAQ_PWR_LAYER', 'In2.Cu')
 ZONES = {}  # net -> list of power-layer zone outlines
