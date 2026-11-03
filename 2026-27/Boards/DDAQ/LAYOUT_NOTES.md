@@ -75,3 +75,18 @@ connections. Placement picture: `layout_placement.png`.
 ## Next
 Route: hand-route the switcher power loops and wide power nets, then autoroute the rest (Freerouting, via
 Specctra DSN; needs permission to run the jar in the cloud session), then pour GND on F/B, stitch, DRC, silk.
+
+## J3 AMPSEAL 776163-1 mounting (from TE customer drawing 776163 rev K1 + application spec 114-16016 rev S3,
+## both in `datasheets/`)
+- Panel-mount header: the mating shroud (~19.3 mm) goes **through the enclosure wall**; the flange's silicone
+  gasket seals against the inside face of a 2-5 mm panel; 4x 2.5 mm thread-forming screws (Delta PT), cross
+  pattern 0.3-0.4 N-m then 0.6-0.8 N-m; header flush to the panel before final torque. Panel cut-out
+  60.0-60.5 x 24.2-25.2 mm, R6.6-6.8 corners; screw holes 4x 3.0-3.3 mm on 63.4 x 18.1 mm; sealing surface
+  flat within 0.5, Ra <= 0.4 (ISO 1302).
+- **PCB edge = 9 mm from the centreline of the two 2.85 mm peg holes** (Fig. 13a), i.e. J3 footprint y = +9.5
+  (middle pin row at y = 0, pegs at y = +0.5). Two notches in the edge under the flange's lower screw bosses
+  (bosses at x = +/-33.2, 8 mm deep behind the flange); notch size taken from the figure (~6.5 x 6 mm, not
+  dimensioned by TE - check against a sample).
+- **Current board is wrong here**: its edge is at y = +31.2 (whole shroud on the PCB, ~21.7 mm too far out).
+- Footprint fixed to TE's layout: pin holes 1.9 mm drill (1.75 +/-0.1 after plating; was 2.0), retention-peg
+  holes 2.85 mm NPTH (was 3.0). Board thickness 1.57 mm (TE).
