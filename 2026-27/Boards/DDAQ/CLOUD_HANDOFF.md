@@ -133,11 +133,19 @@ intent entries, ERC 1194 -> 1170 with no new categories.
    project fp-lib-table entry `footprints` -> `${KIPRJMOD}/../footprints.pretty` (was a OneDrive path in the global
    table). All power-symbol references hidden (234 older tool-placed ones were visible). Remaining tidy: a few labels
    crowd existing text at the CAN termination resistors and J1 pull-ups - quicker to nudge by hand in eeschema.
-5. LM5175 compensation: NOT checked in TI's calculator (ti.com blocked in the cloud). First-order estimate only:
-   fsw ~300 kHz (RT 84.5k, interpolated from datasheet table points 133k/200 kHz, 47k/500 kHz); Rc/Cc zero 1.16 kHz,
-   Chf pole 312 kHz; with ASSUMED EA gm = 1 mS and current-sense gain 10 (not verified), Rsense 33 mOhm (R107),
-   crossover ~1.3 kHz with the 100 uF electrolytic effective, ~7 kHz with ceramics only; boost RHP zero ~54 kHz at
-   9 V in / 2 A. Looks conservative (low crossover) rather than unstable. Still run TI's LM5175 quickstart calculator.
+5. LM5175 compensation: checked against the datasheet design equations (SNVSA37A sec. 8.3.12 and 9.2.2; TI's
+   Quickstart Calculator itself downloads from dr-download.ti.com, which is still blocked). Operating envelope used:
+   VIN 7-18 V (UVLO on 6.94 V / 0.87 V hysteresis; SMBJ18CA standoff), load <= 1 A (only F3/F4 0.5 A PTCs on
+   +12V_SNS), 2 A checked as overload. Datasheet constants: gmEA 1.27 mS, A_CS 5, VREF 0.8 V, fsw 300 kHz (RT 84.5k).
+   - Slope: dead-beat C_SLOPE = 2 uS * 10 uH / (33 mOhm * 5) = 121 pF; 100 pF fitted (stable up to ~240 pF). OK.
+   - COMP range: buck no-load Vcomp 1.29 V at 18 V (limit > 0.3 V, OK to ~30 V); boost Vcomp 2.45 V at 7 V / 2 A
+     (limit < 3 V). OK.
+   - Loop (Eq. 43 rearranged): with the 100 uF electrolytic, crossover ~1.9-3.3 kHz; ceramics only (~26 uF effective
+     at 12 V, e.g. cold electrolytic) ~9-16 kHz. Limits min(fRHP/3, fsw/20) = 10.8-15 kHz: OK, ceramics-only buck sits
+     right at fsw/20 (16 vs 15 kHz), acceptable. Comp zero 1.16 kHz, HF pole 312 kHz.
+   - Current limit: buck valley 2.3 A (1.6 A min), boost peak 5.2 A (3.6 A min) - above the 1 A load.
+   - Soft-start 16 ms; MODE 93.1k = CCM + hiccup. Verdict: no component changes needed; confirm on the bench with a
+     load step at 7 V and 18 V in.
 
 Next free refs: U25, R139, C166, Q8, JP5, #PWR01008, #FLG01002.
 
