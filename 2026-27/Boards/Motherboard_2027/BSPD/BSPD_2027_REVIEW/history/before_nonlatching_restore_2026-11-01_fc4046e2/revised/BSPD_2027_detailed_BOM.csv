@@ -1,0 +1,67 @@
+Reference,Value,Manufacturer,MPN,LCSC,Footprint,Role,Source URL,Design Notes
+J1,043045-0612,Molex,430450612,C234188,Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical,vehicle_connector,https://www.lcsc.com/product-detail/C234188.html,"Pin 1 stays unused. Pin 2 is non-latching: HIGH healthy, LOW fault. The external relayboard retains trips and controls manual reset."
+F1,0451.250MRL,Littelfuse,0451.250MRL,C151116,Fuse:Fuse_Littelfuse-NANO2-451_453,input_fuse,https://www.lcsc.com/product-detail/C151116.html,Final interrupt rating must exceed GLV prospective short-circuit current.
+D1,SS14,MDD,SS14,C2480,Diode_SMD:D_SMA,reverse_protection,https://www.lcsc.com/product-detail/C2480.html,
+D2,SMBJ18A,Littelfuse,SMBJ18A,C151256,Diode_SMD:D_SMB,supply_tvs,https://www.lcsc.com/product-detail/C151256.html,
+C1,10uF/50V,Murata,GRM31CR61H106KA12L,C77092,Capacitor_SMD:C_1206_3216Metric,input_bulk,https://www.lcsc.com/product-detail/C77092.html,
+C2,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,input_bypass,https://www.lcsc.com/product-detail/C1711.html,
+U1,L78L05ABUTR,STMicroelectronics,L78L05ABUTR,C42738,Package_TO_SOT_SMD:SOT-89-3,logic_supply,https://www.lcsc.com/product-detail/C42738.html,
+C3,1uF/50V,Samsung Electro-Mechanics,CL21B105KBFNNNE,C28323,Capacitor_SMD:C_0805_2012Metric,logic_bulk,https://www.lcsc.com/product-detail/C28323.html,
+C4,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,logic_bypass,https://www.lcsc.com/product-detail/C1711.html,
+R1,1k 1%,UNI-ROYAL,0805W8F1001T5E,C17513,Resistor_SMD:R_0805_2012Metric,clamp_rail_bleed,https://www.lcsc.com/product-detail/C17513.html,Provides sink load for clamp current; regulator itself cannot sink current.
+R2,3.3k 1%,UNI-ROYAL,0805W8F3301T5E,C26010,Resistor_SMD:R_0805_2012Metric,reference_bias,https://www.lcsc.com/product-detail/C26010.html,
+U2,LM4040AIM3-5.0/NOPB,Texas Instruments,LM4040AIM3-5.0/NOPB,C140239,Package_TO_SOT_SMD:SOT-23,precision_reference,https://www.lcsc.com/product-detail/C140239.html,
+C5,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,reference_bypass,https://www.lcsc.com/product-detail/C1711.html,
+U3,MCP809T-450I/TT,Microchip,MCP809T-450I/TT,C511285,Package_TO_SOT_SMD:SOT-23,power_supervisor,https://www.lcsc.com/product-detail/C511285.html,
+C6,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,supervisor_bypass,https://www.lcsc.com/product-detail/C1711.html,
+U4,LM2901BIDR,Texas Instruments,LM2901BIDR,C22427890,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,current_and_uv_comparators,https://www.lcsc.com/product-detail/C22427890.html,
+C7,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,current_ic_bypass,https://www.lcsc.com/product-detail/C1711.html,
+R3,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,current_series,https://www.lcsc.com/product-detail/C110775.html,
+R4,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,current_open_bias,https://www.lcsc.com/product-detail/C110775.html,
+C8,10nF/50V,CCTC,TCC0805X7R103K500DT,C282728,Capacitor_SMD:C_0805_2012Metric,current_filter,https://www.lcsc.com/product-detail/C282728.html,
+U5,"BAT54S,215",Nexperia,"BAT54S,215",C47546,Package_TO_SOT_SMD:SOT-23,current_input_clamp,https://www.lcsc.com/product-detail/C47546.html,
+R5,1M 1%,UNI-ROYAL,0805W8F1004T5E,C17514,Resistor_SMD:R_0805_2012Metric,current_low_top,https://www.lcsc.com/product-detail/C17514.html,Nominal raw low limit ~0.099V permits normal DHAB low clamping at a qualified sensor supply.
+R6,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,current_low_bottom,https://www.lcsc.com/product-detail/C110775.html,
+R7,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,current_high_top,https://www.lcsc.com/product-detail/C110775.html,Nominal raw high limit ~4.88V permits DHAB nominal high clamping; sensor-supply extremes still require reference qualification.
+R8,9.53k 0.1%,YAGEO,RT0805BRD079K53L,C865722,Resistor_SMD:R_0805_2012Metric,current_high_bottom,https://www.lcsc.com/product-image/C865722.html?whichImg=0,
+R9,28k 0.1%,YAGEO,RT0805BRD0728KL,C865356,Resistor_SMD:R_0805_2012Metric,current_set_top,https://www.lcsc.com/product-detail/C865356.html,Channel 2 calibration part; not a final vehicle threshold until sensor supply and errors are measured.
+R10,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,current_set_bottom,https://www.lcsc.com/product-detail/C110775.html,Change soldered resistor values to calibrate; no moving contacts.
+R11,1k 1%,UNI-ROYAL,0805W8F1001T5E,C17513,Resistor_SMD:R_0805_2012Metric,current_hysteresis_input,https://www.lcsc.com/product-detail/C17513.html,
+R12,4.7M 1%,UNI-ROYAL,0805W8F4704T5E,C17674,Resistor_SMD:R_0805_2012Metric,current_hysteresis_feedback,https://www.lcsc.com/product-detail/C17674.html,
+R13,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,current_pullup,https://www.lcsc.com/product-detail/C17414.html,
+R14,33k 1%,UNI-ROYAL,0805W8F3302T5E,C17633,Resistor_SMD:R_0805_2012Metric,undervoltage_top,https://www.lcsc.com/product-detail/C17633.html,Conservative 12V-class undervoltage cutoff also protects AiM 10V minimum supply. Qualify actual GLV range.
+R15,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,undervoltage_bottom,https://www.lcsc.com/product-detail/C110775.html,
+U6,LM2901BIDR,Texas Instruments,LM2901BIDR,C22427890,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,brake_and_timer_comparators,https://www.lcsc.com/product-detail/C22427890.html,
+C9,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,brake_ic_bypass,https://www.lcsc.com/product-detail/C1711.html,
+R16,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,brake_series,https://www.lcsc.com/product-detail/C110775.html,
+R17,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,brake_open_bias,https://www.lcsc.com/product-detail/C110775.html,
+C10,10nF/50V,CCTC,TCC0805X7R103K500DT,C282728,Capacitor_SMD:C_0805_2012Metric,brake_filter,https://www.lcsc.com/product-detail/C282728.html,
+U7,"BAT54S,215",Nexperia,"BAT54S,215",C47546,Package_TO_SOT_SMD:SOT-23,brake_input_clamp,https://www.lcsc.com/product-detail/C47546.html,
+R18,115k 1%,UNI-ROYAL,0805W8F1153T5E,C407430,Resistor_SMD:R_0805_2012Metric,brake_low_top,https://www.lcsc.com/product-detail/C407430.html,
+R19,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,brake_low_bottom,https://www.lcsc.com/product-detail/C17414.html,
+R20,8.66k 1%,UNI-ROYAL,0805W8F8661T5E,C17832,Resistor_SMD:R_0805_2012Metric,brake_high_top,https://www.lcsc.com/product-detail/C17832.html,
+R21,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,brake_high_bottom,https://www.lcsc.com/product-detail/C17414.html,
+R22,40.2k 0.1%,YAGEO,RT0805BRD0740K2L,C865475,Resistor_SMD:R_0805_2012Metric,brake_set_top,https://www.lcsc.com/product-detail/C865475.html,Bench placeholder only (~35bar). AiM X05SNP13520 is confirmed; hard-brake pressure remains unconfirmed.
+R23,10k 0.1%,YAGEO,RT0805BRD0710KL,C110775,Resistor_SMD:R_0805_2012Metric,brake_set_bottom,https://www.lcsc.com/product-detail/C110775.html,Change soldered resistors only after hydraulic calibration.
+R24,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,brake_hysteresis_input,https://www.lcsc.com/product-detail/C17414.html,
+R25,2.2M 1%,YAGEO,RC0805FR-072M2L,C137552,Resistor_SMD:R_0805_2012Metric,brake_hysteresis_feedback,https://www.lcsc.com/product-detail/C137552.html,
+R26,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,brake_pullup,https://www.lcsc.com/product-detail/C17414.html,
+U8,"74HC132D,653",Nexperia,"74HC132D,653",C5601,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,coincidence_logic,https://www.lcsc.com/product-detail/Gates_Nexperia_C5601.html,Gate 1 controls coincidence timing. Gates 2/3 buffer PERMIT=FAULT_OK AND POR_N; no fault memory is present.
+C11,100nF/50V,Samsung Electro-Mechanics,CL21B104KBCNNNC,C1711,Capacitor_SMD:C_0805_2012Metric,nand_bypass,https://www.lcsc.com/product-detail/C1711.html,
+R27,39k 1%,UNI-ROYAL,0805W8F3902T5E,C25826,Resistor_SMD:R_0805_2012Metric,timer_charge,https://jlcpcb.com/partdetail/26569-0805W8F3902T5E/C25826,
+C12,10uF/25V X7R 10%,Murata,GRM21BZ71E106KE15L,C237493,Capacitor_SMD:C_0805_2012Metric,timer_cap,https://www.lcsc.com/product-detail/C237493.html,Timer is conservatively early: nominal ~270ms; capacitance positive tolerance/temp and reset-FET leakage must fit 500ms including external relay.
+R28,47k 0.1%,YAGEO,RT0805BRD0747KL,C865515,Resistor_SMD:R_0805_2012Metric,timer_half_top,https://www.lcsc.com/product-detail/C865515.html,
+R29,47k 0.1%,YAGEO,RT0805BRD0747KL,C865515,Resistor_SMD:R_0805_2012Metric,timer_half_bottom,https://www.lcsc.com/product-detail/C865515.html,
+R30,470 1%,UNI-ROYAL,0805W8F4700T5E,C17710,Resistor_SMD:R_0805_2012Metric,discharge_gate_series,https://www.lcsc.com/product-detail/C17710.html,
+R31,100k 1%,UNI-ROYAL,0805W8F1003T5E,C149504,Resistor_SMD:R_0805_2012Metric,discharge_gate_bias,https://www.lcsc.com/product-detail/C149504.html,
+Q1,"2N7002,215",Nexperia,"2N7002,215",C65189,Package_TO_SOT_SMD:SOT-23,timer_reset_fet,https://www.lcsc.com/product-detail/C65189.html,
+R32,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,fault_bus_pullup,https://www.lcsc.com/product-detail/C17414.html,
+R34,10k 1%,UNI-ROYAL,0805W8F1002T5E,C17414,Resistor_SMD:R_0805_2012Metric,permit_base,https://www.lcsc.com/product-detail/C17414.html,
+R35,100k 1%,UNI-ROYAL,0805W8F1003T5E,C149504,Resistor_SMD:R_0805_2012Metric,permit_base_bias,https://www.lcsc.com/product-detail/C149504.html,
+Q2,"MMBT3904,215",Nexperia,"MMBT3904,215",C426835,Package_TO_SOT_SMD:SOT-23,output_level_shift,https://www.lcsc.com/product-detail/C426835.html,
+R36,47k 1%,UNI-ROYAL,0805W8F4702T5E,C17713,Resistor_SMD:R_0805_2012Metric,source_base_limit,https://www.lcsc.com/product-detail/C17713.html,
+R37,100k 1%,UNI-ROYAL,0805W8F1003T5E,C149504,Resistor_SMD:R_0805_2012Metric,source_base_off_bias,https://www.lcsc.com/product-detail/C149504.html,
+Q3,"MMBT3906,215",Nexperia,"MMBT3906,215",C75549,Package_TO_SOT_SMD:SOT-23,output_source,https://www.lcsc.com/product-detail/C75549.html,
+R38,2.2k 1%,UNI-ROYAL,1206W4F2201T5E,C17948,Resistor_SMD:R_1206_3216Metric,output_short_limit,https://www.lcsc.com/product-detail/C17948.html,Output load verified on motherboard: 24k divider. 1206 power rating required.
+R39,47k 1%,UNI-ROYAL,0805W8F4702T5E,C17713,Resistor_SMD:R_0805_2012Metric,output_default_low,https://www.lcsc.com/product-detail/C17713.html,
+D4,BZT52C15-7-F,Diodes Incorporated,BZT52C15-7-F,C177014,Diode_SMD:D_SOD-123,output_clamp,https://www.lcsc.com/product-detail/C177014.html,

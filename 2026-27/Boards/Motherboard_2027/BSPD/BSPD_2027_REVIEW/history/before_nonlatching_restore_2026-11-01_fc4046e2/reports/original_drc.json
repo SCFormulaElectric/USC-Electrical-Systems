@@ -1,0 +1,661 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-05T16:57:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Field 'Description' differs (PCB: 'Unpolarized capacitor', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "0044784f-0e07-4494-8df6-8acc722971b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Unpolarized capacitor', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 166.39,
+                        "y": 71.12
+                    },
+                    "uuid": "3d04513b-7a78-4bb7-9904-41956a0f6304"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Unpolarized capacitor', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 175.3,
+                        "y": 96.52
+                    },
+                    "uuid": "e32f0142-3728-4f4f-a36d-faa666a5c9d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf')",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 170.815,
+                        "y": 93.98
+                    },
+                    "uuid": "9844a8ae-b072-47ad-aa26-b94605037206"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Generic connector, single row, 01x06, script generated', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 149.6538,
+                        "y": 68.9186
+                    },
+                    "uuid": "217ea859-6917-4e2e-9aa6-b4addc76a279"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 167.64,
+                        "y": 101.6
+                    },
+                    "uuid": "66e9a538-1671-439f-a55f-d1239517cab9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 57.785
+                    },
+                    "uuid": "32d9216c-7d70-4a31-93c9-66910ffa5a42"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 66.675
+                    },
+                    "uuid": "8cdf80e6-8dd0-4f64-bfa1-96254fa2ae66"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 70.725
+                    },
+                    "uuid": "f3f480e0-f5fa-4e62-9708-3fa1367eb9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 169.545,
+                        "y": 57.785
+                    },
+                    "uuid": "184b2949-3c96-4542-91c2-021efc8915dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 61.835
+                    },
+                    "uuid": "dedeeeb8-b185-49ba-b8c0-0d0c79c5fc24"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 160.655,
+                        "y": 66.675
+                    },
+                    "uuid": "74def546-608f-4e5b-a15b-1c072cf297d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Resistor, US symbol', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 61.595
+                    },
+                    "uuid": "7c02436f-da94-48bd-b761-25dbf0f9dae8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'http://www.ti.com/lit/ds/symlink/lm2904-n.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 88.265
+                    },
+                    "uuid": "e14134b6-c8b3-40db-acdc-c0f57b580675"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'http://www.ti.com/lit/ds/symlink/lm2904-n.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 160.02,
+                        "y": 88.265
+                    },
+                    "uuid": "6941e138-0182-400c-adf2-5d1c5e363567"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'http://www.ti.com/lit/ds/symlink/lm2904-n.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 88.265
+                    },
+                    "uuid": "bc073b95-b9de-4a8f-aaa6-dbcea7c0c942"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'http://www.ti.com/lit/ds/symlink/lm2904-n.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 176.53,
+                        "y": 88.265
+                    },
+                    "uuid": "3cbdd93e-3ad6-45e7-96a1-32136b0f297c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'http://www.ti.com/lit/ds/symlink/lm4040-n.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 151.13,
+                        "y": 81.28
+                    },
+                    "uuid": "bb2c1e3a-cf56-456b-9dab-a72e3b07bb51"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "BSPD_5.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'C_Disc_D3.4mm_W2.1mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 160.675,
+                        "y": 71.12
+                    },
+                    "uuid": "0044784f-0e07-4494-8df6-8acc722971b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 169.545,
+                        "y": 57.785
+                    },
+                    "uuid": "184b2949-3c96-4542-91c2-021efc8915dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical' does not match copy in library 'Connector_Molex'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 149.6538,
+                        "y": 68.9186
+                    },
+                    "uuid": "217ea859-6917-4e2e-9aa6-b4addc76a279"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 57.785
+                    },
+                    "uuid": "32d9216c-7d70-4a31-93c9-66910ffa5a42"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 176.53,
+                        "y": 88.265
+                    },
+                    "uuid": "3cbdd93e-3ad6-45e7-96a1-32136b0f297c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_Disc_D3.4mm_W2.1mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 166.39,
+                        "y": 71.12
+                    },
+                    "uuid": "3d04513b-7a78-4bb7-9904-41956a0f6304"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 165.1,
+                        "y": 79.375
+                    },
+                    "uuid": "4cca0d6f-d058-4c08-8332-d81149d5ac2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 167.64,
+                        "y": 101.6
+                    },
+                    "uuid": "66e9a538-1671-439f-a55f-d1239517cab9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 160.02,
+                        "y": 88.265
+                    },
+                    "uuid": "6941e138-0182-400c-adf2-5d1c5e363567"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 160.655,
+                        "y": 66.675
+                    },
+                    "uuid": "74def546-608f-4e5b-a15b-1c072cf297d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R8",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 61.595
+                    },
+                    "uuid": "7c02436f-da94-48bd-b761-25dbf0f9dae8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 66.675
+                    },
+                    "uuid": "8cdf80e6-8dd0-4f64-bfa1-96254fa2ae66"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'D_DO-35_SOD27_P7.62mm_Horizontal' does not match copy in library 'Diode_THT'",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 170.815,
+                        "y": 93.98
+                    },
+                    "uuid": "9844a8ae-b072-47ad-aa26-b94605037206"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-14_3.9x8.7mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 161.225,
+                        "y": 97.79
+                    },
+                    "uuid": "9cd41da0-7690-48df-a616-b0ce4eee635f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 177.8,
+                        "y": 79.375
+                    },
+                    "uuid": "a855a641-2005-4333-a919-38d469127579"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 168.275,
+                        "y": 88.265
+                    },
+                    "uuid": "bc073b95-b9de-4a8f-aaa6-dbcea7c0c942"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-14_3.9x8.7mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U7",
+                    "pos": {
+                        "x": 153.035,
+                        "y": 97.79
+                    },
+                    "uuid": "c12d1253-81af-422f-a802-720af225ff99"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 171.45,
+                        "y": 79.375
+                    },
+                    "uuid": "d58e63e4-2b1a-4b49-b13e-c9d6fa456cc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'Potentiometer_Vishay_T93YA103KT20' not found in library 'Potentiometer_THT'",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 158.75,
+                        "y": 79.375
+                    },
+                    "uuid": "de4ef744-328c-47dd-9c6e-9e845a0b35f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 61.835
+                    },
+                    "uuid": "dedeeeb8-b185-49ba-b8c0-0d0c79c5fc24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 151.765,
+                        "y": 88.265
+                    },
+                    "uuid": "e14134b6-c8b3-40db-acdc-c0f57b580675"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'CP_Radial_D6.3mm_P2.50mm' does not match copy in library 'Capacitor_THT'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 175.3,
+                        "y": 96.52
+                    },
+                    "uuid": "e32f0142-3728-4f4f-a36d-faa666a5c9d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal' does not match copy in library 'Resistor_THT'",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 172.085,
+                        "y": 70.725
+                    },
+                    "uuid": "f3f480e0-f5fa-4e62-9708-3fa1367eb9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}
