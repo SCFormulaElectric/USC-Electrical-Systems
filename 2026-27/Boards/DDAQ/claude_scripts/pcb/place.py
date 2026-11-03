@@ -19,10 +19,12 @@ group = G['group']
 group.update({c: 'Q3' for c in ('C126', 'C127', 'C128', 'C129')})
 group.update({c: 'Q5' for c in ('C130', 'C131', 'C132', 'C133', 'C134')})
 MM = pcbnew.FromMM
-X0, Y0, W, H, RAD = 100.0, 50.0, 130.0, 110.0, 3.0
+import os
+GROW = float(os.environ.get('DDAQ_GROW', '0'))   # 0 -> 120 x 100 board, 10 -> 130 x 110
+X0, Y0, W, H, RAD = 100.0, 50.0, 120.0 + GROW, 100.0 + GROW, 3.0
 # The anchor/block tables below were laid out for 120 x 100. GROW_X/GROW_Y open the board up: everything right of
 # SPLIT_X moves right by GROW_X and everything below SPLIT_Y moves down by GROW_Y (power stage stays top-left).
-GROW_X, GROW_Y, SPLIT_X, SPLIT_Y = 10.0, 10.0, 141.0, 86.0
+GROW_X, GROW_Y, SPLIT_X, SPLIT_Y = GROW, GROW, 141.0, 86.0
 gx = lambda x: x + GROW_X if x >= SPLIT_X else x
 gy = lambda y: y + GROW_Y if y >= SPLIT_Y else y
 CLEAR = 0.6        # extra spacing between courtyards (mm)

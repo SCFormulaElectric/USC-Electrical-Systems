@@ -3,8 +3,8 @@
 # needs: stage0 board from build_board.py at $1/stage0.kicad_pcb and groups at $1/groups.json
 set -e
 S=$1; P=$2; D=$(cd "$(dirname "$0")" && pwd)
-RUN="docker run --rm -u 0 -v /home/user:/home/user -v $S:$S -v $P:$P -w $P --entrypoint python3 kicad/kicad:10.0.8-amd64"
-$RUN $D/place.py $S/stage0.kicad_pcb $S/groups.json $P/DDAQ.kicad_pcb /usr/share/kicad/footprints
+RUN="docker run --rm -u 0 -e DDAQ_GROW=${DDAQ_GROW:-0} -e DDAQ_PWR_LAYER=${DDAQ_PWR_LAYER:-In2.Cu} -v /home/user:/home/user -v $S:$S -v $P:$P -w $P --entrypoint python3 kicad/kicad:10.0.8-amd64"
+$RUN $D/place.py $S/${STAGE0:-stage0.kicad_pcb} $S/groups.json $P/DDAQ.kicad_pcb /usr/share/kicad/footprints
 $RUN $D/zones.py $P/DDAQ.kicad_pcb
 $RUN $D/fanout.py $P/DDAQ.kicad_pcb
 $RUN $D/powerpour.py $P/DDAQ.kicad_pcb

@@ -16,9 +16,11 @@ import pcbnew
 b = pcbnew.LoadBoard(sys.argv[1])
 MM, TO = pcbnew.FromMM, pcbnew.ToMM
 CLEAR = 0.25
-ZONES = {}  # net -> list of In2 zone outlines
+import os
+PWR_LAYER = os.environ.get('DDAQ_PWR_LAYER', 'In2.Cu')
+ZONES = {}  # net -> list of power-layer zone outlines
 for z in b.Zones():
-    if b.GetLayerName(z.GetFirstLayer()) == 'In2.Cu':
+    if b.GetLayerName(z.GetFirstLayer()) == PWR_LAYER:
         ZONES.setdefault(z.GetNetname(), []).append(z.Outline())
 PLANE_NETS = {'GND'} | set(ZONES)
 edge = b.GetBoardEdgesBoundingBox()
