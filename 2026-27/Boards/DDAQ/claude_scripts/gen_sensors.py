@@ -64,6 +64,17 @@ def nc(ref, num):
     calls.append({"tool": "no_connect_pin", "args": {"reference": ref, "pin_name": str(num)}})
 
 
+def wires(*segs):
+    calls.append({"tool": "add_wires", "args": {"wires": [{"x1": a, "y1": b, "x2": c, "y2": d} for a, b, c, d in segs]}})
+
+
+def pwr(net, x, y, side):
+    """Power symbol whose pin sits at (x, y), drawn towards `side`."""
+    pwr_n[0] += 1
+    calls.append({"tool": "add_power_symbol", "args": {"lib_id": f"power:{net}", "reference": f"#PWR0{pwr_n[0]}",
+                                                       "x": x, "y": y, "rotation": ROT[net][side]}})
+
+
 def part2(ref, lcsc, x, y, n1, n2):
     place(ref, lcsc, x, y, 270)
     conn(ref, 1, n1)
@@ -76,9 +87,21 @@ BOX = (355.0, 560.0, 580.0, 745.0)  # x0, x1, y0, y1 (mm)
 
 # --- IMU: ISM330DHCX, SPI mode 3 wiring. Aux I2C master (SDx/SCx) unused -> GND, OCS_Aux / SDO_Aux -> NC
 place('U23', 'C2655101', 419.1, 637.54)
-for num, net in {1: MISO, 13: SCK, 14: MOSI, 12: 'IMU_CS_PA15', 4: 'IMU_INT1_PD5', 9: 'IMU_INT2_PD6',
-                 5: '+3.3V', 8: '+3.3V', 6: 'GND', 7: 'GND', 2: 'GND', 3: 'GND'}.items():
+for num, net in {1: MISO, 13: SCK, 14: MOSI, 12: 'IMU_CS_PA15', 4: 'IMU_INT1_PD5', 9: 'IMU_INT2_PD6'}.items():
     conn('U23', num, net)
+# SDx/SCx (2, 3) -> one GND to the left; VDD_IO (5) -> +3.3V below-left; GND (6, 7) -> one GND below; VDD (8) -> right
+intent += [('U23', '2', 'GND'), ('U23', '3', 'GND'), ('U23', '5', '+3.3V'), ('U23', '6', 'GND'), ('U23', '7', 'GND'),
+           ('U23', '8', '+3.3V')]
+wires((402.59, 636.27, 400.05, 636.27), (402.59, 638.81, 400.05, 638.81), (400.05, 636.27, 400.05, 637.54),
+      (400.05, 637.54, 400.05, 638.81), (400.05, 637.54, 397.51, 637.54))
+calls.append({"tool": "add_junctions", "args": {"points": [{"x": 400.05, "y": 637.54}]}})
+pwr('GND', 397.51, 637.54, 'left')
+wires((416.56, 652.78, 416.56, 655.32), (416.56, 655.32, 411.48, 655.32))
+pwr('+3.3V', 411.48, 655.32, 'down')
+wires((419.1, 652.78, 419.1, 655.32), (421.64, 652.78, 421.64, 655.32), (419.1, 655.32, 421.64, 655.32))
+pwr('GND', 421.64, 655.32, 'down')
+wires((435.61, 642.62, 438.15, 642.62))
+pwr('+3.3V', 438.15, 642.62, 'right')
 nc('U23', 10)
 nc('U23', 11)
 part2('C160', C100N, 464.82, 640.08, '+3.3V', 'GND')   # VDD
@@ -91,9 +114,20 @@ part2('R134', R10K, 528.32, 640.08, '+3.3V', 'BARO_CS_PD4')
 
 # --- Barometer: BMP581
 place('U24', 'C5362283', 419.1, 703.58)
-for num, net in {2: SCK, 4: MOSI, 5: MISO, 6: 'BARO_CS_PD4', 7: 'BARO_INT_PD7',
-                 1: '+3.3V', 10: '+3.3V', 3: 'GND', 8: 'GND', 9: 'GND'}.items():
+for num, net in {2: SCK, 4: MOSI, 5: MISO, 6: 'BARO_CS_PD4', 7: 'BARO_INT_PD7'}.items():
     conn('U24', num, net)
+# VDDIO (1) and VDD (10) -> +3.3V routed up; VSS (3) -> GND left; VSS (8, 9) -> one GND to the right
+intent += [('U24', '1', '+3.3V'), ('U24', '10', '+3.3V'), ('U24', '3', 'GND'), ('U24', '8', 'GND'), ('U24', '9', 'GND')]
+wires((407.67, 698.5, 405.13, 698.5), (405.13, 698.5, 405.13, 695.96))
+pwr('+3.3V', 405.13, 695.96, 'up')
+wires((430.53, 698.5, 433.07, 698.5), (433.07, 698.5, 433.07, 695.96))
+pwr('+3.3V', 433.07, 695.96, 'up')
+wires((407.67, 703.58, 405.13, 703.58))
+pwr('GND', 405.13, 703.58, 'left')
+wires((430.53, 701.04, 435.61, 701.04), (430.53, 703.58, 435.61, 703.58), (435.61, 701.04, 435.61, 702.31),
+      (435.61, 702.31, 435.61, 703.58), (435.61, 702.31, 438.15, 702.31))
+calls.append({"tool": "add_junctions", "args": {"points": [{"x": 435.61, "y": 702.31}]}})
+pwr('GND', 438.15, 702.31, 'right')
 part2('C163', C100N, 464.82, 706.12, '+3.3V', 'GND')   # VDD
 part2('C164', C100N, 477.52, 706.12, '+3.3V', 'GND')   # VDDIO
 

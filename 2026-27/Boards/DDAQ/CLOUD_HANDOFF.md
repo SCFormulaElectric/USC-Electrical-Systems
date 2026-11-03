@@ -93,7 +93,7 @@ from the LM5175/LMR33630/TPS563300 hot spots, and the enclosure needs a vent (me
 2. Copy `gen_io.py` as a template (helpers `place`, `pin`, `conn`, `part2`, `ic`). Pick an empty area of the sheet
    and keep its guard check that nothing is already inside the target box. Already used by recent steps:
    x 600–880 / y 115–365 (I/O), J3 at (939.8, 228.6), TVS row x 977.9–1079.5 at y 335.28.
-   Next free refs: check the netlist (U25+, R135+, C165+ after the sensor step).
+   Next free refs: see the step-2 section below.
 3. Apply with `uv run --script claude_scripts/kb.py batch batch.json` (wraps tools/kicad-batch/server.py,
    mcp-server-kicad 0.21.1). Quirks: place_component needs `symbol_lib_path` for JLCImport symbols and leaves
    Footprint/LCSC empty (copy them with set_component_property); wire_pins_to_net makes local labels, so power
@@ -108,6 +108,38 @@ from the LM5175/LMR33630/TPS563300 hot spots, and the enclosure needs a vent (me
   Change the constants at the top of `kb.py`, `gen_*.py` (LIBPATH/SCH) and `bin/jlc.py`.
 - The `gen_*.py` scripts read scratchpad backups (`backup_before_*.kicad_sch`) that are not committed; for a new
   step, back up the current schematic first and point the script at that copy.
+
+## DONE 2026-11-03 (cloud session, step 2): everything before the PCB update
+
+Same toolchain (KiCad 10.0.8 kicad-cli in Docker + mcp-server-kicad 0.21.1 via `kb.py batch`). Scripts:
+`gen_sensors.py` (sensor block regenerated from deaf767 with tidier power routing), `gen_step2.py` -> `batchSTEP2.json`,
+`post_step2.py` (text-level fixes), `verify_step.py` (netlist diff vs intent). Std-lib symbols for `gen_step2.py` come
+from KiCad's own symbol folder (`KICAD_STDLIB`). Verified against HEAD eecabc9: 0 unintended pin changes, 122/122
+intent entries, ERC 1194 -> 1170 with no new categories.
+
+1. CAN termination: midpoint of each split termination broken out to a 3-pad solder jumper (pad 1 = H leg, 2 = cap
+   midpoint, 3 = L leg). JP1 = CAN1 (R5/R4/C14), SolderJumper_3_Open (bus passes through J3 29-32).
+   JP2 = CAN2 (R14/R15/C20 on CAN_VREF), SolderJumper_3_Bridged123 (same as before). Open = both 60R legs float.
+2. Node ID: labels renamed NODE_ID0_PC0 / NODE_ID1_PC1; 10k pull-ups R135/R136 + SolderJumper_2_Open JP3/JP4 to GND.
+3. SD power: SPI2_EN_PD9 renamed SD_PWR_EN_N_PD9. Q7 AO3401A (C15127) +3.3V -> SD_VDD, R137 100k gate pull-up
+   (off during reset), R138 10k + C165 100 nF gate-source (~1 ms soft start so C17's 10 uF does not dip +3.3V).
+   J1 VDD, C17/C18 and pull-ups R6/R7/R8/R10/R11 moved to SD_VDD; PWR_FLAG #FLG01001 on SD_VDD. Firmware note on sheet.
+   **PD8 card-detect NOT done**: J1's symbol/footprint (pads 1-8, G1-G4) has no detect-switch pins. A web listing says
+   the 47309-2651 has a detect switch, but molex.com was blocked - check the drawing; SPI2_CD_PD8 label kept, unwired.
+4. Cleanup: USART2 (PA2/PA3) and TIM3 (PC6/PC7) labels + stubs removed; NC flags on all 36 unused U1 pins.
+   LCSC set: Q2 C15127, U4 C6186, U2 C5219249 (U2's from a third-party listing - confirm on LCSC). J1 LCSC left blank
+   (only an unverified community listing, C3177039). D19 cached symbol: pins 1/2 renamed IO1/IO2, power_in -> passive
+   (numbers unchanged). J1 libs: sym-lib-table entry now `${KIPRJMOD}/../2026-10-05_08-09-50.kicad_sym`, and a
+   project fp-lib-table entry `footprints` -> `${KIPRJMOD}/../footprints.pretty` (was a OneDrive path in the global
+   table). All power-symbol references hidden (234 older tool-placed ones were visible). Remaining tidy: a few labels
+   crowd existing text at the CAN termination resistors and J1 pull-ups - quicker to nudge by hand in eeschema.
+5. LM5175 compensation: NOT checked in TI's calculator (ti.com blocked in the cloud). First-order estimate only:
+   fsw ~300 kHz (RT 84.5k, interpolated from datasheet table points 133k/200 kHz, 47k/500 kHz); Rc/Cc zero 1.16 kHz,
+   Chf pole 312 kHz; with ASSUMED EA gm = 1 mS and current-sense gain 10 (not verified), Rsense 33 mOhm (R107),
+   crossover ~1.3 kHz with the 100 uF electrolytic effective, ~7 kHz with ceramics only; boost RHP zero ~54 kHz at
+   9 V in / 2 A. Looks conservative (low crossover) rather than unstable. Still run TI's LM5175 quickstart calculator.
+
+Next free refs: U25, R139, C166, Q8, JP5, #PWR01008, #FLG01002.
 
 ## Still to do after the sensors (for the user to prioritise)
 1. CAN termination solder jumpers on both buses (CAN1 is now pass-through; termination is always on today).
