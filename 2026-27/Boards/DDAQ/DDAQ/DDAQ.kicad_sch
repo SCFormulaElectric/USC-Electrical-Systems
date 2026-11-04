@@ -22134,14 +22134,14 @@
 	)
 	(uuid "a932963c-49ba-43ea-80ce-a0c845adfabd")
 )
-	(text "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\nUSB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\nLDO headroom ~4.6 V in vs AMS1117 dropout ~1.1 V: OK, tight at low VBUS - a low-dropout 3.3 V LDO would add margin."
+	(text "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\nUSB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\nU4 = TLV1117LV33 (dropout ~90 mV @ 200 mA): ~1 V margin from ~4.4-4.6 V in. VIN max 5.5 V - feed only from +5V / VBUS."
 	(at 403.86 795.02 0)
 	(effects
 		(font
 			(size 1.27 1.27)
 		)
 	)
-	(uuid "a8f2792d-ff6f-44ed-a5c6-aca9566d5cd5")
+	(uuid "cb740870-c9dd-4ac2-87c3-7c95495a8265")
 )
 	(junction
 		(at 274.32 335.28)
@@ -46904,7 +46904,7 @@
 				)
 			)
 		)
-		(property "Value" "AMS1117-3.3"
+		(property "Value" "TLV1117LV33DCYR"
 			(at 157.48 763.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46925,7 +46925,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf"
 			(at 160.02 773.43 0)
 			(hide yes)
 			(show_name no)
@@ -46936,7 +46936,7 @@
 				)
 			)
 		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+		(property "Description" "1 A low-dropout 3.3 V LDO, 2-5.5 V in, 455 mV dropout @ 1 A, SOT-223 (TI TLV1117LV)"
 			(at 157.48 767.08 0)
 			(hide yes)
 			(show_name no)
@@ -46947,8 +46947,28 @@
 				)
 			)
 		)
-		(property "LCSC" "C6186"
+		(property "LCSC" "C15578"
 	(id 0)
+	(at 157.48 767.08 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+		(property "Manufacturer" "TI"
+	(id 1)
+	(at 157.48 767.08 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+		(property "Manufacturer Part" "TLV1117LV33DCYR"
+	(id 2)
 	(at 157.48 767.08 0)
 	(effects
 		(font
@@ -91085,6 +91105,12 @@
 			(unit 1)
 			(value "GND")
 			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/a2a21207-c690-4c59-aaa4-0c6a94bfe1bd"
+			(reference "U4")
+			(unit 1)
+			(value "TLV1117LV33DCYR")
+			(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
 		)
 )
 	(sheet_instances

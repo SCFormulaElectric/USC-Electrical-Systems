@@ -104,7 +104,7 @@ calls.append({"tool": "add_text", "args": {"x": 403.86, "y": 795.02, "text":
     "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\n"
     "USB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n"
     "(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\n"
-    "LDO headroom ~4.6 V in vs AMS1117 dropout ~1.1 V: OK, tight at low VBUS - a low-dropout 3.3 V LDO would add margin."}})
+    "U4 = TLV1117LV33 (dropout ~90 mV @ 200 mA): ~1 V margin from ~4.4-4.6 V in. VIN max 5.5 V - feed only from +5V / VBUS."}})
 
 x0, x1, y0, y1 = BOX
 inside = lambda x, y: x0 <= float(x) <= x1 and y0 <= float(y) <= y1

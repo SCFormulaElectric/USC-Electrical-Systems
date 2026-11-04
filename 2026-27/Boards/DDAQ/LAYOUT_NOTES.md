@@ -109,5 +109,9 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
   USB alone powers only the 3.3 V side (MCU, SD, IMU, baro, LEDs); no back-feed either way. C166 1 uF on VBUS,
   PWR_FLAGs on LDO_IN and VBUS. VBUS sense: R139 10k / R140 20k to PA9 (pin 70, was NC).
 - Placement: added next to U4 and USBC1 by `sync_board.py` (keeps all other placement), inside their groups.
-- Caveat: LDO input is now ~4.6 V (diode drop); AMS1117 dropout ~1.1 V leaves ~0.2 V margin at 3.3 V. A low-dropout
-  3.3 V regulator would add margin (also on battery power).
+- U4 changed from AMS1117-3.3 to **TI TLV1117LV33DCYR (LCSC C15578)**: same SOT-223 pinout (1 GND, 2 OUT + tab,
+  3 IN), dropout 90 mV @ 200 mA / 230 mV @ 500 mA (datasheet SBVS160C) -> ~1 V margin from the ~4.4-4.6 V LDO_IN.
+  VIN max 5.5 V (6 V abs): only ever fed from +5V or VBUS through the diodes - never connect it to +7V.
+- Board fields re-synced to the schematic (Datasheet on all footprints, JP1-JP4 excluded from BOM); DRC schematic
+  parity now clean except the known L6 stand-in footprint. (Earlier "parity clean" checks were run without the
+  schematic file present and so did not compare fields.)

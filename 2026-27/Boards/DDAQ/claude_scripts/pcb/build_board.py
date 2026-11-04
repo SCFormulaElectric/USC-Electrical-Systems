@@ -109,6 +109,12 @@ for c in root.find('components'):
             fld = fp.GetField(k)
             if fld:
                 fld.SetVisible(False)
+    ds = (c.findtext('datasheet') or '').strip()
+    fp.SetField('Datasheet', '' if ds == '~' else ds)        # parity: footprint Datasheet must match the symbol
+    if fp.GetField('Datasheet'):
+        fp.GetField('Datasheet').SetVisible(False)
+    if any(p.get('name') == 'exclude_from_bom' for p in c.iter('property')):
+        fp.SetExcludedFromBOM(True)
     tst = c.find('tstamps')
     uid = (tst.text if tst is not None else c.findtext('tstamp')).split()[0]
     fp.SetPath(pcbnew.KIID_PATH(f'/{uid}'))

@@ -65,6 +65,12 @@ for c in root.find('components'):
             fld = fp.GetField(f.get('name'))
             if fld:
                 fld.SetVisible(False)
+    ds = (c.findtext('datasheet') or '').strip()
+    fp.SetField('Datasheet', '' if ds == '~' else ds)        # parity: footprint Datasheet must match the symbol
+    if fp.GetField('Datasheet'):
+        fp.GetField('Datasheet').SetVisible(False)
+    if any(p.get('name') == 'exclude_from_bom' for p in c.iter('property')):
+        fp.SetExcludedFromBOM(True)
     fp.SetPath(pcbnew.KIID_PATH('/' + c.find('tstamps').text.split()[0]))
     fp.SetSheetname('/'); fp.SetSheetfile('DDAQ.kicad_sch')
     fp.Reference().SetTextSize(pcbnew.VECTOR2I(MM(0.8), MM(0.8))); fp.Reference().SetTextThickness(MM(0.12))

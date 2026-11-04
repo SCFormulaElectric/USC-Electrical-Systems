@@ -1,0 +1,66 @@
+[
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "Value",
+"value": "TLV1117LV33DCYR"
+}
+},
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "LCSC",
+"value": "C15578"
+}
+},
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "Datasheet",
+"value": "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf"
+}
+},
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "Description",
+"value": "1 A low-dropout 3.3 V LDO, 2-5.5 V in, 455 mV dropout @ 1 A, SOT-223 (TI TLV1117LV)"
+}
+},
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "Manufacturer",
+"value": "TI"
+}
+},
+{
+"tool": "set_component_property",
+"args": {
+"reference": "U4",
+"key": "Manufacturer Part",
+"value": "TLV1117LV33DCYR"
+}
+},
+{
+"tool": "remove_text",
+"args": {
+"text": "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\nUSB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\nLDO headroom ~4.6 V in vs AMS1117 dropout ~1.1 V: OK, tight at low VBUS - a low-dropout 3.3 V LDO would add margin.",
+"x": 403.86,
+"y": 795.02
+}
+},
+{
+"tool": "add_text",
+"args": {
+"x": 403.86,
+"y": 795.02,
+"text": "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\nUSB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\nU4 = TLV1117LV33 (dropout ~90 mV @ 200 mA): ~1 V margin from ~4.4-4.6 V in. VIN max 5.5 V - feed only from +5V / VBUS."
+}
+}
+]
