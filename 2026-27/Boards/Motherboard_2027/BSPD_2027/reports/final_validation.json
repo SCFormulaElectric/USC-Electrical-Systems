@@ -1,0 +1,35 @@
+{
+  "revision": "R3_brake_sensor_calibration",
+  "date": "2026-11-04",
+  "fitted_components": 66,
+  "smt_components": 65,
+  "missing_lcsc": 0,
+  "erc_violations": 0,
+  "pcb_drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "onboard_fault_latch": false,
+  "fault_memory_owner": "external_relayboard",
+  "electrical_connectivity_preserved": true,
+  "changed_resistor_values": [
+    "R18",
+    "R20",
+    "R22"
+  ],
+  "pcb_placement_changes": [
+    "C7 - restored verified placement to eliminate shorts"
+  ],
+  "connector_geometry_and_pinout_preserved": true,
+  "manufacturing_origin": "(aux_axis_origin 144.25 106.86)",
+  "pcb_sha256": "2b454b41eb1b26db1a3cb8748e9f1ea3fa63f7ecee9311e353da257c50d48540",
+  "schematic_sha256": "e1a69c7a4f1341fc8231df999eb800a98e969217eaabe95854d715e180d968bd",
+  "spec_sha256": "de4beb9c52aa1bcf60bb68d9367e5115a1cd5b356d517cc7e702f7de59afed60",
+  "brake_calibration": {
+    "user_hard_brake_raw_V": 1.8,
+    "nominal_rising_raw_V": 1.7663476874003188,
+    "modeled_rising_upper_without_clamp_leakage_V": 1.8243501955071324,
+    "guaranteed_below_measured_hard_brake_with_included_bounds": false,
+    "complete_vehicle_validation": false
+  },
+  "release_status": "ENGINEERING_REVIEW_CALIBRATION_PENDING"
+}

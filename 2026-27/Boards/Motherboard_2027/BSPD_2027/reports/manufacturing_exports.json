@@ -1,0 +1,79 @@
+[
+  {
+    "command": [
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts",
+      "--use-drill-file-origin",
+      "--output",
+      "revised/fabrication_REVIEW/",
+      "revised/BSPD_2027.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to 'revised/fabrication_REVIEW/BSPD_2027-F_Cu.gtl'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-B_Cu.gbl'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-F_Paste.gtp'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-B_Paste.gbp'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-F_Silkscreen.gto'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-B_Silkscreen.gbo'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-F_Mask.gts'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-B_Mask.gbs'.\nPlotted to 'revised/fabrication_REVIEW/BSPD_2027-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "drill",
+      "--format",
+      "excellon",
+      "--drill-origin",
+      "plot",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-report",
+      "--report-path",
+      "reports/drill_report.txt",
+      "--output",
+      "revised/fabrication_REVIEW/",
+      "revised/BSPD_2027.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file 'revised/fabrication_REVIEW/BSPD_2027-PTH.drl'\nCreated file 'revised/fabrication_REVIEW/BSPD_2027-NPTH.drl'\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--use-drill-file-origin",
+      "--output",
+      "revised/BSPD_2027_all_KiCad_positions.csv",
+      "revised/BSPD_2027.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to 'revised/BSPD_2027_all_KiCad_positions.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--use-drill-file-origin",
+      "--smd-only",
+      "--exclude-fp-th",
+      "--output",
+      "revised/BSPD_2027_SMT_KiCad_positions.csv",
+      "revised/BSPD_2027.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to 'revised/BSPD_2027_SMT_KiCad_positions.csv'.\n",
+    "stderr": ""
+  }
+]

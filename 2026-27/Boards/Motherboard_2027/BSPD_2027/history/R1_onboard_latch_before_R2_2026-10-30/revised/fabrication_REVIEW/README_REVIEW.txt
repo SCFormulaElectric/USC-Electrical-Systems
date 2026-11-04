@@ -1,0 +1,1 @@
+ENGINEERING REVIEW ONLY. Calibration/interface and physical qualification remain pending. Do not release for vehicle manufacture. Four4mm mounting holes are routed Edge.Cuts circles. See ../README_FIRST.md and ../../DESIGN_REVIEW.md.

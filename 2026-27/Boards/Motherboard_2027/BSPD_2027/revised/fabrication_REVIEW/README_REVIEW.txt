@@ -1,0 +1,1 @@
+R3 brake-sensor calibration review, November 4 2026. Not released for vehicle manufacture. Gerber/drill/placement origin is the board drill/place origin. Four 4mm mounting holes are routed Edge.Cuts circles. See DESIGN_REVIEW.md.

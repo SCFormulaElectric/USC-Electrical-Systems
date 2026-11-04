@@ -1,0 +1,53 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-01T18:27:49",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7f94e731-ab98-4d5a-af18-a20be0072027",
+            "violations": [
+                {
+                    "description": "Symbol 'hardware_trip_latch' not found in symbol library 'Review'",
+                    "items": [
+                        {
+                            "description": "Symbol U9 [hardware_trip_latch]",
+                            "pos": {
+                                "x": 1.5494,
+                                "y": 2.5019
+                            },
+                            "uuid": "8fe81a79-697e-5558-9f66-a5e66f99c31d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "BSPD_2027.kicad_sch"
+}

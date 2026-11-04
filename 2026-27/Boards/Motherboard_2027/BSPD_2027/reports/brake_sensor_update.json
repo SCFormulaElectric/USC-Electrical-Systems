@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04",
+  "updated_parts": {
+    "R18": {
+      "value": "270k 1%",
+      "mpn": "0805W8F2703T5E",
+      "lcsc": "C17589",
+      "manufacturer": "UNI-ROYAL",
+      "sourcing_key": "R_270k",
+      "note": "AiM X05PSA02000P18: nominal low-fault boundary 0.357V raw; valid nominal zero-pressure output 0.5V.",
+      "source_url": "https://www.lcsc.com/product-detail/C17589.html",
+      "datasheet": ""
+    },
+    "R20": {
+      "value": "11.3k 1%",
+      "mpn": "SCR0805F11K3",
+      "lcsc": "C3016737",
+      "manufacturer": "VO",
+      "sourcing_key": "R_11k3",
+      "note": "AiM X05PSA02000P18: nominal high-fault boundary 4.695V raw; nominal full-scale output 4.5V.",
+      "source_url": "https://www.lcsc.com/product-detail/C3016737.html",
+      "datasheet": ""
+    },
+    "R22": {
+      "value": "47k 0.1%",
+      "mpn": "RT0805BRD0747KL",
+      "lcsc": "C865515",
+      "manufacturer": "YAGEO",
+      "sourcing_key": "R_47k_01",
+      "note": "Bench calibration: hard-brake rising trip ~1.762V raw including nominal hysteresis. User measured ~1.8V hard brake; repeated vehicle validation pending.",
+      "source_url": "https://www.lcsc.com/product-detail/C865515.html",
+      "datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0805BRD0747KL"
+    }
+  },
+  "net_names_synchronized": {
+    "V5": "5V",
+    "REF5": "5V_REF",
+    "BSPD_SIGNAL": "BSPD_FAULT",
+    "I_RAW": "CURRENT_RAW",
+    "B_RAW": "BRAKE_RAW",
+    "C_HIGH": "High_Current",
+    "B_HARD": "Hard_Brake",
+    "OUT_SRC": "Net-(Q3-C)",
+    "P_BASE": "Net-(Q3-B)",
+    "DIS_GATE": "Net-(Q1-G)",
+    "N_BASE": "Net-(Q2-B)",
+    "VIN_F": "Net-(D1-A)",
+    "N_COL": "Net-(Q2-C)"
+  },
+  "schematic_placement_preserved": false,
+  "pcb_geometry_untouched_by_metadata_update": true,
+  "external_relayboard_latch": true,
+  "preexisting_C7_layout_repair": {
+    "reason": "C7 overlapped current-sense copper, causing shorts and courtyard violations",
+    "restored_position_mm": [
+      162.5,
+      73
+    ],
+    "restored_rotation_deg": 0,
+    "restored_missing_copper_items": 10,
+    "removed_dragged_copper_items": 6,
+    "source_commit": "6017215",
+    "other_component_placements_preserved": true
+  },
+  "stale_Q3_simulation_fields_removed": true,
+  "schematic_layout_changes": {
+    "D4_subcircuit": "Moved from off-sheet (505.46,350.52) to grid-aligned (326.39,238.76) inside output block with its wires/label/ground. Other schematic placements retained."
+  }
+}
