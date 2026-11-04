@@ -22125,6 +22125,24 @@
 	)
 	(uuid "df56bcce-778e-41ad-a7a2-a17a6ea2817b")
 )
+	(text "USB BENCH POWER (3.3 V side only) + VBUS SENSE"
+	(at 403.86 760.73 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+	)
+	(uuid "a932963c-49ba-43ea-80ce-a0c845adfabd")
+)
+	(text "D42/D43 diode-OR: battery (+5V) or USB VBUS feeds the 3.3 V LDO (U4); neither can back-feed the other.\nUSB alone runs only the 3.3 V side (MCU, SD, IMU, baro, LEDs). Firmware: detect it from the rail monitors\n(PC2 VIN, PB2 5V) and skip ADC / CAN / sensor-supply init. Enable the USB D+ pull-up only while PA9 sees VBUS.\nLDO headroom ~4.6 V in vs AMS1117 dropout ~1.1 V: OK, tight at low VBUS - a low-dropout 3.3 V LDO would add margin."
+	(at 403.86 795.02 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+	)
+	(uuid "a8f2792d-ff6f-44ed-a5c6-aca9566d5cd5")
+)
 	(junction
 		(at 274.32 335.28)
 		(diameter 0)
@@ -22788,10 +22806,6 @@
 	(no_connect
 	(at 200.66 189.23)
 	(uuid "bb3c6a3e-b381-441f-aee3-3f43387ed8ca")
-)
-	(no_connect
-	(at 200.66 186.69)
-	(uuid "a3f48591-4ff1-42e1-92e0-7c65f60101d7")
 )
 	(no_connect
 	(at 200.66 184.15)
@@ -31799,6 +31813,136 @@
 	)
 	(uuid "a66ad589-bd79-4c84-8309-74465e1b1d04")
 )
+	(wire
+	(pts
+		(xy 429.26 772.16) (xy 431.8 772.16)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "267f4d1a-1f5c-4b96-8628-d04495e8bf51")
+)
+	(wire
+	(pts
+		(xy 419.1 772.16) (xy 416.56 772.16)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "cc13553a-a1ab-44d3-b8ac-ffc5eaa48ad1")
+)
+	(wire
+	(pts
+		(xy 429.26 784.86) (xy 431.8 784.86)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "579ca00e-8b8e-4866-b6aa-c0fa60dc9561")
+)
+	(wire
+	(pts
+		(xy 419.1 784.86) (xy 416.56 784.86)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "89a3c043-6795-45c4-9be4-4f09c12015ce")
+)
+	(wire
+	(pts
+		(xy 449.58 773.43) (xy 449.58 770.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "ef2e7c8d-a707-43dd-9983-c9d836b31203")
+)
+	(wire
+	(pts
+		(xy 449.58 783.59) (xy 449.58 786.13)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "69d89a1d-4a3a-4379-a5bc-bce50e53fd18")
+)
+	(wire
+	(pts
+		(xy 477.52 773.43) (xy 477.52 770.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "eb1efed6-10a2-4da2-86aa-abcca7eacdcf")
+)
+	(wire
+	(pts
+		(xy 477.52 783.59) (xy 477.52 786.13)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "1fc7639f-acfe-4b0a-a7be-3dc48fb612f5")
+)
+	(wire
+	(pts
+		(xy 502.92 773.43) (xy 502.92 770.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "3ecf7d0d-aa7e-4576-9263-05ba55b7478c")
+)
+	(wire
+	(pts
+		(xy 502.92 783.59) (xy 502.92 786.13)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "e7a5fd4a-9bd4-477a-a1c2-8dfd7590f685")
+)
+	(wire
+	(pts
+		(xy 515.62 773.43) (xy 515.62 770.89)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "46badd45-c7d2-4f78-91a0-72eead6cd156")
+)
+	(wire
+	(pts
+		(xy 515.62 783.59) (xy 515.62 786.13)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "b8dfd9db-f36c-4847-baaa-a45c79795b98")
+)
+	(wire
+	(pts
+		(xy 200.66 186.69) (xy 203.2 186.69)
+	)
+	(stroke
+		(width 0)
+		(type default)
+	)
+	(uuid "c6375879-a1f0-4f34-9640-eaa3e283dbb7")
+)
 	(label "USB-"
 		(at 148.59 384.81 180)
 		(effects
@@ -36638,6 +36782,126 @@
 			(justify left bottom)
 		)
 		(uuid "68dacb6b-cd90-451a-bf46-ff31a249446d")
+	)
+	(label "LDO_IN"
+		(at 144.78 763.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc73e468-dd71-455a-8e14-c81d9b8c4b95")
+	)
+	(label "LDO_IN"
+		(at 431.8 772.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43bd1429-25cb-4115-8fb3-899398f41fd8")
+	)
+	(label "LDO_IN"
+		(at 431.8 784.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22480057-63ca-4517-8390-de79572b778f")
+	)
+	(label "VBUS"
+		(at 416.56 784.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4076082-ab2b-497c-8690-d91c26c57875")
+	)
+	(label "LDO_IN"
+		(at 449.58 770.89 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "419cedfe-e0c4-402e-b335-1d7a8be46640")
+	)
+	(label "LDO_IN"
+		(at 462.28 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb5f55e5-0fd0-4ab9-95c7-7f9625ec22c5")
+	)
+	(label "VBUS"
+		(at 477.52 770.89 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64542dda-9261-42a3-9452-98722645799e")
+	)
+	(label "VBUS"
+		(at 490.22 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc97d7f4-b091-4dfe-9cea-7f5225897bf7")
+	)
+	(label "VBUS"
+		(at 502.92 770.89 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dceb7cb8-0d99-4b7c-bda0-a98d133b7b32")
+	)
+	(label "VBUS_SENSE_PA9"
+		(at 502.92 786.13 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "62c3db73-96f1-43e3-824f-ba56d41cc7ad")
+	)
+	(label "VBUS_SENSE_PA9"
+		(at 515.62 770.89 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc0714e8-9ebc-415c-9b1e-39ce6a21142f")
+	)
+	(label "VBUS_SENSE_PA9"
+		(at 203.2 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9c7f7b8-05be-42ac-bccb-260143af61ac")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -52420,84 +52684,6 @@
 			(project "DDAQ"
 				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 144.78 763.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4b01138-6959-41e7-96b5-3fffcc5f49d9")
-		(property "Reference" "#PWR039"
-			(at 144.78 767.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 144.78 758.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 763.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 763.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 144.78 763.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79a7959a-0e63-478f-bda2-329965a50c1b")
-		)
-		(instances
-			(project "DDAQ"
-				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -87221,6 +87407,942 @@
 		)
 	)
 )
+	(symbol
+	(lib_name "B5819W_C8598")
+	(lib_id "JLCImport:B5819W_C8598")
+	(at 424.18 772.16 180)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "b7ea2a72-c2b4-41ff-92fa-264116abfc14")
+	(property "Reference" "D42"
+		(at 424.18 768.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "B5819W_C8598"
+		(at 424.18 775.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "JLCImport:B5819W_C8598"
+		(at 424.18 772.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210423/C2828417_EF1BF8BE3D48F97E320B09B073C89160.pdf"
+		(at 424.18 772.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "B5819W SL"
+	(id 0)
+	(at 424.18 772.16 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C8598"
+	(id 1)
+	(at 424.18 772.16 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "CJ(江苏长电/长晶)"
+	(id 2)
+	(at 424.18 772.16 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "B5819W SL"
+	(id 3)
+	(at 424.18 772.16 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "428f9a44-4610-4f10-af04-3df621e1571f")
+)
+	(pin "2"
+	(uuid "6b794c6b-f25d-4967-bc06-76edf7f46841")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "D42")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:+5V")
+	(lib_id "power:+5V")
+	(at 416.56 772.16 90)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "63b325e7-f80d-4808-b90a-bef5e2ee8569")
+	(property "Reference" "#PWR01101"
+		(at 416.56 768.35 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "+5V"
+		(at 416.56 775.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 416.56 772.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 416.56 772.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "2c3789a2-9695-402b-93ac-06caae43f93a")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#PWR01101")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "B5819W_C8598")
+	(lib_id "JLCImport:B5819W_C8598")
+	(at 424.18 784.86 180)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "7c7b4816-75e6-4cd4-a60b-85816537a34d")
+	(property "Reference" "D43"
+		(at 424.18 781.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "B5819W_C8598"
+		(at 424.18 788.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "JLCImport:B5819W_C8598"
+		(at 424.18 784.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210423/C2828417_EF1BF8BE3D48F97E320B09B073C89160.pdf"
+		(at 424.18 784.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "B5819W SL"
+	(id 0)
+	(at 424.18 784.86 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C8598"
+	(id 1)
+	(at 424.18 784.86 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "CJ(江苏长电/长晶)"
+	(id 2)
+	(at 424.18 784.86 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "B5819W SL"
+	(id 3)
+	(at 424.18 784.86 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "abd7dddc-3e6d-4bc9-b7a7-daa1e4f80130")
+)
+	(pin "2"
+	(uuid "ce4c5484-14bc-4840-a5c4-85f3230e36e8")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "D43")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "JLCImport:CL21A106KAYNNNE")
+	(lib_id "JLCImport:CL21A106KAYNNNE")
+	(at 449.58 778.51 270)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "78c7a063-1d67-4455-a399-c518f2078c92")
+	(property "Reference" "C167"
+		(at 449.58 774.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "CL21A106KAYNNNE"
+		(at 449.58 782.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(at 449.58 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf"
+		(at 449.58 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "10uF 25V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+	(id 0)
+	(at 449.58 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C15850"
+	(id 1)
+	(at 449.58 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "Samsung Electro-Mechanics"
+	(id 2)
+	(at 449.58 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "CL21A106KAYNNNE"
+	(id 3)
+	(at 449.58 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "72efa6ae-74b9-4abe-a94c-03628c1b61a0")
+)
+	(pin "2"
+	(uuid "ca7cf538-f6f9-4114-80c1-dc35fb155e63")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "C167")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:GND")
+	(lib_id "power:GND")
+	(at 449.58 786.13 0)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "c3b544aa-b7a8-4c44-a0f0-709df0c581c8")
+	(property "Reference" "#PWR01102"
+		(at 449.58 782.32 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "GND"
+		(at 449.58 789.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 449.58 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 449.58 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "e14bf901-64ea-4273-935a-e0e8b3a3ba66")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#PWR01102")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:PWR_FLAG")
+	(lib_id "power:PWR_FLAG")
+	(at 462.28 767.08 0)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "11c0ee11-0fd6-410d-9b85-532f27a158a2")
+	(property "Reference" "#FLG01101"
+		(at 462.28 763.27 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "PWR_FLAG"
+		(at 462.28 770.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 462.28 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 462.28 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "f86d63c2-3e94-4544-b0b9-5a12fd61f179")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#FLG01101")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "JLCImport:CL10A105KB8NNNC")
+	(lib_id "JLCImport:CL10A105KB8NNNC")
+	(at 477.52 778.51 270)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "445a6b8d-fc4a-41dc-bce7-5d6a6fa42879")
+	(property "Reference" "C166"
+		(at 477.52 774.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "CL10A105KB8NNNC"
+		(at 477.52 782.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(at 477.52 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf"
+		(at 477.52 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "1uF 50V X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+	(id 0)
+	(at 477.52 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C15849"
+	(id 1)
+	(at 477.52 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "Samsung Electro-Mechanics"
+	(id 2)
+	(at 477.52 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "CL10A105KB8NNNC"
+	(id 3)
+	(at 477.52 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "c575f864-4cc9-4062-a679-7986513fdd01")
+)
+	(pin "2"
+	(uuid "03070da3-7b2a-4b3b-a147-3dfcfc7145e3")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "C166")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:GND")
+	(lib_id "power:GND")
+	(at 477.52 786.13 0)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "2dbe9469-9ef9-4863-83e8-68734156061c")
+	(property "Reference" "#PWR01103"
+		(at 477.52 782.32 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "GND"
+		(at 477.52 789.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 477.52 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 477.52 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "576a6394-ae56-4d0e-b71c-cc85f86fbe2d")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#PWR01103")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:PWR_FLAG")
+	(lib_id "power:PWR_FLAG")
+	(at 490.22 767.08 0)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "7ecf4d51-b7f5-49f8-b952-957d791c5b37")
+	(property "Reference" "#FLG01102"
+		(at 490.22 763.27 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "PWR_FLAG"
+		(at 490.22 770.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 490.22 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 490.22 767.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "f2c1bab7-1991-4d4a-9630-4e0213efead3")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#FLG01102")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "JLCImport:0603WAF1002T5E")
+	(lib_id "JLCImport:0603WAF1002T5E")
+	(at 502.92 778.51 270)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "2126bfc0-c1f5-4789-ac56-669a5f53c33a")
+	(property "Reference" "R139"
+		(at 502.92 774.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "0603WAF1002T5E"
+		(at 502.92 782.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(at 502.92 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
+		(at 502.92 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+	(id 0)
+	(at 502.92 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C25804"
+	(id 1)
+	(at 502.92 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+	(id 2)
+	(at 502.92 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "0603WAF1002T5E"
+	(id 3)
+	(at 502.92 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "4988b542-727b-4cb7-8ff0-9126181b44ff")
+)
+	(pin "2"
+	(uuid "55ed433e-b009-4e1d-a3e9-8344e0daac8b")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "R139")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "0603WAF2002T5E")
+	(lib_id "JLCImport:0603WAF2002T5E")
+	(at 515.62 778.51 270)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "e6428951-423e-4004-b01e-ce0fbd4d641e")
+	(property "Reference" "R140"
+		(at 515.62 774.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "0603WAF2002T5E"
+		(at 515.62 782.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" "JLCImport:0603WAF2002T5E"
+		(at 515.62 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf"
+		(at 515.62 778.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Description" "20KΩ (2002) ±1%"
+	(id 0)
+	(at 515.62 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "LCSC" "C4184"
+	(id 1)
+	(at 515.62 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer" "UNI-ROYAL"
+	(id 2)
+	(at 515.62 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(property "Manufacturer Part" "0603WAF2002T5E"
+	(id 3)
+	(at 515.62 778.51 0)
+	(effects
+		(font
+			(size 1.27 1.27)
+		)
+		(hide yes)
+	)
+)
+	(pin "1"
+	(uuid "5f86be3f-7c0a-41f7-b9ba-d09d11d2bfdc")
+)
+	(pin "2"
+	(uuid "4bc37c7a-f843-441a-a30a-86282b71abff")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "R140")
+				(unit 1)
+			)
+		)
+	)
+)
+	(symbol
+	(lib_name "power:GND")
+	(lib_id "power:GND")
+	(at 515.62 786.13 0)
+	(unit 1)
+	(exclude_from_sim no)
+	(in_bom yes)
+	(on_board yes)
+	(dnp no)
+	(uuid "35eb8775-d713-4d10-8e4c-d78967b3e603")
+	(property "Reference" "#PWR01104"
+		(at 515.62 782.32 0)
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "GND"
+		(at 515.62 789.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 515.62 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 515.62 786.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+	)
+	(pin "1"
+	(uuid "6bf415de-25b9-4641-82bf-c821901228a4")
+)
+	(instances
+		(project "DDAQ"
+			(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+				(reference "#PWR01104")
+				(unit 1)
+			)
+		)
+	)
+)
 	(symbol_instances
 		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/f79cbc20-7663-4edf-b052-7640f56192ff"
 			(reference "#PWR0123")
@@ -89891,6 +91013,78 @@
 			(unit 1)
 			(value "100nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/b7ea2a72-c2b4-41ff-92fa-264116abfc14"
+			(reference "D42")
+			(unit 1)
+			(value "B5819W_C8598")
+			(footprint "JLCImport:B5819W_C8598")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/63b325e7-f80d-4808-b90a-bef5e2ee8569"
+			(reference "#PWR01101")
+			(unit 1)
+			(value "+5V")
+			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/7c7b4816-75e6-4cd4-a60b-85816537a34d"
+			(reference "D43")
+			(unit 1)
+			(value "B5819W_C8598")
+			(footprint "JLCImport:B5819W_C8598")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/78c7a063-1d67-4455-a399-c518f2078c92"
+			(reference "C167")
+			(unit 1)
+			(value "CL21A106KAYNNNE")
+			(footprint "Capacitor_SMD:C_0805_2012Metric")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/c3b544aa-b7a8-4c44-a0f0-709df0c581c8"
+			(reference "#PWR01102")
+			(unit 1)
+			(value "GND")
+			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/11c0ee11-0fd6-410d-9b85-532f27a158a2"
+			(reference "#FLG01101")
+			(unit 1)
+			(value "PWR_FLAG")
+			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/445a6b8d-fc4a-41dc-bce7-5d6a6fa42879"
+			(reference "C166")
+			(unit 1)
+			(value "CL10A105KB8NNNC")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/2dbe9469-9ef9-4863-83e8-68734156061c"
+			(reference "#PWR01103")
+			(unit 1)
+			(value "GND")
+			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/7ecf4d51-b7f5-49f8-b952-957d791c5b37"
+			(reference "#FLG01102")
+			(unit 1)
+			(value "PWR_FLAG")
+			(footprint "")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/2126bfc0-c1f5-4789-ac56-669a5f53c33a"
+			(reference "R139")
+			(unit 1)
+			(value "0603WAF1002T5E")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/e6428951-423e-4004-b01e-ce0fbd4d641e"
+			(reference "R140")
+			(unit 1)
+			(value "0603WAF2002T5E")
+			(footprint "JLCImport:0603WAF2002T5E")
+		)
+		(path "/84867528-ace9-4fc6-8780-2b9eb2390246/35eb8775-d713-4d10-8e4c-d78967b3e603"
+			(reference "#PWR01104")
+			(unit 1)
+			(value "GND")
+			(footprint "")
 		)
 )
 	(sheet_instances

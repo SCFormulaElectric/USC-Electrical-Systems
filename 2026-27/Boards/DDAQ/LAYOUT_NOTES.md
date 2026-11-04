@@ -103,3 +103,11 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
 - Remaining 49 are spread out (no single hot spot): GND 8, +3.3V 6, +12V_SNS 3, +7V 2, LM5175 stage 4 (BB_RS,
   BB_SW1, BB_HD2), the rest single signals (SPI1 to the ADC, SPI3, CAN2 control, crystal HSE_OUT, CAN1 term, ...).
   Plus 16 dangling vias / 10 dangling tracks to clean (Tools > Cleanup Tracks & Vias) and silkscreen.
+
+## USB bench power + VBUS sense (2026-11-04)
+- D42/D43 (B5819W) diode-OR +5V and USB VBUS into the 3.3 V LDO U4 (new net LDO_IN, 10 uF C167 after the diodes).
+  USB alone powers only the 3.3 V side (MCU, SD, IMU, baro, LEDs); no back-feed either way. C166 1 uF on VBUS,
+  PWR_FLAGs on LDO_IN and VBUS. VBUS sense: R139 10k / R140 20k to PA9 (pin 70, was NC).
+- Placement: added next to U4 and USBC1 by `sync_board.py` (keeps all other placement), inside their groups.
+- Caveat: LDO input is now ~4.6 V (diode drop); AMS1117 dropout ~1.1 V leaves ~0.2 V margin at 3.3 V. A low-dropout
+  3.3 V regulator would add margin (also on battery power).
