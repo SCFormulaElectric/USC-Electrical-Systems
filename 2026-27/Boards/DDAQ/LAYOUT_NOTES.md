@@ -1,6 +1,6 @@
 # DDAQ PCB layout notes (rev for STM32G474 schematic)
 
-Status 2026-11-03: **4-layer, J3 at TE's board-edge position, 49 connections unrouted, 0 clearance errors, schematic parity 0** (renders in `renders/`). The earlier 6-layer board (J3 housing on the PCB, 44 unrouted) is kept on branch `ddaq/pcb-6L-v1`.
+Status 2026-11-04: **placement being reworked by hand - routing cleared.** The board has every part in a named KiCad group (IC + the parts directly connected to it, see `PLACEMENT_GROUPS.md`); tracks, vias and the F.Cu power pours were removed, the In1 GND / In2 power planes kept. Last routed versions: 4-layer J3-at-edge, 49 unrouted (commit d364040); 6-layer v1, 44 unrouted (branch `ddaq/pcb-6L-v1`).
 Earlier status: placement done, not routed. `DDAQ/DDAQ.kicad_pcb` was rebuilt from the schematic netlist
 (scripted "Update PCB from Schematic": `claude_scripts/pcb/build_board.py`, grouping `group.py`, placement
 `place.py`, planes `zones.py`). DRC: no courtyard/clearance violations, schematic parity 0, 499 unrouted
