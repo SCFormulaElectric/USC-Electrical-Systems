@@ -1,0 +1,18 @@
+(version 1)
+
+# 404 V board clearance target. Formula SAE 2027 EV.7.5.7 sets
+# a 20 mm uncoated creepage minimum between tractive and GLV copper.
+# /COIL_12V is the PCB supply name and /SDC is the schematic name.
+# Treat other named nets as tractive for this isolation boundary.
+(rule "TS to GLV - 6 mm clearance and 20 mm creepage"
+    (condition "(A.NetName == '/COIL_12V' || A.NetName == '/COIL_RETURN' || A.NetName == '/SDC') && (B.NetName != '' && B.NetName != '/COIL_12V' && B.NetName != '/COIL_RETURN' && B.NetName != '/SDC')")
+    (constraint clearance (min 6mm))
+    (constraint creepage (min 20mm)))
+
+# With K1 open, HV+ pulls the entire discharge string up to HV+.
+# Unloaded TSMPs sit at their respective rails through R6 and R7.
+# Clearance is a same-layer copper check. Review laminate insulation
+# at crossings and assembled spacing around unnetted metal separately.
+(rule "404 V tractive pairs - 6 mm clearance"
+    (condition "(A.NetName == '/HV-' || A.NetName == '/TSMP-') && (B.NetName == '/HV+' || B.NetName == '/TSMP+' || B.NetName == '/DISCHARGE_SW' || B.NetName == 'Net-(R1-~-Pad2)' || B.NetName == 'Net-(R2-~-Pad2)' || B.NetName == 'Net-(R3-~-Pad2)' || B.NetName == 'Net-(R4-~-Pad2)')")
+    (constraint clearance (min 6mm)))
