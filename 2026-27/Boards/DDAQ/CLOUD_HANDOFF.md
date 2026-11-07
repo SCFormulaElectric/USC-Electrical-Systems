@@ -9,10 +9,10 @@ next task. The PCB has NOT been updated from the schematic yet.
 - ADC: ADS8688IDBTR on SPI1 (PA4–PA7, RST PC4). AUX_IN measures +5V_REF via 0.1% 10k/10k (EXC_MON).
   Input RC = 100 nF (1.6 kHz); filtering is done in firmware (note on sheet). PSM712 clamps D11–D14.
 - CAN1 SN65 (existing), CAN2 TCAN1044AV (U8) on PB5/PB6, choke L6, PSM712 clamps.
-- Power: VBAT → F1 → D20 SMBJ18CA → Q2 reverse-polarity → VIN_PROT → U11 LM5175 buck-boost → +12V_SNS
-  (PGOOD → PE7); U9 LMR33630 → +7V; U2 TPS563300 (+7V in) → +5V; U10 TPS7A4700 → +5V_REF.
+- Power: VBAT → F1 → D20 SMBJ18CA → Q2 reverse-polarity → VIN_PROT → F3/F4 → +12V_OUT1/2 (unregulated; LM5175 buck-boost removed 2026-11-07)
+  U9 LMR33630 → +7V; U2 TPS563300 (+7V in) → +5V; U10 TPS7A4700 → +5V_REF.
   Six NCV8184 trackers: +5V_EXC_L/R/C and +5V_WS_L/R/C. Fused +12V_OUT1 (pitot), +12V_OUT2 (pod/spare), IZZE_PWR.
-  Rail monitors: PC2 VIN, PC3 12V, PB0 7V, PB1 5V_REF, PB2 5V.
+  Rail monitors: PC2 VIN, PB0 7V, PB1 5V_REF, PB2 5V.
 - I/O: 4 frequency inputs → SN74LVC2G17 → TIM2 CH1–4 (PA0, PA1, PB10, PB11); spare analog AI8/AI9 → PC5/PE8;
   USBLC6-2 on USB; LEDs CAN PE0 / FAULT PE1 / STAT PE2; SWD header J5 (1 GND, 2 3.3V, 3 SWDIO, 4 SWCLK).
 - Connector: single TE AMPSEAL 35 (776163-1, C412117) as J3. Pin map is in `claude_scripts/gen_conn.py` (PINMAP).

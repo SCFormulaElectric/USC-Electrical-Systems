@@ -1,7 +1,7 @@
 # DDAQ schematic guide
 
 A description of every component and sub-circuit on `DDAQ/DDAQ.kicad_sch`, to help reorganise the sheet for
-readability. Generated from the schematic netlist on 2026-11-06 (commit after 8d21844), 286 parts. The blocks match
+readability. Generated from the schematic netlist on 2026-11-06, updated 2026-11-07 after removing the LM5175 (244 parts). The blocks match
 the PCB placement groups (`PLACEMENT_GROUPS.md`), so schematic and board use the same structure.
 
 "Sheet (x, y)" = where the part's symbol currently sits on the E-size sheet, in mm, to help you find it.
@@ -18,19 +18,19 @@ Net names: local labels are shown without the leading `/`.
                |                                   |
                |                  +----------------+-----------------+
                |                  |                                  |
-        LM5175 buck-boost (U11)                              LMR33630 buck (U9)
-        +12V_SNS (12.0 V)                                     +7V (7.06 V)
-          |  -> F3/F4 -> +12V_OUT1/2 (pitot, pod)              |  -> F7/D23 -> IZZE_PWR
-          |                                                    |
-          |                       +----------------------------+------------------+
-          |                       |                            |                  |
-          |              TPS563300 buck (U2)          TPS7A4700 LDO (U10)   6x NCV8184 trackers
-          |              +5V (4.93 V)                 +5V_REF (5.00 V)      (U12-U14, U16-U18)
-          |                |   CAN VCC, monitors        |  ADC AVDD (FB1)     +5V_EXC_L/R/C
-          |                |                            |  tracker reference  +5V_WS_L/R/C -> J3
-          |          D42 --+--> LDO_IN <-- D43 -- USB VBUS
-          |                       |
-          |               TLV1117LV33 (U4) +3.3V: MCU, ADC DVDD, sensors, SD, CAN VIO, LEDs
+        F3/F4 PTC -> +12V_OUT1/2 (pitot, spare)              LMR33630 buck (U9)
+        (raw battery, ~11-14.6 V)                             +7V (7.06 V)
+                                                               |  -> F7/D23 -> IZZE_PWR
+                                                               |
+                                  +----------------------------+------------------+
+                                  |                            |                  |
+                         TPS563300 buck (U2)          TPS7A4700 LDO (U10)   6x NCV8184 trackers
+                         +5V (4.93 V)                 +5V_REF (5.00 V)      (U12-U14, U16-U18)
+                           |   CAN VCC, monitors        |  ADC AVDD (FB1)     +5V_EXC_L/R/C
+                           |                            |  tracker reference  +5V_WS_L/R/C -> J3
+                     D42 --+--> LDO_IN <-- D43 -- USB VBUS
+                                  |
+                          TLV1117LV33 (U4) +3.3V: MCU, ADC DVDD, sensors, SD, CAN VIO, LEDs
 ```
 
 Signal side: the MCU (STM32G474, U1) talks SPI1 to the 16-bit ADC (U5), SPI2 to the microSD card (J1), SPI3 to the
@@ -38,7 +38,7 @@ IMU (U23) and barometer (U24), FDCAN1/FDCAN2 through two transceivers (U3, U8), 
 capture to four Schmitt-buffered frequency inputs. Everything off-board goes through one 35-pin AMPSEAL (J3).
 
 Suggested sheet split if you go hierarchical (one A4/A3 sheet each):
-1. Power input + 12 V buck-boost  2. 7 V / 5 V / 3.3 V / 5 V reference  3. Sensor supplies + 12 V/IZZE outputs
+1. Power input  2. 7 V / 5 V / 3.3 V / 5 V reference  3. Sensor supplies + 12 V/IZZE outputs
 4. Connector J3 + all connector-side protection  5. Analog front end + ADC  6. Frequency inputs + spare analog
 7. MCU (+ crystal, SWD, LEDs, node ID, rail monitors)  8. CAN1 + CAN2  9. USB + microSD  10. IMU + barometer.
 If you stay on one sheet, the same order left-to-right / top-to-bottom reads as "power in -> rails -> MCU -> I/O".
@@ -80,41 +80,15 @@ CAN ESD D1/D19) visually next to it or next to the block that owns it - not scat
 | D9 | BZT52C10S 10 V Zener | Gate-source clamp for Q2 (gate max ±12 V). |
 | D6 + R19 | red LED + 13 k | "Power OK" indicator on VIN_PROT. |
 
-Output: **VIN_PROT** (protected battery, ~7-18 V) feeds the buck-boost, the 7 V buck and the VIN monitor.
+Output: **VIN_PROT** (protected battery, ~7-18 V) feeds the 12 V sensor outputs (F3/F4), the 7 V buck and the VIN monitor.
 
 ---
 
-## 3. 12 V buck-boost (LM5175, U11) — controller (279, 457), passives (50-280, 597/643)
+## 3. (removed) 12 V buck-boost
 
-Makes a steady **+12V_SNS** from VIN_PROT whether the battery is above or below 12 V (4-switch H-bridge).
-
-| Ref | Value | Role |
-|---|---|---|
-| U11 | LM5175PWPR | Buck-boost controller (~300 kHz, CCM + hiccup). |
-| Q3 | AO4264E | Buck leg high side: VIN_PROT -> SW1 (gate HD1). |
-| Q4 | AO4264E | Buck leg low side: SW1 -> BB_RS (gate LD1). |
-| Q5 | AO4264E | Boost leg high side / output switch: SW2 -> +12V_SNS (gate HD2). |
-| Q6 | AO4264E | Boost leg low side: SW2 -> BB_RS (gate LD2). |
-| L8 | 10 µH (AGA1265100) | Power inductor between SW1 and SW2. |
-| R107 | 33 mΩ 2512 | Current-sense resistor in both low-side sources (BB_RS -> GND). |
-| R104, R105, C121 | 100 Ω, 100 Ω, 47 pF | CS/CSG filter for the sense voltage. |
-| C124, C125 + D21, D22 | 100 nF + B5819W | Bootstrap supplies for the two high-side gate drivers. |
-| C122 | 4.7 µF | VCC (7.5 V gate-drive) regulator cap. |
-| R98 + C116 | 10 Ω + 100 nF | RC filter for the controller's VIN pin. |
-| R96 / R97 | 249 k / 53.6 k | EN/UVLO divider: turns on at 6.94 V (0.87 V hysteresis). |
-| R99 | 93.1 k | MODE: CCM with hiccup current-limit protection. |
-| R100 | 84.5 k | RT: switching frequency ~300 kHz. |
-| C117 | 100 pF | Slope compensation. |
-| C118 | 100 nF | Soft-start (~16 ms). |
-| R101 + C119 + C120 | 5.1 k + 27 nF + 100 pF | Type-II loop compensation (checked against datasheet, see `CLOUD_HANDOFF.md`). |
-| R102 / R103 | 280 k / 20 k | Feedback divider: 0.8 V × 15 = 12.0 V. |
-| C126-C129 | 4× 10 µF 50 V 1206 | Input caps at Q3's drain (hot loop). |
-| C130-C133 + C134 | 4× 10 µF 1206 + 100 µF 35 V electrolytic | Output caps at Q5's drain. |
-| C123 | 1 µF | BIAS pin decoupling (BIAS = VOUT). |
-| R106 | 10 k | PGOOD pull-up -> **PG_12V_PE7** (MCU). |
-
-Readability tip: draw the H-bridge as a picture (Q3/Q4 on the left, L8 in the middle, Q5/Q6 on the right, R107
-under the two low-side FETs), controller below with its passives grouped by pin function.
+The LM5175 buck-boost (U11, Q3-Q6, L8, R96-R107, C116-C134, D21/D22) was removed on 2026-11-07, together with its
+12 V monitor (R108/R109/C135) and power-good signal. The 12 V sensor outputs now come straight from VIN_PROT
+(section 9). PC3 and PE7 are spare (no-connect flags). Reference numbers were not reused.
 
 ---
 
@@ -124,7 +98,7 @@ under the two low-side FETs), controller below with its passives grouped by pin 
 |---|---|---|
 | U9 | LMR33630ADDA | 3 A synchronous buck, VIN_PROT -> **+7V**. EN tied to VIN (always on). |
 | L7 | 12 µH SRR1208 | Power inductor (SW -> +7V). |
-| C95 | 100 µF 35 V electrolytic | Input bulk (also serves the buck-boost input). |
+| C95 | 100 µF 35 V electrolytic | Input bulk. |
 | C96, C97, C101, C102 | 10 µF 1206 | Input ceramics. |
 | C103 | 100 nF | High-frequency input decoupling. |
 | C99 | 1 µF | VCC (internal LDO) cap. |
@@ -212,8 +186,8 @@ EXC = excitation for analog sensors; WS = supply for wheel-speed / frequency sen
 
 | Ref | Value | Role |
 |---|---|---|
-| F3 | 0.5 A PTC | +12V_SNS -> **+12V_OUT1** (pitot), J3.24. |
-| F4 | 0.5 A PTC | +12V_SNS -> **+12V_OUT2** (pod / spare), J3.25. |
+| F3 | 0.5 A PTC | VIN_PROT -> **+12V_OUT1** (pitot), J3.24. Unregulated: follows the battery (~11-14.6 V). |
+| F4 | 0.5 A PTC | VIN_PROT -> **+12V_OUT2** (pod / spare), J3.25. |
 | D40, D41 | SMF15A | TVS on the two 12 V outputs at the connector. |
 | F7 | 0.1 A PTC | +7V -> IZZE_F. |
 | D23 | SS14 Schottky | IZZE_F -> **IZZE_PWR** (blocks back-feed from the sensor). J3.10. |
@@ -342,7 +316,6 @@ Rail monitors (all into MCU ADC pins, each with a 100 nF filter cap):
 | Net / MCU pin | Divider | Scale | Cap |
 |---|---|---|---|
 | VMON_VIN_PC2 | R86 100 k / R87 10 k from VIN_PROT | ÷ 11 (to ~36 V) | C98 |
-| VMON_12V_PC3 | R108 47 k / R109 10 k from +12V_SNS | ÷ 5.7 | C135 |
 | VMON_7V_PB0 | R90 20 k / R91 10 k from +7V | ÷ 3 | C108 |
 | VMON_5VREF_PB1 | R94 10 k / R95 10 k from +5V_REF | ÷ 2 | C115 |
 | VMON_5V_PB2 | R92 10 k / R93 10 k from +5V | ÷ 2 | C109 |
@@ -358,7 +331,7 @@ Rail monitors (all into MCU ADC pins, each with a 100 nF filter cap):
 | 15 | PC0 | NODE_ID0_PC0 | 55 | PD8 | SPI2_CD_PD8 (unused label - remove) |
 | 16 | PC1 | NODE_ID1_PC1 | 56 | PD9 | SD_PWR_EN_N_PD9 |
 | 17 | PC2 | VMON_VIN_PC2 | 70 | PA9 | VBUS_SENSE_PA9 |
-| 18 | PC3 | VMON_12V_PC3 | 72 | PA11 | USB- |
+| 18 | PC3 | spare (NC) | 72 | PA11 | USB- |
 | 20 | PA0 | TIM2_CH1_FREQ1_PA0 | 73 | PA12 | USB+ |
 | 21 | PA1 | TIM2_CH2_FREQ2_PA1 | 76 | PA13 | SWDIO_PA13 |
 | 26 | PA4 | SPI1_CS_PA4 (ADC) | 77 | PA14 | SWCLK_PA14 |
@@ -370,7 +343,7 @@ Rail monitors (all into MCU ADC pins, each with a 100 nF filter cap):
 | 32 | PB0 | VMON_7V_PB0 | 83 | PD1 | CANTXPD1 |
 | 33 | PB1 | VMON_5VREF_PB1 | 84 | PD2 | CANSTBPD2 |
 | 34 | PB2 | VMON_5V_PB2 | 85 | PD3 | CAN2STBPD3 |
-| 38 | PE7 | PG_12V_PE7 | 86 | PD4 | BARO_CS_PD4 |
+| 38 | PE7 | spare (NC) | 86 | PD4 | BARO_CS_PD4 |
 | 39 | PE8 | AI9_ADC_PE8 | 87 | PD5 | IMU_INT1_PD5 |
 | 47 | PB10 | TIM2_CH3_FREQ3_PB10 | 88 | PD6 | IMU_INT2_PD6 |
 | 50 | PB11 | TIM2_CH4_FREQ4_PB11 | 89 | PD7 | BARO_INT_PD7 |

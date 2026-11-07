@@ -115,3 +115,15 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
 - Board fields re-synced to the schematic (Datasheet on all footprints, JP1-JP4 excluded from BOM); DRC schematic
   parity now clean except the known L6 stand-in footprint. (Earlier "parity clean" checks were run without the
   schematic file present and so did not compare fields.)
+
+## LM5175 buck-boost removed (2026-11-07)
+- The 12 V sensor outputs did not need a regulated 12 V from a ~12.9 V battery, so U11 and its 41 parts (Q3-Q6, L8,
+  R96-R107, C116-C134, D21, D22) plus the 12 V monitor R108/R109/C135 are gone (schematic 286 -> 244 parts).
+  F3/F4 now feed +12V_OUT1/2 from VIN_PROT; PC3 and PE7 have no-connect flags.
+- Board: footprints and the LM5175 group deleted; the In2.Cu +12V_SNS plane region was reassigned to VIN_PROT
+  (it joins the VIN_PROT column on its left). The freed area (top-left, about x 119-141 / y 50-86) is open for the
+  manual floorplan.
+- Check: the pitot sensor (and whatever uses OUT2) must accept the raw battery range plus surges up to the SMBJ18CA
+  clamp (~29 V for a short time).
+- Fixed at the same time: commit 36059ec had reset `DDAQ.kicad_pro` to defaults (net classes, design rules,
+  track/via presets, ERC pin map lost). Restored from b25fa1b; net-class patterns for the deleted nets dropped.
