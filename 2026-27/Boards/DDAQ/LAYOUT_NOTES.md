@@ -127,3 +127,21 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
   clamp (~29 V for a short time).
 - Fixed at the same time: commit 36059ec had reset `DDAQ.kicad_pro` to defaults (net classes, design rules,
   track/via presets, ERC pin map lost). Restored from b25fa1b; net-class patterns for the deleted nets dropped.
+
+## 6-layer v2 (2026-11-12, branch `ddaq/pcb-6L-v2`)
+- Same placement as the main branch (J3 at TE's edge position) minus the 42 LM5175-block footprints. 6 layers:
+  F.Cu sig / In1.Cu solid GND / In2.Cu sig / In3.Cu sig / In4.Cu split power (VIN_PROT incl. the former +12V_SNS
+  area, +7V, +3.3V, GND under J3) / B.Cu sig. 256 fan-out vias. Stackup = KiCad default 6-layer (set JLCPCB's).
+- Why the earlier 6-layer J3-edge runs "stalled": Freerouting sits flat for 3-8 passes on this board before it
+  converges, and the supervisor killed runs that had not improved by pass 3. Now `SUP_STALL_PASS=10`.
+  Freerouting 2.1.0 also logs NullPointerExceptions in MazeSearchAlgo on a few connections; harmless.
+- Supervised Freerouting: 136 -> 118 -> 73 -> 64 -> 59 -> 50 -> 48 unconnected (about 100 min).
+  Freerouting puts VIN_PROT vias at the default 0.2 mm from other nets instead of the Power_HI 0.25 mm, so the
+  results carried 3-5 such errors (`SUP_MAX_CLR` lets the supervisor keep them). Cleanup: the offending vias/tracks
+  and all dangling stubs removed (`claude_scripts/pcb/cleanup_drc.py`, repeated until DRC shows none), then
+  `finisher.py` closed 7 short gaps.
+- Result: **48 unconnected, 0 clearance errors, 0 dangling items**; schematic parity clean except the known L6
+  stand-in. Left: GND 8, +3.3V 6, +7V 3, VIN_PROT 2 (plane hops), the rest single signals (SPI1 to the ADC, SPI3,
+  IMU/baro CS, CAN standby/RX, NRST, SWCLK, two FREQ inputs, AI2/AI4/ADC_AIN5, EXC_MON, D32_A LED, USB CC1, ...).
+- Open: VBAT on B.Cu runs 0.34 mm from the board edge at the J3 notch (rule 0.5 mm) - nudge by hand.
+  Silkscreen not tidied. Gerbers for a quote: `fab/quote/DDAQ_6L_v2_gerbers.zip`.

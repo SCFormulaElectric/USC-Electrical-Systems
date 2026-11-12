@@ -13,3 +13,5 @@ Exported with KiCad 10.0.8 `kicad-cli` (Gerber X2 + Excellon, PTH/NPTH separate)
 pick the same options for both: 1.6 mm, HASL or ENIG, same quantity, same min hole/trace (0.3 mm via drill,
 0.15 mm min track/space). The 6-layer file uses KiCad's default stackup; on JLCPCB choose their standard
 6-layer stackup (or the impedance-controlled one if you want it).
+
+- `DDAQ_6L_v2_gerbers.zip` (2026-11-12): 6 layers, LM5175 removed, J3 at the board edge, 48 unconnected (not fab-ready; for price comparison only).
