@@ -117,7 +117,8 @@ while time.time() < deadline - 12 * 60:
         mode = 'fresh'; continue
     unc, clr = res
     log(f'  imported: {unc} unconnected in KiCad, {clr} clearance/hole errors')
-    if clr == 0 and (best is None or unc < best[0]):
+    # SUP_MAX_CLR: clearance errors tolerated (e.g. 1 for a known sub-micron import rounding error carried over)
+    if clr <= int(os.environ.get('SUP_MAX_CLR', '0')) and (best is None or unc < best[0]):
         best = (unc, cand)
         shutil.copy(cand, os.path.join(work, 'best.kicad_pcb'))
         log(f'  NEW BEST: {unc} unconnected')
