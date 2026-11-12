@@ -21,7 +21,9 @@ if os.environ.get('DDAQ_J3EDGE', '0') == '1':
     AY, JY = 100, 132
 REGIONS = [  # (layer, net, polygon)
     ('In1.Cu', 'GND', [(X0, Y0), (X1, Y0), (X1, Y1), (X0, Y1)]),
-    (PWR, '/VIN_PROT', [(X0, Y0), (VX - G, Y0), (VX - G, Y1), (X0, Y1)]),
+    # VIN_PROT: left column, plus the top block where the +12V_SNS region was before the LM5175 was removed
+    (PWR, '/VIN_PROT', [(X0, Y0), (PX - G, Y0), (PX - G, BY - G), (VX - G, BY - G), (VX - G, Y1), (X0, Y1)]
+     if b.FindNet('/+12V_SNS') is None else [(X0, Y0), (VX - G, Y0), (VX - G, Y1), (X0, Y1)]),
     (PWR, '/+12V_SNS', [(VX + G, Y0), (PX - G, Y0), (PX - G, BY - G), (VX + G, BY - G)]),
     (PWR, '/+7V', [(VX + G, BY + G), (PX + G, BY + G), (PX + G, AY + G), (X1, AY + G), (X1, Y1), (TX + G, Y1),
                         (TX + G, JY - G), (VX + G, JY - G)]),
@@ -29,6 +31,8 @@ REGIONS = [  # (layer, net, polygon)
     (PWR, 'GND', [(VX + G, JY + G), (TX - G, JY + G), (TX - G, Y1), (VX + G, Y1)]),
 ]
 for layer, net, poly in REGIONS:
+    if b.FindNet(net) is None:
+        continue
     z = pcbnew.ZONE(b)
     z.SetLayer(b.GetLayerID(layer))
     z.SetNet(b.FindNet(net))
