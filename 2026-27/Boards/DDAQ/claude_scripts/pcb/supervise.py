@@ -75,7 +75,10 @@ def run(dsn, timeout_min, stall_check):
         for k in new[len(passes):]:
             log(f'  pass {len(passes) + 1}: {k} unrouted')
             passes.append(k)
-        if stall_check and len(passes) >= 3 and passes[2] > 0.93 * passes[0]:
+        # stall rule: no 7 % improvement by pass N (SUP_STALL_PASS, default 3). 6-layer boards sit flat for
+        # 3-8 passes before converging, so use ~10 there.
+        n = int(os.environ.get('SUP_STALL_PASS', '3'))
+        if stall_check and len(passes) >= n and passes[n - 1] > 0.93 * passes[0]:
             p.kill(); p.wait(); reason = 'stalled'
             break
         if time.time() > deadline + 120:
