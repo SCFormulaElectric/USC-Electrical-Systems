@@ -25,7 +25,7 @@ Net names: local labels are shown without the leading `/`.
                                   +----------------------------+------------------+
                                   |                            |                  |
                          TPS563300 buck (U2)          TPS7A4700 LDO (U10)   6x NCV8184 trackers
-                         +5V (4.93 V)                 +5V_REF (5.00 V)      (U12-U14, U16-U18)
+                         +5V (4.98 V)                 +5V_REF (5.00 V)      (U12-U14, U16-U18)
                            |   CAN VCC, monitors        |  ADC AVDD (FB1)     +5V_EXC_L/R/C
                            |                            |  tracker reference  +5V_WS_L/R/C -> J3
                      D42 --+--> LDO_IN <-- D43 -- USB VBUS
@@ -75,7 +75,7 @@ CAN ESD D1/D19) visually next to it or next to the block that owns it - not scat
 |---|---|---|
 | F1 | 3 A fast, Littelfuse 0451003 (Nano2) | Main fuse, VBAT -> VBAT_FUSED. Protects the car's LV harness. |
 | D20 | SMBJ18CA | Bidirectional TVS on VBAT_FUSED: clamps load-dump / inductive spikes. |
-| Q2 | AO3401A P-FET | Reverse-polarity protection: drain on VBAT_FUSED, source on VIN_PROT. Conducts (low loss) only with correct polarity. |
+| Q2 | SI2319CDS P-FET (−40 V) | Reverse-polarity protection: drain on VBAT_FUSED, source on VIN_PROT. Conducts (low loss) only with correct polarity. |
 | R3 | 13 k | Pulls Q2's gate to GND so it turns on. |
 | D9 | BZT52C10S 10 V Zener | Gate-source clamp for Q2 (gate max ±12 V). |
 | D6 + R19 | red LED + 13 k | "Power OK" indicator on VIN_PROT. |
@@ -116,11 +116,11 @@ The LM5175 buck-boost (U11, Q3-Q6, L8, R96-R107, C116-C134, D21/D22) was removed
 | Ref | Value | Role |
 |---|---|---|
 | U2 | TPS563300 | 3 A synchronous buck, +7V -> **+5V**. |
-| U6 | 12 µH SRR1208 | Power inductor (ref "U6" because of its library symbol; it is an inductor). |
+| U6 | 6.5 µH SRR1208-6R5ML | Power inductor (TI Table 8-2 value for 5 V) (ref "U6" because of its library symbol; it is an inductor). |
 | R60 / R59 | 10 k / 10 k | EN divider from +7V (EN = 3.5 V -> enabled). |
 | C3 | 100 nF | Bootstrap (BST-SW). |
 | C10, C58 | 10 µF, 100 nF | Input caps. |
-| R34 / R21 | 47 k / 9.1 k | Feedback: 0.8 V × (1 + 47/9.1) = 4.93 V. |
+| R34 / R21 | 52.3 k / 10 k | Feedback: 0.8 V × (1 + 52.3/10) = 4.98 V. C168 22 µF added on +5V (TPS563300 needs ≥ 10 µF effective). |
 | C55, C67 | 2× 10 µF | Output caps. |
 | C68 | 100 nF | Output decoupling. |
 
@@ -168,12 +168,14 @@ reverse protection + fault isolation per harness branch). Identical circuits:
 
 | Output | Tracker | In cap (+7V) | Output R + C (stability "ESR") | Connector TVS | J3 pin |
 |---|---|---|---|---|---|
-| +5V_EXC_L | U12 | C136 100 nF | R110 1 Ω + C144 1 µF (node TRK1_C) | D33 SMF15A | 1 |
+| +5V_EXC_L | U12 | C136 1 µF | R110 1 Ω + C144 1 µF (node TRK1_C) | D33 SMF15A | 1 |
 | +5V_EXC_R | U13 | C137 | R111 + C145 (TRK2_C) | D34 | 6 |
 | +5V_EXC_C | U14 | C138 | R112 + C146 (TRK3_C) | D35 | 12 |
 | +5V_WS_L | U16 | C140 | R114 + C148 (TRK5_C) | D36 | 3 |
 | +5V_WS_R | U17 | C141 | R115 + C149 (TRK6_C) | D37 | 8 |
 | +5V_WS_C | U18 | C142 | R116 + C150 (TRK7_C) | D38 | 21 |
+
+Each tracker also has a 10 nF from VREF/ENABLE to GND (C169–C174, datasheet "C3, recommended for EMC susceptibility"); the input caps C136–C142 are 1 µF (datasheet C1).
 
 Pins per NCV8184: 1 VOUT, 4 ADJ (tied to VOUT = unity tracking), 5 VREF/ENABLE (+5V_REF), 8 VIN (+7V), 2/3/6/7 GND.
 The 1 Ω in series with the 1 µF ceramic gives the regulator the output-capacitor ESR it needs for loop stability.
@@ -283,7 +285,7 @@ MCU (FDCAN1): RX PD0, TX PD1, STB PD2.
 | R85 | 10 k | STB pull-down (CAN2STBPD3). |
 | L6 | ACT1210 common-mode choke | Between transceiver side (CANH/CANL) and bus side (CAN2H_BUS/CAN2L_BUS). **PCB uses a stand-in footprint.** |
 | D19 | ESD2CANFD24 | CAN bus ESD (pins renamed IO1/IO2/GND). |
-| R14, R15 | 60.4 Ω | Split termination legs. |
+| R14, R15 | 60.4 Ω 1206 | Split termination legs (same part as CAN1 R4/R5). |
 | C20 | 4.7 nF | Midpoint cap (net CAN_VREF). |
 | JP2 | 3-pad solder jumper, **bridged** | Termination on by default (this board ends CAN2). |
 
@@ -304,7 +306,7 @@ to CAN2H_XCVR / CAN2L_XCVR.
 | C8, C9 | 1 µF | VDDA / VREF+ (analog supply and ADC reference = 3.3 V). |
 | C1 | 100 nF | NRST filter cap. |
 | R81 | 10 k | BOOT0 pull-down: boots from flash. |
-| X1 + C12, C13 | 16 MHz crystal + 2× 33 pF C0G | HSE clock (PF0/PF1). |
+| X1 + C12, C13 | 16 MHz X322516MLB4SI (9 pF, 3225 4-pad; pads 2/4 GND) + 2× 10 pF C0G | HSE clock (PF0/PF1). Crystal gm_crit ≈ 0.3 mA/V vs the G474 limit of 1.5 mA/V. |
 | J5 | 4-pin 2.54 mm header | SWD programming: 1 GND, 2 +3.3V, 3 SWDIO (PA13), 4 SWCLK (PA14). |
 | D30 + R130 | yellow LED + 1 k | CAN activity LED (PE0). |
 | D31 + R131 | red LED + 1 k | FAULT LED (PE1). |
