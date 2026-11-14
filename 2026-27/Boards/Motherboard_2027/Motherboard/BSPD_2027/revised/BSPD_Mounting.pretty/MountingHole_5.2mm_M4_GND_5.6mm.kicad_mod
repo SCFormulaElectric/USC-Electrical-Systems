@@ -1,0 +1,108 @@
+(footprint "MountingHole_5.2mm_M4_GND_5.6mm"
+		(version 20260206)
+		(generator "pcbnew")
+		(layer "F.Cu")
+		(descr "M4 legacy-fit mounting: 5.2 mm plated hole, 5.6 mm GND pad; maximum 7.0 mm screw-head diameter")
+		(tags "mountinghole M4")
+		(property "Reference" "REF**"
+			(at 4 0 0)
+			(layer "F.SilkS")
+			(uuid "ee1a6405-499e-461f-ae05-82ed2ae1a877")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 5.25 0)
+			(layer "F.Fab")
+			(uuid "44920599-38b8-478c-9a49-1bdd1f6c98c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "435c1a3a-a55b-4885-8df2-ed9fe93c6b94")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M4 legacy-fit mounting: 5.2 mm plated hole, 5.6 mm GND pad; maximum 7.0 mm screw-head diameter"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a2c9181-ade7-4a98-843c-3f85cd1244e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6601f8e7-463f-4178-b3c9-b9859f3576fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(attr exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 3.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "2502346f-4247-4300-80a0-916357fdd74e")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.85 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1c047e76-0eb9-41e7-89ed-07ceb420959f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b91a481f-15d6-48a5-b407-1c88f537c530")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" thru_hole circle
+			(at 0 0)
+			(size 5.6 5.6)
+			(drill 5.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(uuid "f3d57a40-fb13-4dbd-a0de-66bb627a48db")
+		)
+		(embedded_fonts no)
+	)

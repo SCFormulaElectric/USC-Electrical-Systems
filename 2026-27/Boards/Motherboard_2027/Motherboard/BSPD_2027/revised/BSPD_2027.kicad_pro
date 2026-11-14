@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 4.3,
+          "height": 5.3,
+          "width": 5.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -155,7 +155,7 @@
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.25,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.7,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -469,6 +469,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -511,6 +512,14 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -661,7 +670,7 @@
         "uuid": "7f94e731-ab98-4d5a-af18-a20be0072027"
       }
     ],
-    "used_designators": "R33,R40-42,Q4,Q9,K6,D3,D13,#PWR11,#PWR34,#PWR36,#PWR44",
+    "used_designators": "H1-4,K6,Q4,Q9,D3,D13,#PWR11,#PWR34,#PWR36,#PWR44,R33,R40-42",
     "variants": []
   },
   "sheets": [
