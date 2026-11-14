@@ -30,7 +30,7 @@ Net names: local labels are shown without the leading `/`.
                            |                            |  tracker reference  +5V_WS_L/R/C -> J3
                      D42 --+--> LDO_IN <-- D43 -- USB VBUS
                                   |
-                          TLV1117LV33 (U4) +3.3V: MCU, ADC DVDD, sensors, SD, CAN VIO, LEDs
+                          LDL1117S33R (U4) +3.3V: MCU, ADC DVDD, sensors, SD, CAN VIO, LEDs
 ```
 
 Signal side: the MCU (STM32G474, U1) talks SPI1 to the 16-bit ADC (U5), SPI2 to the microSD card (J1), SPI3 to the
@@ -133,10 +133,10 @@ Readability tip: rename U6 to L-something when you tidy (needs a matching PCB up
 
 | Ref | Value | Role |
 |---|---|---|
-| D42 | B5819W Schottky | Battery path: +5V -> LDO_IN. |
-| D43 | B5819W Schottky | USB path: VBUS -> LDO_IN. Together a diode-OR: either source powers the 3.3 V side, neither back-feeds the other. |
+| D42 | 1N5819HW Schottky | Battery path: +5V -> LDO_IN. |
+| D43 | 1N5819HW Schottky | USB path: VBUS -> LDO_IN. Together a diode-OR: either source powers the 3.3 V side, neither back-feeds the other. |
 | C167 | 10 µF | LDO input cap (after the diodes). |
-| U4 | TLV1117LV33DCYR (C15578) | 3.3 V LDO, 90 mV dropout @ 200 mA. **VIN max 5.5 V** - only ever fed from LDO_IN. |
+| U4 | LDL1117S33RDCYR (C15578) | 3.3 V LDO, 90 mV dropout @ 200 mA. **VIN max 5.5 V** - only ever fed from LDO_IN. |
 | C69 | 22 µF | LDO output cap. |
 | D8 + R61 | yellow LED + 3 k | "3.3 V present" indicator. |
 | PWR_FLAG on LDO_IN | - | ERC: tells KiCad the diode-fed net is driven. |
