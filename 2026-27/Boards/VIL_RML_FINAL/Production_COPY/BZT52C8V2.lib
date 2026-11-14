@@ -1,0 +1,12 @@
+* Diodes Inc. BZT52C8V2 nominal coefficients.
+* Source: https://www.diodes.com/spice/download/853/BZT52C8V2.spice.txt
+* PROXY: the schematic BOM selects MDD, not Diodes Inc.
+* Same nominal voltage does not establish identical I-V/temperature behavior.
+* Terminals A K. Internal VZ=6.59 must NOT be changed to 8.2.
+.SUBCKT DI_BZT52C8V2 1 2
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 6.59
+.MODEL DF D (IS=25.1p RS=33.6 N=1.10 CJO=38.4p VJ=0.750 M=0.330 TT=50.1n)
+.MODEL DR D (IS=5.02f RS=3.45 N=2.23)
+.ENDS DI_BZT52C8V2

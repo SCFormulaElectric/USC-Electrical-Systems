@@ -1,0 +1,30 @@
+* Functional LMC555 approximation for low-frequency logic/timing simulation.
+* Datasheet: https://www.ti.com/lit/ds/symlink/lmc555.pdf
+* Not a TI manufacturer model; not validated for device limits or tolerances.
+* Same terminal order as the user's original model. All references use GND.
+* Finite transition time and a hysteretic switch replace the algebraic latch.
+* Does not model supply current, accurate output drive, or power dissipation.
+.SUBCKT LMC555 GND TRIG OUT RESET CONT THRES DISCH VDD
+R_TOP VDD CONT 100k
+R_MID CONT REF 100k
+R_BOT REF GND 100k
+
+* CMD +1: reset latch; -1: set latch; 0: retain hysteretic switch state.
+* TI datasheet section 7.4.1: RESET overrides TRIG; TRIG overrides THRES.
+* Supply below the specified 1.5 V operating minimum is forced inactive.
+B_CMD CMD GND V={if(V(VDD,GND)<1.5,1,if(V(RESET,GND)<0.75,1,if(V(TRIG,GND)<V(REF,GND),-1,if(V(THRES,GND)>V(CONT,GND),1,0))))}
+V_LOGIC ONE GND 1
+R_LATCH ONE RAW 1k
+S_LATCH RAW GND CMD GND SW_LATCH ON
+.MODEL SW_LATCH SW(RON=1 ROFF=1e12 VT=0 VH=0.5)
+
+* Approximate 1 us propagation/edge smoothing; not a datasheet timing fit.
+R_DELAY RAW STATE 1k
+C_DELAY STATE GND 1n IC=0
+B_DRIVE DRIVE GND V={max(V(VDD,GND),0)*0.5*(1+tanh((V(STATE,GND)-0.5)/0.05))}
+R_OUT DRIVE OUT 10
+
+* Correct phase: OUT low -> discharge ON; OUT high -> discharge OFF.
+S_DISCH DISCH GND GND STATE SW_DISCH ON
+.MODEL SW_DISCH SW(RON=10 ROFF=1e12 VT=-0.5 VH=0.05)
+.ENDS LMC555

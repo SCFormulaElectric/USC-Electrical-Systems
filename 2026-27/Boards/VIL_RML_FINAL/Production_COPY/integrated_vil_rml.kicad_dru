@@ -1,0 +1,27 @@
+(version 1)
+
+(rule "TS to GLV clearance"
+  (condition "(A.hasNetclass('TS') && B.hasNetclass('GLV')) || (A.hasNetclass('GLV') && B.hasNetclass('TS'))")
+  (constraint clearance (min 3mm)))
+
+(rule "TS to GLV creepage"
+  (condition "(A.hasNetclass('TS') && B.hasNetclass('GLV')) || (A.hasNetclass('GLV') && B.hasNetclass('TS'))")
+  (constraint creepage (min 4mm)))
+
+# Normal-operation voltage groups for the current VIL/RML circuit.
+# KiCad does not calculate circuit voltage. Revisit these groups after topology/net-name changes.
+# Positive group: HV+ before/after F1 and Q3 drain after D3's approximately 51 V drop.
+# Return group: HV- before/after F2 and the approximately 0...12 V sensing/LED circuit.
+# Input-side unused leads stay with their physical voltage domain for isolation screening.
+# Only positive-to-return pairs can exceed 60 V in normal operation; apply 3 mm / 4 mm there.
+# Within either group use ordinary project clearance (currently 0.2 mm).
+# Electrical nets remain distinct. TS-to-GLV isolation rules above are preserved.
+# Closed-fuse/normal-clamp assumptions: this is not an open-fuse, fault or transient analysis.
+
+(rule "TS over 60V clearance"
+  (condition "A.hasNetclass('TS') && B.hasNetclass('TS') && A.Net != B.Net && (((A.NetName == '/HV+' || A.NetName == 'Net-(D3-K)' || A.NetName == 'Net-(D3-A)' || A.NetName == 'unconnected-(Molex1-Pin_2-Pad2)') && (B.NetName == '/HV-' || B.NetName == 'Net-(Molex2-Pin_1)' || B.NetName == 'Net-(D1-K)' || B.NetName == 'Net-(R6-Pad2)' || B.NetName == 'Net-(LED2-Pin_2)' || B.NetName == 'unconnected-(U1-Pad3)' || B.NetName == 'unconnected-(Molex2-Pin_2-Pad2)')) || ((B.NetName == '/HV+' || B.NetName == 'Net-(D3-K)' || B.NetName == 'Net-(D3-A)' || B.NetName == 'unconnected-(Molex1-Pin_2-Pad2)') && (A.NetName == '/HV-' || A.NetName == 'Net-(Molex2-Pin_1)' || A.NetName == 'Net-(D1-K)' || A.NetName == 'Net-(R6-Pad2)' || A.NetName == 'Net-(LED2-Pin_2)' || A.NetName == 'unconnected-(U1-Pad3)' || A.NetName == 'unconnected-(Molex2-Pin_2-Pad2)')))")
+  (constraint clearance (min 3mm)))
+
+(rule "TS over 60V creepage"
+  (condition "A.hasNetclass('TS') && B.hasNetclass('TS') && A.Net != B.Net && (((A.NetName == '/HV+' || A.NetName == 'Net-(D3-K)' || A.NetName == 'Net-(D3-A)' || A.NetName == 'unconnected-(Molex1-Pin_2-Pad2)') && (B.NetName == '/HV-' || B.NetName == 'Net-(Molex2-Pin_1)' || B.NetName == 'Net-(D1-K)' || B.NetName == 'Net-(R6-Pad2)' || B.NetName == 'Net-(LED2-Pin_2)' || B.NetName == 'unconnected-(U1-Pad3)' || B.NetName == 'unconnected-(Molex2-Pin_2-Pad2)')) || ((B.NetName == '/HV+' || B.NetName == 'Net-(D3-K)' || B.NetName == 'Net-(D3-A)' || B.NetName == 'unconnected-(Molex1-Pin_2-Pad2)') && (A.NetName == '/HV-' || A.NetName == 'Net-(Molex2-Pin_1)' || A.NetName == 'Net-(D1-K)' || A.NetName == 'Net-(R6-Pad2)' || A.NetName == 'Net-(LED2-Pin_2)' || A.NetName == 'unconnected-(U1-Pad3)' || A.NetName == 'unconnected-(Molex2-Pin_2-Pad2)')))")
+  (constraint creepage (min 4mm)))
