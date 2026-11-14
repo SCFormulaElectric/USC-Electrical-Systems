@@ -145,3 +145,22 @@ Specctra DSN; needs permission to run the jar in the cloud session), then pour G
   IMU/baro CS, CAN standby/RX, NRST, SWCLK, two FREQ inputs, AI2/AI4/ADC_AIN5, EXC_MON, D32_A LED, USB CC1, ...).
 - Open: VBAT on B.Cu runs 0.34 mm from the board edge at the J3 notch (rule 0.5 mm) - nudge by hand.
   Silkscreen not tidied. Gerbers for a quote: `fab/quote/DDAQ_6L_v2_gerbers.zip`.
+
+## 6L v2 finished (2026-11-14)
+- Schematic: IMU (U23), barometer (U24), VMON dividers and the PD2/PD3 CAN STB links removed (R1/R85 keep STB
+  low = transceivers always in normal mode). 14 MCU pins now no-connect.
+- Placed the remaining parts: AI8/AI9 conditioning right of the MCU (one row per channel, level with PC5/PE8),
+  node-ID resistors/jumpers below it, status LEDs below the MCU, 12 V fuses F3/F4 near the VIN_PROT pour,
+  TVS D40/D41 above J3.
+- Planes: +3.3V pour added on In3 over the MCU / USB / SD / LDO area (MCU, SD, SWD and U4 output tie in by via).
+  New B.Cu SD_VDD pour under the SD pull-up row.
+- Routing (no Freerouting): net by net with chosen layers/widths - long signals and sensor supplies on In2,
+  power (VBUS, +12V_OUT, VIN_PROT, SD_VDD) on B.Cu, GND/+3.3V tied to their planes next to each pad.
+  B.Cu +5V_REF pour kept intact (other nets' tracks kept out of it).
+- SD card cleaned up: pull-ups in one row directly under J1's pins, R9 in line with CLK, C17/C18 at the VDD pin,
+  SD_VDD on the B.Cu pour, SPI2 on In2 to the MCU.
+- Your earlier routing kept; fixed: VIN_PROT track clipping U9's PG pad, an overlapping GND via pair, VBUS piece
+  under U22 (blocked USB+; U22 VBUS now fed through a via between its pin rows), NRST track under PC0.
+- DRC: 0 unconnected, 0 clearance/short errors, schematic parity clean. Left: 1 starved-thermal warning (J3.17 on
+  an In4 GND island), silkscreen overlaps, and several long runs with 4-9 vias (+5V_WS_C 9, CAN2L 7, CAN1H 6) that
+  could be shortened by hand.
