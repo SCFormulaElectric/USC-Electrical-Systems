@@ -136,7 +136,7 @@ Readability tip: rename U6 to L-something when you tidy (needs a matching PCB up
 | D42 | 1N5819HW Schottky | Battery path: +5V -> LDO_IN. |
 | D43 | 1N5819HW Schottky | USB path: VBUS -> LDO_IN. Together a diode-OR: either source powers the 3.3 V side, neither back-feeds the other. |
 | C167 | 10 µF | LDO input cap (after the diodes). |
-| U4 | LDL1117S33RDCYR (C15578) | 3.3 V LDO, 90 mV dropout @ 200 mA. **VIN max 5.5 V** - only ever fed from LDO_IN. |
+| U4 | ST LDL1117S33R (C435835) | 3.3 V LDO, 1.2 A, 350 mV typ / 600 mV max dropout @ 1.2 A, VIN 2.5-18 V. Fed from LDO_IN (~4.6 V). |
 | C69 | 22 µF | LDO output cap. |
 | D8 + R61 | yellow LED + 3 k | "3.3 V present" indicator. |
 | PWR_FLAG on LDO_IN | - | ERC: tells KiCad the diode-fed net is driven. |
