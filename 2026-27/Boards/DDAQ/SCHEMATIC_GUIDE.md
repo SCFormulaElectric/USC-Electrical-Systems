@@ -374,7 +374,7 @@ USB alone powers the 3.3 V side through D43 (section 6).
 
 | Ref | Value | Role |
 |---|---|---|
-| J1 | Molex 47309-2651 | microSD socket, SPI mode on SPI2. 1 DAT2, 2 DAT3/CS (PB12), 3 CMD/MOSI (PB15), 4 VDD (SD_VDD), 5 CLK, 6 GND, 7 DAT0/MISO (PB14), 8 DAT1, G1-G4 shell GND. |
+| J1 | SHOU HAN TF PUSH (C393941), push-push | microSD socket, SPI mode on SPI2. 1 DAT2, 2 DAT3/CS (PB12), 3 CMD/MOSI (PB15), 4 VDD (SD_VDD), 5 CLK, 6 GND, 7 DAT0/MISO (PB14), 8 DAT1, 10-13 shell GND, CD -> SPI2_CD_PD8 with R141 10k pull-up to +3.3V. |
 | R9 | 33 Ω | Series damping on the clock (PB13 -> pin 5). |
 | R6, R7, R8, R10, R11 | 47 k to SD_VDD | Pull-ups on DAT2, CS, MOSI, MISO, DAT1 (SD spec; unused lines must not float). |
 | C17, C18 | 100 nF, 10 µF | Card supply decoupling. |
