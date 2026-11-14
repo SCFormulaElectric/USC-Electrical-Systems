@@ -32171,12 +32171,6 @@
 		(uuid "ac557791-4cb1-4be2-9e3e-856367d1d0bb")
 	)
 	(junction
-		(at 537.21 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad3878d5-a9dd-4e02-9dd3-4ec7b6eb1a24")
-	)
-	(junction
 		(at 58.42 572.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -36763,16 +36757,6 @@
 			(type default)
 		)
 		(uuid "a1d06f4b-2f7d-46e9-8cec-039924d87c74")
-	)
-	(wire
-		(pts
-			(xy 537.21 179.07) (xy 537.21 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a234bdda-a106-495a-92f8-4e07f6a4a7b6")
 	)
 	(wire
 		(pts
@@ -69929,84 +69913,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 537.21 181.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a59fb0-ee4f-4f07-b9f8-140bf3b7889a")
-		(property "Reference" "#PWR048"
-			(at 537.21 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 537.21 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 537.21 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 537.21 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 537.21 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5eb9bdb6-870f-4ce3-8aa0-3d7c51998472")
-		)
-		(instances
-			(project "DDAQ"
-				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Yellow")
 		(at 139.7 524.51 0)
 		(unit 1)
@@ -92297,6 +92203,323 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 537.21 179.07) (xy 533.4 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "914b9386-76bf-4931-8d7a-bfb56c2b097b")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 533.4 179.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18dda0e7-8a3a-4eb7-8478-56446c4af5e6")
+		(property "Reference" "#PWR1112"
+			(at 527.05 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 529.59 179.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 533.4 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 533.4 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 533.4 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be418e0c-abaa-42fd-a249-9ab904a9f5d4")
+		)
+		(instances
+			(project "DDAQ"
+				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+					(reference "#PWR1112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 537.21 181.61) (xy 537.21 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d53e646d-c507-430f-a9ef-aa136b9c1954")
+	)
+	(wire
+		(pts
+			(xy 537.21 186.69) (xy 529.59 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1756419f-7438-47c9-8fd2-0c84ad20d359")
+	)
+	(label "SPI2_CD_PD8"
+		(at 529.59 186.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec8372e2-a9c7-4e6f-b896-ee21537d19c0")
+	)
+	(symbol
+		(lib_id "JLCImport:0603WAF1002T5E")
+		(at 500.38 184.15 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3830b791-298d-404e-820a-d7d2f47e4a2a")
+		(property "Reference" "R141"
+			(at 496.57 185.166 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0603WAF1002T5E"
+			(at 500.888 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 100mW 10kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 500.38 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41e59204-40f5-4e88-b83b-2600055aa278")
+		)
+		(pin "2"
+			(uuid "731e5073-9d95-4ad0-a5be-4219cbdb94eb")
+		)
+		(instances
+			(project "DDAQ"
+				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+					(reference "R141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 500.38 179.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c983794-474c-408f-8fed-a77e2cdd3749")
+		(property "Reference" "#PWR1113"
+			(at 500.38 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 500.38 174.498 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 500.38 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 500.38 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 500.38 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6917cf48-0299-4722-ba69-088861070f6e")
+		)
+		(instances
+			(project "DDAQ"
+				(path "/84867528-ace9-4fc6-8780-2b9eb2390246"
+					(reference "#PWR1113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "SPI2_CD_PD8"
+		(at 500.38 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "110e5115-6d02-410f-805c-c087b911cfda")
 	)
 	(sheet_instances
 		(path "/"
