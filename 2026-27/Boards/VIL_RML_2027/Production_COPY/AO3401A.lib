@@ -1,0 +1,22 @@
+* AO3401A manufacturer coefficients, ngspice adaptation.
+* Source: https://www.aosmd.com/res/spice_models/AO3401A.mod
+* Public order G S D simplifies KiCad mapping; internal nodes retain AOS labels.
+* Rtemp coefficients are inline instead of a named resistor model.
+* Vendor's nominal electrical model: not a temperature/SOA validation.
+.SUBCKT AO3401A G S D
+X_CORE D G S AOS_AO3401A_CORE
+.ENDS AO3401A
+
+.SUBCKT AOS_AO3401A_CORE 4 1 2
+M1 3 1 2 2 PMOS W=998956u L=1u
+M2 2 1 2 4 NMOS W=998956u L=0.7u
+R1 4 3 17m TC1=1.5e-3 TC2=1e-6
+CGS 1 2 30p
+DBD 3 2 DBD
+.MODEL PMOS PMOS (LEVEL=3 TOX=2.5e-8 RS=2e-4 RD=0 NSUB=2e17
++ UO=120 THETA=0.2 VTO=-1.1 VMAX=5e6 XJ=4e-7 KAPPA=1.2 ETA=0
++ TPG=1 IS=0 LD=0 CGSO=0 CGDO=0 CGBO=0 NFS=2e10 DELTA=0)
+.MODEL NMOS NMOS (LEVEL=3 TOX=5.2e-8 NSUB=2e16 TPG=-1)
+.MODEL DBD D (CJO=90p VJ=0.6 M=0.3 RS=0.005 FC=0.5
++ IS=1e-12 TT=16n N=1 BV=36 IBV=1e-4)
+.ENDS AOS_AO3401A_CORE

@@ -1,9 +1,13 @@
-# R2 — non-latching BSPD permit
+# BSPD 2027 — production files refreshed November 15, 2026
 
-Open `BSPD_2027.kicad_pro` with KiCad 10. U9, C13, R33, C14 and D3 are removed. The BSPD permit signal returns HIGH when faults clear and power is ready. The separate relayboard owns fault retention and manual reset.
+The three files in JLCPCB_Production_2026-11-14 now reflect the latest saved routing, component positions and reduced reference designators, including the green power LED and red fault/startup-inhibit LED circuits. J1 is now Molex 43045-0613 / 430450613, JLCPCB C505220, with gold-plated mating contacts. The compatible original 43045-0612 footprint is retained.
 
-The same connector/pinout, outline, mounting holes and all remaining component placements are preserved. The PCB is checked with an explicit 0.50 mm copper-edge requirement. ERC, DRC, connectivity and schematic-parity checks report zero issues. All66 fitted components have LCSC numbers.
+BOM/CPL: 73 fitted parts, including J1 and D5, D6, Q4, R40–R43. Bare test pads and mounting holes are excluded. J1 remains included for through-hole assembly; confirm factory acceptance and placement in the JLCPCB preview. Purchasing fields are supplied, but stock is not reserved.
 
-The SMT_REVIEW BOM and CPL match65 SMT parts. J1 is the exact Molex430450612/C234188 through-hole connector and requires its assembly method to be confirmed separately. Gerbers, drilling and native positions use the common lower-left origin. The four4mm mounting cutouts are in Edge.Cuts.
+Checks: 0 DRC violations, 0 unconnected items, 0 schematic-parity issues, and 0 ERC violations. Gerber ZIP includes four copper layers and separate plated/nonplated drills. Routing and component placement were preserved; copper fills were refreshed. Older REVIEW exports elsewhere are historical.
 
-Engineering-review status is unchanged: the current-reference interface, measured brake threshold and physical vehicle/relay qualification remain pending. See ../DESIGN_REVIEW.md. Earlier R1 files are historical and must not be mixed with R2.
+The red LED follows fault/startup inhibit and is non-latching. Prior calibration and prototype/vehicle qualification remain necessary. These file checks do not replace hardware testing.
+
+## U1 assembly placement correction
+
+The production CPL overrides U1 to X = 26.760 mm, Y = 49.165 mm, rotation = 270 degrees (top). This includes the requested 180-degree rotation and an upward 0.75 mm shift estimated from the JLC preview. Verify lead-to-pad alignment in the updated assembly preview. Preserve these corrections when regenerating the CPL; the PCB footprint and Gerbers were not moved.
