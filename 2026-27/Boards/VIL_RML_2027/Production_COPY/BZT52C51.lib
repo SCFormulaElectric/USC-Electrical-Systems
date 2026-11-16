@@ -1,0 +1,18 @@
+* Diodes Inc. BZT52C51 nominal coefficients (not the BZT52C51S model).
+* Source: https://www.diodes.com/spice/download/1100/BZT52C51.spice.txt
+* Terminals A K. VZ=48.3 is an INTERNAL model voltage, not a 48.3 V rating.
+* The reverse diode and its resistance bring the total near 51 V at 5 mA.
+* No thermal model or statistical tolerance corners are included.
+.SUBCKT DI_BZT52C51 1 2
+D1 1 2 DF
+DZ 3 1 DR
+VZ 2 3 48.3
+.MODEL DF D (IS=3.31p RS=1.45 N=1.10 CJO=24.1p VJ=1 M=0.330 TT=50.1n)
+.MODEL DR D (IS=6.62e-16 RS=84.5 N=3)
+.ENDS DI_BZT52C51
+
+* Legacy alias: old KiCad Sim.Name can remain DI_BZT52C51S.
+* This alias now invokes BZT52C51 coefficients, NOT the smaller S device.
+.SUBCKT DI_BZT52C51S 1 2
+X_ACTUAL 1 2 DI_BZT52C51
+.ENDS DI_BZT52C51S

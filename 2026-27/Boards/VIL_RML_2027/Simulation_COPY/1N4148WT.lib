@@ -1,0 +1,8 @@
+* Diodes Inc. 1N4148WT coefficients; wrapper exposes A K for KiCad.
+* Source: https://www.diodes.com/spice/download/1492/1N4148WT.spice.txt
+* The bare non-SPICE word 'Switching' in the downloaded source is omitted.
+.SUBCKT D_1N4148WT A K
+D_CORE A K DI_1N4148WT
+.MODEL DI_1N4148WT D (IS=10.4n RS=51.5m BV=80 IBV=1u
++ CJO=2p M=0.333 N=2.07 TT=5.76n)
+.ENDS D_1N4148WT

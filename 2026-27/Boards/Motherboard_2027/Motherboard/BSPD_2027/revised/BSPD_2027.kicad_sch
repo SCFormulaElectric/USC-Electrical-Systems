@@ -10,6 +10,129 @@
 		(rev "R2 — external relay latch")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:BAT54S"
 			(pin_names
 				(offset 0)
@@ -343,105 +466,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 			)
@@ -1098,6 +1122,129 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Review:MountingHole_GND"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_GND"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_GND_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_GND_1_1"
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3805,7 +3952,510 @@
 			)
 			(embedded_fonts no)
 		)
+	
+(symbol "Device:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
+(symbol "Transistor_FET:Q_NMOS_GSD"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_GSD"
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Q_NMOS_GSD_0_1"
+			(polyline
+				(pts
+					(xy 0.254 1.905) (xy 0.254 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 2.286) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.508) (xy 0.762 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.27) (xy 0.762 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 1.651 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 2.54 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 2.54 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.921 0.381) (xy 3.683 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Q_NMOS_GSD_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
 	(rectangle
 		(start 137.795 41.275)
 		(end 278.765 140.97)
@@ -3819,7 +4469,7 @@
 		(uuid "1f89ce5e-9c64-439f-b0fa-3e28df8f7226")
 	)
 	(rectangle
-		(start 21.59 69.85)
+		(start 21.59 73.66)
 		(end 74.295 101.6)
 		(stroke
 			(width 0)
@@ -3947,7 +4597,7 @@
 	)
 	(text "1. CONNECTOR"
 		(exclude_from_sim no)
-		(at 23.368 74.168 0)
+		(at 22.352 76.454 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4436,6 +5086,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 68.58) (xy 60.96 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cc2e3c8-7b52-4aa2-9a06-509bffe37932")
+	)
+	(wire
+		(pts
 			(xy 328.93 140.97) (xy 328.93 138.43)
 		)
 		(stroke
@@ -4906,6 +5566,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 82.55) (xy 104.14 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61669ec8-41d8-4cb1-80a1-0da8aa6f6f51")
+	)
+	(wire
+		(pts
 			(xy 152.4 119.38) (xy 152.4 120.65)
 		)
 		(stroke
@@ -5083,6 +5753,16 @@
 			(type default)
 		)
 		(uuid "7f93e9a9-e849-4615-8382-4282d7c0643e")
+	)
+	(wire
+		(pts
+			(xy 60.96 50.8) (xy 60.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81564328-f257-46b5-9f0e-64104e80c1b0")
 	)
 	(wire
 		(pts
@@ -5313,6 +5993,16 @@
 			(type default)
 		)
 		(uuid "9cbb2312-caa0-4a70-8473-88a118723e57")
+	)
+	(wire
+		(pts
+			(xy 121.92 50.8) (xy 121.92 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2491a7-4a31-4dc3-8bc3-6c9582501b22")
 	)
 	(wire
 		(pts
@@ -5826,6 +6516,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 68.58) (xy 91.44 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4e8944-6b72-412d-a26b-25fd1fb0cb66")
+	)
+	(wire
+		(pts
 			(xy 80.01 160.02) (xy 72.39 160.02)
 		)
 		(stroke
@@ -5873,6 +6573,16 @@
 			(type default)
 		)
 		(uuid "e3fabd54-53b7-4047-873a-82f22ed1df44")
+	)
+	(wire
+		(pts
+			(xy 30.48 50.8) (xy 30.48 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ae6c74-9065-4b6a-8bd3-6e1cf1c052c4")
 	)
 	(wire
 		(pts
@@ -5966,6 +6676,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 68.58) (xy 121.92 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f35ad2de-bde1-4597-939b-007afe5532f4")
+	)
+	(wire
+		(pts
 			(xy 162.56 115.57) (xy 162.56 120.65)
 		)
 		(stroke
@@ -6016,6 +6736,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 50.8) (xy 91.44 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9441bb9-ef20-46d7-8a81-a618254f6e7c")
+	)
+	(wire
+		(pts
 			(xy 326.39 80.01) (xy 323.85 80.01)
 		)
 		(stroke
@@ -6033,6 +6763,56 @@
 			(type default)
 		)
 		(uuid "fb96829b-2362-49ce-b992-d032213b0acf")
+	)
+	(wire
+		(pts
+			(xy 30.48 68.58) (xy 30.48 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fecac726-d995-4fe1-bbc5-d40384ecea3b")
+	)
+	(label "GND"
+		(at 370.84 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28eff504-017a-42e7-81c3-c00f5c13c54c")
+	)
+	(label "GND"
+		(at 389.89 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2cc9ef4a-24f7-462c-8863-75b669b1daff")
+	)
+	(label "GND"
+		(at 389.89 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "418aa688-0641-40b2-98a4-0f49d3fa00fa")
+	)
+	(label "GND"
+		(at 370.84 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8889732-abef-4aab-99c4-829b03e89443")
 	)
 	(global_label "DISCHARGE"
 		(shape input)
@@ -6342,6 +7122,28 @@
 			)
 		)
 	)
+	(global_label "B_LOW"
+		(shape input)
+		(at 30.48 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "24457f46-84d2-4cb9-aaa8-12cb65e4ed1c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "High_Current"
 		(shape input)
 		(at 256.54 99.06 90)
@@ -6486,6 +7288,28 @@
 		(uuid "3da2dd84-86fb-48a7-ac4c-017ddb9edb3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.97 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "I_THRESH"
+		(shape input)
+		(at 91.44 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "40ebb3fa-07c1-429c-baa4-377ff8d7b272")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7222,6 +8046,28 @@
 			)
 		)
 	)
+	(global_label "BRAKE_RAW"
+		(shape input)
+		(at 121.92 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "9e7ec5c3-d061-4e8f-a8d0-a4d38a90b33d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "VP"
 		(shape input)
 		(at 332.74 186.69 90)
@@ -7552,6 +8398,28 @@
 			)
 		)
 	)
+	(global_label "B_HIGH"
+		(shape input)
+		(at 60.96 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b9e18357-b95b-4074-9fec-b3fb8b0fb555")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "I_SENSE"
 		(shape input)
 		(at 175.26 59.69 180)
@@ -7750,6 +8618,28 @@
 			)
 		)
 	)
+	(global_label "I_LOW"
+		(shape input)
+		(at 30.48 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d5b4681b-dd2e-403d-8546-db9033793089")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "5V_REF"
 		(shape input)
 		(at 189.23 204.47 90)
@@ -7926,6 +8816,28 @@
 			)
 		)
 	)
+	(global_label "CURRENT_RAW"
+		(shape input)
+		(at 121.92 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ed8bbc49-124f-4da5-be72-0a06b703777b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "FAULT_OK"
 		(shape input)
 		(at 223.52 59.69 0)
@@ -7938,6 +8850,28 @@
 		(uuid "f2e4dae4-36fe-4580-959e-e0d2266c0023")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 223.52 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "I_HIGH"
+		(shape input)
+		(at 60.96 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "f494d043-6160-42b7-8933-ad947ce218da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,6 +8938,28 @@
 		(uuid "fbfe8aa2-6f10-4590-ae64-da46e6271da5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 308.61 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "B_THRESH"
+		(shape input)
+		(at 91.44 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "fe9a5372-c74f-4a06-b469-8df0ac8b2024")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +9611,7 @@
 				)
 			)
 		)
-		(property "Value" "043045-0612"
+		(property "Value" "043045-0613"
 			(at 58.42 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8676,7 +9632,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/ja-jp/products/part-detail/430450612"
+		(property "Datasheet" "https://www.molex.com/ja-jp/products/part-detail/430450613"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8697,7 +9653,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C234188"
+		(property "LCSC" "C505220"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8708,7 +9664,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C234188"
+		(property "LCSC Part #" "C505220"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8719,7 +9675,7 @@
 				)
 			)
 		)
-		(property "MPN" "430450612"
+		(property "MPN" "430450613"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8741,7 +9697,7 @@
 				)
 			)
 		)
-		(property "Source URL" "https://www.lcsc.com/product-detail/C234188.html"
+		(property "Source URL" "https://www.lcsc.com/product-detail/C505220.html"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -10384,14 +11340,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Review:MountingHole_GND")
 		(at 370.84 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "274bf799-1f82-4743-9c1c-06aeda0d1309")
@@ -10406,7 +11362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "MountingHole_GND"
 			(at 373.38 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10449,6 +11405,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "729b7072-7ffc-4038-b873-b4d9fdd16361")
 		)
 		(instances
 			(project "BSPD_2027"
@@ -11592,6 +12551,82 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "307f2d4c-864a-4eb5-a0b4-1d1f4f1dc69a")
+		(property "Reference" "TP9"
+			(at 104.14 74.422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 104.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 104.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c274b12b-430f-4ca3-8f63-9cfeaa0e842e")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -13048,14 +14083,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Review:MountingHole_GND")
 		(at 370.84 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "462c19ce-ab4d-435f-bfac-2de01fbb3c90")
@@ -13070,7 +14105,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "MountingHole_GND"
 			(at 373.38 20.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13113,6 +14148,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "90d51821-d870-4ea5-817a-2f57c2100928")
 		)
 		(instances
 			(project "BSPD_2027"
@@ -13889,6 +14927,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "54764556-6d72-4ef8-a07f-0f31a9e1d97c")
+		(property "Reference" "TP2"
+			(at 60.96 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "I_HIGH"
+			(at 60.96 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 60.96 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 60.96 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "579a3ff5-2c05-4380-8aeb-75b0b47490de")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 332.74 226.06 0)
 		(unit 1)
@@ -14260,6 +15374,82 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "#PWR003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 30.48 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "64b80929-1ca2-40e4-b95d-92ed66b1d2b7")
+		(property "Reference" "TP5"
+			(at 30.48 61.722 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "B_LOW"
+			(at 30.48 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 30.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 30.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1a69439f-c24f-4b72-b551-f261d9c37797")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -15068,6 +16258,80 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "6e403518-d8f6-4b72-abb6-d63af8aeb03e")
+		(property "Reference" "#PWR034"
+			(at 110.49 82.55 270)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 87.376 270)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6442269f-091d-4137-88d6-4da856f18d20")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -16139,6 +17403,82 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "82661490-f28a-4735-a359-531f4b9cdacb")
+		(property "Reference" "TP8"
+			(at 121.92 61.722 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "BRAKE_RAW"
+			(at 121.92 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 121.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 121.92 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46fa7e32-5c6a-465a-a590-8c173922c3b7")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -17913,6 +19253,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "a49d3006-92f9-48a4-af14-de56d269e08b")
+		(property "Reference" "TP3"
+			(at 91.44 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "I_THRESH"
+			(at 91.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 91.44 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 91.44 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eab1364d-6721-4d80-9806-1a7354cd2acb")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 341.63 231.14 0)
 		(unit 1)
@@ -17981,6 +19397,82 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "af85c48c-b30f-477e-bf9c-3167a55f16cd")
+		(property "Reference" "TP7"
+			(at 91.44 61.722 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "B_THRESH"
+			(at 91.44 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 91.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 91.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f43b3380-60e6-4381-afbe-9e66a8c918bd")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -18297,14 +19789,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Review:MountingHole_GND")
 		(at 389.89 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3e3dbe5-6569-480c-bcf3-2dae9b998bfc")
@@ -18319,7 +19811,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "MountingHole_GND"
 			(at 392.43 20.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18363,10 +19855,89 @@
 				)
 			)
 		)
+		(pin "1"
+			(uuid "be344d0f-761c-4cdf-b4d0-14dbb1b9aaba")
+		)
 		(instances
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 30.48 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "b7908a09-8f6c-43bc-96a1-e0e92fa9c665")
+		(property "Reference" "TP1"
+			(at 30.48 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "I_LOW"
+			(at 30.48 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 30.48 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 30.48 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43cdaa0b-ecf0-4cef-a997-a2fd7f98f74f")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -18683,6 +20254,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "bc170c79-8c21-464a-bb13-b497aab99493")
+		(property "Reference" "TP6"
+			(at 60.96 61.722 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "B_HIGH"
+			(at 60.96 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 60.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 60.96 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74ea2a1f-a2ca-4ece-bb7f-321d87fef9ce")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Review:R")
 		(at 220.98 115.57 0)
 		(unit 1)
@@ -18832,6 +20479,82 @@
 			(project "BSPD_2027"
 				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "c18d7376-7f47-40b9-8bf8-9bf9250fc01e")
+		(property "Reference" "TP4"
+			(at 121.92 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "CURRENT_RAW"
+			(at 121.92 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "BSPD_TestPoints:ProbePad_D1.5mm"
+			(at 121.92 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 1.5mm copper probe pad; no fitted part"
+			(at 121.92 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a5acec72-7f18-4e75-84e7-d07a87324f79")
+		)
+		(instances
+			(project "BSPD_2027"
+				(path "/7f94e731-ab98-4d5a-af18-a20be0072027"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -20688,14 +22411,14 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Review:MountingHole_GND")
 		(at 389.89 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e14df544-3e8b-4153-b7e0-cea3b43a9c7c")
@@ -20710,7 +22433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
+		(property "Value" "MountingHole_GND"
 			(at 392.43 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20753,6 +22476,9 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "441375ea-37d4-48b5-a382-a447b0fda93b")
 		)
 		(instances
 			(project "BSPD_2027"
@@ -21664,7 +23390,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137552"
+		(property "LCSC" "C26113"
 			(at 259.08 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21675,7 +23401,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C137552"
+		(property "LCSC Part #" "C26113"
 			(at 259.08 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21686,7 +23412,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-072M2L"
+		(property "MPN" "0805W8F2204T5E"
 			(at 259.08 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21697,7 +23423,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 259.08 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21708,7 +23434,7 @@
 				)
 			)
 		)
-		(property "Source URL" "https://www.lcsc.com/product-detail/C137552.html"
+		(property "Source URL" "https://www.lcsc.com/product-detail/C26113.html"
 			(at 259.08 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -21917,4 +23643,61 @@
 		)
 	)
 	(embedded_fonts no)
+
+(symbol (lib_id "Review:R") (at 191.77 252.73 0) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "d6dca361-2553-4e92-b6f3-46aad31bd5a9") (property "Reference" "R40" (at 195.58 251.46 0) (effects (font (size 1 1)))) (property "Value" "10k 1%" (at 195.58 254.0 0) (effects (font (size 1 1)))) (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C17414.html" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Description" "Power LED current limit" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C17414" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C17414" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "MPN" "0805W8F1002T5E" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "UNI-ROYAL" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C17414.html" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Role" "Power LED current limit" (at 195.58 254.0 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "372f11de-88f5-49cc-ab22-9548e9d0552f")) (pin "2" (uuid "b8d5237a-c247-4082-b75e-c0f61b65f7db"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "R40") (unit 1)))))
+(symbol (lib_id "Device:LED") (at 191.77 265.43 90) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "b8ddd194-c2b9-4cff-94f1-af79ec208f27") (property "Reference" "D5" (at 195.58 264.16 90) (effects (font (size 1 1)))) (property "Value" "GREEN" (at 195.58 266.7 90) (effects (font (size 1 1)))) (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C2297.html" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "Description" "Protected input power indicator" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C2297" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C2297" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "MPN" "KT-0805G" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "Hubei KENTO" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C2297.html" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (property "Role" "Protected input power indicator" (at 195.58 266.7 90) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "dd2468d2-8de5-4629-b698-04d954edc2b8")) (pin "2" (uuid "26fffda9-2734-4f23-b70f-8a4496b01a35"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "D5") (unit 1)))))
+(symbol (lib_id "Review:R") (at 255.27 252.73 0) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "95f90bbd-abaf-4eed-ae80-e7a874be381d") (property "Reference" "R41" (at 259.08 251.46 0) (effects (font (size 1 1)))) (property "Value" "2.2k 1%" (at 259.08 254.0 0) (effects (font (size 1 1)))) (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C17520.html" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Description" "Fault LED current limit" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C17520" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C17520" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "MPN" "0805W8F2201T5E" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "UNI-ROYAL" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C17520.html" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (property "Role" "Fault LED current limit" (at 259.08 254.0 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "4b8d4075-3bd6-4c2e-ac26-3aa7ed3fd905")) (pin "2" (uuid "f7191d58-5732-4361-bb4e-7c2f00777bac"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "R41") (unit 1)))))
+(symbol (lib_id "Device:LED") (at 255.27 264.16 90) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "ebe2dc19-c6c5-4760-a88a-1f6d1e41e970") (property "Reference" "D6" (at 259.08 262.89 90) (effects (font (size 1 1)))) (property "Value" "RED" (at 259.08 265.43 90) (effects (font (size 1 1)))) (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C84256.html" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "Description" "Fault or startup inhibit indicator" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C84256" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C84256" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "MPN" "NCD0805R1" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "NationStar" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C84256.html" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (property "Role" "Fault or startup inhibit indicator" (at 259.08 265.43 90) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "475497a4-257f-4475-88f5-c0ddf21c4009")) (pin "2" (uuid "a61aca18-3117-4c25-9979-27f1df0c6ad9"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "D6") (unit 1)))))
+(symbol (lib_id "Transistor_FET:Q_NMOS_GSD") (at 255.27 275.59 0) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "1477fbd8-b966-40ae-b46f-9f38fe0aabc7") (property "Reference" "Q4" (at 262.89 273.05 0) (effects (font (size 1 1)))) (property "Value" "AO3400A" (at 262.89 275.59 0) (effects (font (size 1 1)))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "Description" "Fault LED low-side driver" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C20917" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C20917" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "MPN" "AO3400A" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "Alpha & Omega Semiconductor" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C20917.html" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (property "Role" "Fault LED low-side driver" (at 262.89 275.59 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "43573c35-0b17-496f-a834-c1189fd6c11b")) (pin "2" (uuid "e5378f5a-9529-44f3-ab1e-f858f9d8bbb7")) (pin "3" (uuid "1e5d6908-85aa-4839-8aee-2cda7fafcca0"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "Q4") (unit 1)))))
+(symbol (lib_id "Review:R") (at 234.95 275.59 90) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "ca3af43d-95df-4840-bbb9-b61f4072f986") (property "Reference" "R42" (at 234.95 271.78 90) (effects (font (size 1 1)))) (property "Value" "47k 1%" (at 234.95 279.4 90) (effects (font (size 1 1)))) (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C17713.html" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "Description" "Fault LED gate isolation" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C17713" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C17713" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "MPN" "0805W8F4702T5E" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "UNI-ROYAL" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C17713.html" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (property "Role" "Fault LED gate isolation" (at 234.95 279.4 90) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "fac3d1dc-7d7c-4d33-9766-0cec0058aaa3")) (pin "2" (uuid "04f44caf-1e13-4684-b69a-537d757ce95f"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "R42") (unit 1)))))
+(symbol (lib_id "Review:R") (at 245.11 280.67 0) (unit 1)
+      (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
+      (uuid "d4f2678a-1d5d-4590-badd-e6c624c612ba") (property "Reference" "R43" (at 248.92 279.4 0) (effects (font (size 1 1)))) (property "Value" "1M 1%" (at 248.92 281.94 0) (effects (font (size 1 1)))) (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "Datasheet" "https://www.lcsc.com/product-detail/C17514.html" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "Description" "Fault LED gate pull-down" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC" "C17514" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "LCSC Part #" "C17514" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "MPN" "0805W8F1004T5E" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "Manufacturer" "UNI-ROYAL" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "Source URL" "https://www.lcsc.com/product-detail/C17514.html" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (property "Role" "Fault LED gate pull-down" (at 248.92 281.94 0) (hide yes) (effects (font (size 1 1)))) (pin "1" (uuid "92e8a747-6c68-4da2-9689-1e620aa318a2")) (pin "2" (uuid "a2539a7c-63a2-4529-befc-5284245288b6"))
+      (instances (project "BSPD_2027" (path "/7f94e731-ab98-4d5a-af18-a20be0072027" (reference "R43") (unit 1)))))
+(global_label "VP" (shape input) (at 191.77 246.38 180) (effects (font (size 1 1)) (justify right)) (uuid "009441fd-b0ae-45ad-86b0-792365eb6d04") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 191.77 246.38 0) (hide yes) (effects (font (size 1 1)))))
+(wire (pts (xy 191.77 246.38) (xy 191.77 248.92)) (stroke (width 0) (type default)) (uuid "fe551df4-c257-49d2-b303-a519238e56a1"))
+(wire (pts (xy 191.77 256.54) (xy 191.77 261.62)) (stroke (width 0) (type default)) (uuid "fe7c2bf1-724a-494a-8118-187a6649e3f6"))
+(wire (pts (xy 191.77 269.24) (xy 191.77 274.32)) (stroke (width 0) (type default)) (uuid "73b98c96-f9fa-45ec-8257-52d7f1db23cb"))
+(label "GND" (at 191.77 274.32 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "ef72a80f-43a8-4ca3-8ce6-0d5c1ab90762"))
+(global_label "5V" (shape input) (at 255.27 246.38 180) (effects (font (size 1 1)) (justify right)) (uuid "81085e43-9bb1-4576-a967-2e228135420e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 255.27 246.38 0) (hide yes) (effects (font (size 1 1)))))
+(wire (pts (xy 255.27 246.38) (xy 255.27 248.92)) (stroke (width 0) (type default)) (uuid "822a9f5e-6ef9-47c0-8d7f-571f0a15cdbe"))
+(wire (pts (xy 255.27 256.54) (xy 255.27 260.35)) (stroke (width 0) (type default)) (uuid "37dfcbbf-5a9f-42e4-9755-32784ba556c2"))
+(wire (pts (xy 255.27 267.97) (xy 255.27 269.24)) (stroke (width 0) (type default)) (uuid "a9903f17-4f69-4cd9-ac2e-43773d41093b"))
+(wire (pts (xy 255.27 269.24) (xy 257.81 269.24)) (stroke (width 0) (type default)) (uuid "dfb1661b-ec9e-41d6-be7d-7244c0483d5b"))
+(wire (pts (xy 257.81 269.24) (xy 257.81 270.51)) (stroke (width 0) (type default)) (uuid "4445d4db-38bc-4b12-8a90-5cdb323116b7"))
+(wire (pts (xy 257.81 280.67) (xy 257.81 284.48)) (stroke (width 0) (type default)) (uuid "e84be896-f17b-464e-9405-e40d282dfab0"))
+(label "GND" (at 257.81 284.48 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "c3ae4e51-78eb-4a6f-9a61-712ad2358181"))
+(global_label "PERMIT_N" (shape input) (at 226.06 275.59 180) (effects (font (size 1 1)) (justify right)) (uuid "67ea9b3d-13be-49d5-8a05-7a0889368f5a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 226.06 275.59 0) (hide yes) (effects (font (size 1 1)))))
+(wire (pts (xy 226.06 275.59) (xy 231.14 275.59)) (stroke (width 0) (type default)) (uuid "92b7ecfc-9d1d-4e19-b574-a8eebcc487f3"))
+(wire (pts (xy 238.76 275.59) (xy 245.11 275.59)) (stroke (width 0) (type default)) (uuid "413fb61a-33fd-4168-b699-c23be195efe5"))
+(wire (pts (xy 245.11 275.59) (xy 250.19 275.59)) (stroke (width 0) (type default)) (uuid "8f2b7b6b-b2bb-459d-817a-cf8bd29eb489"))
+(wire (pts (xy 245.11 275.59) (xy 245.11 276.86)) (stroke (width 0) (type default)) (uuid "9a69f449-fcc3-4888-ad95-87737c38ce1a"))
+(label "GND" (at 245.11 284.48 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "cd24e23f-ec22-4add-89bc-4beda22eeb73"))
+(junction (at 245.11 275.59) (diameter 0) (color 0 0 0 0) (uuid "ad866a8e-41cf-4661-99fa-91382a426602"))
+(label "PWR_LED_A" (at 191.77 259.08 0) (effects (font (size 0.75 0.75)) (justify left bottom)) (uuid "3482d6c2-4dbc-4ec1-b613-7db2c36d85fb"))
+(label "FAULT_LED_A" (at 255.27 259.08 0) (effects (font (size 0.75 0.75)) (justify left bottom)) (uuid "a2d22eeb-2440-4bcd-baac-463aa5e28469"))
+(label "FAULT_LED_K" (at 257.81 269.24 0) (effects (font (size 0.75 0.75)) (justify left bottom)) (uuid "b7a97374-8aae-40eb-9f3d-1261458832a0"))
+(label "FAULT_LED_GATE" (at 238.76 275.59 0) (effects (font (size 0.75 0.75)) (justify left bottom)) (uuid "f65844b0-0dc1-4c19-8d5a-7effda7331e2"))
+(text "POWER" (at 176.53 248.92 0) (effects (font (size 1 1)) (justify left)) (uuid "07f2001b-52f3-4dd4-b70b-ccd66157761c"))
+(text "FAULT / INHIBIT" (at 266.7 248.92 0) (effects (font (size 1 1)) (justify left)) (uuid "d0d99930-e214-4351-b750-93ee4342f0c4"))
+(text "STATUS INDICATORS" (at 176.53 280.67 0) (effects (font (size 1.2 1.2)) (justify left)) (uuid "3560c5dd-65b1-466f-9ea4-56d1d0c64e7f"))
+(text "PCB connections left unrouted." (at 176.53 283.21 0) (effects (font (size 1 1)) (justify left)) (uuid "701527cd-9e98-4c08-a56d-2cf8110df774"))
 )
