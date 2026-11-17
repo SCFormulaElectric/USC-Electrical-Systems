@@ -1,0 +1,81 @@
+# Copy to bench.toml. Empty/zero limits deliberately prevent energization.
+reviewed = false
+manual = true
+visa_backend = "@py" # Required on both Windows 11 and macOS
+operator_timeout_s = 300.0
+temperature_method = "" # Actual IR camera or isolated sensor identification
+duty_tolerance_fraction = 0.0 # Engineering tolerance only; 0 means NEEDS_REVIEW
+hv_ovp = 420.0 # Proposed, requires review against fixture/component ratings
+glv_ovp = 14.5 # Proposed; define GLV max below this after rating review
+hv_max = 404.0
+glv_nominal = 12.0
+glv_min = 11.0
+glv_max = 14.4
+hv_current_limit = 0.0
+glv_current_limit = 0.0
+temperature_limit_c = 0.0
+settle_timeout_s = 30.0
+voltage_tolerance_v = 0.2
+hv_uncertainty_v = 0.2 # Replace with calibrated meter/range/fixture uncertainty
+soak_seconds = 3600.0
+temperature_interval_s = 900.0
+results_dir = "results"
+
+[hv]
+address = ""
+identity = "62050E-600"
+# Confirm these candidate commands against YOUR 62000E programming manual.
+commands_verified = false
+set_voltage = "SOUR:VOLT {value}"
+set_current = "SOUR:CURR {value}"
+output = "OUTP {value}"
+voltage = "MEAS:VOLT?"
+current = "MEAS:CURR?"
+error = "SYST:ERR?"
+ovp = "SOUR:VOLT:PROT {value}"
+ovp_read = "SOUR:VOLT:PROT?"
+current_setting = "SOUR:CURR?"
+output_state = "OUTP?"
+
+[glv]
+address = ""
+identity = "EDU36311A"
+commands_verified = false
+# CH2 is a 30 V channel. Verify channel and commands before use.
+set_voltage = "VOLT {value}, (@2)"
+set_current = "CURR {value}, (@2)"
+output = "OUTP {value}, (@2)"
+output_delay_off = "OUTP:DEL:FALL {value}, (@2)"
+voltage = "MEAS:VOLT? CH2"
+current = "MEAS:CURR? CH2"
+error = "SYST:ERR?"
+ovp = "VOLT:PROT {value}, (@2)"
+ovp_read = "VOLT:PROT? (@2)"
+current_setting = "CURR? (@2)"
+output_state = "OUTP? (@2)"
+
+[dmm]
+address = ""
+identity = "EDU34450A"
+# Manually select a fixed DC-voltage range before running. No function switching.
+mode = "hv_voltage" # hv_voltage, hv_shunt, or glv_shunt
+shunt_ohms = 0.0
+
+[scope]
+address = ""
+identity = "DSOX1204G"
+lamp_channel = 1
+startup_channel = 2
+sample_interval_s = 0.001
+probe_factor = 10.0
+startup_threshold = 6.0
+current_channel = 3
+current_scale_v_div = 0.1
+# Set probe factors, DC coupling, vertical ranges, trigger and timebase manually.
+lamp_on_below = 3.0 # LED_RETURN low = lamps ON; verify wiring
+
+[generator]
+address = ""
+identity = "EDU33212A"
+commands_verified = false
+injection_fixture_verified = false

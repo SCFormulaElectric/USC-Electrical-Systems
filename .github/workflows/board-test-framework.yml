@@ -1,0 +1,38 @@
+name: Board test framework
+
+on:
+  push:
+    paths:
+      - '2026-27/Test Scripts/**'
+      - '.github/workflows/board-test-framework.yml'
+  pull_request:
+    paths:
+      - '2026-27/Test Scripts/**'
+      - '.github/workflows/board-test-framework.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+        python: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: '2026-27/Test Scripts'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: |
+            2026-27/Test Scripts/Infrastructure/requirements.txt
+            2026-27/Test Scripts/Suites/*/requirements.txt
+      - run: python Infrastructure/install.py
+      - run: python Infrastructure/run.py -q

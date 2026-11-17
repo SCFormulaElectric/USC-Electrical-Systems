@@ -1,0 +1,25 @@
+# Copy to bench.toml locally; never commit bench.toml.
+[limits]
+# Vehicle GLV operating requirement; verify each board's component ratings.
+glv_min_v = 11.0
+glv_max_v = 14.4
+glv_nominal_v = 12.0
+# Add reviewed settle_tolerance_v and settle_timeout_s for the sweep example.
+
+[instruments.dmm]
+address = "" # Example: TCPIP0::192.168.1.50::inst0::INSTR
+identity = "EDU34450A" # Expected substring of the instrument's *IDN? response
+timeout_ms = 5000
+
+# Optional EDU36311A channel. Uncomment and fill actual reviewed limits to use
+# glv_supply. Zero current/OVP and reviewed=false deliberately block its fixture.
+# [instruments.glv_supply]
+# address = ""
+# identity = "EDU36311A"
+# timeout_ms = 5000
+# channel = 2
+# reviewed = false
+# voltage_min_v = 11.0
+# voltage_max_v = 14.4
+# current_limit_a = 0.0
+# ovp_v = 0.0
