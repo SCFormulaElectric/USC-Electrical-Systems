@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "TS to GLV clearance"
+  (condition "(A.hasNetclass('TS') && B.hasNetclass('GLV')) || (A.hasNetclass('GLV') && B.hasNetclass('TS'))")
+  (constraint clearance (min 3mm)))
+
+(rule "TS to GLV creepage"
+  (condition "(A.hasNetclass('TS') && B.hasNetclass('GLV')) || (A.hasNetclass('GLV') && B.hasNetclass('TS'))")
+  (constraint creepage (min 4mm)))
