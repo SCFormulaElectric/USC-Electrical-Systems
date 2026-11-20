@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "kicad": {
+      "command": "uvx",
+      "args": ["--from", "mcp-server-kicad==0.21.1", "mcp-server-kicad"],
+      "env": {
+        "KICAD_SCH_PATH": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ/DDAQ.kicad_sch",
+        "KICAD_PCB_PATH": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ/DDAQ.kicad_pcb",
+        "KICAD_OUTPUT_DIR": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ",
+        "KICAD_CLI_PATH": "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe"
+      }
+    },
+    "kicad-batch": {
+      "command": "uv",
+      "args": ["run", "--script", "C:/Git/USC-Electrical-Systems/tools/kicad-batch/server.py"],
+      "env": {
+        "KICAD_SCH_PATH": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ/DDAQ.kicad_sch",
+        "KICAD_PCB_PATH": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ/DDAQ.kicad_pcb",
+        "KICAD_OUTPUT_DIR": "C:/Git/USC-Electrical-Systems/2026-27/Boards/DDAQ/DDAQ",
+        "KICAD_BIN": "C:/Program Files/KiCad/10.0/bin"
+      }
+    }
+  }
+}
